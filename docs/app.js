@@ -217,20 +217,44 @@ function lugarElegido(f) {
 buscador($('#buscar-lugar'), $('#sug-lugar'), lugarElegido);
 $('[data-provincia]').addEventListener('click', () => lugarElegido(null));
 $$('[data-elegir-lugar]').forEach(b => b.addEventListener('click', () => abrirElegirLugar()));
+// «Usar mi ubicación»: primero se pregunta a GeoRef (datos.gob.ar, de donde salen las localidades) en qué municipio
+// cae el punto; si no contesta, la localidad más cercana, contando que las ciudades grandes ocupan más que su centro
+// (desde muchos barrios de Córdoba capital, el centro de Saldán o de Villa Allende queda más cerca que el de Córdoba).
+const RADIO_KM = { 'Córdoba': 12, 'Río Cuarto': 6, 'Villa María': 5, 'Villa Carlos Paz': 4, 'San Francisco': 4 };
+async function municipioDe(la, lo) {
+  const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 6000);
+  try {
+    const r = await fetch(`https://apis.datos.gob.ar/georef/api/ubicacion?lat=${la}&lon=${lo}`, { signal: ctl.signal });
+    if (!r.ok) return null;
+    const u = (await r.json()).ubicacion || {};
+    if (!u.municipio || !u.municipio.nombre || (u.provincia && u.provincia.id !== '14')) return null;   // 14: Córdoba
+    const n = sinTildes(u.municipio.nombre), dpto = u.departamento && sinTildes(u.departamento.nombre);
+    // los nombres repetidos llevan el departamento: «Los Chañaritos (dpto. Cruz del Eje)»
+    return LOCS.find(f => sinTildes(f.localidad) === n) || LOCS.find(f => dpto && sinTildes(f.localidad) === `${n} (dpto. ${dpto})`) || null;
+  } catch (e) { return null; } finally { clearTimeout(t); }
+}
+function masCercana(la, lo) {
+  const k = Math.cos(la * Math.PI / 180);
+  let mejor = null, dmin = Infinity, km = Infinity;
+  for (const f of LOCS) {
+    const d = Math.hypot(f.lat - la, (f.lon - lo) * k) * 111;
+    const efectiva = Math.max(0, d - (RADIO_KM[f.localidad] || 0));
+    if (efectiva < dmin) { dmin = efectiva; mejor = f; km = d; }
+  }
+  return km > 60 ? null : mejor;
+}
 $$('[data-ubicacion]').forEach(b => b.addEventListener('click', () => {
   const avisar = t => $$('.ubicacion-estado').forEach(p => { p.textContent = t; });
   if (!navigator.geolocation) return avisar('Este navegador no puede darnos tu ubicación. Elegí la localidad a mano.');
   avisar('Buscando dónde estás…');
-  navigator.geolocation.getCurrentPosition(pos => {
-    const { latitude: la, longitude: lo } = pos.coords, k = Math.cos(la * Math.PI / 180);
-    let mejor = null, dmin = Infinity;
-    for (const f of LOCS) { const d = (f.lat - la) ** 2 + ((f.lon - lo) * k) ** 2; if (d < dmin) { dmin = d; mejor = f; } }
-    const km = Math.sqrt(dmin) * 111;
-    if (!mejor || km > 60) return avisar('Parece que estás fuera de la provincia de Córdoba. Elegí la localidad a mano.');
-    avisar(`Te ubiqué cerca de ${mejor.localidad}.`);
-    ponerLocalidad(mejor);
-    setTimeout(cerrarElegirLugar, 700);
-  }, () => avisar('No pudimos usar tu ubicación. Revisá el permiso o elegí la localidad a mano.'), { timeout: 12000, maximumAge: 600000 });
+  navigator.geolocation.getCurrentPosition(async pos => {
+    const { latitude: la, longitude: lo } = pos.coords;
+    const f = (await municipioDe(la, lo)) || masCercana(la, lo);
+    if (!f) return avisar('Parece que estás fuera de la provincia de Córdoba. Elegí la localidad a mano.');
+    avisar(`Te ubiqué en ${f.localidad}. Si no es tu localidad, buscala acá abajo.`);
+    ponerLocalidad(f);
+    setTimeout(cerrarElegirLugar, 1200);
+  }, () => avisar('No pudimos usar tu ubicación. Revisá el permiso o elegí la localidad a mano.'), { enableHighAccuracy: true, timeout: 12000, maximumAge: 600000 });
 }));
 $$('[data-compartir]').forEach(b => b.addEventListener('click', () => compartir()));
 
