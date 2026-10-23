@@ -46,6 +46,13 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python codigo/scripts/smn_alertas.py
+      - name: Avisos al celular
+        continue-on-error: true
+        env:
+          PUSH_URL: ${{ secrets.PUSH_URL }}
+          PUSH_SECRETO: ${{ secrets.PUSH_SECRETO }}
+          VAPID_PRIVADA: ${{ secrets.VAPID_PRIVADA }}
+        run: python codigo/scripts/notificar.py
       - name: Guardar
         run: |
           git config user.name "github-actions[bot]"
