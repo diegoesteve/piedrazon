@@ -682,7 +682,7 @@ const instalada = () => window.matchMedia('(display-mode: standalone)').matches 
 // La suscripción del navegador se guarda en el servicio de worker/avisos.js (repo del código). Cada 15 minutos,
 // scripts/notificar.py manda el aviso a las localidades que subieron de nivel, aunque la app esté cerrada.
 const AVISOS = {
-  url: '',   // dirección del servicio de avisos; mientras esté vacía, el bloque de avisos no se muestra
+  url: 'https://piedrazon-avisos.predinun.workers.dev',   // dirección del servicio de avisos; vacía = el bloque no se muestra
   clave: 'BBM77Qa6Tgc4JkqqKM4pPobW34_W4_DwOrYRXpxnI3ZTu12EQDAic8ETYQoSHoEne89qZFc-2pxLSkzptzSTcdU',   // clave pública VAPID (la privada está en los secretos de GitHub)
 };
 const avisosPosibles = () => 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
