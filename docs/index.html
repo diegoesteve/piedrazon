@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Piedrazón · Granizo en Córdoba</title>
+<meta name="description" content="¿Cae piedra hoy? Aviso por radar en este momento y horas con condiciones para granizo en cada localidad de Córdoba. Monitor experimental, no oficial.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Piedrazón">
+<meta property="og:title" content="¿Cae piedra hoy? · Piedrazón, granizo en Córdoba">
+<meta property="og:description" content="Aviso por radar en este momento y horas con condiciones para granizo en cada localidad. Datos del OHMC, el SMN y Open-Meteo. Monitor experimental, no oficial.">
+<meta property="og:url" content="https://diegoesteve.github.io/piedrazon/">
+<meta property="og:image" content="https://diegoesteve.github.io/piedrazon/iconos/icono-512.png">
+<meta property="og:locale" content="es_AR">
+<meta name="theme-color" content="#EEF4F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1A24" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Piedrazón">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="iconos/icono-192.png" type="image/png">
+<link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css?v=202610231500b">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<main id="contenido">
+
+  <!-- ================================================================ Hoy -->
+  <section id="p-hoy" class="pagina" aria-labelledby="t-hoy">
+    <div class="fila-top">
+      <button type="button" class="pastilla" data-elegir-lugar aria-haspopup="dialog">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <span class="lugar-texto">Toda la provincia</span>
+        <svg class="ic chico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+    </div>
+
+    <div class="encabezado">
+      <p id="fecha-hoy" class="fecha"></p>
+      <h1 id="t-hoy" tabindex="-1">¿Cae piedra hoy?</h1>
+    </div>
+
+    <div id="hero" class="hero" data-nivel="mascota">
+      <div class="hero-txt">
+        <span id="hero-etiqueta" class="hero-etiqueta">Cargando</span>
+        <h2 id="hero-titulo">Mirando los radares…</h2>
+        <p id="hero-texto" aria-live="polite"></p>
+      </div>
+      <button type="button" id="hero-pz" class="hero-pz" aria-label="Piedrazón: tocalo para otro consejo"></button>
+      <div id="hero-lugares" class="hero-lugares" hidden></div>
+    </div>
+
+    <div id="smn-hoy" class="smn-caja" hidden></div>
+
+    <div class="bloque">
+      <h3>Próximas horas</h3>
+      <div id="horas" class="horas"></div>
+      <p id="horas-nota" class="nota" hidden></p>
+    </div>
+
+    <div class="bloque">
+      <h3>Próximos días</h3>
+      <div id="dias" class="dias"></div>
+    </div>
+
+    <div class="tarjeta tareas">
+      <div class="tareas-cab">
+        <h3 id="tareas-titulo">Qué hacer ahora</h3>
+        <span id="tareas-cuenta" class="nota"></span>
+      </div>
+      <div id="tareas"></div>
+    </div>
+
+    <button type="button" class="boton-grande" data-compartir>
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 14v6h14v-6"/></svg>
+      Avisarle a mi familia
+    </button>
+
+    <p class="aclaracion">Monitor experimental, no oficial: no reemplaza los avisos del Servicio Meteorológico Nacional ni de Defensa Civil. Emergencias: <b>103</b> o <b>911</b>.</p>
+    <p id="actualizado" class="nota centro"></p>
+  </section>
+
+  <!-- ================================================================ Mapa -->
+  <section id="p-mapa" class="pagina" aria-labelledby="t-mapa" hidden>
+    <h1 id="t-mapa" tabindex="-1">Mapa</h1>
+    <div class="buscar-caja">
+      <svg class="ic lupa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <label for="buscar-mapa" class="sr">Buscar una localidad</label>
+      <input id="buscar-mapa" type="search" placeholder="Buscar localidad, por ejemplo Río Cuarto" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="sug-mapa" aria-autocomplete="list">
+      <ul id="sug-mapa" class="sugerencias" role="listbox" hidden></ul>
+    </div>
+    <p id="radar-estado" class="radar-estado"></p>
+    <div id="mapa" class="mapa"></div>
+    <div id="dias-mapa"></div>
+    <details class="tarjeta leyenda">
+      <summary>Cómo leer el mapa</summary>
+      <p><span class="punto n-rojo"></span><b>Riesgo alto</b> de granizo a esa hora · <span class="punto n-amarillo"></span><b>moderado</b>. El riesgo bajo no se dibuja.</p>
+      <p><span class="punto anillo"></span><b>Localidad con posible granizo ahora</b>, según el radar.
+        <span class="cuadro" style="--c:#FF2A98"></span>núcleo con granizo probable · <span class="cuadro" style="--c:#FF2A0C"></span>posible ·
+        <span class="cuadro" style="--c:#f7a600"></span>tormenta intensa (solo en la hora actual).</p>
+      <p>El gráfico cuenta cuántas localidades tienen condiciones para granizo en cada hora. Tocalo o arrastrá el dedo para cambiar la hora del mapa.</p>
+    </details>
+    <div id="ficha" class="tarjeta ficha" hidden></div>
+  </section>
+
+  <!-- ================================================================ El Cuis -->
+  <section id="p-cuis" class="pagina chat" aria-labelledby="t-cuis" hidden>
+    <div class="chat-cab">
+      <span id="cuis-avatar" class="avatar"></span>
+      <div class="chat-quien">
+        <h1 id="t-cuis" tabindex="-1">El Cuis</h1>
+        <span class="nota">Te ayuda con el granizo</span>
+      </div>
+    </div>
+    <ul id="chat-lista" class="chat-lista" role="log" aria-live="polite" aria-label="Conversación con el Cuis"></ul>
+    <div id="chat-rapidas" class="chat-rapidas" aria-label="Preguntas rápidas"></div>
+  </section>
+
+  <!-- ================================================================ Ajustes -->
+  <section id="p-ajustes" class="pagina" aria-labelledby="t-ajustes" hidden>
+    <h1 id="t-ajustes" tabindex="-1">Ajustes</h1>
+
+    <div class="tarjeta grupo">
+      <h2>Mi localidad</h2>
+      <div class="fila-lugar">
+        <span class="icono-caja"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></span>
+        <div><b class="lugar-texto">Toda la provincia</b><span class="nota bloque-linea">Lo que ves en «Hoy» y lo que te contesta el Cuis</span></div>
+      </div>
+      <div class="fila-botones">
+        <button type="button" class="boton-sec" data-elegir-lugar>Cambiar</button>
+        <button type="button" class="boton-sec" data-ubicacion>Usar mi ubicación</button>
+      </div>
+      <p class="nota ubicacion-estado" aria-live="polite"></p>
+    </div>
+
+    <!-- Avisos en el celular: escondidos hasta que funcionen con la app cerrada -->
+    <div class="tarjeta grupo" id="aj-avisos-grupo" hidden>
+      <h2>Avisos</h2>
+      <label class="interruptor">
+        <span>Avisarme en este celular<span class="nota bloque-linea">Mientras Piedrazón esté abierto o instalado y en uso</span></span>
+        <input type="checkbox" role="switch" id="aj-avisos">
+      </label>
+      <fieldset class="segmentado" id="aj-umbral">
+        <legend>Avisame desde</legend>
+        <div class="seg">
+        <label><input type="radio" name="umbral" value="atento"> Aviso</label>
+        <label><input type="radio" name="umbral" value="enojado"> Alerta</label>
+        <label><input type="radio" name="umbral" value="furioso"> Máxima</label>
+        </div>
+      </fieldset>
+      <p id="avisos-estado" class="nota" aria-live="polite"></p>
+    </div>
+
+    <div class="tarjeta grupo">
+      <h2>Cómo se ve</h2>
+      <label class="interruptor">
+        <span>Letra grande y modo simple<span class="nota bloque-linea">Oculta los números técnicos</span></span>
+        <input type="checkbox" role="switch" id="aj-letra">
+      </label>
+      <fieldset class="segmentado" id="aj-tema">
+        <legend>Tema</legend>
+        <div class="seg">
+        <label><input type="radio" name="tema" value="auto"> Automático</label>
+        <label><input type="radio" name="tema" value="light"> Claro</label>
+        <label><input type="radio" name="tema" value="dark"> Oscuro</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="tarjeta grupo" id="aj-instalar">
+      <h2>Instalar en el celular</h2>
+      <p id="instalar-texto" class="nota">Desde el menú del navegador, elegí «Instalar app» o «Agregar a la pantalla de inicio».</p>
+      <button type="button" id="btn-instalar" class="boton-grande" hidden>Instalar Piedrazón</button>
+    </div>
+
+    <div class="tarjeta grupo">
+      <h2>De dónde salen los datos</h2>
+      <p><b>Radares del Observatorio Hidro-Meteorológico de Córdoba (OHMC)</b>: núcleos de tormenta de los radares de Córdoba, Alejandro Roca y Villa Reynolds, cada 15 minutos. <span class="act nota" id="act-radar"></span></p>
+      <p><b>Modelos de pronóstico, vía Open-Meteo</b>: energía para tormentas, inestabilidad, viento en altura, isoterma de 0 °C y probabilidad de lluvia, hora por hora, cada 6 horas. <span class="act nota" id="act-pronostico"></span></p>
+      <p><b>Alertas del Servicio Meteorológico Nacional (SMN)</b>: alertas por tormentas y avisos a corto plazo, cada 15 minutos. Mostramos solo las naranjas y rojas.</p>
+      <p><b>Localidades</b>: municipios y comunas de Córdoba de GeoRef (datos.gob.ar).</p>
+      <details>
+        <summary>Cómo se calcula</summary>
+        <p><b>Ahora (radar)</b>: un eco de 55 dBZ o más es lo que la escala del OHMC llama «lluvia muy intensa y granizo». Marcamos <b>posible granizo</b> desde 55 dBZ y <b>granizo probable</b> desde 60 dBZ, o desde 55 dBZ si la tormenta llega a 10 km de altura o más. Una localidad aparece si la tormenta está a menos de 10 km.</p>
+        <p><b>Próximos días (pronóstico)</b>: el granizo necesita energía para tormentas fuertes, aire inestable y viento que cambia con la altura, todo junto. Si se juntan mucho, el riesgo es <b>alto</b>; si se juntan algo, <b>moderado</b>. Es un pronóstico de condiciones: puede no caer granizo, o caer en un lugar y no a 5 km.</p>
+      </details>
+    </div>
+
+    <p class="aclaracion">Monitor experimental, no oficial: no reemplaza los avisos del SMN ni de Defensa Civil. Emergencias: <b>103</b> o <b>911</b>.<br>
+      Proyecto personal sin fines comerciales · <a href="https://github.com/diegoesteve/piedrazon" target="_blank" rel="noopener">código y licencia</a>.</p>
+  </section>
+
+</main>
+
+<nav class="nav" aria-label="Principal">
+  <a href="#hoy" data-pestana="hoy"><span class="nav-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></span>Hoy</a>
+  <a href="#mapa" data-pestana="mapa"><span class="nav-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2zM9 4v14M15 6v14"/></svg></span>Mapa</a>
+  <a href="#cuis" data-pestana="cuis"><span class="nav-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></span>El Cuis</a>
+  <a href="#ajustes" data-pestana="ajustes"><span class="nav-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></span>Ajustes</a>
+</nav>
+
+<dialog id="dlg-lugar" aria-labelledby="t-lugar">
+  <form method="dialog" class="dlg-cab">
+    <h2 id="t-lugar">¿Dónde estás?</h2>
+    <button class="redondo" value="cerrar" aria-label="Cerrar">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </form>
+  <button type="button" class="boton-grande" data-ubicacion>
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7"/></svg>
+    Usar mi ubicación
+  </button>
+  <p class="nota ubicacion-estado" aria-live="polite"></p>
+  <div class="buscar-caja">
+    <svg class="ic lupa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    <label for="buscar-lugar" class="sr">Buscar tu localidad</label>
+    <input id="buscar-lugar" type="search" placeholder="O escribí tu localidad" autocomplete="off"
+           role="combobox" aria-expanded="false" aria-controls="sug-lugar" aria-autocomplete="list">
+    <ul id="sug-lugar" class="sugerencias en-linea" role="listbox" hidden></ul>
+  </div>
+  <button type="button" class="boton-sec ancho" data-provincia>Ver toda la provincia</button>
+</dialog>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="piedrazon.js?v=202610231500b"></script>
+<script src="cuis.js?v=202610231500b"></script>
+<script src="app.js?v=202610231500b"></script>
+</body>
+</html>
