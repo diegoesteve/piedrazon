@@ -3,7 +3,7 @@
 //   - Los datos (data/*.json): siempre de la red primero; si no hay conexión, los últimos que se guardaron.
 //   - Los mosaicos del mapa no se guardan.
 // Cambiar VERSION cuando cambie la lista de archivos de APP.
-const VERSION = 'piedrazon-2026-10-23-5';
+const VERSION = 'piedrazon-2026-10-23-6';
 const APP = ['./', 'index.html', 'app.js', 'piedrazon.js', 'cuis.js', 'style.css', 'manifest.webmanifest',
   'iconos/icono-192.png', 'iconos/icono-512.png', 'iconos/apple-touch-icon.png',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
@@ -66,12 +66,23 @@ self.addEventListener('fetch', ev => {
   }
 });
 
+// Aviso al celular (web push), que manda scripts/notificar.py cuando una localidad sube de nivel
+self.addEventListener('push', ev => {
+  let d = {};
+  try { d = ev.data ? ev.data.json() : {}; } catch (e) { d = { cuerpo: ev.data ? ev.data.text() : '' }; }
+  ev.waitUntil(self.registration.showNotification(d.titulo || 'Piedrazón', {
+    body: d.cuerpo || '', icon: 'iconos/icono-192.png', badge: 'iconos/icono-192.png', lang: 'es-AR',
+    tag: d.tag || 'piedrazon', renotify: true, vibrate: [200, 100, 200], data: { url: d.url || './' },
+  }));
+});
+
 // Al tocar un aviso, abre (o enfoca) Piedrazón
 self.addEventListener('notificationclick', ev => {
   ev.notification.close();
   const destino = (ev.notification.data && ev.notification.data.url) || './';
   ev.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(cs => {
     const abierta = cs.find(c => c.url.startsWith(self.registration.scope));
-    return abierta ? abierta.focus() : self.clients.openWindow(destino);
+    // con la app abierta, la lleva a la localidad del aviso; si no, la abre ahí
+    return abierta ? abierta.focus().then(c => (c && c.navigate ? c.navigate(destino) : c)) : self.clients.openWindow(destino);
   }));
 });

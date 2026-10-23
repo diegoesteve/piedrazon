@@ -193,8 +193,8 @@ function buscador(input, lista, alElegir) {
 // ---------------------------------------------------------------- mi localidad
 function ponerLocalidad(f) {
   PREF.set('localidad', f ? f.localidad : null);
-  PREF.set('notificado', null);
   pintarTodo();
+  sincronizarAvisos();
   // elegida desde el chat, se vuelve a Hoy para ver cómo está esa localidad
   if (pestana === 'cuis') location.hash = 'hoy';
 }
@@ -668,50 +668,97 @@ function pintarAjustes() {
   $$('#aj-tema input').forEach(r => { r.checked = r.value === tema; });
   const umbral = PREF.get('umbral', 'enojado');
   $$('#aj-umbral input').forEach(r => { r.checked = r.value === umbral; });
-  const permiso = 'Notification' in window ? Notification.permission : 'no';
-  $('#aj-avisos').checked = PREF.get('avisos', false) && permiso === 'granted';
-  $('#avisos-estado').textContent = permiso === 'no' ? 'Este navegador no permite avisos. En iPhone, primero instalá Piedrazón en la pantalla de inicio.'
-    : permiso === 'denied' ? 'Bloqueaste los avisos para este sitio. Podés habilitarlos desde los ajustes del navegador.'
-    : $('#aj-avisos').checked ? `Te aviso cuando ${miLocalidad() ? miLocalidad().localidad : 'la provincia'} llegue a «${Piedrazon.ETIQUETA[umbral]}» o más.` : '';
+  pintarAvisos();
   if (AHORA && AHORA.consultado) $('#act-radar').textContent = `Último dato: ${AHORA.consultado}.`;
   if (PRON) $('#act-pronostico').textContent = `Último pronóstico: ${PRON.generado}.`;
 }
 $('#aj-letra').addEventListener('change', ev => { PREF.set('letra', ev.target.checked); aplicarApariencia(); });
 $$('#aj-tema input').forEach(r => r.addEventListener('change', () => { PREF.set('tema', r.value); aplicarApariencia(); }));
-$$('#aj-umbral input').forEach(r => r.addEventListener('change', () => { PREF.set('umbral', r.value); PREF.set('notificado', null); pintarAjustes(); }));
-$('#aj-avisos').addEventListener('change', async ev => {
-  if (!ev.target.checked) { PREF.set('avisos', false); return pintarAjustes(); }
-  if (!('Notification' in window)) { ev.target.checked = false; return pintarAjustes(); }
-  const p = await Notification.requestPermission();
-  PREF.set('avisos', p === 'granted');
-  PREF.set('notificado', null);
-  pintarAjustes();
-  if (p === 'granted') revisarAviso();
-});
+$$('#aj-umbral input').forEach(r => r.addEventListener('change', () => { PREF.set('umbral', r.value); pintarAjustes(); sincronizarAvisos(); }));
 
-// Avisa una sola vez por día, lugar y nivel, cuando el nivel llega al umbral elegido
-// Los avisos en el celular están apagados hasta que funcionen con la app cerrada (hace falta un servidor para el push)
-const AVISOS_ACTIVOS = false;
-async function revisarAviso() {
-  if (!AVISOS_ACTIVOS) return;
-  if (!PREF.get('avisos', false) || !('Notification' in window) || Notification.permission !== 'granted') return;
-  const e = estado();
-  if (ORDEN[e.nivel] < ORDEN[PREF.get('umbral', 'enojado')]) return;
-  const clave = `${hoyISO()}|${e.lugar}|${e.nivel}`;
-  if (PREF.get('notificado', null) === clave) return;
-  PREF.set('notificado', clave);
-  const titulo = `${TITULO[e.nivel]} · ${e.f ? e.f.localidad : 'Córdoba'}`;
-  const opciones = { body: e.texto.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&'), icon: 'iconos/icono-192.png', badge: 'iconos/icono-192.png', tag: 'piedrazon', renotify: true, data: { url: urlDe(e.f) } };
-  try {
-    const reg = navigator.serviceWorker && await navigator.serviceWorker.getRegistration();
-    if (reg) await reg.showNotification(titulo, opciones); else new Notification(titulo, opciones);
-  } catch (err) { /* el navegador no dejó mostrarlo */ }
+// ---------------------------------------------------------------- avisos al celular (web push)
+const enIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+const instalada = () => window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+// La suscripción del navegador se guarda en el servicio de worker/avisos.js (repo del código). Cada 15 minutos,
+// scripts/notificar.py manda el aviso a las localidades que subieron de nivel, aunque la app esté cerrada.
+const AVISOS = {
+  url: '',   // dirección del servicio de avisos; mientras esté vacía, el bloque de avisos no se muestra
+  clave: 'BBM77Qa6Tgc4JkqqKM4pPobW34_W4_DwOrYRXpxnI3ZTu12EQDAic8ETYQoSHoEne89qZFc-2pxLSkzptzSTcdU',   // clave pública VAPID (la privada está en los secretos de GitHub)
+};
+const avisosPosibles = () => 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+const bytesDeClave = b64 => Uint8Array.from(atob(b64.replace(/-/g, '+').replace(/_/g, '/') + '='.repeat((4 - b64.length % 4) % 4)), c => c.charCodeAt(0));
+async function alServicio(ruta, cuerpo) {
+  const r = await fetch(AVISOS.url.replace(/\/$/, '') + ruta, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(cuerpo) });
+  if (!r.ok) throw new Error(`servicio: HTTP ${r.status}`);
 }
+async function activarAvisos() {
+  const f = miLocalidad();
+  if (!f) throw new Error('sin-localidad');
+  if (await Notification.requestPermission() !== 'granted') throw new Error('permiso');
+  const reg = await navigator.serviceWorker.ready;
+  const sub = (await reg.pushManager.getSubscription()) || await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: bytesDeClave(AVISOS.clave) });
+  const umbral = PREF.get('umbral', 'enojado');
+  await alServicio('/suscribir', { subscription: sub.toJSON(), localidad: f.localidad, umbral });
+  PREF.set('push', { localidad: f.localidad, umbral });
+}
+async function apagarAvisos() {
+  PREF.set('push', null);
+  const reg = await navigator.serviceWorker.ready;
+  const sub = await reg.pushManager.getSubscription();
+  if (!sub) return;
+  try { await alServicio('/desuscribir', { endpoint: sub.endpoint }); } catch (e) { /* sin conexión: el servicio la borra cuando venza */ }
+  await sub.unsubscribe();
+}
+// Con los avisos prendidos, si cambió la localidad, el nivel o se perdió la suscripción, se vuelve a mandar
+async function sincronizarAvisos() {
+  const p = PREF.get('push', null);
+  if (!p || !AVISOS.url || !avisosPosibles()) return;
+  if (Notification.permission !== 'granted') { PREF.set('push', null); return pintarAjustes(); }
+  const f = miLocalidad();
+  if (!f) { await apagarAvisos(); return pintarAjustes(); }
+  const reg = await navigator.serviceWorker.ready;
+  if (p.localidad === f.localidad && p.umbral === PREF.get('umbral', 'enojado') && await reg.pushManager.getSubscription()) return;
+  try { await activarAvisos(); } catch (e) { /* se reintenta en la próxima apertura */ }
+  pintarAjustes();
+}
+function pintarAvisos() {
+  const grupo = $('#aj-avisos-grupo'), interruptor = $('#aj-avisos'), texto = $('#avisos-estado');
+  grupo.hidden = !AVISOS.url;
+  if (!AVISOS.url) return;
+  const p = PREF.get('push', null), permiso = 'Notification' in window ? Notification.permission : 'no';
+  interruptor.checked = !!p && permiso === 'granted';
+  interruptor.disabled = false;
+  if (enIOS && !instalada()) {
+    interruptor.disabled = true;
+    texto.textContent = 'En iPhone los avisos llegan solo con Piedrazón instalado: abajo, en «Instalar en el celular», está cómo. Después abrila desde el ícono y activalos acá.';
+  } else if (!avisosPosibles()) {
+    interruptor.disabled = true;
+    texto.textContent = 'Este navegador no permite avisos. Probá con Chrome o con Piedrazón instalado.';
+  } else if (permiso === 'denied') {
+    texto.textContent = 'Bloqueaste los avisos para este sitio. Podés habilitarlos desde los ajustes del navegador.';
+  } else if (interruptor.checked) {
+    texto.textContent = `Listo: te avisamos cuando ${p.localidad} llegue a «${Piedrazon.ETIQUETA[p.umbral]}» o más, aunque tengas la app cerrada.`;
+  } else {
+    texto.textContent = miLocalidad() ? `Te avisamos solo por ${miLocalidad().localidad}, una vez por nivel y por día.` : 'Primero elegí tu localidad, acá arriba.';
+  }
+}
+$('#aj-avisos').addEventListener('change', async ev => {
+  const t = ev.target, prender = t.checked;
+  t.disabled = true;
+  $('#avisos-estado').textContent = prender ? 'Activando…' : 'Apagando…';
+  let error = null;
+  try { if (prender) await activarAvisos(); else await apagarAvisos(); } catch (e) { error = e.message; }
+  pintarAjustes();
+  if (!error) return;
+  $('#aj-avisos').checked = false;
+  $('#avisos-estado').textContent = error === 'sin-localidad' ? 'Primero elegí tu localidad, acá arriba.'
+    : error === 'permiso' ? 'Sin permiso no podemos avisarte. Si lo bloqueaste, habilitalo desde los ajustes del navegador.'
+    : 'No pudimos activar los avisos. Probá de nuevo en un rato.';
+  if (error === 'sin-localidad') abrirElegirLugar();
+});
 
 // Instalar la app
 let pedidoInstalar = null;
-const enIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
-const instalada = () => window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 function pintarInstalar() {
   const texto = $('#instalar-texto'), boton = $('#btn-instalar');
   if (instalada()) { texto.textContent = 'Ya la tenés instalada. ¡Bien ahí!'; boton.hidden = true; return; }
@@ -762,7 +809,6 @@ function pintarTodo() {
 async function recargar() {
   await cargar();
   pintarTodo();
-  revisarAviso();
 }
 setInterval(recargar, 15 * 60 * 1000);
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - CARGADO > 5 * 60 * 1000) recargar(); });
@@ -775,7 +821,7 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
   pintarHoy();
   if (pedida) { try { history.replaceState(null, '', location.pathname + (f ? '#mapa' : location.hash)); } catch (e) { /* sin historial */ } }
   if (f) { irA('mapa', { foco: false }); elegir(f.localidad); } else irA(location.hash.slice(1), { foco: false });
-  revisarAviso();
+  sincronizarAvisos();
 })();
 
 if ('serviceWorker' in navigator) {
