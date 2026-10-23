@@ -3,7 +3,7 @@
 //   - Los datos (data/*.json): siempre de la red primero; si no hay conexión, los últimos que se guardaron.
 //   - Los mosaicos del mapa no se guardan.
 // Cambiar VERSION cuando cambie la lista de archivos de APP.
-const VERSION = 'piedrazon-2026-10-23-7';
+const VERSION = 'piedrazon-2026-10-23-8';
 const APP = ['./', 'index.html', 'app.js', 'piedrazon.js', 'cuis.js', 'style.css', 'manifest.webmanifest',
   'iconos/icono-192.png', 'iconos/icono-512.png', 'iconos/apple-touch-icon.png',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
@@ -66,6 +66,15 @@ self.addEventListener('fetch', ev => {
   }
 });
 
+// Número rojo en el ícono de la app: la cantidad de avisos sin leer (iPhone con iOS 16.4 o más, y Android)
+async function actualizarNumero() {
+  if (!self.navigator.setAppBadge) return;
+  try {
+    const n = (await self.registration.getNotifications()).length;
+    if (n) await self.navigator.setAppBadge(n); else await self.navigator.clearAppBadge();
+  } catch (e) { /* el sistema no lo permite */ }
+}
+
 // Aviso al celular (web push), que manda scripts/notificar.py cuando una localidad sube de nivel
 self.addEventListener('push', ev => {
   let d = {};
@@ -73,12 +82,13 @@ self.addEventListener('push', ev => {
   ev.waitUntil(self.registration.showNotification(d.titulo || 'Piedrazón', {
     body: d.cuerpo || '', icon: 'iconos/icono-192.png', badge: 'iconos/icono-192.png', lang: 'es-AR',
     tag: d.tag || 'piedrazon', renotify: true, vibrate: [200, 100, 200], data: { url: d.url || './' },
-  }));
+  }).then(actualizarNumero));
 });
 
 // Al tocar un aviso, abre (o enfoca) Piedrazón
 self.addEventListener('notificationclick', ev => {
   ev.notification.close();
+  ev.waitUntil(actualizarNumero());
   const destino = (ev.notification.data && ev.notification.data.url) || './';
   ev.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(cs => {
     const abierta = cs.find(c => c.url.startsWith(self.registration.scope));
