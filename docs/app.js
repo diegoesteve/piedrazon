@@ -811,7 +811,20 @@ async function recargar() {
   pintarTodo();
 }
 setInterval(recargar, 15 * 60 * 1000);
-document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - CARGADO > 5 * 60 * 1000) recargar(); });
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState !== 'visible') return;
+  avisosLeidos();
+  if (Date.now() - CARGADO > 5 * 60 * 1000) recargar();
+});
+
+// Al abrir la app, los avisos que llegaron se dan por leídos: se sacan de la lista y del número rojo del ícono
+async function avisosLeidos() {
+  try {
+    if (navigator.clearAppBadge) await navigator.clearAppBadge();
+    const reg = navigator.serviceWorker && await navigator.serviceWorker.getRegistration();
+    if (reg) (await reg.getNotifications()).forEach(n => n.close());
+  } catch (e) { /* el sistema no lo permite */ }
+}
 
 // ---------------------------------------------------------------- arranque
 (async () => {
@@ -822,6 +835,7 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
   if (pedida) { try { history.replaceState(null, '', location.pathname + (f ? '#mapa' : location.hash)); } catch (e) { /* sin historial */ } }
   if (f) { irA('mapa', { foco: false }); elegir(f.localidad); } else irA(location.hash.slice(1), { foco: false });
   sincronizarAvisos();
+  avisosLeidos();
 })();
 
 if ('serviceWorker' in navigator) {
