@@ -25,13 +25,6 @@ Cada alarma queda en `data/historial_alarmas.csv` (las del pronóstico, en `data
 columnas `que_paso` y `fuente_medios` se completan a mano con lo que informaron los medios, para medir aciertos y
 falsas alarmas.
 
-## Puesta en marcha
-
-1. **GitHub Pages:** *Settings → Pages → Build and deployment*: rama `main`, carpeta `/docs`.
-2. **Secretos** en *Settings → Secrets and variables → Actions*:
-   - `CODIGO_TOKEN`: token de GitHub de grano fino con acceso solo al repo del código, permiso *Contents: Read-only*.
-   - `TELEGRAM_TOKEN` y `TELEGRAM_CHAT_ID` (opcionales), para los avisos.
-3. Correr a mano *Actions → Pronóstico* y *Actions → Radar* la primera vez.
 
 ## Licencia
 
