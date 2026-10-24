@@ -1,0 +1,45 @@
+name: Modelo WRF del OHMC (granizo previsto)
+
+# Las corridas del OHMC son a las 06 y 18 UTC y se publican unas horas después: se mira cada 3 horas y,
+# si la última corrida ya está guardada, no se hace nada.
+on:
+  schedule:
+    - cron: '50 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wrf
+  cancel-in-progress: false
+
+jobs:
+  wrf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PIEDRAZON_DATOS: ${{ github.workspace }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: diegoesteve/piedrazon-codigo
+          token: ${{ secrets.CODIGO_TOKEN }}
+          path: codigo
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: codigo/requirements.txt
+      - run: pip install -r codigo/requirements.txt
+      - name: Granizo previsto por las cuatro versiones del modelo
+        run: python codigo/scripts/wrf_ohmc.py
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data data
+          git diff --cached --quiet && exit 0
+          git commit -m "modelo WRF: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
+          git pull --rebase -X theirs && git push
