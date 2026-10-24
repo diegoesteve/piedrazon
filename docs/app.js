@@ -860,7 +860,20 @@ async function avisosLeidos() {
   if (f) { irA('mapa', { foco: false }); elegir(f.localidad); } else irA(location.hash.slice(1), { foco: false });
   sincronizarAvisos();
   avisosLeidos();
+  contarInstalacion();
 })();
+
+// La primera vez que se abre desde el ícono de la pantalla de inicio, se cuenta una instalación en el servicio de
+// avisos: solo un número al azar de este celular, sin ningún otro dato
+async function contarInstalacion() {
+  if (!AVISOS.url || !instalada() || PREF.get('instalacion_contada', false)) return;
+  try {
+    let id = PREF.get('id_instalacion', null);
+    if (!id) { id = [...crypto.getRandomValues(new Uint8Array(16))].map(b => b.toString(16).padStart(2, '0')).join(''); PREF.set('id_instalacion', id); }
+    await alServicio('/instalada', { id });
+    PREF.set('instalacion_contada', true);
+  } catch (e) { /* se reintenta la próxima vez */ }
+}
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).catch(() => { /* sin modo sin conexión */ }); });
