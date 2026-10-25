@@ -1,63 +1,72 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-24 21:11",
+ "consultado": "2026-10-25 01:51",
  "radares": {
-  "RMA1": "2026-10-24 21:02",
-  "RMA16": "2026-10-24 20:54",
-  "RMA17": "2026-10-24 21:02"
+  "RMA17": "2026-10-25 01:40",
+  "RMA16": "2026-10-25 01:32",
+  "RMA1": "2026-10-25 01:37"
  },
  "nucleos": [
   {
-   "lat": -31.4591,
-   "lon": -64.7944,
-   "max_dbz": 45,
+   "lat": -31.4861,
+   "lon": -64.7836,
+   "max_dbz": 50,
    "tope_km": 5.4,
    "radar": "RMA1",
    "nivel": null,
    "descartado": "tope bajo (5.4 km)"
   },
   {
-   "lat": -31.5311,
-   "lon": -64.7621,
-   "max_dbz": 45,
-   "tope_km": 5.4,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -33.1948,
-   "lon": -65.1215,
-   "max_dbz": 45,
+   "lat": -33.2219,
+   "lon": -65.0773,
+   "max_dbz": 49,
    "tope_km": 3.6,
    "radar": "RMA16",
    "nivel": null,
    "descartado": "tope bajo (3.6 km)"
   },
   {
-   "lat": -32.0645,
-   "lon": -64.9787,
-   "max_dbz": 43,
-   "tope_km": 10.2,
-   "radar": "RMA17",
-   "nivel": null
+   "lat": -31.2787,
+   "lon": -64.7083,
+   "max_dbz": 44,
+   "tope_km": 3.0,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (3.0 km)"
   },
   {
-   "lat": -32.1375,
-   "lon": -65.0007,
+   "lat": -33.1857,
+   "lon": -65.4197,
    "max_dbz": 43,
+   "tope_km": 2.4,
+   "radar": "RMA16",
+   "nivel": null,
+   "descartado": "tope bajo (2.4 km)"
+  },
+  {
+   "lat": -32.101,
+   "lon": -64.9567,
+   "max_dbz": 42,
    "tope_km": 7.8,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -33.673,
-   "lon": -65.254,
+   "lat": -32.2741,
+   "lon": -64.9677,
    "max_dbz": 42,
-   "tope_km": 2.4,
-   "radar": "RMA16",
+   "tope_km": 7.2,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.405,
+   "lon": -64.4178,
+   "max_dbz": 41,
+   "tope_km": 1.2,
+   "radar": "RMA1",
    "nivel": null,
-   "descartado": "tope bajo (2.4 km)"
+   "descartado": "tope bajo (1.2 km)"
   }
  ],
  "localidades": {}
