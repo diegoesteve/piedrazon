@@ -1,62 +1,63 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-24 18:49",
+ "consultado": "2026-10-24 21:11",
  "radares": {
-  "RMA1": "2026-10-24 18:36",
-  "RMA16": "2026-10-24 18:35",
-  "RMA17": "2026-10-24 18:26"
+  "RMA1": "2026-10-24 21:02",
+  "RMA16": "2026-10-24 20:54",
+  "RMA17": "2026-10-24 21:02"
  },
  "nucleos": [
   {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "max_dbz": 53,
-   "tope_km": 1.8,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (1.8 km)"
-  },
-  {
-   "lat": -31.45,
+   "lat": -31.4591,
    "lon": -64.7944,
-   "max_dbz": 48,
-   "tope_km": 7.2,
+   "max_dbz": 45,
+   "tope_km": 5.4,
    "radar": "RMA1",
-   "nivel": null
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
   },
   {
-   "lat": -31.5131,
+   "lat": -31.5311,
    "lon": -64.7621,
-   "max_dbz": 48,
-   "tope_km": 6.6,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.414,
-   "lon": -64.4286,
-   "max_dbz": 43,
-   "tope_km": 1.8,
+   "max_dbz": 45,
+   "tope_km": 5.4,
    "radar": "RMA1",
    "nivel": null,
-   "descartado": "tope bajo (1.8 km)"
+   "descartado": "tope bajo (5.4 km)"
   },
   {
-   "lat": -31.5851,
-   "lon": -64.7083,
-   "max_dbz": 43,
-   "tope_km": 6.6,
-   "radar": "RMA1",
-   "nivel": null
+   "lat": -33.1948,
+   "lon": -65.1215,
+   "max_dbz": 45,
+   "tope_km": 3.6,
+   "radar": "RMA16",
+   "nivel": null,
+   "descartado": "tope bajo (3.6 km)"
   },
   {
-   "lat": -34.1212,
-   "lon": -64.583,
+   "lat": -32.0645,
+   "lon": -64.9787,
    "max_dbz": 43,
-   "tope_km": 4.8,
+   "tope_km": 10.2,
    "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.1375,
+   "lon": -65.0007,
+   "max_dbz": 43,
+   "tope_km": 7.8,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.673,
+   "lon": -65.254,
+   "max_dbz": 42,
+   "tope_km": 2.4,
+   "radar": "RMA16",
    "nivel": null,
-   "descartado": "tope bajo (4.8 km)"
+   "descartado": "tope bajo (2.4 km)"
   }
  ],
  "localidades": {}
