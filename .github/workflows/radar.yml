@@ -53,6 +53,13 @@ jobs:
           PUSH_SECRETO: ${{ secrets.PUSH_SECRETO }}
           VAPID_PRIVADA: ${{ secrets.VAPID_PRIVADA }}
         run: python codigo/scripts/notificar.py
+      - name: Avisos al celular de la app de crecidas (predinun)
+        continue-on-error: true
+        env:
+          PUSH_URL: ${{ secrets.PUSH_URL }}
+          PUSH_SECRETO: ${{ secrets.PUSH_SECRETO }}
+          VAPID_PRIVADA: ${{ secrets.VAPID_PRIVADA }}
+        run: python codigo/scripts/notificar_crecidas.py
       - name: Guardar
         run: |
           git config user.name "github-actions[bot]"
