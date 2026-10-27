@@ -49,10 +49,17 @@ jobs:
           PIEDRAZON_AMBITO: pais
         run: python codigo/scripts/localidades.py
       - name: Condiciones para granizo en todo el país
+        # dos veces por día (corridas de las 06 y 18 UTC) o a mano, para no pasar el límite diario de Open-Meteo
         continue-on-error: true
         env:
           PIEDRAZON_AMBITO: pais
-        run: python codigo/scripts/pronostico_granizo.py
+        run: |
+          h=$(date -u +%H)
+          if [ "$h" = "06" ] || [ "$h" = "18" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python codigo/scripts/pronostico_granizo.py
+          else
+            echo "Pronóstico nacional: solo a las 06 y 18 UTC."
+          fi
       - name: Guardar
         run: |
           git config user.name "github-actions[bot]"
