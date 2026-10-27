@@ -15,7 +15,7 @@ concurrency:
 jobs:
   pronostico:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     env:
       PIEDRAZON_DATOS: ${{ github.workspace }}
     steps:
@@ -41,11 +41,23 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           HISTORIAL_ARCHIVO: historial_alarmas_pronostico.csv
         run: python codigo/scripts/pronostico_granizo.py
+      # ---- todo el país, en prueba: escribe en data/pais/ y docs/data/pais/, sin avisos; si falla, no frena lo de Córdoba
+      - name: Localidades de todo el país (si faltan)
+        if: ${{ hashFiles('data/pais/localidades.json') == '' }}
+        continue-on-error: true
+        env:
+          PIEDRAZON_AMBITO: pais
+        run: python codigo/scripts/localidades.py
+      - name: Condiciones para granizo en todo el país
+        continue-on-error: true
+        env:
+          PIEDRAZON_AMBITO: pais
+        run: python codigo/scripts/pronostico_granizo.py
       - name: Guardar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data data/*.json data/*.csv
+          git add docs/data data/*.json data/*.csv data/pais
           git diff --cached --quiet && exit 0
           git commit -m "pronóstico: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push
