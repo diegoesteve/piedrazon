@@ -1,12 +1,30 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-28 17:45",
+ "consultado": "2026-10-28 17:57",
  "radares": {
-  "RMA17": "2026-10-28 17:27",
+  "RMA17": "2026-10-28 17:44",
   "RMA16": "2026-10-28 17:28",
-  "RMA1": "2026-10-28 17:30"
+  "RMA1": "2026-10-28 17:39"
  },
  "nucleos": [
+  {
+   "lat": -31.45,
+   "lon": -64.7944,
+   "max_dbz": 51,
+   "tope_km": 6.6,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "eco fijo del terreno"
+  },
+  {
+   "lat": -31.5221,
+   "lon": -64.7621,
+   "max_dbz": 51,
+   "tope_km": 5.4,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
+  },
   {
    "lat": -34.1128,
    "lon": -63.8958,
@@ -16,28 +34,11 @@
    "nivel": null
   },
   {
-   "lat": -31.4591,
-   "lon": -64.7944,
-   "max_dbz": 50,
-   "tope_km": 5.4,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -31.4681,
-   "lon": -65.1386,
-   "max_dbz": 49,
-   "tope_km": 9.0,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -34.2192,
-   "lon": -63.7476,
+   "lat": -34.1934,
+   "lon": -63.7081,
    "max_dbz": 47,
-   "tope_km": 10.2,
-   "radar": "RMA17",
+   "tope_km": 11.4,
+   "radar": "RMA16",
    "nivel": null
   },
   {
@@ -48,6 +49,15 @@
    "radar": "RMA16",
    "nivel": null,
    "descartado": "tope bajo (0.6 km)"
+  },
+  {
+   "lat": -31.441,
+   "lon": -64.3963,
+   "max_dbz": 45,
+   "tope_km": 1.2,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (1.2 km)"
   },
   {
    "lat": -33.646,
@@ -73,24 +83,6 @@
    "tope_km": 7.2,
    "radar": "RMA16",
    "nivel": null
-  },
-  {
-   "lat": -31.5131,
-   "lon": -64.7621,
-   "max_dbz": 43,
-   "tope_km": 5.4,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -31.4771,
-   "lon": -64.5039,
-   "max_dbz": 43,
-   "tope_km": 1.8,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (1.8 km)"
   },
   {
    "lat": -33.1857,
