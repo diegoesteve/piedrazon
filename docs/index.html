@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Piedrazón · Granizo en Córdoba</title>
+<title>Piedrazón · ¿Cae piedra hoy?</title>
 <meta name="description" content="¿Cae piedra hoy? Aviso por radar en este momento y horas con condiciones para granizo en cada localidad de Córdoba. Monitor experimental, no oficial.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Piedrazón">
@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=202610272135">
+<link rel="stylesheet" href="style.css?v=202610272230">
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -181,10 +181,10 @@
 
     <div class="tarjeta grupo">
       <h2>De dónde salen los datos</h2>
-      <p><b>Radares del Observatorio Hidro-Meteorológico de Córdoba (OHMC)</b>: núcleos de tormenta de los radares de Córdoba, Alejandro Roca y Villa Reynolds, cada 15 minutos. <span class="act nota" id="act-radar"></span></p>
-      <p><b>Modelos de pronóstico, vía Open-Meteo</b>: energía para tormentas, inestabilidad, viento en altura, isoterma de 0 °C y probabilidad de lluvia, hora por hora, cada 6 horas. <span class="act nota" id="act-pronostico"></span></p>
+      <p><b>Radares, vía el Observatorio Hidro-Meteorológico de Córdoba (OHMC)</b>: núcleos de tormenta cada 15 minutos. En Córdoba, los radares de Córdoba, Alejandro Roca y Villa Reynolds; en el resto del país (en prueba), los de la red nacional que publica el OHMC. <span class="act nota" id="act-radar"></span></p>
+      <p><b>Modelos de pronóstico, vía Open-Meteo</b>: energía para tormentas, inestabilidad, viento en altura, isoterma de 0 °C y probabilidad de lluvia, hora por hora: cada 6 horas en Córdoba y dos veces por día en el resto del país. <span class="act nota" id="act-pronostico"></span></p>
       <p><b>Alertas del Servicio Meteorológico Nacional (SMN)</b>: alertas por tormentas y avisos a corto plazo, cada 15 minutos. Las naranjas y rojas suben el nivel de Piedrazón; las amarillas se muestran solo como información.</p>
-      <p><b>Localidades</b>: municipios y comunas de Córdoba de GeoRef (datos.gob.ar).</p>
+      <p><b>Localidades</b>: municipios, comunas y localidades de GeoRef (datos.gob.ar).</p>
       <details>
         <summary>Cómo se calcula</summary>
         <p><b>Ahora (radar)</b>: un eco de 55 dBZ o más es lo que la escala del OHMC llama «lluvia muy intensa y granizo». Marcamos <b>posible granizo</b> desde 55 dBZ y <b>granizo probable</b> desde 60 dBZ, o desde 55 dBZ si la tormenta llega a 10 km de altura o más. Una localidad aparece si la tormenta está a menos de 10 km.</p>
@@ -229,9 +229,9 @@
 </dialog>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="piedrazon.js?v=202610272135"></script>
-<script src="cuis.js?v=202610272135"></script>
-<script src="app.js?v=202610272135"></script>
+<script src="piedrazon.js?v=202610272230"></script>
+<script src="cuis.js?v=202610272230"></script>
+<script src="app.js?v=202610272230"></script>
 <!-- Cloudflare Web Analytics: cuenta visitas sin cookies ni datos personales -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "83643e72d4eb498ebea4cd5510e83adf"}'></script>
 </body>
