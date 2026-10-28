@@ -465,16 +465,7 @@ function zoomConCtrl(m) {
     clearTimeout(temporizador);
     temporizador = setTimeout(() => aviso.classList.remove('visible'), 1200);
   };
-  if (TACTIL) {
-    // Con un dedo se baja la página; si lo arrastra sobre el mapa, se recuerda cómo moverlo
-    let inicio = null;
-    cont.addEventListener('touchstart', e => { inicio = e.touches.length === 1 ? e.touches[0].clientY : null; }, { passive: true });
-    cont.addEventListener('touchmove', e => {
-      if (e.touches.length === 1 && inicio != null && Math.abs(e.touches[0].clientY - inicio) > 10) mostrar('Usá dos dedos para mover el mapa');
-      if (e.touches.length > 1) aviso.classList.remove('visible');
-    }, { passive: true });
-    return;
-  }
+  if (TACTIL) return;   // en el celular el mapa se mueve con un dedo y se acerca pellizcando
   cont.addEventListener('wheel', e => {
     if (!(e.ctrlKey || e.metaKey)) { mostrar(textoRueda); return; }
     e.preventDefault();
@@ -498,7 +489,7 @@ function abrirMapa() {
     return;
   }
   if (!mapa) {
-    mapa = L.map('mapa', { scrollWheelZoom: false, dragging: !TACTIL });
+    mapa = L.map('mapa', { scrollWheelZoom: false });
     centrarMapa();
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 17, attribution: '&copy; OpenStreetMap' }).addTo(mapa);
     zoomConCtrl(mapa);
