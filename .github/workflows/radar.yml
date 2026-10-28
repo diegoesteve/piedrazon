@@ -60,7 +60,7 @@ jobs:
           PUSH_SECRETO: ${{ secrets.PUSH_SECRETO }}
           VAPID_PRIVADA: ${{ secrets.VAPID_PRIVADA }}
         run: python codigo/scripts/notificar_crecidas.py
-      # ---- todo el país, en prueba: escribe en data/pais/ y docs/data/pais/, sin avisos; si falla, no frena lo de Córdoba
+      # ---- resto del país (en prueba): escribe en data/pais/ y docs/data/pais/ (y por provincia en docs/data/prov/); si falla, no frena lo de Córdoba
       - name: Localidades de todo el país (si faltan)
         if: ${{ hashFiles('data/pais/localidades.json') == '' }}
         continue-on-error: true
@@ -77,6 +77,17 @@ jobs:
         env:
           PIEDRAZON_AMBITO: pais
         run: python codigo/scripts/smn_alertas.py
+      - name: Partir los datos del país por provincia (los que usa la app)
+        continue-on-error: true
+        run: python codigo/scripts/dividir_pais.py
+      - name: Avisos al celular del resto del país
+        continue-on-error: true
+        env:
+          PIEDRAZON_AMBITO: pais
+          PUSH_URL: ${{ secrets.PUSH_URL }}
+          PUSH_SECRETO: ${{ secrets.PUSH_SECRETO }}
+          VAPID_PRIVADA: ${{ secrets.VAPID_PRIVADA }}
+        run: python codigo/scripts/notificar.py
       - name: Guardar
         run: |
           git config user.name "github-actions[bot]"

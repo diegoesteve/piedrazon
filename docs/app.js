@@ -1,5 +1,7 @@
 // Piedrazón como app (PWA): cuatro pestañas, Hoy, Mapa, El Cuis y Ajustes.
-// Es una página estática: lee docs/data/*.json, que actualizan los workflows de GitHub Actions.
+// Es una página estática: lee docs/data/*.json, que actualizan los workflows de GitHub Actions. Córdoba usa
+// docs/data/ (la más detallada); el resto del país, docs/data/prov/<provincia>/, con los mismos archivos, y
+// docs/data/provincias.json es el índice de localidades de todo el país para el buscador y la ubicación.
 'use strict';
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -39,11 +41,30 @@ function aplicarApariencia() {
 aplicarApariencia();
 
 // ---------------------------------------------------------------- datos
-async function leer(nombre) {
+const CORTO = { 'Ciudad Autónoma de Buenos Aires': 'Ciudad de Buenos Aires', 'Tierra del Fuego, Antártida e Islas del Atlántico Sur': 'Tierra del Fuego' };
+const corta = p => CORTO[p] || p;
+// Nombre con que se guarda la suscripción de avisos (igual que comun.clave_aviso): en Córdoba, la localidad; en el
+// resto, «Localidad · Provincia», porque hay nombres repetidos entre provincias
+const claveAviso = (nombre, prov) => prov === 'Córdoba' ? nombre : `${nombre} · ${prov}`;
+const baseDe = p => p === 'cordoba' ? 'data/' : `data/prov/${p}/`;
+let PROV = PREF.get('provincia', 'cordoba'), PROV_NOMBRE = 'Córdoba';   // la provincia que se está mirando
+async function leer(nombre, base = baseDe(PROV)) {
   try {
-    const r = await fetch(`data/${nombre}?t=${Date.now()}`);
+    const r = await fetch(`${base}${nombre}?t=${Date.now()}`);
     return r.ok ? await r.json() : null;
   } catch (e) { return null; }
+}
+// Índice de todo el país (se baja solo al buscar una localidad o usar la ubicación)
+let INDICE = null, INDICE_LISTO = null;
+function cargarIndice() {
+  if (!INDICE) INDICE = fetch('data/provincias.json').then(r => r.ok ? r.json() : null).then(d => {
+    if (!d) throw new Error('sin índice');
+    const todas = [];
+    for (const p of d.provincias) for (const [localidad, lat, lon] of p.localidades) todas.push({ localidad, lat, lon, prov: p.slug, provNombre: p.nombre });
+    INDICE_LISTO = todas;
+    return { provincias: d.provincias, todas };
+  }).catch(() => { INDICE = null; return null; });
+  return INDICE;
 }
 function edad(fechaHora) {
   if (!fechaHora) return null;
@@ -51,13 +72,30 @@ function edad(fechaHora) {
 }
 
 let AHORA = null, PRON = null, SMN = null, HORAS = null, LOCS = [], CARGADO = 0;
+const ARCHIVOS = ['granizo_ahora.json', 'granizo_pronostico.json', 'localidades.json', 'smn.json', 'granizo_horas.json'];
+// Datos de una localidad de otra provincia, solo para contestar en el chat sin cambiar lo que se está mirando
+async function localidadDe(nombre, prov) {
+  if (prov === PROV) return porNombre(nombre);
+  const base = baseDe(prov);
+  const [a, p, l, s] = await Promise.all(ARCHIVOS.slice(0, 4).map(n => leer(n, base)));
+  const f = ((l && l.localidades) || []).find(x => x.localidad === nombre);
+  if (!f) return null;
+  const radarFresco = a && edad(a.consultado) <= 60;
+  return { ...f, prov, provNombre: corta((l && l.provincia) || 'Córdoba'), smn: s || { alertas: [], localidades: {} }, dias: (p && p.localidades[nombre]) || [],
+    radar: radarFresco ? (a.localidades || {})[nombre] || null : null };
+}
 async function cargar() {
-  const [a, p, l, s, h] = await Promise.all(['granizo_ahora.json', 'granizo_pronostico.json', 'localidades.json', 'smn.json', 'granizo_horas.json'].map(leer));
+  let [a, p, l, s, h] = await Promise.all(ARCHIVOS.map(n => leer(n)));
+  if (!l && PROV !== 'cordoba') {   // una provincia sin datos: se vuelve a Córdoba
+    PROV = 'cordoba';
+    [a, p, l, s, h] = await Promise.all(ARCHIVOS.map(n => leer(n)));
+  }
+  PROV_NOMBRE = corta((l && l.provincia) || 'Córdoba');
   // Del SMN, las alertas naranjas y rojas suben el nivel de Piedrazón; las amarillas son muy generales y solo se muestran
   // como información (Piedrazón pone cara de duda, pero no cambia el nivel ni manda avisos)
   AHORA = a; PRON = p; SMN = s; HORAS = h && h.horas && h.horas.length ? h : null;
   const radarFresco = a && edad(a.consultado) <= 60;
-  LOCS = ((l && l.localidades) || []).map(f => ({ ...f, dias: (p && p.localidades[f.localidad]) || [], radar: radarFresco ? (a.localidades || {})[f.localidad] || null : null }));
+  LOCS = ((l && l.localidades) || []).map(f => ({ ...f, prov: PROV, provNombre: PROV_NOMBRE, dias: (p && p.localidades[f.localidad]) || [], radar: radarFresco ? (a.localidades || {})[f.localidad] || null : null }));
   if (HORAS) {
     // conteo por hora: [moderado, alto]
     HORAS.conteo = HORAS.horas.map((_, i) => {
@@ -70,22 +108,28 @@ async function cargar() {
   CARGADO = Date.now();
 }
 const porNombre = n => LOCS.find(x => x.localidad === n) || null;
-const miLocalidad = () => porNombre(PREF.get('localidad', null));
+// tu localidad, si es de la provincia que se está mirando
+const miLocalidad = () => PREF.get('provincia', 'cordoba') === PROV ? porNombre(PREF.get('localidad', null)) : null;
+const esMia = f => !!f && PREF.get('localidad', null) === f.localidad && PREF.get('provincia', 'cordoba') === f.prov;
+const todaLa = () => PROV === 'cordoba' ? 'Toda la provincia' : PROV === 'ciudad-de-buenos-aires' ? 'Toda la ciudad' : `Toda la provincia (${PROV_NOMBRE})`;
+const conProv = f => f.prov && f.prov !== 'cordoba' && !f.localidad.includes(f.provNombre) ? `${f.localidad} (${f.provNombre})` : f.localidad;
+const enlace = f => `?localidad=${encodeURIComponent(f.localidad)}${f.prov && f.prov !== 'cordoba' ? `&provincia=${f.prov}` : ''}`;
 
 // ---------------------------------------------------------------- niveles de Piedrazón
 const ORDEN_SMN = { amarillo: 1, naranja: 2, rojo: 3 };
-function alertasDe(nombre) {
-  const ids = (SMN && SMN.localidades && SMN.localidades[nombre]) || [];
-  return SMN ? SMN.alertas.filter(a => ids.includes(a.id)) : [];
+function alertasDe(f) {
+  const S = f.smn || SMN;
+  const ids = (S && S.localidades && S.localidades[f.localidad]) || [];
+  return S ? S.alertas.filter(a => ids.includes(a.id)) : [];
 }
-const smnDe = nombre => Math.max(0, ...alertasDe(nombre).map(a => ORDEN_SMN[a.nivel] || 0));
+const smnDe = f => Math.max(0, ...alertasDe(f).map(a => ORDEN_SMN[a.nivel] || 0));
 const fuertes = alertas => alertas.filter(a => (ORDEN_SMN[a.nivel] || 0) >= 2);
 const amarillas = alertas => alertas.filter(a => a.nivel === 'amarillo');
 
 function nivelLocalidad(f) {
   if (f.radar && f.radar.nivel === 'granizo probable') return ['furioso', `¡Granizo probable a ${f.radar.km} km de ${esc(f.localidad)}! No salgas y alejate de las ventanas.`];
   if (f.radar) return ['enojado', `El radar ve una tormenta fuerte a ${f.radar.km} km de ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
-  const s = Math.min(smnDe(f.localidad), 3);
+  const s = Math.min(smnDe(f), 3);
   if (s >= 2) return ['enojado', `El SMN tiene alerta ${s === 3 ? 'roja' : 'naranja'} por tormentas en ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
   const hoy = f.dias[0] && f.dias[0].riesgo;
   if (hoy === 'alto' || hoy === 'moderado')
@@ -100,7 +144,7 @@ function nivelGeneral() {
   if (prob.length) return ['furioso', `¡Granizo probable cerca de ${locs(prob.length)}! Si estás ahí, no salgas y alejate de las ventanas.`];
   if (afect.length) return ['enojado', `El radar ve tormentas fuertes cerca de ${locs(afect.length)}. Si estás ahí, guardá el auto y quedate bajo techo.`];
   const smn = Math.max(0, ...fuertes((SMN && SMN.alertas) || []).map(a => ORDEN_SMN[a.nivel] || 0));
-  const conSMN = LOCS.filter(f => smnDe(f.localidad) >= Math.max(smn, 2)).length;
+  const conSMN = LOCS.filter(f => smnDe(f) >= Math.max(smn, 2)).length;
   const color = { 1: 'amarilla', 2: 'naranja', 3: 'roja' }[smn];
   if (smn >= 2) return ['enojado', `El SMN dio alerta ${color} por tormentas en ${locs(conSMN)}. Los radares todavía no ven granizo, pero guardá el auto y estate atento. Elegí tu localidad para ver si te toca.`];
   const hoy = LOCS.filter(f => f.dias[0] && f.dias[0].riesgo !== 'bajo').length;
@@ -110,7 +154,7 @@ function nivelGeneral() {
 function estado(f = miLocalidad()) {
   const [nivel, texto0] = f ? nivelLocalidad(f) : nivelGeneral();
   // alerta amarilla del SMN: no cambia el nivel, pero si está tranqui Piedrazón pone cara de duda y lo cuenta
-  const am = agruparSMN(amarillas(f ? alertasDe(f.localidad) : (SMN ? SMN.alertas : [])))[0];
+  const am = agruparSMN(amarillas(f ? alertasDe(f) : (SMN ? SMN.alertas : [])))[0];
   const duda = !!am && nivel === 'tranqui';
   const texto = am && (nivel === 'tranqui' || nivel === 'atento')
     ? `${texto0} Ojo: el SMN tiene alerta amarilla por ${esc(String(am.titulo || 'tormentas').toLowerCase())} ${f ? 'acá' : 'en parte de la provincia'}, ${hastaSMN(am)}. No quiere decir que caiga granizo.`
@@ -157,7 +201,7 @@ function textoTramo(t) {
 
 // ---------------------------------------------------------------- utilidades de interfaz
 const chip = r => r ? `<span class="chip ${CLASE_RIESGO[r]}"><span class="punto"></span>${esc(r)}</span>` : '<span class="nota">sin dato</span>';
-function urlDe(f) { return location.origin + location.pathname + (f ? `?localidad=${encodeURIComponent(f.localidad)}` : ''); }
+function urlDe(f) { return location.origin + location.pathname + (f ? enlace(f) : PROV !== 'cordoba' ? `?provincia=${PROV}` : ''); }
 async function compartir(f = miLocalidad()) {
   const e = estado(f);
   const texto = `Piedrazón: ${TITULO[e.nivel]} en ${e.lugar}.`;
@@ -170,22 +214,29 @@ async function compartir(f = miLocalidad()) {
 function saltar(el) { el.classList.remove('salta'); void el.offsetWidth; el.classList.add('salta'); }
 
 // Buscador de localidades con sugerencias, que se usa en el mapa y al elegir tu localidad
-function buscador(input, lista, alElegir) {
+// `candidatas()` da la lista donde buscar: las localidades de la provincia que se mira, o las de todo el país
+function buscador(input, lista, alElegir, candidatas = () => LOCS) {
   let sug = [], marcada = -1;
   const cerrar = () => { lista.hidden = true; input.setAttribute('aria-expanded', 'false'); marcada = -1; };
   const pintar = () => {
     const q = sinTildes(input.value.trim());
     if (!q) return cerrar();
     const rango = f => { const n = sinTildes(f.localidad); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
-    sug = LOCS.filter(f => sinTildes(f.localidad).includes(q)).sort((a, b) => rango(a) - rango(b) || a.localidad.localeCompare(b.localidad)).slice(0, 8);
+    const aca = f => f.prov === PROV ? 0 : 1;
+    sug = candidatas().filter(f => sinTildes(f.localidad).includes(q)).sort((a, b) => rango(a) - rango(b) || aca(a) - aca(b) || a.localidad.localeCompare(b.localidad)).slice(0, 8);
     lista.innerHTML = sug.length
-      ? sug.map((f, i) => `<li role="option" id="${lista.id}-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${esc(f.localidad)}</span>${f.dias[0] ? chip(f.dias[0].riesgo) : ''}</li>`).join('')
+      ? sug.map((f, i) => {
+        const g = f.dias ? f : f.prov === PROV ? porNombre(f.localidad) : null;   // con pronóstico, si es de la provincia que se mira
+        const prov = f.provNombre && f.provNombre !== 'Córdoba' && !f.localidad.includes(f.provNombre) ? ` <span class="nota">· ${esc(f.provNombre)}</span>` : '';
+        return `<li role="option" id="${lista.id}-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${esc(f.localidad)}${prov}</span>${g && g.dias[0] ? chip(g.dias[0].riesgo) : ''}</li>`;
+      }).join('')
       : '<li class="vacio">No hay localidades con ese nombre.</li>';
     lista.hidden = false; input.setAttribute('aria-expanded', 'true');
     if (marcada >= 0) input.setAttribute('aria-activedescendant', `${lista.id}-${marcada}`); else input.removeAttribute('aria-activedescendant');
   };
   const tomar = i => { if (!sug[i]) return; input.value = ''; cerrar(); alElegir(sug[i]); };
   input.addEventListener('input', () => { marcada = -1; pintar(); });
+  input.addEventListener('pintar', pintar);   // cuando llega el índice del país, se rehacen las sugerencias
   input.addEventListener('keydown', e => {
     if (lista.hidden) return;
     if (e.key === 'ArrowDown') { marcada = Math.min(marcada + 1, sug.length - 1); pintar(); e.preventDefault(); }
@@ -198,8 +249,19 @@ function buscador(input, lista, alElegir) {
 }
 
 // ---------------------------------------------------------------- mi localidad
-function ponerLocalidad(f) {
+// Cambia la provincia que se mira: baja sus datos y centra el mapa
+async function irAProvincia(prov) {
+  if (prov === PROV) return;
+  PROV = prov;
+  fichaNombre = null; $('#ficha').hidden = true;
+  await cargar();
+  centrarMapa();
+}
+// f: una localidad de LOCS o del índice del país (con .prov); null = toda la provincia que se mira
+async function ponerLocalidad(f) {
+  if (f && f.prov && f.prov !== PROV) await irAProvincia(f.prov);
   PREF.set('localidad', f ? f.localidad : null);
+  PREF.set('provincia', PROV);
   pintarTodo();
   sincronizarAvisos();
   // elegida desde el chat, se vuelve a Hoy para ver cómo está esa localidad
@@ -212,40 +274,50 @@ function abrirElegirLugar(modo = 'mia') {
   $('#t-lugar').textContent = modoLugar === 'consulta' ? '¿Qué localidad querés ver?' : '¿Dónde estás?';
   $$('#dlg-lugar [data-ubicacion], #dlg-lugar .ubicacion-estado').forEach(el => { el.hidden = modoLugar === 'consulta'; });
   $$('.ubicacion-estado').forEach(p => { p.textContent = ''; });
+  $('[data-provincia]').textContent = 'Ver ' + todaLa().replace(/^T/, 't');
   if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
   setTimeout(() => $('#buscar-lugar').focus(), 50);
+  cargarIndice().then(() => $('#buscar-lugar').dispatchEvent(new Event('pintar')));
 }
 function cerrarElegirLugar() { if (dlg.open) dlg.close(); }
-function lugarElegido(f) {
+async function lugarElegido(f) {
   cerrarElegirLugar();
-  if (modoLugar === 'consulta') { digo(f ? f.localidad : 'Toda la provincia'); decir(f ? RESPUESTAS.localidad(f) : RESPUESTAS.hoy(null)); }
-  else ponerLocalidad(f);
+  if (modoLugar !== 'consulta') return ponerLocalidad(f);
+  digo(f ? f.localidad : todaLa());
+  const g = f && (f.dias ? f : await localidadDe(f.localidad, f.prov));
+  decir(!f ? RESPUESTAS.hoy(null) : g ? RESPUESTAS.localidad(g) : 'Uy, no pude traer los datos de esa localidad. Probá de nuevo en un rato.');
 }
-buscador($('#buscar-lugar'), $('#sug-lugar'), lugarElegido);
+buscador($('#buscar-lugar'), $('#sug-lugar'), lugarElegido, () => INDICE_LISTO || LOCS);
 $('[data-provincia]').addEventListener('click', () => lugarElegido(null));
 $$('[data-elegir-lugar]').forEach(b => b.addEventListener('click', () => abrirElegirLugar()));
-// «Usar mi ubicación»: primero se pregunta a GeoRef (datos.gob.ar, de donde salen las localidades) en qué municipio
-// cae el punto; si no contesta, la localidad más cercana, contando que las ciudades grandes ocupan más que su centro
-// (desde muchos barrios de Córdoba capital, el centro de Saldán o de Villa Allende queda más cerca que el de Córdoba).
+// «Usar mi ubicación»: primero se pregunta a GeoRef (datos.gob.ar, de donde salen las localidades) en qué provincia y
+// municipio cae el punto; si no contesta, la localidad más cercana, contando que las ciudades grandes ocupan más que
+// su centro (desde muchos barrios de Córdoba capital, el centro de Saldán o de Villa Allende queda más cerca que el de
+// Córdoba). Busca en el índice de todo el país.
 const RADIO_KM = { 'Córdoba': 12, 'Río Cuarto': 6, 'Villa María': 5, 'Villa Carlos Paz': 4, 'San Francisco': 4 };
-async function municipioDe(la, lo) {
+const nombreBase = n => sinTildes(n).replace(/ \(.*\)$/, '');
+async function municipioDe(la, lo, todas) {
   const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 6000);
   try {
     const r = await fetch(`https://apis.datos.gob.ar/georef/api/ubicacion?lat=${la}&lon=${lo}`, { signal: ctl.signal });
     if (!r.ok) return null;
     const u = (await r.json()).ubicacion || {};
-    if (!u.municipio || !u.municipio.nombre || (u.provincia && u.provincia.id !== '14')) return null;   // 14: Córdoba
+    if (!u.provincia || !u.provincia.nombre) return null;
+    const prov = corta(u.provincia.nombre), deProv = todas.filter(f => f.provNombre === prov);
+    if (!u.municipio || !u.municipio.nombre) return masCercana(la, lo, deProv);
     const n = sinTildes(u.municipio.nombre), dpto = u.departamento && sinTildes(u.departamento.nombre);
-    // los nombres repetidos llevan el departamento: «Los Chañaritos (dpto. Cruz del Eje)»
-    return LOCS.find(f => sinTildes(f.localidad) === n) || LOCS.find(f => dpto && sinTildes(f.localidad) === `${n} (dpto. ${dpto})`) || null;
+    // los nombres repetidos llevan el departamento o la provincia: «Los Chañaritos (dpto. Cruz del Eje)»
+    const mismas = deProv.filter(f => nombreBase(f.localidad) === n);
+    return mismas.find(f => sinTildes(f.localidad) === n) || mismas.find(f => dpto && sinTildes(f.localidad).includes(`dpto. ${dpto}`)) ||
+      (mismas.length ? masCercana(la, lo, mismas) : masCercana(la, lo, deProv));
   } catch (e) { return null; } finally { clearTimeout(t); }
 }
-function masCercana(la, lo) {
+function masCercana(la, lo, lista) {
   const k = Math.cos(la * Math.PI / 180);
   let mejor = null, dmin = Infinity, km = Infinity;
-  for (const f of LOCS) {
+  for (const f of lista) {
     const d = Math.hypot(f.lat - la, (f.lon - lo) * k) * 111;
-    const efectiva = Math.max(0, d - (RADIO_KM[f.localidad] || 0));
+    const efectiva = Math.max(0, d - ((f.prov === 'cordoba' && RADIO_KM[f.localidad]) || 0));
     if (efectiva < dmin) { dmin = efectiva; mejor = f; km = d; }
   }
   return km > 60 ? null : mejor;
@@ -256,9 +328,11 @@ $$('[data-ubicacion]').forEach(b => b.addEventListener('click', () => {
   avisar('Buscando dónde estás…');
   navigator.geolocation.getCurrentPosition(async pos => {
     const { latitude: la, longitude: lo } = pos.coords;
-    const f = (await municipioDe(la, lo)) || masCercana(la, lo);
-    if (!f) return avisar('Parece que estás fuera de la provincia de Córdoba. Elegí la localidad a mano.');
-    avisar(`Te ubiqué en ${f.localidad}. Si no es tu localidad, buscala acá abajo.`);
+    const indice = await cargarIndice();
+    const todas = indice ? indice.todas : LOCS;
+    const f = (indice && await municipioDe(la, lo, todas)) || masCercana(la, lo, todas);
+    if (!f) return avisar('No encontré ninguna localidad cerca de donde estás. Elegí la localidad a mano.');
+    avisar(`Te ubiqué en ${f.localidad}${f.provNombre && f.provNombre !== 'Córdoba' && !f.localidad.includes(f.provNombre) ? ` (${f.provNombre})` : ''}. Si no es tu localidad, buscala acá abajo.`);
     ponerLocalidad(f);
     setTimeout(cerrarElegirLugar, 1200);
   }, () => avisar('No pudimos usar tu ubicación. Revisá el permiso o elegí la localidad a mano.'), { enableHighAccuracy: true, timeout: 12000, maximumAge: 600000 });
@@ -281,7 +355,7 @@ $('#hero-pz').addEventListener('click', () => {
 
 function pintarHoy() {
   const e = estado();
-  $$('.lugar-texto').forEach(s => { s.textContent = e.f ? e.f.localidad : 'Toda la provincia'; });
+  $$('.lugar-texto').forEach(s => { s.textContent = e.f ? e.f.localidad : todaLa(); });
   const d = fechaDe(hoyISO());
   $('#fecha-hoy').textContent = `${DIAS[d.getDay()][0].toUpperCase()}${DIAS[d.getDay()].slice(1)} ${d.getDate()} de ${MESES[d.getMonth()]}`;
 
@@ -295,12 +369,12 @@ function pintarHoy() {
   const afect = e.f ? [] : LOCS.filter(x => x.radar);
   const lugares = $('#hero-lugares');
   lugares.hidden = !afect.length;
-  lugares.innerHTML = afect.slice(0, 12).map(x => `<a href="?localidad=${encodeURIComponent(x.localidad)}#mapa" data-ver="${esc(x.localidad)}">${esc(x.localidad)}</a>`).join('') +
+  lugares.innerHTML = afect.slice(0, 12).map(x => `<a href="${enlace(x)}#mapa" data-ver="${esc(x.localidad)}">${esc(x.localidad)}</a>`).join('') +
     (afect.length > 12 ? `<span>y ${afect.length - 12} más</span>` : '');
   lugares.querySelectorAll('[data-ver]').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); verEnMapa(a.dataset.ver); }));
 
   // alertas oficiales
-  const alertas = agruparSMN(e.f ? alertasDe(e.f.localidad) : (SMN ? SMN.alertas : []));
+  const alertas = agruparSMN(e.f ? alertasDe(e.f) : (SMN ? SMN.alertas : []));
   const caja = $('#smn-hoy');
   caja.hidden = !alertas.length;
   caja.innerHTML = alertas.map(a => {
@@ -339,6 +413,7 @@ function pintarHoy() {
   const partes = [];
   if (AHORA && AHORA.consultado) { const m = edad(AHORA.consultado); partes.push(`Radar: hace ${m} min`); }
   if (PRON) partes.push(`pronóstico: ${esc(PRON.generado)}`);
+  if (PROV !== 'cordoba') partes.push('fuera de Córdoba, Piedrazón está en prueba');
   $('#actualizado').innerHTML = partes.join(' · ');
 }
 
@@ -423,12 +498,19 @@ function abrirMapa() {
     return;
   }
   if (!mapa) {
-    mapa = L.map('mapa', { scrollWheelZoom: false, dragging: !TACTIL }).setView(CENTRO, 7);
+    mapa = L.map('mapa', { scrollWheelZoom: false, dragging: !TACTIL });
+    centrarMapa();
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 17, attribution: '&copy; OpenStreetMap' }).addTo(mapa);
     zoomConCtrl(mapa);
     pintarMapa();
   }
   setTimeout(() => mapa.invalidateSize(), 0);
+}
+
+function centrarMapa() {
+  if (!mapa) return;
+  if (PROV === 'cordoba' || !LOCS.length) return mapa.setView(CENTRO, 7);
+  mapa.fitBounds(L.latLngBounds(LOCS.map(f => [f.lat, f.lon])), { padding: [20, 20], maxZoom: 10 });
 }
 
 function pintarMapa() {
@@ -556,16 +638,16 @@ function pintarFicha(f) {
   const caja = $('#ficha');
   const dias = (f.dias || []).slice(0, 3).map((d, i) => `<li><b>${esc(nombreDia(d.fecha, i))}</b> ${chip(d.riesgo)}${d.riesgo !== 'bajo' && d.hora ? ` <span class="nota">peor momento cerca de las ${esc(d.hora)} h</span>` : ''}` +
     `<span class="tecnico nota">Energía para tormentas ${d.cape ?? '–'} J/kg · inestabilidad ${d.li ?? '–'} · viento en altura ${d.cizalladura ?? '–'} m/s · 0 °C a ${d.isoterma0_m ?? '–'} m · lluvia ${d.prob_lluvia ?? '–'} %</span></li>`).join('');
-  const esMia = PREF.get('localidad', null) === f.localidad;
+  const mia = esMia(f);
   caja.hidden = false;
   caja.innerHTML = `<h2>${esc(f.localidad)}</h2>
     <div class="pz-ficha"></div>
-    ${agruparSMN(alertasDe(f.localidad)).map(a => `<div class="smn-alerta n-smn-${esc(a.nivel)}"><p><span class="punto"></span><b>Alerta oficial del SMN</b>: ${esc(a.titulo)}, nivel ${esc(a.nivel)}, ${hastaSMN(a)}.</p>` +
+    ${agruparSMN(alertasDe(f)).map(a => `<div class="smn-alerta n-smn-${esc(a.nivel)}"><p><span class="punto"></span><b>Alerta oficial del SMN</b>: ${esc(a.titulo)}, nivel ${esc(a.nivel)}, ${hastaSMN(a)}.</p>` +
       (a.instruccion ? `<details><summary>Qué recomienda el SMN</summary><p>${esc(a.instruccion)}</p></details>` : '') + '</div>').join('')}
     <p>${f.radar ? `<span class="lluvia-fuerte">En este momento: ${esc(f.radar.nivel)} a ${f.radar.km} km</span><span class="tecnico nota"> (${f.radar.max_dbz} dBZ${f.radar.tope_km ? `, tope ${f.radar.tope_km} km` : ''})</span>.` : '<b>En este momento</b>: el radar no ve granizo cerca.'}</p>
     <div><b>Próximos 3 días</b>${dias ? `<ul class="lista-dias">${dias}</ul>` : ' sin pronóstico por ahora.'}</div>
     <div class="fila-botones">
-      <button type="button" class="boton-sec" data-mia ${esMia ? 'disabled' : ''}>${esMia ? 'Es tu localidad' : 'Hacerla mi localidad'}</button>
+      <button type="button" class="boton-sec" data-mia ${mia ? 'disabled' : ''}>${mia ? 'Es tu localidad' : 'Hacerla mi localidad'}</button>
       <button type="button" class="boton-sec" data-compartir-ficha>Compartir</button>
     </div>`;
   Piedrazon.crear(caja.querySelector('.pz-ficha'), { chico: true }).poner(...nivelLocalidad(f));
@@ -601,7 +683,7 @@ function decir(html, { demora = 500 } = {}) {
       li.querySelector('.globo').removeAttribute('aria-label');
       li.querySelector('.globo').innerHTML = html;
       li.querySelectorAll('[data-ver]').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); verEnMapa(a.dataset.ver); }));
-      li.querySelectorAll('[data-mia-chat]').forEach(b => b.addEventListener('click', () => { ponerLocalidad(porNombre(b.dataset.miaChat)); b.disabled = true; b.textContent = 'Listo, es tu localidad'; }));
+      li.querySelectorAll('[data-mia-chat]').forEach(b => b.addEventListener('click', () => { ponerLocalidad({ localidad: b.dataset.miaChat, prov: b.dataset.prov }); b.disabled = true; b.textContent = 'Listo, es tu localidad'; }));
       li.querySelectorAll('[data-elegir-lugar]').forEach(b => b.addEventListener('click', () => abrirElegirLugar()));
       $('#chat-rapidas').scrollIntoView({ block: 'end', behavior: 'smooth' });
       fin();
@@ -618,15 +700,16 @@ function digo(texto) {
 
 function tarjetaEstado(f) {
   const e = estado(f);
-  return `<div class="mini-tarjeta"><b>${esc(TITULO[e.nivel])}</b><span>${e.f ? esc(e.f.localidad) : 'Toda la provincia'}</span>` +
-    (e.f ? `<a href="?localidad=${encodeURIComponent(e.f.localidad)}#mapa" data-ver="${esc(e.f.localidad)}">Ver en el mapa →</a>` : '<a href="#mapa">Ver el mapa →</a>') + '</div>';
+  const otra = e.f && e.f.prov !== PROV;   // de otra provincia: el mapa muestra la que se está mirando
+  return `<div class="mini-tarjeta"><b>${esc(TITULO[e.nivel])}</b><span>${e.f ? esc(conProv(e.f)) : esc(todaLa())}</span>` +
+    (otra ? '' : e.f ? `<a href="${enlace(e.f)}#mapa" data-ver="${esc(e.f.localidad)}">Ver en el mapa →</a>` : '<a href="#mapa">Ver el mapa →</a>') + '</div>';
 }
 
 const RESPUESTAS = {
   hoy(f) {
     const e = estado(f);
     const dias = PRON ? PRON.dias.slice(0, 3).map((d, i) => `${nombreDia(d, i).toLowerCase()} ${riesgoDia(e.f, i) || 'sin dato'}`).join(', ') : '';
-    const smn = agruparSMN(e.f ? alertasDe(e.f.localidad) : (SMN ? SMN.alertas : []))[0];
+    const smn = agruparSMN(e.f ? alertasDe(e.f) : (SMN ? SMN.alertas : []))[0];
     const aclaracion = smn ? `<br><br>Ojo: la alerta ${({ amarillo: 'amarilla', naranja: 'naranja', rojo: 'roja' })[smn.nivel] || esc(smn.nivel)} es del SMN, por ${esc(String(smn.titulo || 'tormentas').toLowerCase())} en general, ${hastaSMN(smn)}. No quiere decir que vaya a caer granizo.` : '';
     return `${e.texto}${aclaracion}${dias ? `<br><br>Riesgo de granizo para los próximos días: ${esc(dias)}.` : ''}${tarjetaEstado(e.f)}`;
   },
@@ -657,12 +740,13 @@ const RESPUESTAS = {
   },
   datos() {
     const m = AHORA ? edad(AHORA.consultado) : null;
-    return `Miro tres cosas: los <b>radares del OHMC</b> (Córdoba, Alejandro Roca y Villa Reynolds) cada 15 minutos, los <b>modelos de pronóstico</b> de Open-Meteo cada 6 horas y las <b>alertas del SMN</b>.` +
+    return (PROV === 'cordoba'
+      ? 'Miro tres cosas: los <b>radares del OHMC</b> (Córdoba, Alejandro Roca y Villa Reynolds) cada 15 minutos, los <b>modelos de pronóstico</b> de Open-Meteo cada 6 horas y las <b>alertas del SMN</b>.'
+      : 'Miro tres cosas: los <b>radares de la red nacional</b> que publica el OHMC cada 15 minutos, los <b>modelos de pronóstico</b> de Open-Meteo dos veces por día y las <b>alertas del SMN</b>. Fuera de Córdoba estoy en prueba.') +
       (m != null ? ` El último dato del radar es de hace ${m} min.` : '') + ' En Ajustes tenés cómo se calcula cada nivel.';
   },
   localidad(f) {
-    const mia = PREF.get('localidad', null) === f.localidad;
-    return `${RESPUESTAS.hoy(f)}${mia ? '' : `<button type="button" class="boton-sec" data-mia-chat="${esc(f.localidad)}">Hacerla mi localidad</button>`}`;
+    return `${RESPUESTAS.hoy(f)}${esMia(f) ? '' : `<button type="button" class="boton-sec" data-mia-chat="${esc(f.localidad)}" data-prov="${esc(f.prov)}">Hacerla mi localidad</button>`}`;
   },
 };
 
@@ -731,8 +815,9 @@ async function activarAvisos() {
   const reg = await navigator.serviceWorker.ready;
   const sub = (await reg.pushManager.getSubscription()) || await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: bytesDeClave(AVISOS.clave) });
   const umbral = PREF.get('umbral', 'enojado');
-  await alServicio('/suscribir', { subscription: sub.toJSON(), localidad: f.localidad, umbral });
-  PREF.set('push', { localidad: f.localidad, umbral });
+  const clave = claveAviso(f.localidad, PROV_NOMBRE);
+  await alServicio('/suscribir', { subscription: sub.toJSON(), localidad: clave, umbral });
+  PREF.set('push', { localidad: clave, nombre: f.localidad, umbral });
 }
 async function apagarAvisos() {
   PREF.set('push', null);
@@ -747,10 +832,11 @@ async function sincronizarAvisos() {
   const p = PREF.get('push', null);
   if (!p || !AVISOS.url || !avisosPosibles()) return;
   if (Notification.permission !== 'granted') { PREF.set('push', null); return pintarAjustes(); }
+  if (PREF.get('provincia', 'cordoba') !== PROV) return;   // se está mirando otra provincia: no se toca
   const f = miLocalidad();
   if (!f) { await apagarAvisos(); return pintarAjustes(); }
   const reg = await navigator.serviceWorker.ready;
-  if (p.localidad === f.localidad && p.umbral === PREF.get('umbral', 'enojado') && await reg.pushManager.getSubscription()) return;
+  if (p.localidad === claveAviso(f.localidad, PROV_NOMBRE) && p.umbral === PREF.get('umbral', 'enojado') && await reg.pushManager.getSubscription()) return;
   try { await activarAvisos(); } catch (e) { /* se reintenta en la próxima apertura */ }
   pintarAjustes();
 }
@@ -770,7 +856,7 @@ function pintarAvisos() {
   } else if (permiso === 'denied') {
     texto.textContent = 'Bloqueaste los avisos para este sitio. Podés habilitarlos desde los ajustes del navegador.';
   } else if (interruptor.checked) {
-    texto.textContent = `Listo: te avisamos cuando ${p.localidad} llegue a «${Piedrazon.ETIQUETA[p.umbral]}» o más, aunque tengas la app cerrada.`;
+    texto.textContent = `Listo: te avisamos cuando ${p.nombre || p.localidad} llegue a «${Piedrazon.ETIQUETA[p.umbral]}» o más, aunque tengas la app cerrada.`;
   } else {
     texto.textContent = miLocalidad() ? `Te avisamos solo por ${miLocalidad().localidad}, una vez por nivel y por día.` : 'Primero elegí tu localidad, acá arriba.';
   }
@@ -811,7 +897,7 @@ $('#btn-instalar').addEventListener('click', async () => {
 
 // ---------------------------------------------------------------- pestañas
 const PESTANAS = ['hoy', 'mapa', 'cuis', 'ajustes'];
-const TITULO_PAGINA = { hoy: 'Piedrazón · Granizo en Córdoba', mapa: 'Mapa · Piedrazón', cuis: 'El Cuis · Piedrazón', ajustes: 'Ajustes · Piedrazón' };
+const TITULO_PAGINA = { hoy: 'Piedrazón · ¿Cae piedra hoy?', mapa: 'Mapa · Piedrazón', cuis: 'El Cuis · Piedrazón', ajustes: 'Ajustes · Piedrazón' };
 let pestana = null;
 function irA(p, { foco = true } = {}) {
   if (!PESTANAS.includes(p)) p = 'hoy';
@@ -861,8 +947,12 @@ async function avisosLeidos() {
 
 // ---------------------------------------------------------------- arranque
 (async () => {
+  const param = new URLSearchParams(location.search);
+  // un enlace (o un aviso) de otra provincia la muestra, sin cambiar tu localidad
+  if (/^[a-z-]+$/.test(param.get('provincia') || '')) PROV = param.get('provincia');
+  else if (param.get('localidad')) PROV = 'cordoba';
   await cargar();
-  const pedida = new URLSearchParams(location.search).get('localidad');
+  const pedida = param.get('localidad');
   const f = pedida && LOCS.find(x => sinTildes(x.localidad) === sinTildes(pedida));
   pintarHoy();
   if (pedida) { try { history.replaceState(null, '', location.pathname + (f ? '#mapa' : location.hash)); } catch (e) { /* sin historial */ } }
