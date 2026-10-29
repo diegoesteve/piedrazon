@@ -1,62 +1,71 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-29 05:00",
+ "consultado": "2026-10-29 05:15",
  "radares": {
-  "RMA16": "2026-10-29 04:39",
-  "RMA1": "2026-10-29 04:41",
-  "RMA17": "2026-10-29 04:46"
+  "RMA17": "2026-10-29 05:02",
+  "RMA16": "2026-10-29 05:04",
+  "RMA1": "2026-10-29 05:00"
  },
  "nucleos": [
   {
    "lat": -31.4591,
    "lon": -64.7944,
-   "max_dbz": 52,
+   "max_dbz": 51,
    "tope_km": 5.4,
    "radar": "RMA1",
    "nivel": null,
    "descartado": "tope bajo (5.4 km)"
   },
   {
-   "lat": -31.5131,
-   "lon": -64.7621,
-   "max_dbz": 45,
-   "tope_km": 5.4,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -33.2129,
-   "lon": -65.0994,
-   "max_dbz": 44,
-   "tope_km": 3.0,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (3.0 km)"
-  },
-  {
-   "lat": -31.648,
+   "lat": -31.63,
    "lon": -64.6975,
-   "max_dbz": 43,
+   "max_dbz": 46,
    "tope_km": 2.4,
    "radar": "RMA1",
    "nivel": null,
    "descartado": "tope bajo (2.4 km)"
   },
   {
-   "lat": -31.441,
-   "lon": -64.4071,
-   "max_dbz": 43,
+   "lat": -31.2787,
+   "lon": -64.7083,
+   "max_dbz": 45,
+   "tope_km": 2.4,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (2.4 km)"
+  },
+  {
+   "lat": -31.3419,
+   "lon": -64.3856,
+   "max_dbz": 44,
    "tope_km": 1.2,
    "radar": "RMA1",
    "nivel": null,
    "descartado": "tope bajo (1.2 km)"
   },
   {
-   "lat": -32.6195,
-   "lon": -64.9128,
+   "lat": -31.5221,
+   "lon": -64.7621,
+   "max_dbz": 43,
+   "tope_km": 5.4,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
+   "lat": -31.441,
+   "lon": -64.4286,
    "max_dbz": 42,
-   "tope_km": 7.2,
+   "tope_km": 1.2,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (1.2 km)"
+  },
+  {
+   "lat": -32.4197,
+   "lon": -64.9237,
+   "max_dbz": 41,
+   "tope_km": 6.6,
    "radar": "RMA17",
    "nivel": null
   }
