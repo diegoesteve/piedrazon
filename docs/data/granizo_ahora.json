@@ -1,46 +1,63 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-28 21:00",
+ "consultado": "2026-10-28 21:15",
  "radares": {
-  "RMA1": "2026-10-28 20:49",
-  "RMA16": "2026-10-28 20:44"
+  "RMA16": "2026-10-28 21:01",
+  "RMA1": "2026-10-28 20:58"
  },
  "nucleos": [
   {
-   "lat": -33.2129,
-   "lon": -65.0773,
-   "max_dbz": 63,
-   "tope_km": 4.8,
+   "lat": -33.2038,
+   "lon": -65.1215,
+   "max_dbz": 56,
+   "tope_km": 7.8,
    "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (4.8 km)"
+   "nivel": "posible granizo"
   },
   {
    "lat": -31.4861,
    "lon": -64.7836,
-   "max_dbz": 57,
+   "max_dbz": 54,
    "tope_km": 5.4,
    "radar": "RMA1",
    "nivel": null,
    "descartado": "tope bajo (5.4 km)"
   },
   {
-   "lat": -33.682,
+   "lat": -33.628,
+   "lon": -65.3424,
+   "max_dbz": 49,
+   "tope_km": 1.8,
+   "radar": "RMA16",
+   "nivel": null,
+   "descartado": "tope bajo (1.8 km)"
+  },
+  {
+   "lat": -33.709,
    "lon": -65.254,
-   "max_dbz": 51,
+   "max_dbz": 45,
    "tope_km": 1.2,
    "radar": "RMA16",
    "nivel": null,
    "descartado": "tope bajo (1.2 km)"
   },
   {
-   "lat": -33.1857,
-   "lon": -65.4197,
-   "max_dbz": 45,
-   "tope_km": 3.0,
+   "lat": -33.1948,
+   "lon": -65.4417,
+   "max_dbz": 43,
+   "tope_km": 2.4,
    "radar": "RMA16",
    "nivel": null,
-   "descartado": "tope bajo (3.0 km)"
+   "descartado": "tope bajo (2.4 km)"
+  },
+  {
+   "lat": -31.3509,
+   "lon": -64.4286,
+   "max_dbz": 42,
+   "tope_km": 1.8,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (1.8 km)"
   }
  ],
  "localidades": {}
