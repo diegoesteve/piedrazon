@@ -72,30 +72,31 @@ function edad(fechaHora) {
 }
 
 let AHORA = null, PRON = null, SMN = null, HORAS = null, LOCS = [], CARGADO = 0;
-const ARCHIVOS = ['granizo_ahora.json', 'granizo_pronostico.json', 'localidades.json', 'smn.json', 'granizo_horas.json'];
+const ARCHIVOS = ['granizo_ahora.json', 'granizo_pronostico.json', 'localidades.json', 'smn.json', 'granizo_horas.json', 'granizo_reciente.json'];
 // Datos de una localidad de otra provincia, solo para contestar en el chat sin cambiar lo que se está mirando
 async function localidadDe(nombre, prov) {
   if (prov === PROV) return porNombre(nombre);
   const base = baseDe(prov);
-  const [a, p, l, s] = await Promise.all(ARCHIVOS.slice(0, 4).map(n => leer(n, base)));
+  const [a, p, l, s, , r] = await Promise.all(ARCHIVOS.map(n => n === 'granizo_horas.json' ? null : leer(n, base)));
   const f = ((l && l.localidades) || []).find(x => x.localidad === nombre);
   if (!f) return null;
   const radarFresco = a && edad(a.consultado) <= 60;
   return { ...f, prov, provNombre: corta((l && l.provincia) || 'Córdoba'), smn: s || { alertas: [], localidades: {} }, dias: (p && p.localidades[nombre]) || [],
-    radar: radarFresco ? (a.localidades || {})[nombre] || null : null };
+    radar: radarFresco ? (a.localidades || {})[nombre] || null : null, reciente: ((r && r.localidades) || {})[nombre] || [] };
 }
 async function cargar() {
-  let [a, p, l, s, h] = await Promise.all(ARCHIVOS.map(n => leer(n)));
+  let [a, p, l, s, h, r] = await Promise.all(ARCHIVOS.map(n => leer(n)));
   if (!l && PROV !== 'cordoba') {   // una provincia sin datos: se vuelve a Córdoba
     PROV = 'cordoba';
-    [a, p, l, s, h] = await Promise.all(ARCHIVOS.map(n => leer(n)));
+    [a, p, l, s, h, r] = await Promise.all(ARCHIVOS.map(n => leer(n)));
   }
   PROV_NOMBRE = corta((l && l.provincia) || 'Córdoba');
   // Del SMN, las alertas naranjas y rojas suben el nivel de Piedrazón; las amarillas son muy generales y solo se muestran
   // como información (Piedrazón pone cara de duda, pero no cambia el nivel ni manda avisos)
   AHORA = a; PRON = p; SMN = s; HORAS = h && h.horas && h.horas.length ? h : null;
   const radarFresco = a && edad(a.consultado) <= 60;
-  LOCS = ((l && l.localidades) || []).map(f => ({ ...f, prov: PROV, provNombre: PROV_NOMBRE, dias: (p && p.localidades[f.localidad]) || [], radar: radarFresco ? (a.localidades || {})[f.localidad] || null : null }));
+  LOCS = ((l && l.localidades) || []).map(f => ({ ...f, prov: PROV, provNombre: PROV_NOMBRE, dias: (p && p.localidades[f.localidad]) || [], radar: radarFresco ? (a.localidades || {})[f.localidad] || null : null,
+    reciente: ((r && r.localidades) || {})[f.localidad] || [] }));
   if (HORAS) {
     // conteo por hora: [moderado, alto]
     HORAS.conteo = HORAS.horas.map((_, i) => {
@@ -197,6 +198,51 @@ function textoTramo(t) {
   const i = (PRON && PRON.dias.indexOf(t.dia)) ?? -1;
   const dia = i === 0 ? 'hoy' : i === 1 ? 'mañana' : `el ${DIAS[fechaDe(t.dia).getDay()]} ${fechaDe(t.dia).getDate()}`;
   return `${dia} de ${t.desde} a ${t.hasta} h (riesgo ${NIVEL[t.max]})`;
+}
+
+// ---------------------------------------------------------------- lo que vio el radar en las últimas 24 horas
+// granizo_reciente.json: por localidad, cada pasada del radar con granizo [hora, nivel, km, dBZ, tope]. Las pasadas
+// seguidas (menos de 40 minutos entre una y otra) son la misma tormenta: se juntan y se muestra lo más fuerte.
+const ORDEN_RADAR = { 'posible granizo': 1, 'granizo probable': 2 };
+function episodios(lista) {
+  const out = [];
+  for (const [hora, nivel, km, dbz, tope] of lista || []) {
+    const t = new Date(hora.replace(' ', 'T') + ':00-03:00'), e = { nivel, km, dbz, tope }, ult = out[out.length - 1];
+    if (ult && t - ult.t <= 40 * 60000) {
+      ult.fin = hora; ult.t = t;
+      if (ORDEN_RADAR[nivel] > ORDEN_RADAR[ult.peor.nivel] || (nivel === ult.peor.nivel && km < ult.peor.km)) ult.peor = e;
+    } else out.push({ ini: hora, fin: hora, t, peor: e });
+  }
+  return out.reverse();   // lo más reciente primero
+}
+function cuandoFue(hora) {
+  const [d, hm] = hora.split(' '), h = Number(hm.slice(0, 2));
+  const ayer = claveHora(new Date(Date.now() - 864e5)).slice(0, 10);
+  return { dia: d === hoyISO() ? 'hoy' : d === ayer ? 'ayer' : `el ${Number(d.slice(8))}/${Number(d.slice(5, 7))}`, hhmm: `${h}:${hm.slice(3)}`, art: h === 1 ? 'a la' : 'a las' };
+}
+// «hoy a la 1:30 h» o «hoy de 1:13 a 1:30 h»
+function cuandoEpisodio(ep) {
+  const a = cuandoFue(ep.ini), b = cuandoFue(ep.fin);
+  if (ep.ini === ep.fin) return `${a.dia} ${a.art} ${a.hhmm} h`;
+  return a.dia === b.dia ? `${a.dia} de ${a.hhmm} a ${b.hhmm} h` : `${a.dia} ${a.art} ${a.hhmm} h hasta ${b.dia} ${b.art} ${b.hhmm} h`;
+}
+const km1 = x => String(x).replace('.', ',');
+const mayus = t => t.charAt(0).toUpperCase() + t.slice(1);
+function textoEpisodio(ep, lugar) {
+  return `${mayus(cuandoEpisodio(ep))}: <b>${esc(ep.peor.nivel)}</b> a ${km1(ep.peor.km)} km${lugar ? ` de ${esc(lugar)}` : ''}` +
+    `<span class="tecnico nota"> (${ep.peor.dbz} dBZ${ep.peor.tope ? `, tope ${km1(ep.peor.tope)} km` : ''})</span>`;
+}
+// Para una localidad: lista de tormentas; para la provincia: las localidades, de la más reciente a la más vieja
+function htmlReciente(f) {
+  if (f) {
+    const eps = episodios(f.reciente);
+    return eps.length ? `<ul class="lista-reciente">${eps.slice(0, 4).map(ep => `<li><span class="punto" style="--c:${COLOR_RADAR[ep.peor.nivel]}"></span><span>${textoEpisodio(ep)}</span></li>`).join('')}</ul>` : '';
+  }
+  const conAlgo = LOCS.map(x => [x, episodios(x.reciente)[0]]).filter(([, ep]) => ep).sort((x, y) => y[1].t - x[1].t);
+  if (!conAlgo.length) return '';
+  return `<p class="nota">El radar vio granizo cerca de ${plural(conAlgo.length, 'localidad', 'localidades')}:</p><div class="lugares-recientes">` +
+    conAlgo.slice(0, 12).map(([x, ep]) => `<a href="${enlace(x)}#mapa" data-ver="${esc(x.localidad)}"><span class="punto" style="--c:${COLOR_RADAR[ep.peor.nivel]}"></span>${esc(x.localidad)} <span class="nota">${esc(cuandoFue(ep.fin).dia === 'hoy' ? cuandoFue(ep.fin).hhmm + ' h' : cuandoFue(ep.fin).dia)}</span></a>`).join('') +
+    (conAlgo.length > 12 ? `<span class="nota">y ${conAlgo.length - 12} más</span>` : '') + '</div>';
 }
 
 // ---------------------------------------------------------------- utilidades de interfaz
@@ -384,6 +430,12 @@ function pintarHoy() {
       (a.nivel === 'amarillo' ? '<p class="nota">Es por tormentas en general, no un aviso de granizo: no cambia el nivel de Piedrazón.</p>' : '') +
       (a.instruccion ? `<details><summary>Qué recomienda el SMN</summary><p>${esc(a.instruccion)}</p></details>` : '') + '</div>';
   }).join('');
+
+  // últimas 24 horas
+  const rec = htmlReciente(e.f), cajaRec = $('#reciente-hoy');
+  cajaRec.hidden = !rec;
+  $('#reciente-lista').innerHTML = rec;
+  $$('#reciente-lista [data-ver]').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); verEnMapa(a.dataset.ver); }));
 
   // próximas horas
   const i0 = indiceAhora(), horas = $('#horas'), nota = $('#horas-nota');
@@ -636,6 +688,7 @@ function pintarFicha(f) {
     ${agruparSMN(alertasDe(f)).map(a => `<div class="smn-alerta n-smn-${esc(a.nivel)}"><p><span class="punto"></span><b>Alerta oficial del SMN</b>: ${esc(a.titulo)}, nivel ${esc(a.nivel)}, ${hastaSMN(a)}.</p>` +
       (a.instruccion ? `<details><summary>Qué recomienda el SMN</summary><p>${esc(a.instruccion)}</p></details>` : '') + '</div>').join('')}
     <p>${f.radar ? `<span class="lluvia-fuerte">En este momento: ${esc(f.radar.nivel)} a ${f.radar.km} km</span><span class="tecnico nota"> (${f.radar.max_dbz} dBZ${f.radar.tope_km ? `, tope ${f.radar.tope_km} km` : ''})</span>.` : '<b>En este momento</b>: el radar no ve granizo cerca.'}</p>
+    ${f.reciente && f.reciente.length ? `<div><b>Últimas 24 horas</b>${htmlReciente(f)}</div>` : ''}
     <div><b>Próximos 3 días</b>${dias ? `<ul class="lista-dias">${dias}</ul>` : ' sin pronóstico por ahora.'}</div>
     <div class="fila-botones">
       <button type="button" class="boton-sec" data-mia ${mia ? 'disabled' : ''}>${mia ? 'Es tu localidad' : 'Hacerla mi localidad'}</button>
@@ -702,7 +755,9 @@ const RESPUESTAS = {
     const dias = PRON ? PRON.dias.slice(0, 3).map((d, i) => `${nombreDia(d, i).toLowerCase()} ${riesgoDia(e.f, i) || 'sin dato'}`).join(', ') : '';
     const smn = agruparSMN(e.f ? alertasDe(e.f) : (SMN ? SMN.alertas : []))[0];
     const aclaracion = smn ? `<br><br>Ojo: la alerta ${({ amarillo: 'amarilla', naranja: 'naranja', rojo: 'roja' })[smn.nivel] || esc(smn.nivel)} es del SMN, por ${esc(String(smn.titulo || 'tormentas').toLowerCase())} en general, ${hastaSMN(smn)}. No quiere decir que vaya a caer granizo.` : '';
-    return `${e.texto}${aclaracion}${dias ? `<br><br>Riesgo de granizo para los próximos días: ${esc(dias)}.` : ''}${tarjetaEstado(e.f)}`;
+    const ep = e.f && episodios(e.f.reciente)[0];
+    const antes = ep && !e.f.radar ? `<br><br>Ahora no, pero ${cuandoEpisodio(ep)} el radar vio ${esc(ep.peor.nivel)} a ${km1(ep.peor.km)} km.` : '';
+    return `${e.texto}${antes}${aclaracion}${dias ? `<br><br>Riesgo de granizo para los próximos días: ${esc(dias)}.` : ''}${tarjetaEstado(e.f)}`;
   },
   cuando(f) {
     const e = estado(f);

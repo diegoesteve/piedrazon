@@ -3,12 +3,12 @@
 //   - Los datos (data/*.json): siempre de la red primero; si no hay conexión, los últimos que se guardaron.
 //   - Los mosaicos del mapa no se guardan.
 // Cambiar VERSION cuando cambie la lista de archivos de APP.
-const VERSION = 'piedrazon-2026-10-28-1';
+const VERSION = 'piedrazon-2026-10-29-1';
 const APP = ['./', 'index.html', 'app.js', 'piedrazon.js', 'cuis.js', 'style.css', 'manifest.webmanifest',
   'iconos/icono-192.png', 'iconos/icono-512.png', 'iconos/apple-touch-icon.png',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
 
-const DATOS = ['granizo_ahora.json', 'granizo_pronostico.json', 'granizo_horas.json', 'localidades.json', 'smn.json'];
+const DATOS = ['granizo_ahora.json', 'granizo_pronostico.json', 'granizo_horas.json', 'localidades.json', 'smn.json', 'granizo_reciente.json'];
 
 self.addEventListener('install', ev => {
   // los datos se guardan sin el ?t=… con el que los pide la app, para tenerlos sin conexión desde la primera visita
