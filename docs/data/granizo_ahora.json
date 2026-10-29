@@ -1,147 +1,125 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-29 09:30",
+ "consultado": "2026-10-29 09:45",
  "radares": {
-  "RMA16": "2026-10-29 09:10",
-  "RMA17": "2026-10-29 09:12",
-  "RMA1": "2026-10-29 09:16"
+  "RMA1": "2026-10-29 09:26",
+  "RMA16": "2026-10-29 09:34",
+  "RMA17": "2026-10-29 09:28"
  },
  "nucleos": [
   {
-   "lat": -31.5851,
-   "lon": -64.7513,
-   "max_dbz": 57,
-   "tope_km": 5.4,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -31.4771,
+   "lat": -31.4591,
    "lon": -64.7944,
-   "max_dbz": 56,
+   "max_dbz": 51,
+   "tope_km": 7.2,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "eco fijo del terreno"
+  },
+  {
+   "lat": -31.414,
+   "lon": -64.4178,
+   "max_dbz": 48,
+   "tope_km": 1.2,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (1.2 km)"
+  },
+  {
+   "lat": -31.5221,
+   "lon": -64.7621,
+   "max_dbz": 48,
    "tope_km": 5.4,
    "radar": "RMA1",
    "nivel": null,
    "descartado": "tope bajo (5.4 km)"
   },
   {
-   "lat": -32.1284,
-   "lon": -65.0007,
-   "max_dbz": 55,
-   "tope_km": 10.2,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.3742,
-   "lon": -64.9457,
-   "max_dbz": 50,
-   "tope_km": 8.4,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.4288,
-   "lon": -64.9237,
-   "max_dbz": 50,
-   "tope_km": 8.4,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.0645,
-   "lon": -64.9897,
-   "max_dbz": 49,
-   "tope_km": 10.2,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -33.2309,
-   "lon": -65.0884,
+   "lat": -33.1948,
+   "lon": -65.4307,
    "max_dbz": 48,
+   "tope_km": 2.4,
+   "radar": "RMA16",
+   "nivel": null,
+   "descartado": "tope bajo (2.4 km)"
+  },
+  {
+   "lat": -31.9915,
+   "lon": -64.9897,
+   "max_dbz": 47,
+   "tope_km": 8.4,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.4681,
+   "lon": -64.7083,
+   "max_dbz": 46,
+   "tope_km": 4.8,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (4.8 km)"
+  },
+  {
+   "lat": -31.5851,
+   "lon": -64.5362,
+   "max_dbz": 44,
+   "tope_km": 3.0,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (3.0 km)"
+  },
+  {
+   "lat": -33.2129,
+   "lon": -65.0773,
+   "max_dbz": 44,
    "tope_km": 3.0,
    "radar": "RMA16",
    "nivel": null,
    "descartado": "tope bajo (3.0 km)"
   },
   {
-   "lat": -32.2741,
-   "lon": -64.9677,
-   "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -31.2787,
-   "lon": -64.7083,
-   "max_dbz": 46,
-   "tope_km": 2.4,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (2.4 km)"
-  },
-  {
    "lat": -33.7,
    "lon": -65.254,
    "max_dbz": 43,
-   "tope_km": 1.8,
+   "tope_km": 0.6,
    "radar": "RMA16",
    "nivel": null,
-   "descartado": "tope bajo (1.8 km)"
+   "descartado": "tope bajo (0.6 km)"
   },
   {
-   "lat": -33.1767,
-   "lon": -65.4528,
+   "lat": -32.2741,
+   "lon": -64.9677,
    "max_dbz": 43,
-   "tope_km": 4.8,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (4.8 km)"
-  },
-  {
-   "lat": -32.6557,
-   "lon": -64.9128,
-   "max_dbz": 43,
-   "tope_km": 11.4,
+   "tope_km": 7.2,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -31.5221,
-   "lon": -64.7513,
+   "lat": -32.347,
+   "lon": -64.9677,
    "max_dbz": 43,
-   "tope_km": 6.6,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "eco fijo del terreno"
+   "tope_km": 9.0,
+   "radar": "RMA17",
+   "nivel": null
   },
   {
-   "lat": -31.432,
-   "lon": -64.4286,
+   "lat": -32.0645,
+   "lon": -64.9897,
+   "max_dbz": 43,
+   "tope_km": 10.2,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.63,
+   "lon": -64.6975,
    "max_dbz": 41,
-   "tope_km": 0.6,
+   "tope_km": 4.8,
    "radar": "RMA1",
    "nivel": null,
-   "descartado": "tope bajo (0.6 km)"
+   "descartado": "tope bajo (4.8 km)"
   }
  ],
- "localidades": {
-  "La Población": {
-   "nivel": "granizo probable",
-   "km": 5.6,
-   "max_dbz": 55,
-   "tope_km": 10.2,
-   "visto": "2026-10-29 09:12"
-  },
-  "Luyaba": {
-   "nivel": "granizo probable",
-   "km": 7.3,
-   "max_dbz": 55,
-   "tope_km": 10.2,
-   "visto": "2026-10-29 09:12"
-  }
- }
+ "localidades": {}
 }
