@@ -1,20 +1,12 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-29 00:45",
+ "consultado": "2026-10-29 01:00",
  "radares": {
-  "RMA1": "2026-10-29 00:35",
+  "RMA17": "2026-10-29 00:41",
   "RMA16": "2026-10-29 00:25",
-  "RMA17": "2026-10-29 00:32"
+  "RMA1": "2026-10-29 00:44"
  },
  "nucleos": [
-  {
-   "lat": -31.9366,
-   "lon": -62.9891,
-   "max_dbz": 59,
-   "tope_km": 9.6,
-   "radar": "RMA17",
-   "nivel": "posible granizo"
-  },
   {
    "lat": -34.3185,
    "lon": -64.8896,
@@ -31,6 +23,14 @@
    "radar": "RMA16",
    "nivel": null,
    "descartado": "tope bajo (3.6 km)"
+  },
+  {
+   "lat": -31.9366,
+   "lon": -62.9891,
+   "max_dbz": 57,
+   "tope_km": 7.2,
+   "radar": "RMA17",
+   "nivel": "posible granizo"
   },
   {
    "lat": -34.4078,
@@ -83,6 +83,15 @@
    "nivel": null
   },
   {
+   "lat": -31.4591,
+   "lon": -64.7944,
+   "max_dbz": 51,
+   "tope_km": 5.4,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
    "lat": -34.3364,
    "lon": -64.6246,
    "max_dbz": 50,
@@ -124,14 +133,6 @@
    "nivel": null
   },
   {
-   "lat": -32.4015,
-   "lon": -63.2419,
-   "max_dbz": 48,
-   "tope_km": 11.4,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
    "lat": -34.1934,
    "lon": -64.9117,
    "max_dbz": 47,
@@ -141,12 +142,13 @@
    "descartado": "tope bajo (3.6 km)"
   },
   {
-   "lat": -31.441,
-   "lon": -64.7944,
-   "max_dbz": 46,
-   "tope_km": 9.0,
+   "lat": -31.432,
+   "lon": -64.4286,
+   "max_dbz": 45,
+   "tope_km": 3.0,
    "radar": "RMA1",
-   "nivel": null
+   "nivel": null,
+   "descartado": "tope bajo (3.0 km)"
   },
   {
    "lat": -34.4434,
@@ -154,14 +156,6 @@
    "max_dbz": 44,
    "tope_km": 8.4,
    "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -31.9001,
-   "lon": -62.9451,
-   "max_dbz": 44,
-   "tope_km": 9.6,
-   "radar": "RMA17",
    "nivel": null
   },
   {
@@ -189,14 +183,6 @@
    "radar": "RMA16",
    "nivel": null,
    "descartado": "tope bajo (2.4 km)"
-  },
-  {
-   "lat": -32.4379,
-   "lon": -63.198,
-   "max_dbz": 41,
-   "tope_km": 7.2,
-   "radar": "RMA17",
-   "nivel": null
   }
  ],
  "localidades": {
