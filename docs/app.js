@@ -127,9 +127,12 @@ const smnDe = f => Math.max(0, ...alertasDe(f).map(a => ORDEN_SMN[a.nivel] || 0)
 const fuertes = alertas => alertas.filter(a => (ORDEN_SMN[a.nivel] || 0) >= 2);
 const amarillas = alertas => alertas.filter(a => a.nivel === 'amarillo');
 
+// «a las 7:44 h», la hora de la pasada del radar
+const horaRadar = v => v && v.visto ? `${Number(v.visto.slice(11, 13)) === 1 ? 'a la' : 'a las'} ${Number(v.visto.slice(11, 13))}:${v.visto.slice(14, 16)} h` : '';
 function nivelLocalidad(f) {
-  if (f.radar && f.radar.nivel === 'granizo probable') return ['furioso', `¡Granizo probable a ${f.radar.km} km de ${esc(f.localidad)}! No salgas y alejate de las ventanas.`];
-  if (f.radar) return ['enojado', `El radar ve una tormenta fuerte a ${f.radar.km} km de ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
+  const h = horaRadar(f.radar);
+  if (f.radar && f.radar.nivel === 'granizo probable') return ['furioso', `¡Granizo probable a ${f.radar.km} km de ${esc(f.localidad)}${h ? ` (radar ${h})` : ''}! No salgas y alejate de las ventanas.`];
+  if (f.radar) return ['enojado', `${h ? `El radar, ${h}, ve` : 'El radar ve'} una tormenta fuerte a ${f.radar.km} km de ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
   const s = Math.min(smnDe(f), 3);
   if (s >= 2) return ['enojado', `El SMN tiene alerta ${s === 3 ? 'roja' : 'naranja'} por tormentas en ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
   const hoy = f.dias[0] && f.dias[0].riesgo;
@@ -142,8 +145,9 @@ function nivelGeneral() {
   const locs = n => plural(n, 'localidad', 'localidades');
   if (e == null || e > 60) return ['mascota', 'Todavía no tengo datos frescos del radar. Volvé en un rato.'];
   const afect = LOCS.filter(f => f.radar), prob = afect.filter(f => f.radar.nivel === 'granizo probable');
-  if (prob.length) return ['furioso', `¡Granizo probable cerca de ${locs(prob.length)}! Si estás ahí, no salgas y alejate de las ventanas.`];
-  if (afect.length) return ['enojado', `El radar ve tormentas fuertes cerca de ${locs(afect.length)}. Si estás ahí, guardá el auto y quedate bajo techo.`];
+  const ultima = afect.map(f => f.radar).filter(v => v.visto).sort((x, y) => (y.visto > x.visto ? 1 : -1))[0], h = horaRadar(ultima);
+  if (prob.length) return ['furioso', `¡Granizo probable cerca de ${locs(prob.length)}${h ? ` (radar ${h})` : ''}! Si estás ahí, no salgas y alejate de las ventanas.`];
+  if (afect.length) return ['enojado', `${h ? `El radar, ${h}, ve` : 'El radar ve'} tormentas fuertes cerca de ${locs(afect.length)}. Si estás ahí, guardá el auto y quedate bajo techo.`];
   const smn = Math.max(0, ...fuertes((SMN && SMN.alertas) || []).map(a => ORDEN_SMN[a.nivel] || 0));
   const conSMN = LOCS.filter(f => smnDe(f) >= Math.max(smn, 2)).length;
   const color = { 1: 'amarilla', 2: 'naranja', 3: 'roja' }[smn];
@@ -232,15 +236,17 @@ function textoEpisodio(ep, lugar) {
   return `${mayus(cuandoEpisodio(ep))}: <b>${esc(ep.peor.nivel)}</b> a ${km1(ep.peor.km)} km${lugar ? ` de ${esc(lugar)}` : ''}` +
     `<span class="tecnico nota"> (${ep.peor.dbz} dBZ${ep.peor.tope ? `, tope ${km1(ep.peor.tope)} km` : ''})</span>`;
 }
+// Tormentas que ya pasaron: sin la que el radar ve ahora, que ya se muestra arriba
+const pasados = f => episodios(f.reciente).filter(ep => !(f.radar && f.radar.visto && ep.fin === f.radar.visto));
 // Para una localidad: lista de tormentas; para la provincia: las localidades, de la más reciente a la más vieja
 function htmlReciente(f) {
   if (f) {
-    const eps = episodios(f.reciente);
+    const eps = pasados(f);
     return eps.length ? `<ul class="lista-reciente">${eps.slice(0, 4).map(ep => `<li><span class="punto" style="--c:${COLOR_RADAR[ep.peor.nivel]}"></span><span>${textoEpisodio(ep)}</span></li>`).join('')}</ul>` : '';
   }
-  const conAlgo = LOCS.map(x => [x, episodios(x.reciente)[0]]).filter(([, ep]) => ep).sort((x, y) => y[1].t - x[1].t);
+  const conAlgo = LOCS.map(x => [x, pasados(x)[0]]).filter(([, ep]) => ep).sort((x, y) => y[1].t - x[1].t);
   if (!conAlgo.length) return '';
-  return `<p class="nota">El radar vio granizo cerca de ${plural(conAlgo.length, 'localidad', 'localidades')}:</p><div class="lugares-recientes">` +
+  return `<p class="nota">Más temprano (últimas 24 horas), el radar vio granizo cerca de ${plural(conAlgo.length, 'localidad', 'localidades')}. Ya pasó:</p><div class="lugares-recientes">` +
     conAlgo.slice(0, 12).map(([x, ep]) => `<a href="${enlace(x)}#mapa" data-ver="${esc(x.localidad)}"><span class="punto" style="--c:${COLOR_RADAR[ep.peor.nivel]}"></span>${esc(x.localidad)} <span class="nota">${esc(cuandoFue(ep.fin).dia === 'hoy' ? cuandoFue(ep.fin).hhmm + ' h' : cuandoFue(ep.fin).dia)}</span></a>`).join('') +
     (conAlgo.length > 12 ? `<span class="nota">y ${conAlgo.length - 12} más</span>` : '') + '</div>';
 }
@@ -432,7 +438,7 @@ function pintarHoy() {
   }).join('');
 
   // últimas 24 horas
-  const rec = htmlReciente(e.f), cajaRec = $('#reciente-hoy');
+  const rec = e.f ? htmlReciente(e.f) : '', cajaRec = $('#reciente-hoy');
   cajaRec.hidden = !rec;
   $('#reciente-lista').innerHTML = rec;
   $$('#reciente-lista [data-ver]').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); verEnMapa(a.dataset.ver); }));
@@ -563,6 +569,10 @@ function pintarMapa() {
     : e > 60 ? `El último dato del radar es de hace más de una hora (${esc(AHORA.consultado)}).`
     : afect.length ? `<span class="punto n-rojo"></span><b>${afect.some(f => f.radar.nivel === 'granizo probable') ? 'Granizo probable' : 'Posible granizo'}</b> cerca de ${plural(afect.length, 'localidad', 'localidades')} · radar hace ${e} min`
     : `<span class="punto n-verde"></span>Los radares no ven granizo sobre la provincia · hace ${e} min`;
+  const rec = htmlReciente(null), cajaRec = $('#reciente-mapa');
+  cajaRec.hidden = !rec;
+  cajaRec.innerHTML = rec;
+  cajaRec.querySelectorAll('[data-ver]').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); elegir(a.dataset.ver); }));
   if (capaRadar) capaRadar.remove();
   capaRadar = mapa && AHORA && e <= 60 ? L.layerGroup(AHORA.nucleos.map(n => L.circleMarker([n.lat, n.lon], {
     radius: n.nivel ? 9 : 5, color: '#16201C', weight: 1, dashArray: '2 2', fillColor: COLOR_RADAR[n.nivel] || '#f7a600', fillOpacity: .8,
@@ -755,7 +765,7 @@ const RESPUESTAS = {
     const dias = PRON ? PRON.dias.slice(0, 3).map((d, i) => `${nombreDia(d, i).toLowerCase()} ${riesgoDia(e.f, i) || 'sin dato'}`).join(', ') : '';
     const smn = agruparSMN(e.f ? alertasDe(e.f) : (SMN ? SMN.alertas : []))[0];
     const aclaracion = smn ? `<br><br>Ojo: la alerta ${({ amarillo: 'amarilla', naranja: 'naranja', rojo: 'roja' })[smn.nivel] || esc(smn.nivel)} es del SMN, por ${esc(String(smn.titulo || 'tormentas').toLowerCase())} en general, ${hastaSMN(smn)}. No quiere decir que vaya a caer granizo.` : '';
-    const ep = e.f && episodios(e.f.reciente)[0];
+    const ep = e.f && pasados(e.f)[0];
     const antes = ep && !e.f.radar ? `<br><br>Ahora no, pero ${cuandoEpisodio(ep)} el radar vio ${esc(ep.peor.nivel)} a ${km1(ep.peor.km)} km.` : '';
     return `${e.texto}${antes}${aclaracion}${dias ? `<br><br>Riesgo de granizo para los próximos días: ${esc(dias)}.` : ''}${tarjetaEstado(e.f)}`;
   },
