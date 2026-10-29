@@ -1,27 +1,36 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-29 20:15",
+ "consultado": "2026-10-29 20:20",
  "radares": {
-  "RMA1": "2026-10-29 19:57",
   "RMA16": "2026-10-29 19:57",
-  "RMA17": "2026-10-29 20:06"
+  "RMA17": "2026-10-29 20:06",
+  "RMA1": "2026-10-29 20:06"
  },
  "nucleos": [
   {
-   "lat": -31.9711,
+   "lat": -31.9442,
    "lon": -63.4389,
-   "max_dbz": 59,
-   "tope_km": 9.6,
+   "max_dbz": 60,
+   "tope_km": 11.4,
    "radar": "RMA1",
-   "nivel": "posible granizo"
+   "nivel": "granizo probable"
   },
   {
-   "lat": -31.8635,
-   "lon": -63.213,
-   "max_dbz": 57,
-   "tope_km": 8.4,
+   "lat": -31.4771,
+   "lon": -64.7944,
+   "max_dbz": 54,
+   "tope_km": 5.4,
    "radar": "RMA1",
-   "nivel": "posible granizo"
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
+   "lat": -31.8725,
+   "lon": -64.3856,
+   "max_dbz": 53,
+   "tope_km": 6.6,
+   "radar": "RMA1",
+   "nivel": null
   },
   {
    "lat": -33.1948,
@@ -33,13 +42,12 @@
    "descartado": "tope bajo (2.4 km)"
   },
   {
-   "lat": -31.4861,
-   "lon": -64.7944,
-   "max_dbz": 50,
-   "tope_km": 7.2,
+   "lat": -31.8456,
+   "lon": -63.213,
+   "max_dbz": 51,
+   "tope_km": 6.6,
    "radar": "RMA1",
-   "nivel": null,
-   "descartado": "eco fijo del terreno"
+   "nivel": null
   },
   {
    "lat": -33.709,
@@ -51,36 +59,28 @@
    "descartado": "tope bajo (0.6 km)"
   },
   {
-   "lat": -31.441,
-   "lon": -64.8159,
+   "lat": -31.414,
+   "lon": -64.4286,
    "max_dbz": 47,
-   "tope_km": 7.2,
+   "tope_km": 1.2,
    "radar": "RMA1",
    "nivel": null,
-   "descartado": "eco fijo del terreno"
+   "descartado": "tope bajo (1.2 km)"
   },
   {
    "lat": -31.3689,
    "lon": -64.4071,
-   "max_dbz": 46,
+   "max_dbz": 45,
    "tope_km": 0.6,
    "radar": "RMA1",
    "nivel": null,
    "descartado": "tope bajo (0.6 km)"
   },
   {
-   "lat": -31.684,
-   "lon": -62.4491,
-   "max_dbz": 45,
-   "tope_km": 9.0,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.9263,
-   "lon": -63.3205,
-   "max_dbz": 42,
-   "tope_km": 10.2,
+   "lat": -31.2607,
+   "lon": -64.8804,
+   "max_dbz": 43,
+   "tope_km": 6.6,
    "radar": "RMA1",
    "nivel": null
   },
@@ -92,36 +92,54 @@
    "radar": "RMA16",
    "nivel": null,
    "descartado": "tope bajo (0.0 km)"
+  },
+  {
+   "lat": -31.9092,
+   "lon": -63.3518,
+   "max_dbz": 41,
+   "tope_km": 15.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.0337,
+   "lon": -63.9875,
+   "max_dbz": 41,
+   "tope_km": 6.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.639,
+   "lon": -62.4169,
+   "max_dbz": 41,
+   "tope_km": 7.2,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.684,
+   "lon": -62.3738,
+   "max_dbz": 40,
+   "tope_km": 9.6,
+   "radar": "RMA1",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Calchín Oeste": {
-   "nivel": "posible granizo",
-   "km": 6.2,
-   "max_dbz": 57,
-   "tope_km": 8.4,
-   "visto": "2026-10-29 19:57"
-  },
-  "Carrilobo": {
-   "nivel": "posible granizo",
-   "km": 9.3,
-   "max_dbz": 57,
-   "tope_km": 8.4,
-   "visto": "2026-10-29 19:57"
-  },
   "Colazo": {
-   "nivel": "posible granizo",
-   "km": 5.5,
-   "max_dbz": 59,
-   "tope_km": 9.6,
-   "visto": "2026-10-29 19:57"
+   "nivel": "granizo probable",
+   "km": 5.8,
+   "max_dbz": 60,
+   "tope_km": 11.4,
+   "visto": "2026-10-29 20:06"
   },
   "Colonia Videla": {
-   "nivel": "posible granizo",
-   "km": 8.6,
-   "max_dbz": 59,
-   "tope_km": 9.6,
-   "visto": "2026-10-29 19:57"
+   "nivel": "granizo probable",
+   "km": 6.9,
+   "max_dbz": 60,
+   "tope_km": 11.4,
+   "visto": "2026-10-29 20:06"
   }
  }
 }
