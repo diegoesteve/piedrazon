@@ -279,3 +279,13 @@ dialog .buscar-caja input { background: var(--fondo); box-shadow: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* últimas 24 horas */
+.lista-reciente { margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.lista-reciente li { display: flex; align-items: baseline; gap: 8px; background: var(--tarjeta); border-radius: 14px; padding: 10px 12px; box-shadow: var(--sombra); }
+.ficha .lista-reciente li { box-shadow: none; padding: 4px 0; background: none; }
+.lista-reciente .punto { flex: none; transform: translateY(1px); }
+.lugares-recientes { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.lugares-recientes a { display: inline-flex; align-items: center; gap: 6px; background: var(--tarjeta); color: inherit; text-decoration: none; font-weight: 600;
+  font-size: .875rem; padding: 6px 10px; border-radius: 999px; box-shadow: var(--sombra); }
+.lugares-recientes a .nota { font-weight: 400; font-size: .8125rem; }
