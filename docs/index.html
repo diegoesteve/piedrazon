@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=202610290800">
+<link rel="stylesheet" href="style.css?v=202610290815">
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -58,11 +58,6 @@
 
     <div id="smn-hoy" class="smn-caja" hidden></div>
 
-    <div id="reciente-hoy" class="bloque" hidden>
-      <h3>Últimas 24 horas</h3>
-      <div id="reciente-lista"></div>
-    </div>
-
     <div class="bloque">
       <h3>Próximas horas</h3>
       <div id="horas" class="horas"></div>
@@ -72,6 +67,12 @@
     <div class="bloque">
       <h3>Próximos días</h3>
       <div id="dias" class="dias"></div>
+    </div>
+
+    <div id="reciente-hoy" class="bloque" hidden>
+      <h3>Más temprano</h3>
+      <p class="nota">Lo que vio el radar en las últimas 24 horas. Ya pasó.</p>
+      <div id="reciente-lista"></div>
     </div>
 
     <div class="tarjeta tareas">
@@ -102,6 +103,7 @@
       <ul id="sug-mapa" class="sugerencias" role="listbox" hidden></ul>
     </div>
     <p id="radar-estado" class="radar-estado"></p>
+    <div id="reciente-mapa" class="reciente-mapa" hidden></div>
     <div id="mapa" class="mapa"></div>
     <div id="dias-mapa"></div>
     <details class="tarjeta leyenda">
@@ -235,9 +237,9 @@
 </dialog>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="piedrazon.js?v=202610290800"></script>
-<script src="cuis.js?v=202610290800"></script>
-<script src="app.js?v=202610290800"></script>
+<script src="piedrazon.js?v=202610290815"></script>
+<script src="cuis.js?v=202610290815"></script>
+<script src="app.js?v=202610290815"></script>
 <!-- Cloudflare Web Analytics: cuenta visitas sin cookies ni datos personales -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "83643e72d4eb498ebea4cd5510e83adf"}'></script>
 </body>

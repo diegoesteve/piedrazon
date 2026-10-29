@@ -289,3 +289,6 @@ dialog .buscar-caja input { background: var(--fondo); box-shadow: none; }
 .lugares-recientes a { display: inline-flex; align-items: center; gap: 6px; background: var(--tarjeta); color: inherit; text-decoration: none; font-weight: 600;
   font-size: .875rem; padding: 6px 10px; border-radius: 999px; box-shadow: var(--sombra); }
 .lugares-recientes a .nota { font-weight: 400; font-size: .8125rem; }
+.reciente-mapa { margin: 0 0 12px; }
+.reciente-mapa[hidden] { display: none; }
+#reciente-hoy .lista-reciente li, .reciente-mapa a { opacity: .85; }
