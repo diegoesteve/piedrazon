@@ -1,115 +1,110 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-29 11:00",
+ "consultado": "2026-10-29 11:15",
  "radares": {
-  "RMA16": "2026-10-29 10:48",
-  "RMA1": "2026-10-29 10:47"
+  "RMA1": "2026-10-29 10:56",
+  "RMA16": "2026-10-29 10:56",
+  "RMA17": "2026-10-29 10:50"
  },
  "nucleos": [
   {
-   "lat": -30.8174,
-   "lon": -64.2565,
-   "max_dbz": 56,
-   "tope_km": 7.2,
-   "radar": "RMA1",
-   "nivel": "posible granizo"
-  },
-  {
    "lat": -31.45,
    "lon": -64.7944,
-   "max_dbz": 53,
-   "tope_km": 9.0,
+   "max_dbz": 52,
+   "tope_km": 7.2,
    "radar": "RMA1",
-   "nivel": null
+   "nivel": null,
+   "descartado": "eco fijo del terreno"
   },
   {
-   "lat": -30.9623,
-   "lon": -64.1596,
-   "max_dbz": 53,
-   "tope_km": 6.6,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.414,
-   "lon": -64.4286,
+   "lat": -30.8083,
+   "lon": -64.2457,
    "max_dbz": 51,
-   "tope_km": 1.2,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (1.2 km)"
-  },
-  {
-   "lat": -33.1857,
-   "lon": -65.4638,
-   "max_dbz": 48,
-   "tope_km": 3.0,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (3.0 km)"
-  },
-  {
-   "lat": -31.5131,
-   "lon": -64.7621,
-   "max_dbz": 46,
    "tope_km": 5.4,
    "radar": "RMA1",
    "nivel": null,
    "descartado": "tope bajo (5.4 km)"
   },
   {
-   "lat": -33.2038,
-   "lon": -65.0773,
-   "max_dbz": 44,
-   "tope_km": 2.4,
-   "radar": "RMA16",
+   "lat": -31.405,
+   "lon": -64.4286,
+   "max_dbz": 48,
+   "tope_km": 1.8,
+   "radar": "RMA1",
    "nivel": null,
-   "descartado": "tope bajo (2.4 km)"
+   "descartado": "tope bajo (1.8 km)"
+  },
+  {
+   "lat": -31.5311,
+   "lon": -64.7621,
+   "max_dbz": 48,
+   "tope_km": 4.2,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (4.2 km)"
+  },
+  {
+   "lat": -30.9533,
+   "lon": -64.1381,
+   "max_dbz": 47,
+   "tope_km": 5.4,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
   },
   {
    "lat": -33.7,
    "lon": -65.254,
-   "max_dbz": 44,
+   "max_dbz": 45,
    "tope_km": 0.6,
    "radar": "RMA16",
    "nivel": null,
    "descartado": "tope bajo (0.6 km)"
   },
   {
-   "lat": -31.3148,
-   "lon": -64.4178,
-   "max_dbz": 43,
-   "tope_km": 1.2,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (1.2 km)"
+   "lat": -32.356,
+   "lon": -64.9677,
+   "max_dbz": 45,
+   "tope_km": 9.0,
+   "radar": "RMA17",
+   "nivel": null
   },
   {
-   "lat": -33.1767,
-   "lon": -65.4086,
-   "max_dbz": 42,
-   "tope_km": 4.8,
+   "lat": -31.3419,
+   "lon": -64.4178,
+   "max_dbz": 44,
+   "tope_km": 1.8,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (1.8 km)"
+  },
+  {
+   "lat": -31.5941,
+   "lon": -64.5469,
+   "max_dbz": 44,
+   "tope_km": 3.6,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (3.6 km)"
+  },
+  {
+   "lat": -33.1857,
+   "lon": -65.4417,
+   "max_dbz": 44,
+   "tope_km": 3.6,
    "radar": "RMA16",
    "nivel": null,
-   "descartado": "tope bajo (4.8 km)"
+   "descartado": "tope bajo (3.6 km)"
   },
   {
-   "lat": -31.648,
+   "lat": -31.6031,
    "lon": -64.6975,
-   "max_dbz": 42,
-   "tope_km": 4.2,
+   "max_dbz": 41,
+   "tope_km": 3.6,
    "radar": "RMA1",
    "nivel": null,
-   "descartado": "tope bajo (4.2 km)"
+   "descartado": "tope bajo (3.6 km)"
   }
  ],
- "localidades": {
-  "Cañada de Río Pinto": {
-   "nivel": "posible granizo",
-   "km": 8.6,
-   "max_dbz": 56,
-   "tope_km": 7.2,
-   "visto": "2026-10-29 10:47"
-  }
- }
+ "localidades": {}
 }
