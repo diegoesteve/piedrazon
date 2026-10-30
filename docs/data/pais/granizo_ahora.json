@@ -1,72 +1,83 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-30 20:15",
+ "consultado": "2026-10-30 20:30",
  "radares": {
+  "RMA18": "2026-10-30 20:15",
+  "RMA2": "2026-10-30 20:18",
   "RMA6": "2026-10-30 19:54",
-  "RMA11": "2026-10-30 20:03",
-  "RMA12": "2026-10-30 20:05",
-  "RMA19": "2026-10-30 19:55",
-  "RMA2": "2026-10-30 20:00",
-  "RMA18": "2026-10-30 19:59",
+  "RMA11": "2026-10-30 20:20",
+  "RMA19": "2026-10-30 20:12",
+  "RMA12": "2026-10-30 20:14",
   "RMA1": "2026-10-30 19:57",
-  "RMA3": "2026-10-30 19:58"
+  "RMA3": "2026-10-30 19:58",
+  "RMA7": "2026-10-30 20:11",
+  "RMA16": "2026-10-30 20:14",
+  "AR5": "2026-10-30 20:20"
  },
  "nucleos": [
   {
-   "lat": -27.0687,
-   "lon": -64.0598,
-   "max_dbz": 62,
-   "tope_km": 16.4,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -40.393,
-   "lon": -65.9933,
+   "lat": -40.4111,
+   "lon": -65.9444,
    "max_dbz": 62,
    "tope_km": 17.0,
    "radar": "RMA12",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.0698,
-   "lon": -67.8965,
+   "lat": -37.6513,
+   "lon": -68.2043,
+   "max_dbz": 61,
+   "tope_km": 11.7,
+   "radar": "RMA7",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -35.4822,
+   "lon": -68.1004,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "radar": "RMA18",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -35.8077,
+   "lon": -58.1735,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "radar": "RMA2",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.1148,
+   "lon": -67.8196,
    "max_dbz": 59,
    "tope_km": 10.6,
    "radar": "RMA19",
    "nivel": "granizo probable"
   },
   {
-   "lat": -37.6391,
-   "lon": -68.2031,
-   "max_dbz": 59,
-   "tope_km": 17.0,
-   "radar": "RMA18",
+   "lat": -27.1049,
+   "lon": -63.9979,
+   "max_dbz": 58,
+   "tope_km": 15.2,
+   "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.8893,
-   "lon": -67.9624,
-   "max_dbz": 58,
-   "tope_km": 11.7,
+   "lat": -33.5552,
+   "lon": -67.6769,
+   "max_dbz": 56,
+   "tope_km": 8.2,
    "radar": "RMA19",
-   "nivel": "granizo probable"
+   "nivel": "posible granizo"
   },
   {
-   "lat": -35.7988,
-   "lon": -58.0613,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "radar": "RMA2",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -35.4277,
-   "lon": -68.1346,
+   "lat": -36.0653,
+   "lon": -57.7472,
    "max_dbz": 55,
-   "tope_km": 14.7,
-   "radar": "RMA18",
-   "nivel": "granizo probable"
+   "tope_km": 7.0,
+   "radar": "RMA2",
+   "nivel": "posible granizo"
   },
   {
    "lat": -23.0891,
@@ -77,27 +88,43 @@
    "nivel": "posible granizo"
   },
   {
-   "lat": -35.7098,
-   "lon": -58.1622,
-   "max_dbz": 53,
-   "tope_km": 8.8,
-   "radar": "RMA2",
+   "lat": -33.3128,
+   "lon": -67.7208,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -35.9499,
-   "lon": -57.3883,
+   "lat": -37.6479,
+   "lon": -68.1346,
    "max_dbz": 53,
-   "tope_km": 9.4,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -35.2277,
-   "lon": -68.2487,
-   "max_dbz": 53,
-   "tope_km": 14.1,
+   "tope_km": 11.1,
    "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -37.5414,
+   "lon": -67.9193,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -33.4207,
+   "lon": -67.8048,
+   "max_dbz": 53,
+   "tope_km": 13.5,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -35.9411,
+   "lon": -57.3434,
+   "max_dbz": 52,
+   "tope_km": 7.6,
+   "radar": "RMA2",
    "nivel": null
   },
   {
@@ -117,69 +144,106 @@
    "nivel": null
   },
   {
-   "lat": -33.9041,
-   "lon": -67.6879,
-   "max_dbz": 51,
-   "tope_km": 8.2,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -37.0544,
-   "lon": -69.1046,
-   "max_dbz": 51,
+   "lat": -37.2936,
+   "lon": -68.0143,
+   "max_dbz": 52,
    "tope_km": 12.3,
-   "radar": "RMA18",
+   "radar": "RMA7",
    "nivel": null
   },
   {
-   "lat": -37.5331,
-   "lon": -67.952,
-   "max_dbz": 51,
-   "tope_km": 12.3,
-   "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -35.3278,
-   "lon": -68.2487,
-   "max_dbz": 51,
-   "tope_km": 13.5,
-   "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -32.6903,
-   "lon": -67.7318,
-   "max_dbz": 50,
+   "lat": -37.5964,
+   "lon": -67.8718,
+   "max_dbz": 52,
    "tope_km": 10.6,
-   "radar": "RMA19",
+   "radar": "RMA7",
    "nivel": null
   },
   {
-   "lat": -37.1166,
-   "lon": -68.9334,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -36.8674,
-   "lon": -68.1232,
-   "max_dbz": 49,
+   "lat": -35.2641,
+   "lon": -68.1802,
+   "max_dbz": 51,
    "tope_km": 11.1,
    "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -26.1324,
+   "lon": -64.8335,
+   "max_dbz": 51,
+   "tope_km": 13.5,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -37.0449,
+   "lon": -69.1184,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -37.7062,
+   "lon": -68.1568,
+   "max_dbz": 49,
+   "tope_km": 11.7,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -31.7755,
+   "lon": -60.6292,
+   "max_dbz": 49,
+   "tope_km": 15.0,
+   "radar": "AR5",
+   "nivel": null
+  },
+  {
+   "lat": -37.2941,
+   "lon": -67.9178,
+   "max_dbz": 48,
+   "tope_km": 12.9,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -37.3304,
+   "lon": -67.8718,
+   "max_dbz": 48,
+   "tope_km": 12.3,
+   "radar": "RMA7",
    "nivel": null
   }
  ],
  "localidades": {
+  "Castelli": {
+   "nivel": "posible granizo",
+   "km": 6.1,
+   "max_dbz": 55,
+   "tope_km": 7.0,
+   "visto": "2026-10-30 20:18"
+  },
+  "Centro Guerrero": {
+   "nivel": "posible granizo",
+   "km": 6.7,
+   "max_dbz": 55,
+   "tope_km": 7.0,
+   "visto": "2026-10-30 20:18"
+  },
+  "Punta del Agua (Mendoza)": {
+   "nivel": "granizo probable",
+   "km": 5.4,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "visto": "2026-10-30 20:15"
+  },
   "Octavio Pico": {
    "nivel": "granizo probable",
-   "km": 7.3,
-   "max_dbz": 59,
-   "tope_km": 17.0,
-   "visto": "2026-10-30 19:59"
+   "km": 8.4,
+   "max_dbz": 61,
+   "tope_km": 11.7,
+   "visto": "2026-10-30 20:11"
   }
  }
 }
