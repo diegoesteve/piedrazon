@@ -1,66 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-30 14:15",
+ "consultado": "2026-10-30 14:30",
  "radares": {
-  "RMA1": "2026-10-30 13:56",
-  "RMA16": "2026-10-30 13:57",
-  "RMA17": "2026-10-30 14:00"
+  "RMA17": "2026-10-30 14:16",
+  "RMA1": "2026-10-30 14:14",
+  "RMA16": "2026-10-30 14:14"
  },
  "nucleos": [
   {
-   "lat": -33.4748,
-   "lon": -65.5522,
+   "lat": -31.5311,
+   "lon": -64.9773,
    "max_dbz": 60,
-   "tope_km": 10.0,
+   "tope_km": 11.7,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.2246,
+   "lon": -64.7836,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -33.2942,
+   "lon": -65.1657,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.423,
-   "lon": -64.7513,
-   "max_dbz": 57,
-   "tope_km": 11.1,
+   "lat": -31.4861,
+   "lon": -65.2139,
+   "max_dbz": 54,
+   "tope_km": 11.7,
    "radar": "RMA1",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -31.5311,
-   "lon": -65.1709,
-   "max_dbz": 55,
-   "tope_km": 11.1,
+   "lat": -31.4861,
+   "lon": -65.1171,
+   "max_dbz": 54,
+   "tope_km": 11.7,
    "radar": "RMA1",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -31.5851,
-   "lon": -65.0095,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
+   "lat": -31.5887,
+   "lon": -65.1106,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
   }
  ],
  "localidades": {
   "Ambul": {
    "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-10-30 13:56"
-  },
-  "Panaholma": {
-   "nivel": "granizo probable",
-   "km": 6.9,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "visto": "2026-10-30 13:56"
-  },
-  "San Lorenzo": {
-   "nivel": "granizo probable",
-   "km": 8.2,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "visto": "2026-10-30 13:56"
+   "km": 9.7,
+   "max_dbz": 60,
+   "tope_km": 11.7,
+   "visto": "2026-10-30 14:14"
   }
  }
 }
