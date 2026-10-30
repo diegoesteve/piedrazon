@@ -1,135 +1,139 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-29 21:00",
+ "consultado": "2026-10-29 21:15",
  "radares": {
-  "RMA16": "2026-10-29 20:46",
-  "RMA17": "2026-10-29 20:39",
-  "RMA1": "2026-10-29 20:42"
+  "RMA16": "2026-10-29 21:02",
+  "RMA17": "2026-10-29 21:03",
+  "RMA1": "2026-10-29 21:00"
  },
  "nucleos": [
   {
-   "lat": -31.8635,
-   "lon": -63.4174,
-   "max_dbz": 57,
-   "tope_km": 9.0,
-   "radar": "RMA1",
-   "nivel": "posible granizo"
+   "lat": -33.2219,
+   "lon": -65.0773,
+   "max_dbz": 56,
+   "tope_km": 5.4,
+   "radar": "RMA16",
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
   },
   {
-   "lat": -31.8635,
-   "lon": -64.2887,
-   "max_dbz": 55,
-   "tope_km": 7.2,
-   "radar": "RMA1",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -31.4591,
-   "lon": -64.7944,
-   "max_dbz": 51,
-   "tope_km": 6.6,
+   "lat": -31.3419,
+   "lon": -64.3856,
+   "max_dbz": 54,
+   "tope_km": 1.2,
    "radar": "RMA1",
    "nivel": null,
-   "descartado": "eco fijo del terreno"
+   "descartado": "tope bajo (1.2 km)"
   },
   {
-   "lat": -31.7917,
-   "lon": -64.1919,
-   "max_dbz": 49,
-   "tope_km": 6.0,
-   "radar": "RMA1",
+   "lat": -32.1831,
+   "lon": -63.8025,
+   "max_dbz": 51,
+   "tope_km": 9.0,
+   "radar": "RMA17",
    "nivel": null
   },
   {
    "lat": -31.2878,
    "lon": -64.7191,
-   "max_dbz": 49,
+   "max_dbz": 51,
    "tope_km": 2.4,
    "radar": "RMA1",
    "nivel": null,
    "descartado": "tope bajo (2.4 km)"
   },
   {
-   "lat": -33.7,
-   "lon": -65.254,
-   "max_dbz": 45,
-   "tope_km": 1.2,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (1.2 km)"
-  },
-  {
-   "lat": -33.2219,
-   "lon": -65.0663,
-   "max_dbz": 45,
-   "tope_km": 3.6,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (3.6 km)"
-  },
-  {
-   "lat": -33.583,
-   "lon": -65.3755,
-   "max_dbz": 44,
-   "tope_km": 1.2,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (1.2 km)"
-  },
-  {
-   "lat": -32.9815,
-   "lon": -63.3518,
-   "max_dbz": 44,
+   "lat": -31.8456,
+   "lon": -64.235,
+   "max_dbz": 51,
    "tope_km": 6.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.2155,
+   "lon": -64.676,
+   "max_dbz": 47,
+   "tope_km": 7.8,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.7828,
+   "lon": -63.3636,
+   "max_dbz": 47,
+   "tope_km": 5.4,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
+   "lat": -32.6739,
+   "lon": -63.2639,
+   "max_dbz": 46,
+   "tope_km": 9.0,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -31.378,
-   "lon": -64.4071,
-   "max_dbz": 44,
-   "tope_km": 3.0,
+   "lat": -31.441,
+   "lon": -64.8159,
+   "max_dbz": 46,
+   "tope_km": 8.4,
    "radar": "RMA1",
    "nivel": null,
-   "descartado": "tope bajo (3.0 km)"
+   "descartado": "eco fijo del terreno"
   },
   {
-   "lat": -32.7011,
-   "lon": -63.4288,
+   "lat": -31.5131,
+   "lon": -64.7513,
    "max_dbz": 43,
-   "tope_km": 7.8,
+   "tope_km": 5.4,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
+   "lat": -31.441,
+   "lon": -64.4286,
+   "max_dbz": 43,
+   "tope_km": 2.4,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (2.4 km)"
+  },
+  {
+   "lat": -32.8369,
+   "lon": -63.2639,
+   "max_dbz": 42,
+   "tope_km": 7.2,
    "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.8545,
+   "lon": -63.299,
+   "max_dbz": 42,
+   "tope_km": 9.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.63,
+   "lon": -62.1264,
+   "max_dbz": 42,
+   "tope_km": 11.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.5671,
+   "lon": -62.1694,
+   "max_dbz": 42,
+   "tope_km": 7.2,
+   "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {
-  "Despeñaderos": {
-   "nivel": "posible granizo",
-   "km": 7.0,
-   "max_dbz": 55,
-   "tope_km": 7.2,
-   "visto": "2026-10-29 20:42"
-  },
-  "Las Junturas": {
-   "nivel": "posible granizo",
-   "km": 4.9,
-   "max_dbz": 57,
-   "tope_km": 9.0,
-   "visto": "2026-10-29 20:42"
-  },
-  "Los Molinos": {
-   "nivel": "posible granizo",
-   "km": 8.6,
-   "max_dbz": 55,
-   "tope_km": 7.2,
-   "visto": "2026-10-29 20:42"
-  },
-  "Monte Ralo": {
-   "nivel": "posible granizo",
-   "km": 7.7,
-   "max_dbz": 55,
-   "tope_km": 7.2,
-   "visto": "2026-10-29 20:42"
-  }
- }
+ "localidades": {}
 }
