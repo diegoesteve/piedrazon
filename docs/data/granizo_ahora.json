@@ -1,7 +1,66 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-30 14:00",
- "radares": {},
- "nucleos": [],
- "localidades": {}
+ "consultado": "2026-10-30 14:15",
+ "radares": {
+  "RMA1": "2026-10-30 13:56",
+  "RMA16": "2026-10-30 13:57",
+  "RMA17": "2026-10-30 14:00"
+ },
+ "nucleos": [
+  {
+   "lat": -33.4748,
+   "lon": -65.5522,
+   "max_dbz": 60,
+   "tope_km": 10.0,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.423,
+   "lon": -64.7513,
+   "max_dbz": 57,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.5311,
+   "lon": -65.1709,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.5851,
+   "lon": -65.0095,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  }
+ ],
+ "localidades": {
+  "Ambul": {
+   "nivel": "granizo probable",
+   "km": 8.9,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-10-30 13:56"
+  },
+  "Panaholma": {
+   "nivel": "granizo probable",
+   "km": 6.9,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "visto": "2026-10-30 13:56"
+  },
+  "San Lorenzo": {
+   "nivel": "granizo probable",
+   "km": 8.2,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "visto": "2026-10-30 13:56"
+  }
+ }
 }
