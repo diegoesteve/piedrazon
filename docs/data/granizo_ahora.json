@@ -1,352 +1,173 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-30 09:45",
+ "consultado": "2026-10-30 10:00",
  "radares": {
-  "RMA17": "2026-10-30 09:29",
-  "RMA1": "2026-10-30 09:32",
-  "RMA16": "2026-10-30 09:27"
+  "RMA1": "2026-10-30 09:51",
+  "RMA16": "2026-10-30 09:44",
+  "RMA17": "2026-10-30 09:45"
  },
  "nucleos": [
   {
-   "lat": -31.4771,
-   "lon": -64.7944,
+   "lat": -33.0499,
+   "lon": -65.3534,
    "max_dbz": 56,
-   "tope_km": 5.4,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -33.1767,
-   "lon": -65.4528,
-   "max_dbz": 56,
-   "tope_km": 7.8,
+   "tope_km": 9.6,
    "radar": "RMA16",
    "nivel": "posible granizo"
   },
   {
-   "lat": -33.3123,
-   "lon": -65.4749,
+   "lat": -33.2671,
+   "lon": -65.4417,
    "max_dbz": 55,
-   "tope_km": 9.0,
+   "tope_km": 9.6,
    "radar": "RMA16",
    "nivel": "posible granizo"
   },
   {
-   "lat": -33.2309,
-   "lon": -65.0884,
-   "max_dbz": 55,
-   "tope_km": 4.8,
+   "lat": -33.682,
+   "lon": -65.254,
+   "max_dbz": 53,
+   "tope_km": 4.2,
    "radar": "RMA16",
    "nivel": null,
-   "descartado": "tope bajo (4.8 km)"
+   "descartado": "tope bajo (4.2 km)"
   },
   {
-   "lat": -33.3936,
-   "lon": -65.5301,
-   "max_dbz": 54,
-   "tope_km": 7.8,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.6467,
-   "lon": -64.4071,
-   "max_dbz": 52,
-   "tope_km": 8.4,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.7775,
-   "lon": -65.2761,
+   "lat": -31.9442,
+   "lon": -64.9342,
    "max_dbz": 51,
-   "tope_km": 9.0,
+   "tope_km": 7.2,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.8412,
+   "lon": -65.243,
+   "max_dbz": 51,
+   "tope_km": 8.4,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -31.9641,
-   "lon": -63.2309,
-   "max_dbz": 50,
-   "tope_km": 9.0,
+   "lat": -33.2038,
+   "lon": -65.0884,
+   "max_dbz": 51,
+   "tope_km": 3.6,
+   "radar": "RMA16",
+   "nivel": null,
+   "descartado": "tope bajo (3.6 km)"
+  },
+  {
+   "lat": -32.7048,
+   "lon": -65.2099,
+   "max_dbz": 49,
+   "tope_km": 7.8,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -33.2071,
+   "lon": -65.4184,
+   "max_dbz": 49,
+   "tope_km": 10.8,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.3127,
-   "lon": -64.8786,
-   "max_dbz": 50,
+   "lat": -32.2944,
+   "lon": -64.8565,
+   "max_dbz": 47,
    "tope_km": 11.4,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.404,
-   "lon": -64.9117,
-   "max_dbz": 50,
-   "tope_km": 10.8,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.0006,
-   "lon": -65.0007,
-   "max_dbz": 48,
-   "tope_km": 10.8,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.0462,
-   "lon": -63.121,
-   "max_dbz": 48,
-   "tope_km": 10.8,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.9592,
-   "lon": -65.3313,
-   "max_dbz": 48,
-   "tope_km": 9.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.1405,
-   "lon": -65.8614,
-   "max_dbz": 48,
-   "tope_km": 7.8,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.0136,
-   "lon": -65.3424,
-   "max_dbz": 47,
-   "tope_km": 9.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.4207,
-   "lon": -65.6405,
-   "max_dbz": 47,
-   "tope_km": 6.6,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.5469,
-   "lon": -63.2529,
-   "max_dbz": 46,
-   "tope_km": 8.4,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.4651,
-   "lon": -63.3848,
-   "max_dbz": 46,
-   "tope_km": 8.4,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.0069,
-   "lon": -64.9127,
-   "max_dbz": 46,
-   "tope_km": 8.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.8956,
-   "lon": -65.243,
-   "max_dbz": 45,
-   "tope_km": 9.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.1042,
-   "lon": -65.3203,
-   "max_dbz": 45,
-   "tope_km": 7.2,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.0158,
-   "lon": -63.1699,
-   "max_dbz": 44,
-   "tope_km": 8.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -33.7,
-   "lon": -65.254,
-   "max_dbz": 44,
-   "tope_km": 0.6,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (0.6 km)"
-  },
-  {
-   "lat": -33.763,
-   "lon": -65.773,
-   "max_dbz": 44,
-   "tope_km": 6.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -31.4591,
-   "lon": -64.4931,
-   "max_dbz": 43,
-   "tope_km": 2.4,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (2.4 km)"
-  },
-  {
-   "lat": -32.3287,
-   "lon": -64.009,
-   "max_dbz": 43,
-   "tope_km": 8.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -33.574,
-   "lon": -65.3755,
-   "max_dbz": 43,
-   "tope_km": 4.8,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (4.8 km)"
-  },
-  {
-   "lat": -32.1284,
+   "lat": -32.2104,
    "lon": -64.9567,
-   "max_dbz": 42,
-   "tope_km": 12.6,
+   "max_dbz": 47,
+   "tope_km": 12.0,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.6013,
-   "lon": -63.2309,
-   "max_dbz": 42,
+   "lat": -31.45,
+   "lon": -64.7944,
+   "max_dbz": 45,
    "tope_km": 8.4,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -31.441,
-   "lon": -64.4286,
-   "max_dbz": 42,
-   "tope_km": 0.6,
    "radar": "RMA1",
    "nivel": null,
-   "descartado": "tope bajo (0.6 km)"
+   "descartado": "eco fijo del terreno"
   },
   {
-   "lat": -32.0964,
-   "lon": -64.4716,
-   "max_dbz": 42,
-   "tope_km": 7.8,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -33.3846,
-   "lon": -65.6074,
-   "max_dbz": 42,
-   "tope_km": 6.6,
+   "lat": -32.2944,
+   "lon": -65.0332,
+   "max_dbz": 44,
+   "tope_km": 11.4,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -33.0227,
-   "lon": -65.3976,
-   "max_dbz": 42,
-   "tope_km": 7.2,
-   "radar": "RMA16",
+   "lat": -32.101,
+   "lon": -64.9128,
+   "max_dbz": 43,
+   "tope_km": 12.0,
+   "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.0473,
-   "lon": -65.0553,
-   "max_dbz": 42,
+   "lat": -32.0189,
+   "lon": -63.077,
+   "max_dbz": 43,
    "tope_km": 10.8,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.0589,
+   "lon": -65.8172,
+   "max_dbz": 42,
+   "tope_km": 8.4,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.0736,
+   "lat": -32.0827,
    "lon": -64.9677,
-   "max_dbz": 41,
+   "max_dbz": 42,
    "tope_km": 13.2,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.2832,
-   "lon": -64.9677,
+   "lat": -32.3766,
+   "lon": -64.8123,
    "max_dbz": 41,
-   "tope_km": 11.4,
-   "radar": "RMA17",
+   "tope_km": 10.8,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.1053,
-   "lon": -64.7298,
-   "max_dbz": 41,
-   "tope_km": 7.2,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.284,
-   "lon": -64.8159,
-   "max_dbz": 41,
-   "tope_km": 9.0,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.0931,
-   "lon": -64.5252,
+   "lat": -31.9556,
+   "lon": -65.0221,
    "max_dbz": 41,
    "tope_km": 11.4,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.1114,
-   "lon": -65.2209,
-   "max_dbz": 41,
-   "tope_km": 12.6,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.3911,
-   "lon": -63.4819,
+   "lat": -31.9739,
+   "lon": -64.8565,
    "max_dbz": 40,
-   "tope_km": 6.6,
-   "radar": "RMA1",
+   "tope_km": 11.4,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.0931,
-   "lon": -65.0442,
+   "lat": -32.2741,
+   "lon": -62.1757,
    "max_dbz": 40,
    "tope_km": 10.2,
-   "radar": "RMA16",
+   "radar": "RMA17",
    "nivel": null
   }
  ],
