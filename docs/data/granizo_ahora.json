@@ -1,44 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-30 15:00",
+ "consultado": "2026-10-30 15:15",
  "radares": {
-  "RMA16": "2026-10-30 14:46",
-  "RMA1": "2026-10-30 14:50",
-  "RMA17": "2026-10-30 14:49"
+  "RMA16": "2026-10-30 15:03",
+  "RMA17": "2026-10-30 15:05",
+  "RMA1": "2026-10-30 14:59"
  },
  "nucleos": [
   {
-   "lat": -33.1767,
-   "lon": -65.3976,
-   "max_dbz": 63,
-   "tope_km": 10.6,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.4591,
-   "lon": -65.1817,
-   "max_dbz": 60,
-   "tope_km": 14.7,
+   "lat": -31.441,
+   "lon": -65.1709,
+   "max_dbz": 61,
+   "tope_km": 15.2,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.3689,
-   "lon": -65.1494,
-   "max_dbz": 53,
+   "lat": -31.3599,
+   "lon": -65.1171,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.396,
+   "lon": -64.9773,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -33.0227,
+   "lon": -64.989,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.5491,
+   "lon": -65.1064,
+   "max_dbz": 48,
    "tope_km": 14.7,
    "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "Villa de Pocho": {
+  "Los Talares": {
    "nivel": "granizo probable",
-   "km": 9.9,
-   "max_dbz": 60,
-   "tope_km": 14.7,
-   "visto": "2026-10-30 14:50"
+   "km": 7.3,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "visto": "2026-10-30 14:59"
+  },
+  "Salsacate": {
+   "nivel": "granizo probable",
+   "km": 2.5,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "visto": "2026-10-30 14:59"
   }
  }
 }
