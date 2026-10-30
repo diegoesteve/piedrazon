@@ -1,67 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-30 16:15",
+ "consultado": "2026-10-30 16:30",
  "radares": {
-  "RMA1": "2026-10-30 16:02",
-  "RMA16": "2026-10-30 16:00",
-  "RMA17": "2026-10-30 15:54"
+  "RMA16": "2026-10-30 16:16",
+  "RMA1": "2026-10-30 16:11",
+  "RMA17": "2026-10-30 16:11"
  },
  "nucleos": [
   {
-   "lat": -30.7266,
-   "lon": -64.7836,
-   "max_dbz": 55,
+   "lat": -31.3329,
+   "lon": -65.5152,
+   "max_dbz": 57,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.08,
+   "lon": -65.1709,
+   "max_dbz": 56,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.0347,
-   "lon": -65.0741,
-   "max_dbz": 54,
-   "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.1161,
-   "lon": -65.3968,
+   "lat": -30.7266,
+   "lon": -64.7836,
    "max_dbz": 51,
-   "tope_km": 9.4,
+   "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.3329,
-   "lon": -65.4721,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.0709,
-   "lon": -65.2032,
-   "max_dbz": 47,
-   "tope_km": 8.8,
+   "lat": -30.7992,
+   "lon": -64.8482,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "Cruz del Eje": {
+  "Ciénaga del Coro": {
    "nivel": "granizo probable",
-   "km": 2.3,
-   "max_dbz": 55,
+   "km": 9.4,
+   "max_dbz": 56,
    "tope_km": 10.0,
-   "visto": "2026-10-30 16:02"
+   "visto": "2026-10-30 16:11"
   },
-  "Las Playas": {
+  "La Higuera": {
    "nivel": "granizo probable",
-   "km": 6.7,
-   "max_dbz": 55,
+   "km": 9.7,
+   "max_dbz": 56,
    "tope_km": 10.0,
-   "visto": "2026-10-30 16:02"
+   "visto": "2026-10-30 16:11"
   }
  }
 }
