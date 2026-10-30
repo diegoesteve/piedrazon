@@ -1,18 +1,17 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-30 12:45",
+ "consultado": "2026-10-30 12:50",
  "radares": {
-  "RMA17": "2026-10-30 12:18",
-  "AR7": "2026-10-30 12:20",
-  "RMA6": "2026-10-30 12:10",
-  "AR5": "2026-10-30 12:20",
   "RMA16": "2026-10-30 12:19",
   "RMA14": "2026-10-30 12:19",
   "RMA2": "2026-10-30 12:21",
   "RMA15": "2026-10-30 12:13",
   "RMA19": "2026-10-30 12:21",
   "RMA11": "2026-10-30 12:13",
-  "RMA1": "2026-10-30 12:16"
+  "RMA1": "2026-10-30 12:16",
+  "RMA17": "2026-10-30 12:18",
+  "AR7": "2026-10-30 12:20",
+  "AR5": "2026-10-30 12:20"
  },
  "nucleos": [
   {
@@ -30,14 +29,6 @@
    "tope_km": 13.5,
    "radar": "RMA16",
    "nivel": "granizo probable"
-  },
-  {
-   "lat": -37.8947,
-   "lon": -57.879,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "radar": "RMA6",
-   "nivel": "posible granizo"
   },
   {
    "lat": -32.7684,
@@ -88,19 +79,19 @@
    "nivel": null
   },
   {
-   "lat": -32.0732,
-   "lon": -59.4774,
-   "max_dbz": 52,
-   "tope_km": 12.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
    "lat": -36.8599,
    "lon": -59.5419,
    "max_dbz": 52,
    "tope_km": 11.1,
    "radar": "RMA14",
+   "nivel": null
+  },
+  {
+   "lat": -32.0732,
+   "lon": -59.4774,
+   "max_dbz": 52,
+   "tope_km": 12.0,
+   "radar": "AR7",
    "nivel": null
   },
   {
@@ -112,25 +103,9 @@
    "nivel": null
   },
   {
-   "lat": -36.5138,
-   "lon": -59.108,
-   "max_dbz": 50,
-   "tope_km": 9.4,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
    "lat": -31.9231,
    "lon": -60.6181,
    "max_dbz": 49,
-   "tope_km": 15.0,
-   "radar": "AR5",
-   "nivel": null
-  },
-  {
-   "lat": -32.1532,
-   "lon": -60.6181,
-   "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR5",
    "nivel": null
@@ -142,23 +117,17 @@
    "tope_km": 12.3,
    "radar": "RMA19",
    "nivel": null
+  },
+  {
+   "lat": -32.1532,
+   "lon": -60.6181,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR5",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Barrio Colinas Verdes": {
-   "nivel": "posible granizo",
-   "km": 4.8,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "visto": "2026-10-30 12:10"
-  },
-  "Villa Laguna La Brava": {
-   "nivel": "posible granizo",
-   "km": 9.7,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "visto": "2026-10-30 12:10"
-  },
   "El Rodeo (Catamarca)": {
    "nivel": "granizo probable",
    "km": 2.3,
