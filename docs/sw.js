@@ -3,7 +3,7 @@
 //   - Los datos (data/*.json): siempre de la red primero; si no hay conexión, los últimos que se guardaron.
 //   - Los mosaicos del mapa no se guardan.
 // Cambiar VERSION cuando cambie la lista de archivos de APP.
-const VERSION = 'piedrazon-2026-10-31-3';
+const VERSION = 'piedrazon-2026-10-31-4';
 const APP = ['./', 'index.html', 'app.js', 'piedrazon.js', 'cuis.js', 'style.css', 'manifest.webmanifest',
   'iconos/icono-192.png', 'iconos/icono-512.png', 'iconos/apple-touch-icon.png',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
