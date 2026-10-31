@@ -1,14 +1,16 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 02:20",
+ "consultado": "2026-10-31 02:30",
  "radares": {
-  "AR7": "2026-10-31 02:10",
-  "RMA7": "2026-10-31 02:06",
-  "RMA11": "2026-10-31 02:09",
-  "RMA18": "2026-10-31 01:43",
   "RMA17": "2026-10-31 01:51",
+  "RMA11": "2026-10-31 02:09",
   "RMA16": "2026-10-31 02:06",
-  "RMA3": "2026-10-31 02:09"
+  "AR7": "2026-10-31 02:20",
+  "RMA3": "2026-10-31 02:18",
+  "RMA7": "2026-10-31 02:15",
+  "AR5": "2026-10-31 02:10",
+  "RMA15": "2026-10-31 02:20",
+  "RMA12": "2026-10-31 02:21"
  },
  "nucleos": [
   {
@@ -28,36 +30,12 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -39.0649,
-   "lon": -67.5394,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "radar": "RMA7",
-   "nivel": "granizo probable"
-  },
-  {
    "lat": -33.2309,
    "lon": -65.0884,
    "max_dbz": 57,
    "tope_km": 7.6,
    "radar": "RMA16",
    "nivel": "posible granizo"
-  },
-  {
-   "lat": -23.2897,
-   "lon": -62.2279,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "radar": "RMA3",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -39.1277,
-   "lon": -67.4088,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "radar": "RMA7",
-   "nivel": null
   },
   {
    "lat": -32.0463,
@@ -68,34 +46,42 @@
    "nivel": null
   },
   {
-   "lat": -35.6182,
-   "lon": -67.7923,
+   "lat": -39.0919,
+   "lon": -67.48,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -39.1546,
+   "lon": -67.3613,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -24.1703,
+   "lon": -62.76,
    "max_dbz": 53,
-   "tope_km": 12.3,
-   "radar": "RMA18",
+   "tope_km": 11.1,
+   "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -39.9566,
-   "lon": -67.3494,
+   "lat": -28.4431,
+   "lon": -66.0514,
+   "max_dbz": 53,
+   "tope_km": 13.5,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -39.992,
+   "lon": -67.2901,
    "max_dbz": 52,
-   "tope_km": 12.3,
-   "radar": "RMA7",
-   "nivel": null
-  },
-  {
-   "lat": -39.7169,
-   "lon": -67.4325,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "radar": "RMA7",
-   "nivel": null
-  },
-  {
-   "lat": -39.6369,
-   "lon": -66.8626,
-   "max_dbz": 50,
-   "tope_km": 10.0,
+   "tope_km": 10.6,
    "radar": "RMA7",
    "nivel": null
   },
@@ -108,7 +94,31 @@
    "nivel": null
   },
   {
-   "lat": -32.6109,
+   "lat": -39.6636,
+   "lon": -66.8152,
+   "max_dbz": 50,
+   "tope_km": 12.9,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -39.6929,
+   "lon": -66.8861,
+   "max_dbz": 50,
+   "tope_km": 13.5,
+   "radar": "RMA12",
+   "nivel": null
+  },
+  {
+   "lat": -39.7386,
+   "lon": -67.1307,
+   "max_dbz": 49,
+   "tope_km": 11.7,
+   "radar": "RMA12",
+   "nivel": null
+  },
+  {
+   "lat": -32.6287,
    "lon": -59.618,
    "max_dbz": 48,
    "tope_km": 9.6,
@@ -116,85 +126,23 @@
    "nivel": null
   },
   {
-   "lat": -36.6084,
-   "lon": -67.4841,
+   "lat": -31.9415,
+   "lon": -60.6181,
    "max_dbz": 47,
-   "tope_km": 10.0,
-   "radar": "RMA18",
+   "tope_km": 15.0,
+   "radar": "AR5",
+   "nivel": null
+  },
+  {
+   "lat": -29.762,
+   "lon": -60.9157,
+   "max_dbz": 46,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
-  "Barrio Canale": {
-   "nivel": "granizo probable",
-   "km": 8.6,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
-  "Barrio Chacra Monte": {
-   "nivel": "granizo probable",
-   "km": 8.5,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
-  "Barrio El Petróleo": {
-   "nivel": "granizo probable",
-   "km": 2.4,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
-  "Barrio Fátima": {
-   "nivel": "granizo probable",
-   "km": 5.8,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
-  "Barrio Pino Azul": {
-   "nivel": "granizo probable",
-   "km": 4.0,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
-  "Barrio Porvenir": {
-   "nivel": "granizo probable",
-   "km": 7.5,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
-  "General Roca (Río Negro)": {
-   "nivel": "granizo probable",
-   "km": 5.0,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
-  "Paso Córdova (dpto. El Cuy, Río Negro)": {
-   "nivel": "granizo probable",
-   "km": 9.3,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
-  "Paso Córdova (dpto. General Roca, Río Negro)": {
-   "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
-  "Puente Cero": {
-   "nivel": "granizo probable",
-   "km": 5.3,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-10-31 02:06"
-  },
   "La Punilla": {
    "nivel": "posible granizo",
    "km": 9.7,
