@@ -982,8 +982,9 @@ async function sincronizarAvisos() {
   pintarAjustes();
 }
 // ---- barrio (opcional): en ciudades grandes, el radar se mide desde el barrio y no desde el centro de la localidad.
-// Se guarda redondeado a 0,01° (~1 km). Los nombres salen de OpenStreetMap (Nominatim): se busca solo al tocar Enter,
-// sin autocompletar, como pide su política de uso.
+// Se guarda redondeado a 0,01° (~1 km). Los barrios son los lugares (place=neighbourhood, suburb o quarter) de
+// OpenStreetMap a menos de BARRIO_MAX_KM del centro de la localidad: los mismos nombres que se ven en el mapa. Se bajan
+// una vez por localidad desde Overpass y se filtran acá mientras se escribe.
 const BARRIO_MAX_KM = 25;   // igual que MARGEN_KM de scripts/notificar.py
 const redondo = x => Math.round(x * 100) / 100;
 const marcaBarrio = b => `${b.lat},${b.lon},${b.nombre}`;
@@ -992,12 +993,30 @@ function miBarrio() {
   return b && f && b.localidad === claveAviso(f.localidad, PROV_NOMBRE) ? b : null;
 }
 const kmEntre = (la1, lo1, la2, lo2) => Math.hypot(la1 - la2, (lo1 - lo2) * Math.cos(la1 * Math.PI / 180)) * 111.3;
-async function osm(ruta, params) {
-  const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 8000);
-  try {
-    const r = await fetch(`https://nominatim.openstreetmap.org/${ruta}?${new URLSearchParams({ format: 'jsonv2', 'accept-language': 'es', ...params })}`, { signal: ctl.signal });
-    return r.ok ? await r.json() : null;
-  } catch (e) { return null; } finally { clearTimeout(t); }
+let BARRIOS = null;   // { localidad, lista: Promise<[{ nombre, lat, lon }]> }
+function barriosDe(f) {
+  const clave = claveAviso(f.localidad, f.provNombre || PROV_NOMBRE);
+  if (BARRIOS && BARRIOS.localidad === clave) return BARRIOS.lista;
+  const d = 0.25, caja = [f.lat - d, f.lon - d, f.lat + d, f.lon + d].map(x => x.toFixed(4)).join(',');
+  const consulta = `[out:json][timeout:25];nwr[place~"^(neighbourhood|suburb|quarter)$"][name](${caja});out center tags;`;
+  const lista = (async () => {
+    const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 20000);
+    try {
+      const r = await fetch('https://overpass-api.de/api/interpreter?data=' + encodeURIComponent(consulta), { signal: ctl.signal });
+      if (!r.ok) throw new Error(`overpass: HTTP ${r.status}`);
+      const vistos = new Set(), salida = [];
+      for (const e of (await r.json()).elements || []) {
+        const la = e.lat ?? (e.center && e.center.lat), lo = e.lon ?? (e.center && e.center.lon), nombre = (e.tags.name || '').trim();
+        if (la == null || !nombre || sinTildes(nombre) === sinTildes(f.localidad) || vistos.has(sinTildes(nombre))) continue;
+        if (kmEntre(f.lat, f.lon, la, lo) > BARRIO_MAX_KM) continue;
+        vistos.add(sinTildes(nombre));
+        salida.push({ nombre, lat: la, lon: lo });
+      }
+      return salida.sort((x, y) => x.nombre.localeCompare(y.nombre, 'es'));
+    } catch (e) { BARRIOS = null; return null; } finally { clearTimeout(t); }
+  })();
+  BARRIOS = { localidad: clave, lista };
+  return lista;
 }
 function guardarBarrio(nombre, la, lo) {
   const f = miLocalidad();
@@ -1017,39 +1036,41 @@ function pintarBarrio() {
     : `Ahora el radar se mide desde el centro de ${f.localidad}. En una ciudad grande, elegí tu barrio para que el aviso sea por tu zona.`;
 }
 let barrioSug = [];
-$('#form-barrio').addEventListener('submit', async ev => {
-  ev.preventDefault();
-  const f = miLocalidad(), input = $('#buscar-barrio'), lista = $('#sug-barrio'), q = input.value.trim();
-  if (!f || q.length < 3) return;
+async function pintarSugBarrio() {
+  const f = miLocalidad(), lista = $('#sug-barrio'), q = sinTildes($('#buscar-barrio').value.trim());
+  if (!f || q.length < 2) { lista.hidden = true; return; }
   lista.hidden = false;
-  lista.innerHTML = '<li class="vacio">Buscando…</li>';
-  const d = 0.25;   // ~25 km alrededor del centro de la localidad
-  const r = await osm('search', { q: `${q}, ${f.localidad}`, countrycodes: 'ar', limit: 8, bounded: 1,
-    viewbox: `${f.lon - d},${f.lat + d},${f.lon + d},${f.lat - d}` });
-  barrioSug = (r || []).filter(x => kmEntre(f.lat, f.lon, +x.lat, +x.lon) <= BARRIO_MAX_KM)
-    .map(x => ({ nombre: x.name || x.display_name.split(',')[0], detalle: x.display_name.split(',').slice(1, 3).join(',').trim(), lat: +x.lat, lon: +x.lon }));
+  if (!BARRIOS) lista.innerHTML = '<li class="vacio">Buscando los barrios…</li>';
+  const todos = await barriosDe(f);
+  if (sinTildes($('#buscar-barrio').value.trim()) !== q) return;   // se siguió escribiendo
+  if (!todos) { lista.innerHTML = '<li class="vacio">No pude traer los barrios ahora. Probá de nuevo en un rato o usá tu ubicación.</li>'; return; }
+  const rango = x => { const n = sinTildes(x.nombre); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
+  barrioSug = todos.filter(x => sinTildes(x.nombre).includes(q)).sort((x, y) => rango(x) - rango(y)).slice(0, 8);
   lista.innerHTML = barrioSug.length
-    ? barrioSug.map((x, i) => `<li role="option" data-i="${i}"><span>${esc(x.nombre)}</span><span class="nota">${esc(x.detalle)}</span></li>`).join('')
-    : `<li class="vacio">${r ? `No encontré «${esc(q)}» en ${esc(f.localidad)}. Probá con otro nombre o usá tu ubicación.` : 'No pude buscar ahora. Probá de nuevo en un rato.'}</li>`;
-});
-$('#sug-barrio').addEventListener('click', ev => {
-  const li = ev.target.closest('li[data-i]');
-  if (!li) return;
-  const x = barrioSug[Number(li.dataset.i)];
-  $('#sug-barrio').hidden = true; $('#buscar-barrio').value = '';
+    ? barrioSug.map((x, i) => `<li role="option" data-i="${i}"><span>${esc(x.nombre)}</span></li>`).join('')
+    : `<li class="vacio">No encontré «${esc($('#buscar-barrio').value.trim())}» entre los barrios de ${esc(f.localidad)}. Probá con otra parte del nombre o usá tu ubicación.</li>`;
+}
+$('#buscar-barrio').addEventListener('input', pintarSugBarrio);
+$('#buscar-barrio').addEventListener('focus', () => { const f = miLocalidad(); if (f) barriosDe(f); });   // se bajan mientras se escribe
+$('#form-barrio').addEventListener('submit', ev => { ev.preventDefault(); if (barrioSug[0] && !$('#sug-barrio').hidden) elegirBarrio(barrioSug[0]); else pintarSugBarrio(); });
+function elegirBarrio(x) {
+  $('#sug-barrio').hidden = true; $('#buscar-barrio').value = ''; $('#buscar-barrio').blur();
   const error = guardarBarrio(x.nombre, x.lat, x.lon);
   if (error) $('#barrio-estado').textContent = error;
-});
+}
+$('#sug-barrio').addEventListener('click', ev => { const li = ev.target.closest('li[data-i]'); if (li) elegirBarrio(barrioSug[Number(li.dataset.i)]); });
 $('#btn-barrio-ubicacion').addEventListener('click', () => {
-  const estado = $('#barrio-estado');
+  const estado = $('#barrio-estado'), f = miLocalidad();
+  if (!f) return;
   if (!navigator.geolocation) { estado.textContent = 'Este navegador no puede darnos tu ubicación. Buscá tu barrio por nombre.'; return; }
   estado.textContent = 'Buscando dónde estás…';
   navigator.geolocation.getCurrentPosition(async pos => {
     const { latitude: la, longitude: lo } = pos.coords;
-    const r = await osm('reverse', { lat: redondo(la), lon: redondo(lo), zoom: 16 });
-    const a = (r && r.address) || {};
-    const nombre = a.neighbourhood || a.suburb || a.quarter || a.city_district || a.hamlet || a.village || 'tu zona';
-    const error = guardarBarrio(nombre, la, lo);
+    // el nombre: el barrio de OpenStreetMap más cercano (a menos de 3 km); si no hay, «tu zona»
+    const todos = (await barriosDe(f)) || [];
+    let cerca = null, dmin = 3;
+    for (const x of todos) { const d = kmEntre(la, lo, x.lat, x.lon); if (d < dmin) { dmin = d; cerca = x; } }
+    const error = guardarBarrio(cerca ? cerca.nombre : 'tu zona', la, lo);
     if (error) estado.textContent = error;
   }, () => { estado.textContent = 'No pudimos usar tu ubicación. Revisá el permiso o buscá tu barrio por nombre.'; },
   { enableHighAccuracy: false, timeout: 12000, maximumAge: 600000 });
