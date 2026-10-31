@@ -1,61 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 01:15",
+ "consultado": "2026-10-31 01:30",
  "radares": {
+  "RMA7": "2026-10-31 01:15",
+  "RMA18": "2026-10-31 01:18",
   "RMA2": "2026-10-31 01:04",
-  "RMA18": "2026-10-31 01:02",
-  "AR7": "2026-10-31 01:00",
-  "RMA7": "2026-10-31 01:02",
-  "RMA12": "2026-10-31 00:59"
+  "RMA12": "2026-10-31 01:09",
+  "AR7": "2026-10-31 01:20",
+  "AR5": "2026-10-31 01:10"
  },
  "nucleos": [
   {
-   "lat": -39.029,
-   "lon": -67.9905,
-   "max_dbz": 62,
+   "lat": -39.056,
+   "lon": -67.9431,
+   "max_dbz": 66,
    "tope_km": 11.1,
    "radar": "RMA7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -39.0739,
-   "lon": -67.8956,
+   "lat": -39.0919,
+   "lon": -67.8125,
    "max_dbz": 62,
-   "tope_km": 11.1,
+   "tope_km": 11.7,
    "radar": "RMA7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -39.0021,
-   "lon": -68.1686,
+   "lat": -39.1636,
+   "lon": -67.8718,
    "max_dbz": 59,
    "tope_km": 11.7,
    "radar": "RMA7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -39.1098,
-   "lon": -67.9905,
-   "max_dbz": 58,
-   "tope_km": 14.1,
-   "radar": "RMA7",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -39.7969,
-   "lon": -67.9431,
-   "max_dbz": 58,
-   "tope_km": 14.1,
-   "radar": "RMA7",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -39.0919,
-   "lon": -68.0855,
+   "lat": -32.6912,
+   "lon": -59.8019,
    "max_dbz": 57,
-   "tope_km": 11.7,
-   "radar": "RMA7",
-   "nivel": "granizo probable"
+   "tope_km": 9.6,
+   "radar": "AR7",
+   "nivel": "posible granizo"
   },
   {
    "lat": -35.5046,
@@ -66,139 +51,148 @@
    "nivel": "posible granizo"
   },
   {
-   "lat": -38.9841,
-   "lon": -67.6225,
+   "lat": -39.7347,
+   "lon": -67.7175,
    "max_dbz": 54,
-   "tope_km": 10.0,
+   "tope_km": 9.4,
    "radar": "RMA7",
    "nivel": null
   },
   {
-   "lat": -36.2768,
-   "lon": -67.37,
+   "lat": -39.056,
+   "lon": -68.0855,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -39.029,
+   "lon": -67.575,
    "max_dbz": 53,
-   "tope_km": 11.1,
+   "tope_km": 9.4,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -39.8679,
+   "lon": -67.8243,
+   "max_dbz": 53,
+   "tope_km": 16.4,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -39.5211,
+   "lon": -67.9074,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -36.3396,
+   "lon": -67.3244,
+   "max_dbz": 49,
+   "tope_km": 17.0,
    "radar": "RMA18",
    "nivel": null
   },
   {
-   "lat": -39.6458,
-   "lon": -67.8006,
-   "max_dbz": 52,
-   "tope_km": 17.0,
-   "radar": "RMA7",
+   "lat": -31.8401,
+   "lon": -60.6292,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR5",
    "nivel": null
   },
   {
-   "lat": -42.45,
-   "lon": -64.7091,
-   "max_dbz": 52,
-   "tope_km": 14.1,
+   "lat": -42.4587,
+   "lon": -64.6235,
+   "max_dbz": 47,
+   "tope_km": 11.7,
    "radar": "RMA12",
    "nivel": null
   },
   {
-   "lat": -37.2936,
-   "lon": -68.4061,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "radar": "RMA7",
-   "nivel": null
-  },
-  {
-   "lat": -29.762,
-   "lon": -60.9482,
-   "max_dbz": 48,
+   "lat": -31.9139,
+   "lon": -60.6181,
+   "max_dbz": 46,
    "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.9093,
-   "lon": -60.9157,
-   "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "radar": "AR5",
    "nivel": null
   }
  ],
  "localidades": {
-  "Plottier": {
-   "nivel": "granizo probable",
-   "km": 7.5,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "visto": "2026-10-31 01:02"
-  },
   "Barrio Blanco": {
    "nivel": "granizo probable",
-   "km": 9.8,
+   "km": 6.5,
    "max_dbz": 62,
-   "tope_km": 11.1,
-   "visto": "2026-10-31 01:02"
+   "tope_km": 11.7,
+   "visto": "2026-10-31 01:15"
   },
   "Barrio Calle Ciega Nº 10": {
    "nivel": "granizo probable",
-   "km": 9.8,
+   "km": 7.8,
    "max_dbz": 62,
-   "tope_km": 11.1,
-   "visto": "2026-10-31 01:02"
+   "tope_km": 11.7,
+   "visto": "2026-10-31 01:15"
+  },
+  "Barrio Calle Ciega Nº 6": {
+   "nivel": "granizo probable",
+   "km": 8.0,
+   "max_dbz": 62,
+   "tope_km": 11.7,
+   "visto": "2026-10-31 01:15"
   },
   "Barrio Costa Este": {
    "nivel": "granizo probable",
-   "km": 8.9,
+   "km": 7.0,
    "max_dbz": 62,
-   "tope_km": 11.1,
-   "visto": "2026-10-31 01:02"
+   "tope_km": 11.7,
+   "visto": "2026-10-31 01:15"
   },
   "Barrio Costa Oeste": {
    "nivel": "granizo probable",
-   "km": 7.0,
+   "km": 7.5,
    "max_dbz": 62,
-   "tope_km": 11.1,
-   "visto": "2026-10-31 01:02"
+   "tope_km": 11.7,
+   "visto": "2026-10-31 01:15"
   },
-  "Barrio Emergente": {
+  "Barrio Frontera": {
    "nivel": "granizo probable",
-   "km": 9.0,
+   "km": 9.4,
    "max_dbz": 62,
-   "tope_km": 11.1,
-   "visto": "2026-10-31 01:02"
+   "tope_km": 11.7,
+   "visto": "2026-10-31 01:15"
   },
   "Barrio Isla 10": {
    "nivel": "granizo probable",
-   "km": 7.3,
-   "max_dbz": 62,
+   "km": 7.1,
+   "max_dbz": 66,
    "tope_km": 11.1,
-   "visto": "2026-10-31 01:02"
+   "visto": "2026-10-31 01:15"
+  },
+  "Barrio La Herradura": {
+   "nivel": "granizo probable",
+   "km": 6.2,
+   "max_dbz": 62,
+   "tope_km": 11.7,
+   "visto": "2026-10-31 01:15"
   },
   "Barrio María Elvira": {
    "nivel": "granizo probable",
-   "km": 4.7,
-   "max_dbz": 62,
+   "km": 7.4,
+   "max_dbz": 66,
    "tope_km": 11.1,
-   "visto": "2026-10-31 01:02"
+   "visto": "2026-10-31 01:15"
   },
   "Barrio Unión (dpto. General Roca, Río Negro)": {
    "nivel": "granizo probable",
-   "km": 7.7,
-   "max_dbz": 62,
+   "km": 9.8,
+   "max_dbz": 66,
    "tope_km": 11.1,
-   "visto": "2026-10-31 01:02"
-  },
-  "General Fernández Oro": {
-   "nivel": "granizo probable",
-   "km": 9.9,
-   "max_dbz": 62,
-   "tope_km": 11.1,
-   "visto": "2026-10-31 01:02"
-  },
-  "Las Perlas": {
-   "nivel": "granizo probable",
-   "km": 2.7,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "visto": "2026-10-31 01:02"
+   "visto": "2026-10-31 01:15"
   }
  }
 }
