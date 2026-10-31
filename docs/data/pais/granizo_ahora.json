@@ -1,21 +1,22 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 02:00",
+ "consultado": "2026-10-31 02:15",
  "radares": {
+  "AR7": "2026-10-31 02:00",
   "RMA7": "2026-10-31 01:42",
+  "RMA11": "2026-10-31 01:52",
   "RMA18": "2026-10-31 01:43",
-  "AR7": "2026-10-31 01:40",
-  "RMA11": "2026-10-31 01:43",
   "RMA17": "2026-10-31 01:51",
-  "RMA16": "2026-10-31 01:49"
+  "RMA16": "2026-10-31 02:06",
+  "RMA3": "2026-10-31 02:00"
  },
  "nucleos": [
   {
-   "lat": -27.1953,
-   "lon": -65.9787,
-   "max_dbz": 59,
-   "tope_km": 14.1,
-   "radar": "RMA11",
+   "lat": -23.235,
+   "lon": -62.238,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
@@ -27,6 +28,22 @@
    "nivel": "granizo probable"
   },
   {
+   "lat": -27.1863,
+   "lon": -65.9374,
+   "max_dbz": 57,
+   "tope_km": 14.1,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.2309,
+   "lon": -65.0884,
+   "max_dbz": 57,
+   "tope_km": 7.6,
+   "radar": "RMA16",
+   "nivel": "posible granizo"
+  },
+  {
    "lat": -37.5139,
    "lon": -68.6554,
    "max_dbz": 55,
@@ -35,8 +52,8 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.6734,
-   "lon": -59.6396,
+   "lat": -32.6109,
+   "lon": -59.5856,
    "max_dbz": 54,
    "tope_km": 10.2,
    "radar": "AR7",
@@ -48,14 +65,6 @@
    "max_dbz": 54,
    "tope_km": 10.6,
    "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -33.2219,
-   "lon": -65.0553,
-   "max_dbz": 54,
-   "tope_km": 7.6,
-   "radar": "RMA16",
    "nivel": null
   },
   {
@@ -83,19 +92,19 @@
    "nivel": null
   },
   {
-   "lat": -27.0053,
-   "lon": -65.8962,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
    "lat": -39.1457,
    "lon": -67.6581,
    "max_dbz": 52,
    "tope_km": 10.6,
    "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -27.3038,
+   "lon": -65.9065,
+   "max_dbz": 51,
+   "tope_km": 13.5,
+   "radar": "RMA11",
    "nivel": null
   },
   {
@@ -116,6 +125,13 @@
   }
  ],
  "localidades": {
+  "General Mosconi (Formosa)": {
+   "nivel": "granizo probable",
+   "km": 9.0,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "visto": "2026-10-31 02:00"
+  },
   "Barrio Calle Ciega Nº 6": {
    "nivel": "granizo probable",
    "km": 5.8,
@@ -199,6 +215,13 @@
    "max_dbz": 57,
    "tope_km": 10.0,
    "visto": "2026-10-31 01:42"
+  },
+  "La Punilla": {
+   "nivel": "posible granizo",
+   "km": 9.7,
+   "max_dbz": 57,
+   "tope_km": 7.6,
+   "visto": "2026-10-31 02:06"
   }
  }
 }
