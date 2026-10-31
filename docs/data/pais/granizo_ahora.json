@@ -1,83 +1,135 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 00:00",
+ "consultado": "2026-10-31 00:15",
  "radares": {
-  "RMA2": "2026-10-30 23:41",
-  "RMA18": "2026-10-30 23:48",
-  "RMA11": "2026-10-30 23:42",
-  "AR7": "2026-10-30 23:40"
+  "AR7": "2026-10-31 00:00",
+  "RMA18": "2026-10-31 00:05",
+  "RMA2": "2026-10-31 00:00",
+  "RMA11": "2026-10-30 23:50",
+  "AR5": "2026-10-30 23:50",
+  "RMA7": "2026-10-30 23:59",
+  "RMA3": "2026-10-30 23:54"
  },
  "nucleos": [
   {
-   "lat": -35.5493,
-   "lon": -58.0052,
-   "max_dbz": 60,
+   "lat": -38.8853,
+   "lon": -68.5486,
+   "max_dbz": 64,
+   "tope_km": 11.1,
+   "radar": "RMA7",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -35.5314,
+   "lon": -57.994,
+   "max_dbz": 62,
    "tope_km": 12.3,
    "radar": "RMA2",
    "nivel": "granizo probable"
   },
   {
-   "lat": -35.46,
-   "lon": -57.5678,
-   "max_dbz": 60,
-   "tope_km": 11.7,
-   "radar": "RMA2",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.4147,
-   "lon": -58.396,
+   "lat": -39.0829,
+   "lon": -68.1924,
    "max_dbz": 59,
-   "tope_km": 10.2,
-   "radar": "AR7",
+   "tope_km": 10.6,
+   "radar": "RMA7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -36.4652,
-   "lon": -67.2217,
-   "max_dbz": 54,
-   "tope_km": 17.0,
-   "radar": "RMA18",
-   "nivel": null
+   "lat": -32.8785,
+   "lon": -60.1047,
+   "max_dbz": 56,
+   "tope_km": 9.6,
+   "radar": "AR7",
+   "nivel": "posible granizo"
   },
   {
-   "lat": -32.0732,
-   "lon": -58.1256,
+   "lat": -31.3422,
+   "lon": -58.3203,
    "max_dbz": 54,
-   "tope_km": 15.0,
+   "tope_km": 9.0,
    "radar": "AR7",
    "nivel": null
   },
   {
    "lat": -26.7423,
-   "lon": -64.5859,
-   "max_dbz": 53,
-   "tope_km": 12.3,
+   "lon": -64.5447,
+   "max_dbz": 54,
+   "tope_km": 11.7,
    "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -24.0164,
+   "lon": -62.258,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -36.0969,
+   "lon": -67.5184,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -35.4778,
+   "lon": -57.4668,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "radar": "RMA2",
+   "nivel": null
+  },
+  {
+   "lat": -31.8216,
+   "lon": -60.6292,
+   "max_dbz": 51,
+   "tope_km": 15.0,
+   "radar": "AR5",
+   "nivel": null
+  },
+  {
+   "lat": -32.0911,
+   "lon": -57.9742,
+   "max_dbz": 50,
+   "tope_km": 12.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -31.8932,
+   "lon": -58.2986,
+   "max_dbz": 49,
+   "tope_km": 10.2,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.762,
+   "lon": -60.9482,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
   "Barrio San Cayetano (Buenos Aires)": {
    "nivel": "granizo probable",
-   "km": 1.7,
-   "max_dbz": 60,
+   "km": 1.9,
+   "max_dbz": 62,
    "tope_km": 12.3,
-   "visto": "2026-10-30 23:41"
+   "visto": "2026-10-31 00:00"
   },
   "Chascomús": {
    "nivel": "granizo probable",
-   "km": 2.8,
-   "max_dbz": 60,
+   "km": 5.0,
+   "max_dbz": 62,
    "tope_km": 12.3,
-   "visto": "2026-10-30 23:41"
-  },
-  "Villa Parque Girado": {
-   "nivel": "granizo probable",
-   "km": 8.7,
-   "max_dbz": 60,
-   "tope_km": 12.3,
-   "visto": "2026-10-30 23:41"
+   "visto": "2026-10-31 00:00"
   }
  }
 }
