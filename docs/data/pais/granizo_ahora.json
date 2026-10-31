@@ -1,78 +1,102 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 07:00",
+ "consultado": "2026-10-31 07:15",
  "radares": {
-  "RMA19": "2026-10-31 06:49",
-  "RMA15": "2026-10-31 06:45",
-  "RMA2": "2026-10-31 06:47",
-  "RMA11": "2026-10-31 06:29",
-  "RMA17": "2026-10-31 06:30",
-  "RMA16": "2026-10-31 06:36"
+  "RMA16": "2026-10-31 07:00",
+  "RMA15": "2026-10-31 07:02",
+  "RMA2": "2026-10-31 06:56",
+  "RMA19": "2026-10-31 06:58",
+  "RMA11": "2026-10-31 07:02",
+  "RMA17": "2026-10-31 07:03"
  },
  "nucleos": [
   {
-   "lat": -33.2129,
-   "lon": -65.0773,
-   "max_dbz": 63,
-   "tope_km": 9.4,
+   "lat": -33.2309,
+   "lon": -65.0884,
+   "max_dbz": 61,
+   "tope_km": 7.6,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.2496,
-   "lon": -65.8859,
-   "max_dbz": 54,
-   "tope_km": 15.2,
+   "lat": -27.2044,
+   "lon": -65.9684,
+   "max_dbz": 61,
+   "tope_km": 14.1,
    "radar": "RMA11",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -35.7009,
+   "lat": -35.6741,
    "lon": -57.0742,
-   "max_dbz": 52,
+   "max_dbz": 57,
    "tope_km": 9.4,
    "radar": "RMA2",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -33.3757,
+   "lon": -67.5342,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "radar": "RMA19",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.256,
+   "lon": -66.6785,
+   "max_dbz": 52,
+   "tope_km": 8.8,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -33.3398,
-   "lon": -67.5232,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "radar": "RMA19",
+   "lat": -28.4431,
+   "lon": -66.0408,
+   "max_dbz": 51,
+   "tope_km": 14.1,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -32.2104,
+   "lon": -61.6261,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -27.132,
+   "lon": -65.8962,
+   "max_dbz": 50,
+   "tope_km": 14.1,
+   "radar": "RMA11",
    "nivel": null
   },
   {
    "lat": -30.3091,
    "lon": -66.5167,
    "max_dbz": 49,
-   "tope_km": 7.0,
+   "tope_km": 8.2,
    "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -32.6285,
-   "lon": -64.9127,
-   "max_dbz": 49,
-   "tope_km": 12.9,
-   "radar": "RMA17",
    "nivel": null
   }
  ],
  "localidades": {
-  "Achiras": {
+  "La Paz (Mendoza)": {
    "nivel": "granizo probable",
-   "km": 9.0,
-   "max_dbz": 63,
-   "tope_km": 9.4,
-   "visto": "2026-10-31 06:36"
+   "km": 9.7,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "visto": "2026-10-31 06:58"
   },
   "La Punilla": {
    "nivel": "granizo probable",
-   "km": 7.8,
-   "max_dbz": 63,
-   "tope_km": 9.4,
-   "visto": "2026-10-31 06:36"
+   "km": 9.7,
+   "max_dbz": 61,
+   "tope_km": 7.6,
+   "visto": "2026-10-31 07:00"
   }
  }
 }
