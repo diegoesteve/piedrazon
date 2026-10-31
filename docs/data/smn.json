@@ -1,51 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-10-31 18:30",
+ "consultado": "2026-10-31 18:45",
  "alertas": [
-  {
-   "id": "2026_10_31_1945_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "desde": "2026-10-31T19:45:00-03:00",
-   "hasta": "2026-10-31T21:45:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
-   "zona": "CORDOBA: GRAL SAN MARTIN - JUAREZ CELMAN.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_10_31_1945_cap_es.xml",
-   "desde_local": "31/10 19:45",
-   "hasta_local": "31/10 21:45",
-   "localidades": 4,
-   "poligonos": [
-    [
-     [
-      -63.68,
-      -33.05
-     ],
-     [
-      -63.42,
-      -32.97
-     ],
-     [
-      -63.14,
-      -33.36
-     ],
-     [
-      -63.2,
-      -33.59
-     ],
-     [
-      -63.63,
-      -33.5
-     ],
-     [
-      -63.68,
-      -33.05
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_10_31_2003_cap_es",
    "tipo": "aviso a corto plazo",
@@ -13396,30 +13352,6 @@
   }
  ],
  "localidades": {
-  "La Carlota": [
-   "2026_10_31_1945_cap_es",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
-  ],
-  "Los Cisnes": [
-   "2026_10_31_1945_cap_es",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
-  ],
-  "Santa Eufemia": [
-   "2026_10_31_1945_cap_es",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
-  ],
-  "Ucacha": [
-   "2026_10_31_1945_cap_es",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
-   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
-  ],
   "Alta Gracia": [
    "2026_10_31_2003_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_9",
@@ -15507,6 +15439,11 @@
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
   ],
+  "La Carlota": [
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
+  ],
   "La Carolina El Potosí": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
@@ -15538,6 +15475,11 @@
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
   ],
   "Las Vertientes": [
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
+  ],
+  "Los Cisnes": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
@@ -15592,12 +15534,22 @@
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
   ],
+  "Santa Eufemia": [
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
+  ],
   "Suco": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
   ],
   "Tosquita": [
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
+   "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
+  ],
+  "Ucacha": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96"
