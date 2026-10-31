@@ -1,110 +1,61 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 09:00",
+ "consultado": "2026-10-31 09:15",
  "radares": {
-  "RMA16": "2026-10-31 08:22",
-  "RMA17": "2026-10-31 08:25",
-  "AR7": "2026-10-31 08:40",
-  "AR5": "2026-10-31 08:30",
-  "RMA15": "2026-10-31 08:41"
+  "AR7": "2026-10-31 08:50",
+  "RMA15": "2026-10-31 09:06",
+  "RMA19": "2026-10-31 09:03",
+  "RMA16": "2026-10-31 09:03"
  },
  "nucleos": [
   {
-   "lat": -32.9454,
-   "lon": -62.3186,
-   "max_dbz": 56,
-   "tope_km": 12.3,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.9273,
-   "lon": -62.4285,
-   "max_dbz": 53,
-   "tope_km": 13.5,
-   "radar": "RMA17",
+   "lat": -33.4027,
+   "lon": -67.1938,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -31.9832,
-   "lon": -61.8134,
-   "max_dbz": 51,
-   "tope_km": 4.2,
+   "lat": -32.7715,
+   "lon": -62.7867,
+   "max_dbz": 53,
+   "tope_km": 9.6,
    "radar": "AR7",
-   "nivel": null,
-   "descartado": "tope bajo (4.2 km)"
+   "nivel": null
   },
   {
-   "lat": -30.3988,
-   "lon": -66.4744,
+   "lat": -30.3271,
+   "lon": -66.4956,
    "max_dbz": 50,
-   "tope_km": 8.8,
+   "tope_km": 8.2,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -33.1948,
-   "lon": -66.2147,
+   "lat": -33.0698,
+   "lon": -67.2487,
+   "max_dbz": 50,
+   "tope_km": 10.6,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -33.4929,
+   "lon": -67.2196,
    "max_dbz": 49,
-   "tope_km": 16.4,
+   "tope_km": 12.3,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.593,
-   "lon": -62.711,
+   "lat": -30.4526,
+   "lon": -66.485,
    "max_dbz": 48,
-   "tope_km": 9.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.7068,
-   "lon": -60.959,
-   "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -31.8216,
-   "lon": -60.6292,
-   "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR5",
-   "nivel": null
-  },
-  {
-   "lat": -29.762,
-   "lon": -60.9157,
-   "max_dbz": 46,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -31.9691,
-   "lon": -60.6181,
-   "max_dbz": 46,
-   "tope_km": 15.0,
-   "radar": "AR5",
+   "tope_km": 8.2,
+   "radar": "RMA15",
    "nivel": null
   }
  ],
- "localidades": {
-  "Inriville": {
-   "nivel": "granizo probable",
-   "km": 8.2,
-   "max_dbz": 56,
-   "tope_km": 12.3,
-   "visto": "2026-10-31 08:25"
-  },
-  "Saladillo (Córdoba)": {
-   "nivel": "granizo probable",
-   "km": 2.7,
-   "max_dbz": 56,
-   "tope_km": 12.3,
-   "visto": "2026-10-31 08:25"
-  }
- }
+ "localidades": {}
 }
