@@ -1,49 +1,105 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 12:30",
+ "consultado": "2026-10-31 12:45",
  "radares": {
-  "RMA1": "2026-10-31 12:13",
-  "RMA16": "2026-10-31 11:57",
-  "RMA17": "2026-10-31 12:14"
+  "RMA1": "2026-10-31 12:31",
+  "RMA17": "2026-10-31 12:22",
+  "RMA16": "2026-10-31 12:30"
  },
  "nucleos": [
   {
-   "lat": -31.08,
-   "lon": -64.278,
-   "max_dbz": 60,
-   "tope_km": 12.9,
+   "lat": -31.0709,
+   "lon": -64.2242,
+   "max_dbz": 66,
+   "tope_km": 16.4,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.2394,
-   "lon": -64.7729,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+   "lat": -31.8097,
+   "lon": -64.6007,
+   "max_dbz": 62,
+   "tope_km": 10.6,
    "radar": "RMA1",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -31.8994,
-   "lon": -64.5792,
-   "max_dbz": 54,
-   "tope_km": 9.4,
+   "lat": -31.1613,
+   "lon": -64.2887,
+   "max_dbz": 58,
+   "tope_km": 16.4,
    "radar": "RMA1",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -30.554,
-   "lon": -64.2134,
-   "max_dbz": 51,
+   "lat": -33.077,
+   "lon": -65.7951,
+   "max_dbz": 58,
+   "tope_km": 12.9,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.9621,
+   "lon": -64.5039,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.1676,
+   "lon": -65.6074,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.3675,
+   "lon": -64.8123,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.2573,
+   "lon": -64.7298,
+   "max_dbz": 54,
    "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.7917,
-   "lon": -64.6115,
-   "max_dbz": 47,
-   "tope_km": 11.1,
+   "lat": -32.265,
+   "lon": -64.8248,
+   "max_dbz": 54,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.1767,
+   "lon": -65.519,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.5761,
+   "lon": -64.5792,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.6138,
+   "lon": -64.7513,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   }
@@ -51,38 +107,87 @@
  "localidades": {
   "Agua de Oro": {
    "nivel": "granizo probable",
-   "km": 5.7,
-   "max_dbz": 60,
-   "tope_km": 12.9,
-   "visto": "2026-10-31 12:13"
+   "km": 10.0,
+   "max_dbz": 66,
+   "tope_km": 16.4,
+   "visto": "2026-10-31 12:31"
   },
-  "El Manzano": {
+  "Estación General Paz": {
    "nivel": "granizo probable",
-   "km": 5.8,
-   "max_dbz": 60,
-   "tope_km": 12.9,
-   "visto": "2026-10-31 12:13"
+   "km": 9.3,
+   "max_dbz": 66,
+   "tope_km": 16.4,
+   "visto": "2026-10-31 12:31"
   },
   "La Granja": {
    "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 60,
-   "tope_km": 12.9,
-   "visto": "2026-10-31 12:13"
+   "km": 9.3,
+   "max_dbz": 66,
+   "tope_km": 16.4,
+   "visto": "2026-10-31 12:31"
+  },
+  "Los Reartes": {
+   "nivel": "granizo probable",
+   "km": 9.6,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "visto": "2026-10-31 12:31"
+  },
+  "Lutti": {
+   "nivel": "granizo probable",
+   "km": 9.8,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "visto": "2026-10-31 12:30"
+  },
+  "Potrero de Garay": {
+   "nivel": "granizo probable",
+   "km": 1.4,
+   "max_dbz": 62,
+   "tope_km": 10.6,
+   "visto": "2026-10-31 12:31"
+  },
+  "Río Ceballos": {
+   "nivel": "granizo probable",
+   "km": 3.2,
+   "max_dbz": 58,
+   "tope_km": 16.4,
+   "visto": "2026-10-31 12:31"
   },
   "Salsipuedes": {
    "nivel": "granizo probable",
-   "km": 5.4,
-   "max_dbz": 60,
-   "tope_km": 12.9,
-   "visto": "2026-10-31 12:13"
+   "km": 4.2,
+   "max_dbz": 58,
+   "tope_km": 16.4,
+   "visto": "2026-10-31 12:31"
   },
-  "Villa Cerro Azul": {
+  "Unquillo": {
    "nivel": "granizo probable",
-   "km": 5.0,
-   "max_dbz": 60,
-   "tope_km": 12.9,
-   "visto": "2026-10-31 12:13"
+   "km": 7.8,
+   "max_dbz": 58,
+   "tope_km": 16.4,
+   "visto": "2026-10-31 12:31"
+  },
+  "Villa Ciudad Parque Los Reartes": {
+   "nivel": "granizo probable",
+   "km": 8.2,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "visto": "2026-10-31 12:31"
+  },
+  "Villa Ciudad de América": {
+   "nivel": "granizo probable",
+   "km": 9.4,
+   "max_dbz": 62,
+   "tope_km": 10.6,
+   "visto": "2026-10-31 12:31"
+  },
+  "Villa General Belgrano": {
+   "nivel": "granizo probable",
+   "km": 8.1,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "visto": "2026-10-31 12:31"
   }
  }
 }
