@@ -1,22 +1,29 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 03:15",
+ "consultado": "2026-10-31 03:30",
  "radares": {
-  "RMA7": "2026-10-31 02:45",
-  "RMA3": "2026-10-31 03:04",
-  "AR7": "2026-10-31 03:00",
-  "AR5": "2026-10-31 02:50",
-  "RMA6": "2026-10-31 02:59",
-  "RMA11": "2026-10-31 03:01"
+  "RMA3": "2026-10-31 03:13",
+  "RMA6": "2026-10-31 03:17",
+  "AR7": "2026-10-31 03:20",
+  "RMA11": "2026-10-31 03:01",
+  "RMA12": "2026-10-31 03:06"
  },
  "nucleos": [
   {
-   "lat": -24.2698,
-   "lon": -62.5492,
+   "lat": -32.4946,
+   "lon": -59.4342,
    "max_dbz": 59,
-   "tope_km": 11.7,
-   "radar": "RMA3",
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -37.071,
+   "lon": -56.5329,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "radar": "RMA6",
+   "nivel": "posible granizo"
   },
   {
    "lat": -28.0958,
@@ -27,77 +34,45 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -39.0919,
-   "lon": -67.2188,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "radar": "RMA7",
-   "nivel": null
-  },
-  {
-   "lat": -32.5751,
-   "lon": -59.5099,
-   "max_dbz": 54,
-   "tope_km": 10.2,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -32.4857,
-   "lon": -59.326,
-   "max_dbz": 53,
-   "tope_km": 10.8,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -37.0164,
-   "lon": -56.5212,
+   "lat": -37.398,
+   "lon": -56.3222,
    "max_dbz": 52,
-   "tope_km": 11.1,
+   "tope_km": 10.0,
    "radar": "RMA6",
    "nivel": null
   },
   {
-   "lat": -39.788,
-   "lon": -66.8626,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "radar": "RMA7",
-   "nivel": null
-  },
-  {
-   "lat": -37.4704,
-   "lon": -56.4042,
-   "max_dbz": 51,
-   "tope_km": 7.6,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -39.7169,
-   "lon": -66.6489,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "radar": "RMA7",
-   "nivel": null
-  },
-  {
-   "lat": -32.5384,
-   "lon": -59.4754,
-   "max_dbz": 50,
-   "tope_km": 10.8,
-   "radar": "AR5",
-   "nivel": null
-  },
-  {
-   "lat": -36.6787,
-   "lon": -56.1701,
+   "lat": -24.1703,
+   "lon": -62.6797,
    "max_dbz": 48,
-   "tope_km": 8.2,
-   "radar": "RMA6",
+   "tope_km": 11.1,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -24.2879,
+   "lon": -62.499,
+   "max_dbz": 48,
+   "tope_km": 9.4,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -39.7934,
+   "lon": -66.3725,
+   "max_dbz": 47,
+   "tope_km": 11.1,
+   "radar": "RMA12",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Gobernador Mansilla": {
+   "nivel": "granizo probable",
+   "km": 9.2,
+   "max_dbz": 59,
+   "tope_km": 15.0,
+   "visto": "2026-10-31 03:20"
+  }
+ }
 }
