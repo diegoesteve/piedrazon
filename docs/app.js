@@ -983,8 +983,8 @@ async function sincronizarAvisos() {
 }
 // ---- barrio (opcional): en ciudades grandes, el radar se mide desde el barrio y no desde el centro de la localidad.
 // Se guarda redondeado a 0,01° (~1 km). Los barrios son los lugares (place=neighbourhood, suburb o quarter) de
-// OpenStreetMap a menos de BARRIO_MAX_KM del centro de la localidad: los mismos nombres que se ven en el mapa. Se bajan
-// una vez por localidad desde Overpass y se filtran acá mientras se escribe.
+// OpenStreetMap a menos de BARRIO_MAX_KM del centro de la localidad: los mismos nombres que se ven en el mapa. Se
+// filtran acá mientras se escribe.
 const BARRIO_MAX_KM = 25;   // igual que MARGEN_KM de scripts/notificar.py
 const redondo = x => Math.round(x * 100) / 100;
 const marcaBarrio = b => `${b.lat},${b.lon},${b.nombre}`;
@@ -993,27 +993,39 @@ function miBarrio() {
   return b && f && b.localidad === claveAviso(f.localidad, PROV_NOMBRE) ? b : null;
 }
 const kmEntre = (la1, lo1, la2, lo2) => Math.hypot(la1 - la2, (lo1 - lo2) * Math.cos(la1 * Math.PI / 180)) * 111.3;
-let BARRIOS = null;   // { localidad, lista: Promise<[{ nombre, lat, lon }]> }
+let BARRIOS = null;   // { localidad, lista: Promise<[{ nombre, lat, lon }] | null> }
+// Primero el archivo que arma GitHub Actions una vez por mes (data/barrios.json, provincia de Córdoba: desde el celular
+// Overpass fallaba seguido); para el resto del país, o si falta el archivo, Overpass directo, probando varios servidores.
+const OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
+async function barriosOverpass(f) {
+  const d = 0.25, caja = [f.lat - d, f.lon - d, f.lat + d, f.lon + d].map(x => x.toFixed(4)).join(',');
+  const consulta = `[out:json][timeout:25];nwr[place~"^(neighbourhood|suburb|quarter)$"][name](${caja});out center tags;`;
+  for (const url of OVERPASS) {
+    const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 15000);
+    try {
+      const r = await fetch(url, { method: 'POST', body: new URLSearchParams({ data: consulta }), signal: ctl.signal });
+      if (!r.ok) continue;
+      return ((await r.json()).elements || []).map(e => [e.tags.name, e.lat ?? (e.center && e.center.lat), e.lon ?? (e.center && e.center.lon)]);
+    } catch (e) { /* el siguiente servidor */ } finally { clearTimeout(t); }
+  }
+  return null;
+}
 function barriosDe(f) {
   const clave = claveAviso(f.localidad, f.provNombre || PROV_NOMBRE);
   if (BARRIOS && BARRIOS.localidad === clave) return BARRIOS.lista;
-  const d = 0.25, caja = [f.lat - d, f.lon - d, f.lat + d, f.lon + d].map(x => x.toFixed(4)).join(',');
-  const consulta = `[out:json][timeout:25];nwr[place~"^(neighbourhood|suburb|quarter)$"][name](${caja});out center tags;`;
   const lista = (async () => {
-    const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 20000);
-    try {
-      const r = await fetch('https://overpass-api.de/api/interpreter?data=' + encodeURIComponent(consulta), { signal: ctl.signal });
-      if (!r.ok) throw new Error(`overpass: HTTP ${r.status}`);
-      const vistos = new Set(), salida = [];
-      for (const e of (await r.json()).elements || []) {
-        const la = e.lat ?? (e.center && e.center.lat), lo = e.lon ?? (e.center && e.center.lon), nombre = (e.tags.name || '').trim();
-        if (la == null || !nombre || sinTildes(nombre) === sinTildes(f.localidad) || vistos.has(sinTildes(nombre))) continue;
-        if (kmEntre(f.lat, f.lon, la, lo) > BARRIO_MAX_KM) continue;
-        vistos.add(sinTildes(nombre));
-        salida.push({ nombre, lat: la, lon: lo });
-      }
-      return salida.sort((x, y) => x.nombre.localeCompare(y.nombre, 'es'));
-    } catch (e) { BARRIOS = null; return null; } finally { clearTimeout(t); }
+    const archivo = (f.prov || PROV) === 'cordoba' ? await leer('barrios.json', 'data/') : null;
+    const crudos = (archivo && archivo.barrios) || await barriosOverpass(f);
+    if (!crudos) { BARRIOS = null; return null; }
+    const vistos = new Set(), salida = [];
+    for (const [nombre0, la, lo] of crudos) {
+      const nombre = String(nombre0 || '').trim();
+      if (la == null || !nombre || sinTildes(nombre) === sinTildes(f.localidad) || vistos.has(sinTildes(nombre))) continue;
+      if (kmEntre(f.lat, f.lon, la, lo) > BARRIO_MAX_KM) continue;
+      vistos.add(sinTildes(nombre));
+      salida.push({ nombre, lat: la, lon: lo });
+    }
+    return salida.sort((x, y) => x.nombre.localeCompare(y.nombre, 'es'));
   })();
   BARRIOS = { localidad: clave, lista };
   return lista;

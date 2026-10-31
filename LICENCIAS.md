@@ -14,6 +14,6 @@ citen. **No se puede vender ni usar en un producto o servicio pago.**
 - **Radares del OHMC** (Observatorio Hidro-Meteorológico de Córdoba): núcleos de tormenta leídos de su visor público.
 - **Open-Meteo**: [CC BY 4.0](https://open-meteo.com/en/license). Su API gratuita es solo para uso no comercial.
 - **GeoRef** (Servicio de Normalización de Datos Geográficos, datos.gob.ar): datos públicos.
-- **OpenStreetMap** (mapa base): © colaboradores de OpenStreetMap, [ODbL](https://opendatacommons.org/licenses/odbl/).
+- **OpenStreetMap** (mapa base y barrios de `docs/data/barrios.json`): © colaboradores de OpenStreetMap, [ODbL](https://opendatacommons.org/licenses/odbl/).
 
 Esto no es asesoramiento legal.
