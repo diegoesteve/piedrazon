@@ -1,61 +1,70 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 07:15",
+ "consultado": "2026-10-31 07:30",
  "radares": {
-  "RMA16": "2026-10-31 07:00",
-  "RMA15": "2026-10-31 07:02",
-  "RMA2": "2026-10-31 06:56",
-  "RMA19": "2026-10-31 06:58",
-  "RMA11": "2026-10-31 07:02",
-  "RMA17": "2026-10-31 07:03"
+  "RMA15": "2026-10-31 07:18",
+  "RMA2": "2026-10-31 07:15",
+  "RMA19": "2026-10-31 07:06",
+  "RMA16": "2026-10-31 07:17",
+  "RMA11": "2026-10-31 07:19",
+  "RMA17": "2026-10-31 07:03",
+  "AR7": "2026-10-31 07:10"
  },
  "nucleos": [
   {
-   "lat": -33.2309,
-   "lon": -65.0884,
-   "max_dbz": 61,
-   "tope_km": 7.6,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -27.2044,
-   "lon": -65.9684,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -35.6741,
-   "lon": -57.0742,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "radar": "RMA2",
+   "lat": -30.4257,
+   "lon": -66.4956,
+   "max_dbz": 59,
+   "tope_km": 8.8,
+   "radar": "RMA15",
    "nivel": "posible granizo"
   },
   {
-   "lat": -33.3757,
-   "lon": -67.5342,
-   "max_dbz": 56,
-   "tope_km": 11.1,
+   "lat": -28.4431,
+   "lon": -66.0514,
+   "max_dbz": 57,
+   "tope_km": 14.1,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.3937,
+   "lon": -67.5122,
+   "max_dbz": 55,
+   "tope_km": 11.7,
    "radar": "RMA19",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.256,
-   "lon": -66.6785,
-   "max_dbz": 52,
-   "tope_km": 8.8,
+   "lat": -31.9022,
+   "lon": -61.6187,
+   "max_dbz": 55,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.8139,
+   "lon": -67.0429,
+   "max_dbz": 54,
+   "tope_km": 12.9,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -28.4431,
-   "lon": -66.0408,
+   "lat": -27.4121,
+   "lon": -66.1438,
+   "max_dbz": 54,
+   "tope_km": 14.7,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -35.7276,
+   "lon": -56.9957,
    "max_dbz": 51,
-   "tope_km": 14.1,
-   "radar": "RMA15",
+   "tope_km": 7.6,
+   "radar": "RMA2",
    "nivel": null
   },
   {
@@ -67,36 +76,57 @@
    "nivel": null
   },
   {
-   "lat": -27.132,
-   "lon": -65.8962,
-   "max_dbz": 50,
-   "tope_km": 14.1,
-   "radar": "RMA11",
+   "lat": -35.6652,
+   "lon": -56.9957,
+   "max_dbz": 48,
+   "tope_km": 7.6,
+   "radar": "RMA2",
    "nivel": null
   },
   {
-   "lat": -30.3091,
-   "lon": -66.5167,
-   "max_dbz": 49,
+   "lat": -35.7187,
+   "lon": -56.9172,
+   "max_dbz": 48,
    "tope_km": 8.2,
-   "radar": "RMA15",
+   "radar": "RMA2",
    "nivel": null
   }
  ],
  "localidades": {
+  "Los Angeles (Catamarca)": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 57,
+   "tope_km": 14.1,
+   "visto": "2026-10-31 07:18"
+  },
+  "Tama": {
+   "nivel": "posible granizo",
+   "km": 9.6,
+   "max_dbz": 59,
+   "tope_km": 8.8,
+   "visto": "2026-10-31 07:18"
+  },
   "La Paz (Mendoza)": {
    "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "visto": "2026-10-31 06:58"
+   "km": 8.4,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "visto": "2026-10-31 07:06"
   },
-  "La Punilla": {
+  "San Martín de las Escobas": {
    "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 61,
-   "tope_km": 7.6,
-   "visto": "2026-10-31 07:00"
+   "km": 6.8,
+   "max_dbz": 55,
+   "tope_km": 15.0,
+   "visto": "2026-10-31 07:10"
+  },
+  "Traill": {
+   "nivel": "granizo probable",
+   "km": 8.2,
+   "max_dbz": 55,
+   "tope_km": 15.0,
+   "visto": "2026-10-31 07:10"
   }
  }
 }
