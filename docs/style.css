@@ -300,3 +300,9 @@ dialog .buscar-caja input { background: var(--fondo); box-shadow: none; }
 .reportar.destacado { background: var(--tarjeta); border: 2px solid var(--rojo); border-radius: 18px; padding: 14px; box-shadow: var(--sombra); }
 .enlace { align-self: flex-start; background: none; border: 0; padding: 4px 0; color: var(--acento); font: inherit; font-weight: 600; text-decoration: underline; cursor: pointer; }
 .confirmado { font-weight: 600; color: var(--rojo); }
+
+/* ---------------- Barrio para los avisos (Ajustes) */
+.barrio { display: flex; flex-direction: column; gap: 8px; padding-top: 10px; border-top: 1px solid var(--borde); }
+.barrio .buscar-caja input { box-shadow: none; border: 1px solid var(--borde); background: var(--fondo, transparent); }
+.barrio .sugerencias li { justify-content: flex-start; flex-direction: column; align-items: flex-start; gap: 2px; }
+.botones-barrio { display: flex; flex-wrap: wrap; gap: 8px; }

@@ -165,6 +165,21 @@
         </div>
       </fieldset>
       <p id="avisos-estado" class="nota" aria-live="polite"></p>
+      <!-- Barrio (opcional): el radar se mide desde ahí y no desde el centro de la localidad -->
+      <div class="barrio" id="aj-barrio">
+        <p><b>Tu barrio</b> <span class="nota">(opcional)</span></p>
+        <p id="barrio-estado" class="nota" aria-live="polite"></p>
+        <form class="buscar-caja" id="form-barrio" role="search">
+          <svg class="ic lupa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <label for="buscar-barrio" class="sr">Buscar tu barrio</label>
+          <input id="buscar-barrio" type="search" placeholder="Escribí tu barrio y tocá Enter" autocomplete="off" enterkeyhint="search">
+          <ul id="sug-barrio" class="sugerencias en-linea" hidden></ul>
+        </form>
+        <div class="botones-barrio">
+          <button type="button" class="boton-sec" id="btn-barrio-ubicacion">Usar mi ubicación</button>
+          <button type="button" class="boton-sec" id="btn-barrio-quitar" hidden>Toda la localidad</button>
+        </div>
+      </div>
     </div>
 
     <div class="tarjeta grupo">
