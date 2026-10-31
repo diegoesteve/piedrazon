@@ -1,15 +1,24 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 11:30",
+ "consultado": "2026-10-31 11:45",
  "radares": {
-  "RMA1": "2026-10-31 11:19",
-  "RMA17": "2026-10-31 11:08"
+  "RMA17": "2026-10-31 11:08",
+  "RMA1": "2026-10-31 11:28",
+  "RMA16": "2026-10-31 11:32"
  },
  "nucleos": [
   {
-   "lat": -31.8456,
-   "lon": -64.59,
-   "max_dbz": 52,
+   "lat": -31.8725,
+   "lon": -64.5685,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -31.0438,
+   "lon": -64.3103,
+   "max_dbz": 54,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
@@ -23,5 +32,27 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Los Reartes": {
+   "nivel": "posible granizo",
+   "km": 5.2,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-10-31 11:28"
+  },
+  "Potrero de Garay": {
+   "nivel": "posible granizo",
+   "km": 8.2,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-10-31 11:28"
+  },
+  "Villa Ciudad Parque Los Reartes": {
+   "nivel": "posible granizo",
+   "km": 4.8,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-10-31 11:28"
+  }
+ }
 }

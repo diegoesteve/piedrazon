@@ -1,110 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 11:30",
+ "consultado": "2026-10-31 11:45",
  "radares": {
-  "RMA12": "2026-10-31 10:51",
-  "RMA19": "2026-10-31 11:16",
-  "RMA1": "2026-10-31 11:19",
-  "RMA15": "2026-10-31 10:53",
-  "RMA18": "2026-10-31 11:13",
-  "RMA17": "2026-10-31 11:08"
+  "RMA19": "2026-10-31 11:25",
+  "RMA17": "2026-10-31 11:08",
+  "RMA1": "2026-10-31 11:28",
+  "RMA18": "2026-10-31 11:30",
+  "RMA16": "2026-10-31 11:32"
  },
  "nucleos": [
   {
-   "lat": -41.7006,
-   "lon": -66.9473,
-   "max_dbz": 59,
-   "tope_km": 4.7,
-   "radar": "RMA12",
-   "nivel": null,
-   "descartado": "tope bajo (4.7 km)"
+   "lat": -35.9346,
+   "lon": -68.3857,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "radar": "RMA18",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -41.8158,
-   "lon": -66.7516,
-   "max_dbz": 59,
-   "tope_km": 4.1,
-   "radar": "RMA12",
-   "nivel": null,
-   "descartado": "tope bajo (4.1 km)"
-  },
-  {
-   "lat": -42.0103,
-   "lon": -66.2991,
-   "max_dbz": 59,
-   "tope_km": 4.1,
-   "radar": "RMA12",
-   "nivel": null,
-   "descartado": "tope bajo (4.1 km)"
-  },
-  {
-   "lat": -41.5853,
-   "lon": -66.9717,
+   "lat": -31.8725,
+   "lon": -64.5685,
    "max_dbz": 57,
-   "tope_km": 4.1,
-   "radar": "RMA12",
-   "nivel": null,
-   "descartado": "tope bajo (4.1 km)"
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
   },
   {
-   "lat": -41.6474,
-   "lon": -67.0329,
+   "lat": -32.9525,
+   "lon": -67.7867,
    "max_dbz": 56,
-   "tope_km": 4.7,
-   "radar": "RMA12",
-   "nivel": null,
-   "descartado": "tope bajo (4.7 km)"
-  },
-  {
-   "lat": -32.9435,
-   "lon": -67.7977,
-   "max_dbz": 54,
    "tope_km": 11.1,
    "radar": "RMA19",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -30.3809,
-   "lon": -66.4956,
+   "lat": -36.1059,
+   "lon": -68.4199,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "radar": "RMA18",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.0438,
+   "lon": -64.3103,
    "max_dbz": 54,
-   "tope_km": 8.2,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -40.4472,
-   "lon": -67.7545,
-   "max_dbz": 52,
-   "tope_km": 5.9,
-   "radar": "RMA12",
-   "nivel": null,
-   "descartado": "tope bajo (5.9 km)"
-  },
-  {
-   "lat": -31.8456,
-   "lon": -64.59,
-   "max_dbz": 52,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
-  },
-  {
-   "lat": -40.3749,
-   "lon": -67.7667,
-   "max_dbz": 51,
-   "tope_km": 5.9,
-   "radar": "RMA12",
-   "nivel": null,
-   "descartado": "tope bajo (5.9 km)"
-  },
-  {
-   "lat": -40.1665,
-   "lon": -67.7912,
-   "max_dbz": 51,
-   "tope_km": 5.9,
-   "radar": "RMA12",
-   "nivel": null,
-   "descartado": "tope bajo (5.9 km)"
   },
   {
    "lat": -31.8361,
@@ -115,21 +58,64 @@
    "nivel": null
   },
   {
-   "lat": -30.5959,
-   "lon": -66.6225,
-   "max_dbz": 50,
-   "tope_km": 9.4,
-   "radar": "RMA15",
+   "lat": -33.0227,
+   "lon": -66.1264,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -35.8805,
-   "lon": -68.4199,
-   "max_dbz": 50,
-   "tope_km": 15.2,
-   "radar": "RMA18",
+   "lat": -33.077,
+   "lon": -66.1816,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "radar": "RMA16",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Barrio Villa del Parque": {
+   "nivel": "posible granizo",
+   "km": 9.6,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-10-31 11:28"
+  },
+  "Los Reartes": {
+   "nivel": "posible granizo",
+   "km": 5.1,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-10-31 11:28"
+  },
+  "Solar de los Molinos": {
+   "nivel": "posible granizo",
+   "km": 6.6,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-10-31 11:28"
+  },
+  "Va.Ciudad Pque.Los Reartes (1° Sección)": {
+   "nivel": "posible granizo",
+   "km": 6.1,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-10-31 11:28"
+  },
+  "Va.Ciudad Pque.Los Reartes (3° Sección)": {
+   "nivel": "posible granizo",
+   "km": 3.7,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-10-31 11:28"
+  },
+  "Villa Ciudad Parque Los Reartes": {
+   "nivel": "posible granizo",
+   "km": 5.1,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-10-31 11:28"
+  }
+ }
 }
