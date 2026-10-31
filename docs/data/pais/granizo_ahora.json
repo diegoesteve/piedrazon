@@ -1,64 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 12:00",
+ "consultado": "2026-10-31 12:15",
  "radares": {
-  "RMA18": "2026-10-31 11:46",
-  "RMA19": "2026-10-31 11:41",
-  "RMA1": "2026-10-31 11:46",
-  "RMA16": "2026-10-31 11:40",
-  "AR5": "2026-10-31 11:50"
+  "RMA1": "2026-10-31 11:55",
+  "RMA18": "2026-10-31 12:03",
+  "RMA16": "2026-10-31 11:57",
+  "RMA19": "2026-10-31 11:50",
+  "AR5": "2026-10-31 12:00",
+  "AR7": "2026-10-31 12:00"
  },
  "nucleos": [
   {
-   "lat": -35.9527,
-   "lon": -68.3742,
-   "max_dbz": 59,
-   "tope_km": 17.0,
-   "radar": "RMA18",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.0438,
-   "lon": -64.321,
-   "max_dbz": 57,
-   "tope_km": 11.7,
+   "lat": -31.0619,
+   "lon": -64.2995,
+   "max_dbz": 64,
+   "tope_km": 12.3,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.0227,
-   "lon": -66.1485,
-   "max_dbz": 56,
-   "tope_km": 13.5,
+   "lat": -34.1397,
+   "lon": -66.3251,
+   "max_dbz": 57,
+   "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.0517,
-   "lon": -67.6989,
+   "lat": -36.0068,
+   "lon": -68.3628,
    "max_dbz": 54,
-   "tope_km": 10.6,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -36.1689,
-   "lon": -68.3971,
-   "max_dbz": 51,
-   "tope_km": 15.8,
+   "tope_km": 12.9,
    "radar": "RMA18",
    "nivel": null
   },
   {
-   "lat": -31.8216,
-   "lon": -60.6292,
-   "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR5",
+   "lat": -33.1042,
+   "lon": -66.038,
+   "max_dbz": 54,
+   "tope_km": 14.1,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.006,
+   "lat": -33.0788,
+   "lon": -67.6769,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -31.8097,
+   "lon": -64.6007,
+   "max_dbz": 50,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -36.1059,
+   "lon": -68.3857,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -30.2947,
+   "lon": -58.861,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -31.8862,
    "lon": -60.6181,
    "max_dbz": 46,
    "tope_km": 15.0,
@@ -69,38 +86,45 @@
  "localidades": {
   "Agua de Oro": {
    "nivel": "granizo probable",
-   "km": 2.8,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "visto": "2026-10-31 11:46"
+   "km": 0.1,
+   "max_dbz": 64,
+   "tope_km": 12.3,
+   "visto": "2026-10-31 11:55"
   },
   "El Manzano (Córdoba)": {
    "nivel": "granizo probable",
-   "km": 5.0,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "visto": "2026-10-31 11:46"
+   "km": 2.5,
+   "max_dbz": 64,
+   "tope_km": 12.3,
+   "visto": "2026-10-31 11:55"
   },
   "El Pueblito (dpto. Colón, Córdoba)": {
    "nivel": "granizo probable",
-   "km": 7.5,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "visto": "2026-10-31 11:46"
+   "km": 5.0,
+   "max_dbz": 64,
+   "tope_km": 12.3,
+   "visto": "2026-10-31 11:55"
   },
   "La Granja": {
    "nivel": "granizo probable",
-   "km": 6.4,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "visto": "2026-10-31 11:46"
+   "km": 6.7,
+   "max_dbz": 64,
+   "tope_km": 12.3,
+   "visto": "2026-10-31 11:55"
+  },
+  "Salsipuedes": {
+   "nivel": "granizo probable",
+   "km": 8.5,
+   "max_dbz": 64,
+   "tope_km": 12.3,
+   "visto": "2026-10-31 11:55"
   },
   "Villa Cerro Azul": {
    "nivel": "granizo probable",
-   "km": 3.0,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "visto": "2026-10-31 11:46"
+   "km": 1.9,
+   "max_dbz": 64,
+   "tope_km": 12.3,
+   "visto": "2026-10-31 11:55"
   }
  }
 }
