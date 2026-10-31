@@ -71,7 +71,29 @@ function edad(fechaHora) {
   return Math.round((Date.now() - new Date(fechaHora.replace(' ', 'T') + ':00-03:00')) / 60000);
 }
 
-let AHORA = null, PRON = null, SMN = null, HORAS = null, LOCS = [], CARGADO = 0;
+let AHORA = null, PRON = null, SMN = null, HORAS = null, LOCS = [], CARGADO = 0, REPORTES = [];
+// Reportes de vecinos de las últimas 3 horas, del servicio de avisos (worker/avisos.js)
+async function cargarReportes() {
+  if (!AVISOS.url) return;
+  const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 5000);
+  try {
+    const r = await fetch(AVISOS.url.replace(/\/$/, '') + '/reportes', { signal: ctl.signal });
+    if (r.ok) REPORTES = (await r.json()).reportes || [];
+  } catch (e) { /* sin reportes */ } finally { clearTimeout(t); }
+}
+const VIGENCIA_REPORTE_MIN = 60;
+// los «sí, cae piedra» de la última hora de una localidad, del más nuevo al más viejo
+const confirmaciones = f => !f ? [] : REPORTES.filter(r => r.cae && r.loc === claveAviso(f.localidad, f.provNombre || 'Córdoba') &&
+  Date.now() - new Date(r.t) <= VIGENCIA_REPORTE_MIN * 60000).sort((a, b) => (a.t < b.t ? 1 : -1));
+const TAMANO = { chico: 'Chica, como un garbanzo', mediano: 'Mediana, como una nuez', grande: 'Grande, como una pelota de golf o más' };
+const COMO = { chico: 'de un garbanzo', mediano: 'de una nuez', grande: 'de una pelota de golf o más' };
+const fmtHM = new Intl.DateTimeFormat('es-AR', { timeZone: TZ, hour: 'numeric', minute: '2-digit', hourCycle: 'h23' });
+const horaCorta = t => `${fmtHM.format(new Date(t))} h`;
+function textoConfirmaciones(f, cs) {
+  const tam = cs.map(c => c.tam).filter(Boolean).sort((a, b) => Object.keys(TAMANO).indexOf(b) - Object.keys(TAMANO).indexOf(a))[0];
+  return `${cs.length === 1 ? 'Un vecino confirma' : `${cs.length} vecinos confirman`} que está cayendo piedra en ${esc(f.localidad)}` +
+    `${tam ? `, del tamaño ${COMO[tam]}` : ''} (${cs.length === 1 ? '' : 'el último, '}${horaCorta(cs[0].t)}).`;
+}
 const ARCHIVOS = ['granizo_ahora.json', 'granizo_pronostico.json', 'localidades.json', 'smn.json', 'granizo_horas.json', 'granizo_reciente.json'];
 // Datos de una localidad de otra provincia, solo para contestar en el chat sin cambiar lo que se está mirando
 async function localidadDe(nombre, prov) {
@@ -85,6 +107,7 @@ async function localidadDe(nombre, prov) {
     radar: radarFresco ? (a.localidades || {})[nombre] || null : null, reciente: ((r && r.localidades) || {})[nombre] || [] };
 }
 async function cargar() {
+  const reportes = cargarReportes();   // en paralelo con los archivos (máximo 5 segundos)
   let [a, p, l, s, h, r] = await Promise.all(ARCHIVOS.map(n => leer(n)));
   if (!l && PROV !== 'cordoba') {   // una provincia sin datos: se vuelve a Córdoba
     PROV = 'cordoba';
@@ -106,6 +129,7 @@ async function cargar() {
     });
     HORAS.dias = [...new Set(HORAS.horas.map(x => x.slice(0, 10)))];
   }
+  await reportes;
   CARGADO = Date.now();
 }
 const porNombre = n => LOCS.find(x => x.localidad === n) || null;
@@ -131,8 +155,8 @@ const amarillas = alertas => alertas.filter(a => a.nivel === 'amarillo');
 const horaRadar = v => v && v.visto ? `${Number(v.visto.slice(11, 13)) === 1 ? 'a la' : 'a las'} ${Number(v.visto.slice(11, 13))}:${v.visto.slice(14, 16)} h` : '';
 function nivelLocalidad(f) {
   const h = horaRadar(f.radar);
-  if (f.radar && f.radar.nivel === 'granizo probable') return ['furioso', `¡Granizo probable a ${f.radar.km} km de ${esc(f.localidad)}${h ? ` (radar ${h})` : ''}! No salgas y alejate de las ventanas.`];
-  if (f.radar) return ['enojado', `${h ? `El radar, ${h}, ve` : 'El radar ve'} una tormenta fuerte a ${f.radar.km} km de ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
+  if (f.radar && f.radar.nivel === 'granizo probable') return ['furioso', `¡Granizo probable a ${km1(f.radar.km)} km de ${esc(f.localidad)}${h ? ` (radar ${h})` : ''}! No salgas y alejate de las ventanas.`];
+  if (f.radar) return ['enojado', `${h ? `El radar, ${h}, ve` : 'El radar ve'} una tormenta fuerte a ${km1(f.radar.km)} km de ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
   const s = Math.min(smnDe(f), 3);
   if (s >= 2) return ['enojado', `El SMN tiene alerta ${s === 3 ? 'roja' : 'naranja'} por tormentas en ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
   const hoy = f.dias[0] && f.dias[0].riesgo;
@@ -157,14 +181,24 @@ function nivelGeneral() {
   return ['tranqui', 'Cielo tranquilo: los radares no ven granizo y hoy no hay condiciones para tormenta.'];
 }
 function estado(f = miLocalidad()) {
-  const [nivel, texto0] = f ? nivelLocalidad(f) : nivelGeneral();
+  let [nivel, texto0] = f ? nivelLocalidad(f) : nivelGeneral();
+  let titulo = TITULO[nivel];
+  // reportes de vecinos: con alerta del radar, confirman el granizo (sube al máximo); sin alerta, solo se cuentan
+  if (f) {
+    const cs = confirmaciones(f);
+    if (cs.length && f.radar) { nivel = 'furioso'; titulo = '¡Está cayendo granizo!'; texto0 = `${textoConfirmaciones(f, cs)} ${texto0}`; }
+    else if (cs.length) texto0 = `${texto0} Ojo: ${textoConfirmaciones(f, cs).replace(/^U/, 'u')} El radar no lo ve en este momento.`;
+  } else if (nivel === 'furioso' || nivel === 'enojado') {
+    const conf = LOCS.filter(x => x.radar && confirmaciones(x).length);
+    if (conf.length) { nivel = 'furioso'; titulo = '¡Está cayendo granizo!'; texto0 = `Vecinos confirman que está cayendo piedra en ${conf.slice(0, 4).map(x => esc(x.localidad)).join(', ')}${conf.length > 4 ? ` y ${conf.length - 4} más` : ''}. ${texto0}`; }
+  }
   // alerta amarilla del SMN: no cambia el nivel, pero si está tranqui Piedrazón pone cara de duda y lo cuenta
   const am = agruparSMN(amarillas(f ? alertasDe(f) : (SMN ? SMN.alertas : [])))[0];
   const duda = !!am && nivel === 'tranqui';
   const texto = am && (nivel === 'tranqui' || nivel === 'atento')
     ? `${texto0} Ojo: el SMN tiene alerta amarilla por ${esc(String(am.titulo || 'tormentas').toLowerCase())} ${f ? 'acá' : 'en parte de la provincia'}, ${hastaSMN(am)}. No quiere decir que caiga granizo.`
     : texto0;
-  return { f, nivel, texto, duda, lugar: f ? f.localidad : 'la provincia' };
+  return { f, nivel, titulo, texto, duda, lugar: f ? f.localidad : 'la provincia' };
 }
 
 // riesgo 0, 1 o 2 en la hora i del pronóstico, para una localidad o el peor de la provincia
@@ -415,7 +449,8 @@ function pintarHoy() {
   const cara = e.duda ? 'atento' : e.nivel;   // con alerta amarilla del SMN, cara de duda sin cambiar el color ni el nivel
   if (hero.dataset.nivel !== e.nivel || hero.dataset.cara !== cara) { $('#hero-pz').innerHTML = Piedrazon.svg(cara); hero.dataset.nivel = e.nivel; hero.dataset.cara = cara; saltar($('#hero-pz')); }
   $('#hero-etiqueta').textContent = `${Piedrazon.ETIQUETA[e.nivel] || 'Hola'} · ahora`;
-  $('#hero-titulo').textContent = TITULO[e.nivel];
+  $('#hero-titulo').textContent = e.titulo;
+  pintarReportar(e);
   heroFrases = [e.texto, ...Piedrazon.MENSAJES[e.nivel].filter(m => m !== e.texto)]; heroI = 0;
   $('#hero-texto').innerHTML = heroFrases[0];
   const afect = e.f ? [] : LOCS.filter(x => x.radar);
@@ -489,6 +524,52 @@ function pintarTareas(nivel) {
     PREF.set('tareas', guardado); cuenta();
   }));
   cuenta();
+}
+
+// «¿Está cayendo piedra?»: con alerta del radar, una tarjeta destacada; si no, un botón discreto
+let pasoReporte = null;   // null · 'tamano' · 'gracias'
+function pintarReportar(e) {
+  const caja = $('#reportar'), f = e.f;
+  caja.hidden = !f;
+  if (!f) return;
+  const alerta = !!f.radar, previo = PREF.get('reporte', null);
+  const reciente = previo && previo.loc === f.localidad && previo.prov === f.prov && Date.now() - previo.t < 30 * 60000;
+  caja.className = 'reportar' + (alerta ? ' destacado' : '');
+  if (pasoReporte === 'tamano') {
+    caja.innerHTML = `<p><b>¿De qué tamaño?</b></p><div class="fila-botones">${Object.entries(TAMANO).map(([k, v]) => `<button type="button" class="rapida" data-tam="${k}">${esc(v)}</button>`).join('')}` +
+      '<button type="button" class="rapida" data-tam="">No sé</button></div>';
+  } else if (pasoReporte === 'gracias' || reciente) {
+    caja.innerHTML = `<p>${previo && previo.cae ? '¡Gracias! Tu reporte ya lo ven los vecinos' : '¡Gracias por avisar!'} <span class="nota">(${esc(horaCorta(previo ? previo.t : Date.now()))})</span></p>` +
+      '<button type="button" class="enlace" data-otra-vez>Cambiar mi reporte</button>';
+  } else if (alerta) {
+    caja.innerHTML = `<p><b>¿Está cayendo piedra en ${esc(f.localidad)}?</b> <span class="nota">Si la ves, avisá: ayuda a los vecinos.</span></p>` +
+      '<div class="fila-botones"><button type="button" class="boton-sec" data-cae="si">Sí, está cayendo</button><button type="button" class="boton-sec" data-cae="no">No</button></div>';
+  } else {
+    caja.innerHTML = '<button type="button" class="enlace" data-cae="si">¿Está cayendo piedra donde estás? Avisá</button>';
+  }
+  caja.querySelectorAll('[data-cae]').forEach(b => b.addEventListener('click', () => {
+    if (b.dataset.cae === 'si') { pasoReporte = 'tamano'; pintarReportar(e); } else enviarReporte(f, false, null);
+  }));
+  caja.querySelectorAll('[data-tam]').forEach(b => b.addEventListener('click', () => enviarReporte(f, true, b.dataset.tam || null)));
+  const otra = caja.querySelector('[data-otra-vez]');
+  if (otra) otra.addEventListener('click', () => { PREF.set('reporte', null); pasoReporte = null; pintarReportar(e); });
+}
+async function enviarReporte(f, cae, tamano) {
+  let id = PREF.get('id_reporte', null);
+  if (!id) { id = [...crypto.getRandomValues(new Uint8Array(16))].map(b => b.toString(16).padStart(2, '0')).join(''); PREF.set('id_reporte', id); }
+  const caja = $('#reportar');
+  caja.innerHTML = '<p class="nota">Enviando…</p>';
+  try {
+    await alServicio('/reporte', { id, localidad: claveAviso(f.localidad, f.provNombre || 'Córdoba'), cae, tamano });
+    PREF.set('reporte', { loc: f.localidad, prov: f.prov, cae, t: Date.now() });
+    pasoReporte = 'gracias';
+    await cargarReportes();
+    pintarHoy();
+  } catch (err) {
+    pasoReporte = null;
+    caja.innerHTML = '<p>No pudimos mandar el reporte. Revisá la conexión y probá de nuevo.</p><button type="button" class="enlace" data-otra-vez>Volver a intentar</button>';
+    caja.querySelector('[data-otra-vez]').addEventListener('click', () => pintarHoy());
+  }
 }
 
 // «hasta las 14:59 h» si termina hoy, «hasta el 24/10 a las 14:59 h» si no
@@ -638,8 +719,8 @@ function elegirHora(i) {
   capaLocRadar = null;
   if (esAhora) {
     capaLocRadar = L.layerGroup(LOCS.filter(x => x.radar).map(x => L.circleMarker([x.lat, x.lon], { radius: 10, color: COLOR_RADAR[x.radar.nivel],
-      weight: 4, fillColor: '#fff', fillOpacity: .9 }).bindPopup(`<b>${esc(x.localidad)}</b><br>En este momento: ${esc(x.radar.nivel)} a ${x.radar.km} km ` +
-      `(${x.radar.max_dbz} dBZ${x.radar.tope_km ? `, tope ${x.radar.tope_km} km` : ''}), según el radar`).bindTooltip(esc(x.localidad), { direction: 'top', offset: [0, -8] })
+      weight: 4, fillColor: '#fff', fillOpacity: .9 }).bindPopup(`<b>${esc(x.localidad)}</b><br>En este momento: ${esc(x.radar.nivel)} a ${km1(x.radar.km)} km ` +
+      `(${x.radar.max_dbz} dBZ${x.radar.tope_km ? `, tope ${km1(x.radar.tope_km)} km` : ''}), según el radar`).bindTooltip(esc(x.localidad), { direction: 'top', offset: [0, -8] })
       .on('click', () => pintarFicha(x)))).addTo(mapa);
   }
   const [m, a] = HORAS.conteo[i];
@@ -697,14 +778,15 @@ function pintarFicha(f) {
     <div class="pz-ficha"></div>
     ${agruparSMN(alertasDe(f)).map(a => `<div class="smn-alerta n-smn-${esc(a.nivel)}"><p><span class="punto"></span><b>Alerta oficial del SMN</b>: ${esc(a.titulo)}, nivel ${esc(a.nivel)}, ${hastaSMN(a)}.</p>` +
       (a.instruccion ? `<details><summary>Qué recomienda el SMN</summary><p>${esc(a.instruccion)}</p></details>` : '') + '</div>').join('')}
-    <p>${f.radar ? `<span class="lluvia-fuerte">En este momento: ${esc(f.radar.nivel)} a ${f.radar.km} km</span><span class="tecnico nota"> (${f.radar.max_dbz} dBZ${f.radar.tope_km ? `, tope ${f.radar.tope_km} km` : ''})</span>.` : '<b>En este momento</b>: el radar no ve granizo cerca.'}</p>
+    ${confirmaciones(f).length ? `<p class="confirmado">${textoConfirmaciones(f, confirmaciones(f))}</p>` : ''}
+    <p>${f.radar ? `<span class="lluvia-fuerte">En este momento: ${esc(f.radar.nivel)} a ${km1(f.radar.km)} km</span><span class="tecnico nota"> (${f.radar.max_dbz} dBZ${f.radar.tope_km ? `, tope ${km1(f.radar.tope_km)} km` : ''})</span>.` : '<b>En este momento</b>: el radar no ve granizo cerca.'}</p>
     ${f.reciente && f.reciente.length ? `<div><b>Últimas 24 horas</b>${htmlReciente(f)}</div>` : ''}
     <div><b>Próximos 3 días</b>${dias ? `<ul class="lista-dias">${dias}</ul>` : ' sin pronóstico por ahora.'}</div>
     <div class="fila-botones">
       <button type="button" class="boton-sec" data-mia ${mia ? 'disabled' : ''}>${mia ? 'Es tu localidad' : 'Hacerla mi localidad'}</button>
       <button type="button" class="boton-sec" data-compartir-ficha>Compartir</button>
     </div>`;
-  Piedrazon.crear(caja.querySelector('.pz-ficha'), { chico: true }).poner(...nivelLocalidad(f));
+  { const e = estado(f); Piedrazon.crear(caja.querySelector('.pz-ficha'), { chico: true }).poner(e.nivel, e.texto); }
   caja.querySelector('[data-mia]').addEventListener('click', () => ponerLocalidad(f));
   caja.querySelector('[data-compartir-ficha]').addEventListener('click', () => compartir(f));
 }
@@ -755,7 +837,7 @@ function digo(texto) {
 function tarjetaEstado(f) {
   const e = estado(f);
   const otra = e.f && e.f.prov !== PROV;   // de otra provincia: el mapa muestra la que se está mirando
-  return `<div class="mini-tarjeta"><b>${esc(TITULO[e.nivel])}</b><span>${e.f ? esc(conProv(e.f)) : esc(todaLa())}</span>` +
+  return `<div class="mini-tarjeta"><b>${esc(e.titulo)}</b><span>${e.f ? esc(conProv(e.f)) : esc(todaLa())}</span>` +
     (otra ? '' : e.f ? `<a href="${enlace(e.f)}#mapa" data-ver="${esc(e.f.localidad)}">Ver en el mapa →</a>` : '<a href="#mapa">Ver el mapa →</a>') + '</div>';
 }
 
@@ -771,7 +853,7 @@ const RESPUESTAS = {
   },
   cuando(f) {
     const e = estado(f);
-    const pre = e.f && e.f.radar ? `Ahora mismo el radar ve una tormenta fuerte a ${e.f.radar.km} km. ` : '';
+    const pre = e.f && e.f.radar ? `Ahora mismo el radar ve una tormenta fuerte a ${km1(e.f.radar.km)} km. ` : '';
     if (!HORAS) return `${pre}Todavía no tengo el pronóstico hora por hora.`;
     const ts = tramos(e.f).slice(0, 3);
     if (!ts.length) return `${pre}En ${esc(e.lugar)} no veo horas con condiciones para granizo en los próximos tres días. Igual miro el radar cada 15 minutos.`;
@@ -986,6 +1068,10 @@ async function recargar() {
   pintarTodo();
 }
 setInterval(recargar, 15 * 60 * 1000);
+setInterval(async () => {
+  if (document.visibilityState !== 'visible' || !LOCS.some(x => x.radar)) return;
+  await cargarReportes(); pintarTodo();
+}, 3 * 60 * 1000);
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState !== 'visible') return;
   avisosLeidos();

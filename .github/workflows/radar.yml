@@ -53,6 +53,11 @@ jobs:
           PUSH_SECRETO: ${{ secrets.PUSH_SECRETO }}
           VAPID_PRIVADA: ${{ secrets.VAPID_PRIVADA }}
         run: python codigo/scripts/notificar.py
+      - name: Reportes de vecinos (se guardan en data/reportes_vecinos.csv)
+        continue-on-error: true
+        env:
+          PUSH_URL: ${{ secrets.PUSH_URL }}
+        run: python codigo/scripts/reportes_vecinos.py
       - name: Avisos al celular de la app de crecidas (predinun)
         continue-on-error: true
         env:

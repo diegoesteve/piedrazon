@@ -292,3 +292,11 @@ dialog .buscar-caja input { background: var(--fondo); box-shadow: none; }
 .reciente-mapa { margin: 0 0 12px; }
 .reciente-mapa[hidden] { display: none; }
 #reciente-hoy .lista-reciente li, .reciente-mapa a { opacity: .85; }
+
+/* reportes de vecinos */
+.reportar { display: flex; flex-direction: column; gap: 10px; }
+.reportar[hidden] { display: none; }
+.reportar p { margin: 0; }
+.reportar.destacado { background: var(--tarjeta); border: 2px solid var(--rojo); border-radius: 18px; padding: 14px; box-shadow: var(--sombra); }
+.enlace { align-self: flex-start; background: none; border: 0; padding: 4px 0; color: var(--acento); font: inherit; font-weight: 600; text-decoration: underline; cursor: pointer; }
+.confirmado { font-weight: 600; color: var(--rojo); }
