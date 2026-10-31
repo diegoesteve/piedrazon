@@ -1,61 +1,56 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 06:30",
+ "consultado": "2026-10-31 06:45",
  "radares": {
-  "RMA6": "2026-10-31 06:09",
-  "RMA17": "2026-10-31 06:06",
+  "RMA17": "2026-10-31 06:30",
+  "RMA6": "2026-10-31 06:18",
   "AR5": "2026-10-31 06:10",
   "RMA16": "2026-10-31 06:11",
-  "RMA19": "2026-10-31 06:16",
-  "RMA15": "2026-10-31 06:20"
+  "RMA19": "2026-10-31 06:33",
+  "AR7": "2026-10-31 06:20",
+  "RMA15": "2026-10-31 06:28",
+  "RMA2": "2026-10-31 06:28",
+  "RMA11": "2026-10-31 06:29"
  },
  "nucleos": [
   {
-   "lat": -32.0736,
-   "lon": -64.9787,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.6228,
-   "lon": -66.6119,
-   "max_dbz": 56,
-   "tope_km": 8.8,
-   "radar": "RMA15",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -33.2589,
-   "lon": -67.4134,
+   "lat": -27.2496,
+   "lon": -65.8859,
    "max_dbz": 54,
+   "tope_km": 15.2,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -35.7009,
+   "lon": -57.1303,
+   "max_dbz": 53,
+   "tope_km": 8.8,
+   "radar": "RMA2",
+   "nivel": null
+  },
+  {
+   "lat": -33.3038,
+   "lon": -67.4134,
+   "max_dbz": 50,
    "tope_km": 10.6,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -30.5064,
-   "lon": -66.4744,
-   "max_dbz": 51,
+   "lat": -32.6285,
+   "lon": -64.9127,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -30.4974,
+   "lon": -66.4956,
+   "max_dbz": 49,
    "tope_km": 8.2,
    "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -30.3091,
-   "lon": -66.5167,
-   "max_dbz": 50,
-   "tope_km": 7.6,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -37.2165,
-   "lon": -56.6968,
-   "max_dbz": 49,
-   "tope_km": 7.0,
-   "radar": "RMA6",
    "nivel": null
   },
   {
@@ -67,7 +62,7 @@
    "nivel": null
   },
   {
-   "lat": -37.1983,
+   "lat": -37.2619,
    "lon": -56.4744,
    "max_dbz": 47,
    "tope_km": 6.4,
@@ -81,29 +76,23 @@
    "tope_km": 15.0,
    "radar": "AR5",
    "nivel": null
+  },
+  {
+   "lat": -29.7344,
+   "lon": -60.9482,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.8173,
+   "lon": -60.9374,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
   }
  ],
- "localidades": {
-  "La Población": {
-   "nivel": "granizo probable",
-   "km": 4.9,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "visto": "2026-10-31 06:06"
-  },
-  "La Travesía": {
-   "nivel": "granizo probable",
-   "km": 7.6,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "visto": "2026-10-31 06:06"
-  },
-  "San Javier y Yacanto": {
-   "nivel": "granizo probable",
-   "km": 7.2,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "visto": "2026-10-31 06:06"
-  }
- }
+ "localidades": {}
 }
