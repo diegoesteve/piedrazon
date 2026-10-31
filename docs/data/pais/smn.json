@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-10-31 17:30",
+ "consultado": "2026-10-31 17:45",
  "alertas": [
   {
    "id": "2026_10_31_1848_cap_es",
@@ -370,6 +370,54 @@
      [
       -64.23,
       -31.82
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_10_31_2030_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-10-31T20:30:00-03:00",
+   "hasta": "2026-10-31T23:30:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CHACO: ALMIRANTE BROWN - GRAL GUEMES. SANTIAGO DEL ESTERO: COPO.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_10_31_2030_cap_es.xml",
+   "desde_local": "31/10 20:30",
+   "hasta_local": "31/10 23:30",
+   "localidades": 2,
+   "poligonos": [
+    [
+     [
+      -61.41,
+      -26.24
+     ],
+     [
+      -61.89,
+      -26.14
+     ],
+     [
+      -61.89,
+      -25.89
+     ],
+     [
+      -61.08,
+      -25.53
+     ],
+     [
+      -60.77,
+      -25.68
+     ],
+     [
+      -60.59,
+      -25.96
+     ],
+     [
+      -61.41,
+      -26.24
      ]
     ]
    ]
@@ -27321,6 +27369,12 @@
   ],
   "San Antonio (dpto. General Juan Facundo Quiroga, La Rioja)": [
    "2026_10_31_1958_cap_es"
+  ],
+  "Juan José Castelli": [
+   "2026_10_31_2030_cap_es"
+  ],
+  "Miraflores (Chaco)": [
+   "2026_10_31_2030_cap_es"
   ]
  }
 }
