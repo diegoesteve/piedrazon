@@ -1,47 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-01 20:00",
+ "consultado": "2026-11-01 20:15",
  "alertas": [
-  {
-   "id": "2026_11_01_2204_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-11-01T22:04:00-03:00",
-   "hasta": "2026-11-01T23:04:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
-   "zona": "CORDOBA: GRAL ROCA. BUENOS AIRES: GRAL VILLEGAS - RIVADAVIA. LA PAMPA: CHAPALEUFU - REALICO.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_01_2204_cap_es.xml",
-   "desde_local": "01/11 22:04",
-   "hasta_local": "01/11 23:04",
-   "localidades": 4,
-   "poligonos": [
-    [
-     [
-      -64.1,
-      -34.6
-     ],
-     [
-      -64.09,
-      -35.38
-     ],
-     [
-      -62.93,
-      -35.44
-     ],
-     [
-      -62.91,
-      -34.57
-     ],
-     [
-      -64.1,
-      -34.6
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_01_2224_cap_es",
    "tipo": "aviso a corto plazo",
@@ -82,6 +42,66 @@
      [
       -63.4,
       -31.53
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_01_2307_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-01T23:07:00-03:00",
+   "hasta": "2026-11-02T01:07:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CORDOBA: GRAL ROCA - PRES ROQUE S.  PENA - RIO CUARTO.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_01_2307_cap_es.xml",
+   "desde_local": "01/11 23:07",
+   "hasta_local": "02/11 01:07",
+   "localidades": 13,
+   "poligonos": [
+    [
+     [
+      -64.99,
+      -33.92
+     ],
+     [
+      -64.81,
+      -34.09
+     ],
+     [
+      -63.74,
+      -34.72
+     ],
+     [
+      -63.41,
+      -34.73
+     ],
+     [
+      -63.44,
+      -34.33
+     ],
+     [
+      -62.96,
+      -34.34
+     ],
+     [
+      -62.87,
+      -34.14
+     ],
+     [
+      -63.27,
+      -33.86
+     ],
+     [
+      -64.72,
+      -33.83
+     ],
+     [
+      -64.99,
+      -33.92
      ]
     ]
    ]
@@ -6276,22 +6296,6 @@
   }
  ],
  "localidades": {
-  "Buchardo": [
-   "2026_11_01_2204_cap_es",
-   "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
-  ],
-  "Italó": [
-   "2026_11_01_2204_cap_es",
-   "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
-  ],
-  "Onagoity": [
-   "2026_11_01_2204_cap_es",
-   "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
-  ],
-  "Pincén": [
-   "2026_11_01_2204_cap_es",
-   "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
-  ],
   "Arroyito": [
    "2026_11_01_2224_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_83",
@@ -6974,25 +6978,36 @@
   "Villa del Totoral": [
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_72"
   ],
+  "Buchardo": [
+   "2026_11_01_2307_cap_es",
+   "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
+  ],
   "Del Campillo": [
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "General Levalle": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Huinca Renancó": [
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
+  "Italó": [
+   "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
+  ],
   "Jovita": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "La Cesira": [
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Laboulaye": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Leguizamón": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Mattaldi": [
@@ -7004,25 +7019,36 @@
   "Nicolás Bruzzone": [
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
+  "Onagoity": [
+   "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
+  ],
+  "Pincén": [
+   "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
+  ],
   "Ranqueles": [
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Rosales": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Río Bamba": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "San Joaquín": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Serrano": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Villa Huidobro": [
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Villa Rossi": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_77"
   ],
   "Villa Sarmiento (dpto. General Roca)": [
@@ -7488,6 +7514,7 @@
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_24"
   ],
   "La Cautiva": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_79",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_24"
   ],
@@ -7572,10 +7599,12 @@
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Vicuña Mackenna": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_79",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Washington": [
+   "2026_11_01_2307_cap_es",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_79",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_24"
   ],
