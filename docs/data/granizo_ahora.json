@@ -1,75 +1,64 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 06:21",
+ "consultado": "2026-11-01 06:30",
  "radares": {
-  "RMA1": "2026-11-01 06:08",
-  "RMA17": "2026-11-01 06:08"
+  "RMA17": "2026-11-01 06:16",
+  "RMA1": "2026-11-01 06:17"
  },
  "nucleos": [
   {
-   "lat": -30.3082,
-   "lon": -64.2672,
-   "max_dbz": 56,
-   "tope_km": 12.9,
+   "lat": -32.0006,
+   "lon": -65.0007,
+   "max_dbz": 65,
+   "tope_km": 13.5,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.3264,
+   "lon": -64.2027,
+   "max_dbz": 55,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.3993,
-   "lon": -64.2027,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.3811,
-   "lon": -65.0741,
-   "max_dbz": 52,
-   "tope_km": 12.3,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.6812,
-   "lon": -64.59,
-   "max_dbz": 52,
-   "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.5813,
-   "lon": -64.9665,
-   "max_dbz": 51,
-   "tope_km": 12.3,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.4539,
-   "lon": -63.7401,
+   "lat": -30.4084,
+   "lon": -64.9557,
    "max_dbz": 50,
-   "tope_km": 10.0,
+   "tope_km": 12.3,
    "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.6467,
-   "lon": -64.9237,
-   "max_dbz": 48,
-   "tope_km": 14.7,
-   "radar": "RMA17",
    "nivel": null
   }
  ],
  "localidades": {
+  "La Población": {
+   "nivel": "granizo probable",
+   "km": 8.6,
+   "max_dbz": 65,
+   "tope_km": 13.5,
+   "visto": "2026-11-01 06:16"
+  },
+  "San Javier y Yacanto": {
+   "nivel": "granizo probable",
+   "km": 3.9,
+   "max_dbz": 65,
+   "tope_km": 13.5,
+   "visto": "2026-11-01 06:16"
+  },
   "San Pedro Norte": {
    "nivel": "granizo probable",
-   "km": 7.7,
-   "max_dbz": 56,
-   "tope_km": 12.9,
-   "visto": "2026-11-01 06:08"
+   "km": 8.0,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-01 06:17"
+  },
+  "Villa de las Rosas": {
+   "nivel": "granizo probable",
+   "km": 7.6,
+   "max_dbz": 65,
+   "tope_km": 13.5,
+   "visto": "2026-11-01 06:16"
   }
  }
 }
