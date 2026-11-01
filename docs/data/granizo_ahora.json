@@ -1,7 +1,49 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 09:45",
- "radares": {},
- "nucleos": [],
- "localidades": {}
+ "consultado": "2026-11-01 10:00",
+ "radares": {
+  "RMA16": "2026-11-01 09:43",
+  "RMA17": "2026-11-01 09:49"
+ },
+ "nucleos": [
+  {
+   "lat": -31.9641,
+   "lon": -64.9897,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.101,
+   "lon": -64.9677,
+   "max_dbz": 54,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  }
+ ],
+ "localidades": {
+  "Los Hornillos": {
+   "nivel": "granizo probable",
+   "km": 7.3,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "visto": "2026-11-01 09:49"
+  },
+  "San Javier y Yacanto": {
+   "nivel": "granizo probable",
+   "km": 7.5,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "visto": "2026-11-01 09:49"
+  },
+  "Villa de las Rosas": {
+   "nivel": "granizo probable",
+   "km": 5.2,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "visto": "2026-11-01 09:49"
+  }
+ }
 }
