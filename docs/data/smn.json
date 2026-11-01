@@ -1,7 +1,47 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-01 14:00",
+ "consultado": "2026-11-01 14:15",
  "alertas": [
+  {
+   "id": "2026_11_01_1702_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-01T17:02:00-03:00",
+   "hasta": "2026-11-01T19:02:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrastrados por el viento. Cerrá y alejate de puertas y ventanas. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "CORDOBA: CALAMUCHITA - RIO CUARTO - TERCERO ARRIBA. SAN LUIS: CHACABUCO.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_01_1702_cap_es.xml",
+   "desde_local": "01/11 17:02",
+   "hasta_local": "01/11 19:02",
+   "localidades": 12,
+   "poligonos": [
+    [
+     [
+      -65.32,
+      -32.93
+     ],
+     [
+      -65.35,
+      -32.6
+     ],
+     [
+      -64.23,
+      -32.23
+     ],
+     [
+      -64.06,
+      -33.07
+     ],
+     [
+      -65.32,
+      -32.93
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_4",
    "tipo": "alerta",
@@ -7946,6 +7986,7 @@
   ],
   "Alcira": [
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_6",
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_52"
   ],
   "Alejandro Roca": [
@@ -7962,6 +8003,7 @@
   ],
   "Berrotarán": [
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_6",
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_52"
   ],
   "Bulnes": [
@@ -7982,10 +8024,12 @@
   ],
   "Chucul": [
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_6",
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_52"
   ],
   "Coronel Baigorria": [
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_6",
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_52"
   ],
   "Coronel Moldes": [
@@ -7998,6 +8042,7 @@
   ],
   "Elena": [
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_6",
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_52"
   ],
   "General Cabrera": [
@@ -8030,6 +8075,7 @@
   ],
   "Las Albahacas": [
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_6",
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_52"
   ],
   "Las Higueras": [
@@ -8113,6 +8159,7 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_52"
   ],
   "Alpa Corral": [
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_51",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_34"
   ],
@@ -8125,10 +8172,12 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Río de los Sauces": [
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_51",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Villa El Chacay": [
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_51",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_34"
   ],
@@ -9076,6 +9125,7 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_31"
   ],
   "Cañada del Sauce": [
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_41",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_31"
   ],
@@ -9116,6 +9166,7 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_31"
   ],
   "Las Caleras": [
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_41",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_31"
   ],
@@ -9480,6 +9531,7 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Los Cóndores": [
+   "2026_11_01_1702_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_46",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_36"
   ],
