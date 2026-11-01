@@ -1,152 +1,113 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 16:15",
+ "consultado": "2026-11-01 16:30",
  "radares": {
-  "RMA17": "2026-11-01 16:05",
-  "RMA16": "2026-11-01 16:00",
-  "RMA1": "2026-11-01 16:03"
+  "RMA16": "2026-11-01 16:08",
+  "RMA1": "2026-11-01 16:12",
+  "RMA17": "2026-11-01 16:13"
  },
  "nucleos": [
   {
-   "lat": -32.55,
-   "lon": -64.1166,
-   "max_dbz": 64,
+   "lat": -32.2662,
+   "lon": -64.278,
+   "max_dbz": 66,
    "tope_km": 17.0,
-   "radar": "RMA16",
+   "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.3035,
-   "lon": -64.3706,
+   "lat": -32.267,
+   "lon": -64.3485,
    "max_dbz": 63,
    "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.5741,
-   "lon": -64.1653,
-   "max_dbz": 61,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.507,
-   "lon": -64.2242,
-   "max_dbz": 61,
-   "tope_km": 17.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.347,
-   "lon": -64.2972,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.5782,
+   "lat": -32.6138,
    "lon": -63.9552,
-   "max_dbz": 57,
-   "tope_km": 11.7,
+   "max_dbz": 61,
+   "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.3555,
-   "lon": -63.9445,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.1405,
-   "lon": -64.978,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "radar": "RMA16",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -32.1322,
-   "lon": -64.0951,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.4951,
-   "lon": -64.7836,
-   "max_dbz": 53,
-   "tope_km": 7.0,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "eco fijo del terreno"
-  },
-  {
-   "lat": -32.3924,
-   "lon": -64.4401,
-   "max_dbz": 49,
+   "lat": -32.3379,
+   "lon": -64.2752,
+   "max_dbz": 59,
    "tope_km": 17.0,
    "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.3287,
+   "lon": -63.9337,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.8321,
+   "lon": -65.5743,
+   "max_dbz": 52,
+   "tope_km": 12.9,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.5378,
-   "lon": -63.9015,
-   "max_dbz": 48,
-   "tope_km": 14.1,
-   "radar": "RMA17",
+   "lat": -32.5773,
+   "lon": -63.8737,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -35.1626,
+   "lon": -64.7571,
+   "max_dbz": 49,
+   "tope_km": 15.8,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.5135,
+   "lon": -64.2823,
+   "max_dbz": 47,
+   "tope_km": 16.4,
+   "radar": "RMA16",
    "nivel": null
   }
  ],
  "localidades": {
-  "Achiras": {
-   "nivel": "posible granizo",
-   "km": 3.3,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "visto": "2026-11-01 16:00"
+  "Almafuerte": {
+   "nivel": "granizo probable",
+   "km": 7.9,
+   "max_dbz": 66,
+   "tope_km": 17.0,
+   "visto": "2026-11-01 16:12"
   },
   "Embalse": {
    "nivel": "granizo probable",
-   "km": 9.8,
+   "km": 6.5,
    "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-01 16:00"
+   "visto": "2026-11-01 16:08"
   },
   "General Fotheringham": {
    "nivel": "granizo probable",
-   "km": 8.1,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-01 16:03"
-  },
-  "Las Isletillas": {
-   "nivel": "granizo probable",
-   "km": 8.2,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "visto": "2026-11-01 16:03"
-  },
-  "Las Peñas Sud": {
-   "nivel": "granizo probable",
-   "km": 2.0,
-   "max_dbz": 64,
-   "tope_km": 17.0,
-   "visto": "2026-11-01 16:00"
+   "km": 6.2,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "visto": "2026-11-01 16:12"
   },
   "Los Cóndores": {
    "nivel": "granizo probable",
-   "km": 6.7,
-   "max_dbz": 57,
+   "km": 3.4,
+   "max_dbz": 66,
    "tope_km": 17.0,
-   "visto": "2026-11-01 16:05"
+   "visto": "2026-11-01 16:12"
   }
  }
 }
