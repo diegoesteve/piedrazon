@@ -1,32 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 07:15",
+ "consultado": "2026-11-01 07:30",
  "radares": {
-  "RMA1": "2026-11-01 07:03",
+  "RMA2": "2026-11-01 07:18",
+  "RMA1": "2026-11-01 07:21",
   "RMA14": "2026-11-01 06:56",
-  "RMA2": "2026-11-01 06:50",
-  "RMA15": "2026-11-01 06:57",
-  "RMA18": "2026-11-01 06:59",
+  "RMA15": "2026-11-01 07:13",
+  "RMA18": "2026-11-01 07:16",
   "AR7": "2026-11-01 07:00",
-  "RMA7": "2026-11-01 07:00",
-  "RMA8": "2026-11-01 07:05"
+  "RMA7": "2026-11-01 07:14",
+  "RMA8": "2026-11-01 07:05",
+  "RMA19": "2026-11-01 07:14"
  },
  "nucleos": [
   {
-   "lat": -30.1025,
-   "lon": -64.8986,
+   "lat": -30.1987,
+   "lon": -64.5577,
    "max_dbz": 58,
-   "tope_km": 14.1,
-   "radar": "RMA15",
+   "tope_km": 11.7,
+   "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.3811,
-   "lon": -64.3533,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
+   "lat": -35.1287,
+   "lon": -58.8128,
+   "max_dbz": 57,
+   "tope_km": 6.4,
+   "radar": "RMA2",
+   "nivel": "posible granizo"
   },
   {
    "lat": -30.0354,
@@ -37,6 +38,22 @@
    "nivel": "posible granizo"
   },
   {
+   "lat": -28.4431,
+   "lon": -66.0408,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -35.5939,
+   "lon": -59.9233,
+   "max_dbz": 54,
+   "tope_km": 8.8,
+   "radar": "RMA2",
+   "nivel": null
+  },
+  {
    "lat": -36.0896,
    "lon": -59.5989,
    "max_dbz": 52,
@@ -45,27 +62,27 @@
    "nivel": null
   },
   {
-   "lat": -37.1522,
-   "lon": -67.7466,
+   "lat": -30.2373,
+   "lon": -64.5284,
    "max_dbz": 52,
-   "tope_km": 17.0,
-   "radar": "RMA18",
+   "tope_km": 13.5,
+   "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -30.3355,
-   "lon": -64.4286,
+   "lat": -34.877,
+   "lon": -57.5117,
    "max_dbz": 51,
-   "tope_km": 11.1,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -36.0564,
-   "lon": -59.6765,
-   "max_dbz": 51,
-   "tope_km": 10.0,
+   "tope_km": 12.9,
    "radar": "RMA2",
+   "nivel": null
+  },
+  {
+   "lat": -30.0755,
+   "lon": -64.7188,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "radar": "RMA15",
    "nivel": null
   },
   {
@@ -77,27 +94,27 @@
    "nivel": null
   },
   {
-   "lat": -28.4065,
-   "lon": -66.0196,
-   "max_dbz": 50,
-   "tope_km": 14.7,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -30.3091,
-   "lon": -64.6659,
+   "lat": -30.372,
+   "lon": -64.2027,
    "max_dbz": 49,
-   "tope_km": 12.9,
-   "radar": "RMA15",
+   "tope_km": 10.6,
+   "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.2443,
-   "lon": -64.6438,
+   "lat": -37.2054,
+   "lon": -67.6667,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -34.5524,
+   "lon": -59.2839,
    "max_dbz": 48,
-   "tope_km": 11.7,
-   "radar": "RMA1",
+   "tope_km": 8.8,
+   "radar": "RMA2",
    "nivel": null
   },
   {
@@ -117,6 +134,14 @@
    "nivel": null
   },
   {
+   "lat": -34.2871,
+   "lon": -68.8627,
+   "max_dbz": 48,
+   "tope_km": 14.1,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
    "lat": -29.8725,
    "lon": -60.9266,
    "max_dbz": 47,
@@ -126,6 +151,48 @@
   }
  ],
  "localidades": {
+  "Barrio El Taladro": {
+   "nivel": "posible granizo",
+   "km": 8.0,
+   "max_dbz": 57,
+   "tope_km": 6.4,
+   "visto": "2026-11-01 07:18"
+  },
+  "Cañuelas": {
+   "nivel": "posible granizo",
+   "km": 9.5,
+   "max_dbz": 57,
+   "tope_km": 6.4,
+   "visto": "2026-11-01 07:18"
+  },
+  "Uribelarrea": {
+   "nivel": "posible granizo",
+   "km": 7.2,
+   "max_dbz": 57,
+   "tope_km": 6.4,
+   "visto": "2026-11-01 07:18"
+  },
+  "Los Angeles (Catamarca)": {
+   "nivel": "granizo probable",
+   "km": 8.9,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-01 07:13"
+  },
+  "Los Ángeles Norte": {
+   "nivel": "granizo probable",
+   "km": 9.2,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-01 07:13"
+  },
+  "Los Ángeles Sur": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-01 07:13"
+  },
   "Esquina (Corrientes)": {
    "nivel": "posible granizo",
    "km": 8.3,
@@ -133,12 +200,12 @@
    "tope_km": 8.8,
    "visto": "2026-11-01 07:05"
   },
-  "Deán Funes": {
+  "Quilino": {
    "nivel": "granizo probable",
-   "km": 4.9,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "visto": "2026-11-01 07:03"
+   "km": 5.9,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "visto": "2026-11-01 07:21"
   }
  }
 }
