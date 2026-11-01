@@ -1,67 +1,127 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 03:15",
+ "consultado": "2026-11-01 03:30",
  "radares": {
-  "RMA1": "2026-11-01 03:05",
-  "RMA16": "2026-11-01 03:02"
+  "RMA16": "2026-11-01 03:10",
+  "RMA1": "2026-11-01 03:14"
  },
  "nucleos": [
   {
-   "lat": -30.8989,
-   "lon": -64.3856,
-   "max_dbz": 54,
+   "lat": -33.2129,
+   "lon": -65.0994,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "radar": "RMA16",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.654,
+   "lon": -64.8804,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.9442,
+   "lon": -64.321,
+   "max_dbz": 55,
    "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -31.2065,
+   "lon": -64.9773,
+   "max_dbz": 52,
+   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -33.2038,
-   "lon": -65.1105,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -30.0708,
-   "lon": -63.7831,
-   "max_dbz": 53,
+   "lat": -30.0891,
+   "lon": -63.7078,
+   "max_dbz": 51,
    "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.6957,
-   "lon": -65.508,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -30.6267,
-   "lon": -64.8912,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.1613,
-   "lon": -65.0526,
-   "max_dbz": 47,
+   "lat": -30.8536,
+   "lon": -64.4609,
+   "max_dbz": 50,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
   },
   {
    "lat": -31.1794,
-   "lon": -63.299,
-   "max_dbz": 47,
-   "tope_km": 9.4,
+   "lon": -63.1914,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.2336,
+   "lon": -63.1269,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.0257,
+   "lon": -65.4614,
+   "max_dbz": 48,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.2517,
+   "lon": -63.2129,
+   "max_dbz": 48,
+   "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "El Brete": {
+   "nivel": "granizo probable",
+   "km": 0.3,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "visto": "2026-11-01 03:14"
+  },
+  "La Granja": {
+   "nivel": "posible granizo",
+   "km": 7.6,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-01 03:14"
+  },
+  "La Pampa": {
+   "nivel": "posible granizo",
+   "km": 5.1,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-01 03:14"
+  },
+  "Las Playas": {
+   "nivel": "granizo probable",
+   "km": 7.1,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "visto": "2026-11-01 03:14"
+  },
+  "Media Naranja": {
+   "nivel": "granizo probable",
+   "km": 6.2,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "visto": "2026-11-01 03:14"
+  }
+ }
 }
