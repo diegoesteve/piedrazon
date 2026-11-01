@@ -1,75 +1,99 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 04:30",
+ "consultado": "2026-11-01 04:45",
  "radares": {
-  "RMA1": "2026-11-01 04:09",
-  "RMA16": "2026-11-01 04:16"
+  "RMA16": "2026-11-01 04:32",
+  "RMA1": "2026-11-01 04:27"
  },
  "nucleos": [
   {
    "lat": -30.5904,
-   "lon": -64.3748,
-   "max_dbz": 55,
-   "tope_km": 12.3,
+   "lon": -64.4931,
+   "max_dbz": 58,
+   "tope_km": 12.9,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.8808,
-   "lon": -65.5582,
+   "lat": -33.1948,
+   "lon": -65.1215,
    "max_dbz": 54,
-   "tope_km": 10.0,
+   "tope_km": 11.7,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -30.5994,
+   "lon": -64.1919,
+   "max_dbz": 52,
+   "tope_km": 11.7,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.772,
-   "lon": -64.9557,
-   "max_dbz": 53,
-   "tope_km": 10.6,
+   "lat": -30.6812,
+   "lon": -64.1596,
+   "max_dbz": 52,
+   "tope_km": 14.1,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.7175,
-   "lon": -64.6438,
+   "lat": -31.6121,
+   "lon": -64.2887,
    "max_dbz": 51,
-   "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.6267,
-   "lon": -64.6653,
-   "max_dbz": 50,
    "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.5761,
-   "lon": -64.4609,
-   "max_dbz": 48,
-   "tope_km": 8.2,
+   "lat": -30.5631,
+   "lon": -64.988,
+   "max_dbz": 50,
+   "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.5941,
-   "lon": -64.3856,
-   "max_dbz": 48,
-   "tope_km": 8.2,
+   "lat": -30.8627,
+   "lon": -64.8374,
+   "max_dbz": 49,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.6994,
-   "lon": -64.9988,
+   "lat": -31.5671,
+   "lon": -64.4824,
    "max_dbz": 48,
-   "tope_km": 9.4,
+   "tope_km": 7.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.6031,
+   "lon": -64.3641,
+   "max_dbz": 48,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -30.5813,
+   "lon": -64.9127,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Copacabana": {
+   "nivel": "granizo probable",
+   "km": 6.0,
+   "max_dbz": 58,
+   "tope_km": 12.9,
+   "visto": "2026-11-01 04:27"
+  }
+ }
 }
