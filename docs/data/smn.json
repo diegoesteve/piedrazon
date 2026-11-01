@@ -1,47 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-01 18:45",
+ "consultado": "2026-11-01 19:00",
  "alertas": [
-  {
-   "id": "2026_11_01_1954_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON RAFAGAS Y CAIDA DE GRANIZO",
-   "desde": "2026-11-01T19:54:00-03:00",
-   "hasta": "2026-11-01T21:54:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON RAFAGAS Y CAIDA DE GRANIZO",
-   "instruccion": "Retirá o asegurá objetos que puedan ser arrastrados por el viento. Cerrá y alejate de puertas y ventanas. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
-   "zona": "CORDOBA: RIO SEGUNDO - SANTA MARIA - TERCERO ARRIBA.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_01_1954_cap_es.xml",
-   "desde_local": "01/11 19:54",
-   "hasta_local": "01/11 21:54",
-   "localidades": 6,
-   "poligonos": [
-    [
-     [
-      -64.15,
-      -32.1
-     ],
-     [
-      -64.07,
-      -31.85
-     ],
-     [
-      -63.42,
-      -31.7
-     ],
-     [
-      -63.45,
-      -32.0
-     ],
-     [
-      -64.15,
-      -32.1
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_01_2043_cap_es",
    "tipo": "aviso a corto plazo",
@@ -5676,36 +5636,6 @@
   }
  ],
  "localidades": {
-  "Colonia Almada": [
-   "2026_11_01_1954_cap_es",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
-  ],
-  "Colonia Videla": [
-   "2026_11_01_1954_cap_es",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
-  ],
-  "Impira": [
-   "2026_11_01_1954_cap_es",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
-  ],
-  "Las Junturas": [
-   "2026_11_01_1954_cap_es",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
-  ],
-  "Manfredi": [
-   "2026_11_01_1954_cap_es",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
-  ],
-  "Oncativo": [
-   "2026_11_01_1954_cap_es",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
-   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
-  ],
   "Calchín": [
    "2026_11_01_2043_cap_es",
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
@@ -6233,7 +6163,15 @@
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
   ],
+  "Colonia Almada": [
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
+  ],
   "Colonia Las Cuatro Esquinas": [
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
+  ],
+  "Colonia Videla": [
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
   ],
@@ -6269,6 +6207,10 @@
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
   ],
+  "Impira": [
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
+  ],
   "James Craik": [
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
@@ -6301,6 +6243,10 @@
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
   ],
+  "Las Junturas": [
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
+  ],
   "Las Perdices": [
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
@@ -6310,6 +6256,10 @@
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Los Cóndores": [
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
+  ],
+  "Manfredi": [
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
   ],
@@ -6326,6 +6276,10 @@
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Oliva": [
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
+   "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
+  ],
+  "Oncativo": [
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_72",
    "CAP_20261101203229_Tormenta_Llanura_alertas_alertas_24"
   ],
