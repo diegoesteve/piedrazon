@@ -1,18 +1,18 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 17:30",
+ "consultado": "2026-11-01 17:33",
  "radares": {
-  "RMA17": "2026-11-01 17:18",
+  "RMA17": "2026-11-01 17:26",
   "RMA16": "2026-11-01 17:22",
   "RMA1": "2026-11-01 17:15"
  },
  "nucleos": [
   {
-   "lat": -32.0189,
-   "lon": -63.7915,
+   "lat": -32.0069,
+   "lon": -63.7831,
    "max_dbz": 64,
-   "tope_km": 17.0,
-   "radar": "RMA17",
+   "tope_km": 15.2,
+   "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
@@ -21,6 +21,14 @@
    "max_dbz": 62,
    "tope_km": 17.0,
    "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.9823,
+   "lon": -63.7146,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
@@ -56,14 +64,6 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -35.1665,
-   "lon": -64.4401,
-   "max_dbz": 56,
-   "tope_km": 12.9,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
    "lat": -35.1361,
    "lon": -64.3596,
    "max_dbz": 56,
@@ -88,6 +88,22 @@
    "nivel": "granizo probable"
   },
   {
+   "lat": -33.3331,
+   "lon": -61.9888,
+   "max_dbz": 54,
+   "tope_km": 13.5,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.3871,
+   "lon": -62.0767,
+   "max_dbz": 53,
+   "tope_km": 13.5,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
    "lat": -35.1273,
    "lon": -65.1105,
    "max_dbz": 53,
@@ -96,10 +112,10 @@
    "nivel": null
   },
   {
-   "lat": -33.8176,
-   "lon": -64.0444,
+   "lat": -33.0989,
+   "lon": -65.2865,
    "max_dbz": 52,
-   "tope_km": 10.0,
+   "tope_km": 13.5,
    "radar": "RMA17",
    "nivel": null
   },
@@ -108,6 +124,22 @@
    "lon": -65.1767,
    "max_dbz": 52,
    "tope_km": 13.5,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -33.0267,
+   "lon": -65.6382,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.7989,
+   "lon": -64.0062,
+   "max_dbz": 51,
+   "tope_km": 11.1,
    "radar": "RMA16",
    "nivel": null
   },
@@ -128,6 +160,14 @@
    "nivel": null
   },
   {
+   "lat": -32.2104,
+   "lon": -63.7805,
+   "max_dbz": 50,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
    "lat": -35.1538,
    "lon": -64.7019,
    "max_dbz": 50,
@@ -144,21 +184,44 @@
    "nivel": null
   },
   {
+   "lat": -33.0898,
+   "lon": -65.6053,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
    "lat": -34.9679,
    "lon": -64.4921,
    "max_dbz": 48,
    "tope_km": 14.1,
    "radar": "RMA16",
    "nivel": null
+  },
+  {
+   "lat": -35.0432,
+   "lon": -64.3302,
+   "max_dbz": 47,
+   "tope_km": 15.2,
+   "radar": "RMA17",
+   "nivel": null
   }
  ],
  "localidades": {
   "Colonia Almada": {
    "nivel": "granizo probable",
-   "km": 7.0,
+   "km": 8.2,
    "max_dbz": 64,
+   "tope_km": 15.2,
+   "visto": "2026-11-01 17:15"
+  },
+  "Oncativo": {
+   "nivel": "granizo probable",
+   "km": 8.3,
+   "max_dbz": 61,
    "tope_km": 17.0,
-   "visto": "2026-11-01 17:18"
+   "visto": "2026-11-01 17:26"
   },
   "Suco": {
    "nivel": "granizo probable",
