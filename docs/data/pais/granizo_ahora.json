@@ -1,84 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 19:15",
+ "consultado": "2026-11-02 19:30",
  "radares": {
-  "RMA7": "2026-11-02 18:55",
-  "RMA6": "2026-11-02 18:57",
-  "AR7": "2026-11-02 19:00",
   "RMA3": "2026-11-02 18:54",
-  "RMA2": "2026-11-02 19:03"
+  "RMA7": "2026-11-02 19:13",
+  "RMA6": "2026-11-02 19:16",
+  "AR7": "2026-11-02 19:00",
+  "RMA2": "2026-11-02 19:21",
+  "RMA18": "2026-11-02 19:13"
  },
  "nucleos": [
   {
-   "lat": -38.4793,
-   "lon": -69.2847,
-   "max_dbz": 60,
-   "tope_km": 11.1,
-   "radar": "RMA7",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -36.6512,
-   "lon": -57.3054,
-   "max_dbz": 60,
-   "tope_km": 12.3,
+   "lat": -36.5688,
+   "lon": -57.3757,
+   "max_dbz": 66,
+   "tope_km": 17.0,
    "radar": "RMA6",
    "nivel": "granizo probable"
   },
   {
-   "lat": -37.8615,
-   "lon": -69.4509,
-   "max_dbz": 57,
-   "tope_km": 11.1,
+   "lat": -38.5245,
+   "lon": -69.1422,
+   "max_dbz": 62,
+   "tope_km": 14.1,
    "radar": "RMA7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -39.0111,
-   "lon": -69.2016,
-   "max_dbz": 56,
-   "tope_km": 7.0,
+   "lat": -37.9344,
+   "lon": -69.3084,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "radar": "RMA7",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -39.1098,
+   "lon": -69.0235,
+   "max_dbz": 55,
+   "tope_km": 7.6,
    "radar": "RMA7",
    "nivel": "posible granizo"
   },
   {
-   "lat": -37.9618,
-   "lon": -69.1897,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "radar": "RMA7",
-   "nivel": null
-  },
-  {
-   "lat": -36.8431,
-   "lon": -57.0596,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -36.7884,
-   "lon": -57.3523,
-   "max_dbz": 54,
-   "tope_km": 8.2,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -36.5868,
-   "lon": -57.3322,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+   "lat": -36.5251,
+   "lon": -57.3098,
+   "max_dbz": 53,
+   "tope_km": 13.5,
    "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -37.7884,
-   "lon": -68.3111,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "radar": "RMA7",
    "nivel": null
   },
   {
@@ -87,6 +56,30 @@
    "max_dbz": 51,
    "tope_km": 17.0,
    "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -36.6084,
+   "lon": -68.6253,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -37.8888,
+   "lon": -68.1805,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -38.0164,
+   "lon": -69.0472,
+   "max_dbz": 48,
+   "tope_km": 8.8,
+   "radar": "RMA7",
    "nivel": null
   },
   {
@@ -107,19 +100,12 @@
   }
  ],
  "localidades": {
-  "Cutral Có": {
-   "nivel": "posible granizo",
-   "km": 8.5,
-   "max_dbz": 56,
-   "tope_km": 7.0,
-   "visto": "2026-11-02 18:55"
-  },
-  "Plaza Huincul": {
-   "nivel": "posible granizo",
-   "km": 9.0,
-   "max_dbz": 56,
-   "tope_km": 7.0,
-   "visto": "2026-11-02 18:55"
+  "General Conesa (Buenos Aires)": {
+   "nivel": "granizo probable",
+   "km": 7.0,
+   "max_dbz": 66,
+   "tope_km": 17.0,
+   "visto": "2026-11-02 19:16"
   }
  }
 }
