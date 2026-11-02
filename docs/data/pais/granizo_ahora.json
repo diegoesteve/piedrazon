@@ -1,175 +1,233 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 01:15",
+ "consultado": "2026-11-02 01:30",
  "radares": {
-  "RMA15": "2026-11-02 01:03",
-  "RMA2": "2026-11-02 00:56",
-  "RMA3": "2026-11-02 01:06",
-  "RMA11": "2026-11-02 00:57",
-  "AR7": "2026-11-02 01:00",
-  "RMA17": "2026-11-02 00:57",
+  "RMA2": "2026-11-02 01:14",
+  "RMA3": "2026-11-02 01:15",
+  "RMA11": "2026-11-02 01:14",
+  "RMA17": "2026-11-02 01:14",
+  "RMA19": "2026-11-02 00:59",
+  "AR7": "2026-11-02 01:10",
   "RMA6": "2026-11-02 01:01",
-  "RMA19": "2026-11-02 00:59"
+  "RMA15": "2026-11-02 01:19",
+  "RMA4": "2026-11-02 01:14"
  },
  "nucleos": [
   {
-   "lat": -26.2696,
-   "lon": -62.1376,
-   "max_dbz": 63,
+   "lat": -26.2518,
+   "lon": -62.1075,
+   "max_dbz": 65,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.0868,
-   "lon": -63.2138,
-   "max_dbz": 59,
+   "lat": -24.2336,
+   "lon": -61.746,
+   "max_dbz": 62,
    "tope_km": 17.0,
-   "radar": "RMA11",
+   "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.0234,
-   "lon": -63.3995,
-   "max_dbz": 57,
+   "lat": -26.4029,
+   "lon": -61.9468,
+   "max_dbz": 60,
    "tope_km": 14.1,
-   "radar": "RMA11",
+   "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.3534,
-   "lon": -57.9043,
-   "max_dbz": 56,
-   "tope_km": 7.6,
+   "lat": -33.3331,
+   "lon": -61.7909,
+   "max_dbz": 60,
+   "tope_km": 12.3,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.3081,
+   "lon": -57.837,
+   "max_dbz": 58,
+   "tope_km": 11.1,
    "radar": "RMA2",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -26.3674,
-   "lon": -61.9769,
-   "max_dbz": 56,
-   "tope_km": 14.1,
-   "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.2134,
-   "lon": -63.1519,
-   "max_dbz": 56,
+   "lat": -27.2857,
+   "lon": -63.0487,
+   "max_dbz": 58,
    "tope_km": 17.0,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.9058,
-   "lon": -61.0672,
-   "max_dbz": 56,
-   "tope_km": 15.0,
+   "lat": -27.0958,
+   "lon": -63.1725,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.5757,
+   "lon": -61.5601,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.8089,
+   "lon": -60.786,
+   "max_dbz": 58,
+   "tope_km": 12.6,
    "radar": "AR7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.9084,
-   "lon": -60.5402,
-   "max_dbz": 53,
-   "tope_km": 10.0,
+   "lat": -33.8882,
+   "lon": -60.9482,
+   "max_dbz": 58,
+   "tope_km": 12.6,
+   "radar": "AR7",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.2809,
+   "lon": -60.0354,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "radar": "RMA2",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.5434,
+   "lon": -57.6912,
+   "max_dbz": 54,
+   "tope_km": 11.1,
    "radar": "RMA2",
    "nivel": null
+  },
+  {
+   "lat": -34.913,
+   "lon": -59.7999,
+   "max_dbz": 54,
+   "tope_km": 9.4,
+   "radar": "RMA2",
+   "nivel": null
+  },
+  {
+   "lat": -34.0812,
+   "lon": -58.3417,
+   "max_dbz": 52,
+   "tope_km": 6.4,
+   "radar": "RMA2",
+   "nivel": null
+  },
+  {
+   "lat": -24.2427,
+   "lon": -61.9468,
+   "max_dbz": 52,
+   "tope_km": 8.2,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -27.0506,
+   "lon": -63.3066,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -33.2071,
+   "lon": -61.8899,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.8794,
+   "lon": -60.6346,
+   "max_dbz": 52,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -30.4347,
+   "lon": -66.4533,
+   "max_dbz": 52,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -33.6854,
+   "lon": -61.251,
+   "max_dbz": 51,
+   "tope_km": 12.6,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -27.1263,
+   "lon": -59.9479,
+   "max_dbz": 51,
+   "tope_km": 3.5,
+   "radar": "RMA4",
+   "nivel": null,
+   "descartado": "tope bajo (3.5 km)"
   },
   {
    "lat": -33.6205,
-   "lon": -61.703,
-   "max_dbz": 53,
-   "tope_km": 10.0,
+   "lon": -61.681,
+   "max_dbz": 50,
+   "tope_km": 11.1,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -34.0903,
-   "lon": -60.3383,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -33.8441,
-   "lon": -60.6778,
-   "max_dbz": 52,
-   "tope_km": 14.4,
+   "lat": -33.5176,
+   "lon": -61.6403,
+   "max_dbz": 50,
+   "tope_km": 12.6,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -33.5488,
-   "lon": -61.8239,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -33.6116,
-   "lon": -61.7909,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -34.163,
-   "lon": -58.9923,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -34.814,
-   "lon": -57.4668,
-   "max_dbz": 51,
-   "tope_km": 16.4,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -34.172,
-   "lon": -60.2822,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -34.3986,
-   "lon": -58.2408,
+   "lat": -33.941,
+   "lon": -60.2885,
    "max_dbz": 50,
-   "tope_km": 14.1,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -24.0073,
-   "lon": -61.8163,
-   "max_dbz": 50,
-   "tope_km": 17.0,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -33.8441,
-   "lon": -60.4724,
-   "max_dbz": 50,
-   "tope_km": 11.4,
+   "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -28.4431,
-   "lon": -66.0408,
+   "lat": -34.3616,
+   "lon": -61.5821,
    "max_dbz": 49,
-   "tope_km": 14.1,
-   "radar": "RMA15",
+   "tope_km": 11.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -34.5746,
+   "lon": -62.3516,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -34.5924,
+   "lon": -61.9558,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "radar": "RMA17",
    "nivel": null
   },
   {
@@ -181,26 +239,58 @@
    "nivel": null
   },
   {
-   "lat": -35.8344,
-   "lon": -60.1476,
-   "max_dbz": 48,
-   "tope_km": 8.8,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -33.9674,
-   "lon": -60.786,
-   "max_dbz": 48,
+   "lat": -33.8882,
+   "lon": -61.1104,
+   "max_dbz": 49,
    "tope_km": 12.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -33.8882,
-   "lon": -60.8833,
+   "lat": -29.7528,
+   "lon": -60.9482,
+   "max_dbz": 49,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -34.6246,
+   "lon": -56.7826,
    "max_dbz": 48,
-   "tope_km": 12.0,
+   "tope_km": 7.0,
+   "radar": "RMA2",
+   "nivel": null
+  },
+  {
+   "lat": -35.7276,
+   "lon": -60.0691,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "radar": "RMA2",
+   "nivel": null
+  },
+  {
+   "lat": -33.6205,
+   "lon": -61.5051,
+   "max_dbz": 48,
+   "tope_km": 12.3,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -34.5391,
+   "lon": -61.703,
+   "max_dbz": 48,
+   "tope_km": 11.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -29.8725,
+   "lon": -60.8725,
+   "max_dbz": 48,
+   "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
@@ -214,12 +304,54 @@
   }
  ],
  "localidades": {
-  "Colón (Buenos Aires)": {
+  "Gahan": {
    "nivel": "granizo probable",
-   "km": 3.1,
-   "max_dbz": 56,
-   "tope_km": 15.0,
-   "visto": "2026-11-02 01:00"
+   "km": 8.8,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "visto": "2026-11-02 01:14"
+  },
+  "Villa Manuel Pomar (dpto. Colón, Buenos Aires)": {
+   "nivel": "granizo probable",
+   "km": 2.9,
+   "max_dbz": 58,
+   "tope_km": 12.6,
+   "visto": "2026-11-02 01:10"
+  },
+  "Villa Manuel Pomar (dpto. Rojas, Buenos Aires)": {
+   "nivel": "granizo probable",
+   "km": 3.2,
+   "max_dbz": 58,
+   "tope_km": 12.6,
+   "visto": "2026-11-02 01:10"
+  },
+  "Beravebú": {
+   "nivel": "granizo probable",
+   "km": 6.7,
+   "max_dbz": 60,
+   "tope_km": 12.3,
+   "visto": "2026-11-02 01:14"
+  },
+  "Chovet": {
+   "nivel": "granizo probable",
+   "km": 4.8,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "visto": "2026-11-02 01:14"
+  },
+  "Gödeken": {
+   "nivel": "granizo probable",
+   "km": 9.0,
+   "max_dbz": 60,
+   "tope_km": 12.3,
+   "visto": "2026-11-02 01:14"
+  },
+  "Los Quirquinchos": {
+   "nivel": "granizo probable",
+   "km": 8.8,
+   "max_dbz": 60,
+   "tope_km": 12.3,
+   "visto": "2026-11-02 01:14"
   }
  }
 }
