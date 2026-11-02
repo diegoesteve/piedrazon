@@ -1,54 +1,111 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 20:01",
+ "consultado": "2026-11-02 20:15",
  "radares": {
+  "RMA18": "2026-11-02 20:02",
+  "RMA3": "2026-11-02 20:06",
   "RMA2": "2026-11-02 19:49",
-  "RMA7": "2026-11-02 19:40",
-  "RMA6": "2026-11-02 19:43",
-  "RMA18": "2026-11-02 19:46",
-  "RMA3": "2026-11-02 19:48",
   "AR7": "2026-11-02 19:40",
-  "RMA11": "2026-11-02 19:50"
+  "RMA7": "2026-11-02 19:58",
+  "RMA6": "2026-11-02 20:01",
+  "RMA11": "2026-11-02 19:50",
+  "RMA19": "2026-11-02 20:03"
  },
  "nucleos": [
   {
-   "lat": -38.5697,
-   "lon": -68.976,
-   "max_dbz": 63,
+   "lat": -38.5787,
+   "lon": -68.8216,
+   "max_dbz": 65,
+   "tope_km": 12.3,
+   "radar": "RMA7",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -24.0979,
+   "lon": -62.0874,
+   "max_dbz": 58,
+   "tope_km": 12.3,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -36.4192,
+   "lon": -57.2986,
+   "max_dbz": 58,
+   "tope_km": 12.9,
+   "radar": "RMA2",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -38.0437,
+   "lon": -68.8691,
+   "max_dbz": 57,
    "tope_km": 11.7,
    "radar": "RMA7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -36.4496,
-   "lon": -57.2703,
-   "max_dbz": 62,
-   "tope_km": 14.1,
-   "radar": "RMA6",
+   "lat": -23.5536,
+   "lon": -62.5191,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -37.9709,
-   "lon": -69.1422,
-   "max_dbz": 58,
-   "tope_km": 11.1,
+   "lat": -37.9891,
+   "lon": -68.9641,
+   "max_dbz": 55,
+   "tope_km": 11.7,
    "radar": "RMA7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -38.0164,
-   "lon": -67.9549,
+   "lat": -32.1,
+   "lon": -67.4134,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "radar": "RMA19",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -36.7514,
+   "lon": -68.3286,
    "max_dbz": 53,
-   "tope_km": 10.6,
+   "tope_km": 16.4,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -23.7353,
+   "lon": -59.6479,
+   "max_dbz": 53,
+   "tope_km": 6.4,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -24.0345,
+   "lon": -62.1275,
+   "max_dbz": 52,
+   "tope_km": 12.3,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -38.1347,
+   "lon": -68.2161,
+   "max_dbz": 51,
+   "tope_km": 8.8,
    "radar": "RMA7",
    "nivel": null
   },
   {
-   "lat": -36.7068,
-   "lon": -68.3628,
+   "lat": -36.3854,
+   "lon": -57.2352,
    "max_dbz": 51,
-   "tope_km": 17.0,
-   "radar": "RMA18",
+   "tope_km": 9.4,
+   "radar": "RMA6",
    "nivel": null
   },
   {
@@ -60,35 +117,35 @@
    "nivel": null
   },
   {
-   "lat": -36.6263,
-   "lon": -68.4655,
+   "lat": -38.1256,
+   "lon": -68.7979,
    "max_dbz": 50,
-   "tope_km": 17.0,
-   "radar": "RMA18",
+   "tope_km": 11.1,
+   "radar": "RMA7",
    "nivel": null
   },
   {
-   "lat": -24.3421,
-   "lon": -62.6696,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -24.5588,
-   "lon": -62.4488,
+   "lat": -24.0888,
+   "lon": -62.4187,
    "max_dbz": 49,
-   "tope_km": 8.8,
+   "tope_km": 9.4,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -24.6489,
-   "lon": -62.4488,
+   "lat": -38.0892,
+   "lon": -67.8125,
    "max_dbz": 49,
+   "tope_km": 8.2,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -39.7436,
+   "lon": -69.4746,
+   "max_dbz": 47,
    "tope_km": 8.8,
-   "radar": "RMA3",
+   "radar": "RMA7",
    "nivel": null
   },
   {
@@ -101,12 +158,19 @@
   }
  ],
  "localidades": {
-  "General Conesa (Buenos Aires)": {
+  "Aguada San Roque": {
    "nivel": "granizo probable",
-   "km": 9.3,
-   "max_dbz": 62,
-   "tope_km": 14.1,
-   "visto": "2026-11-02 19:43"
+   "km": 3.8,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "visto": "2026-11-02 19:58"
+  },
+  "Los Blancos": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-02 20:06"
   }
  }
 }
