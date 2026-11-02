@@ -1,63 +1,78 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 03:30",
+ "consultado": "2026-11-02 03:45",
  "radares": {
-  "RMA4": "2026-11-02 03:21",
-  "RMA3": "2026-11-02 03:12",
-  "RMA2": "2026-11-02 03:14",
-  "RMA11": "2026-11-02 03:15",
+  "RMA11": "2026-11-02 03:33",
+  "AR7": "2026-11-02 03:30",
+  "RMA4": "2026-11-02 03:30",
+  "RMA3": "2026-11-02 03:30",
+  "RMA2": "2026-11-02 03:33",
   "RMA15": "2026-11-02 03:15",
-  "AR7": "2026-11-02 03:10",
-  "RMA17": "2026-11-02 03:00",
   "RMA16": "2026-11-02 03:19"
  },
  "nucleos": [
   {
-   "lat": -26.3763,
-   "lon": -61.6758,
-   "max_dbz": 66,
+   "lat": -26.5461,
+   "lon": -61.0925,
+   "max_dbz": 67,
+   "tope_km": 17.0,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.5095,
+   "lon": -61.0232,
+   "max_dbz": 67,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.5824,
-   "lon": -61.2059,
+   "lat": -26.4207,
+   "lon": -61.6055,
    "max_dbz": 65,
    "tope_km": 17.0,
-   "radar": "RMA4",
+   "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.5006,
-   "lon": -61.1939,
-   "max_dbz": 62,
+   "lat": -26.4651,
+   "lon": -61.4148,
+   "max_dbz": 63,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.5434,
-   "lon": -58.4987,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "radar": "RMA2",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -27.6046,
-   "lon": -61.3193,
+   "lat": -27.5956,
+   "lon": -61.2678,
    "max_dbz": 59,
-   "tope_km": 17.0,
+   "tope_km": 12.9,
    "radar": "RMA4",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.4077,
-   "lon": -58.7343,
-   "max_dbz": 57,
-   "tope_km": 10.0,
+   "lat": -34.4348,
+   "lon": -58.6221,
+   "max_dbz": 59,
+   "tope_km": 9.4,
    "radar": "RMA2",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -34.3986,
+   "lon": -57.9043,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "radar": "RMA2",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -26.678,
+   "lon": -61.4148,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
@@ -69,34 +84,34 @@
    "nivel": "posible granizo"
   },
   {
-   "lat": -34.4801,
-   "lon": -58.0725,
-   "max_dbz": 55,
-   "tope_km": 8.2,
-   "radar": "RMA2",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -34.4167,
-   "lon": -58.8465,
-   "max_dbz": 55,
-   "tope_km": 10.0,
+   "lat": -34.5072,
+   "lon": -58.5212,
+   "max_dbz": 56,
+   "tope_km": 10.6,
    "radar": "RMA2",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.1411,
-   "lon": -62.7598,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.9448,
-   "lon": -58.8913,
+   "lat": -29.0777,
+   "lon": -63.2963,
    "max_dbz": 54,
-   "tope_km": 11.1,
+   "tope_km": 14.7,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -26.3496,
+   "lon": -61.2441,
+   "max_dbz": 54,
+   "tope_km": 17.0,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -34.5434,
+   "lon": -56.8836,
+   "max_dbz": 54,
+   "tope_km": 13.5,
    "radar": "RMA2",
    "nivel": null
   },
@@ -109,859 +124,573 @@
    "nivel": null
   },
   {
-   "lat": -33.6348,
-   "lon": -58.9698,
+   "lat": -33.6439,
+   "lon": -58.7792,
    "max_dbz": 53,
-   "tope_km": 9.4,
+   "tope_km": 8.8,
    "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -33.3051,
-   "lon": -59.2611,
-   "max_dbz": 53,
-   "tope_km": 9.6,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -32.0006,
-   "lon": -64.9897,
-   "max_dbz": 53,
-   "tope_km": 13.5,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -26.8547,
-   "lon": -61.1956,
-   "max_dbz": 52,
-   "tope_km": 17.0,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -34.5795,
-   "lon": -57.0518,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -33.5176,
-   "lon": -59.0232,
-   "max_dbz": 52,
-   "tope_km": 9.6,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -34.5885,
-   "lon": -56.9396,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -33.8629,
-   "lon": -58.9025,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -29.0689,
-   "lon": -63.4304,
-   "max_dbz": 51,
-   "tope_km": 14.1,
-   "radar": "RMA11",
    "nivel": null
   },
   {
    "lat": -34.0358,
-   "lon": -58.9025,
-   "max_dbz": 49,
+   "lon": -58.7455,
+   "max_dbz": 52,
    "tope_km": 11.7,
    "radar": "RMA2",
    "nivel": null
   },
   {
-   "lat": -33.1542,
-   "lon": -60.494,
-   "max_dbz": 49,
+   "lat": -34.6427,
+   "lon": -56.7938,
+   "max_dbz": 52,
+   "tope_km": 13.5,
+   "radar": "RMA2",
+   "nivel": null
+  },
+  {
+   "lat": -33.1187,
+   "lon": -60.2128,
+   "max_dbz": 51,
    "tope_km": 12.6,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -29.716,
-   "lon": -60.959,
-   "max_dbz": 49,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "lat": -27.1773,
+   "lon": -62.6876,
+   "max_dbz": 50,
+   "tope_km": 13.5,
+   "radar": "RMA11",
    "nivel": null
   },
   {
-   "lat": -29.8633,
-   "lon": -60.9266,
+   "lat": -34.5162,
+   "lon": -57.9155,
+   "max_dbz": 50,
+   "tope_km": 8.2,
+   "radar": "RMA2",
+   "nivel": null
+  },
+  {
+   "lat": -34.4891,
+   "lon": -58.0276,
    "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "tope_km": 7.6,
+   "radar": "RMA2",
    "nivel": null
   }
  ],
  "localidades": {
   "Acasusso": {
    "nivel": "granizo probable",
-   "km": 7.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 3.6,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Barrio Parque General San Martín": {
    "nivel": "granizo probable",
-   "km": 8.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Belén de Escobar": {
-   "nivel": "granizo probable",
    "km": 8.8,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Benavídez": {
-   "nivel": "granizo probable",
-   "km": 4.1,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "nivel": "posible granizo",
+   "km": 6.7,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
   "Billinghurst": {
    "nivel": "granizo probable",
-   "km": 7.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.0,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Boulogne Sur Mer": {
    "nivel": "granizo probable",
-   "km": 7.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 4.2,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Béccar": {
    "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 5.3,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Carapachay": {
    "nivel": "granizo probable",
-   "km": 3.7,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Caseros (Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 9.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 2.6,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Ciudad Jardín El Libertador": {
    "nivel": "granizo probable",
-   "km": 8.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 7.8,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Ciudad del Libertador General San Martín": {
    "nivel": "granizo probable",
-   "km": 5.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 8.2,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
-  "Del Viso (dpto. José C. Paz, Buenos Aires)": {
+  "Don Torcuato Este": {
    "nivel": "granizo probable",
-   "km": 7.9,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "km": 8.9,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
-  "Del Viso (dpto. Pilar, Buenos Aires)": {
+  "Don Torcuato Oeste": {
    "nivel": "granizo probable",
-   "km": 5.8,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "km": 9.7,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
-  "Dique Luján": {
+  "El Libertador": {
    "nivel": "granizo probable",
-   "km": 6.8,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "km": 10.0,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "El Talar (Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 9.1,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "Escobar": {
-   "nivel": "granizo probable",
-   "km": 8.8,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "nivel": "posible granizo",
+   "km": 4.8,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
   "Florida": {
    "nivel": "granizo probable",
-   "km": 1.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 3.8,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Florida Oeste": {
    "nivel": "granizo probable",
-   "km": 1.6,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 3.5,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
-  "Garín": {
-   "nivel": "granizo probable",
-   "km": 1.8,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+  "General Pacheco": {
+   "nivel": "posible granizo",
+   "km": 2.5,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
   "General San Martín (Buenos Aires)": {
    "nivel": "granizo probable",
-   "km": 5.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 8.0,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
-  "Grand Bourg": {
-   "nivel": "granizo probable",
-   "km": 9.1,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "Ingeniero Maschwitz": {
-   "nivel": "granizo probable",
-   "km": 2.1,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+  "Ingeniero Adolfo Sourdeaux": {
+   "nivel": "posible granizo",
+   "km": 8.2,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
   "Ingeniero Pablo Nogués": {
-   "nivel": "granizo probable",
-   "km": 9.5,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "José Ingenieros": {
-   "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "La Lonja": {
-   "nivel": "granizo probable",
-   "km": 3.5,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "nivel": "posible granizo",
+   "km": 9.8,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
   "La Lucila (Buenos Aires)": {
    "nivel": "granizo probable",
-   "km": 5.1,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 3.1,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
-  "Loma Hermosa": {
-   "nivel": "granizo probable",
-   "km": 9.9,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Loma Verde (dpto. Escobar, Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 9.6,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "Los Cachorros": {
-   "nivel": "granizo probable",
-   "km": 5.0,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "Maquinista F. Savio Este": {
-   "nivel": "granizo probable",
-   "km": 3.9,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "Maquinista F. Savio Oeste": {
-   "nivel": "granizo probable",
-   "km": 4.2,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+  "Malvinas Argentinas (dpto. Malvinas Argentinas, Buenos Aires)": {
+   "nivel": "posible granizo",
+   "km": 9.8,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
   "Martínez": {
    "nivel": "granizo probable",
-   "km": 6.1,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Matheu": {
-   "nivel": "granizo probable",
-   "km": 3.9,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "km": 2.8,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Munro": {
    "nivel": "granizo probable",
-   "km": 2.9,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 2.5,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Olivos": {
    "nivel": "granizo probable",
-   "km": 4.1,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Pilar (Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 7.6,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "Presidente Derqui": {
-   "nivel": "granizo probable",
-   "km": 8.4,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "km": 3.7,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Ricardo Rojas": {
-   "nivel": "granizo probable",
-   "km": 7.4,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "nivel": "posible granizo",
+   "km": 6.2,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
-  "Roberto de Vicenzo": {
+  "Rincón de Milberg": {
+   "nivel": "posible granizo",
+   "km": 3.3,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
+  },
+  "San Fernando": {
    "nivel": "granizo probable",
-   "km": 4.4,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "km": 7.9,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "San Isidro (Buenos Aires)": {
    "nivel": "granizo probable",
-   "km": 8.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 4.3,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
-  "Santa Teresa (Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 3.9,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+  "Tigre": {
+   "nivel": "posible granizo",
+   "km": 4.4,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
-  "Santos Lugares (Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 7.7,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Sáenz Peña": {
-   "nivel": "granizo probable",
-   "km": 6.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Tortuguitas (dpto. José C. Paz, Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 9.8,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "Tortuguitas (dpto. Malvinas Argentinas, Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 7.7,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "Tortuguitas (dpto. Pilar, Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 6.5,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
-  },
-  "Tres de Febrero": {
-   "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+  "Troncos del Talar": {
+   "nivel": "posible granizo",
+   "km": 2.4,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
   "Va.Marqués Alejandro María de Aguado": {
    "nivel": "granizo probable",
-   "km": 4.0,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 5.7,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Va.María Irene de los Remedios Escalada": {
    "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.2,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Vicente López": {
    "nivel": "granizo probable",
-   "km": 3.0,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 4.8,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
+  },
+  "Victoria (Buenos Aires)": {
+   "nivel": "granizo probable",
+   "km": 6.3,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Adelina (dpto. San Isidro, Buenos Aires)": {
    "nivel": "granizo probable",
-   "km": 5.2,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 2.7,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Adelina (dpto. Vicente López, Buenos Aires)": {
    "nivel": "granizo probable",
-   "km": 4.7,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa Astolfi": {
-   "nivel": "granizo probable",
-   "km": 8.4,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "km": 3.1,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Ayacucho": {
    "nivel": "granizo probable",
-   "km": 7.2,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.6,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Ballester": {
    "nivel": "granizo probable",
-   "km": 5.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 5.6,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Bernardo Monteagudo": {
    "nivel": "granizo probable",
-   "km": 6.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa Bosch": {
-   "nivel": "granizo probable",
-   "km": 8.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.3,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Chacabuco": {
    "nivel": "granizo probable",
-   "km": 5.0,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 8.3,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Coronel José M. Zapiola": {
    "nivel": "granizo probable",
-   "km": 7.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 7.7,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa General Antonio J. de Sucre": {
    "nivel": "granizo probable",
-   "km": 6.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 6.1,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa General Eugenio Necochea": {
    "nivel": "granizo probable",
-   "km": 8.2,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 5.4,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa General José Tomás Guido": {
    "nivel": "granizo probable",
-   "km": 6.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 6.6,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa General Juan G. Las Heras": {
    "nivel": "granizo probable",
-   "km": 5.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 6.9,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Godoy Cruz": {
    "nivel": "granizo probable",
-   "km": 7.1,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 6.4,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Granaderos de San Martín": {
    "nivel": "granizo probable",
-   "km": 2.9,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 4.9,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Gregoria Matorras": {
    "nivel": "granizo probable",
-   "km": 4.7,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 4.3,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa José León Suárez": {
    "nivel": "granizo probable",
-   "km": 7.2,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 5.7,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Juan Martín de Pueyrredón": {
    "nivel": "granizo probable",
-   "km": 6.6,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 8.1,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Libertad (Buenos Aires)": {
    "nivel": "granizo probable",
-   "km": 7.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.4,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Lynch": {
    "nivel": "granizo probable",
-   "km": 5.9,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.5,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Maipú": {
    "nivel": "granizo probable",
-   "km": 3.7,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 6.9,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Martelli": {
    "nivel": "granizo probable",
-   "km": 1.1,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 5.1,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Parque Presidente Figueroa Alcorta": {
    "nivel": "granizo probable",
-   "km": 6.5,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.8,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Parque San Lorenzo": {
    "nivel": "granizo probable",
-   "km": 3.9,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa Raffo": {
-   "nivel": "granizo probable",
-   "km": 7.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa Rosa": {
-   "nivel": "granizo probable",
-   "km": 2.1,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "km": 6.4,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa San Andrés": {
    "nivel": "granizo probable",
-   "km": 4.6,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 6.7,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Yapeyú": {
    "nivel": "granizo probable",
-   "km": 5.5,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 7.6,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
-  "Zelaya": {
+  "Villa de Mayo": {
+   "nivel": "posible granizo",
+   "km": 9.5,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
+  },
+  "Virreyes": {
    "nivel": "granizo probable",
-   "km": 5.4,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "km": 6.7,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Área de Promoción El Triángulo": {
-   "nivel": "granizo probable",
-   "km": 5.9,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-02 03:14"
+   "nivel": "posible granizo",
+   "km": 8.3,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-02 03:33"
   },
   "Hermoso Campo": {
    "nivel": "granizo probable",
-   "km": 2.5,
+   "km": 7.7,
    "max_dbz": 59,
+   "tope_km": 12.9,
+   "visto": "2026-11-02 03:30"
+  },
+  "Los Frentones": {
+   "nivel": "granizo probable",
+   "km": 6.5,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-02 03:21"
+   "visto": "2026-11-02 03:30"
   },
   "Pampa del Infierno": {
    "nivel": "granizo probable",
-   "km": 1.8,
-   "max_dbz": 62,
+   "km": 9.6,
+   "max_dbz": 67,
    "tope_km": 17.0,
-   "visto": "2026-11-02 03:12"
-  },
-  "Río Muerto": {
-   "nivel": "granizo probable",
-   "km": 8.0,
-   "max_dbz": 66,
-   "tope_km": 17.0,
-   "visto": "2026-11-02 03:12"
+   "visto": "2026-11-02 03:30"
   },
   "Agronomía": {
    "nivel": "granizo probable",
-   "km": 5.5,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.9,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Belgrano": {
    "nivel": "granizo probable",
-   "km": 4.4,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Caballito": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Chacarita": {
-   "nivel": "granizo probable",
-   "km": 6.2,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 8.5,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Coghlan": {
    "nivel": "granizo probable",
-   "km": 2.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Colegiales": {
-   "nivel": "granizo probable",
-   "km": 5.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Floresta": {
-   "nivel": "granizo probable",
-   "km": 9.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Monte Castro": {
-   "nivel": "granizo probable",
-   "km": 8.5,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 7.2,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Nuñez": {
    "nivel": "granizo probable",
-   "km": 3.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Palermo": {
-   "nivel": "granizo probable",
-   "km": 8.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 7.0,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Parque Chas": {
    "nivel": "granizo probable",
-   "km": 4.7,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Paternal": {
-   "nivel": "granizo probable",
-   "km": 6.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.2,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Saavedra (Ciudad Autónoma de Buenos Aires)": {
    "nivel": "granizo probable",
-   "km": 1.7,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Versalles": {
-   "nivel": "granizo probable",
-   "km": 9.9,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa Crespo": {
-   "nivel": "granizo probable",
-   "km": 8.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa Devoto": {
-   "nivel": "granizo probable",
-   "km": 6.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa General Mitre (Ciudad Autónoma de Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 8.0,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 6.2,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Ortúzar": {
    "nivel": "granizo probable",
-   "km": 4.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 9.3,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Pueyrredón": {
    "nivel": "granizo probable",
-   "km": 4.6,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa Real": {
-   "nivel": "granizo probable",
-   "km": 9.0,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa Santa Rita": {
-   "nivel": "granizo probable",
-   "km": 8.1,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 8.8,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   },
   "Villa Urquiza (Ciudad Autónoma de Buenos Aires)": {
    "nivel": "granizo probable",
-   "km": 3.3,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Villa del Parque (Ciudad Autónoma de Buenos Aires)": {
-   "nivel": "granizo probable",
-   "km": 7.0,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
-  },
-  "Vélez Sarsfield": {
-   "nivel": "granizo probable",
-   "km": 9.8,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "visto": "2026-11-02 03:14"
+   "km": 7.8,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 03:33"
   }
  }
 }
