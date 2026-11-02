@@ -1,17 +1,18 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 13:30",
+ "consultado": "2026-11-02 13:45",
  "radares": {
   "RMA4": "2026-11-02 13:17",
-  "RMA3": "2026-11-02 13:20",
-  "RMA15": "2026-11-02 13:13"
+  "RMA3": "2026-11-02 13:29",
+  "RMA15": "2026-11-02 13:30",
+  "RMA16": "2026-11-02 13:33"
  },
  "nucleos": [
   {
-   "lat": -30.9443,
-   "lon": -66.6013,
+   "lat": -30.6407,
+   "lon": -66.5802,
    "max_dbz": 60,
-   "tope_km": 11.1,
+   "tope_km": 10.0,
    "radar": "RMA15",
    "nivel": "granizo probable"
   },
@@ -32,14 +33,6 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -24.0436,
-   "lon": -59.4872,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "radar": "RMA3",
-   "nivel": "posible granizo"
-  },
-  {
    "lat": -26.0816,
    "lon": -58.329,
    "max_dbz": 56,
@@ -56,12 +49,12 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -24.315,
-   "lon": -58.9953,
-   "max_dbz": 56,
-   "tope_km": 9.4,
+   "lat": -23.9802,
+   "lon": -59.7181,
+   "max_dbz": 54,
+   "tope_km": 8.2,
    "radar": "RMA3",
-   "nivel": "posible granizo"
+   "nivel": null
   },
   {
    "lat": -26.264,
@@ -69,6 +62,14 @@
    "max_dbz": 53,
    "tope_km": 10.0,
    "radar": "RMA4",
+   "nivel": null
+  },
+  {
+   "lat": -26.0292,
+   "lon": -58.8347,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "radar": "RMA3",
    "nivel": null
   },
   {
@@ -80,11 +81,19 @@
    "nivel": null
   },
   {
-   "lat": -24.1974,
-   "lon": -59.437,
-   "max_dbz": 51,
-   "tope_km": 8.8,
+   "lat": -23.7625,
+   "lon": -58.8347,
+   "max_dbz": 52,
+   "tope_km": 12.3,
    "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -33.745,
+   "lon": -66.2589,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "radar": "RMA16",
    "nivel": null
   },
   {
