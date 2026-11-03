@@ -1,58 +1,83 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 20:00",
+ "consultado": "2026-11-03 20:30",
  "radares": {
-  "RMA16": "2026-11-03 19:51",
-  "RMA1": "2026-11-03 19:44",
-  "RMA17": "2026-11-03 19:51"
+  "RMA16": "2026-11-03 20:15",
+  "RMA17": "2026-11-03 20:07",
+  "RMA1": "2026-11-03 20:21"
  },
  "nucleos": [
   {
-   "lat": -31.6031,
-   "lon": -62.8472,
-   "max_dbz": 67,
-   "tope_km": 17.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.5429,
-   "lon": -62.7033,
-   "max_dbz": 65,
+   "lat": -31.4602,
+   "lon": -62.4835,
+   "max_dbz": 61,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.1161,
-   "lon": -64.009,
-   "max_dbz": 56,
-   "tope_km": 8.8,
+   "lat": -31.45,
+   "lon": -62.3092,
+   "max_dbz": 60,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.7917,
+   "lon": -65.8917,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.9261,
+   "lon": -63.8154,
+   "max_dbz": 58,
+   "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.8627,
+   "lon": -63.9552,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -31.5429,
+   "lon": -62.4065,
+   "max_dbz": 52,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -29.6129,
+   "lon": -64.1274,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Colonia San Bartolomé": {
-   "nivel": "granizo probable",
-   "km": 2.5,
-   "max_dbz": 65,
-   "tope_km": 17.0,
-   "visto": "2026-11-03 19:51"
-  },
-  "Tinoco": {
+  "Candelaria Sud": {
    "nivel": "posible granizo",
-   "km": 10.0,
-   "max_dbz": 56,
-   "tope_km": 8.8,
-   "visto": "2026-11-03 19:44"
+   "km": 9.3,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "visto": "2026-11-03 20:21"
   },
-  "Villa San Esteban": {
+  "Devoto": {
    "nivel": "granizo probable",
-   "km": 7.1,
-   "max_dbz": 67,
-   "tope_km": 17.0,
-   "visto": "2026-11-03 19:44"
+   "km": 5.0,
+   "max_dbz": 60,
+   "tope_km": 10.0,
+   "visto": "2026-11-03 20:21"
   }
  }
 }
