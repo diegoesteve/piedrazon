@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-03 03:00",
+ "consultado": "2026-11-03 03:16",
  "alertas": [
   {
    "id": "2026_11_03_0458_cap_es",
@@ -38,6 +38,46 @@
      [
       -65.44,
       -33.84
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_03_0605_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-03T06:05:00-03:00",
+   "hasta": "2026-11-03T07:05:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "SAN LUIS: GDOR DUPUY - GRAL PEDERNERA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_0605_cap_es.xml",
+   "desde_local": "03/11 06:05",
+   "hasta_local": "03/11 07:05",
+   "localidades": 3,
+   "poligonos": [
+    [
+     [
+      -65.87,
+      -34.14
+     ],
+     [
+      -65.39,
+      -33.9
+     ],
+     [
+      -64.3,
+      -34.5
+     ],
+     [
+      -65.15,
+      -34.9
+     ],
+     [
+      -65.87,
+      -34.14
      ]
     ]
    ]
@@ -41822,6 +41862,7 @@
   ],
   "Estación Lecueder": [
    "CAP_20261102210430_Tormenta_Llanura_alertas_alertas_2",
+   "2026_11_03_0605_cap_es",
    "CAP_20261102210430_Tormenta_Llanura_alertas_alertas_28",
    "CAP_20261102210430_Tormenta_Llanura_alertas_alertas_52"
   ],
@@ -41935,6 +41976,7 @@
   ],
   "Villa Valeria": [
    "CAP_20261102210430_Tormenta_Llanura_alertas_alertas_2",
+   "2026_11_03_0605_cap_es",
    "CAP_20261102210430_Tormenta_Llanura_alertas_alertas_28",
    "CAP_20261102210430_Tormenta_Llanura_alertas_alertas_52"
   ],
@@ -44035,6 +44077,9 @@
   ],
   "Navia": [
    "2026_11_03_0558_cap_es"
+  ],
+  "Buena Esperanza": [
+   "2026_11_03_0605_cap_es"
   ]
  }
 }
