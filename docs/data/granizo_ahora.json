@@ -1,10 +1,10 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 20:30",
+ "consultado": "2026-11-03 20:45",
  "radares": {
-  "RMA16": "2026-11-03 20:15",
+  "RMA16": "2026-11-03 20:32",
   "RMA17": "2026-11-03 20:07",
-  "RMA1": "2026-11-03 20:21"
+  "RMA1": "2026-11-03 20:30"
  },
  "nucleos": [
   {
@@ -16,36 +16,60 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.45,
-   "lon": -62.3092,
+   "lat": -30.8627,
+   "lon": -63.654,
    "max_dbz": 60,
+   "tope_km": 12.9,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.0076,
+   "lon": -63.6755,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -29.6588,
+   "lon": -64.0736,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.8173,
+   "lon": -63.9445,
+   "max_dbz": 55,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.7917,
-   "lon": -65.8917,
-   "max_dbz": 58,
-   "tope_km": 17.0,
+   "lat": -31.3509,
+   "lon": -62.2447,
+   "max_dbz": 55,
+   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.9261,
-   "lon": -63.8154,
-   "max_dbz": 58,
-   "tope_km": 9.4,
+   "lat": -30.8989,
+   "lon": -63.8692,
+   "max_dbz": 54,
+   "tope_km": 8.8,
    "radar": "RMA1",
-   "nivel": "posible granizo"
+   "nivel": null
   },
   {
-   "lat": -30.8627,
-   "lon": -63.9552,
-   "max_dbz": 57,
-   "tope_km": 9.4,
+   "lat": -31.0528,
+   "lon": -63.5034,
+   "max_dbz": 53,
+   "tope_km": 10.6,
    "radar": "RMA1",
-   "nivel": "posible granizo"
+   "nivel": null
   },
   {
    "lat": -31.5429,
@@ -56,28 +80,35 @@
    "nivel": null
   },
   {
-   "lat": -29.6129,
-   "lon": -64.1274,
-   "max_dbz": 49,
-   "tope_km": 11.1,
+   "lat": -30.9533,
+   "lon": -63.5464,
+   "max_dbz": 48,
+   "tope_km": 13.5,
    "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "Candelaria Sud": {
-   "nivel": "posible granizo",
-   "km": 9.3,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "visto": "2026-11-03 20:21"
+  "Atahona": {
+   "nivel": "granizo probable",
+   "km": 6.8,
+   "max_dbz": 60,
+   "tope_km": 12.9,
+   "visto": "2026-11-03 20:30"
   },
   "Devoto": {
    "nivel": "granizo probable",
-   "km": 5.0,
-   "max_dbz": 60,
-   "tope_km": 10.0,
-   "visto": "2026-11-03 20:21"
+   "km": 8.3,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-03 20:30"
+  },
+  "El Crispín": {
+   "nivel": "posible granizo",
+   "km": 6.6,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "visto": "2026-11-03 20:30"
   }
  }
 }
