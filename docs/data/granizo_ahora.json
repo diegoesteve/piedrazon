@@ -1,106 +1,58 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 19:45",
+ "consultado": "2026-11-03 20:00",
  "radares": {
-  "RMA1": "2026-11-03 19:26",
-  "RMA16": "2026-11-03 19:34",
-  "RMA17": "2026-11-03 19:34"
+  "RMA16": "2026-11-03 19:51",
+  "RMA1": "2026-11-03 19:44",
+  "RMA17": "2026-11-03 19:51"
  },
  "nucleos": [
   {
-   "lat": -31.639,
-   "lon": -63.1053,
-   "max_dbz": 69,
+   "lat": -31.6031,
+   "lon": -62.8472,
+   "max_dbz": 67,
    "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.6346,
-   "lon": -62.9341,
-   "max_dbz": 66,
+   "lat": -31.5429,
+   "lon": -62.7033,
+   "max_dbz": 65,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.2394,
-   "lon": -62.4168,
-   "max_dbz": 58,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.8913,
-   "lon": -65.8614,
-   "max_dbz": 55,
-   "tope_km": 14.7,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.692,
-   "lon": -62.0218,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.2426,
-   "lon": -63.9337,
-   "max_dbz": 53,
+   "lat": -31.1161,
+   "lon": -64.009,
+   "max_dbz": 56,
    "tope_km": 8.8,
    "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.2559,
-   "lon": -62.3186,
-   "max_dbz": 53,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -31.3238,
-   "lon": -64.4178,
-   "max_dbz": 52,
-   "tope_km": 6.4,
-   "radar": "RMA1",
-   "nivel": null,
-   "descartado": "eco fijo del terreno"
+   "nivel": "posible granizo"
   }
  ],
  "localidades": {
-  "Calchín": {
+  "Colonia San Bartolomé": {
    "nivel": "granizo probable",
-   "km": 9.3,
-   "max_dbz": 69,
+   "km": 2.5,
+   "max_dbz": 65,
    "tope_km": 17.0,
-   "visto": "2026-11-03 19:26"
+   "visto": "2026-11-03 19:51"
   },
-  "Marcos Juárez": {
-   "nivel": "granizo probable",
-   "km": 7.9,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-03 19:34"
-  },
-  "Sacanta": {
-   "nivel": "granizo probable",
-   "km": 6.2,
-   "max_dbz": 69,
-   "tope_km": 17.0,
-   "visto": "2026-11-03 19:26"
+  "Tinoco": {
+   "nivel": "posible granizo",
+   "km": 10.0,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "visto": "2026-11-03 19:44"
   },
   "Villa San Esteban": {
    "nivel": "granizo probable",
-   "km": 3.2,
-   "max_dbz": 66,
+   "km": 7.1,
+   "max_dbz": 67,
    "tope_km": 17.0,
-   "visto": "2026-11-03 19:34"
+   "visto": "2026-11-03 19:44"
   }
  }
 }
