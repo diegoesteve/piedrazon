@@ -1,58 +1,42 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 23:24",
+ "consultado": "2026-11-02 23:30",
  "radares": {
-  "RMA1": "2026-11-02 23:07",
-  "RMA16": "2026-11-02 23:06"
+  "RMA16": "2026-11-02 23:23",
+  "RMA1": "2026-11-02 23:16"
  },
  "nucleos": [
   {
-   "lat": -33.2309,
-   "lon": -65.0994,
-   "max_dbz": 59,
+   "lat": -31.0076,
+   "lon": -63.923,
+   "max_dbz": 56,
    "tope_km": 10.6,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.0347,
-   "lon": -64.0413,
-   "max_dbz": 58,
-   "tope_km": 12.3,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.9533,
-   "lon": -63.966,
-   "max_dbz": 53,
-   "tope_km": 10.6,
+   "lat": -31.089,
+   "lon": -63.9875,
+   "max_dbz": 56,
+   "tope_km": 11.1,
    "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.0166,
-   "lon": -64.1489,
-   "max_dbz": 51,
-   "tope_km": 8.8,
-   "radar": "RMA1",
-   "nivel": null
+   "nivel": "granizo probable"
   }
  ],
  "localidades": {
-  "Colonia Caroya": {
-   "nivel": "granizo probable",
-   "km": 4.8,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "visto": "2026-11-02 23:07"
-  },
   "Colonia Vicente Agüero": {
    "nivel": "granizo probable",
-   "km": 4.3,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "visto": "2026-11-02 23:07"
+   "km": 7.6,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-02 23:16"
+  },
+  "Tinoco": {
+   "nivel": "granizo probable",
+   "km": 8.0,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "visto": "2026-11-02 23:16"
   }
  }
 }
