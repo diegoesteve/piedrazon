@@ -1,47 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-03 19:34",
+ "consultado": "2026-11-03 19:46",
  "alertas": [
-  {
-   "id": "2026_11_03_2135_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas severas",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "desde": "2026-11-03T21:35:00-03:00",
-   "hasta": "2026-11-03T22:35:00-03:00",
-   "descripcion": "TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "instruccion": "Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Evitá circular por calles inundadas o afectadas. Retirá o asegurá objetos que puedan ser arrastrados por el viento. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, ",
-   "zona": "SAN LUIS: AYACUCHO - BELGRANO - CNEL PRINGLES - JUAN M.  DE PUEYRREDON.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_2135_cap_es.xml",
-   "desde_local": "03/11 21:35",
-   "hasta_local": "03/11 22:35",
-   "localidades": 4,
-   "poligonos": [
-    [
-     [
-      -67.14,
-      -33.2
-     ],
-     [
-      -67.26,
-      -32.87
-     ],
-     [
-      -66.24,
-      -32.45
-     ],
-     [
-      -66.12,
-      -33.06
-     ],
-     [
-      -67.14,
-      -33.2
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_03_2110_cap_es",
    "tipo": "aviso a corto plazo",
@@ -218,6 +178,50 @@
      [
       -63.47,
       -31.48
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_03_2231_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-03T22:31:00-03:00",
+   "hasta": "2026-11-03T23:31:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "LA RIOJA: CHAMICAL - GRAL A.  V.  PENALOZA - GRAL BELGRANO - GRAL JUAN F.  QUIROGA - GRAL OCAMPO. CORDOBA: CRUZ DEL EJE - MINAS.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_2231_cap_es.xml",
+   "desde_local": "03/11 22:31",
+   "hasta_local": "03/11 23:31",
+   "localidades": 9,
+   "poligonos": [
+    [
+     [
+      -66.64,
+      -30.38
+     ],
+     [
+      -66.53,
+      -30.7
+     ],
+     [
+      -65.44,
+      -30.81
+     ],
+     [
+      -65.23,
+      -30.23
+     ],
+     [
+      -66.51,
+      -30.2
+     ],
+     [
+      -66.64,
+      -30.38
      ]
     ]
    ]
@@ -39372,17 +39376,32 @@
   "Villa del Parque (Río Negro)": [
    "2026_11_03_2110_cap_es"
   ],
-  "La Calera (San Luis)": [
-   "2026_11_03_2135_cap_es"
+  "La Batea": [
+   "2026_11_03_2231_cap_es"
   ],
-  "Nogolí": [
-   "2026_11_03_2135_cap_es"
+  "Serrezuela": [
+   "2026_11_03_2231_cap_es"
   ],
-  "Villa General Roca": [
-   "2026_11_03_2135_cap_es"
+  "Castro Barros": [
+   "2026_11_03_2231_cap_es"
   ],
-  "Villa de la Quebrada": [
-   "2026_11_03_2135_cap_es"
+  "Chamical": [
+   "2026_11_03_2231_cap_es"
+  ],
+  "Chañar": [
+   "2026_11_03_2231_cap_es"
+  ],
+  "Loma Blanca (La Rioja)": [
+   "2026_11_03_2231_cap_es"
+  ],
+  "Olta": [
+   "2026_11_03_2231_cap_es"
+  ],
+  "Polco": [
+   "2026_11_03_2231_cap_es"
+  ],
+  "Tama": [
+   "2026_11_03_2231_cap_es"
   ]
  }
 }
