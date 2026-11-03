@@ -1,81 +1,121 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 18:30",
+ "consultado": "2026-11-03 18:45",
  "radares": {
-  "RMA1": "2026-11-03 18:14",
-  "RMA16": "2026-11-03 18:12",
-  "RMA17": "2026-11-03 18:13"
+  "RMA16": "2026-11-03 18:29",
+  "RMA17": "2026-11-03 18:29",
+  "RMA1": "2026-11-03 18:32"
  },
  "nucleos": [
   {
-   "lat": -32.0747,
-   "lon": -64.0062,
+   "lat": -31.9442,
+   "lon": -63.7939,
    "max_dbz": 67,
-   "tope_km": 17.0,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.4357,
-   "lon": -63.0946,
-   "max_dbz": 64,
    "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.5015,
-   "lon": -63.11,
+   "lat": -32.409,
+   "lon": -62.9655,
+   "max_dbz": 66,
+   "tope_km": 17.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.9915,
+   "lon": -63.7696,
    "max_dbz": 64,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.0267,
-   "lon": -62.4615,
-   "max_dbz": 57,
+   "lat": -32.8097,
+   "lon": -62.6813,
+   "max_dbz": 60,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.9635,
-   "lon": -61.8019,
-   "max_dbz": 57,
-   "tope_km": 13.5,
+   "lat": -32.9906,
+   "lon": -62.3186,
+   "max_dbz": 56,
+   "tope_km": 11.7,
    "radar": "RMA17",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.1679,
+   "lon": -63.8369,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
   },
   {
    "lat": -32.7826,
-   "lon": -63.0441,
-   "max_dbz": 57,
-   "tope_km": 14.1,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.9002,
-   "lon": -62.8022,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.9454,
-   "lon": -62.6593,
-   "max_dbz": 53,
-   "tope_km": 12.9,
+   "lon": -62.8792,
+   "max_dbz": 54,
+   "tope_km": 14.7,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -33.0086,
-   "lon": -62.1757,
-   "max_dbz": 48,
+   "lat": -32.9092,
+   "lon": -62.7253,
+   "max_dbz": 53,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.9725,
+   "lon": -62.4945,
+   "max_dbz": 51,
    "tope_km": 12.3,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.9647,
+   "lon": -63.8737,
+   "max_dbz": 49,
+   "tope_km": 14.7,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.9363,
+   "lon": -62.2636,
+   "max_dbz": 49,
+   "tope_km": 12.3,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.1375,
+   "lon": -63.9454,
+   "max_dbz": 49,
+   "tope_km": 11.7,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.0718,
+   "lon": -62.0767,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.9815,
+   "lon": -62.4175,
+   "max_dbz": 48,
+   "tope_km": 11.7,
    "radar": "RMA17",
    "nivel": null
   }
@@ -83,31 +123,38 @@
  "localidades": {
   "Ana Zumarán": {
    "nivel": "granizo probable",
-   "km": 6.0,
-   "max_dbz": 64,
+   "km": 8.9,
+   "max_dbz": 66,
    "tope_km": 17.0,
-   "visto": "2026-11-03 18:14"
+   "visto": "2026-11-03 18:32"
   },
-  "Cruz Alta": {
+  "Justiniano Posse": {
    "nivel": "granizo probable",
-   "km": 4.8,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "visto": "2026-11-03 18:13"
-  },
-  "Idiazábal": {
-   "nivel": "granizo probable",
-   "km": 3.5,
-   "max_dbz": 57,
-   "tope_km": 14.1,
-   "visto": "2026-11-03 18:13"
-  },
-  "Ordóñez": {
-   "nivel": "granizo probable",
-   "km": 8.8,
-   "max_dbz": 55,
+   "km": 8.4,
+   "max_dbz": 60,
    "tope_km": 17.0,
-   "visto": "2026-11-03 18:13"
+   "visto": "2026-11-03 18:29"
+  },
+  "Saladillo": {
+   "nivel": "granizo probable",
+   "km": 6.8,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-03 18:29"
+  },
+  "Villa Ascasubi": {
+   "nivel": "posible granizo",
+   "km": 5.0,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "visto": "2026-11-03 18:32"
+  },
+  "Villa Los Patos": {
+   "nivel": "granizo probable",
+   "km": 6.4,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "visto": "2026-11-03 18:29"
   }
  }
 }
