@@ -1,19 +1,42 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 22:45",
+ "consultado": "2026-11-02 23:00",
  "radares": {
-  "RMA16": "2026-11-02 22:34",
-  "RMA1": "2026-11-02 22:31"
+  "RMA1": "2026-11-02 22:49",
+  "RMA16": "2026-11-02 22:50"
  },
  "nucleos": [
   {
-   "lat": -30.8808,
-   "lon": -64.1919,
-   "max_dbz": 51,
-   "tope_km": 9.4,
+   "lat": -31.0166,
+   "lon": -64.009,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.917,
+   "lon": -64.1812,
+   "max_dbz": 53,
+   "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Colonia Caroya": {
+   "nivel": "granizo probable",
+   "km": 8.4,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "visto": "2026-11-02 22:49"
+  },
+  "Colonia Vicente Agüero": {
+   "nivel": "granizo probable",
+   "km": 0.7,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "visto": "2026-11-02 22:49"
+  }
+ }
 }
