@@ -1,63 +1,58 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 23:15",
+ "consultado": "2026-11-02 23:24",
  "radares": {
-  "RMA1": "2026-11-02 22:58",
-  "RMA16": "2026-11-02 22:58"
+  "RMA1": "2026-11-02 23:07",
+  "RMA16": "2026-11-02 23:06"
  },
  "nucleos": [
   {
-   "lat": -30.9895,
-   "lon": -64.0628,
-   "max_dbz": 56,
+   "lat": -33.2309,
+   "lon": -65.0994,
+   "max_dbz": 59,
    "tope_km": 10.6,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.0347,
+   "lon": -64.0413,
+   "max_dbz": 58,
+   "tope_km": 12.3,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.0619,
-   "lon": -63.9768,
-   "max_dbz": 55,
+   "lat": -30.9533,
+   "lon": -63.966,
+   "max_dbz": 53,
    "tope_km": 10.6,
    "radar": "RMA1",
-   "nivel": "granizo probable"
+   "nivel": null
+  },
+  {
+   "lat": -31.0166,
+   "lon": -64.1489,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": null
   }
  ],
  "localidades": {
   "Colonia Caroya": {
    "nivel": "granizo probable",
-   "km": 7.5,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "visto": "2026-11-02 22:58"
+   "km": 4.8,
+   "max_dbz": 58,
+   "tope_km": 12.3,
+   "visto": "2026-11-02 23:07"
   },
   "Colonia Vicente Agüero": {
    "nivel": "granizo probable",
-   "km": 5.6,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-02 22:58"
-  },
-  "Jesús María": {
-   "nivel": "granizo probable",
-   "km": 6.3,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "visto": "2026-11-02 22:58"
-  },
-  "Sinsacate": {
-   "nivel": "granizo probable",
-   "km": 5.5,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "visto": "2026-11-02 22:58"
-  },
-  "Tinoco": {
-   "nivel": "granizo probable",
-   "km": 8.3,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-02 22:58"
+   "km": 4.3,
+   "max_dbz": 58,
+   "tope_km": 12.3,
+   "visto": "2026-11-02 23:07"
   }
  }
 }
