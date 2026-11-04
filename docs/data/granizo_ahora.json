@@ -1,91 +1,74 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 23:00",
+ "consultado": "2026-11-03 23:15",
  "radares": {
-  "RMA17": "2026-11-03 22:51",
-  "RMA16": "2026-11-03 22:26",
-  "RMA1": "2026-11-03 22:46"
+  "RMA1": "2026-11-03 22:55",
+  "RMA17": "2026-11-03 22:51"
  },
  "nucleos": [
   {
-   "lat": -30.0069,
-   "lon": -64.676,
-   "max_dbz": 60,
+   "lat": -31.5131,
+   "lon": -65.1064,
+   "max_dbz": 62,
+   "tope_km": 13.5,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.0526,
+   "lon": -64.6115,
+   "max_dbz": 62,
    "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.5671,
-   "lon": -65.2032,
-   "max_dbz": 59,
-   "tope_km": 11.1,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.8627,
-   "lon": -62.9655,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.2697,
-   "lon": -62.4168,
-   "max_dbz": 53,
-   "tope_km": 9.4,
+   "lat": -29.6771,
+   "lon": -64.7944,
+   "max_dbz": 51,
+   "tope_km": 12.3,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.8007,
-   "lon": -65.3323,
-   "max_dbz": 52,
+   "lat": -29.6312,
+   "lon": -64.8482,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -30.0343,
+   "lon": -65.0526,
+   "max_dbz": 49,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.08,
-   "lon": -64.5147,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -29.6679,
-   "lon": -64.8697,
-   "max_dbz": 51,
-   "tope_km": 11.7,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.5786,
-   "lon": -65.508,
-   "max_dbz": 47,
-   "tope_km": 14.1,
-   "radar": "RMA16",
+   "lat": -31.7995,
+   "lon": -65.3524,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "radar": "RMA17",
    "nivel": null
   }
  ],
  "localidades": {
-  "La Para": {
+  "Ambul": {
    "nivel": "granizo probable",
-   "km": 4.8,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "visto": "2026-11-03 22:46"
+   "km": 2.8,
+   "max_dbz": 62,
+   "tope_km": 13.5,
+   "visto": "2026-11-03 22:55"
   },
   "San José de las Salinas": {
    "nivel": "granizo probable",
-   "km": 7.7,
-   "max_dbz": 60,
+   "km": 5.3,
+   "max_dbz": 62,
    "tope_km": 11.1,
-   "visto": "2026-11-03 22:46"
+   "visto": "2026-11-03 22:55"
   }
  }
 }
