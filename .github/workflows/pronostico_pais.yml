@@ -52,4 +52,9 @@ jobs:
           git add docs/data/pais docs/data/prov docs/data/provincias.json data/pais
           git diff --cached --quiet && exit 0
           git commit -m "pronóstico del país: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
-          git pull --rebase -X theirs && git push
+          # si GitHub falla un momento (o otro workflow guardó justo antes), se reintenta hasta 3 veces
+          for i in 1 2 3; do
+            git pull --rebase -X theirs && git push && exit 0
+            git rebase --abort 2>/dev/null; echo "No se pudo guardar (intento $i); se reintenta en $((i * 20)) s"; sleep $((i * 20))
+          done
+          exit 1
