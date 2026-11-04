@@ -1,42 +1,93 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 01:15",
+ "consultado": "2026-11-04 01:30",
  "radares": {
-  "RMA1": "2026-11-04 01:03"
+  "RMA1": "2026-11-04 01:12"
  },
  "nucleos": [
   {
    "lat": -30.1987,
-   "lon": -64.9988,
-   "max_dbz": 62,
-   "tope_km": 14.1,
+   "lon": -64.902,
+   "max_dbz": 61,
+   "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.7629,
-   "lon": -65.6443,
+   "lat": -30.8083,
+   "lon": -65.5152,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -29.7963,
+   "lon": -63.6217,
    "max_dbz": 58,
-   "tope_km": 10.6,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -29.778,
-   "lon": -63.7401,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.0166,
-   "lon": -64.4394,
-   "max_dbz": 50,
+   "lat": -31.0257,
+   "lon": -64.321,
+   "max_dbz": 55,
    "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.2899,
+   "lon": -64.8589,
+   "max_dbz": 49,
+   "tope_km": 12.9,
    "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Agua de Oro": {
+   "nivel": "posible granizo",
+   "km": 2.7,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-04 01:12"
+  },
+  "El Chacho": {
+   "nivel": "granizo probable",
+   "km": 5.3,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "visto": "2026-11-04 01:12"
+  },
+  "El Manzano": {
+   "nivel": "posible granizo",
+   "km": 6.5,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-04 01:12"
+  },
+  "La Granja": {
+   "nivel": "posible granizo",
+   "km": 5.2,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-04 01:12"
+  },
+  "Los Hoyos": {
+   "nivel": "granizo probable",
+   "km": 1.4,
+   "max_dbz": 58,
+   "tope_km": 11.1,
+   "visto": "2026-11-04 01:12"
+  },
+  "Villa Cerro Azul": {
+   "nivel": "posible granizo",
+   "km": 5.2,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-04 01:12"
+  }
+ }
 }
