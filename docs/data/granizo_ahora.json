@@ -1,56 +1,64 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 03:15",
+ "consultado": "2026-11-04 03:30",
  "radares": {
-  "RMA1": "2026-11-04 03:02",
+  "RMA1": "2026-11-04 03:21",
   "RMA16": "2026-11-04 02:56"
  },
  "nucleos": [
   {
-   "lat": -30.3537,
-   "lon": -64.4394,
-   "max_dbz": 58,
-   "tope_km": 10.0,
+   "lat": -30.0343,
+   "lon": -63.966,
+   "max_dbz": 61,
+   "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -29.7046,
-   "lon": -63.1269,
-   "max_dbz": 56,
+   "lat": -30.4812,
+   "lon": -63.299,
+   "max_dbz": 60,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.1074,
+   "lon": -64.6653,
+   "max_dbz": 55,
    "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.0891,
-   "lon": -65.0526,
+   "lat": -29.9337,
+   "lon": -63.7939,
    "max_dbz": 55,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": "posible granizo"
   },
   {
-   "lat": -29.8604,
-   "lon": -63.03,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -29.9703,
-   "lon": -64.1704,
+   "lat": -29.778,
+   "lon": -64.9127,
    "max_dbz": 54,
-   "tope_km": 8.8,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -29.6588,
-   "lon": -63.9337,
+   "lat": -30.1713,
+   "lon": -64.3641,
    "max_dbz": 54,
-   "tope_km": 11.1,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -29.8238,
+   "lon": -63.6002,
+   "max_dbz": 53,
+   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": null
   },
@@ -63,45 +71,98 @@
    "nivel": null
   },
   {
-   "lat": -30.4084,
-   "lon": -63.5142,
+   "lat": -30.2626,
+   "lon": -64.2995,
    "max_dbz": 52,
-   "tope_km": 8.8,
+   "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.1439,
-   "lon": -64.9235,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.3509,
-   "lon": -65.257,
-   "max_dbz": 51,
-   "tope_km": 8.2,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -29.6863,
-   "lon": -63.8046,
+   "lat": -29.8238,
+   "lon": -64.8589,
    "max_dbz": 50,
    "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.2078,
-   "lon": -64.7621,
-   "max_dbz": 47,
+   "lat": -29.4291,
+   "lon": -64.0413,
+   "max_dbz": 50,
    "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -29.7413,
+   "lon": -63.1914,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -30.299,
+   "lon": -64.2027,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -29.8146,
+   "lon": -63.7616,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -30.7811,
+   "lon": -63.3313,
+   "max_dbz": 49,
+   "tope_km": 7.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -29.778,
+   "lon": -63.8799,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Caminiaga": {
+   "nivel": "granizo probable",
+   "km": 5.8,
+   "max_dbz": 61,
+   "tope_km": 8.8,
+   "visto": "2026-11-04 03:21"
+  },
+  "Cerro Colorado": {
+   "nivel": "granizo probable",
+   "km": 8.3,
+   "max_dbz": 61,
+   "tope_km": 8.8,
+   "visto": "2026-11-04 03:21"
+  },
+  "Chañar Viejo": {
+   "nivel": "posible granizo",
+   "km": 8.6,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-04 03:21"
+  },
+  "Villa de María": {
+   "nivel": "posible granizo",
+   "km": 8.0,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-04 03:21"
+  }
+ }
 }
