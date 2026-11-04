@@ -1,65 +1,49 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 00:00",
+ "consultado": "2026-11-04 00:15",
  "radares": {
-  "RMA1": "2026-11-03 23:50",
-  "RMA16": "2026-11-03 23:48",
-  "RMA17": "2026-11-03 23:37"
+  "RMA17": "2026-11-03 23:37",
+  "RMA16": "2026-11-03 23:56",
+  "RMA1": "2026-11-03 23:59"
  },
  "nucleos": [
   {
-   "lat": -29.7321,
-   "lon": -64.4716,
-   "max_dbz": 59,
+   "lat": -29.7413,
+   "lon": -64.4178,
+   "max_dbz": 60,
    "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.7719,
-   "lon": -65.8724,
+   "lat": -30.1439,
+   "lon": -63.7831,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.7992,
+   "lon": -65.4076,
    "max_dbz": 54,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.7719,
+   "lon": -65.773,
+   "max_dbz": 52,
    "tope_km": 13.5,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -31.1342,
-   "lon": -62.5567,
-   "max_dbz": 53,
-   "tope_km": 8.8,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.0981,
-   "lon": -62.6212,
-   "max_dbz": 52,
-   "tope_km": 8.2,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.7648,
-   "lon": -64.4716,
+   "lat": -30.0526,
+   "lon": -64.1704,
    "max_dbz": 51,
-   "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.7901,
-   "lon": -65.5152,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.8007,
-   "lon": -65.7734,
-   "max_dbz": 49,
-   "tope_km": 15.2,
+   "tope_km": 8.2,
    "radar": "RMA1",
    "nivel": null
   },
@@ -72,13 +56,43 @@
    "nivel": null
   },
   {
-   "lat": -30.1074,
-   "lon": -63.923,
-   "max_dbz": 48,
+   "lat": -31.8187,
+   "lon": -64.3856,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.7917,
+   "lon": -65.6873,
+   "max_dbz": 47,
    "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "El Rodeo": {
+   "nivel": "granizo probable",
+   "km": 7.5,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "visto": "2026-11-03 23:59"
+  },
+  "Rayo Cortado": {
+   "nivel": "granizo probable",
+   "km": 9.1,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "visto": "2026-11-03 23:59"
+  },
+  "Santa Elena": {
+   "nivel": "granizo probable",
+   "km": 8.0,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "visto": "2026-11-03 23:59"
+  }
+ }
 }
