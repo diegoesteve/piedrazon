@@ -1,64 +1,55 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 21:15",
+ "consultado": "2026-11-03 21:30",
  "radares": {
-  "RMA1": "2026-11-03 21:06",
-  "RMA16": "2026-11-03 20:48"
+  "RMA1": "2026-11-03 21:15"
  },
  "nucleos": [
   {
-   "lat": -30.8445,
-   "lon": -63.4711,
-   "max_dbz": 55,
+   "lat": -30.8536,
+   "lon": -63.4066,
+   "max_dbz": 57,
+   "tope_km": 12.9,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.0528,
+   "lon": -61.9542,
+   "max_dbz": 57,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.2426,
-   "lon": -62.0188,
+   "lat": -30.908,
+   "lon": -63.3635,
    "max_dbz": 54,
-   "tope_km": 9.4,
+   "tope_km": 12.9,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.8355,
-   "lon": -62.2662,
+   "lat": -31.2787,
+   "lon": -64.1166,
    "max_dbz": 54,
+   "tope_km": 7.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.4771,
+   "lon": -63.1484,
+   "max_dbz": 52,
    "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.8097,
-   "lon": -65.4399,
+   "lat": -31.1704,
+   "lon": -61.9327,
    "max_dbz": 52,
    "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.7719,
-   "lon": -65.7178,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -31.0438,
-   "lon": -62.0188,
-   "max_dbz": 51,
-   "tope_km": 8.2,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.9623,
-   "lon": -63.3635,
-   "max_dbz": 47,
-   "tope_km": 12.3,
    "radar": "RMA1",
    "nivel": null
   }
@@ -66,10 +57,10 @@
  "localidades": {
   "Obispo Trejo": {
    "nivel": "granizo probable",
-   "km": 9.1,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-03 21:06"
+   "km": 8.6,
+   "max_dbz": 57,
+   "tope_km": 12.9,
+   "visto": "2026-11-03 21:15"
   }
  }
 }
