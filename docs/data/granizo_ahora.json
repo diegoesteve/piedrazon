@@ -1,65 +1,65 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 22:45",
+ "consultado": "2026-11-03 23:00",
  "radares": {
-  "RMA1": "2026-11-03 22:28",
+  "RMA17": "2026-11-03 22:51",
   "RMA16": "2026-11-03 22:26",
-  "RMA17": "2026-11-03 22:34"
+  "RMA1": "2026-11-03 22:46"
  },
  "nucleos": [
   {
-   "lat": -30.0526,
-   "lon": -64.3748,
+   "lat": -30.0069,
+   "lon": -64.676,
+   "max_dbz": 60,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.5671,
+   "lon": -65.2032,
    "max_dbz": 59,
-   "tope_km": 10.6,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.5851,
-   "lon": -65.3861,
-   "max_dbz": 57,
-   "tope_km": 12.3,
+   "lat": -30.8627,
+   "lon": -62.9655,
+   "max_dbz": 56,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -29.9337,
-   "lon": -64.8482,
-   "max_dbz": 54,
+   "lat": -31.2697,
+   "lon": -62.4168,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.8007,
+   "lon": -65.3323,
+   "max_dbz": 52,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.2336,
-   "lon": -62.8687,
-   "max_dbz": 54,
-   "tope_km": 8.8,
+   "lat": -30.08,
+   "lon": -64.5147,
+   "max_dbz": 52,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.9732,
-   "lon": -62.1317,
-   "max_dbz": 54,
-   "tope_km": 12.3,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -29.9977,
-   "lon": -64.7083,
-   "max_dbz": 50,
+   "lat": -29.6679,
+   "lon": -64.8697,
+   "max_dbz": 51,
    "tope_km": 11.7,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.9263,
-   "lon": -64.5792,
-   "max_dbz": 48,
-   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": null
   },
@@ -72,5 +72,20 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "La Para": {
+   "nivel": "granizo probable",
+   "km": 4.8,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "visto": "2026-11-03 22:46"
+  },
+  "San José de las Salinas": {
+   "nivel": "granizo probable",
+   "km": 7.7,
+   "max_dbz": 60,
+   "tope_km": 11.1,
+   "visto": "2026-11-03 22:46"
+  }
+ }
 }
