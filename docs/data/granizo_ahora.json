@@ -1,52 +1,119 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 21:45",
+ "consultado": "2026-11-03 22:00",
  "radares": {
-  "RMA1": "2026-11-03 21:24",
-  "RMA17": "2026-11-03 21:29",
-  "RMA16": "2026-11-03 21:37"
+  "RMA1": "2026-11-03 21:52",
+  "RMA17": "2026-11-03 21:45",
+  "RMA16": "2026-11-03 21:45"
  },
  "nucleos": [
   {
-   "lat": -30.8264,
-   "lon": -63.3851,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.1794,
-   "lon": -61.8466,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.8178,
-   "lon": -65.3305,
-   "max_dbz": 50,
+   "lat": -31.8269,
+   "lon": -62.9012,
+   "max_dbz": 60,
    "tope_km": 17.0,
    "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.8355,
+   "lon": -63.1807,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.8545,
+   "lon": -62.7288,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.2155,
+   "lon": -62.9225,
+   "max_dbz": 55,
+   "tope_km": 8.2,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -31.639,
+   "lon": -65.8272,
+   "max_dbz": 53,
+   "tope_km": 14.1,
+   "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.8178,
-   "lon": -65.2319,
-   "max_dbz": 48,
-   "tope_km": 15.2,
+   "lat": -31.8913,
+   "lon": -65.1546,
+   "max_dbz": 52,
+   "tope_km": 12.3,
    "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -30.9442,
+   "lon": -63.1053,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.8994,
+   "lon": -64.9665,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "Obispo Trejo": {
+  "Colonia Las Pichanas": {
+   "nivel": "posible granizo",
+   "km": 9.9,
+   "max_dbz": 55,
+   "tope_km": 8.2,
+   "visto": "2026-11-03 21:52"
+  },
+  "El Arañado": {
    "nivel": "granizo probable",
-   "km": 6.3,
+   "km": 9.5,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "visto": "2026-11-03 21:45"
+  },
+  "La Puerta": {
+   "nivel": "granizo probable",
+   "km": 9.2,
    "max_dbz": 59,
-   "tope_km": 10.6,
-   "visto": "2026-11-03 21:24"
+   "tope_km": 14.1,
+   "visto": "2026-11-03 21:52"
+  },
+  "Las Saladas": {
+   "nivel": "granizo probable",
+   "km": 8.7,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "visto": "2026-11-03 21:52"
+  },
+  "Las Varillas": {
+   "nivel": "granizo probable",
+   "km": 3.0,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "visto": "2026-11-03 21:52"
+  },
+  "Villa Fontana": {
+   "nivel": "granizo probable",
+   "km": 9.1,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "visto": "2026-11-03 21:52"
   }
  }
 }
