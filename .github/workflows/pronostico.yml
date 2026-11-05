@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '35 */6 * * *'
   workflow_dispatch:
+    inputs:
+      forzar_historia:
+        description: 'Mandar la historia de mañana aunque ya se haya mandado o no sea de noche'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -46,6 +51,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_HISTORIA: ${{ secrets.TELEGRAM_CHAT_HISTORIA }}
+          HISTORIA_FORZAR: ${{ inputs.forzar_historia && '1' || '' }}
         run: python codigo/scripts/historia_pronostico.py
       - name: Guardar
         run: |
