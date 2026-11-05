@@ -1,51 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 10:00",
+ "consultado": "2026-11-05 10:15",
  "radares": {
-  "RMA15": "2026-11-05 09:46",
-  "RMA17": "2026-11-05 09:45",
+  "RMA17": "2026-11-05 10:02",
   "RMA11": "2026-11-05 09:37",
+  "RMA15": "2026-11-05 10:02",
   "AR7": "2026-11-05 09:40",
-  "RMA16": "2026-11-05 09:47"
+  "RMA16": "2026-11-05 09:55"
  },
  "nucleos": [
   {
-   "lat": -30.4347,
-   "lon": -66.485,
-   "max_dbz": 59,
-   "tope_km": 8.8,
+   "lat": -30.4078,
+   "lon": -66.4744,
+   "max_dbz": 61,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.363,
+   "lon": -66.5273,
+   "max_dbz": 58,
+   "tope_km": 8.2,
    "radar": "RMA15",
    "nivel": "posible granizo"
   },
   {
-   "lat": -32.4742,
-   "lon": -64.8688,
-   "max_dbz": 54,
-   "tope_km": 15.8,
-   "radar": "RMA17",
-   "nivel": null
+   "lat": -30.587,
+   "lon": -66.6119,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
   },
   {
-   "lat": -33.2219,
-   "lon": -65.0773,
-   "max_dbz": 52,
-   "tope_km": 7.6,
+   "lat": -33.2038,
+   "lon": -65.1105,
+   "max_dbz": 56,
+   "tope_km": 11.1,
    "radar": "RMA16",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -32.6467,
-   "lon": -64.8908,
-   "max_dbz": 50,
+   "lat": -32.0736,
+   "lon": -64.9787,
+   "max_dbz": 54,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -30.6138,
+   "lat": -30.7032,
    "lon": -66.6013,
-   "max_dbz": 49,
-   "tope_km": 9.4,
+   "max_dbz": 52,
+   "tope_km": 10.6,
    "radar": "RMA15",
    "nivel": null
   },
@@ -75,12 +83,12 @@
   }
  ],
  "localidades": {
-  "Tama": {
-   "nivel": "posible granizo",
-   "km": 9.0,
-   "max_dbz": 59,
-   "tope_km": 8.8,
-   "visto": "2026-11-05 09:46"
+  "La Punilla": {
+   "nivel": "granizo probable",
+   "km": 6.9,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "visto": "2026-11-05 09:55"
   }
  }
 }
