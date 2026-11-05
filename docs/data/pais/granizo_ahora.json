@@ -1,21 +1,21 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 18:45",
+ "consultado": "2026-11-05 19:00",
  "radares": {
-  "RMA16": "2026-11-05 18:31",
-  "RMA11": "2026-11-05 18:26",
+  "RMA16": "2026-11-05 18:39",
+  "RMA11": "2026-11-05 18:35",
   "RMA19": "2026-11-05 18:26",
-  "AR7": "2026-11-05 18:20",
   "RMA18": "2026-11-05 18:35",
-  "RMA17": "2026-11-05 18:28",
-  "RMA7": "2026-11-05 18:13"
+  "RMA17": "2026-11-05 18:37",
+  "AR7": "2026-11-05 18:30",
+  "RMA7": "2026-11-05 18:40"
  },
  "nucleos": [
   {
-   "lat": -34.9768,
-   "lon": -64.5031,
-   "max_dbz": 63,
-   "tope_km": 14.7,
+   "lat": -34.9325,
+   "lon": -64.4148,
+   "max_dbz": 62,
+   "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
@@ -37,25 +37,17 @@
   },
   {
    "lat": -34.9768,
-   "lon": -65.8945,
+   "lon": -65.7951,
    "max_dbz": 58,
    "tope_km": 12.9,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.9872,
-   "lon": -65.8549,
+   "lat": -27.1411,
+   "lon": -65.8755,
    "max_dbz": 58,
-   "tope_km": 13.5,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -27.1049,
-   "lon": -65.8446,
-   "max_dbz": 57,
-   "tope_km": 13.5,
+   "tope_km": 14.1,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
@@ -68,11 +60,27 @@
    "nivel": "granizo probable"
   },
   {
+   "lat": -34.9907,
+   "lon": -65.8751,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "radar": "RMA18",
+   "nivel": "granizo probable"
+  },
+  {
    "lat": -36.0699,
    "lon": -65.6583,
    "max_dbz": 56,
    "tope_km": 12.3,
    "radar": "RMA18",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -35.0653,
+   "lon": -65.5632,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
@@ -84,6 +92,14 @@
    "nivel": "granizo probable"
   },
   {
+   "lat": -35.0299,
+   "lon": -66.2699,
+   "max_dbz": 53,
+   "tope_km": 14.1,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
    "lat": -33.8952,
    "lon": -67.3475,
    "max_dbz": 53,
@@ -93,18 +109,18 @@
   },
   {
    "lat": -35.1137,
-   "lon": -64.4071,
+   "lon": -64.3521,
    "max_dbz": 53,
    "tope_km": 12.3,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -35.009,
-   "lon": -66.3088,
-   "max_dbz": 52,
-   "tope_km": 12.3,
-   "radar": "RMA18",
+   "lat": -39.2084,
+   "lon": -67.2188,
+   "max_dbz": 53,
+   "tope_km": 7.6,
+   "radar": "RMA7",
    "nivel": null
   },
   {
@@ -132,14 +148,6 @@
    "nivel": null
   },
   {
-   "lat": -35.0476,
-   "lon": -65.6736,
-   "max_dbz": 50,
-   "tope_km": 17.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
    "lat": -36.0158,
    "lon": -66.2403,
    "max_dbz": 50,
@@ -164,11 +172,19 @@
    "nivel": null
   },
   {
-   "lat": -39.7525,
-   "lon": -67.2663,
-   "max_dbz": 50,
-   "tope_km": 7.0,
-   "radar": "RMA7",
+   "lat": -35.7176,
+   "lon": -65.7178,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -35.083,
+   "lon": -63.6529,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "radar": "RMA16",
    "nivel": null
   },
   {
@@ -180,40 +196,24 @@
    "nivel": null
   },
   {
-   "lat": -35.0033,
-   "lon": -66.1374,
+   "lat": -35.0919,
+   "lon": -64.205,
    "max_dbz": 48,
-   "tope_km": 11.7,
+   "tope_km": 13.5,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -35.0299,
-   "lon": -66.2589,
-   "max_dbz": 48,
-   "tope_km": 12.3,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.9605,
-   "lon": -67.3411,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -29.762,
-   "lon": -60.9482,
-   "max_dbz": 48,
+   "lat": -29.8081,
+   "lon": -60.9374,
+   "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -29.8265,
-   "lon": -60.9157,
+   "lat": -29.9185,
+   "lon": -60.9049,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
@@ -221,12 +221,12 @@
   }
  ],
  "localidades": {
-  "Quetrequén": {
+  "Bagual": {
    "nivel": "granizo probable",
-   "km": 9.1,
-   "max_dbz": 63,
-   "tope_km": 14.7,
-   "visto": "2026-11-05 18:31"
+   "km": 8.7,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "visto": "2026-11-05 18:39"
   }
  }
 }
