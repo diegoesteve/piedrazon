@@ -1,15 +1,21 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 07:15",
+ "consultado": "2026-11-05 07:30",
  "radares": {
-  "RMA10": "2026-11-05 06:38",
-  "AR7": "2026-11-05 07:00",
-  "RMA3": "2026-11-05 06:42",
   "RMA11": "2026-11-05 06:51",
-  "RMA15": "2026-11-05 07:00",
-  "RMA16": "2026-11-05 06:55"
+  "RMA15": "2026-11-05 07:08",
+  "RMA16": "2026-11-05 06:55",
+  "AR7": "2026-11-05 07:00"
  },
  "nucleos": [
+  {
+   "lat": -30.363,
+   "lon": -66.5273,
+   "max_dbz": 61,
+   "tope_km": 8.8,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
   {
    "lat": -33.8708,
    "lon": -64.9007,
@@ -19,51 +25,19 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.363,
-   "lon": -66.5273,
-   "max_dbz": 60,
-   "tope_km": 7.6,
-   "radar": "RMA15",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.6585,
-   "lon": -66.5802,
-   "max_dbz": 59,
-   "tope_km": 10.0,
-   "radar": "RMA15",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.6138,
-   "lon": -66.6436,
+   "lat": -30.8551,
+   "lon": -66.6225,
    "max_dbz": 56,
-   "tope_km": 9.4,
+   "tope_km": 8.2,
    "radar": "RMA15",
    "nivel": "posible granizo"
   },
   {
-   "lat": -30.9532,
+   "lat": -30.6407,
    "lon": -66.633,
    "max_dbz": 54,
-   "tope_km": 11.1,
+   "tope_km": 10.0,
    "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -24.1341,
-   "lon": -59.1861,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -38.1781,
-   "lon": -61.9441,
-   "max_dbz": 49,
-   "tope_km": 8.8,
-   "radar": "RMA10",
    "nivel": null
   },
   {
@@ -75,14 +49,6 @@
    "nivel": null
   },
   {
-   "lat": -30.4885,
-   "lon": -66.4321,
-   "max_dbz": 49,
-   "tope_km": 9.4,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
    "lat": -29.8541,
    "lon": -59.5315,
    "max_dbz": 46,
@@ -91,5 +57,20 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Malanzán": {
+   "nivel": "posible granizo",
+   "km": 5.9,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "visto": "2026-11-05 07:08"
+  },
+  "Portezuelo": {
+   "nivel": "posible granizo",
+   "km": 7.8,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "visto": "2026-11-05 07:08"
+  }
+ }
 }
