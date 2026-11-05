@@ -1,7 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 01:00",
- "radares": {},
- "nucleos": [],
- "localidades": {}
+ "consultado": "2026-11-05 01:15",
+ "radares": {
+  "RMA17": "2026-11-05 00:58"
+ },
+ "nucleos": [
+  {
+   "lat": -32.0736,
+   "lon": -64.9787,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  }
+ ],
+ "localidades": {
+  "La Población": {
+   "nivel": "granizo probable",
+   "km": 1.8,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "visto": "2026-11-05 00:58"
+  },
+  "San Javier y Yacanto": {
+   "nivel": "granizo probable",
+   "km": 8.1,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "visto": "2026-11-05 00:58"
+  }
+ }
 }
