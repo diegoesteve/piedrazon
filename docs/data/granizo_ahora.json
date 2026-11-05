@@ -1,7 +1,97 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 08:00",
- "radares": {},
- "nucleos": [],
- "localidades": {}
+ "consultado": "2026-11-05 08:15",
+ "radares": {
+  "RMA17": "2026-11-05 07:59",
+  "RMA16": "2026-11-05 08:00"
+ },
+ "nucleos": [
+  {
+   "lat": -32.7826,
+   "lon": -63.8355,
+   "max_dbz": 73,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.3721,
+   "lon": -65.1767,
+   "max_dbz": 65,
+   "tope_km": 14.7,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.2701,
+   "lon": -64.55,
+   "max_dbz": 64,
+   "tope_km": 12.9,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.3961,
+   "lon": -64.55,
+   "max_dbz": 58,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.2649,
+   "lon": -65.1215,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.864,
+   "lon": -64.517,
+   "max_dbz": 55,
+   "tope_km": 14.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.1307,
+   "lon": -64.1498,
+   "max_dbz": 54,
+   "tope_km": 15.2,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -34.3274,
+   "lon": -65.243,
+   "max_dbz": 51,
+   "tope_km": 14.7,
+   "radar": "RMA16",
+   "nivel": null
+  }
+ ],
+ "localidades": {
+  "General Cabrera": {
+   "nivel": "granizo probable",
+   "km": 4.7,
+   "max_dbz": 73,
+   "tope_km": 17.0,
+   "visto": "2026-11-05 07:59"
+  },
+  "General Deheza": {
+   "nivel": "granizo probable",
+   "km": 4.6,
+   "max_dbz": 73,
+   "tope_km": 17.0,
+   "visto": "2026-11-05 07:59"
+  },
+  "Las Vertientes": {
+   "nivel": "granizo probable",
+   "km": 3.1,
+   "max_dbz": 64,
+   "tope_km": 12.9,
+   "visto": "2026-11-05 07:59"
+  }
+ }
 }
