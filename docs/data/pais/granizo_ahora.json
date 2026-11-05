@@ -1,105 +1,91 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 04:15",
+ "consultado": "2026-11-05 04:30",
  "radares": {
+  "RMA3": "2026-11-05 04:17",
   "AR7": "2026-11-05 04:00",
-  "RMA3": "2026-11-05 03:59",
-  "RMA15": "2026-11-05 04:06"
+  "RMA15": "2026-11-05 04:14",
+  "RMA16": "2026-11-05 04:11",
+  "RMA11": "2026-11-05 04:15"
  },
  "nucleos": [
   {
    "lat": -30.3988,
    "lon": -66.485,
-   "max_dbz": 62,
-   "tope_km": 8.8,
+   "max_dbz": 61,
+   "tope_km": 7.6,
    "radar": "RMA15",
    "nivel": "granizo probable"
   },
   {
-   "lat": -23.9076,
-   "lon": -58.5837,
+   "lat": -24.4053,
+   "lon": -60.9228,
    "max_dbz": 60,
-   "tope_km": 17.0,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -24.721,
-   "lon": -59.6378,
-   "max_dbz": 59,
-   "tope_km": 14.7,
+   "tope_km": 14.1,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
    "lat": -30.6138,
    "lon": -66.6013,
-   "max_dbz": 59,
-   "tope_km": 10.0,
+   "max_dbz": 58,
+   "tope_km": 9.4,
    "radar": "RMA15",
-   "nivel": "granizo probable"
+   "nivel": "posible granizo"
   },
   {
-   "lat": -23.6626,
-   "lon": -58.905,
-   "max_dbz": 57,
-   "tope_km": 14.1,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -23.1985,
-   "lon": -61.2541,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -24.4234,
-   "lon": -61.0634,
+   "lat": -23.6535,
+   "lon": -58.7142,
    "max_dbz": 56,
-   "tope_km": 12.3,
+   "tope_km": 13.5,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
    "lat": -23.9076,
-   "lon": -59.0355,
-   "max_dbz": 54,
-   "tope_km": 13.5,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -23.7262,
-   "lon": -58.9953,
+   "lon": -58.4633,
    "max_dbz": 53,
-   "tope_km": 14.1,
+   "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -23.8714,
-   "lon": -59.166,
+   "lat": -30.0665,
+   "lon": -67.2465,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -28.3735,
+   "lon": -66.0097,
+   "max_dbz": 52,
+   "tope_km": 14.7,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -33.2219,
+   "lon": -65.0773,
    "max_dbz": 51,
-   "tope_km": 12.3,
+   "tope_km": 7.6,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -23.8895,
+   "lon": -58.3729,
+   "max_dbz": 50,
+   "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -23.8986,
-   "lon": -58.8648,
-   "max_dbz": 51,
-   "tope_km": 14.1,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -23.8532,
-   "lon": -58.9652,
-   "max_dbz": 49,
-   "tope_km": 14.1,
+   "lat": -23.7171,
+   "lon": -58.8146,
+   "max_dbz": 50,
+   "tope_km": 12.9,
    "radar": "RMA3",
    "nivel": null
   },
@@ -112,21 +98,29 @@
    "nivel": null
   },
   {
+   "lat": -23.8986,
+   "lon": -58.8548,
+   "max_dbz": 47,
+   "tope_km": 14.7,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
    "lat": -29.8357,
    "lon": -60.9266,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
+  },
+  {
+   "lat": -30.864,
+   "lon": -66.6225,
+   "max_dbz": 47,
+   "tope_km": 7.6,
+   "radar": "RMA15",
+   "nivel": null
   }
  ],
- "localidades": {
-  "Pozo del Mortero": {
-   "nivel": "granizo probable",
-   "km": 4.2,
-   "max_dbz": 56,
-   "tope_km": 12.3,
-   "visto": "2026-11-05 03:59"
-  }
- }
+ "localidades": {}
 }
