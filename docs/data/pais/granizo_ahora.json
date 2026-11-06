@@ -1,53 +1,99 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 12:45",
+ "consultado": "2026-11-06 13:00",
  "radares": {
-  "RMA16": "2026-11-06 12:24",
-  "RMA17": "2026-11-06 12:33",
-  "RMA15": "2026-11-06 12:27",
-  "RMA7": "2026-11-06 12:29"
+  "RMA16": "2026-11-06 12:49",
+  "RMA15": "2026-11-06 12:35",
+  "RMA7": "2026-11-06 12:47",
+  "RMA17": "2026-11-06 12:41"
  },
  "nucleos": [
   {
    "lat": -33.2038,
-   "lon": -65.1105,
-   "max_dbz": 59,
+   "lon": -65.1215,
+   "max_dbz": 62,
    "tope_km": 7.6,
    "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -39.0649,
+   "lon": -68.3942,
+   "max_dbz": 59,
+   "tope_km": 6.4,
+   "radar": "RMA7",
    "nivel": "posible granizo"
   },
   {
-   "lat": -33.8533,
-   "lon": -64.3741,
-   "max_dbz": 53,
-   "tope_km": 10.6,
-   "radar": "RMA17",
-   "nivel": null
+   "lat": -34.0949,
+   "lon": -64.0393,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
   },
   {
    "lat": -30.7211,
    "lon": -66.6225,
-   "max_dbz": 51,
+   "max_dbz": 55,
    "tope_km": 10.6,
    "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.1295,
+   "lon": -67.2359,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -38.5787,
+   "lon": -69.0472,
+   "max_dbz": 53,
+   "tope_km": 8.8,
+   "radar": "RMA7",
    "nivel": null
   },
   {
-   "lat": -38.6058,
-   "lon": -69.0353,
-   "max_dbz": 51,
+   "lat": -33.8712,
+   "lon": -64.3192,
+   "max_dbz": 53,
    "tope_km": 8.2,
-   "radar": "RMA7",
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.8798,
+   "lon": -64.1939,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "radar": "RMA16",
    "nivel": null
   }
  ],
  "localidades": {
-  "La Punilla": {
+  "Malanzán": {
+   "nivel": "granizo probable",
+   "km": 9.5,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-06 12:35"
+  },
+  "Senillosa": {
    "nivel": "posible granizo",
-   "km": 6.9,
+   "km": 6.7,
    "max_dbz": 59,
+   "tope_km": 6.4,
+   "visto": "2026-11-06 12:47"
+  },
+  "La Punilla": {
+   "nivel": "granizo probable",
+   "km": 7.3,
+   "max_dbz": 62,
    "tope_km": 7.6,
-   "visto": "2026-11-06 12:24"
+   "visto": "2026-11-06 12:49"
   }
  }
 }
