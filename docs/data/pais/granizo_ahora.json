@@ -1,44 +1,107 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 06:00",
+ "consultado": "2026-11-06 06:15",
  "radares": {
-  "RMA10": "2026-11-06 05:22",
-  "RMA15": "2026-11-06 05:48",
-  "RMA7": "2026-11-06 05:48"
+  "RMA15": "2026-11-06 05:57",
+  "RMA7": "2026-11-06 05:57",
+  "AR7": "2026-11-06 05:50",
+  "RMA16": "2026-11-06 05:59",
+  "RMA6": "2026-11-06 06:02"
  },
  "nucleos": [
   {
-   "lat": -30.3271,
-   "lon": -66.5061,
-   "max_dbz": 62,
-   "tope_km": 7.0,
+   "lat": -30.3809,
+   "lon": -66.4956,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.4706,
+   "lon": -66.4533,
+   "max_dbz": 57,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.6585,
+   "lon": -66.5802,
+   "max_dbz": 56,
+   "tope_km": 10.0,
    "radar": "RMA15",
    "nivel": "granizo probable"
   },
   {
-   "lat": -39.3962,
-   "lon": -67.6819,
-   "max_dbz": 54,
-   "tope_km": 7.6,
+   "lat": -39.1188,
+   "lon": -67.4919,
+   "max_dbz": 55,
+   "tope_km": 6.4,
    "radar": "RMA7",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -34.7816,
+   "lon": -65.7289,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -30.4257,
-   "lon": -66.4638,
-   "max_dbz": 53,
-   "tope_km": 8.2,
-   "radar": "RMA15",
+   "lat": -38.3702,
+   "lon": -58.0077,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "radar": "RMA6",
    "nivel": null
   },
   {
-   "lat": -38.2869,
-   "lon": -61.1737,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "radar": "RMA10",
+   "lat": -29.6976,
+   "lon": -60.9482,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.9277,
+   "lon": -60.9049,
+   "max_dbz": 46,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Tama": {
+   "nivel": "posible granizo",
+   "km": 8.3,
+   "max_dbz": 57,
+   "tope_km": 8.2,
+   "visto": "2026-11-06 05:57"
+  },
+  "Barrio El Petróleo": {
+   "nivel": "posible granizo",
+   "km": 6.5,
+   "max_dbz": 55,
+   "tope_km": 6.4,
+   "visto": "2026-11-06 05:57"
+  },
+  "Barrio Fátima": {
+   "nivel": "posible granizo",
+   "km": 7.0,
+   "max_dbz": 55,
+   "tope_km": 6.4,
+   "visto": "2026-11-06 05:57"
+  },
+  "Barrio Porvenir": {
+   "nivel": "posible granizo",
+   "km": 8.8,
+   "max_dbz": 55,
+   "tope_km": 6.4,
+   "visto": "2026-11-06 05:57"
+  }
+ }
 }
