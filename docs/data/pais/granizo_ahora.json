@@ -1,53 +1,78 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 15:00",
+ "consultado": "2026-11-06 15:15",
  "radares": {
-  "RMA14": "2026-11-06 14:49",
-  "RMA16": "2026-11-06 14:43",
+  "RMA16": "2026-11-06 15:00",
   "RMA17": "2026-11-06 14:44",
-  "RMA7": "2026-11-06 14:50",
-  "RMA18": "2026-11-06 14:42",
-  "AR7": "2026-11-06 14:40"
+  "AR7": "2026-11-06 15:00",
+  "RMA14": "2026-11-06 14:57",
+  "RMA7": "2026-11-06 14:59",
+  "RMA18": "2026-11-06 14:58",
+  "RMA11": "2026-11-06 15:00"
  },
  "nucleos": [
   {
    "lat": -33.2038,
    "lon": -65.0884,
-   "max_dbz": 55,
+   "max_dbz": 59,
    "tope_km": 7.6,
    "radar": "RMA16",
    "nivel": "posible granizo"
   },
   {
-   "lat": -37.5597,
-   "lon": -67.8837,
+   "lat": -27.0958,
+   "lon": -65.8962,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -37.5323,
+   "lon": -67.8718,
    "max_dbz": 54,
    "tope_km": 8.2,
    "radar": "RMA7",
    "nivel": null
   },
   {
-   "lat": -35.7106,
-   "lon": -61.5607,
-   "max_dbz": 52,
-   "tope_km": 10.0,
+   "lat": -36.6725,
+   "lon": -60.9106,
+   "max_dbz": 53,
+   "tope_km": 7.6,
    "radar": "RMA14",
    "nivel": null
   },
   {
-   "lat": -35.9437,
-   "lon": -65.6583,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "radar": "RMA18",
+   "lat": -27.1863,
+   "lon": -65.9271,
+   "max_dbz": 52,
+   "tope_km": 17.0,
+   "radar": "RMA11",
    "nivel": null
   },
   {
-   "lat": -35.2421,
-   "lon": -65.8061,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA16",
+   "lat": -33.4114,
+   "lon": -61.1969,
+   "max_dbz": 51,
+   "tope_km": 10.8,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -36.5026,
+   "lon": -61.0703,
+   "max_dbz": 51,
+   "tope_km": 7.6,
+   "radar": "RMA14",
+   "nivel": null
+  },
+  {
+   "lat": -38.0801,
+   "lon": -69.534,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "radar": "RMA7",
    "nivel": null
   },
   {
@@ -59,11 +84,11 @@
    "nivel": null
   },
   {
-   "lat": -30.2855,
-   "lon": -58.8502,
-   "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "lat": -35.7378,
+   "lon": -61.4353,
+   "max_dbz": 48,
+   "tope_km": 8.8,
+   "radar": "RMA14",
    "nivel": null
   }
  ],
@@ -71,16 +96,16 @@
   "Achiras": {
    "nivel": "posible granizo",
    "km": 9.6,
-   "max_dbz": 55,
+   "max_dbz": 59,
    "tope_km": 7.6,
-   "visto": "2026-11-06 14:43"
+   "visto": "2026-11-06 15:00"
   },
   "La Punilla": {
    "nivel": "posible granizo",
    "km": 6.7,
-   "max_dbz": 55,
+   "max_dbz": 59,
    "tope_km": 7.6,
-   "visto": "2026-11-06 14:43"
+   "visto": "2026-11-06 15:00"
   }
  }
 }
