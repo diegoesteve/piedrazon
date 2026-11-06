@@ -1,15 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 01:00",
+ "consultado": "2026-11-06 01:15",
  "radares": {
-  "RMA16": "2026-11-06 00:48",
-  "RMA6": "2026-11-06 00:37",
   "RMA19": "2026-11-06 00:36",
-  "RMA11": "2026-11-06 00:48",
   "RMA17": "2026-11-06 00:37",
-  "RMA15": "2026-11-06 00:41"
+  "RMA6": "2026-11-06 00:55",
+  "RMA15": "2026-11-06 00:41",
+  "RMA16": "2026-11-06 00:56",
+  "RMA11": "2026-11-06 00:57",
+  "AR7": "2026-11-06 00:50",
+  "RMA18": "2026-11-06 01:01"
  },
  "nucleos": [
+  {
+   "lat": -28.284,
+   "lon": -65.5557,
+   "max_dbz": 63,
+   "tope_km": 13.5,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -28.051,
+   "lon": -66.0406,
+   "max_dbz": 59,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
   {
    "lat": -34.0736,
    "lon": -68.182,
@@ -17,6 +35,14 @@
    "tope_km": 17.0,
    "radar": "RMA19",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.4696,
+   "lon": -64.8954,
+   "max_dbz": 57,
+   "tope_km": 7.6,
+   "radar": "RMA11",
+   "nivel": "posible granizo"
   },
   {
    "lat": -30.3181,
@@ -51,19 +77,19 @@
    "nivel": null
   },
   {
-   "lat": -26.6152,
-   "lon": -65.0708,
-   "max_dbz": 54,
-   "tope_km": 12.9,
-   "radar": "RMA11",
+   "lat": -35.0033,
+   "lon": -63.5093,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -28.3109,
-   "lon": -65.5454,
+   "lat": -34.5238,
+   "lon": -68.0775,
    "max_dbz": 51,
-   "tope_km": 11.1,
-   "radar": "RMA11",
+   "tope_km": 10.6,
+   "radar": "RMA18",
    "nivel": null
   },
   {
@@ -75,19 +101,19 @@
    "nivel": null
   },
   {
-   "lat": -34.9236,
-   "lon": -63.7302,
-   "max_dbz": 49,
-   "tope_km": 11.7,
-   "radar": "RMA16",
+   "lat": -38.2539,
+   "lon": -58.5227,
+   "max_dbz": 50,
+   "tope_km": 9.4,
+   "radar": "RMA6",
    "nivel": null
   },
   {
-   "lat": -38.3255,
-   "lon": -58.7334,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA6",
+   "lat": -29.7344,
+   "lon": -60.9482,
+   "max_dbz": 50,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   },
   {
@@ -99,21 +125,44 @@
    "nivel": null
   },
   {
-   "lat": -38.3524,
-   "lon": -58.6398,
-   "max_dbz": 47,
-   "tope_km": 9.4,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
    "lat": -35.052,
    "lon": -62.9012,
    "max_dbz": 47,
    "tope_km": 11.7,
    "radar": "RMA17",
    "nivel": null
+  },
+  {
+   "lat": -30.1113,
+   "lon": -60.8725,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.9736,
+   "lon": -60.9049,
+   "max_dbz": 46,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Amadores": {
+   "nivel": "granizo probable",
+   "km": 8.4,
+   "max_dbz": 63,
+   "tope_km": 13.5,
+   "visto": "2026-11-06 00:57"
+  },
+  "Palo Labrado": {
+   "nivel": "granizo probable",
+   "km": 7.5,
+   "max_dbz": 63,
+   "tope_km": 13.5,
+   "visto": "2026-11-06 00:57"
+  }
+ }
 }
