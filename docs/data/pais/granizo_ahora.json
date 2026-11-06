@@ -1,15 +1,14 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 04:00",
+ "consultado": "2026-11-06 04:16",
  "radares": {
-  "RMA19": "2026-11-06 03:31",
+  "RMA6": "2026-11-06 04:05",
   "RMA16": "2026-11-06 03:40",
-  "RMA14": "2026-11-06 03:25",
-  "RMA7": "2026-11-06 03:44",
-  "RMA11": "2026-11-06 03:33",
-  "RMA10": "2026-11-06 03:43",
-  "RMA6": "2026-11-06 03:38",
-  "RMA15": "2026-11-06 03:52"
+  "RMA10": "2026-11-06 03:52",
+  "RMA15": "2026-11-06 04:00",
+  "RMA7": "2026-11-06 03:53",
+  "AR7": "2026-11-06 03:50",
+  "RMA14": "2026-11-06 03:59"
  },
  "nucleos": [
   {
@@ -21,93 +20,77 @@
    "nivel": "posible granizo"
   },
   {
-   "lat": -39.9831,
-   "lon": -68.228,
+   "lat": -39.992,
+   "lon": -68.2043,
    "max_dbz": 58,
-   "tope_km": 10.6,
+   "tope_km": 17.0,
    "radar": "RMA7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.7815,
-   "lon": -65.7105,
-   "max_dbz": 58,
-   "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.1385,
-   "lon": -67.257,
-   "max_dbz": 54,
-   "tope_km": 7.6,
+   "lat": -30.5959,
+   "lon": -66.6119,
+   "max_dbz": 53,
+   "tope_km": 9.4,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -36.6457,
-   "lon": -60.5912,
-   "max_dbz": 53,
+   "lat": -38.2688,
+   "lon": -62.6316,
+   "max_dbz": 52,
    "tope_km": 10.6,
+   "radar": "RMA10",
+   "nivel": null
+  },
+  {
+   "lat": -35.7739,
+   "lon": -61.6406,
+   "max_dbz": 51,
+   "tope_km": 8.8,
    "radar": "RMA14",
    "nivel": null
   },
   {
-   "lat": -38.2597,
-   "lon": -62.679,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "radar": "RMA10",
-   "nivel": null
-  },
-  {
-   "lat": -37.6693,
-   "lon": -58.4525,
-   "max_dbz": 51,
-   "tope_km": 7.6,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -37.7145,
-   "lon": -58.394,
-   "max_dbz": 51,
-   "tope_km": 7.0,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -30.4795,
-   "lon": -66.5061,
-   "max_dbz": 51,
-   "tope_km": 8.2,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -38.2325,
-   "lon": -62.762,
+   "lat": -37.8677,
+   "lon": -57.165,
    "max_dbz": 50,
-   "tope_km": 11.1,
-   "radar": "RMA10",
+   "tope_km": 7.6,
+   "radar": "RMA6",
    "nivel": null
   },
   {
-   "lat": -34.1181,
-   "lon": -67.5561,
+   "lat": -40.0362,
+   "lon": -68.2874,
    "max_dbz": 48,
-   "tope_km": 7.6,
-   "radar": "RMA19",
+   "tope_km": 17.0,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -29.8081,
+   "lon": -60.9157,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.7436,
+   "lon": -60.9482,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.9093,
+   "lon": -60.9157,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {
-  "Las Lajas (Catamarca)": {
-   "nivel": "granizo probable",
-   "km": 6.6,
-   "max_dbz": 58,
-   "tope_km": 17.0,
-   "visto": "2026-11-06 03:33"
-  }
- }
+ "localidades": {}
 }
