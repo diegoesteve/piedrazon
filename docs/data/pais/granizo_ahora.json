@@ -1,42 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 05:45",
+ "consultado": "2026-11-06 06:00",
  "radares": {
-  "RMA7": "2026-11-06 05:32",
-  "RMA15": "2026-11-06 05:23",
   "RMA10": "2026-11-06 05:22",
-  "RMA11": "2026-11-06 05:17"
+  "RMA15": "2026-11-06 05:48",
+  "RMA7": "2026-11-06 05:48"
  },
  "nucleos": [
   {
-   "lat": -27.4753,
-   "lon": -65.9271,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -27.7815,
-   "lon": -65.7414,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -39.1367,
-   "lon": -67.5631,
-   "max_dbz": 54,
+   "lat": -30.3271,
+   "lon": -66.5061,
+   "max_dbz": 62,
    "tope_km": 7.0,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -39.3962,
+   "lon": -67.6819,
+   "max_dbz": 54,
+   "tope_km": 7.6,
    "radar": "RMA7",
    "nivel": null
   },
   {
-   "lat": -30.3271,
-   "lon": -66.5061,
-   "max_dbz": 54,
-   "tope_km": 7.0,
+   "lat": -30.4257,
+   "lon": -66.4638,
+   "max_dbz": 53,
+   "tope_km": 8.2,
    "radar": "RMA15",
    "nivel": null
   },
@@ -49,48 +40,5 @@
    "nivel": null
   }
  ],
- "localidades": {
-  "Aconquija": {
-   "nivel": "granizo probable",
-   "km": 8.3,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-06 05:17"
-  },
-  "Alto de las Juntas": {
-   "nivel": "granizo probable",
-   "km": 8.5,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-06 05:17"
-  },
-  "El Alamito": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-06 05:17"
-  },
-  "El Lindero": {
-   "nivel": "granizo probable",
-   "km": 8.0,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-06 05:17"
-  },
-  "La Mesada": {
-   "nivel": "granizo probable",
-   "km": 8.2,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-06 05:17"
-  },
-  "Las Lajas (Catamarca)": {
-   "nivel": "granizo probable",
-   "km": 6.4,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "visto": "2026-11-06 05:17"
-  }
- }
+ "localidades": {}
 }
