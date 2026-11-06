@@ -1,30 +1,31 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 16:45",
+ "consultado": "2026-11-06 17:00",
  "radares": {
-  "RMA16": "2026-11-06 16:30",
-  "RMA2": "2026-11-06 16:34",
-  "AR7": "2026-11-06 16:20",
-  "RMA7": "2026-11-06 16:31",
+  "RMA16": "2026-11-06 16:46",
+  "RMA7": "2026-11-06 16:40",
+  "RMA2": "2026-11-06 16:43",
   "RMA11": "2026-11-06 16:35",
-  "RMA18": "2026-11-06 16:28"
+  "RMA18": "2026-11-06 16:45",
+  "RMA17": "2026-11-06 16:38",
+  "AR7": "2026-11-06 16:40"
  },
  "nucleos": [
   {
-   "lat": -37.9344,
-   "lon": -68.7741,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "radar": "RMA7",
+   "lat": -33.2219,
+   "lon": -65.0773,
+   "max_dbz": 61,
+   "tope_km": 6.4,
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -37.8523,
-   "lon": -69.0947,
+   "lat": -37.9162,
+   "lon": -68.8929,
    "max_dbz": 55,
-   "tope_km": 7.6,
+   "tope_km": 10.6,
    "radar": "RMA7",
-   "nivel": "posible granizo"
+   "nivel": "granizo probable"
   },
   {
    "lat": -28.2034,
@@ -35,26 +36,18 @@
    "nivel": null
   },
   {
-   "lat": -36.9476,
-   "lon": -67.9634,
+   "lat": -37.9253,
+   "lon": -68.7741,
    "max_dbz": 53,
-   "tope_km": 8.2,
-   "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -33.2219,
-   "lon": -65.0553,
-   "max_dbz": 52,
-   "tope_km": 6.4,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -34.787,
-   "lon": -59.8784,
-   "max_dbz": 52,
    "tope_km": 10.6,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -33.4702,
+   "lon": -60.0691,
+   "max_dbz": 52,
+   "tope_km": 11.7,
    "radar": "RMA2",
    "nivel": null
   },
@@ -67,45 +60,67 @@
    "nivel": null
   },
   {
-   "lat": -33.4702,
-   "lon": -60.2261,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "radar": "RMA2",
-   "nivel": null
-  },
-  {
-   "lat": -33.4733,
-   "lon": -59.7802,
-   "max_dbz": 48,
-   "tope_km": 11.4,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -37.9162,
-   "lon": -68.1093,
-   "max_dbz": 48,
-   "tope_km": 8.8,
-   "radar": "RMA7",
-   "nivel": null
-  },
-  {
-   "lat": -36.0338,
-   "lon": -65.3388,
-   "max_dbz": 48,
-   "tope_km": 9.4,
+   "lat": -36.8763,
+   "lon": -67.9634,
+   "max_dbz": 51,
+   "tope_km": 11.7,
    "radar": "RMA18",
    "nivel": null
   },
   {
-   "lat": -37.9253,
-   "lon": -68.8929,
+   "lat": -33.0267,
+   "lon": -62.9012,
+   "max_dbz": 51,
+   "tope_km": 6.4,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -37.8979,
+   "lon": -68.1093,
+   "max_dbz": 50,
+   "tope_km": 7.0,
+   "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -36.9298,
+   "lon": -67.7352,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -34.787,
+   "lon": -59.8111,
    "max_dbz": 47,
    "tope_km": 10.0,
-   "radar": "RMA7",
+   "radar": "RMA2",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Achiras": {
+   "nivel": "granizo probable",
+   "km": 9.5,
+   "max_dbz": 61,
+   "tope_km": 6.4,
+   "visto": "2026-11-06 16:46"
+  },
+  "Aguada San Roque": {
+   "nivel": "granizo probable",
+   "km": 9.5,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-06 16:40"
+  },
+  "La Punilla": {
+   "nivel": "granizo probable",
+   "km": 8.8,
+   "max_dbz": 61,
+   "tope_km": 6.4,
+   "visto": "2026-11-06 16:46"
+  }
+ }
 }
