@@ -1,158 +1,86 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-07 06:45",
+ "consultado": "2026-11-07 07:00",
  "radares": {
-  "RMA11": "2026-11-07 06:06",
-  "RMA3": "2026-11-07 06:26",
-  "RMA15": "2026-11-07 06:33",
-  "RMA16": "2026-11-07 06:34",
-  "RMA4": "2026-11-07 06:29",
-  "RMA13": "2026-11-07 06:30"
+  "RMA15": "2026-11-07 06:41",
+  "RMA3": "2026-11-07 06:44",
+  "RMA16": "2026-11-07 06:42",
+  "RMA4": "2026-11-07 06:47",
+  "RMA13": "2026-11-07 06:47"
  },
  "nucleos": [
   {
-   "lat": -30.3809,
-   "lon": -66.4321,
-   "max_dbz": 60,
-   "tope_km": 8.8,
+   "lat": -30.3271,
+   "lon": -66.5061,
+   "max_dbz": 61,
+   "tope_km": 7.0,
    "radar": "RMA15",
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.3543,
-   "lon": -56.2333,
-   "max_dbz": 59,
+   "lat": -30.3988,
+   "lon": -66.4744,
+   "max_dbz": 60,
+   "tope_km": 7.6,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -25.6793,
+   "lon": -57.9784,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.2038,
+   "lon": -65.1105,
+   "max_dbz": 58,
+   "tope_km": 7.6,
+   "radar": "RMA16",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -26.2996,
+   "lon": -56.0682,
+   "max_dbz": 56,
    "tope_km": 17.0,
    "radar": "RMA13",
    "nivel": "granizo probable"
   },
   {
-   "lat": -25.4307,
-   "lon": -59.8988,
-   "max_dbz": 58,
-   "tope_km": 11.7,
+   "lat": -25.3052,
+   "lon": -60.0595,
+   "max_dbz": 54,
+   "tope_km": 11.1,
    "radar": "RMA3",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -25.4665,
-   "lon": -59.7382,
-   "max_dbz": 57,
-   "tope_km": 15.2,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.3271,
-   "lon": -66.5061,
-   "max_dbz": 56,
-   "tope_km": 8.8,
-   "radar": "RMA15",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -25.8806,
-   "lon": -58.3703,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "radar": "RMA4",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -25.661,
-   "lon": -58.1744,
-   "max_dbz": 56,
-   "tope_km": 12.9,
-   "radar": "RMA4",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -25.9172,
-   "lon": -58.7724,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "radar": "RMA4",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -26.3641,
-   "lon": -56.9576,
-   "max_dbz": 56,
-   "tope_km": 12.3,
-   "radar": "RMA4",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.7032,
-   "lon": -66.6013,
-   "max_dbz": 53,
+   "lat": -30.1025,
+   "lon": -67.2465,
+   "max_dbz": 50,
    "tope_km": 10.6,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -33.1948,
-   "lon": -65.1215,
-   "max_dbz": 53,
-   "tope_km": 7.6,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -25.2604,
-   "lon": -60.2502,
-   "max_dbz": 51,
-   "tope_km": 8.8,
+   "lat": -25.4396,
+   "lon": -59.7884,
+   "max_dbz": 50,
+   "tope_km": 11.1,
    "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -25.3769,
-   "lon": -60.0193,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -28.0869,
-   "lon": -66.02,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -29.8864,
-   "lon": -67.4474,
-   "max_dbz": 49,
-   "tope_km": 9.4,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -25.9537,
-   "lon": -58.1125,
-   "max_dbz": 49,
-   "tope_km": 14.1,
-   "radar": "RMA4",
    "nivel": null
   }
  ],
  "localidades": {
-  "Colonia Pastoril": {
-   "nivel": "granizo probable",
-   "km": 8.8,
-   "max_dbz": 56,
-   "tope_km": 12.9,
-   "visto": "2026-11-07 06:29"
-  },
-  "Polco": {
-   "nivel": "granizo probable",
-   "km": 6.7,
-   "max_dbz": 60,
-   "tope_km": 8.8,
-   "visto": "2026-11-07 06:33"
+  "La Punilla": {
+   "nivel": "posible granizo",
+   "km": 6.9,
+   "max_dbz": 58,
+   "tope_km": 7.6,
+   "visto": "2026-11-07 06:42"
   }
  }
 }
