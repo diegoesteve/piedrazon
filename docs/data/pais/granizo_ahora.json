@@ -1,61 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 23:15",
+ "consultado": "2026-11-06 23:30",
  "radares": {
-  "RMA13": "2026-11-06 23:01",
-  "RMA16": "2026-11-06 22:55",
-  "AR7": "2026-11-06 22:50",
-  "RMA10": "2026-11-06 22:41",
-  "RMA17": "2026-11-06 22:55"
+  "RMA13": "2026-11-06 23:09",
+  "RMA16": "2026-11-06 23:11",
+  "RMA17": "2026-11-06 22:55",
+  "AR7": "2026-11-06 23:10",
+  "RMA2": "2026-11-06 23:10"
  },
  "nucleos": [
   {
-   "lat": -31.7851,
-   "lon": -61.6728,
-   "max_dbz": 55,
-   "tope_km": 10.8,
+   "lat": -31.9472,
+   "lon": -60.3967,
+   "max_dbz": 60,
+   "tope_km": 7.2,
    "radar": "AR7",
    "nivel": "granizo probable"
   },
   {
-   "lat": -38.1691,
-   "lon": -61.956,
-   "max_dbz": 55,
+   "lat": -31.8662,
+   "lon": -61.0888,
+   "max_dbz": 59,
+   "tope_km": 9.6,
+   "radar": "AR7",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -33.9964,
+   "lon": -65.519,
+   "max_dbz": 58,
    "tope_km": 5.3,
-   "radar": "RMA10",
+   "radar": "RMA16",
    "nivel": null,
    "descartado": "tope bajo (5.3 km)"
   },
   {
-   "lat": -32.3782,
-   "lon": -58.7204,
-   "max_dbz": 54,
-   "tope_km": 10.2,
+   "lat": -31.8031,
+   "lon": -61.2943,
+   "max_dbz": 57,
+   "tope_km": 9.0,
    "radar": "AR7",
-   "nivel": null
+   "nivel": "posible granizo"
   },
   {
-   "lat": -27.775,
-   "lon": -54.9131,
-   "max_dbz": 53,
+   "lat": -27.784,
+   "lon": -54.8615,
+   "max_dbz": 54,
    "tope_km": 17.0,
    "radar": "RMA13",
-   "nivel": null
-  },
-  {
-   "lat": -31.9202,
-   "lon": -60.7427,
-   "max_dbz": 52,
-   "tope_km": 8.4,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -32.1001,
-   "lon": -60.7211,
-   "max_dbz": 52,
-   "tope_km": 8.4,
-   "radar": "AR7",
    "nivel": null
   },
   {
@@ -67,29 +59,101 @@
    "nivel": null
   },
   {
-   "lat": -33.1767,
-   "lon": -66.2478,
-   "max_dbz": 51,
-   "tope_km": 13.5,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -31.9382,
-   "lon": -60.6562,
+   "lat": -31.3241,
+   "lon": -60.2885,
    "max_dbz": 51,
    "tope_km": 8.4,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -31.306,
-   "lon": -60.5697,
-   "max_dbz": 50,
-   "tope_km": 12.0,
+   "lat": -30.313,
+   "lon": -61.5646,
+   "max_dbz": 51,
+   "tope_km": 9.0,
    "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -31.9202,
+   "lon": -60.8941,
+   "max_dbz": 50,
+   "tope_km": 9.6,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -35.46,
+   "lon": -59.3961,
+   "max_dbz": 47,
+   "tope_km": 7.0,
+   "radar": "RMA2",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Aldea Grapschental": {
+   "nivel": "granizo probable",
+   "km": 9.8,
+   "max_dbz": 60,
+   "tope_km": 7.2,
+   "visto": "2026-11-06 23:10"
+  },
+  "Aldea María Luisa": {
+   "nivel": "granizo probable",
+   "km": 7.2,
+   "max_dbz": 60,
+   "tope_km": 7.2,
+   "visto": "2026-11-06 23:10"
+  },
+  "Aldea San Juan (dpto. Paraná, Entre Ríos)": {
+   "nivel": "granizo probable",
+   "km": 6.6,
+   "max_dbz": 60,
+   "tope_km": 7.2,
+   "visto": "2026-11-06 23:10"
+  },
+  "General Racedo (El Carmen)": {
+   "nivel": "granizo probable",
+   "km": 3.7,
+   "max_dbz": 60,
+   "tope_km": 7.2,
+   "visto": "2026-11-06 23:10"
+  },
+  "Villa Fontana (Entre Ríos)": {
+   "nivel": "granizo probable",
+   "km": 8.6,
+   "max_dbz": 60,
+   "tope_km": 7.2,
+   "visto": "2026-11-06 23:10"
+  },
+  "Villa Gdor. Luis F. Etchevehere": {
+   "nivel": "granizo probable",
+   "km": 3.2,
+   "max_dbz": 60,
+   "tope_km": 7.2,
+   "visto": "2026-11-06 23:10"
+  },
+  "Gessler": {
+   "nivel": "posible granizo",
+   "km": 3.7,
+   "max_dbz": 59,
+   "tope_km": 9.6,
+   "visto": "2026-11-06 23:10"
+  },
+  "Larrechea": {
+   "nivel": "posible granizo",
+   "km": 8.7,
+   "max_dbz": 59,
+   "tope_km": 9.6,
+   "visto": "2026-11-06 23:10"
+  },
+  "Santa Clara de Buena Vista": {
+   "nivel": "posible granizo",
+   "km": 5.0,
+   "max_dbz": 57,
+   "tope_km": 9.0,
+   "visto": "2026-11-06 23:10"
+  }
+ }
 }
