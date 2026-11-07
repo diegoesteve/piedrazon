@@ -1,38 +1,29 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-07 01:15",
+ "consultado": "2026-11-07 01:30",
  "radares": {
+  "RMA8": "2026-11-07 00:50",
   "RMA15": "2026-11-07 01:01",
-  "RMA4": "2026-11-07 00:37",
-  "RMA10": "2026-11-07 00:38",
-  "AR7": "2026-11-07 00:40",
-  "RMA13": "2026-11-07 01:06",
-  "RMA8": "2026-11-07 00:50"
+  "RMA13": "2026-11-07 01:14",
+  "RMA19": "2026-11-07 01:07",
+  "AR7": "2026-11-07 01:10"
  },
  "nucleos": [
   {
-   "lat": -38.1781,
-   "lon": -61.9441,
-   "max_dbz": 59,
-   "tope_km": 8.2,
-   "radar": "RMA10",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -38.051,
-   "lon": -62.0271,
-   "max_dbz": 56,
-   "tope_km": 7.6,
-   "radar": "RMA10",
-   "nivel": "posible granizo"
-  },
-  {
    "lat": -27.667,
-   "lon": -56.4499,
-   "max_dbz": 55,
-   "tope_km": 8.8,
+   "lon": -56.3777,
+   "max_dbz": 56,
+   "tope_km": 10.0,
    "radar": "RMA13",
-   "nivel": "posible granizo"
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.779,
+   "lon": -69.4776,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "radar": "RMA19",
+   "nivel": "granizo probable"
   },
   {
    "lat": -30.1295,
@@ -51,6 +42,30 @@
    "nivel": null
   },
   {
+   "lat": -27.559,
+   "lon": -56.7593,
+   "max_dbz": 51,
+   "tope_km": 6.4,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -27.2613,
+   "lon": -56.3158,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -30.9701,
+   "lon": -61.9323,
+   "max_dbz": 50,
+   "tope_km": 8.4,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
    "lat": -27.6466,
    "lon": -56.5905,
    "max_dbz": 49,
@@ -59,36 +74,21 @@
    "nivel": null
   },
   {
-   "lat": -27.4063,
-   "lon": -57.2876,
+   "lat": -27.766,
+   "lon": -56.3983,
    "max_dbz": 48,
-   "tope_km": 17.0,
-   "radar": "RMA4",
+   "tope_km": 10.6,
+   "radar": "RMA13",
    "nivel": null
   },
   {
-   "lat": -31.6768,
-   "lon": -60.4507,
-   "max_dbz": 48,
-   "tope_km": 8.4,
+   "lat": -31.731,
+   "lon": -61.5322,
+   "max_dbz": 47,
+   "tope_km": 9.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {
-  "La Gruta": {
-   "nivel": "posible granizo",
-   "km": 4.5,
-   "max_dbz": 56,
-   "tope_km": 7.6,
-   "visto": "2026-11-07 00:38"
-  },
-  "Villa Ventana": {
-   "nivel": "posible granizo",
-   "km": 9.2,
-   "max_dbz": 56,
-   "tope_km": 7.6,
-   "visto": "2026-11-07 00:38"
-  }
- }
+ "localidades": {}
 }
