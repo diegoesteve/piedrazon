@@ -1,25 +1,51 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 22:45",
+ "consultado": "2026-11-06 23:00",
  "radares": {
-  "RMA16": "2026-11-06 22:06",
-  "AR7": "2026-11-06 22:30",
   "RMA17": "2026-11-06 22:23",
-  "RMA13": "2026-11-06 22:27"
+  "RMA13": "2026-11-06 22:44",
+  "AR7": "2026-11-06 22:40",
+  "RMA16": "2026-11-06 22:39",
+  "RMA10": "2026-11-06 22:41"
  },
  "nucleos": [
   {
-   "lat": -33.709,
-   "lon": -65.0332,
-   "max_dbz": 51,
-   "tope_km": 7.6,
-   "radar": "RMA16",
+   "lat": -32.3782,
+   "lon": -58.8934,
+   "max_dbz": 56,
+   "tope_km": 11.4,
+   "radar": "AR7",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -38.1691,
+   "lon": -61.956,
+   "max_dbz": 55,
+   "tope_km": 5.3,
+   "radar": "RMA10",
+   "nivel": null,
+   "descartado": "tope bajo (5.3 km)"
+  },
+  {
+   "lat": -32.0642,
+   "lon": -60.9049,
+   "max_dbz": 54,
+   "tope_km": 9.0,
+   "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -31.4599,
-   "lon": -60.8076,
-   "max_dbz": 51,
+   "lat": -31.7761,
+   "lon": -61.8242,
+   "max_dbz": 52,
+   "tope_km": 9.6,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -31.9112,
+   "lon": -60.8833,
+   "max_dbz": 52,
    "tope_km": 9.6,
    "radar": "AR7",
    "nivel": null
@@ -33,10 +59,10 @@
    "nivel": null
   },
   {
-   "lat": -27.9098,
-   "lon": -55.0575,
+   "lat": -27.9008,
+   "lon": -54.9027,
    "max_dbz": 51,
-   "tope_km": 12.9,
+   "tope_km": 16.4,
    "radar": "RMA13",
    "nivel": null
   },
@@ -49,13 +75,36 @@
    "nivel": null
   },
   {
-   "lat": -32.3514,
-   "lon": -59.0448,
-   "max_dbz": 48,
-   "tope_km": 13.2,
-   "radar": "AR7",
+   "lat": -27.784,
+   "lon": -55.3463,
+   "max_dbz": 50,
+   "tope_km": 12.9,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -33.5199,
+   "lon": -65.2761,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "radar": "RMA16",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Basavilbaso": {
+   "nivel": "granizo probable",
+   "km": 1.5,
+   "max_dbz": 56,
+   "tope_km": 11.4,
+   "visto": "2026-11-06 22:40"
+  },
+  "Rocamora": {
+   "nivel": "granizo probable",
+   "km": 8.4,
+   "max_dbz": 56,
+   "tope_km": 11.4,
+   "visto": "2026-11-06 22:40"
+  }
+ }
 }
