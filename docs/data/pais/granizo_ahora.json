@@ -1,44 +1,66 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 22:15",
+ "consultado": "2026-11-06 22:30",
  "radares": {
-  "AR7": "2026-11-06 21:50",
-  "RMA17": "2026-11-06 21:50"
+  "AR7": "2026-11-06 22:10",
+  "RMA16": "2026-11-06 22:06"
  },
  "nucleos": [
   {
-   "lat": -31.2335,
-   "lon": -62.1378,
-   "max_dbz": 54,
-   "tope_km": 13.8,
+   "lat": -31.2879,
+   "lon": -62.2027,
+   "max_dbz": 56,
+   "tope_km": 10.8,
    "radar": "AR7",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -31.2969,
-   "lon": -62.0729,
-   "max_dbz": 54,
-   "tope_km": 13.8,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -32.9544,
-   "lon": -62.9781,
+   "lat": -31.179,
+   "lon": -61.835,
    "max_dbz": 52,
-   "tope_km": 10.6,
-   "radar": "RMA17",
+   "tope_km": 11.4,
+   "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -31.9202,
-   "lon": -60.5156,
-   "max_dbz": 49,
-   "tope_km": 4.8,
+   "lat": -33.709,
+   "lon": -65.0332,
+   "max_dbz": 51,
+   "tope_km": 7.6,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.2425,
+   "lon": -61.8782,
+   "max_dbz": 50,
+   "tope_km": 9.0,
    "radar": "AR7",
-   "nivel": null,
-   "descartado": "tope bajo (4.8 km)"
+   "nivel": null
+  },
+  {
+   "lat": -31.3875,
+   "lon": -61.716,
+   "max_dbz": 49,
+   "tope_km": 9.6,
+   "radar": "AR7",
+   "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Estación Luxardo": {
+   "nivel": "granizo probable",
+   "km": 6.8,
+   "max_dbz": 56,
+   "tope_km": 10.8,
+   "visto": "2026-11-06 22:10"
+  },
+  "Plaza Luxardo": {
+   "nivel": "granizo probable",
+   "km": 3.0,
+   "max_dbz": 56,
+   "tope_km": 10.8,
+   "visto": "2026-11-06 22:10"
+  }
+ }
 }
