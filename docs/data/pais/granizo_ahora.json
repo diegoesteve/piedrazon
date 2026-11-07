@@ -1,84 +1,107 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-07 10:45",
+ "consultado": "2026-11-07 11:00",
  "radares": {
-  "RMA16": "2026-11-07 10:15",
-  "RMA3": "2026-11-07 10:25",
-  "RMA15": "2026-11-07 10:26"
+  "RMA3": "2026-11-07 10:43",
+  "RMA15": "2026-11-07 10:42",
+  "RMA11": "2026-11-07 10:43",
+  "RMA16": "2026-11-07 10:48"
  },
  "nucleos": [
   {
-   "lat": -30.3271,
-   "lon": -66.5061,
-   "max_dbz": 61,
-   "tope_km": 8.8,
-   "radar": "RMA15",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.4078,
-   "lon": -66.5167,
-   "max_dbz": 60,
-   "tope_km": 8.2,
-   "radar": "RMA15",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -25.1976,
-   "lon": -58.5938,
+   "lat": -27.1411,
+   "lon": -65.8859,
    "max_dbz": 59,
-   "tope_km": 16.4,
-   "radar": "RMA3",
+   "tope_km": 14.1,
+   "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.2129,
-   "lon": -65.0994,
-   "max_dbz": 56,
+   "lat": -30.5959,
+   "lon": -66.6013,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -27.0325,
+   "lon": -65.9168,
+   "max_dbz": 57,
+   "tope_km": 14.1,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.2219,
+   "lon": -65.0773,
+   "max_dbz": 57,
    "tope_km": 7.6,
    "radar": "RMA16",
    "nivel": "posible granizo"
   },
   {
-   "lat": -30.1295,
-   "lon": -67.2359,
+   "lat": -28.3973,
+   "lon": -66.0302,
    "max_dbz": 55,
+   "tope_km": 14.7,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.1385,
+   "lon": -67.257,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -30.4257,
+   "lon": -66.4533,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -24.0707,
+   "lon": -59.6679,
+   "max_dbz": 51,
+   "tope_km": 11.7,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -30.345,
+   "lon": -66.5273,
+   "max_dbz": 50,
    "tope_km": 8.8,
    "radar": "RMA15",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -24.6129,
-   "lon": -60.7221,
-   "max_dbz": 54,
-   "tope_km": 5.9,
-   "radar": "RMA3",
-   "nivel": null,
-   "descartado": "tope bajo (5.9 km)"
-  },
-  {
-   "lat": -25.1347,
-   "lon": -59.0455,
-   "max_dbz": 54,
-   "tope_km": 14.1,
-   "radar": "RMA3",
    "nivel": null
   }
  ],
  "localidades": {
-  "Tres Lagunas": {
+  "Los Angeles (Catamarca)": {
    "nivel": "granizo probable",
-   "km": 8.4,
-   "max_dbz": 59,
-   "tope_km": 16.4,
-   "visto": "2026-11-07 10:25"
+   "km": 9.9,
+   "max_dbz": 55,
+   "tope_km": 14.7,
+   "visto": "2026-11-07 10:42"
+  },
+  "Achiras": {
+   "nivel": "posible granizo",
+   "km": 9.5,
+   "max_dbz": 57,
+   "tope_km": 7.6,
+   "visto": "2026-11-07 10:48"
   },
   "La Punilla": {
    "nivel": "posible granizo",
-   "km": 7.7,
-   "max_dbz": 56,
+   "km": 8.8,
+   "max_dbz": 57,
    "tope_km": 7.6,
-   "visto": "2026-11-07 10:15"
+   "visto": "2026-11-07 10:48"
   }
  }
 }
