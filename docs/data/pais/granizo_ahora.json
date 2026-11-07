@@ -1,53 +1,21 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-07 01:00",
+ "consultado": "2026-11-07 01:15",
  "radares": {
-  "RMA8": "2026-11-07 00:41",
+  "RMA15": "2026-11-07 01:01",
   "RMA4": "2026-11-07 00:37",
+  "RMA10": "2026-11-07 00:38",
   "AR7": "2026-11-07 00:40",
-  "RMA13": "2026-11-07 00:41",
-  "RMA15": "2026-11-07 00:44",
-  "RMA10": "2026-11-07 00:38"
+  "RMA13": "2026-11-07 01:06",
+  "RMA8": "2026-11-07 00:50"
  },
  "nucleos": [
-  {
-   "lat": -27.667,
-   "lon": -56.6665,
-   "max_dbz": 62,
-   "tope_km": 10.0,
-   "radar": "RMA13",
-   "nivel": "granizo probable"
-  },
   {
    "lat": -38.1781,
    "lon": -61.9441,
    "max_dbz": 59,
    "tope_km": 8.2,
    "radar": "RMA10",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -30.1385,
-   "lon": -67.257,
-   "max_dbz": 57,
-   "tope_km": 7.6,
-   "radar": "RMA15",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -27.793,
-   "lon": -56.1611,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "radar": "RMA13",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.4706,
-   "lon": -66.4638,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "radar": "RMA15",
    "nivel": "posible granizo"
   },
   {
@@ -59,26 +27,34 @@
    "nivel": "posible granizo"
   },
   {
-   "lat": -29.8026,
-   "lon": -56.0969,
-   "max_dbz": 53,
-   "tope_km": 11.7,
-   "radar": "RMA8",
-   "nivel": null
-  },
-  {
-   "lat": -27.8738,
-   "lon": -55.9548,
-   "max_dbz": 52,
-   "tope_km": 12.3,
+   "lat": -27.667,
+   "lon": -56.4499,
+   "max_dbz": 55,
+   "tope_km": 8.8,
    "radar": "RMA13",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.1295,
+   "lon": -67.2359,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -30.1069,
-   "lon": -56.1284,
-   "max_dbz": 50,
-   "tope_km": 10.0,
+   "lat": -30.0215,
+   "lon": -67.2676,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -27.6466,
+   "lon": -56.5905,
+   "max_dbz": 49,
+   "tope_km": 8.8,
    "radar": "RMA8",
    "nivel": null
   },
@@ -113,20 +89,6 @@
    "max_dbz": 56,
    "tope_km": 7.6,
    "visto": "2026-11-07 00:38"
-  },
-  "Ituzaingó (Corrientes)": {
-   "nivel": "granizo probable",
-   "km": 9.3,
-   "max_dbz": 62,
-   "tope_km": 10.0,
-   "visto": "2026-11-07 00:41"
-  },
-  "Tama": {
-   "nivel": "posible granizo",
-   "km": 7.4,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-07 00:44"
   }
  }
 }
