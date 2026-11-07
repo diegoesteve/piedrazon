@@ -1,45 +1,88 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-07 02:00",
+ "consultado": "2026-11-07 02:15",
  "radares": {
-  "AR7": "2026-11-07 01:40",
-  "RMA13": "2026-11-07 01:47",
-  "RMA15": "2026-11-07 01:34",
-  "RMA10": "2026-11-07 01:42",
+  "RMA13": "2026-11-07 02:04",
+  "AR7": "2026-11-07 01:50",
+  "RMA10": "2026-11-07 02:00",
   "RMA17": "2026-11-07 01:47",
-  "RMA16": "2026-11-07 01:47"
+  "RMA16": "2026-11-07 01:47",
+  "RMA4": "2026-11-07 01:58",
+  "RMA2": "2026-11-07 01:57",
+  "RMA15": "2026-11-07 01:59",
+  "RMA8": "2026-11-07 02:03"
  },
  "nucleos": [
   {
-   "lat": -27.2071,
-   "lon": -56.8934,
+   "lat": -26.5279,
+   "lon": -57.4422,
    "max_dbz": 57,
-   "tope_km": 8.8,
-   "radar": "RMA13",
-   "nivel": "posible granizo"
+   "tope_km": 14.1,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -38.1781,
-   "lon": -61.9441,
+   "lat": -31.2062,
+   "lon": -60.667,
    "max_dbz": 56,
-   "tope_km": 6.4,
-   "radar": "RMA10",
+   "tope_km": 8.4,
+   "radar": "AR7",
    "nivel": "posible granizo"
   },
   {
-   "lat": -31.5232,
-   "lon": -61.0239,
+   "lat": -30.3988,
+   "lon": -66.4956,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.1295,
+   "lon": -67.2359,
+   "max_dbz": 55,
+   "tope_km": 7.6,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -27.4147,
+   "lon": -56.7799,
+   "max_dbz": 54,
+   "tope_km": 9.4,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -27.4418,
+   "lon": -55.8826,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -25.9986,
+   "lon": -56.1611,
    "max_dbz": 52,
-   "tope_km": 7.8,
+   "tope_km": 17.0,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -30.6147,
+   "lon": -59.8451,
+   "max_dbz": 51,
+   "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -27.712,
-   "lon": -56.0579,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "radar": "RMA13",
+   "lat": -29.6411,
+   "lon": -56.0129,
+   "max_dbz": 51,
+   "tope_km": 7.6,
+   "radar": "RMA8",
    "nivel": null
   },
   {
@@ -60,21 +103,45 @@
    "descartado": "tope bajo (5.9 km)"
   },
   {
-   "lat": -30.1744,
-   "lon": -67.2465,
+   "lat": -27.4508,
+   "lon": -55.8104,
    "max_dbz": 49,
-   "tope_km": 7.6,
-   "radar": "RMA15",
+   "tope_km": 14.1,
+   "radar": "RMA13",
    "nivel": null
   },
   {
-   "lat": -27.3425,
-   "lon": -55.9651,
+   "lat": -31.6588,
+   "lon": -60.6886,
    "max_dbz": 48,
-   "tope_km": 15.8,
-   "radar": "RMA13",
+   "tope_km": 7.2,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -38.1781,
+   "lon": -61.9323,
+   "max_dbz": 48,
+   "tope_km": 6.4,
+   "radar": "RMA10",
+   "nivel": null
+  },
+  {
+   "lat": -35.1376,
+   "lon": -57.7136,
+   "max_dbz": 48,
+   "tope_km": 8.8,
+   "radar": "RMA2",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Llambi Campbell": {
+   "nivel": "posible granizo",
+   "km": 8.1,
+   "max_dbz": 56,
+   "tope_km": 8.4,
+   "visto": "2026-11-07 01:50"
+  }
+ }
 }
