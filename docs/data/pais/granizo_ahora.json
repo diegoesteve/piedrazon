@@ -1,103 +1,86 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-07 00:00",
+ "consultado": "2026-11-07 00:15",
  "radares": {
-  "RMA1": "2026-11-06 23:31",
-  "RMA13": "2026-11-06 23:42",
-  "AR7": "2026-11-06 23:40",
   "RMA8": "2026-11-06 23:47",
-  "RMA4": "2026-11-06 23:43"
+  "AR7": "2026-11-06 23:50",
+  "RMA13": "2026-11-06 23:59",
+  "RMA4": "2026-11-06 23:43",
+  "RMA16": "2026-11-06 23:52"
  },
  "nucleos": [
   {
-   "lat": -27.8738,
-   "lon": -56.3467,
-   "max_dbz": 59,
-   "tope_km": 11.1,
+   "lat": -27.649,
+   "lon": -56.9656,
+   "max_dbz": 68,
+   "tope_km": 7.6,
    "radar": "RMA13",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.9098,
-   "lon": -56.2126,
-   "max_dbz": 58,
-   "tope_km": 11.1,
+   "lat": -27.9188,
+   "lon": -56.0889,
+   "max_dbz": 57,
+   "tope_km": 12.3,
    "radar": "RMA13",
    "nivel": "granizo probable"
   },
   {
    "lat": -27.748,
-   "lon": -56.7387,
-   "max_dbz": 54,
+   "lon": -56.7284,
+   "max_dbz": 56,
    "tope_km": 8.2,
    "radar": "RMA13",
-   "nivel": null
+   "nivel": "posible granizo"
   },
   {
-   "lat": -27.73,
-   "lon": -56.8315,
-   "max_dbz": 54,
-   "tope_km": 7.6,
-   "radar": "RMA13",
-   "nivel": null
-  },
-  {
-   "lat": -30.5358,
-   "lon": -63.342,
-   "max_dbz": 53,
-   "tope_km": 8.8,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -27.694,
-   "lon": -57.0584,
-   "max_dbz": 53,
-   "tope_km": 7.0,
-   "radar": "RMA13",
-   "nivel": null
-  },
-  {
-   "lat": -28.0534,
-   "lon": -56.388,
-   "max_dbz": 53,
-   "tope_km": 6.4,
-   "radar": "RMA13",
-   "nivel": null
-  },
-  {
-   "lat": -31.8842,
-   "lon": -60.6454,
-   "max_dbz": 53,
-   "tope_km": 5.4,
-   "radar": "AR7",
-   "nivel": null,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -31.469,
-   "lon": -61.6619,
-   "max_dbz": 50,
-   "tope_km": 9.6,
+   "lat": -31.6046,
+   "lon": -61.3375,
+   "max_dbz": 52,
+   "tope_km": 9.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -31.5865,
-   "lon": -61.4889,
-   "max_dbz": 48,
-   "tope_km": 10.2,
-   "radar": "AR7",
+   "lat": -27.7036,
+   "lon": -57.0298,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -27.8752,
-   "lon": -56.2649,
-   "max_dbz": 48,
-   "tope_km": 11.1,
-   "radar": "RMA8",
+   "lat": -33.1405,
+   "lon": -66.2478,
+   "max_dbz": 51,
+   "tope_km": 14.1,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -27.8738,
+   "lon": -56.2333,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -29.7252,
+   "lon": -60.9482,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Villa Olivari": {
+   "nivel": "granizo probable",
+   "km": 6.1,
+   "max_dbz": 68,
+   "tope_km": 7.6,
+   "visto": "2026-11-06 23:59"
+  }
+ }
 }
