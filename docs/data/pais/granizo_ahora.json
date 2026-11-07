@@ -1,55 +1,44 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 23:45",
+ "consultado": "2026-11-07 00:00",
  "radares": {
-  "RMA13": "2026-11-06 23:26",
-  "AR7": "2026-11-06 23:30",
-  "RMA2": "2026-11-06 23:10",
-  "RMA16": "2026-11-06 23:11",
-  "RMA17": "2026-11-06 23:20",
-  "RMA8": "2026-11-06 23:20",
-  "RMA1": "2026-11-06 23:31"
+  "RMA1": "2026-11-06 23:31",
+  "RMA13": "2026-11-06 23:42",
+  "AR7": "2026-11-06 23:40",
+  "RMA8": "2026-11-06 23:47",
+  "RMA4": "2026-11-06 23:43"
  },
  "nucleos": [
   {
-   "lat": -27.784,
-   "lon": -56.6665,
-   "max_dbz": 61,
-   "tope_km": 6.4,
+   "lat": -27.8738,
+   "lon": -56.3467,
+   "max_dbz": 59,
+   "tope_km": 11.1,
    "radar": "RMA13",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.703,
-   "lon": -56.945,
-   "max_dbz": 59,
-   "tope_km": 6.4,
-   "radar": "RMA13",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -33.9964,
-   "lon": -65.519,
+   "lat": -27.9098,
+   "lon": -56.2126,
    "max_dbz": 58,
-   "tope_km": 5.3,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (5.3 km)"
+   "tope_km": 11.1,
+   "radar": "RMA13",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -31.8932,
-   "lon": -60.8076,
-   "max_dbz": 56,
-   "tope_km": 9.6,
-   "radar": "AR7",
-   "nivel": "posible granizo"
+   "lat": -27.748,
+   "lon": -56.7387,
+   "max_dbz": 54,
+   "tope_km": 8.2,
+   "radar": "RMA13",
+   "nivel": null
   },
   {
-   "lat": -31.8211,
-   "lon": -61.0023,
-   "max_dbz": 53,
-   "tope_km": 8.4,
-   "radar": "AR7",
+   "lat": -27.73,
+   "lon": -56.8315,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "radar": "RMA13",
    "nivel": null
   },
   {
@@ -61,67 +50,54 @@
    "nivel": null
   },
   {
-   "lat": -32.6648,
-   "lon": -62.6703,
-   "max_dbz": 49,
-   "tope_km": 8.8,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -29.8653,
-   "lon": -55.9079,
-   "max_dbz": 49,
-   "tope_km": 10.6,
-   "radar": "RMA8",
-   "nivel": null
-  },
-  {
-   "lat": -31.5594,
-   "lon": -61.716,
-   "max_dbz": 48,
-   "tope_km": 9.6,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -31.1246,
-   "lon": -61.5105,
-   "max_dbz": 48,
-   "tope_km": 9.6,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -35.46,
-   "lon": -59.3961,
-   "max_dbz": 47,
+   "lat": -27.694,
+   "lon": -57.0584,
+   "max_dbz": 53,
    "tope_km": 7.0,
-   "radar": "RMA2",
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -28.0534,
+   "lon": -56.388,
+   "max_dbz": 53,
+   "tope_km": 6.4,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -31.8842,
+   "lon": -60.6454,
+   "max_dbz": 53,
+   "tope_km": 5.4,
+   "radar": "AR7",
+   "nivel": null,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
+   "lat": -31.469,
+   "lon": -61.6619,
+   "max_dbz": 50,
+   "tope_km": 9.6,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -31.5865,
+   "lon": -61.4889,
+   "max_dbz": 48,
+   "tope_km": 10.2,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -27.8752,
+   "lon": -56.2649,
+   "max_dbz": 48,
+   "tope_km": 11.1,
+   "radar": "RMA8",
    "nivel": null
   }
  ],
- "localidades": {
-  "Villa Olivari": {
-   "nivel": "posible granizo",
-   "km": 8.7,
-   "max_dbz": 59,
-   "tope_km": 6.4,
-   "visto": "2026-11-06 23:26"
-  },
-  "Barrio Caima": {
-   "nivel": "posible granizo",
-   "km": 8.2,
-   "max_dbz": 56,
-   "tope_km": 9.6,
-   "visto": "2026-11-06 23:30"
-  },
-  "Desvío Arijón": {
-   "nivel": "posible granizo",
-   "km": 8.1,
-   "max_dbz": 56,
-   "tope_km": 9.6,
-   "visto": "2026-11-06 23:30"
-  }
- }
+ "localidades": {}
 }
