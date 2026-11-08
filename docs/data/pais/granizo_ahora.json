@@ -1,43 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-08 08:00",
+ "consultado": "2026-11-08 08:15",
  "radares": {
-  "RMA11": "2026-11-08 07:39",
-  "RMA16": "2026-11-08 07:32",
-  "RMA15": "2026-11-08 07:43",
-  "RMA17": "2026-11-08 07:41"
+  "RMA11": "2026-11-08 07:56",
+  "RMA17": "2026-11-08 07:41",
+  "RMA15": "2026-11-08 08:00",
+  "RMA10": "2026-11-08 07:59"
  },
  "nucleos": [
   {
-   "lat": -27.1773,
-   "lon": -65.9581,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -34.6839,
-   "lon": -63.4541,
-   "max_dbz": 53,
-   "tope_km": 14.7,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -30.3899,
-   "lon": -66.4956,
-   "max_dbz": 52,
+   "lat": -30.4706,
+   "lon": -66.4638,
+   "max_dbz": 59,
    "tope_km": 8.8,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.4168,
+   "lon": -66.5061,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -38.0419,
+   "lon": -62.039,
+   "max_dbz": 57,
+   "tope_km": 7.6,
+   "radar": "RMA10",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -30.2912,
+   "lon": -66.5273,
+   "max_dbz": 53,
+   "tope_km": 7.6,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -33.61,
-   "lon": -65.9166,
-   "max_dbz": 50,
-   "tope_km": 14.1,
-   "radar": "RMA16",
+   "lat": -28.4431,
+   "lon": -66.0408,
+   "max_dbz": 51,
+   "tope_km": 13.5,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -27.4753,
+   "lon": -65.9478,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "radar": "RMA11",
    "nivel": null
   },
   {
@@ -49,5 +65,20 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "La Gruta": {
+   "nivel": "posible granizo",
+   "km": 3.9,
+   "max_dbz": 57,
+   "tope_km": 7.6,
+   "visto": "2026-11-08 07:59"
+  },
+  "Tama": {
+   "nivel": "posible granizo",
+   "km": 7.4,
+   "max_dbz": 59,
+   "tope_km": 8.8,
+   "visto": "2026-11-08 08:00"
+  }
+ }
 }
