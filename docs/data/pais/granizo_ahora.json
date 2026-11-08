@@ -1,38 +1,62 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-08 01:45",
+ "consultado": "2026-11-08 02:00",
  "radares": {
-  "AR7": "2026-11-08 01:10",
-  "RMA10": "2026-11-08 01:12",
-  "RMA15": "2026-11-08 01:30"
+  "RMA15": "2026-11-08 01:46",
+  "RMA11": "2026-11-08 01:38",
+  "AR7": "2026-11-08 01:40"
  },
  "nucleos": [
   {
+   "lat": -28.3973,
+   "lon": -66.0302,
+   "max_dbz": 58,
+   "tope_km": 14.1,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
    "lat": -30.3988,
    "lon": -66.485,
-   "max_dbz": 57,
-   "tope_km": 9.4,
+   "max_dbz": 58,
+   "tope_km": 7.6,
    "radar": "RMA15",
    "nivel": "posible granizo"
   },
   {
-   "lat": -38.16,
-   "lon": -61.956,
-   "max_dbz": 55,
-   "tope_km": 6.4,
-   "radar": "RMA10",
-   "nivel": "posible granizo"
+   "lat": -30.1025,
+   "lon": -67.2465,
+   "max_dbz": 52,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": null
   },
   {
-   "lat": -29.8541,
-   "lon": -60.9157,
+   "lat": -26.8512,
+   "lon": -65.401,
+   "max_dbz": 50,
+   "tope_km": 10.6,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -29.716,
+   "lon": -60.959,
+   "max_dbz": 49,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.7805,
+   "lon": -60.9374,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -29.9277,
+   "lat": -29.9368,
    "lon": -60.9049,
    "max_dbz": 47,
    "tope_km": 15.0,
@@ -41,12 +65,12 @@
   }
  ],
  "localidades": {
-  "Villa Ventana": {
-   "nivel": "posible granizo",
-   "km": 9.0,
-   "max_dbz": 55,
-   "tope_km": 6.4,
-   "visto": "2026-11-08 01:12"
+  "Los Angeles (Catamarca)": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 58,
+   "tope_km": 14.1,
+   "visto": "2026-11-08 01:46"
   }
  }
 }
