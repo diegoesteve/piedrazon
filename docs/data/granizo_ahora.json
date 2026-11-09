@@ -1,7 +1,34 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-09 03:30",
- "radares": {},
- "nucleos": [],
- "localidades": {}
+ "consultado": "2026-11-09 03:45",
+ "radares": {
+  "RMA17": "2026-11-09 03:27"
+ },
+ "nucleos": [
+  {
+   "lat": -32.5015,
+   "lon": -64.7369,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.3197,
+   "lon": -64.7369,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "radar": "RMA17",
+   "nivel": null
+  }
+ ],
+ "localidades": {
+  "Río de los Sauces": {
+   "nivel": "granizo probable",
+   "km": 2.3,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "visto": "2026-11-09 03:27"
+  }
+ }
 }
