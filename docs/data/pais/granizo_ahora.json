@@ -1,24 +1,50 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-09 08:00",
+ "consultado": "2026-11-09 08:15",
  "radares": {
   "RMA15": "2026-11-09 07:38",
-  "RMA11": "2026-11-09 07:42"
+  "RMA11": "2026-11-09 07:59",
+  "RMA10": "2026-11-09 07:46",
+  "AR7": "2026-11-09 07:50"
  },
  "nucleos": [
   {
-   "lat": -28.3645,
-   "lon": -66.0303,
-   "max_dbz": 59,
-   "tope_km": 12.3,
+   "lat": -27.1682,
+   "lon": -65.9271,
+   "max_dbz": 62,
+   "tope_km": 14.1,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -28.3109,
-   "lon": -65.9684,
-   "max_dbz": 56,
-   "tope_km": 12.3,
+   "lat": -28.3288,
+   "lon": -65.9993,
+   "max_dbz": 59,
+   "tope_km": 16.4,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.8784,
+   "lon": -65.5764,
+   "max_dbz": 58,
+   "tope_km": 12.9,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.6424,
+   "lon": -65.7414,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -28.1407,
+   "lon": -65.9787,
+   "max_dbz": 57,
+   "tope_km": 17.0,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
@@ -39,13 +65,61 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.8693,
-   "lon": -65.5248,
-   "max_dbz": 52,
-   "tope_km": 16.4,
+   "lat": -26.3604,
+   "lon": -65.0915,
+   "max_dbz": 55,
+   "tope_km": 7.0,
    "radar": "RMA11",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -27.0596,
+   "lon": -65.7311,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -28.0689,
+   "lon": -66.0303,
+   "max_dbz": 50,
+   "tope_km": 13.5,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -38.1781,
+   "lon": -61.9441,
+   "max_dbz": 49,
+   "tope_km": 6.4,
+   "radar": "RMA10",
+   "nivel": null
+  },
+  {
+   "lat": -29.7805,
+   "lon": -60.9157,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.8725,
+   "lon": -60.9049,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Las Juntas (dpto. Ambato, Catamarca)": {
+   "nivel": "granizo probable",
+   "km": 9.1,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "visto": "2026-11-09 07:59"
+  }
+ }
 }
