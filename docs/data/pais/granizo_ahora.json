@@ -1,33 +1,35 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-09 19:45",
+ "consultado": "2026-11-09 20:00",
  "radares": {
-  "RMA16": "2026-11-09 19:23"
+  "RMA16": "2026-11-09 19:40",
+  "RMA11": "2026-11-09 19:34"
  },
  "nucleos": [
   {
-   "lat": -33.2219,
-   "lon": -65.0773,
-   "max_dbz": 58,
-   "tope_km": 7.6,
+   "lat": -33.2129,
+   "lon": -65.0994,
+   "max_dbz": 59,
+   "tope_km": 9.4,
    "radar": "RMA16",
    "nivel": "posible granizo"
+  },
+  {
+   "lat": -28.042,
+   "lon": -66.0612,
+   "max_dbz": 54,
+   "tope_km": 12.9,
+   "radar": "RMA11",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Achiras": {
-   "nivel": "posible granizo",
-   "km": 9.5,
-   "max_dbz": 58,
-   "tope_km": 7.6,
-   "visto": "2026-11-09 19:23"
-  },
   "La Punilla": {
    "nivel": "posible granizo",
-   "km": 8.8,
-   "max_dbz": 58,
-   "tope_km": 7.6,
-   "visto": "2026-11-09 19:23"
+   "km": 7.7,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "visto": "2026-11-09 19:40"
   }
  }
 }
