@@ -1,11 +1,10 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-08 23:15",
+ "consultado": "2026-11-08 23:30",
  "radares": {
-  "AR7": "2026-11-08 22:50",
   "RMA16": "2026-11-08 22:57",
-  "RMA17": "2026-11-08 23:05",
-  "RMA11": "2026-11-08 23:00"
+  "RMA11": "2026-11-08 23:00",
+  "RMA17": "2026-11-08 23:13"
  },
  "nucleos": [
   {
@@ -17,8 +16,16 @@
    "nivel": "posible granizo"
   },
   {
-   "lat": -32.0919,
-   "lon": -64.9567,
+   "lat": -32.0006,
+   "lon": -64.9897,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.1557,
+   "lon": -64.9787,
    "max_dbz": 55,
    "tope_km": 17.0,
    "radar": "RMA17",
@@ -31,14 +38,6 @@
    "tope_km": 10.6,
    "radar": "RMA11",
    "nivel": null
-  },
-  {
-   "lat": -29.7068,
-   "lon": -60.8833,
-   "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
   }
  ],
  "localidades": {
@@ -49,19 +48,75 @@
    "tope_km": 7.6,
    "visto": "2026-11-08 22:57"
   },
-  "La Población": {
+  "Alto Resbaloso - El Barrial": {
    "nivel": "granizo probable",
-   "km": 7.4,
+   "km": 8.5,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-08 23:13"
+  },
+  "El Pueblito (dpto. San Javier, Córdoba)": {
+   "nivel": "granizo probable",
+   "km": 9.3,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-08 23:13"
+  },
+  "El Valle": {
+   "nivel": "granizo probable",
+   "km": 9.4,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-08 23:13"
+  },
+  "La Paz (Córdoba)": {
+   "nivel": "granizo probable",
+   "km": 9.5,
    "max_dbz": 55,
    "tope_km": 17.0,
-   "visto": "2026-11-08 23:05"
+   "visto": "2026-11-08 23:13"
+  },
+  "La Población": {
+   "nivel": "granizo probable",
+   "km": 8.2,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-08 23:13"
   },
   "La Travesía": {
    "nivel": "granizo probable",
-   "km": 8.6,
+   "km": 7.6,
    "max_dbz": 55,
    "tope_km": 17.0,
-   "visto": "2026-11-08 23:05"
+   "visto": "2026-11-08 23:13"
+  },
+  "Las Chacras (Córdoba)": {
+   "nivel": "granizo probable",
+   "km": 7.3,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-08 23:13"
+  },
+  "Luyaba": {
+   "nivel": "granizo probable",
+   "km": 7.5,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-08 23:13"
+  },
+  "San Javier y Yacanto": {
+   "nivel": "granizo probable",
+   "km": 4.8,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-08 23:13"
+  },
+  "Villa de las Rosas": {
+   "nivel": "granizo probable",
+   "km": 8.3,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-08 23:13"
   },
   "La Punilla": {
    "nivel": "posible granizo",
