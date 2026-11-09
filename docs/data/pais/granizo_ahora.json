@@ -1,27 +1,43 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-09 06:00",
+ "consultado": "2026-11-09 06:15",
  "radares": {
-  "RMA10": "2026-11-09 05:22",
-  "RMA15": "2026-11-09 05:42"
+  "RMA15": "2026-11-09 05:59",
+  "RMA10": "2026-11-09 05:58"
  },
  "nucleos": [
   {
    "lat": -38.1781,
    "lon": -61.9441,
-   "max_dbz": 53,
-   "tope_km": 6.4,
+   "max_dbz": 56,
+   "tope_km": 8.2,
    "radar": "RMA10",
-   "nivel": null
+   "nivel": "posible granizo"
   },
   {
    "lat": -30.7211,
    "lon": -66.6225,
-   "max_dbz": 52,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.6675,
+   "lon": -66.5696,
+   "max_dbz": 54,
    "tope_km": 10.0,
    "radar": "RMA15",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Malanzán": {
+   "nivel": "granizo probable",
+   "km": 9.5,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "visto": "2026-11-09 05:59"
+  }
+ }
 }
