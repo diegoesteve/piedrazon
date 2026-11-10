@@ -1,43 +1,50 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 17:15",
+ "consultado": "2026-11-10 17:30",
  "radares": {
-  "RMA1": "2026-11-10 16:50",
-  "RMA17": "2026-11-10 16:58"
+  "RMA17": "2026-11-10 17:06",
+  "RMA1": "2026-11-10 17:08"
  },
  "nucleos": [
   {
-   "lat": -33.5577,
-   "lon": -62.9891,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+   "lat": -32.8459,
+   "lon": -62.9671,
+   "max_dbz": 55,
+   "tope_km": 12.3,
    "radar": "RMA17",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -32.4288,
-   "lon": -63.3409,
-   "max_dbz": 50,
-   "tope_km": 13.5,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.8369,
-   "lon": -62.9561,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.3644,
-   "lon": -63.4173,
-   "max_dbz": 49,
-   "tope_km": 11.1,
+   "lat": -32.1232,
+   "lon": -63.3958,
+   "max_dbz": 53,
+   "tope_km": 9.4,
    "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.5106,
+   "lon": -63.2199,
+   "max_dbz": 47,
+   "tope_km": 12.9,
+   "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Idiazábal": {
+   "nivel": "granizo probable",
+   "km": 7.1,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "visto": "2026-11-10 17:06"
+  },
+  "Ordóñez": {
+   "nivel": "granizo probable",
+   "km": 9.6,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "visto": "2026-11-10 17:06"
+  }
+ }
 }
