@@ -1,165 +1,109 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 15:45",
+ "consultado": "2026-11-10 16:00",
  "radares": {
-  "AR7": "2026-11-10 15:10",
-  "RMA1": "2026-11-10 15:29",
-  "RMA17": "2026-11-10 15:28",
-  "RMA11": "2026-11-10 15:24",
-  "RMA16": "2026-11-10 15:26"
+  "RMA11": "2026-11-10 15:41",
+  "RMA16": "2026-11-10 15:43",
+  "RMA17": "2026-11-10 15:45",
+  "RMA1": "2026-11-10 15:47",
+  "AR7": "2026-11-10 15:30",
+  "RMA18": "2026-11-10 15:45"
  },
  "nucleos": [
   {
-   "lat": -27.1411,
-   "lon": -65.9478,
-   "max_dbz": 61,
-   "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.8276,
-   "lon": -64.5147,
-   "max_dbz": 57,
-   "tope_km": 10.0,
+   "lat": -31.684,
+   "lon": -64.6653,
+   "max_dbz": 59,
+   "tope_km": 7.6,
    "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.101,
+   "lon": -64.2422,
+   "max_dbz": 58,
+   "tope_km": 13.5,
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.4015,
-   "lon": -63.4728,
-   "max_dbz": 54,
-   "tope_km": 11.7,
-   "radar": "RMA17",
-   "nivel": null
+   "lat": -35.6091,
+   "lon": -68.6139,
+   "max_dbz": 56,
+   "tope_km": 13.5,
+   "radar": "RMA18",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -32.2126,
-   "lon": -63.4389,
+   "lat": -32.0517,
+   "lon": -64.1919,
    "max_dbz": 53,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.9979,
-   "lon": -64.3856,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.1101,
-   "lon": -64.9457,
-   "max_dbz": 50,
+   "lat": -32.0736,
+   "lon": -64.9677,
+   "max_dbz": 51,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -34.675,
-   "lon": -63.1007,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.3424,
-   "lon": -62.1486,
-   "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -32.2377,
-   "lon": -63.8245,
-   "max_dbz": 48,
-   "tope_km": 12.9,
+   "lat": -32.1648,
+   "lon": -64.9677,
+   "max_dbz": 51,
+   "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -30.2397,
-   "lon": -58.8285,
-   "max_dbz": 47,
+   "lat": -27.3219,
+   "lon": -66.1438,
+   "max_dbz": 50,
+   "tope_km": 14.7,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -32.1091,
+   "lon": -61.8566,
+   "max_dbz": 49,
    "tope_km": 15.0,
    "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -32.3288,
+   "lon": -63.3409,
+   "max_dbz": 48,
+   "tope_km": 12.9,
+   "radar": "RMA17",
    "nivel": null
   }
  ],
  "localidades": {
-  "Barrio Villa del Parque": {
+  "Corralito": {
    "nivel": "granizo probable",
-   "km": 3.3,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
+   "km": 9.8,
+   "max_dbz": 58,
+   "tope_km": 13.5,
+   "visto": "2026-11-10 15:45"
   },
-  "José de la Quintana": {
+  "Las Bajadas": {
    "nivel": "granizo probable",
-   "km": 9.9,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
+   "km": 8.3,
+   "max_dbz": 58,
+   "tope_km": 13.5,
+   "visto": "2026-11-10 15:45"
   },
-  "La Boca del Río": {
-   "nivel": "granizo probable",
-   "km": 7.4,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
-  },
-  "La Rancherita y Las Cascadas": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
-  },
-  "Potrero de Garay": {
-   "nivel": "granizo probable",
-   "km": 6.0,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
-  },
-  "Solar de los Molinos": {
-   "nivel": "granizo probable",
-   "km": 0.6,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
-  },
-  "Va.Ciudad Pque.Los Reartes (1° Sección)": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
-  },
-  "Va.Ciudad Pque.Los Reartes (3° Sección)": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
-  },
-  "Villa Ciudad Parque Los Reartes": {
-   "nivel": "granizo probable",
-   "km": 9.5,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
-  },
-  "Villa Ciudad de América": {
-   "nivel": "granizo probable",
-   "km": 5.2,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
+  "San Clemente": {
+   "nivel": "posible granizo",
+   "km": 4.9,
+   "max_dbz": 59,
+   "tope_km": 7.6,
+   "visto": "2026-11-10 15:47"
   }
  }
 }

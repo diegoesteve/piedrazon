@@ -1,63 +1,55 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 15:45",
+ "consultado": "2026-11-10 16:00",
  "radares": {
-  "RMA1": "2026-11-10 15:29",
-  "RMA17": "2026-11-10 15:28",
-  "RMA16": "2026-11-10 15:26"
+  "RMA16": "2026-11-10 15:43",
+  "RMA17": "2026-11-10 15:45",
+  "RMA1": "2026-11-10 15:47"
  },
  "nucleos": [
   {
-   "lat": -31.8276,
-   "lon": -64.5147,
-   "max_dbz": 57,
-   "tope_km": 10.0,
+   "lat": -31.684,
+   "lon": -64.6653,
+   "max_dbz": 59,
+   "tope_km": 7.6,
    "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.101,
+   "lon": -64.2422,
+   "max_dbz": 58,
+   "tope_km": 13.5,
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.4015,
-   "lon": -63.4728,
-   "max_dbz": 54,
-   "tope_km": 11.7,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.2126,
-   "lon": -63.4389,
+   "lat": -32.0517,
+   "lon": -64.1919,
    "max_dbz": 53,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.9979,
-   "lon": -64.3856,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.1101,
-   "lon": -64.9457,
-   "max_dbz": 50,
+   "lat": -32.0736,
+   "lon": -64.9677,
+   "max_dbz": 51,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -34.675,
-   "lon": -63.1007,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "radar": "RMA16",
+   "lat": -32.1648,
+   "lon": -64.9677,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.2377,
-   "lon": -63.8245,
+   "lat": -32.3288,
+   "lon": -63.3409,
    "max_dbz": 48,
    "tope_km": 12.9,
    "radar": "RMA17",
@@ -65,40 +57,26 @@
   }
  ],
  "localidades": {
-  "La Rancherita": {
+  "Corralito": {
    "nivel": "granizo probable",
-   "km": 9.5,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
+   "km": 9.9,
+   "max_dbz": 58,
+   "tope_km": 13.5,
+   "visto": "2026-11-10 15:45"
   },
-  "Potrero de Garay": {
+  "Las Bajadas": {
    "nivel": "granizo probable",
-   "km": 7.6,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
+   "km": 9.3,
+   "max_dbz": 58,
+   "tope_km": 13.5,
+   "visto": "2026-11-10 15:45"
   },
-  "Villa Ciudad Parque Los Reartes": {
-   "nivel": "granizo probable",
-   "km": 7.0,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
-  },
-  "Villa Ciudad de América": {
-   "nivel": "granizo probable",
-   "km": 6.7,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
-  },
-  "Villa San Isidro": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-10 15:29"
+  "San Clemente": {
+   "nivel": "posible granizo",
+   "km": 5.2,
+   "max_dbz": 59,
+   "tope_km": 7.6,
+   "visto": "2026-11-10 15:47"
   }
  }
 }
