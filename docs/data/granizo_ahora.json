@@ -1,26 +1,42 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 19:30",
+ "consultado": "2026-11-10 19:45",
  "radares": {
-  "RMA17": "2026-11-10 19:01"
+  "RMA17": "2026-11-10 19:25"
  },
  "nucleos": [
   {
-   "lat": -32.5832,
-   "lon": -62.3076,
-   "max_dbz": 51,
-   "tope_km": 11.1,
+   "lat": -32.6648,
+   "lon": -61.9888,
+   "max_dbz": 55,
+   "tope_km": 12.9,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.9454,
+   "lon": -61.769,
+   "max_dbz": 50,
+   "tope_km": 12.9,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.855,
-   "lon": -61.9998,
-   "max_dbz": 50,
-   "tope_km": 14.1,
+   "lat": -32.8188,
+   "lon": -62.0987,
+   "max_dbz": 48,
+   "tope_km": 11.7,
    "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "General Roca": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 55,
+   "tope_km": 12.9,
+   "visto": "2026-11-10 19:25"
+  }
+ }
 }
