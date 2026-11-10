@@ -1,35 +1,34 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 18:30",
+ "consultado": "2026-11-10 18:45",
  "radares": {
-  "RMA1": "2026-11-10 18:00",
-  "RMA17": "2026-11-10 18:04"
+  "RMA17": "2026-11-10 18:20"
  },
  "nucleos": [
   {
-   "lat": -32.6195,
-   "lon": -62.7033,
-   "max_dbz": 56,
-   "tope_km": 13.5,
+   "lat": -32.9544,
+   "lon": -62.1317,
+   "max_dbz": 51,
+   "tope_km": 10.6,
    "radar": "RMA17",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -32.4561,
-   "lon": -62.9451,
-   "max_dbz": 53,
-   "tope_km": 10.6,
+   "lat": -32.7101,
+   "lon": -62.5054,
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.153,
+   "lon": -62.2416,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {
-  "Bell Ville": {
-   "nivel": "granizo probable",
-   "km": 0.8,
-   "max_dbz": 56,
-   "tope_km": 13.5,
-   "visto": "2026-11-10 18:04"
-  }
- }
+ "localidades": {}
 }
