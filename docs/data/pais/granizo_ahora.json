@@ -1,53 +1,37 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 15:08",
+ "consultado": "2026-11-10 15:15",
  "radares": {
-  "RMA17": "2026-11-10 14:47",
-  "RMA11": "2026-11-10 14:49",
-  "RMA1": "2026-11-10 14:35",
+  "RMA17": "2026-11-10 14:56",
   "RMA18": "2026-11-10 14:56",
   "AR7": "2026-11-10 14:40",
-  "RMA16": "2026-11-10 14:45"
+  "RMA16": "2026-11-10 14:45",
+  "RMA11": "2026-11-10 14:58",
+  "RMA1": "2026-11-10 15:02"
  },
  "nucleos": [
   {
-   "lat": -27.4302,
-   "lon": -66.1232,
-   "max_dbz": 57,
-   "tope_km": 12.9,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -27.3219,
-   "lon": -66.1232,
-   "max_dbz": 57,
-   "tope_km": 15.2,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.8097,
-   "lon": -63.6376,
-   "max_dbz": 53,
-   "tope_km": 12.9,
+   "lat": -33.5488,
+   "lon": -63.8905,
+   "max_dbz": 55,
+   "tope_km": 11.1,
    "radar": "RMA17",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -31.8456,
-   "lon": -64.6653,
-   "max_dbz": 53,
-   "tope_km": 8.2,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.98,
-   "lon": -64.633,
-   "max_dbz": 51,
+   "lat": -31.9173,
+   "lon": -64.6115,
+   "max_dbz": 55,
    "tope_km": 9.4,
    "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -27.4031,
+   "lon": -66.1438,
+   "max_dbz": 52,
+   "tope_km": 16.4,
+   "radar": "RMA11",
    "nivel": null
   },
   {
@@ -67,11 +51,19 @@
    "nivel": null
   },
   {
-   "lat": -32.3742,
-   "lon": -63.7915,
-   "max_dbz": 48,
-   "tope_km": 11.1,
+   "lat": -33.8355,
+   "lon": -63.6047,
+   "max_dbz": 49,
+   "tope_km": 10.0,
    "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.0248,
+   "lon": -63.9875,
+   "max_dbz": 48,
+   "tope_km": 15.8,
+   "radar": "RMA1",
    "nivel": null
   },
   {
@@ -83,5 +75,41 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Los Reartes": {
+   "nivel": "posible granizo",
+   "km": 3.4,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 15:02"
+  },
+  "Va.Ciudad Pque.Los Reartes (1° Sección)": {
+   "nivel": "posible granizo",
+   "km": 8.1,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 15:02"
+  },
+  "Va.Ciudad Pque.Los Reartes (3° Sección)": {
+   "nivel": "posible granizo",
+   "km": 4.9,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 15:02"
+  },
+  "Villa Ciudad Parque Los Reartes": {
+   "nivel": "posible granizo",
+   "km": 7.0,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 15:02"
+  },
+  "Villa General Belgrano": {
+   "nivel": "posible granizo",
+   "km": 8.2,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 15:02"
+  }
+ }
 }
