@@ -1,7 +1,216 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 09:00",
- "radares": {},
- "nucleos": [],
- "localidades": {}
+ "consultado": "2026-11-10 09:15",
+ "radares": {
+  "RMA19": "2026-11-10 08:54",
+  "RMA15": "2026-11-10 09:04"
+ },
+ "nucleos": [
+  {
+   "lat": -30.4078,
+   "lon": -66.4744,
+   "max_dbz": 60,
+   "tope_km": 8.8,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.7899,
+   "lon": -68.6541,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "radar": "RMA19",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.0427,
+   "lon": -68.687,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "radar": "RMA19",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.9435,
+   "lon": -68.6651,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "radar": "RMA19",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.363,
+   "lon": -66.5273,
+   "max_dbz": 54,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -33.1328,
+   "lon": -68.6541,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -33.913,
+   "lon": -68.193,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -30.1475,
+   "lon": -67.257,
+   "max_dbz": 49,
+   "tope_km": 7.6,
+   "radar": "RMA15",
+   "nivel": null
+  }
+ ],
+ "localidades": {
+  "Barrancas (Mendoza)": {
+   "nivel": "posible granizo",
+   "km": 5.8,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 08:54"
+  },
+  "Barrio Jesús de Nazaret": {
+   "nivel": "granizo probable",
+   "km": 8.8,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-10 08:54"
+  },
+  "Barrio La Pega": {
+   "nivel": "granizo probable",
+   "km": 2.5,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-10 08:54"
+  },
+  "Barrio Los Jarilleros": {
+   "nivel": "granizo probable",
+   "km": 8.2,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-10 08:54"
+  },
+  "Colonia Segovia": {
+   "nivel": "granizo probable",
+   "km": 8.5,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-10 08:54"
+  },
+  "Coquimbito": {
+   "nivel": "granizo probable",
+   "km": 9.1,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-10 08:54"
+  },
+  "Cruz de Piedra (Mendoza)": {
+   "nivel": "posible granizo",
+   "km": 8.8,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 08:54"
+  },
+  "El Pedregal": {
+   "nivel": "granizo probable",
+   "km": 7.6,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-10 08:54"
+  },
+  "El Vergel": {
+   "nivel": "granizo probable",
+   "km": 3.9,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-10 08:54"
+  },
+  "Fray Luis Beltrán (Mendoza)": {
+   "nivel": "granizo probable",
+   "km": 6.7,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-10 08:54"
+  },
+  "Jocolí Viejo": {
+   "nivel": "granizo probable",
+   "km": 9.3,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-10 08:54"
+  },
+  "La Primavera": {
+   "nivel": "granizo probable",
+   "km": 2.4,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-10 08:54"
+  },
+  "Las Violetas": {
+   "nivel": "granizo probable",
+   "km": 5.9,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-10 08:54"
+  },
+  "Los Corralitos": {
+   "nivel": "granizo probable",
+   "km": 5.6,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-10 08:54"
+  },
+  "Puente de Hierro": {
+   "nivel": "granizo probable",
+   "km": 8.5,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-10 08:54"
+  },
+  "Rodeo de la Cruz": {
+   "nivel": "granizo probable",
+   "km": 7.3,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-10 08:54"
+  },
+  "Rodeo del Medio": {
+   "nivel": "granizo probable",
+   "km": 6.0,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-10 08:54"
+  },
+  "San Roque (Mendoza)": {
+   "nivel": "posible granizo",
+   "km": 9.5,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 08:54"
+  },
+  "Villa Teresa": {
+   "nivel": "granizo probable",
+   "km": 9.0,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-10 08:54"
+  },
+  "Villa Tulumaya": {
+   "nivel": "granizo probable",
+   "km": 9.4,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-10 08:54"
+  }
+ }
 }
