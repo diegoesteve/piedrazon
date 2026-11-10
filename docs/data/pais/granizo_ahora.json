@@ -1,85 +1,153 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 14:15",
+ "consultado": "2026-11-10 14:30",
  "radares": {
-  "RMA16": "2026-11-10 13:56",
-  "RMA1": "2026-11-10 13:59",
-  "RMA17": "2026-11-10 13:42",
-  "RMA15": "2026-11-10 13:46"
+  "RMA16": "2026-11-10 14:04",
+  "RMA17": "2026-11-10 14:06",
+  "RMA1": "2026-11-10 14:17",
+  "AR7": "2026-11-10 14:00"
  },
  "nucleos": [
   {
    "lat": -33.2129,
    "lon": -65.0994,
-   "max_dbz": 61,
-   "tope_km": 13.5,
+   "max_dbz": 59,
+   "tope_km": 10.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.1314,
-   "lon": -64.8234,
+   "lat": -33.1767,
+   "lon": -64.7571,
+   "max_dbz": 58,
+   "tope_km": 11.1,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.8097,
+   "lon": -64.6653,
    "max_dbz": 56,
-   "tope_km": 12.9,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -31.9263,
+   "lon": -64.7298,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -33.2762,
+   "lon": -64.724,
+   "max_dbz": 55,
+   "tope_km": 12.3,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.2129,
-   "lon": -64.7902,
-   "max_dbz": 53,
-   "tope_km": 11.7,
-   "radar": "RMA16",
+   "lat": -32.0158,
+   "lon": -64.7406,
+   "max_dbz": 54,
+   "tope_km": 8.8,
+   "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -33.0898,
-   "lon": -63.6267,
-   "max_dbz": 53,
+   "lat": -33.0628,
+   "lon": -63.4947,
+   "max_dbz": 52,
    "tope_km": 11.1,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -30.6407,
-   "lon": -66.5907,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "radar": "RMA15",
+   "lat": -33.0861,
+   "lon": -64.8565,
+   "max_dbz": 51,
+   "tope_km": 11.7,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -33.9515,
-   "lon": -64.1498,
+   "lat": -33.772,
+   "lon": -63.8516,
    "max_dbz": 51,
    "tope_km": 12.3,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.2215,
-   "lon": -65.0095,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "radar": "RMA1",
+   "lat": -33.9157,
+   "lon": -64.1498,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.293,
-   "lon": -64.9557,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "radar": "RMA1",
+   "lat": -33.7989,
+   "lon": -63.6749,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.2487,
+   "lon": -65.0111,
+   "max_dbz": 48,
+   "tope_km": 12.3,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -29.7068,
+   "lon": -60.959,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
+  "La Carolina": {
+   "nivel": "granizo probable",
+   "km": 3.2,
+   "max_dbz": 58,
+   "tope_km": 11.1,
+   "visto": "2026-11-10 14:04"
+  },
+  "La Cumbrecita": {
+   "nivel": "posible granizo",
+   "km": 5.0,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 14:17"
+  },
+  "Villa Alpina": {
+   "nivel": "posible granizo",
+   "km": 8.6,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 14:17"
+  },
+  "Villa Berna": {
+   "nivel": "posible granizo",
+   "km": 1.7,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "visto": "2026-11-10 14:17"
+  },
   "La Punilla": {
    "nivel": "granizo probable",
    "km": 7.7,
-   "max_dbz": 61,
-   "tope_km": 13.5,
-   "visto": "2026-11-10 13:56"
+   "max_dbz": 59,
+   "tope_km": 10.0,
+   "visto": "2026-11-10 14:04"
   }
  }
 }
