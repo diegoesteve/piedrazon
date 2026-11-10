@@ -1,91 +1,110 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 10:00",
+ "consultado": "2026-11-10 10:15",
  "radares": {
-  "RMA16": "2026-11-10 09:26",
-  "RMA19": "2026-11-10 09:36",
-  "RMA15": "2026-11-10 09:37"
+  "RMA19": "2026-11-10 10:00",
+  "RMA15": "2026-11-10 09:53",
+  "RMA11": "2026-11-10 09:56",
+  "RMA16": "2026-11-10 09:51",
+  "RMA1": "2026-11-10 10:03"
  },
  "nucleos": [
   {
-   "lat": -32.8983,
-   "lon": -68.3796,
+   "lat": -27.1773,
+   "lon": -65.9684,
    "max_dbz": 59,
-   "tope_km": 9.4,
-   "radar": "RMA19",
-   "nivel": "posible granizo"
+   "tope_km": 14.7,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -33.6537,
-   "lon": -67.2926,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "radar": "RMA19",
+   "lat": -30.6585,
+   "lon": -66.5802,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.5019,
+   "lon": -65.3092,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.5691,
+   "lon": -66.6225,
+   "max_dbz": 54,
+   "tope_km": 8.8,
+   "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -30.4078,
+   "lat": -30.3988,
    "lon": -66.4744,
-   "max_dbz": 53,
+   "max_dbz": 54,
    "tope_km": 8.8,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -30.354,
-   "lon": -66.5379,
+   "lat": -33.3398,
+   "lon": -68.2259,
    "max_dbz": 53,
-   "tope_km": 8.8,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -33.2049,
-   "lon": -68.0612,
-   "max_dbz": 50,
    "tope_km": 7.6,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -33.8528,
-   "lon": -66.1706,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "radar": "RMA16",
+   "lat": -30.354,
+   "lon": -66.5273,
+   "max_dbz": 53,
+   "tope_km": 8.8,
+   "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -33.2679,
-   "lon": -68.4784,
-   "max_dbz": 49,
-   "tope_km": 6.4,
+   "lat": -32.0606,
+   "lon": -63.6325,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -33.3128,
+   "lon": -68.0612,
+   "max_dbz": 52,
+   "tope_km": 7.0,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -33.9398,
-   "lon": -68.5114,
-   "max_dbz": 47,
+   "lat": -32.7446,
+   "lon": -68.1161,
+   "max_dbz": 52,
+   "tope_km": 8.8,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -28.4361,
+   "lon": -65.9993,
+   "max_dbz": 49,
    "tope_km": 9.4,
-   "radar": "RMA19",
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -30.0125,
+   "lon": -67.2359,
+   "max_dbz": 48,
+   "tope_km": 8.2,
+   "radar": "RMA15",
    "nivel": null
   }
  ],
- "localidades": {
-  "Barrio Emanuel": {
-   "nivel": "posible granizo",
-   "km": 6.3,
-   "max_dbz": 59,
-   "tope_km": 9.4,
-   "visto": "2026-11-10 09:36"
-  },
-  "Tres Porteñas": {
-   "nivel": "posible granizo",
-   "km": 0.8,
-   "max_dbz": 59,
-   "tope_km": 9.4,
-   "visto": "2026-11-10 09:36"
-  }
- }
+ "localidades": {}
 }
