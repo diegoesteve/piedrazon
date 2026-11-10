@@ -1,81 +1,52 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 16:30",
+ "consultado": "2026-11-10 16:45",
  "radares": {
-  "RMA17": "2026-11-10 16:17",
-  "RMA1": "2026-11-10 16:14",
-  "RMA16": "2026-11-10 16:15"
+  "RMA16": "2026-11-10 16:23",
+  "RMA17": "2026-11-10 16:25",
+  "RMA1": "2026-11-10 16:32"
  },
  "nucleos": [
   {
-   "lat": -31.7199,
-   "lon": -64.633,
-   "max_dbz": 58,
-   "tope_km": 7.6,
-   "radar": "RMA1",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -32.1831,
-   "lon": -63.9125,
-   "max_dbz": 57,
-   "tope_km": 14.1,
+   "lat": -32.2559,
+   "lon": -63.7805,
+   "max_dbz": 55,
+   "tope_km": 13.5,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.556,
-   "lon": -64.9127,
-   "max_dbz": 54,
-   "tope_km": 15.8,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.4651,
-   "lon": -63.7805,
-   "max_dbz": 54,
-   "tope_km": 12.3,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -33.4929,
-   "lon": -63.5424,
-   "max_dbz": 51,
+   "lat": -32.2305,
+   "lon": -63.611,
+   "max_dbz": 52,
    "tope_km": 11.7,
-   "radar": "RMA16",
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.293,
+   "lon": -63.6863,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.6467,
+   "lon": -64.9237,
+   "max_dbz": 49,
+   "tope_km": 15.2,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.1739,
+   "lon": -63.7476,
+   "max_dbz": 47,
+   "tope_km": 13.5,
+   "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {
-  "Potrero de Garay": {
-   "nivel": "posible granizo",
-   "km": 10.0,
-   "max_dbz": 58,
-   "tope_km": 7.6,
-   "visto": "2026-11-10 16:14"
-  },
-  "San Clemente": {
-   "nivel": "posible granizo",
-   "km": 0.3,
-   "max_dbz": 58,
-   "tope_km": 7.6,
-   "visto": "2026-11-10 16:14"
-  },
-  "Tancacha": {
-   "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 57,
-   "tope_km": 14.1,
-   "visto": "2026-11-10 16:17"
-  },
-  "Villa Ascasubi": {
-   "nivel": "granizo probable",
-   "km": 2.6,
-   "max_dbz": 57,
-   "tope_km": 14.1,
-   "visto": "2026-11-10 16:17"
-  }
- }
+ "localidades": {}
 }
