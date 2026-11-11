@@ -1,35 +1,51 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 22:45",
+ "consultado": "2026-11-10 23:00",
  "radares": {
-  "RMA16": "2026-11-10 22:15",
-  "RMA17": "2026-11-10 22:10"
+  "RMA16": "2026-11-10 22:40",
+  "RMA17": "2026-11-10 22:43"
  },
  "nucleos": [
   {
-   "lat": -33.2038,
-   "lon": -65.1215,
-   "max_dbz": 64,
-   "tope_km": 8.2,
-   "radar": "RMA16",
+   "lat": -32.9996,
+   "lon": -62.8462,
+   "max_dbz": 60,
+   "tope_km": 12.9,
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.171,
-   "lon": -62.8792,
-   "max_dbz": 61,
-   "tope_km": 11.7,
+   "lat": -33.1349,
+   "lon": -63.0331,
+   "max_dbz": 57,
+   "tope_km": 11.1,
    "radar": "RMA17",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.2309,
+   "lon": -65.0884,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -33.2971,
+   "lon": -62.6154,
+   "max_dbz": 54,
+   "tope_km": 16.4,
+   "radar": "RMA17",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Laborde": {
+  "Pascanas": {
    "nivel": "granizo probable",
-   "km": 2.9,
-   "max_dbz": 61,
-   "tope_km": 11.7,
-   "visto": "2026-11-10 22:10"
+   "km": 1.2,
+   "max_dbz": 57,
+   "tope_km": 11.1,
+   "visto": "2026-11-10 22:43"
   }
  }
 }
