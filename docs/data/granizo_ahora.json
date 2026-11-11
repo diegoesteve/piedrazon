@@ -1,27 +1,58 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 23:15",
+ "consultado": "2026-11-10 23:30",
  "radares": {
-  "RMA16": "2026-11-10 22:56",
-  "RMA17": "2026-11-10 22:51"
+  "RMA17": "2026-11-10 23:07",
+  "RMA16": "2026-11-10 23:04"
  },
  "nucleos": [
   {
    "lat": -33.2129,
    "lon": -65.0773,
-   "max_dbz": 61,
+   "max_dbz": 64,
    "tope_km": 9.4,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.101,
-   "lon": -64.9567,
-   "max_dbz": 54,
-   "tope_km": 17.0,
+   "lat": -33.2431,
+   "lon": -62.6154,
+   "max_dbz": 62,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.692,
+   "lon": -64.8798,
+   "max_dbz": 55,
+   "tope_km": 14.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.8188,
+   "lon": -63.0221,
+   "max_dbz": 50,
+   "tope_km": 13.5,
    "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Colonia Barge": {
+   "nivel": "granizo probable",
+   "km": 1.6,
+   "max_dbz": 62,
+   "tope_km": 14.1,
+   "visto": "2026-11-10 23:07"
+  },
+  "Monte Maíz": {
+   "nivel": "granizo probable",
+   "km": 4.3,
+   "max_dbz": 62,
+   "tope_km": 14.1,
+   "visto": "2026-11-10 23:07"
+  }
+ }
 }
