@@ -1,26 +1,35 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-11 01:00",
+ "consultado": "2026-11-11 01:15",
  "radares": {
-  "RMA16": "2026-11-11 00:42"
+  "RMA16": "2026-11-11 00:51",
+  "RMA17": "2026-11-11 00:46"
  },
  "nucleos": [
   {
-   "lat": -34.0501,
-   "lon": -63.8627,
+   "lat": -34.0143,
+   "lon": -63.8406,
    "max_dbz": 58,
-   "tope_km": 12.3,
+   "tope_km": 15.8,
    "radar": "RMA16",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0736,
+   "lon": -64.9787,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "radar": "RMA17",
+   "nivel": null
   }
  ],
  "localidades": {
   "General Levalle": {
    "nivel": "granizo probable",
-   "km": 7.2,
+   "km": 8.0,
    "max_dbz": 58,
-   "tope_km": 12.3,
-   "visto": "2026-11-11 00:42"
+   "tope_km": 15.8,
+   "visto": "2026-11-11 00:51"
   }
  }
 }
