@@ -1,14 +1,22 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-11 16:45",
+ "consultado": "2026-11-11 17:00",
  "radares": {
-  "AR7": "2026-11-11 16:20",
-  "RMA11": "2026-11-11 16:19",
-  "RMA5": "2026-11-11 16:29",
   "RMA4": "2026-11-11 16:32",
-  "RMA3": "2026-11-11 16:32"
+  "RMA3": "2026-11-11 16:41",
+  "RMA11": "2026-11-11 16:36",
+  "RMA5": "2026-11-11 16:47",
+  "AR7": "2026-11-11 16:30"
  },
  "nucleos": [
+  {
+   "lat": -23.9348,
+   "lon": -59.4571,
+   "max_dbz": 62,
+   "tope_km": 17.0,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
   {
    "lat": -26.3823,
    "lon": -60.5047,
@@ -19,17 +27,17 @@
   },
   {
    "lat": -23.8442,
-   "lon": -59.4471,
-   "max_dbz": 59,
+   "lon": -59.437,
+   "max_dbz": 60,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.0325,
-   "lon": -65.9065,
-   "max_dbz": 56,
-   "tope_km": 17.0,
+   "lat": -27.2315,
+   "lon": -66.0612,
+   "max_dbz": 60,
+   "tope_km": 12.3,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
@@ -42,33 +50,49 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -29.7989,
-   "lon": -60.9374,
-   "max_dbz": 47,
+   "lat": -25.2783,
+   "lon": -58.8849,
+   "max_dbz": 54,
+   "tope_km": 12.9,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -27.3489,
+   "lon": -66.0612,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -25.2693,
+   "lon": -58.8146,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -30.2489,
+   "lon": -58.8069,
+   "max_dbz": 48,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -30.3405,
-   "lon": -58.8934,
+   "lat": -26.323,
+   "lon": -60.3707,
    "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "tope_km": 12.9,
+   "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -30.2764,
-   "lon": -58.8394,
+   "lat": -30.4228,
+   "lon": -59.0016,
    "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.6976,
-   "lon": -60.9482,
-   "max_dbz": 46,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
