@@ -1,23 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 09:00",
+ "consultado": "2026-11-12 09:15",
  "radares": {
-  "RMA17": "2026-11-12 08:37",
-  "RMA16": "2026-11-12 08:30",
-  "RMA12": "2026-11-12 08:50",
-  "RMA8": "2026-11-12 08:41",
-  "RMA11": "2026-11-12 08:34",
-  "RMA4": "2026-11-12 08:37",
+  "RMA4": "2026-11-12 08:55",
+  "RMA17": "2026-11-12 09:01",
   "RMA10": "2026-11-12 08:37",
-  "RMA15": "2026-11-12 08:40"
+  "RMA15": "2026-11-12 08:48",
+  "RMA12": "2026-11-12 08:50",
+  "RMA8": "2026-11-12 09:00",
+  "RMA11": "2026-11-12 08:42",
+  "RMA16": "2026-11-12 08:46",
+  "RMA5": "2026-11-12 08:51"
  },
  "nucleos": [
   {
-   "lat": -33.2038,
-   "lon": -65.0994,
-   "max_dbz": 62,
+   "lat": -33.1948,
+   "lon": -66.2368,
+   "max_dbz": 63,
    "tope_km": 17.0,
    "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0371,
+   "lon": -65.0007,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
@@ -29,59 +38,67 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.0554,
-   "lon": -64.9897,
-   "max_dbz": 60,
+   "lat": -28.3109,
+   "lon": -66.0097,
+   "max_dbz": 57,
+   "tope_km": 16.4,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.0861,
+   "lon": -66.2147,
+   "max_dbz": 57,
+   "tope_km": 14.1,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.1284,
+   "lon": -65.0007,
+   "max_dbz": 56,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.2038,
-   "lon": -66.2258,
-   "max_dbz": 59,
-   "tope_km": 17.0,
-   "radar": "RMA16",
+   "lat": -28.1702,
+   "lon": -53.727,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "radar": "RMA5",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.9773,
-   "lon": -66.2037,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.4387,
-   "lon": -65.3644,
-   "max_dbz": 55,
-   "tope_km": 7.0,
-   "radar": "RMA16",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -27.8923,
-   "lon": -59.3189,
+   "lat": -30.3899,
+   "lon": -66.4956,
    "max_dbz": 53,
-   "tope_km": 17.0,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -30.4347,
-   "lon": -66.4533,
-   "max_dbz": 53,
-   "tope_km": 8.2,
+   "tope_km": 7.6,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -32.1375,
-   "lon": -64.9897,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "radar": "RMA17",
+   "lat": -32.9955,
+   "lon": -66.2037,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -27.7306,
+   "lon": -59.5458,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "radar": "RMA4",
+   "nivel": null
+  },
+  {
+   "lat": -30.7211,
+   "lon": -66.6119,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "radar": "RMA15",
    "nivel": null
   },
   {
@@ -93,25 +110,18 @@
    "nivel": null
   },
   {
-   "lat": -28.3735,
-   "lon": -66.0097,
+   "lat": -33.2129,
+   "lon": -65.0773,
    "max_dbz": 50,
-   "tope_km": 9.4,
-   "radar": "RMA11",
-   "nivel": null
+   "tope_km": 5.9,
+   "radar": "RMA16",
+   "nivel": null,
+   "descartado": "tope bajo (5.9 km)"
   },
   {
-   "lat": -25.3768,
-   "lon": -59.6695,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -27.8203,
-   "lon": -59.6463,
-   "max_dbz": 48,
+   "lat": -27.7381,
+   "lon": -59.6253,
+   "max_dbz": 47,
    "tope_km": 12.9,
    "radar": "RMA8",
    "nivel": null
@@ -127,94 +137,87 @@
   },
   "La Población": {
    "nivel": "granizo probable",
-   "km": 4.0,
-   "max_dbz": 60,
+   "km": 4.2,
+   "max_dbz": 61,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:37"
+   "visto": "2026-11-12 09:01"
   },
   "La Travesía": {
    "nivel": "granizo probable",
-   "km": 8.3,
-   "max_dbz": 60,
+   "km": 4.3,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:37"
+   "visto": "2026-11-12 09:01"
+  },
+  "Luyaba": {
+   "nivel": "granizo probable",
+   "km": 5.9,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 09:01"
   },
   "San Javier y Yacanto": {
    "nivel": "granizo probable",
-   "km": 5.0,
-   "max_dbz": 60,
+   "km": 3.0,
+   "max_dbz": 61,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:37"
+   "visto": "2026-11-12 09:01"
   },
   "Cerro Colorado (San Luis)": {
    "nivel": "granizo probable",
-   "km": 5.3,
-   "max_dbz": 59,
+   "km": 6.4,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:30"
+   "visto": "2026-11-12 08:46"
   },
   "Cruz de Piedra (San Luis)": {
    "nivel": "granizo probable",
-   "km": 7.0,
-   "max_dbz": 59,
+   "km": 8.2,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:30"
+   "visto": "2026-11-12 08:46"
   },
   "El Volcán": {
    "nivel": "granizo probable",
-   "km": 7.2,
-   "max_dbz": 59,
+   "km": 8.7,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:30"
+   "visto": "2026-11-12 08:46"
   },
   "Estancia Grande (San Luis)": {
    "nivel": "granizo probable",
-   "km": 7.0,
-   "max_dbz": 59,
+   "km": 7.9,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:30"
-  },
-  "La Punilla": {
-   "nivel": "granizo probable",
-   "km": 6.7,
-   "max_dbz": 62,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 08:30"
+   "visto": "2026-11-12 08:46"
   },
   "La Punta": {
    "nivel": "granizo probable",
-   "km": 8.4,
-   "max_dbz": 59,
+   "km": 7.2,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:30"
+   "visto": "2026-11-12 08:46"
   },
   "Las Chacras (dpto. Juan Martín de Pueyrredón, San Luis)": {
    "nivel": "granizo probable",
-   "km": 7.1,
-   "max_dbz": 59,
+   "km": 8.1,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:30"
+   "visto": "2026-11-12 08:46"
   },
   "Potrero de los Funes": {
    "nivel": "granizo probable",
-   "km": 1.6,
-   "max_dbz": 59,
+   "km": 2.6,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:30"
+   "visto": "2026-11-12 08:46"
   },
   "San Roque (San Luis)": {
    "nivel": "granizo probable",
-   "km": 7.3,
-   "max_dbz": 59,
+   "km": 8.4,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:30"
-  },
-  "Villa de la Quebrada": {
-   "nivel": "granizo probable",
-   "km": 9.0,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "visto": "2026-11-12 08:30"
+   "visto": "2026-11-12 08:46"
   }
  }
 }
