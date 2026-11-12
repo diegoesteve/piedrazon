@@ -1,80 +1,85 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 04:00",
+ "consultado": "2026-11-12 04:15",
  "radares": {
-  "RMA4": "2026-11-12 03:29",
-  "RMA11": "2026-11-12 03:34",
-  "RMA16": "2026-11-12 03:43"
+  "AR7": "2026-11-12 03:40",
+  "RMA11": "2026-11-12 03:52",
+  "RMA16": "2026-11-12 03:52",
+  "RMA5": "2026-11-12 03:54",
+  "RMA4": "2026-11-12 03:57"
  },
  "nucleos": [
   {
-   "lat": -25.6152,
-   "lon": -59.288,
-   "max_dbz": 62,
-   "tope_km": 15.8,
+   "lat": -33.2129,
+   "lon": -65.0994,
+   "max_dbz": 74,
+   "tope_km": 17.0,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -25.6244,
+   "lon": -59.0302,
+   "max_dbz": 64,
+   "tope_km": 14.7,
    "radar": "RMA4",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.123,
-   "lon": -65.7311,
-   "max_dbz": 59,
-   "tope_km": 12.3,
+   "lat": -27.358,
+   "lon": -65.9684,
+   "max_dbz": 60,
+   "tope_km": 11.7,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -28.3824,
-   "lon": -65.989,
-   "max_dbz": 56,
+   "lat": -25.5877,
+   "lon": -58.7724,
+   "max_dbz": 59,
+   "tope_km": 15.2,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -27.2496,
+   "lon": -66.0716,
+   "max_dbz": 57,
    "tope_km": 14.7,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.2038,
-   "lon": -65.0773,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
+   "lat": -29.6976,
+   "lon": -60.9482,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -30.0471,
+   "lon": -60.8941,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Los Angeles (Catamarca)": {
+  "Alto de las Juntas": {
    "nivel": "granizo probable",
-   "km": 8.6,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "visto": "2026-11-12 03:34"
-  },
-  "Los Ángeles Norte": {
-   "nivel": "granizo probable",
-   "km": 9.4,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "visto": "2026-11-12 03:34"
-  },
-  "Achiras": {
-   "nivel": "granizo probable",
-   "km": 8.6,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 03:43"
-  },
-  "Palo Santo": {
-   "nivel": "granizo probable",
-   "km": 7.5,
-   "max_dbz": 62,
-   "tope_km": 15.8,
-   "visto": "2026-11-12 03:29"
+   "km": 8.2,
+   "max_dbz": 60,
+   "tope_km": 11.7,
+   "visto": "2026-11-12 03:52"
   },
   "La Punilla": {
    "nivel": "granizo probable",
-   "km": 6.8,
-   "max_dbz": 56,
+   "km": 7.7,
+   "max_dbz": 74,
    "tope_km": 17.0,
-   "visto": "2026-11-12 03:43"
+   "visto": "2026-11-12 03:52"
   }
  }
 }
