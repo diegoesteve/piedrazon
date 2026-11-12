@@ -1,77 +1,88 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 08:30",
+ "consultado": "2026-11-12 08:45",
  "radares": {
-  "RMA4": "2026-11-12 08:10",
-  "RMA8": "2026-11-12 08:14",
-  "RMA17": "2026-11-12 08:04",
-  "RMA5": "2026-11-12 07:57",
-  "RMA10": "2026-11-12 08:01",
-  "RMA13": "2026-11-12 08:06"
+  "RMA13": "2026-11-12 08:06",
+  "RMA4": "2026-11-12 08:28",
+  "AR7": "2026-11-12 08:10",
+  "RMA17": "2026-11-12 08:21",
+  "RMA8": "2026-11-12 08:32",
+  "RMA11": "2026-11-12 08:25",
+  "RMA10": "2026-11-12 08:28",
+  "RMA16": "2026-11-12 08:22",
+  "RMA12": "2026-11-12 08:32"
  },
  "nucleos": [
   {
-   "lat": -25.441,
-   "lon": -59.7005,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "radar": "RMA4",
-   "nivel": "posible granizo"
+   "lat": -32.1284,
+   "lon": -64.9677,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -38.1691,
-   "lon": -61.9678,
-   "max_dbz": 57,
-   "tope_km": 7.6,
+   "lat": -38.1055,
+   "lon": -60.0596,
+   "max_dbz": 61,
+   "tope_km": 17.0,
    "radar": "RMA10",
-   "nivel": "posible granizo"
+   "nivel": "granizo probable"
   },
   {
-   "lat": -27.6316,
-   "lon": -59.2055,
-   "max_dbz": 55,
+   "lat": -38.513,
+   "lon": -60.4625,
+   "max_dbz": 58,
+   "tope_km": 15.8,
+   "radar": "RMA10",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -27.8744,
+   "lon": -59.8139,
+   "max_dbz": 56,
+   "tope_km": 14.1,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -25.4043,
+   "lon": -59.6695,
+   "max_dbz": 56,
    "tope_km": 11.7,
    "radar": "RMA4",
    "nivel": "granizo probable"
   },
   {
-   "lat": -28.2234,
-   "lon": -54.1146,
+   "lat": -28.3198,
+   "lon": -66.0097,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -27.9117,
+   "lon": -59.9088,
    "max_dbz": 54,
-   "tope_km": 10.0,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -32.0006,
-   "lon": -65.0007,
-   "max_dbz": 52,
    "tope_km": 11.1,
-   "radar": "RMA17",
+   "radar": "RMA8",
    "nivel": null
   },
   {
-   "lat": -25.4043,
-   "lon": -59.6076,
-   "max_dbz": 50,
-   "tope_km": 14.1,
+   "lat": -27.4514,
+   "lon": -59.123,
+   "max_dbz": 52,
+   "tope_km": 7.0,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -27.8237,
-   "lon": -54.951,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -38.4046,
-   "lon": -60.2136,
-   "max_dbz": 50,
-   "tope_km": 12.3,
-   "radar": "RMA10",
+   "lat": -39.5282,
+   "lon": -67.3509,
+   "max_dbz": 52,
+   "tope_km": 14.1,
+   "radar": "RMA12",
    "nivel": null
   },
   {
@@ -83,29 +94,102 @@
    "nivel": null
   },
   {
-   "lat": -25.3492,
-   "lon": -59.4942,
-   "max_dbz": 49,
-   "tope_km": 14.7,
+   "lat": -27.7845,
+   "lon": -59.6386,
+   "max_dbz": 50,
+   "tope_km": 13.5,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -27.8834,
-   "lon": -59.6901,
+   "lat": -33.0317,
+   "lon": -66.1595,
+   "max_dbz": 50,
+   "tope_km": 16.4,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -27.9283,
+   "lon": -59.3292,
    "max_dbz": 49,
-   "tope_km": 12.9,
+   "tope_km": 8.8,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -27.5093,
-   "lon": -59.2472,
+   "lat": -33.1495,
+   "lon": -66.2147,
    "max_dbz": 49,
-   "tope_km": 12.9,
-   "radar": "RMA8",
+   "tope_km": 16.4,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -29.7528,
+   "lon": -60.9482,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Adolfo Gonzales Chaves": {
+   "nivel": "granizo probable",
+   "km": 8.9,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 08:28"
+  },
+  "Micaela Cascallares": {
+   "nivel": "granizo probable",
+   "km": 2.2,
+   "max_dbz": 58,
+   "tope_km": 15.8,
+   "visto": "2026-11-12 08:28"
+  },
+  "La Población": {
+   "nivel": "granizo probable",
+   "km": 9.1,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 08:21"
+  },
+  "La Travesía": {
+   "nivel": "granizo probable",
+   "km": 7.3,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 08:21"
+  },
+  "Luyaba": {
+   "nivel": "granizo probable",
+   "km": 8.9,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 08:21"
+  },
+  "Bartolomé de las Casas": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-12 08:28"
+  },
+  "Comandante Fontana": {
+   "nivel": "granizo probable",
+   "km": 8.3,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-12 08:28"
+  },
+  "Comunidad Aborigen Bartolomé de las Casas": {
+   "nivel": "granizo probable",
+   "km": 8.5,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-12 08:28"
+  }
+ }
 }
