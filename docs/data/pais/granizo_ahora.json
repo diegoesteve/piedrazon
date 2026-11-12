@@ -1,25 +1,42 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 02:30",
+ "consultado": "2026-11-12 02:45",
  "radares": {
-  "RMA8": "2026-11-12 01:54",
-  "RMA16": "2026-11-12 02:05"
+  "AR7": "2026-11-12 02:20",
+  "RMA16": "2026-11-12 02:21",
+  "RMA11": "2026-11-12 02:16"
  },
  "nucleos": [
   {
    "lat": -33.2129,
    "lon": -65.0994,
-   "max_dbz": 70,
-   "tope_km": 17.0,
+   "max_dbz": 69,
+   "tope_km": 12.3,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -28.012,
-   "lon": -56.958,
+   "lat": -26.6333,
+   "lon": -65.6795,
    "max_dbz": 54,
-   "tope_km": 7.6,
-   "radar": "RMA8",
+   "tope_km": 12.3,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -29.7068,
+   "lon": -60.9266,
+   "max_dbz": 49,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.8449,
+   "lon": -60.9157,
+   "max_dbz": 46,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
@@ -27,9 +44,9 @@
   "La Punilla": {
    "nivel": "granizo probable",
    "km": 7.7,
-   "max_dbz": 70,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 02:05"
+   "max_dbz": 69,
+   "tope_km": 12.3,
+   "visto": "2026-11-12 02:21"
   }
  }
 }
