@@ -1,42 +1,90 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 06:00",
+ "consultado": "2026-11-12 06:15",
  "radares": {
-  "RMA12": "2026-11-12 05:22",
-  "RMA8": "2026-11-12 05:40",
-  "RMA4": "2026-11-12 05:36",
-  "RMA16": "2026-11-12 05:38"
+  "RMA4": "2026-11-12 05:54",
+  "RMA16": "2026-11-12 05:38",
+  "RMA8": "2026-11-12 05:58",
+  "RMA17": "2026-11-12 05:54"
  },
  "nucleos": [
   {
-   "lat": -27.3992,
-   "lon": -58.8482,
-   "max_dbz": 56,
+   "lat": -25.6519,
+   "lon": -59.9995,
+   "max_dbz": 60,
+   "tope_km": 13.5,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -27.9756,
+   "lon": -59.6778,
+   "max_dbz": 60,
    "tope_km": 12.3,
    "radar": "RMA8",
    "nivel": "granizo probable"
   },
   {
-   "lat": -40.0575,
-   "lon": -62.5566,
-   "max_dbz": 54,
-   "tope_km": 17.0,
-   "radar": "RMA12",
+   "lat": -25.5969,
+   "lon": -59.7005,
+   "max_dbz": 57,
+   "tope_km": 12.9,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -28.2944,
+   "lon": -60.1923,
+   "max_dbz": 57,
+   "tope_km": 13.5,
+   "radar": "RMA8",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.6195,
+   "lon": -64.9237,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -28.2599,
+   "lon": -60.1129,
+   "max_dbz": 55,
+   "tope_km": 14.1,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -28.2152,
+   "lon": -60.1748,
+   "max_dbz": 53,
+   "tope_km": 14.1,
+   "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -28.2868,
-   "lon": -60.4326,
-   "max_dbz": 54,
-   "tope_km": 14.1,
+   "lat": -25.6152,
+   "lon": -59.6283,
+   "max_dbz": 52,
+   "tope_km": 14.7,
    "radar": "RMA4",
    "nivel": null
   },
   {
    "lat": -25.3217,
    "lon": -59.3705,
-   "max_dbz": 52,
-   "tope_km": 14.7,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA4",
+   "nivel": null
+  },
+  {
+   "lat": -28.251,
+   "lon": -60.3398,
+   "max_dbz": 50,
+   "tope_km": 13.5,
    "radar": "RMA4",
    "nivel": null
   },
@@ -49,52 +97,28 @@
    "nivel": null
   },
   {
-   "lat": -25.3859,
-   "lon": -59.4942,
-   "max_dbz": 49,
-   "tope_km": 14.7,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -25.6885,
-   "lon": -59.9892,
-   "max_dbz": 49,
-   "tope_km": 12.9,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -28.242,
-   "lon": -60.1232,
+   "lat": -27.3522,
+   "lon": -58.7209,
    "max_dbz": 49,
    "tope_km": 12.3,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -25.5877,
-   "lon": -59.6901,
-   "max_dbz": 48,
-   "tope_km": 12.9,
    "radar": "RMA4",
    "nivel": null
   }
  ],
  "localidades": {
-  "Barrio de los Pescadores": {
+  "Papagayos": {
    "nivel": "granizo probable",
-   "km": 7.1,
+   "km": 8.7,
    "max_dbz": 56,
-   "tope_km": 12.3,
-   "visto": "2026-11-12 05:40"
+   "tope_km": 15.2,
+   "visto": "2026-11-12 05:54"
   },
-  "Corrientes": {
+  "Villa Larca": {
    "nivel": "granizo probable",
-   "km": 7.2,
+   "km": 5.4,
    "max_dbz": 56,
-   "tope_km": 12.3,
-   "visto": "2026-11-12 05:40"
+   "tope_km": 15.2,
+   "visto": "2026-11-12 05:54"
   }
  }
 }
