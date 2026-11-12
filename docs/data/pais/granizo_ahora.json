@@ -1,124 +1,147 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 06:15",
+ "consultado": "2026-11-12 06:31",
  "radares": {
-  "RMA4": "2026-11-12 05:54",
-  "RMA16": "2026-11-12 05:38",
-  "RMA8": "2026-11-12 05:58",
-  "RMA17": "2026-11-12 05:54"
+  "RMA17": "2026-11-12 06:10",
+  "RMA4": "2026-11-12 06:12",
+  "RMA8": "2026-11-12 06:16",
+  "AR7": "2026-11-12 06:00",
+  "RMA13": "2026-11-12 06:09"
  },
  "nucleos": [
   {
-   "lat": -25.6519,
-   "lon": -59.9995,
-   "max_dbz": 60,
+   "lat": -32.1284,
+   "lon": -65.0007,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -25.34,
+   "lon": -59.4942,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -25.6244,
+   "lon": -60.0201,
+   "max_dbz": 59,
    "tope_km": 13.5,
    "radar": "RMA4",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.9756,
-   "lon": -59.6778,
-   "max_dbz": 60,
-   "tope_km": 12.3,
-   "radar": "RMA8",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -25.5969,
-   "lon": -59.7005,
-   "max_dbz": 57,
-   "tope_km": 12.9,
+   "lat": -27.9013,
+   "lon": -59.5664,
+   "max_dbz": 58,
+   "tope_km": 14.1,
    "radar": "RMA4",
    "nivel": "granizo probable"
   },
   {
    "lat": -28.2944,
-   "lon": -60.1923,
-   "max_dbz": 57,
+   "lon": -60.1293,
+   "max_dbz": 56,
    "tope_km": 13.5,
    "radar": "RMA8",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.6195,
-   "lon": -64.9237,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -28.2599,
-   "lon": -60.1129,
-   "max_dbz": 55,
-   "tope_km": 14.1,
-   "radar": "RMA4",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -28.2152,
-   "lon": -60.1748,
-   "max_dbz": 53,
-   "tope_km": 14.1,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
    "lat": -25.6152,
-   "lon": -59.6283,
-   "max_dbz": 52,
-   "tope_km": 14.7,
+   "lon": -59.8654,
+   "max_dbz": 55,
+   "tope_km": 13.5,
    "radar": "RMA4",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -25.3217,
-   "lon": -59.3705,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -28.251,
-   "lon": -60.3398,
-   "max_dbz": 50,
+   "lat": -28.242,
+   "lon": -60.082,
+   "max_dbz": 54,
    "tope_km": 13.5,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -33.1676,
-   "lon": -66.2258,
-   "max_dbz": 50,
-   "tope_km": 17.0,
-   "radar": "RMA16",
+   "lat": -28.1852,
+   "lon": -59.6568,
+   "max_dbz": 52,
+   "tope_km": 8.8,
+   "radar": "RMA8",
    "nivel": null
   },
   {
-   "lat": -27.3522,
-   "lon": -58.7209,
-   "max_dbz": 49,
-   "tope_km": 12.3,
+   "lat": -27.3161,
+   "lon": -58.659,
+   "max_dbz": 50,
+   "tope_km": 10.6,
    "radar": "RMA4",
+   "nivel": null
+  },
+  {
+   "lat": -29.7068,
+   "lon": -60.959,
+   "max_dbz": 49,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -32.1922,
+   "lon": -64.9897,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -28.2147,
+   "lon": -55.4288,
+   "max_dbz": 48,
+   "tope_km": 13.5,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -29.9736,
+   "lon": -60.9049,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
-  "Papagayos": {
+  "La Población": {
    "nivel": "granizo probable",
-   "km": 8.7,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "visto": "2026-11-12 05:54"
+   "km": 7.4,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 06:10"
   },
-  "Villa Larca": {
+  "La Travesía": {
    "nivel": "granizo probable",
-   "km": 5.4,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "visto": "2026-11-12 05:54"
+   "km": 4.3,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 06:10"
+  },
+  "Luyaba": {
+   "nivel": "granizo probable",
+   "km": 5.9,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 06:10"
+  },
+  "Subteniente Perín": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "visto": "2026-11-12 06:12"
   }
  }
 }

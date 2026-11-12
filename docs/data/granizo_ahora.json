@@ -1,19 +1,41 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 06:15",
+ "consultado": "2026-11-12 06:30",
  "radares": {
-  "RMA16": "2026-11-12 05:38",
-  "RMA17": "2026-11-12 05:54"
+  "RMA17": "2026-11-12 06:10"
  },
  "nucleos": [
   {
-   "lat": -32.6195,
-   "lon": -64.9237,
-   "max_dbz": 56,
-   "tope_km": 15.2,
+   "lat": -32.1284,
+   "lon": -65.0007,
+   "max_dbz": 61,
+   "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.1922,
+   "lon": -64.9897,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "La Población": {
+   "nivel": "granizo probable",
+   "km": 5.6,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 06:10"
+  },
+  "Luyaba": {
+   "nivel": "granizo probable",
+   "km": 7.3,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 06:10"
+  }
+ }
 }
