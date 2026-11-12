@@ -1,122 +1,71 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 09:15",
+ "consultado": "2026-11-12 09:30",
  "radares": {
-  "RMA4": "2026-11-12 08:55",
-  "RMA17": "2026-11-12 09:01",
-  "RMA10": "2026-11-12 08:37",
-  "RMA15": "2026-11-12 08:48",
-  "RMA12": "2026-11-12 08:50",
+  "RMA5": "2026-11-12 09:18",
+  "RMA11": "2026-11-12 08:51",
+  "RMA17": "2026-11-12 09:10",
+  "RMA4": "2026-11-12 09:13",
   "RMA8": "2026-11-12 09:00",
-  "RMA11": "2026-11-12 08:42",
-  "RMA16": "2026-11-12 08:46",
-  "RMA5": "2026-11-12 08:51"
+  "AR7": "2026-11-12 09:00",
+  "RMA16": "2026-11-12 09:11"
  },
  "nucleos": [
   {
-   "lat": -33.1948,
-   "lon": -66.2368,
-   "max_dbz": 63,
+   "lat": -33.1314,
+   "lon": -66.2258,
+   "max_dbz": 58,
    "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.0371,
-   "lon": -65.0007,
-   "max_dbz": 61,
-   "tope_km": 17.0,
+   "lat": -32.0645,
+   "lon": -64.9787,
+   "max_dbz": 54,
+   "tope_km": 12.9,
    "radar": "RMA17",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -38.0874,
-   "lon": -60.0714,
-   "max_dbz": 61,
-   "tope_km": 10.6,
-   "radar": "RMA10",
-   "nivel": "granizo probable"
+   "lat": -33.1948,
+   "lon": -66.2368,
+   "max_dbz": 54,
+   "tope_km": 17.0,
+   "radar": "RMA16",
+   "nivel": null
   },
   {
    "lat": -28.3109,
-   "lon": -66.0097,
-   "max_dbz": 57,
+   "lon": -65.9993,
+   "max_dbz": 51,
    "tope_km": 16.4,
    "radar": "RMA11",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -33.0861,
-   "lon": -66.2147,
-   "max_dbz": 57,
-   "tope_km": 14.1,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.1284,
-   "lon": -65.0007,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -28.1702,
-   "lon": -53.727,
-   "max_dbz": 55,
-   "tope_km": 10.0,
+   "lat": -28.0371,
+   "lon": -54.7572,
+   "max_dbz": 48,
+   "tope_km": 13.5,
    "radar": "RMA5",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.3899,
-   "lon": -66.4956,
-   "max_dbz": 53,
-   "tope_km": 7.6,
-   "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -32.9955,
-   "lon": -66.2037,
-   "max_dbz": 53,
-   "tope_km": 11.7,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -27.7306,
-   "lon": -59.5458,
-   "max_dbz": 52,
-   "tope_km": 11.7,
+   "lat": -27.6946,
+   "lon": -59.4942,
+   "max_dbz": 48,
+   "tope_km": 12.3,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -30.7211,
-   "lon": -66.6119,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "radar": "RMA15",
+   "lat": -29.7528,
+   "lon": -60.9482,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
-  },
-  {
-   "lat": -39.6198,
-   "lon": -67.1797,
-   "max_dbz": 50,
-   "tope_km": 12.9,
-   "radar": "RMA12",
-   "nivel": null
-  },
-  {
-   "lat": -33.2129,
-   "lon": -65.0773,
-   "max_dbz": 50,
-   "tope_km": 5.9,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (5.9 km)"
   },
   {
    "lat": -27.7381,
@@ -125,99 +74,37 @@
    "tope_km": 12.9,
    "radar": "RMA8",
    "nivel": null
+  },
+  {
+   "lat": -29.8633,
+   "lon": -60.9157,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Adolfo Gonzales Chaves": {
-   "nivel": "granizo probable",
-   "km": 6.6,
-   "max_dbz": 61,
-   "tope_km": 10.6,
-   "visto": "2026-11-12 08:37"
-  },
-  "La Población": {
-   "nivel": "granizo probable",
-   "km": 4.2,
-   "max_dbz": 61,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 09:01"
-  },
-  "La Travesía": {
-   "nivel": "granizo probable",
-   "km": 4.3,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 09:01"
-  },
-  "Luyaba": {
-   "nivel": "granizo probable",
-   "km": 5.9,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 09:01"
-  },
-  "San Javier y Yacanto": {
-   "nivel": "granizo probable",
-   "km": 3.0,
-   "max_dbz": 61,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 09:01"
-  },
-  "Cerro Colorado (San Luis)": {
-   "nivel": "granizo probable",
-   "km": 6.4,
-   "max_dbz": 63,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 08:46"
-  },
-  "Cruz de Piedra (San Luis)": {
-   "nivel": "granizo probable",
-   "km": 8.2,
-   "max_dbz": 63,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 08:46"
-  },
-  "El Volcán": {
-   "nivel": "granizo probable",
-   "km": 8.7,
-   "max_dbz": 63,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 08:46"
-  },
   "Estancia Grande (San Luis)": {
    "nivel": "granizo probable",
-   "km": 7.9,
-   "max_dbz": 63,
+   "km": 9.4,
+   "max_dbz": 58,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:46"
+   "visto": "2026-11-12 09:11"
   },
   "La Punta": {
    "nivel": "granizo probable",
-   "km": 7.2,
-   "max_dbz": 63,
+   "km": 10.0,
+   "max_dbz": 58,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:46"
-  },
-  "Las Chacras (dpto. Juan Martín de Pueyrredón, San Luis)": {
-   "nivel": "granizo probable",
-   "km": 8.1,
-   "max_dbz": 63,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 08:46"
+   "visto": "2026-11-12 09:11"
   },
   "Potrero de los Funes": {
    "nivel": "granizo probable",
-   "km": 2.6,
-   "max_dbz": 63,
+   "km": 9.6,
+   "max_dbz": 58,
    "tope_km": 17.0,
-   "visto": "2026-11-12 08:46"
-  },
-  "San Roque (San Luis)": {
-   "nivel": "granizo probable",
-   "km": 8.4,
-   "max_dbz": 63,
-   "tope_km": 17.0,
-   "visto": "2026-11-12 08:46"
+   "visto": "2026-11-12 09:11"
   }
  }
 }
