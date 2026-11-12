@@ -142,10 +142,20 @@ const enlace = f => `?localidad=${encodeURIComponent(f.localidad)}${f.prov && f.
 
 // ---------------------------------------------------------------- niveles de Piedrazón
 const ORDEN_SMN = { amarillo: 1, naranja: 2, rojo: 3 };
-function alertasDe(f) {
+// El SMN publica alertas con anticipación: una que todavía no empezó no sube el nivel de ahora, se muestra como próxima
+const empezo = a => !a.desde || Date.parse(a.desde) <= Date.now();
+const proxima = a => !empezo(a) && Date.parse(a.desde) - Date.now() < 36 * 3600e3;   // las de las próximas 36 h
+const vigentesSMN = () => (SMN ? SMN.alertas.filter(empezo) : []);
+function alertasDe(f, todas = false) {
   const S = f.smn || SMN;
   const ids = (S && S.localidades && S.localidades[f.localidad]) || [];
-  return S ? S.alertas.filter(a => ids.includes(a.id)) : [];
+  return S ? S.alertas.filter(a => ids.includes(a.id) && (todas || empezo(a))) : [];
+}
+// «mañana a las 21 h», «hoy a las 18 h», «el 15/11 a las 9 h»
+function cuandoSMN(a) {
+  const d = new Date(a.desde), h = d.getHours();
+  const dia = d.toDateString() === new Date().toDateString() ? 'hoy' : d.toDateString() === new Date(Date.now() + 864e5).toDateString() ? 'mañana' : `el ${d.getDate()}/${d.getMonth() + 1}`;
+  return `${dia} ${h === 1 ? 'a la' : 'a las'} ${h} h`;
 }
 const smnDe = f => Math.max(0, ...alertasDe(f).map(a => ORDEN_SMN[a.nivel] || 0));
 const fuertes = alertas => alertas.filter(a => (ORDEN_SMN[a.nivel] || 0) >= 2);
@@ -159,6 +169,8 @@ function nivelLocalidad(f) {
   if (f.radar) return ['enojado', `${h ? `El radar, ${h}, ve` : 'El radar ve'} una tormenta fuerte a ${km1(f.radar.km)} km de ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
   const s = Math.min(smnDe(f), 3);
   if (s >= 2) return ['enojado', `El SMN tiene alerta ${s === 3 ? 'roja' : 'naranja'} por tormentas en ${esc(f.localidad)}. Guardá el auto y quedate bajo techo.`];
+  const pr = fuertes(alertasDe(f, true).filter(proxima)).sort((x, y) => (ORDEN_SMN[y.nivel] || 0) - (ORDEN_SMN[x.nivel] || 0))[0];
+  if (pr) return ['atento', `El SMN anunció alerta ${pr.nivel === 'rojo' ? 'roja' : 'naranja'} por tormentas en ${esc(f.localidad)} desde ${cuandoSMN(pr)}. Todavía no empezó: tené a mano dónde guardar el auto.`];
   const hoy = f.dias[0] && f.dias[0].riesgo;
   if (hoy === 'alto' || hoy === 'moderado')
     return ['atento', `Hoy hay condiciones para tormenta en ${esc(f.localidad)}${hoy && hoy !== 'bajo' && f.dias[0].hora ? `, sobre todo cerca de las ${esc(f.dias[0].hora)} h` : ''}. Mirá el cielo y seguí el pronóstico.`];
@@ -172,10 +184,16 @@ function nivelGeneral() {
   const ultima = afect.map(f => f.radar).filter(v => v.visto).sort((x, y) => (y.visto > x.visto ? 1 : -1))[0], h = horaRadar(ultima);
   if (prob.length) return ['furioso', `¡Granizo probable cerca de ${locs(prob.length)}${h ? ` (radar ${h})` : ''}! Si estás ahí, no salgas y alejate de las ventanas.`];
   if (afect.length) return ['enojado', `${h ? `El radar, ${h}, ve` : 'El radar ve'} tormentas fuertes cerca de ${locs(afect.length)}. Si estás ahí, guardá el auto y quedate bajo techo.`];
-  const smn = Math.max(0, ...fuertes((SMN && SMN.alertas) || []).map(a => ORDEN_SMN[a.nivel] || 0));
+  const smn = Math.max(0, ...fuertes(vigentesSMN()).map(a => ORDEN_SMN[a.nivel] || 0));
   const conSMN = LOCS.filter(f => smnDe(f) >= Math.max(smn, 2)).length;
   const color = { 1: 'amarilla', 2: 'naranja', 3: 'roja' }[smn];
-  if (smn >= 2) return ['enojado', `El SMN dio alerta ${color} por tormentas en ${locs(conSMN)}. Los radares todavía no ven granizo, pero guardá el auto y estate atento. Elegí tu localidad para ver si te toca.`];
+  if (smn >= 2) return ['enojado', `El SMN tiene alerta ${color} por tormentas en ${locs(conSMN)}. Los radares todavía no ven granizo, pero guardá el auto y estate atento. Elegí tu localidad para ver si te toca.`];
+  const prox = fuertes(SMN ? SMN.alertas.filter(proxima) : []).sort((x, y) => Date.parse(x.desde) - Date.parse(y.desde));
+  if (prox.length) {
+    const ids = new Set(prox.map(a => a.id)), n = LOCS.filter(f => ((SMN.localidades || {})[f.localidad] || []).some(i => ids.has(i))).length;
+    const rojo = prox.some(a => a.nivel === 'rojo');
+    return ['atento', `El SMN anunció alerta ${rojo ? 'roja' : 'naranja'} por tormentas desde ${cuandoSMN(prox[0])} en ${locs(n)}. Todavía no empezó y los radares no ven granizo. Elegí tu localidad para ver si te toca.`];
+  }
   const hoy = LOCS.filter(f => f.dias[0] && f.dias[0].riesgo !== 'bajo').length;
   if (hoy) return ['atento', `Hoy hay condiciones para tormenta en ${locs(hoy)}, aunque los radares todavía no ven granizo. Elegí la tuya y seguí el pronóstico.`];
   return ['tranqui', 'Cielo tranquilo: los radares no ven granizo y hoy no hay condiciones para tormenta.'];
@@ -193,7 +211,7 @@ function estado(f = miLocalidad()) {
     if (conf.length) { nivel = 'furioso'; titulo = '¡Está cayendo granizo!'; texto0 = `Vecinos confirman que está cayendo piedra en ${conf.slice(0, 4).map(x => esc(x.localidad)).join(', ')}${conf.length > 4 ? ` y ${conf.length - 4} más` : ''}. ${texto0}`; }
   }
   // alerta amarilla del SMN: no cambia el nivel, pero si está tranqui Piedrazón pone cara de duda y lo cuenta
-  const am = agruparSMN(amarillas(f ? alertasDe(f) : (SMN ? SMN.alertas : [])))[0];
+  const am = agruparSMN(amarillas(f ? alertasDe(f) : vigentesSMN()))[0];
   const duda = !!am && nivel === 'tranqui';
   const texto = am && (nivel === 'tranqui' || nivel === 'atento')
     ? `${texto0} Ojo: el SMN tiene alerta amarilla por ${esc(String(am.titulo || 'tormentas').toLowerCase())} ${f ? 'acá' : 'en parte de la provincia'}, ${hastaSMN(am)}. No quiere decir que caiga granizo.`
@@ -461,13 +479,15 @@ function pintarHoy() {
   lugares.querySelectorAll('[data-ver]').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); verEnMapa(a.dataset.ver); }));
 
   // alertas oficiales
-  const alertas = agruparSMN(e.f ? alertasDe(e.f) : (SMN ? SMN.alertas : []));
+  const alertas = agruparSMN(e.f ? alertasDe(e.f, true) : (SMN ? SMN.alertas : []));
   const caja = $('#smn-hoy');
+  alertas.sort((x, y) => empezo(y) - empezo(x));   // primero las que ya están vigentes
   caja.hidden = !alertas.length;
   caja.innerHTML = alertas.map(a => {
     const n = e.f || !SMN.localidades ? null : Object.values(SMN.localidades).filter(v => v.some(i => a.ids.includes(i))).length;
     return `<div class="smn-alerta n-smn-${esc(a.nivel)}"><p><span class="punto"></span><b>${a.tipo === 'aviso a corto plazo' ? 'Aviso a corto plazo' : 'Alerta'} oficial del SMN</b>: ` +
       `${esc(a.titulo)}, nivel ${esc(a.nivel)}, ${hastaSMN(a)}${n ? ` · ${plural(n, 'localidad', 'localidades')}` : ''}.</p>` +
+      (!empezo(a) ? '<p class="nota">Todavía no empezó: no cambia el nivel de ahora.</p>' : '') +
       (a.nivel === 'amarillo' ? '<p class="nota">Es por tormentas en general, no un aviso de granizo: no cambia el nivel de Piedrazón.</p>' : '') +
       (a.instruccion ? `<details><summary>Qué recomienda el SMN</summary><p>${esc(a.instruccion)}</p></details>` : '') + '</div>';
   }).join('');
@@ -574,17 +594,24 @@ async function enviarReporte(f, cae, tamano) {
 
 // «hasta las 14:59 h» si termina hoy, «hasta el 24/10 a las 14:59 h» si no
 function hastaSMN(a) {
+  if (!empezo(a) && a.desde_local) return `desde ${desdeSMN(a)} ${hastaSMN({ ...a, desde: null })}`;
   const [fecha, hora] = String(a.hasta_local || '').split(' ');
   if (!hora) return `hasta ${esc(a.hasta_local)}`;
   const [d, m] = fecha.split('/'), hoy = hoyISO();
   return Number(d) === Number(hoy.slice(8, 10)) && Number(m) === Number(hoy.slice(5, 7)) ? `hasta las ${esc(hora)} h` : `hasta el ${esc(fecha)} a las ${esc(hora)} h`;
 }
 
+function desdeSMN(a) {
+  const [fecha, hora] = String(a.desde_local || '').split(' ');
+  const [d, m] = fecha.split('/'), hoy = hoyISO();
+  return Number(d) === Number(hoy.slice(8, 10)) && Number(m) === Number(hoy.slice(5, 7)) ? `hoy a las ${esc(hora)} h` : `el ${esc(fecha)} a las ${esc(hora)} h`;
+}
+
 // alertas del SMN agrupadas (una por tipo, título, nivel y hora de fin)
 function agruparSMN(alertas) {
   const g = new Map();
   for (const a of alertas) {
-    const k = [a.tipo, a.titulo, a.nivel, a.hasta_local].join('|');
+    const k = [a.tipo, a.titulo, a.nivel, a.desde_local, a.hasta_local].join('|');
     if (!g.has(k)) g.set(k, { ...a, ids: [] });
     g.get(k).ids.push(a.id);
   }
@@ -618,6 +645,7 @@ function zoomConCtrl(m) {
   }, { passive: false });
 }
 
+let capaSMN = null;
 let mapa = null, marcaElegida = null, capaHora = null, capaRadar = null, capaLocRadar = null, diaSel = null, horaSel = null, fichaNombre = null;
 buscador($('#buscar-mapa'), $('#sug-mapa'), f => elegir(f.localidad));
 
@@ -713,6 +741,14 @@ function elegirHora(i) {
     fillColor: COLOR_RIESGO[NIVEL[r]], fillOpacity: .9 }).bindPopup(`<b>${esc(x.localidad)}</b> ${chip(NIVEL[r])}<br>${esc(h.slice(11, 13))} h`)
     .on('click', () => pintarFicha(x)))).addTo(mapa);
   const esAhora = i === indiceAhora();
+  // alertas naranjas y rojas del SMN vigentes en la hora elegida (con borde punteado si todavía no empezaron)
+  if (capaSMN) capaSMN.remove();
+  const t = esAhora ? Date.now() : Date.parse(`${d}T${h.slice(11, 13)}:30:00-03:00`);
+  const enHora = fuertes(SMN ? SMN.alertas : []).filter(a => (!a.desde || Date.parse(a.desde) <= t) && Date.parse(a.hasta) >= t && a.poligonos);
+  capaSMN = L.layerGroup(enHora.flatMap(a => a.poligonos.map(p => L.polygon(p.map(([lo, la]) => [la, lo]), {
+    color: a.nivel === 'rojo' ? '#C62828' : '#E8833A', weight: 2, dashArray: empezo(a) ? null : '6 6', fillOpacity: .12, interactive: true,
+  }).bindPopup(`<b>Alerta ${a.nivel === 'rojo' ? 'roja' : 'naranja'} del SMN</b>: ${esc(a.titulo || 'Tormentas')}<br>${hastaSMN(a)}`)))).addTo(mapa);
+  capaSMN.eachLayer(x => x.bringToBack());
   if (capaRadar) esAhora ? capaRadar.addTo(mapa) : capaRadar.remove();
   // En la hora actual también se marcan las localidades con granizo que ve el radar (el pronóstico puede no tenerlas)
   if (capaLocRadar) capaLocRadar.remove();
@@ -726,6 +762,7 @@ function elegirHora(i) {
   const [m, a] = HORAS.conteo[i];
   $('#hora-texto').textContent = `${h.slice(11, 13)} h${esAhora ? ' (ahora)' : ''}`;
   $('#hora-resumen').textContent = (m + a ? `riesgo alto en ${a}, moderado en ${plural(m, 'localidad', 'localidades')}` : 'sin condiciones para granizo') +
+    (enHora.length ? ' · zona con alerta naranja o roja del SMN' : '') +
     (esAhora && LOCS.some(x => x.radar) ? ` · radar ahora: ${plural(LOCS.filter(x => x.radar).length, 'localidad', 'localidades')} con posible granizo (círculo con borde)` : '');
 }
 
@@ -776,7 +813,7 @@ function pintarFicha(f) {
   caja.hidden = false;
   caja.innerHTML = `<h2>${esc(f.localidad)}</h2>
     <div class="pz-ficha"></div>
-    ${agruparSMN(alertasDe(f)).map(a => `<div class="smn-alerta n-smn-${esc(a.nivel)}"><p><span class="punto"></span><b>Alerta oficial del SMN</b>: ${esc(a.titulo)}, nivel ${esc(a.nivel)}, ${hastaSMN(a)}.</p>` +
+    ${agruparSMN(alertasDe(f, true)).map(a => `<div class="smn-alerta n-smn-${esc(a.nivel)}"><p><span class="punto"></span><b>Alerta oficial del SMN</b>: ${esc(a.titulo)}, nivel ${esc(a.nivel)}, ${hastaSMN(a)}.</p>` +
       (a.instruccion ? `<details><summary>Qué recomienda el SMN</summary><p>${esc(a.instruccion)}</p></details>` : '') + '</div>').join('')}
     ${confirmaciones(f).length ? `<p class="confirmado">${textoConfirmaciones(f, confirmaciones(f))}</p>` : ''}
     <p>${f.radar ? `<span class="lluvia-fuerte">En este momento: ${esc(f.radar.nivel)} a ${km1(f.radar.km)} km</span><span class="tecnico nota"> (${f.radar.max_dbz} dBZ${f.radar.tope_km ? `, tope ${km1(f.radar.tope_km)} km` : ''})</span>.` : '<b>En este momento</b>: el radar no ve granizo cerca.'}</p>
@@ -845,7 +882,7 @@ const RESPUESTAS = {
   hoy(f) {
     const e = estado(f);
     const dias = PRON ? PRON.dias.slice(0, 3).map((d, i) => `${nombreDia(d, i).toLowerCase()} ${riesgoDia(e.f, i) || 'sin dato'}`).join(', ') : '';
-    const smn = agruparSMN(e.f ? alertasDe(e.f) : (SMN ? SMN.alertas : []))[0];
+    const smn = agruparSMN(e.f ? alertasDe(e.f) : vigentesSMN())[0];
     const aclaracion = smn ? `<br><br>Ojo: la alerta ${({ amarillo: 'amarilla', naranja: 'naranja', rojo: 'roja' })[smn.nivel] || esc(smn.nivel)} es del SMN, por ${esc(String(smn.titulo || 'tormentas').toLowerCase())} en general, ${hastaSMN(smn)}. No quiere decir que vaya a caer granizo.` : '';
     const ep = e.f && pasados(e.f)[0];
     const antes = ep && !e.f.radar ? `<br><br>Ahora no, pero ${cuandoEpisodio(ep)} el radar vio ${esc(ep.peor.nivel)} a ${km1(ep.peor.km)} km.` : '';
@@ -872,7 +909,7 @@ const RESPUESTAS = {
       '<li>No salgas a tapar el auto ni a juntar cosas.</li><li>Si hay una emergencia: <b>103</b> (Defensa Civil) o <b>911</b>.</li></ul>';
   },
   oficial() {
-    const n = SMN ? fuertes(SMN.alertas).length : 0;
+    const n = fuertes(vigentesSMN()).length;
     return 'No, Piedrazón es un monitor experimental hecho por vecinos, sin fines comerciales. Mira los radares del OHMC y los modelos de pronóstico, pero <b>no reemplaza los avisos del SMN ni de Defensa Civil</b>.' +
       (n ? `<br><br>Ahora mismo el SMN tiene ${plural(n, 'alerta naranja o roja', 'alertas naranjas o rojas')} para la zona: las ves en la pantalla de Hoy.` : '<br><br>Ahora mismo el SMN no tiene alertas naranjas ni rojas para la provincia.');
   },
