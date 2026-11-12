@@ -1,52 +1,77 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 03:15",
+ "consultado": "2026-11-12 03:30",
  "radares": {
-  "RMA16": "2026-11-12 02:46",
-  "AR7": "2026-11-12 02:40",
-  "RMA11": "2026-11-12 02:51"
+  "RMA11": "2026-11-12 03:08",
+  "RMA16": "2026-11-12 03:11",
+  "AR7": "2026-11-12 03:00",
+  "RMA6": "2026-11-12 03:06",
+  "RMA4": "2026-11-12 03:11"
  },
  "nucleos": [
   {
-   "lat": -27.2948,
-   "lon": -65.9684,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -27.1953,
-   "lon": -65.9993,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -33.2038,
+   "lat": -33.2309,
    "lon": -65.0884,
-   "max_dbz": 50,
-   "tope_km": 7.6,
+   "max_dbz": 71,
+   "tope_km": 10.6,
    "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -27.3219,
+   "lon": -66.1335,
+   "max_dbz": 56,
+   "tope_km": 12.3,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -25.6519,
+   "lon": -59.3189,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -27.4302,
+   "lon": -66.1128,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "radar": "RMA11",
    "nivel": null
   },
   {
-   "lat": -29.7436,
+   "lat": -39.9533,
+   "lon": -56.9543,
+   "max_dbz": 52,
+   "tope_km": 14.7,
+   "radar": "RMA6",
+   "nivel": null
+  },
+  {
+   "lat": -29.762,
    "lon": -60.9482,
-   "max_dbz": 49,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.9368,
-   "lon": -60.9157,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Palo Santo": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-12 03:11"
+  },
+  "La Punilla": {
+   "nivel": "granizo probable",
+   "km": 9.7,
+   "max_dbz": 71,
+   "tope_km": 10.6,
+   "visto": "2026-11-12 03:11"
+  }
+ }
 }
