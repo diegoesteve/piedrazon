@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-13 04:30",
+ "consultado": "2026-11-13 04:45",
  "alertas": [
   {
    "id": "2026_11_13_0705_cap_es",
@@ -46,6 +46,90 @@
      [
       -64.18,
       -36.96
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_13_0731_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-13T07:31:00-03:00",
+   "hasta": "2026-11-13T08:31:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "SAN LUIS: GDOR DUPUY.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_13_0731_cap_es.xml",
+   "desde_local": "13/11 07:31",
+   "hasta_local": "13/11 08:31",
+   "localidades": 2,
+   "poligonos": [
+    [
+     [
+      -65.9,
+      -35.19
+     ],
+     [
+      -65.92,
+      -35.53
+     ],
+     [
+      -65.14,
+      -35.79
+     ],
+     [
+      -65.15,
+      -35.15
+     ],
+     [
+      -65.9,
+      -35.19
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_13_0737_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "desde": "2026-11-13T07:37:00-03:00",
+   "hasta": "2026-11-13T08:37:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "BUENOS AIRES: CARLOS TEJEDOR - RIVADAVIA - TRENQUE LAUQUEN.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_13_0737_cap_es.xml",
+   "desde_local": "13/11 07:37",
+   "hasta_local": "13/11 08:37",
+   "localidades": 7,
+   "poligonos": [
+    [
+     [
+      -63.34,
+      -35.68
+     ],
+     [
+      -63.31,
+      -35.89
+     ],
+     [
+      -62.2,
+      -35.6
+     ],
+     [
+      -62.46,
+      -35.12
+     ],
+     [
+      -63.31,
+      -35.5
+     ],
+     [
+      -63.34,
+      -35.68
      ]
     ]
    ]
@@ -42819,6 +42903,7 @@
   "América": [
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_13_0737_cap_es",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_27",
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_27"
   ],
@@ -42861,6 +42946,7 @@
   "Fortín Olavarría": [
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_13_0737_cap_es",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_27",
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_27"
   ],
@@ -42903,12 +42989,14 @@
   "Roosevelt": [
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_13_0737_cap_es",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_27",
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_27"
   ],
   "San Mauricio": [
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_13_0737_cap_es",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_27",
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_27"
   ],
@@ -42933,6 +43021,7 @@
   "Sundblad": [
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_13_0737_cap_es",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_27",
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_27"
   ],
@@ -43377,6 +43466,7 @@
   "Carlos Tejedor": [
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_5",
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_5",
+   "2026_11_13_0737_cap_es",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_28",
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_28"
   ],
@@ -43389,6 +43479,7 @@
   "Colonia Seré": [
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_5",
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_5",
+   "2026_11_13_0737_cap_es",
    "CAP_20261113053705_Tormenta_Llanura_alertas_alertas_28",
    "CAP_20261113053606_Tormenta_Patagonia_alertas_alertas_28"
   ],
@@ -49733,6 +49824,12 @@
   ],
   "Viedma": [
    "2026_11_13_0709_cap_es"
+  ],
+  "Anchorena": [
+   "2026_11_13_0731_cap_es"
+  ],
+  "Arizona": [
+   "2026_11_13_0731_cap_es"
   ]
  }
 }
