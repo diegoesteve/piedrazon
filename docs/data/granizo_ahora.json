@@ -1,68 +1,83 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 03:45",
+ "consultado": "2026-11-13 04:00",
  "radares": {
-  "RMA1": "2026-11-13 03:30",
-  "RMA16": "2026-11-13 03:28"
+  "RMA1": "2026-11-13 03:48",
+  "RMA16": "2026-11-13 03:36"
  },
  "nucleos": [
   {
-   "lat": -30.2534,
-   "lon": -64.2565,
-   "max_dbz": 60,
-   "tope_km": 14.7,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.2038,
-   "lon": -65.1105,
-   "max_dbz": 60,
-   "tope_km": 14.7,
+   "lat": -33.2219,
+   "lon": -65.0773,
+   "max_dbz": 68,
+   "tope_km": 11.7,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.08,
-   "lon": -64.4609,
+   "lat": -30.3082,
+   "lon": -64.2565,
    "max_dbz": 59,
+   "tope_km": 17.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.654,
+   "lon": -64.5469,
+   "max_dbz": 58,
    "tope_km": 13.5,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.5085,
-   "lon": -64.3856,
-   "max_dbz": 51,
+   "lat": -30.1713,
+   "lon": -64.3641,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.5813,
+   "lon": -64.3963,
+   "max_dbz": 57,
+   "tope_km": 13.5,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.5631,
+   "lon": -64.321,
+   "max_dbz": 54,
    "tope_km": 13.5,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.554,
-   "lon": -64.4824,
-   "max_dbz": 50,
-   "tope_km": 13.5,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -34.7816,
-   "lon": -65.2761,
-   "max_dbz": 48,
-   "tope_km": 5.3,
+   "lat": -34.3453,
+   "lon": -64.8454,
+   "max_dbz": 49,
+   "tope_km": 4.7,
    "radar": "RMA16",
    "nivel": null,
-   "descartado": "tope bajo (5.3 km)"
+   "descartado": "tope bajo (4.7 km)"
   }
  ],
  "localidades": {
+  "Copacabana": {
+   "nivel": "granizo probable",
+   "km": 4.5,
+   "max_dbz": 58,
+   "tope_km": 13.5,
+   "visto": "2026-11-13 03:48"
+  },
   "San Pedro Norte": {
    "nivel": "granizo probable",
-   "km": 4.0,
-   "max_dbz": 60,
-   "tope_km": 14.7,
-   "visto": "2026-11-13 03:30"
+   "km": 7.1,
+   "max_dbz": 59,
+   "tope_km": 17.0,
+   "visto": "2026-11-13 03:48"
   }
  }
 }
