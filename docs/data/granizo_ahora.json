@@ -1,51 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 03:30",
+ "consultado": "2026-11-13 03:45",
  "radares": {
-  "RMA1": "2026-11-13 03:12",
-  "RMA16": "2026-11-13 03:04"
+  "RMA1": "2026-11-13 03:30",
+  "RMA16": "2026-11-13 03:28"
  },
  "nucleos": [
   {
-   "lat": -33.2309,
-   "lon": -65.0884,
-   "max_dbz": 70,
-   "tope_km": 17.0,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.2078,
-   "lon": -64.278,
-   "max_dbz": 59,
+   "lat": -30.2534,
+   "lon": -64.2565,
+   "max_dbz": 60,
    "tope_km": 14.7,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.0343,
-   "lon": -64.4931,
-   "max_dbz": 55,
-   "tope_km": 11.1,
+   "lat": -33.2038,
+   "lon": -65.1105,
+   "max_dbz": 60,
+   "tope_km": 14.7,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.08,
+   "lon": -64.4609,
+   "max_dbz": 59,
+   "tope_km": 13.5,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -29.8879,
-   "lon": -64.4716,
+   "lat": -30.5085,
+   "lon": -64.3856,
    "max_dbz": 51,
-   "tope_km": 12.3,
+   "tope_km": 13.5,
    "radar": "RMA1",
    "nivel": null
+  },
+  {
+   "lat": -30.554,
+   "lon": -64.4824,
+   "max_dbz": 50,
+   "tope_km": 13.5,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -34.7816,
+   "lon": -65.2761,
+   "max_dbz": 48,
+   "tope_km": 5.3,
+   "radar": "RMA16",
+   "nivel": null,
+   "descartado": "tope bajo (5.3 km)"
   }
  ],
  "localidades": {
   "San Pedro Norte": {
    "nivel": "granizo probable",
-   "km": 8.1,
-   "max_dbz": 59,
+   "km": 4.0,
+   "max_dbz": 60,
    "tope_km": 14.7,
-   "visto": "2026-11-13 03:12"
+   "visto": "2026-11-13 03:30"
   }
  }
 }
