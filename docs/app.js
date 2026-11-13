@@ -163,6 +163,19 @@ const amarillas = alertas => alertas.filter(a => a.nivel === 'amarillo');
 
 // «a las 7:44 h», la hora de la pasada del radar
 const horaRadar = v => v && v.visto ? `${Number(v.visto.slice(11, 13)) === 1 ? 'a la' : 'a las'} ${Number(v.visto.slice(11, 13))}:${v.visto.slice(14, 16)} h` : '';
+// La hora del día i que se muestra («cerca de las 16 h»): la del pronóstico, salvo que sea de hoy y ya haya pasado
+// (el pronóstico se renueva cada 6 horas). Entonces, la próxima hora de hoy con riesgo según el pronóstico hora por
+// hora; si no queda ninguna, null y pasada = true.
+function horaDe(f, i) {
+  const d = f && f.dias[i];
+  if (!d || !d.hora || d.riesgo === 'bajo') return { hora: null, pasada: false };
+  if (i > 0 || d.fecha !== hoyISO() || Number(d.hora) >= new Date().getHours()) return { hora: d.hora, pasada: false };
+  const s = (HORAS && HORAS.localidades[f.localidad]) || '';
+  for (let k = Math.max(0, indiceAhora()); HORAS && k < HORAS.horas.length && HORAS.horas[k].startsWith(d.fecha); k++)
+    if (Number(s[k] || 0) > 0) return { hora: HORAS.horas[k].slice(11, 13), pasada: false };
+  return { hora: null, pasada: true, antes: d.hora };
+}
+
 function nivelLocalidad(f) {
   const h = horaRadar(f.radar);
   if (f.radar && f.radar.nivel === 'granizo probable') return ['furioso', `¡Granizo probable a ${km1(f.radar.km)} km de ${esc(f.localidad)}${h ? ` (radar ${h})` : ''}! No salgas y alejate de las ventanas.`];
@@ -172,8 +185,11 @@ function nivelLocalidad(f) {
   const pr = fuertes(alertasDe(f, true).filter(proxima)).sort((x, y) => (ORDEN_SMN[y.nivel] || 0) - (ORDEN_SMN[x.nivel] || 0))[0];
   if (pr) return ['atento', `El SMN anunció alerta ${pr.nivel === 'rojo' ? 'roja' : 'naranja'} por tormentas en ${esc(f.localidad)} desde ${cuandoSMN(pr)}. Todavía no empezó: tené a mano dónde guardar el auto.`];
   const hoy = f.dias[0] && f.dias[0].riesgo;
+  const hh = horaDe(f, 0);
+  if ((hoy === 'alto' || hoy === 'moderado') && hh.pasada)
+    return ['tranqui', `Hoy hubo condiciones para tormenta en ${esc(f.localidad)} cerca de las ${esc(hh.antes)} h; para lo que queda del día el pronóstico ya no ve riesgo y el radar no ve granizo.`];
   if (hoy === 'alto' || hoy === 'moderado')
-    return ['atento', `Hoy hay condiciones para tormenta en ${esc(f.localidad)}${hoy && hoy !== 'bajo' && f.dias[0].hora ? `, sobre todo cerca de las ${esc(f.dias[0].hora)} h` : ''}. Mirá el cielo y seguí el pronóstico.`];
+    return ['atento', `Hoy hay condiciones para tormenta en ${esc(f.localidad)}${hh.hora ? `, sobre todo cerca de las ${esc(hh.hora)} h` : ''}. Mirá el cielo y seguí el pronóstico.`];
   return ['tranqui', `En ${esc(f.localidad)} está tranqui: el radar no ve granizo y hoy no hay condiciones para tormenta.`];
 }
 function nivelGeneral() {
@@ -194,7 +210,7 @@ function nivelGeneral() {
     const rojo = prox.some(a => a.nivel === 'rojo');
     return ['atento', `El SMN anunció alerta ${rojo ? 'roja' : 'naranja'} por tormentas desde ${cuandoSMN(prox[0])} en ${locs(n)}. Todavía no empezó y los radares no ven granizo. Elegí tu localidad para ver si te toca.`];
   }
-  const hoy = LOCS.filter(f => f.dias[0] && f.dias[0].riesgo !== 'bajo').length;
+  const hoy = LOCS.filter(f => f.dias[0] && f.dias[0].riesgo !== 'bajo' && !horaDe(f, 0).pasada).length;
   if (hoy) return ['atento', `Hoy hay condiciones para tormenta en ${locs(hoy)}, aunque los radares todavía no ven granizo. Elegí la tuya y seguí el pronóstico.`];
   return ['tranqui', 'Cielo tranquilo: los radares no ven granizo y hoy no hay condiciones para tormenta.'];
 }
@@ -517,8 +533,9 @@ function pintarHoy() {
 
   // próximos días
   $('#dias').innerHTML = PRON && PRON.dias.length ? PRON.dias.slice(0, 3).map((dia, i) => {
-    const r = riesgoDia(e.f, i), hora = e.f && r && r !== 'bajo' && e.f.dias[i].hora;
-    return `<div class="dia"><b>${esc(nombreDia(dia, i))}</b>${chip(r)}${hora ? `<span class="nota">cerca de las ${esc(hora)} h</span>` : ''}</div>`;
+    const r = riesgoDia(e.f, i), hh = e.f && r && r !== 'bajo' ? horaDe(e.f, i) : {};
+    const nota = hh.hora ? `cerca de las ${esc(hh.hora)} h` : hh.pasada ? `lo peor fue cerca de las ${esc(hh.antes)} h` : '';
+    return `<div class="dia"><b>${esc(nombreDia(dia, i))}</b>${chip(r)}${nota ? `<span class="nota">${nota}</span>` : ''}</div>`;
   }).join('') : '<p class="nota">Todavía no hay pronóstico.</p>';
 
   pintarTareas(e.nivel);
@@ -807,7 +824,7 @@ function pintarFicha(f) {
       .bindTooltip(esc(f.localidad), { permanent: true, direction: 'top', offset: [0, -12] }).addTo(mapa);
   }
   const caja = $('#ficha');
-  const dias = (f.dias || []).slice(0, 3).map((d, i) => `<li><b>${esc(nombreDia(d.fecha, i))}</b> ${chip(d.riesgo)}${d.riesgo !== 'bajo' && d.hora ? ` <span class="nota">peor momento cerca de las ${esc(d.hora)} h</span>` : ''}` +
+  const dias = (f.dias || []).slice(0, 3).map((d, i) => `<li><b>${esc(nombreDia(d.fecha, i))}</b> ${chip(d.riesgo)}${d.riesgo !== 'bajo' && d.hora ? (hd => hd.hora ? ` <span class="nota">peor momento cerca de las ${esc(hd.hora)} h</span>` : hd.pasada ? ` <span class="nota">lo peor fue cerca de las ${esc(hd.antes)} h</span>` : '')(horaDe(f, i)) : ''}` +
     `<span class="tecnico nota">Energía para tormentas ${d.cape ?? '–'} J/kg · inestabilidad ${d.li ?? '–'} · viento en altura ${d.cizalladura ?? '–'} m/s · 0 °C a ${d.isoterma0_m ?? '–'} m · lluvia ${d.prob_lluvia ?? '–'} %</span></li>`).join('');
   const mia = esMia(f);
   caja.hidden = false;
