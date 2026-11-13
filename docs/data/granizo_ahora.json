@@ -1,83 +1,103 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 04:00",
+ "consultado": "2026-11-13 04:15",
  "radares": {
-  "RMA1": "2026-11-13 03:48",
-  "RMA16": "2026-11-13 03:36"
+  "RMA16": "2026-11-13 03:53",
+  "RMA1": "2026-11-13 03:57"
  },
  "nucleos": [
   {
-   "lat": -33.2219,
-   "lon": -65.0773,
-   "max_dbz": 68,
-   "tope_km": 11.7,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.3082,
-   "lon": -64.2565,
-   "max_dbz": 59,
+   "lat": -30.2078,
+   "lon": -64.3533,
+   "max_dbz": 61,
    "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.654,
+   "lat": -30.6994,
    "lon": -64.5469,
-   "max_dbz": 58,
-   "tope_km": 13.5,
+   "max_dbz": 60,
+   "tope_km": 14.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.1713,
-   "lon": -64.3641,
+   "lat": -30.5994,
+   "lon": -64.3963,
+   "max_dbz": 58,
+   "tope_km": 12.9,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.1896,
+   "lon": -64.4609,
+   "max_dbz": 58,
+   "tope_km": 16.4,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.5449,
+   "lon": -64.278,
+   "max_dbz": 58,
+   "tope_km": 12.9,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.3264,
+   "lon": -64.3103,
    "max_dbz": 57,
    "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.5813,
-   "lon": -64.3963,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.5631,
-   "lon": -64.321,
+   "lat": -30.1165,
+   "lon": -64.4501,
    "max_dbz": 54,
-   "tope_km": 13.5,
+   "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": null
-  },
-  {
-   "lat": -34.3453,
-   "lon": -64.8454,
-   "max_dbz": 49,
-   "tope_km": 4.7,
-   "radar": "RMA16",
-   "nivel": null,
-   "descartado": "tope bajo (4.7 km)"
   }
  ],
  "localidades": {
+  "Avellaneda": {
+   "nivel": "granizo probable",
+   "km": 7.5,
+   "max_dbz": 58,
+   "tope_km": 12.9,
+   "visto": "2026-11-13 03:57"
+  },
+  "Charbonier": {
+   "nivel": "granizo probable",
+   "km": 7.0,
+   "max_dbz": 60,
+   "tope_km": 14.1,
+   "visto": "2026-11-13 03:57"
+  },
   "Copacabana": {
    "nivel": "granizo probable",
-   "km": 4.5,
-   "max_dbz": 58,
-   "tope_km": 13.5,
-   "visto": "2026-11-13 03:48"
+   "km": 7.5,
+   "max_dbz": 60,
+   "tope_km": 14.1,
+   "visto": "2026-11-13 03:57"
   },
-  "San Pedro Norte": {
+  "Los Pozos": {
    "nivel": "granizo probable",
-   "km": 7.1,
-   "max_dbz": 59,
-   "tope_km": 17.0,
-   "visto": "2026-11-13 03:48"
+   "km": 3.2,
+   "max_dbz": 58,
+   "tope_km": 12.9,
+   "visto": "2026-11-13 03:57"
+  },
+  "Quilino": {
+   "nivel": "granizo probable",
+   "km": 3.8,
+   "max_dbz": 58,
+   "tope_km": 16.4,
+   "visto": "2026-11-13 03:57"
   }
  }
 }
