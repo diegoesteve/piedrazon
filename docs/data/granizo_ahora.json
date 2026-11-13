@@ -1,123 +1,108 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 11:45",
+ "consultado": "2026-11-13 12:00",
  "radares": {
-  "RMA16": "2026-11-13 11:31",
-  "RMA17": "2026-11-13 11:33",
-  "RMA1": "2026-11-13 11:29"
+  "RMA16": "2026-11-13 11:48",
+  "RMA17": "2026-11-13 11:41",
+  "RMA1": "2026-11-13 11:47"
  },
  "nucleos": [
   {
-   "lat": -33.0447,
-   "lon": -62.9561,
+   "lat": -33.0176,
+   "lon": -62.9451,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.0043,
+   "lon": -62.8902,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0427,
+   "lon": -61.8251,
    "max_dbz": 61,
-   "tope_km": 17.0,
-   "radar": "RMA17",
+   "tope_km": 14.1,
+   "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.4861,
-   "lon": -63.2344,
+   "lat": -33.8444,
+   "lon": -62.1207,
    "max_dbz": 60,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0554,
+   "lon": -61.8789,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.6987,
+   "lon": -62.1097,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.2815,
+   "lon": -61.714,
+   "max_dbz": 56,
    "tope_km": 12.3,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.8086,
-   "lon": -62.1757,
-   "max_dbz": 58,
-   "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.2459,
-   "lon": -61.8019,
-   "max_dbz": 58,
-   "tope_km": 14.7,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.0606,
-   "lon": -62.008,
-   "max_dbz": 58,
-   "tope_km": 12.9,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -34.7783,
-   "lon": -62.1427,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.1857,
-   "lon": -65.4417,
+   "lat": -31.5131,
+   "lon": -63.1699,
    "max_dbz": 56,
-   "tope_km": 7.6,
-   "radar": "RMA16",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -31.675,
-   "lon": -63.2344,
-   "max_dbz": 56,
-   "tope_km": 11.7,
+   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.1101,
-   "lon": -61.9668,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -34.7518,
-   "lon": -62.3186,
-   "max_dbz": 54,
-   "tope_km": 15.2,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -34.7429,
-   "lon": -61.8129,
+   "lat": -34.6898,
+   "lon": -62.3625,
    "max_dbz": 53,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -34.8579,
-   "lon": -62.0548,
-   "max_dbz": 50,
-   "tope_km": 17.0,
+   "lat": -34.7871,
+   "lon": -62.3186,
+   "max_dbz": 52,
+   "tope_km": 16.4,
    "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.61,
+   "lon": -65.6736,
+   "max_dbz": 50,
+   "tope_km": 14.7,
+   "radar": "RMA16",
    "nivel": null
   }
  ],
  "localidades": {
-  "Calchín": {
-   "nivel": "granizo probable",
-   "km": 3.6,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-13 11:29"
-  },
   "Tránsito": {
    "nivel": "granizo probable",
-   "km": 7.2,
-   "max_dbz": 60,
-   "tope_km": 12.3,
-   "visto": "2026-11-13 11:29"
+   "km": 9.4,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-13 11:47"
   }
  }
 }
