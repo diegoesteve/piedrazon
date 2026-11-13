@@ -341,16 +341,19 @@ function buscador(input, lista, alElegir, candidatas = () => LOCS) {
   const pintar = () => {
     const q = sinTildes(input.value.trim());
     if (!q) return cerrar();
-    const rango = f => { const n = sinTildes(f.localidad); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
-    const aca = f => f.prov === PROV ? 0 : 1;
-    sug = candidatas().filter(f => sinTildes(f.localidad).includes(q)).sort((a, b) => rango(a) - rango(b) || aca(a) - aca(b) || a.localidad.localeCompare(b.localidad)).slice(0, 8);
+    const nom = f => f.barrio || f.localidad;   // los barrios de Córdoba se buscan por su nombre
+    const rango = f => { const n = sinTildes(nom(f)); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
+    const aca = f => (f.prov === PROV ? 0 : 1) + (f.barrio ? 0.5 : 0);
+    sug = candidatas().filter(f => sinTildes(nom(f)).includes(q) && (!f.barrio || q.length >= 3))
+      .sort((a, b) => rango(a) - rango(b) || aca(a) - aca(b) || nom(a).localeCompare(nom(b))).slice(0, 8);
     lista.innerHTML = sug.length
       ? sug.map((f, i) => {
         const g = f.dias ? f : f.prov === PROV ? porNombre(f.localidad) : null;   // con pronóstico, si es de la provincia que se mira
         const prov = f.provNombre && f.provNombre !== 'Córdoba' && !f.localidad.includes(f.provNombre) ? ` <span class="nota">· ${esc(f.provNombre)}</span>` : '';
-        return `<li role="option" id="${lista.id}-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${esc(f.localidad)}${prov}</span>${g && g.dias[0] ? chip(g.dias[0].riesgo) : ''}</li>`;
+        const texto = f.barrio ? `${esc(f.barrio)} <span class="nota">· barrio de ${esc(f.localidad)}</span>` : `${esc(f.localidad)}${prov}`;
+        return `<li role="option" id="${lista.id}-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${texto}</span>${g && g.dias[0] ? chip(g.dias[0].riesgo) : ''}</li>`;
       }).join('')
-      : '<li class="vacio">No hay localidades con ese nombre.</li>';
+      : '<li class="vacio">No hay localidades ni barrios con ese nombre.</li>';
     lista.hidden = false; input.setAttribute('aria-expanded', 'true');
     if (marcada >= 0) input.setAttribute('aria-activedescendant', `${lista.id}-${marcada}`); else input.removeAttribute('aria-activedescendant');
   };
@@ -402,12 +405,38 @@ function abrirElegirLugar(modo = 'mia') {
 function cerrarElegirLugar() { if (dlg.open) dlg.close(); }
 async function lugarElegido(f) {
   cerrarElegirLugar();
-  if (modoLugar !== 'consulta') return ponerLocalidad(f);
+  if (modoLugar !== 'consulta') {
+    await ponerLocalidad(f);
+    if (f && f.barrio) guardarBarrio(f.barrio, f.lat, f.lon);   // un barrio: su localidad, y el barrio para los avisos
+    return;
+  }
   digo(f ? f.localidad : todaLa());
   const g = f && (f.dias ? f : await localidadDe(f.localidad, f.prov));
   decir(!f ? RESPUESTAS.hoy(null) : g ? RESPUESTAS.localidad(g) : 'Uy, no pude traer los datos de esa localidad. Probá de nuevo en un rato.');
 }
-buscador($('#buscar-lugar'), $('#sug-lugar'), lugarElegido, () => INDICE_LISTO || LOCS);
+// Barrios de Córdoba (data/barrios.json, de OpenStreetMap) para el buscador de «¿Dónde estás?»: cada uno con la
+// localidad que lo contiene (la más cercana, contando que las ciudades grandes ocupan más que su centro)
+let BARRIOS_CBA = null, barriosCbaPedidos = false;
+async function cargarBarriosCba() {
+  if (barriosCbaPedidos) return;
+  barriosCbaPedidos = true;
+  const a = await leer('barrios.json', 'data/');
+  const locs = (INDICE_LISTO || LOCS).filter(f => f.prov === 'cordoba' && f.lat != null);
+  if (!a || !a.barrios || !locs.length) { barriosCbaPedidos = false; return; }
+  const nombresLoc = new Set(locs.map(f => sinTildes(f.localidad))), vistos = new Set(), salida = [];
+  for (const [n0, la, lo] of a.barrios) {
+    const n = String(n0 || '').trim(), loc = n && masCercana(la, lo, locs);
+    if (!loc || nombresLoc.has(sinTildes(n)) || kmEntre(loc.lat, loc.lon, la, lo) > BARRIO_MAX_KM) continue;
+    const k = `${sinTildes(n)}|${loc.localidad}`;
+    if (vistos.has(k)) continue;
+    vistos.add(k);
+    salida.push({ barrio: n, localidad: loc.localidad, prov: 'cordoba', provNombre: 'Córdoba', lat: la, lon: lo });
+  }
+  BARRIOS_CBA = salida;
+  $('#buscar-lugar').dispatchEvent(new Event('pintar'));
+}
+$('#buscar-lugar').addEventListener('focus', cargarBarriosCba);
+buscador($('#buscar-lugar'), $('#sug-lugar'), lugarElegido, () => [...(INDICE_LISTO || LOCS), ...(modoLugar === 'consulta' ? [] : BARRIOS_CBA || [])]);
 $('[data-provincia]').addEventListener('click', () => lugarElegido(null));
 $$('[data-elegir-lugar]').forEach(b => b.addEventListener('click', () => abrirElegirLugar()));
 // «Usar mi ubicación»: primero se pregunta a GeoRef (datos.gob.ar, de donde salen las localidades) en qué provincia y
