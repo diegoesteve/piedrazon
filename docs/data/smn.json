@@ -1,51 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-13 15:30",
+ "consultado": "2026-11-13 15:45",
  "alertas": [
-  {
-   "id": "2026_11_13_1732_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas severas",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "desde": "2026-11-13T17:32:00-03:00",
-   "hasta": "2026-11-13T18:32:00-03:00",
-   "descripcion": "TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "instruccion": "Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Evitá circular por calles inundadas o afectadas. Retirá o asegurá objetos que puedan ser arrastrados por el viento. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, ",
-   "zona": "SANTA FE: BELGRANO - IRIONDO - SAN JERONIMO - SAN MARTIN. CORDOBA: MARCOS JUAREZ.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_13_1732_cap_es.xml",
-   "desde_local": "13/11 17:32",
-   "hasta_local": "13/11 18:32",
-   "localidades": 1,
-   "poligonos": [
-    [
-     [
-      -62.2,
-      -32.57
-     ],
-     [
-      -61.87,
-      -32.91
-     ],
-     [
-      -61.24,
-      -32.81
-     ],
-     [
-      -61.0,
-      -32.42
-     ],
-     [
-      -61.89,
-      -32.33
-     ],
-     [
-      -62.2,
-      -32.57
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_13_1801_cap_es",
    "tipo": "aviso a corto plazo",
@@ -258,6 +214,90 @@
      [
       -65.98,
       -33.56
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_13_1838_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "desde": "2026-11-13T18:38:00-03:00",
+   "hasta": "2026-11-13T20:38:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "SANTA FE: BELGRANO - CASEROS - CASTELLANOS - IRIONDO - LA CAPITAL - LAS COLONIAS - SAN JERONIMO - SAN LORENZO - SAN MARTIN. CORDOBA: MARCOS JUAREZ - UNION. ENTRE RIOS: DIAMANTE.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_13_1838_cap_es.xml",
+   "desde_local": "13/11 18:38",
+   "hasta_local": "13/11 20:38",
+   "localidades": 5,
+   "poligonos": [
+    [
+     [
+      -61.95,
+      -32.81
+     ],
+     [
+      -62.33,
+      -32.77
+     ],
+     [
+      -62.49,
+      -32.65
+     ],
+     [
+      -62.26,
+      -32.16
+     ],
+     [
+      -61.96,
+      -31.8
+     ],
+     [
+      -61.61,
+      -31.68
+     ],
+     [
+      -61.06,
+      -31.73
+     ],
+     [
+      -60.59,
+      -31.96
+     ],
+     [
+      -60.33,
+      -32.17
+     ],
+     [
+      -60.51,
+      -32.41
+     ],
+     [
+      -60.66,
+      -32.57
+     ],
+     [
+      -61.01,
+      -32.89
+     ],
+     [
+      -61.48,
+      -33.01
+     ],
+     [
+      -61.28,
+      -32.81
+     ],
+     [
+      -61.85,
+      -32.89
+     ],
+     [
+      -61.95,
+      -32.81
      ]
     ]
    ]
@@ -15865,7 +15905,7 @@
   "General Roca": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
    "CAP_20261113152211_Tormenta_Llanura_alertas_alertas_21",
-   "2026_11_13_1732_cap_es"
+   "2026_11_13_1838_cap_es"
   ],
   "Guatimozín": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
@@ -15905,7 +15945,8 @@
   ],
   "Leones": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
-   "CAP_20261113152211_Tormenta_Llanura_alertas_alertas_21"
+   "CAP_20261113152211_Tormenta_Llanura_alertas_alertas_21",
+   "2026_11_13_1838_cap_es"
   ],
   "Los Surgentes": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
@@ -15918,7 +15959,8 @@
   ],
   "Marcos Juárez": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
-   "CAP_20261113152211_Tormenta_Llanura_alertas_alertas_21"
+   "CAP_20261113152211_Tormenta_Llanura_alertas_alertas_21",
+   "2026_11_13_1838_cap_es"
   ],
   "Monte Buey": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
@@ -15938,7 +15980,8 @@
   ],
   "Noetinger": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
-   "CAP_20261113152211_Tormenta_Llanura_alertas_alertas_21"
+   "CAP_20261113152211_Tormenta_Llanura_alertas_alertas_21",
+   "2026_11_13_1838_cap_es"
   ],
   "Ordóñez": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
@@ -15958,7 +16001,8 @@
   ],
   "Saira": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
-   "CAP_20261113152211_Tormenta_Llanura_alertas_alertas_21"
+   "CAP_20261113152211_Tormenta_Llanura_alertas_alertas_21",
+   "2026_11_13_1838_cap_es"
   ],
   "Saladillo": [
    "CAP_20261113152223_Tormenta_Patagonia_alertas_alertas_21",
