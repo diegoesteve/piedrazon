@@ -1,135 +1,98 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 05:45",
+ "consultado": "2026-11-13 06:00",
  "radares": {
-  "RMA16": "2026-11-13 05:15",
-  "RMA1": "2026-11-13 05:36",
-  "RMA17": "2026-11-13 05:25"
+  "RMA16": "2026-11-13 05:39",
+  "RMA17": "2026-11-13 05:42",
+  "RMA1": "2026-11-13 05:45"
  },
  "nucleos": [
   {
-   "lat": -31.0347,
-   "lon": -64.8912,
+   "lat": -30.8355,
+   "lon": -63.9552,
+   "max_dbz": 61,
+   "tope_km": 16.4,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.0528,
+   "lon": -64.9235,
    "max_dbz": 60,
    "tope_km": 16.4,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.7811,
-   "lon": -64.0305,
-   "max_dbz": 60,
-   "tope_km": 17.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.7266,
-   "lon": -64.3963,
-   "max_dbz": 59,
-   "tope_km": 13.5,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.6812,
-   "lon": -63.8046,
+   "lat": -31.0166,
+   "lon": -63.1053,
    "max_dbz": 57,
-   "tope_km": 17.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.8083,
-   "lon": -64.2995,
-   "max_dbz": 55,
-   "tope_km": 13.5,
+   "tope_km": 12.3,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
    "lat": -30.8627,
-   "lon": -64.5254,
+   "lon": -64.0951,
+   "max_dbz": 57,
+   "tope_km": 16.4,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -35.1929,
+   "lon": -62.4945,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.6903,
+   "lon": -64.4178,
    "max_dbz": 54,
-   "tope_km": 14.1,
+   "tope_km": 13.5,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.089,
-   "lon": -65.3538,
+   "lat": -30.8899,
+   "lon": -63.0838,
    "max_dbz": 53,
-   "tope_km": 11.7,
+   "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.0257,
-   "lon": -63.1161,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.9533,
-   "lon": -64.7513,
+   "lat": -30.7266,
+   "lon": -63.8369,
    "max_dbz": 51,
    "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": null
-  },
-  {
-   "lat": -32.0828,
-   "lon": -64.9677,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "radar": "RMA17",
-   "nivel": null
   }
  ],
  "localidades": {
-  "Cañada de Luque": {
-   "nivel": "granizo probable",
-   "km": 9.9,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-13 05:36"
-  },
-  "Cañada de Río Pinto": {
-   "nivel": "granizo probable",
-   "km": 8.8,
-   "max_dbz": 55,
-   "tope_km": 13.5,
-   "visto": "2026-11-13 05:36"
-  },
   "Cruz de Caña": {
    "nivel": "granizo probable",
-   "km": 7.6,
+   "km": 4.1,
    "max_dbz": 60,
    "tope_km": 16.4,
-   "visto": "2026-11-13 05:36"
+   "visto": "2026-11-13 05:45"
   },
-  "Los Mistoles": {
+  "La Quinta": {
    "nivel": "granizo probable",
-   "km": 9.7,
+   "km": 7.9,
    "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-13 05:36"
+   "tope_km": 12.3,
+   "visto": "2026-11-13 05:45"
   },
-  "Sarmiento": {
+  "Sinsacate": {
    "nivel": "granizo probable",
-   "km": 8.6,
-   "max_dbz": 60,
-   "tope_km": 17.0,
-   "visto": "2026-11-13 05:36"
-  },
-  "Villa del Totoral": {
-   "nivel": "granizo probable",
-   "km": 8.4,
-   "max_dbz": 60,
-   "tope_km": 17.0,
-   "visto": "2026-11-13 05:36"
+   "km": 9.0,
+   "max_dbz": 57,
+   "tope_km": 16.4,
+   "visto": "2026-11-13 05:45"
   }
  }
 }
