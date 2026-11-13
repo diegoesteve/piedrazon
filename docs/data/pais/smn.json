@@ -1,7 +1,51 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-13 00:30",
+ "consultado": "2026-11-13 00:45",
  "alertas": [
+  {
+   "id": "2026_11_13_0343_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "desde": "2026-11-13T03:43:00-03:00",
+   "hasta": "2026-11-13T05:43:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "LA PAMPA: LIMAY MAHUIDA - LOVENTUE - UTRACAN.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_13_0343_cap_es.xml",
+   "desde_local": "13/11 03:43",
+   "hasta_local": "13/11 05:43",
+   "localidades": 1,
+   "poligonos": [
+    [
+     [
+      -66.5,
+      -37.02
+     ],
+     [
+      -66.56,
+      -37.32
+     ],
+     [
+      -65.45,
+      -37.4
+     ],
+     [
+      -65.29,
+      -37.09
+     ],
+     [
+      -65.4,
+      -36.74
+     ],
+     [
+      -66.5,
+      -37.02
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261112210531_Tormenta_Llanura_alertas_alertas_3",
    "tipo": "alerta",
@@ -48280,7 +48324,8 @@
   ],
   "Chacharramendi": [
    "CAP_20261112210830_Tormenta_Patagonia_alertas_alertas_12",
-   "CAP_20261112210531_Tormenta_Llanura_alertas_alertas_12"
+   "CAP_20261112210531_Tormenta_Llanura_alertas_alertas_12",
+   "2026_11_13_0343_cap_es"
   ],
   "Colonia Barón": [
    "CAP_20261112210830_Tormenta_Patagonia_alertas_alertas_12",
