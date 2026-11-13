@@ -1,11 +1,27 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 05:15",
+ "consultado": "2026-11-13 05:30",
  "radares": {
-  "RMA16": "2026-11-13 04:50",
-  "RMA1": "2026-11-13 05:00"
+  "RMA1": "2026-11-13 05:09",
+  "RMA16": "2026-11-13 05:06"
  },
  "nucleos": [
+  {
+   "lat": -31.0257,
+   "lon": -65.3,
+   "max_dbz": 64,
+   "tope_km": 14.7,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.6721,
+   "lon": -64.0521,
+   "max_dbz": 62,
+   "tope_km": 17.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
   {
    "lat": -30.7357,
    "lon": -64.3748,
@@ -15,66 +31,66 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.8627,
-   "lon": -64.7944,
-   "max_dbz": 61,
+   "lat": -30.8989,
+   "lon": -64.8051,
+   "max_dbz": 58,
+   "tope_km": 16.4,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.3264,
+   "lon": -64.4931,
+   "max_dbz": 55,
    "tope_km": 14.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.0076,
-   "lon": -65.257,
-   "max_dbz": 58,
-   "tope_km": 14.7,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.6721,
-   "lon": -64.0951,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.3811,
-   "lon": -64.5362,
+   "lat": -34.1576,
+   "lon": -64.7129,
    "max_dbz": 53,
-   "tope_km": 13.5,
-   "radar": "RMA1",
-   "nivel": null
+   "tope_km": 4.1,
+   "radar": "RMA16",
+   "nivel": null,
+   "descartado": "tope bajo (4.1 km)"
   }
  ],
  "localidades": {
   "Ciénaga del Coro": {
    "nivel": "granizo probable",
-   "km": 3.8,
-   "max_dbz": 58,
+   "km": 8.2,
+   "max_dbz": 64,
    "tope_km": 14.7,
-   "visto": "2026-11-13 05:00"
+   "visto": "2026-11-13 05:09"
+  },
+  "La Playa": {
+   "nivel": "granizo probable",
+   "km": 9.7,
+   "max_dbz": 64,
+   "tope_km": 14.7,
+   "visto": "2026-11-13 05:09"
+  },
+  "Las Cañadas": {
+   "nivel": "granizo probable",
+   "km": 9.2,
+   "max_dbz": 58,
+   "tope_km": 16.4,
+   "visto": "2026-11-13 05:09"
   },
   "Tosno": {
    "nivel": "granizo probable",
-   "km": 7.3,
-   "max_dbz": 58,
+   "km": 9.1,
+   "max_dbz": 64,
    "tope_km": 14.7,
-   "visto": "2026-11-13 05:00"
-  },
-  "Villa Gutiérrez": {
-   "nivel": "granizo probable",
-   "km": 9.6,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "visto": "2026-11-13 05:00"
+   "visto": "2026-11-13 05:09"
   },
   "Villa del Totoral": {
    "nivel": "granizo probable",
-   "km": 5.5,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "visto": "2026-11-13 05:00"
+   "km": 4.2,
+   "max_dbz": 62,
+   "tope_km": 17.0,
+   "visto": "2026-11-13 05:09"
   }
  }
 }
