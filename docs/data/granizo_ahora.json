@@ -1,88 +1,82 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 04:45",
+ "consultado": "2026-11-13 05:00",
  "radares": {
-  "RMA1": "2026-11-13 04:33",
-  "RMA16": "2026-11-13 04:26"
+  "RMA1": "2026-11-13 04:42",
+  "RMA16": "2026-11-13 04:34"
  },
  "nucleos": [
   {
-   "lat": -30.2717,
-   "lon": -64.4501,
+   "lat": -30.9533,
+   "lon": -65.2247,
+   "max_dbz": 61,
+   "tope_km": 14.7,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.5085,
+   "lon": -64.1381,
    "max_dbz": 61,
    "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.6358,
-   "lon": -64.3103,
+   "lat": -30.3173,
+   "lon": -64.4716,
    "max_dbz": 60,
-   "tope_km": 14.7,
+   "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.917,
-   "lon": -65.1924,
+   "lat": -30.7175,
+   "lon": -64.4178,
    "max_dbz": 58,
+   "tope_km": 14.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.6631,
+   "lon": -64.3103,
+   "max_dbz": 58,
+   "tope_km": 14.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.4357,
+   "lon": -64.3425,
+   "max_dbz": 54,
    "tope_km": 14.7,
    "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.4448,
-   "lon": -64.1596,
-   "max_dbz": 55,
-   "tope_km": 15.2,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.2309,
-   "lon": -65.0884,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -30.5994,
-   "lon": -64.1919,
-   "max_dbz": 51,
-   "tope_km": 14.7,
+   "lat": -30.8355,
+   "lon": -64.8482,
+   "max_dbz": 53,
+   "tope_km": 12.3,
    "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "Avellaneda": {
+  "Ciénaga del Coro": {
    "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 60,
-   "tope_km": 14.7,
-   "visto": "2026-11-13 04:33"
-  },
-  "Quilino": {
-   "nivel": "granizo probable",
-   "km": 6.3,
+   "km": 5.8,
    "max_dbz": 61,
-   "tope_km": 17.0,
-   "visto": "2026-11-13 04:33"
+   "tope_km": 14.7,
+   "visto": "2026-11-13 04:42"
   },
   "Tosno": {
    "nivel": "granizo probable",
-   "km": 9.2,
-   "max_dbz": 58,
+   "km": 5.6,
+   "max_dbz": 61,
    "tope_km": 14.7,
-   "visto": "2026-11-13 04:33"
-  },
-  "Villa Tulumba": {
-   "nivel": "granizo probable",
-   "km": 6.6,
-   "max_dbz": 55,
-   "tope_km": 15.2,
-   "visto": "2026-11-13 04:33"
+   "visto": "2026-11-13 04:42"
   }
  }
 }
