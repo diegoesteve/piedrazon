@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-20 15:30",
+ "consultado": "2026-11-20 15:33",
  "alertas": [
   {
    "id": "2026_11_20_1729_cap_es",
@@ -142,6 +142,62 @@
      [
       -59.31,
       -37.29
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_20_1826_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-20T18:26:00-03:00",
+   "hasta": "2026-11-20T21:26:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "BUENOS AIRES: BERISSO - ENSENADA - LA PLATA - MAGDALENA - PUNTA INDIO. RIO DE LA PLATA: RIO DE LA PLATA INTERIOR.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_20_1826_cap_es.xml",
+   "desde_local": "20/11 18:26",
+   "hasta_local": "20/11 21:26",
+   "localidades": 43,
+   "poligonos": [
+    [
+     [
+      -57.16,
+      -35.46
+     ],
+     [
+      -57.38,
+      -35.39
+     ],
+     [
+      -58.13,
+      -34.84
+     ],
+     [
+      -58.01,
+      -34.8
+     ],
+     [
+      -57.69,
+      -34.79
+     ],
+     [
+      -57.38,
+      -34.85
+     ],
+     [
+      -57.1,
+      -35.0
+     ],
+     [
+      -56.94,
+      -35.42
+     ],
+     [
+      -57.16,
+      -35.46
      ]
     ]
    ]
@@ -54702,10 +54758,12 @@
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Alvarez Jonte": [
+   "2026_11_20_1826_cap_es",
    "CAP_20261120154539_Tormenta_Patagonia_alertas_alertas_8",
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
   "Atalaya": [
+   "2026_11_20_1826_cap_es",
    "CAP_20261120154539_Tormenta_Patagonia_alertas_alertas_8",
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
@@ -54718,14 +54776,17 @@
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
   "General Mansilla": [
+   "2026_11_20_1826_cap_es",
    "CAP_20261120154539_Tormenta_Patagonia_alertas_alertas_8",
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
   "Los Naranjos": [
+   "2026_11_20_1826_cap_es",
    "CAP_20261120154539_Tormenta_Patagonia_alertas_alertas_8",
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
   "Magdalena": [
+   "2026_11_20_1826_cap_es",
    "CAP_20261120154539_Tormenta_Patagonia_alertas_alertas_8",
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
@@ -54734,14 +54795,17 @@
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
   "Punta Indio": [
+   "2026_11_20_1826_cap_es",
    "CAP_20261120154539_Tormenta_Patagonia_alertas_alertas_8",
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
   "Roberto J. Payró": [
+   "2026_11_20_1826_cap_es",
    "CAP_20261120154539_Tormenta_Patagonia_alertas_alertas_8",
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
   "Verónica": [
+   "2026_11_20_1826_cap_es",
    "CAP_20261120154539_Tormenta_Patagonia_alertas_alertas_8",
    "CAP_20261120154539_Tormenta_Llanura_alertas_alertas_8"
   ],
@@ -57589,7 +57653,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "Arana": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Arturo Seguí": [
    "2026_11_20_1731_cap_es"
@@ -57598,16 +57663,20 @@
    "2026_11_20_1731_cap_es"
   ],
   "Barrio Banco Provincia": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Barrio El Carmen Este": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Barrio El Carmen Oeste": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Barrio Gambier": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Barrio Las Golondrinas": [
    "2026_11_20_1731_cap_es"
@@ -57625,7 +57694,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "Barrio Universitario": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Berazategui": [
    "2026_11_20_1731_cap_es"
@@ -57634,7 +57704,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "Berisso": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Bernal": [
    "2026_11_20_1731_cap_es"
@@ -57661,7 +57732,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "City Bell": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Claypole": [
    "2026_11_20_1731_cap_es"
@@ -57670,7 +57742,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "Dique N° 1": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Domselaar": [
    "2026_11_20_1731_cap_es"
@@ -57694,7 +57767,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "Ensenada": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Estanislao Severo Zeballos": [
    "2026_11_20_1731_cap_es"
@@ -57733,13 +57807,15 @@
    "2026_11_20_1731_cap_es"
   ],
   "Isla Santiago": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Joaquín Gorina": [
    "2026_11_20_1731_cap_es"
   ],
   "José Hernández": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "José María Ezeiza": [
    "2026_11_20_1731_cap_es"
@@ -57757,10 +57833,12 @@
    "2026_11_20_1731_cap_es"
   ],
   "La Cumbre (Buenos Aires)": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "La Plata": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "La Unión (Buenos Aires)": [
    "2026_11_20_1731_cap_es"
@@ -57784,7 +57862,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "Manuel B. Gonnet (dpto. La Plata, Buenos Aires)": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Ministro Rivadavia": [
    "2026_11_20_1731_cap_es"
@@ -57796,7 +57875,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "Pereyra": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Plátanos": [
    "2026_11_20_1731_cap_es"
@@ -57805,7 +57885,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "Punta Lara": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Quilmes": [
    "2026_11_20_1731_cap_es"
@@ -57820,10 +57901,12 @@
    "2026_11_20_1731_cap_es"
   ],
   "Ringuelet": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Rufino de Elizalde": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "San Francisco Solano (dpto. Almirante Brown, Buenos Aires)": [
    "2026_11_20_1731_cap_es"
@@ -57844,7 +57927,8 @@
    "2026_11_20_1731_cap_es"
   ],
   "Tolosa": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Transradio": [
    "2026_11_20_1731_cap_es"
@@ -57856,52 +57940,65 @@
    "2026_11_20_1731_cap_es"
   ],
   "Villa Argüello": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa Brown": [
    "2026_11_20_1731_cap_es"
   ],
   "Villa Catela": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa Dolores (Buenos Aires)": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa Elisa (Buenos Aires)": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa Elvira (Buenos Aires)": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa España": [
    "2026_11_20_1731_cap_es"
   ],
   "Villa Garibaldi": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa Independencia (Buenos Aires)": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa La Florida": [
    "2026_11_20_1731_cap_es"
   ],
   "Villa Montoro": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa Nueva (Buenos Aires)": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa Parque Sicardi": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa Porteña": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa Progreso": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa San Carlos": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Villa San Luis": [
    "2026_11_20_1731_cap_es"
@@ -57913,10 +58010,14 @@
    "2026_11_20_1731_cap_es"
   ],
   "Villa Zula": [
-   "2026_11_20_1731_cap_es"
+   "2026_11_20_1731_cap_es",
+   "2026_11_20_1826_cap_es"
   ],
   "Ángel Etcheverry": [
    "2026_11_20_1731_cap_es"
+  ],
+  "Los Talas (Buenos Aires)": [
+   "2026_11_20_1826_cap_es"
   ]
  }
 }
