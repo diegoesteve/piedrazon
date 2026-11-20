@@ -1,17 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 17:30",
+ "consultado": "2026-11-20 17:45",
  "radares": {
-  "RMA6": "2026-11-20 16:55",
-  "RMA10": "2026-11-20 17:16"
+  "RMA10": "2026-11-20 17:16",
+  "RMA16": "2026-11-20 17:20",
+  "RMA3": "2026-11-20 17:24"
  },
  "nucleos": [
   {
-   "lat": -37.9307,
-   "lon": -57.7619,
-   "max_dbz": 67,
-   "tope_km": 10.6,
-   "radar": "RMA6",
+   "lat": -25.0539,
+   "lon": -59.0154,
+   "max_dbz": 62,
+   "tope_km": 14.1,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -24.5317,
+   "lon": -58.6138,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
@@ -23,6 +32,14 @@
    "nivel": "posible granizo"
   },
   {
+   "lat": -25.2783,
+   "lon": -58.9853,
+   "max_dbz": 59,
+   "tope_km": 17.0,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
    "lat": -39.1602,
    "lon": -63.3665,
    "max_dbz": 58,
@@ -31,19 +48,43 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -37.5609,
-   "lon": -58.6866,
-   "max_dbz": 56,
-   "tope_km": 13.5,
-   "radar": "RMA6",
+   "lat": -25.0539,
+   "lon": -58.3729,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -37.6422,
-   "lon": -58.5461,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA6",
+   "lat": -24.694,
+   "lon": -59.6579,
+   "max_dbz": 58,
+   "tope_km": 12.3,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.4588,
+   "lon": -64.1277,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -25.5023,
+   "lon": -59.8487,
+   "max_dbz": 55,
+   "tope_km": 7.6,
+   "radar": "RMA3",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -23.9983,
+   "lon": -60.3807,
+   "max_dbz": 53,
+   "tope_km": 14.1,
+   "radar": "RMA3",
    "nivel": null
   },
   {
@@ -55,67 +96,35 @@
    "nivel": null
   },
   {
-   "lat": -37.5519,
-   "lon": -58.9207,
+   "lat": -25.1976,
+   "lon": -58.8849,
    "max_dbz": 51,
-   "tope_km": 10.6,
-   "radar": "RMA6",
+   "tope_km": 17.0,
+   "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -38.2718,
-   "lon": -57.7502,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -38.3792,
-   "lon": -57.8204,
+   "lat": -25.1976,
+   "lon": -59.4872,
    "max_dbz": 50,
    "tope_km": 10.0,
-   "radar": "RMA6",
+   "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -38.4507,
-   "lon": -57.8673,
+   "lat": -32.4405,
+   "lon": -64.3044,
    "max_dbz": 49,
    "tope_km": 10.0,
-   "radar": "RMA6",
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -38.2091,
-   "lon": -57.6683,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -38.3076,
-   "lon": -57.6332,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -38.3076,
-   "lon": -57.8322,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -38.3971,
-   "lon": -57.9258,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "radar": "RMA6",
+   "lat": -25.1168,
+   "lon": -59.3467,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "radar": "RMA3",
    "nivel": null
   },
   {
@@ -125,57 +134,30 @@
    "tope_km": 9.4,
    "radar": "RMA10",
    "nivel": null
+  },
+  {
+   "lat": -24.9281,
+   "lon": -58.5536,
+   "max_dbz": 48,
+   "tope_km": 14.1,
+   "radar": "RMA3",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Barrio Colinas Verdes": {
-   "nivel": "granizo probable",
-   "km": 6.9,
-   "max_dbz": 67,
-   "tope_km": 10.6,
-   "visto": "2026-11-20 16:55"
-  },
-  "Barrio El Coyunco": {
-   "nivel": "granizo probable",
-   "km": 2.5,
-   "max_dbz": 67,
-   "tope_km": 10.6,
-   "visto": "2026-11-20 16:55"
-  },
-  "Barrio La Gloria": {
-   "nivel": "granizo probable",
-   "km": 1.2,
-   "max_dbz": 67,
-   "tope_km": 10.6,
-   "visto": "2026-11-20 16:55"
-  },
-  "Barrio Santa Paula": {
-   "nivel": "granizo probable",
-   "km": 6.9,
-   "max_dbz": 67,
-   "tope_km": 10.6,
-   "visto": "2026-11-20 16:55"
-  },
-  "Batán": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 67,
-   "tope_km": 10.6,
-   "visto": "2026-11-20 16:55"
-  },
-  "Napaleofú": {
+  "Las Peñas (dpto. Río Cuarto, Córdoba)": {
    "nivel": "granizo probable",
    "km": 8.7,
-   "max_dbz": 56,
-   "tope_km": 13.5,
-   "visto": "2026-11-20 16:55"
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-20 17:20"
   },
-  "Sierra de los Padres": {
+  "Buena Vista (Formosa)": {
    "nivel": "granizo probable",
    "km": 2.3,
-   "max_dbz": 67,
-   "tope_km": 10.6,
-   "visto": "2026-11-20 16:55"
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "visto": "2026-11-20 17:24"
   }
  }
 }
