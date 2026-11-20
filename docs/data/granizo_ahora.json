@@ -1,26 +1,42 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 18:30",
+ "consultado": "2026-11-20 18:45",
  "radares": {
-  "RMA17": "2026-11-20 18:11"
+  "RMA17": "2026-11-20 18:27",
+  "RMA1": "2026-11-20 18:32"
  },
  "nucleos": [
   {
-   "lat": -32.3379,
-   "lon": -63.8135,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "radar": "RMA17",
+   "lat": -32.2573,
+   "lon": -63.7186,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "radar": "RMA1",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.2924,
+   "lon": -63.6376,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "radar": "RMA17",
+   "nivel": null
   }
  ],
  "localidades": {
-  "General Fotheringham": {
+  "Pampayasta Norte": {
    "nivel": "granizo probable",
-   "km": 5.4,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "visto": "2026-11-20 18:11"
+   "km": 6.2,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-20 18:32"
+  },
+  "Pampayasta Sud": {
+   "nivel": "granizo probable",
+   "km": 6.2,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-20 18:32"
   }
  }
 }
