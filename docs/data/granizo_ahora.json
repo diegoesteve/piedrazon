@@ -1,70 +1,20 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 19:15",
+ "consultado": "2026-11-20 19:30",
  "radares": {
-  "RMA17": "2026-11-20 19:00",
-  "RMA1": "2026-11-20 18:59"
+  "RMA17": "2026-11-20 19:16",
+  "RMA1": "2026-11-20 19:17"
  },
  "nucleos": [
   {
-   "lat": -32.2573,
-   "lon": -64.5469,
-   "max_dbz": 57,
-   "tope_km": 6.4,
-   "radar": "RMA1",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -32.1192,
-   "lon": -63.5277,
+   "lat": -32.0338,
+   "lon": -63.4281,
    "max_dbz": 55,
-   "tope_km": 9.4,
-   "radar": "RMA17",
-   "nivel": "posible granizo"
+   "tope_km": 5.3,
+   "radar": "RMA1",
+   "nivel": null,
+   "descartado": "tope bajo (5.3 km)"
   }
  ],
- "localidades": {
-  "Amboy": {
-   "nivel": "posible granizo",
-   "km": 9.4,
-   "max_dbz": 57,
-   "tope_km": 6.4,
-   "visto": "2026-11-20 18:59"
-  },
-  "James Craik": {
-   "nivel": "posible granizo",
-   "km": 8.1,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "visto": "2026-11-20 19:00"
-  },
-  "La Cruz": {
-   "nivel": "posible granizo",
-   "km": 8.6,
-   "max_dbz": 57,
-   "tope_km": 6.4,
-   "visto": "2026-11-20 18:59"
-  },
-  "Oliva": {
-   "nivel": "posible granizo",
-   "km": 8.3,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "visto": "2026-11-20 19:00"
-  },
-  "Villa Amancay": {
-   "nivel": "posible granizo",
-   "km": 5.4,
-   "max_dbz": 57,
-   "tope_km": 6.4,
-   "visto": "2026-11-20 18:59"
-  },
-  "Villa Quillinzo": {
-   "nivel": "posible granizo",
-   "km": 2.3,
-   "max_dbz": 57,
-   "tope_km": 6.4,
-   "visto": "2026-11-20 18:59"
-  }
- }
+ "localidades": {}
 }
