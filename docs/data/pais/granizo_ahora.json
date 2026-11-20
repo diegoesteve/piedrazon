@@ -1,34 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 18:17",
+ "consultado": "2026-11-20 18:30",
  "radares": {
-  "RMA17": "2026-11-20 18:03"
+  "RMA17": "2026-11-20 18:11"
  },
  "nucleos": [
   {
-   "lat": -32.3652,
-   "lon": -63.9894,
-   "max_dbz": 59,
-   "tope_km": 17.0,
+   "lat": -32.3379,
+   "lon": -63.8135,
+   "max_dbz": 57,
+   "tope_km": 13.5,
    "radar": "RMA17",
    "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.4924,
-   "lon": -63.9344,
-   "max_dbz": 52,
-   "tope_km": 8.8,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.4015,
-   "lon": -64.2862,
-   "max_dbz": 50,
-   "tope_km": 12.3,
-   "radar": "RMA17",
-   "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "General Fotheringham": {
+   "nivel": "granizo probable",
+   "km": 5.5,
+   "max_dbz": 57,
+   "tope_km": 13.5,
+   "visto": "2026-11-20 18:11"
+  }
+ }
 }
