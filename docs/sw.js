@@ -3,7 +3,7 @@
 //   - Los datos (data/*.json): siempre de la red primero; si no hay conexión, los últimos que se guardaron.
 //   - Los mosaicos del mapa no se guardan.
 // Cambiar VERSION cuando cambie la lista de archivos de APP.
-const VERSION = 'piedrazon-2026-10-31-4';
+const VERSION = 'piedrazon-2026-11-20-1';
 const APP = ['./', 'index.html', 'app.js', 'piedrazon.js', 'cuis.js', 'style.css', 'manifest.webmanifest',
   'iconos/icono-192.png', 'iconos/icono-512.png', 'iconos/apple-touch-icon.png',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
@@ -25,8 +25,10 @@ async function redPrimero(req, clave) {
   const cache = await caches.open(VERSION);
   try {
     const r = await fetch(req);
-    if (r.ok) cache.put(clave, r.clone());
-    return r;
+    if (r.ok) { cache.put(clave, r.clone()); return r; }
+    // un 404 o 5xx (por ejemplo, mientras GitHub Pages publica) no tiene que dejar a la app sin datos: la copia guardada
+    const guardada = await cache.match(clave);
+    return guardada || r;
   } catch (e) {
     const guardada = await cache.match(clave);
     if (guardada) return guardada;
@@ -34,15 +36,17 @@ async function redPrimero(req, clave) {
   }
 }
 
+// Lo guardado se busca con la URL exacta (con su ?v=…): antes se ignoraba el ?v= y, después de cada cambio, el HTML nuevo
+// corría con el app.js viejo. Si no está esa versión, primero la red; sin señal, cualquier versión guardada.
 async function guardadoYActualizar(ev, req) {
   const cache = await caches.open(VERSION);
-  const guardada = await cache.match(req, { ignoreSearch: true });
-  const nueva = fetch(req).then(r => {
-    if (r.ok || r.type === 'opaque') cache.put(req.url.split('?')[0], r.clone());
+  const guardada = await cache.match(req);
+  const nueva = fetch(req).then(async r => {
+    if (r.ok || r.type === 'opaque') { await cache.delete(req, { ignoreSearch: true }); await cache.put(req, r.clone()); }
     return r;
   }).catch(() => null);
   if (guardada) { ev.waitUntil(nueva); return guardada; }
-  return (await nueva) || Response.error();
+  return (await nueva) || (await cache.match(req, { ignoreSearch: true })) || Response.error();
 }
 
 self.addEventListener('fetch', ev => {

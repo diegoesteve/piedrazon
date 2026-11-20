@@ -94,6 +94,9 @@ function textoConfirmaciones(f, cs) {
   return `${cs.length === 1 ? 'Un vecino confirma' : `${cs.length} vecinos confirman`} que está cayendo piedra en ${esc(f.localidad)}` +
     `${tam ? `, del tamaño ${COMO[tam]}` : ''} (${cs.length === 1 ? '' : 'el último, '}${horaCorta(cs[0].t)}).`;
 }
+// El pronóstico se renueva cada 6 horas y la última corrida del día es cerca de las 21:35: entre la medianoche y la
+// corrida siguiente, su primer día es el de ayer. Se descartan los días que ya pasaron para que [0] sea siempre hoy.
+const desdeHoy = dias => (dias || []).filter(d => (d && d.fecha ? d.fecha : d) >= hoyISO());
 const ARCHIVOS = ['granizo_ahora.json', 'granizo_pronostico.json', 'localidades.json', 'smn.json', 'granizo_horas.json', 'granizo_reciente.json'];
 // Datos de una localidad de otra provincia, solo para contestar en el chat sin cambiar lo que se está mirando
 async function localidadDe(nombre, prov) {
@@ -103,7 +106,7 @@ async function localidadDe(nombre, prov) {
   const f = ((l && l.localidades) || []).find(x => x.localidad === nombre);
   if (!f) return null;
   const radarFresco = a && edad(a.consultado) <= 60;
-  return { ...f, prov, provNombre: corta((l && l.provincia) || 'Córdoba'), smn: s || { alertas: [], localidades: {} }, dias: (p && p.localidades[nombre]) || [],
+  return { ...f, prov, provNombre: corta((l && l.provincia) || 'Córdoba'), smn: s || { alertas: [], localidades: {} }, dias: desdeHoy(p && p.localidades[nombre]),
     radar: radarFresco ? (a.localidades || {})[nombre] || null : null, reciente: ((r && r.localidades) || {})[nombre] || [] };
 }
 async function cargar() {
@@ -116,9 +119,10 @@ async function cargar() {
   PROV_NOMBRE = corta((l && l.provincia) || 'Córdoba');
   // Del SMN, las alertas naranjas y rojas suben el nivel de Piedrazón; las amarillas son muy generales y solo se muestran
   // como información (Piedrazón pone cara de duda, pero no cambia el nivel ni manda avisos)
+  if (p) p.dias = desdeHoy(p.dias);
   AHORA = a; PRON = p; SMN = s; HORAS = h && h.horas && h.horas.length ? h : null;
   const radarFresco = a && edad(a.consultado) <= 60;
-  LOCS = ((l && l.localidades) || []).map(f => ({ ...f, prov: PROV, provNombre: PROV_NOMBRE, dias: (p && p.localidades[f.localidad]) || [], radar: radarFresco ? (a.localidades || {})[f.localidad] || null : null,
+  LOCS = ((l && l.localidades) || []).map(f => ({ ...f, prov: PROV, provNombre: PROV_NOMBRE, dias: desdeHoy(p && p.localidades[f.localidad]), radar: radarFresco ? (a.localidades || {})[f.localidad] || null : null,
     reciente: ((r && r.localidades) || {})[f.localidad] || [] }));
   if (HORAS) {
     // conteo por hora: [moderado, alto]
@@ -195,7 +199,14 @@ function nivelLocalidad(f) {
 function nivelGeneral() {
   const e = AHORA ? edad(AHORA.consultado) : null;
   const locs = n => plural(n, 'localidad', 'localidades');
-  if (e == null || e > 60) return ['mascota', 'Todavía no tengo datos frescos del radar. Volvé en un rato.'];
+  // Con el radar viejo (los cron de GitHub se atrasan) igual se miran las alertas del SMN y el pronóstico: antes el
+  // titular decía «sin datos frescos» y escondía una alerta naranja o roja vigente
+  const viejo = e == null || e > 60;
+  const [nivel, texto] = nivelGeneralCon(locs);
+  if (viejo && nivel === 'tranqui') return ['mascota', 'Todavía no tengo datos frescos del radar. Volvé en un rato.'];
+  return viejo ? [nivel, `${texto} Ojo: el último dato del radar tiene más de una hora.`] : [nivel, texto];
+}
+function nivelGeneralCon(locs) {
   const afect = LOCS.filter(f => f.radar), prob = afect.filter(f => f.radar.nivel === 'granizo probable');
   const ultima = afect.map(f => f.radar).filter(v => v.visto).sort((x, y) => (y.visto > x.visto ? 1 : -1))[0], h = horaRadar(ultima);
   if (prob.length) return ['furioso', `¡Granizo probable cerca de ${locs(prob.length)}${h ? ` (radar ${h})` : ''}! Si estás ahí, no salgas y alejate de las ventanas.`];
@@ -250,7 +261,8 @@ function riesgoDia(f, i) {
 }
 function nombreDia(fecha, i) {
   const d = fechaDe(fecha);
-  return i === 0 ? 'Hoy' : i === 1 ? 'Mañana' : `${DIAS[d.getDay()][0].toUpperCase()}${DIAS[d.getDay()].slice(1, 3)} ${d.getDate()}`;
+  const manana = claveHora(new Date(Date.now() + 864e5)).slice(0, 10);
+  return fecha === hoyISO() ? 'Hoy' : fecha === manana ? 'Mañana' : `${DIAS[d.getDay()][0].toUpperCase()}${DIAS[d.getDay()].slice(1, 3)} ${d.getDate()}`;
 }
 // Tramos de horas seguidas con condiciones para granizo, desde ahora y hasta `cuantas` horas
 function tramos(f, cuantas = 72) {
@@ -1056,7 +1068,13 @@ async function sincronizarAvisos() {
   if (Notification.permission !== 'granted') { PREF.set('push', null); return pintarAjustes(); }
   if (PREF.get('provincia', 'cordoba') !== PROV) return;   // se está mirando otra provincia: no se toca
   const f = miLocalidad();
-  if (!f) { await apagarAvisos(); return pintarAjustes(); }
+  // Sin la localidad (no cargó localidades.json, un error de red o cambió el nombre) no se toca la suscripción: antes
+  // se apagaban los avisos sin decir nada y el usuario se enteraba cuando ya caía la piedra. Se reintenta en la próxima carga.
+  // Solo se apagan si el usuario mismo dejó de tener localidad (eligió «Toda la provincia»).
+  if (!f) {
+    if (PREF.get('localidad', null) == null) { await apagarAvisos(); pintarAjustes(); }
+    return;
+  }
   const reg = await navigator.serviceWorker.ready;
   const b = miBarrio();
   if (p.localidad === claveAviso(f.localidad, PROV_NOMBRE) && p.umbral === PREF.get('umbral', 'enojado') && (p.barrio || null) === (b ? marcaBarrio(b) : null)
@@ -1268,6 +1286,41 @@ setInterval(async () => {
   if (document.visibilityState !== 'visible' || !LOCS.some(x => x.radar)) return;
   await cargarReportes(); pintarTodo();
 }, 3 * 60 * 1000);
+// Tirar para actualizar: con la página arriba de todo, tirar hacia abajo y soltar recarga los datos (lo que se espera de
+// cualquier app). No se activa sobre el mapa (ahí el dedo mueve el mapa) ni con el diálogo de localidad abierto.
+(function tirarParaActualizar() {
+  const ptr = $('#ptr'), rueda = ptr.querySelector('.ptr-rueda'), UMBRAL = 70, MAX = 110;
+  let y0 = null, dy = 0, cargando = false;
+  const poner = (y, rot) => { ptr.style.transform = `translateY(${y - 64}px)`; ptr.style.opacity = Math.min(1, y / UMBRAL); rueda.style.transform = rot == null ? '' : `rotate(${rot}deg)`; };
+  const soltar = () => { ptr.classList.add('suelta'); poner(0); ptr.classList.remove('listo', 'cargando'); };
+  document.addEventListener('touchstart', ev => {
+    const el = ev.target instanceof Element ? ev.target : null;
+    if (cargando || window.scrollY > 0 || ev.touches.length !== 1 || dlg.open || (el && el.closest('#mapa, .leaflet-container, dialog'))) { y0 = null; return; }
+    y0 = ev.touches[0].clientY; dy = 0; ptr.classList.remove('suelta');
+  }, { passive: true });
+  document.addEventListener('touchmove', ev => {
+    if (y0 == null) return;
+    dy = ev.touches[0].clientY - y0;
+    if (dy <= 0 || window.scrollY > 0) { if (dy < 0) { y0 = null; soltar(); } return; }
+    ev.preventDefault();   // mientras se tira, que no se mueva la página
+    const y = Math.min(MAX, dy * 0.5);
+    poner(y, dy * 1.5);
+    ptr.classList.toggle('listo', y >= UMBRAL);
+  }, { passive: false });
+  document.addEventListener('touchend', async () => {
+    if (y0 == null) return;
+    y0 = null;
+    if (Math.min(MAX, dy * 0.5) < UMBRAL) return soltar();
+    cargando = true;
+    ptr.classList.add('suelta', 'cargando'); poner(UMBRAL);
+    $('#ptr-estado').textContent = 'Actualizando…';
+    const minimo = new Promise(r => setTimeout(r, 600));   // que la ruedita se vea girar aunque la red sea rápida
+    try { await Promise.all([recargar(), minimo]); $('#ptr-estado').textContent = 'Datos actualizados.'; }
+    catch (e) { $('#ptr-estado').textContent = 'No se pudo actualizar.'; }
+    cargando = false; soltar();
+  });
+  document.addEventListener('touchcancel', () => { if (y0 != null && !cargando) { y0 = null; soltar(); } });
+})();
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState !== 'visible') return;
   avisosLeidos();

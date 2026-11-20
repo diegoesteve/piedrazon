@@ -23,11 +23,13 @@
 <link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=202610311300">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="">
+<link rel="stylesheet" href="style.css?v=202611200900">
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
+<div class="ptr" id="ptr" aria-hidden="true"><div class="ptr-rueda"></div></div>
+<p class="sr" id="ptr-estado" role="status" aria-live="polite"></p>
 
 <main id="contenido">
 
@@ -253,10 +255,10 @@
   <button type="button" class="boton-sec ancho" data-provincia>Ver toda la provincia</button>
 </dialog>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="piedrazon.js?v=202610311300"></script>
-<script src="cuis.js?v=202610311300"></script>
-<script src="app.js?v=202610311300"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin=""></script>
+<script src="piedrazon.js?v=202611200900"></script>
+<script src="cuis.js?v=202611200900"></script>
+<script src="app.js?v=202611200900"></script>
 <!-- Cloudflare Web Analytics: cuenta visitas sin cookies ni datos personales -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "83643e72d4eb498ebea4cd5510e83adf"}'></script>
 </body>
