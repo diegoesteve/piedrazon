@@ -1,18 +1,66 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 05:45",
+ "consultado": "2026-11-21 06:00",
  "radares": {
-  "RMA16": "2026-11-21 05:29"
+  "RMA16": "2026-11-21 05:45",
+  "RMA17": "2026-11-21 05:46",
+  "RMA1": "2026-11-21 05:44"
  },
  "nucleos": [
   {
-   "lat": -32.1297,
-   "lon": -65.0884,
-   "max_dbz": 50,
+   "lat": -32.1022,
+   "lon": -65.0,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.2029,
+   "lon": -64.978,
+   "max_dbz": 54,
    "tope_km": 10.0,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.7775,
+   "lon": -64.978,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -33.9964,
+   "lon": -63.8516,
+   "max_dbz": 50,
+   "tope_km": 12.9,
    "radar": "RMA16",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "La Población": {
+   "nivel": "granizo probable",
+   "km": 2.7,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-21 05:45"
+  },
+  "Luyaba": {
+   "nivel": "granizo probable",
+   "km": 8.7,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-21 05:45"
+  },
+  "San Javier y Yacanto": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "visto": "2026-11-21 05:45"
+  }
+ }
 }
