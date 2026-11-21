@@ -1,26 +1,34 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 19:30",
+ "consultado": "2026-11-21 19:45",
  "radares": {
-  "RMA1": "2026-11-21 19:18",
-  "RMA17": "2026-11-21 19:15",
-  "RMA16": "2026-11-21 19:16"
+  "RMA17": "2026-11-21 19:32",
+  "RMA16": "2026-11-21 19:16",
+  "RMA1": "2026-11-21 19:27"
  },
  "nucleos": [
-  {
-   "lat": -33.0928,
-   "lon": -64.633,
-   "max_dbz": 65,
-   "tope_km": 13.5,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
   {
    "lat": -33.2129,
    "lon": -65.0773,
    "max_dbz": 64,
    "tope_km": 12.9,
    "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.0952,
+   "lon": -64.6356,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.9068,
+   "lon": -64.7513,
+   "max_dbz": 63,
+   "tope_km": 11.7,
+   "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
@@ -32,18 +40,10 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.9334,
-   "lon": -64.8267,
-   "max_dbz": 60,
-   "tope_km": 12.9,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.1169,
-   "lon": -64.6819,
-   "max_dbz": 60,
-   "tope_km": 17.0,
+   "lat": -33.0989,
+   "lon": -64.506,
+   "max_dbz": 61,
+   "tope_km": 15.2,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
@@ -56,42 +56,58 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.3691,
-   "lon": -63.3299,
-   "max_dbz": 59,
-   "tope_km": 11.1,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.441,
-   "lon": -63.6157,
-   "max_dbz": 58,
-   "tope_km": 11.1,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.9725,
-   "lon": -64.8578,
-   "max_dbz": 57,
+   "lat": -32.941,
+   "lon": -64.8454,
+   "max_dbz": 60,
    "tope_km": 17.0,
-   "radar": "RMA17",
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.0898,
-   "lon": -65.0886,
-   "max_dbz": 52,
-   "tope_km": 14.1,
+   "lat": -33.1635,
+   "lon": -65.1924,
+   "max_dbz": 60,
+   "tope_km": 12.3,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.9068,
+   "lon": -65.5367,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.3691,
+   "lon": -63.3409,
+   "max_dbz": 54,
+   "tope_km": 11.1,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -33.45,
-   "lon": -64.0224,
+   "lat": -33.3061,
+   "lon": -63.3738,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.0357,
+   "lon": -64.9677,
+   "max_dbz": 53,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -33.3871,
+   "lon": -63.5497,
    "max_dbz": 52,
-   "tope_km": 10.6,
+   "tope_km": 11.1,
    "radar": "RMA17",
    "nivel": null
   },
@@ -104,11 +120,19 @@
    "nivel": null
   },
   {
-   "lat": -33.0751,
-   "lon": -65.0095,
+   "lat": -33.0397,
+   "lon": -64.9127,
    "max_dbz": 50,
    "tope_km": 11.1,
    "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -33.3061,
+   "lon": -63.132,
+   "max_dbz": 49,
+   "tope_km": 11.7,
+   "radar": "RMA17",
    "nivel": null
   },
   {
@@ -117,6 +141,14 @@
    "max_dbz": 49,
    "tope_km": 14.7,
    "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.8979,
+   "lon": -65.2785,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "radar": "RMA1",
    "nivel": null
   },
   {
@@ -129,33 +161,19 @@
   }
  ],
  "localidades": {
-  "La Carlota": {
-   "nivel": "granizo probable",
-   "km": 5.9,
-   "max_dbz": 59,
-   "tope_km": 11.1,
-   "visto": "2026-11-21 19:15"
-  },
-  "La Carolina El Potosí": {
-   "nivel": "granizo probable",
-   "km": 9.1,
-   "max_dbz": 60,
-   "tope_km": 17.0,
-   "visto": "2026-11-21 19:15"
-  },
   "Las Albahacas": {
    "nivel": "granizo probable",
-   "km": 4.2,
+   "km": 5.6,
    "max_dbz": 60,
-   "tope_km": 12.9,
-   "visto": "2026-11-21 19:18"
+   "tope_km": 17.0,
+   "visto": "2026-11-21 19:16"
   },
   "Villa El Chacay": {
    "nivel": "granizo probable",
-   "km": 5.7,
+   "km": 5.5,
    "max_dbz": 60,
-   "tope_km": 12.9,
-   "visto": "2026-11-21 19:18"
+   "tope_km": 17.0,
+   "visto": "2026-11-21 19:16"
   }
  }
 }
