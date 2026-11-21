@@ -1,51 +1,82 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 15:15",
+ "consultado": "2026-11-21 15:30",
  "radares": {
-  "RMA16": "2026-11-21 15:02",
-  "RMA17": "2026-11-21 15:02"
+  "RMA16": "2026-11-21 15:19",
+  "RMA17": "2026-11-21 15:18"
  },
  "nucleos": [
   {
-   "lat": -34.8881,
-   "lon": -65.7509,
-   "max_dbz": 60,
-   "tope_km": 14.1,
+   "lat": -33.592,
+   "lon": -65.762,
+   "max_dbz": 63,
+   "tope_km": 10.6,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.8526,
-   "lon": -65.508,
-   "max_dbz": 56,
-   "tope_km": 11.7,
+   "lat": -34.897,
+   "lon": -65.8945,
+   "max_dbz": 61,
+   "tope_km": 12.3,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.5289,
+   "lon": -65.5963,
+   "max_dbz": 58,
+   "tope_km": 11.1,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
    "lat": -33.574,
-   "lon": -65.8724,
-   "max_dbz": 54,
+   "lon": -64.6688,
+   "max_dbz": 57,
+   "tope_km": 11.1,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.8349,
+   "lon": -65.6736,
+   "max_dbz": 55,
    "tope_km": 11.7,
    "radar": "RMA16",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -34.9147,
-   "lon": -65.8614,
-   "max_dbz": 53,
-   "tope_km": 12.9,
+   "lat": -34.897,
+   "lon": -65.4859,
+   "max_dbz": 55,
+   "tope_km": 11.7,
    "radar": "RMA16",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -34.7816,
-   "lon": -65.4307,
-   "max_dbz": 49,
-   "tope_km": 13.5,
+   "lat": -33.5379,
+   "lon": -64.3265,
+   "max_dbz": 52,
+   "tope_km": 8.8,
    "radar": "RMA16",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Bulnes": {
+   "nivel": "granizo probable",
+   "km": 7.8,
+   "max_dbz": 57,
+   "tope_km": 11.1,
+   "visto": "2026-11-21 15:19"
+  },
+  "Coronel Moldes": {
+   "nivel": "granizo probable",
+   "km": 8.6,
+   "max_dbz": 57,
+   "tope_km": 11.1,
+   "visto": "2026-11-21 15:19"
+  }
+ }
 }
