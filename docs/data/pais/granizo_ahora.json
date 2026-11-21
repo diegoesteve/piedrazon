@@ -1,17 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 12:26",
+ "consultado": "2026-11-21 12:30",
  "radares": {
-  "RMA15": "2026-11-21 12:12",
-  "RMA19": "2026-11-21 12:15",
   "RMA1": "2026-11-21 12:09",
   "RMA18": "2026-11-21 12:16",
-  "RMA16": "2026-11-21 12:10",
+  "RMA16": "2026-11-21 12:18",
   "RMA17": "2026-11-21 12:10",
   "RMA7": "2026-11-21 12:14",
-  "RMA12": "2026-11-21 12:16"
+  "RMA12": "2026-11-21 12:16",
+  "RMA15": "2026-11-21 12:20",
+  "RMA19": "2026-11-21 12:15"
  },
  "nucleos": [
+  {
+   "lat": -33.2129,
+   "lon": -65.0994,
+   "max_dbz": 63,
+   "tope_km": 9.4,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
   {
    "lat": -37.3028,
    "lon": -68.3349,
@@ -117,14 +125,6 @@
    "nivel": null
   },
   {
-   "lat": -30.4795,
-   "lon": -66.485,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
    "lat": -32.0338,
    "lon": -63.03,
    "max_dbz": 53,
@@ -146,6 +146,14 @@
    "max_dbz": 53,
    "tope_km": 10.6,
    "radar": "RMA7",
+   "nivel": null
+  },
+  {
+   "lat": -30.1025,
+   "lon": -67.2465,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "radar": "RMA15",
    "nivel": null
   },
   {
@@ -205,6 +213,14 @@
    "nivel": null
   },
   {
+   "lat": -32.5864,
+   "lon": -65.0332,
+   "max_dbz": 51,
+   "tope_km": 11.7,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
    "lat": -31.8635,
    "lon": -63.165,
    "max_dbz": 51,
@@ -229,22 +245,6 @@
    "nivel": null
   },
   {
-   "lat": -34.6684,
-   "lon": -68.4674,
-   "max_dbz": 49,
-   "tope_km": 14.1,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -32.6046,
-   "lon": -65.0884,
-   "max_dbz": 49,
-   "tope_km": 12.9,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
    "lat": -32.0371,
    "lon": -62.6593,
    "max_dbz": 49,
@@ -261,19 +261,19 @@
    "nivel": null
   },
   {
+   "lat": -34.6684,
+   "lon": -68.4674,
+   "max_dbz": 49,
+   "tope_km": 14.1,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
    "lat": -37.4182,
    "lon": -66.149,
    "max_dbz": 48,
    "tope_km": 11.1,
    "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -32.7503,
-   "lon": -65.0773,
-   "max_dbz": 48,
-   "tope_km": 12.3,
-   "radar": "RMA16",
    "nivel": null
   },
   {
@@ -323,6 +323,13 @@
    "max_dbz": 57,
    "tope_km": 11.7,
    "visto": "2026-11-21 12:16"
+  },
+  "La Punilla": {
+   "nivel": "granizo probable",
+   "km": 7.7,
+   "max_dbz": 63,
+   "tope_km": 9.4,
+   "visto": "2026-11-21 12:18"
   }
  }
 }
