@@ -1,12 +1,12 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 04:15",
+ "consultado": "2026-11-21 04:18",
  "radares": {
   "RMA5": "2026-11-21 03:57",
   "RMA3": "2026-11-21 03:59",
   "RMA15": "2026-11-21 03:41",
   "RMA2": "2026-11-21 04:00",
-  "RMA16": "2026-11-21 03:59"
+  "RMA16": "2026-11-21 04:07"
  },
  "nucleos": [
   {
@@ -71,6 +71,14 @@
    "max_dbz": 59,
    "tope_km": 17.0,
    "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.0136,
+   "lon": -66.1926,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
@@ -151,6 +159,14 @@
    "max_dbz": 54,
    "tope_km": 17.0,
    "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -32.7684,
+   "lon": -65.5853,
+   "max_dbz": 54,
+   "tope_km": 8.8,
+   "radar": "RMA16",
    "nivel": null
   },
   {
@@ -290,14 +306,6 @@
    "nivel": null
   },
   {
-   "lat": -32.5864,
-   "lon": -66.1926,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
    "lat": -23.4353,
    "lon": -60.461,
    "max_dbz": 49,
@@ -311,6 +319,14 @@
    "max_dbz": 49,
    "tope_km": 17.0,
    "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -32.6046,
+   "lon": -66.0933,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "radar": "RMA16",
    "nivel": null
   },
   {
@@ -337,6 +353,13 @@
    "max_dbz": 60,
    "tope_km": 11.1,
    "visto": "2026-11-21 03:59"
+  },
+  "Villa de la Quebrada": {
+   "nivel": "granizo probable",
+   "km": 8.9,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "visto": "2026-11-21 04:07"
   }
  }
 }
