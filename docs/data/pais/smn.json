@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-21 00:01",
+ "consultado": "2026-11-21 00:15",
  "alertas": [
   {
    "id": "2026_11_21_0226_cap_es",
@@ -16,6 +16,58 @@
    "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_21_0226_cap_es.xml",
    "desde_local": "21/11 02:26",
    "hasta_local": "21/11 03:26",
+   "localidades": 4,
+   "poligonos": [
+    [
+     [
+      -61.54,
+      -24.36
+     ],
+     [
+      -61.47,
+      -24.56
+     ],
+     [
+      -61.17,
+      -24.65
+     ],
+     [
+      -60.94,
+      -24.85
+     ],
+     [
+      -59.99,
+      -24.73
+     ],
+     [
+      -60.12,
+      -24.38
+     ],
+     [
+      -61.22,
+      -24.15
+     ],
+     [
+      -61.54,
+      -24.36
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_21_0309_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS",
+   "desde": "2026-11-21T03:09:00-03:00",
+   "hasta": "2026-11-21T04:09:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS",
+   "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "FORMOSA: BERMEJO - PATINO.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_21_0309_cap_es.xml",
+   "desde_local": "21/11 03:09",
+   "hasta_local": "21/11 04:09",
    "localidades": 4,
    "poligonos": [
     [
@@ -47148,6 +47200,7 @@
   ],
   "Laguna Yema": [
    "2026_11_21_0226_cap_es",
+   "2026_11_21_0309_cap_es",
    "CAP_20261120232525_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261120232525_Tormenta_Llanura_alertas_alertas_19",
    "CAP_20261120232523_Tormenta_Patagonia_alertas_alertas_9",
@@ -47173,6 +47226,7 @@
   ],
   "Pozo del Mortero": [
    "2026_11_21_0226_cap_es",
+   "2026_11_21_0309_cap_es",
    "CAP_20261120232525_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261120232525_Tormenta_Llanura_alertas_alertas_19",
    "CAP_20261120232523_Tormenta_Patagonia_alertas_alertas_9",
@@ -47392,6 +47446,7 @@
   ],
   "Juan G. Bazán": [
    "2026_11_21_0226_cap_es",
+   "2026_11_21_0309_cap_es",
    "CAP_20261120232525_Tormenta_Llanura_alertas_alertas_20",
    "CAP_20261120232523_Tormenta_Patagonia_alertas_alertas_51",
    "CAP_20261120232525_Tormenta_Llanura_alertas_alertas_51",
@@ -47399,6 +47454,7 @@
   ],
   "Las Lomitas": [
    "2026_11_21_0226_cap_es",
+   "2026_11_21_0309_cap_es",
    "CAP_20261120232525_Tormenta_Llanura_alertas_alertas_20",
    "CAP_20261120232523_Tormenta_Patagonia_alertas_alertas_51",
    "CAP_20261120232525_Tormenta_Llanura_alertas_alertas_51",
