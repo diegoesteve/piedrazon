@@ -1,52 +1,84 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 07:15",
+ "consultado": "2026-11-21 07:30",
  "radares": {
-  "RMA16": "2026-11-21 06:59",
-  "RMA1": "2026-11-21 07:01",
-  "RMA17": "2026-11-21 06:59"
+  "RMA16": "2026-11-21 07:15",
+  "RMA17": "2026-11-21 07:16",
+  "RMA1": "2026-11-21 07:10"
  },
  "nucleos": [
   {
-   "lat": -32.3675,
-   "lon": -65.243,
-   "max_dbz": 58,
-   "tope_km": 13.5,
+   "lat": -32.3857,
+   "lon": -65.0111,
+   "max_dbz": 59,
+   "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.5773,
-   "lon": -64.7019,
+   "lat": -32.4861,
+   "lon": -64.5473,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.0143,
+   "lon": -63.8406,
    "max_dbz": 54,
-   "tope_km": 9.4,
+   "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.3733,
-   "lon": -65.1494,
-   "max_dbz": 54,
+   "lat": -32.267,
+   "lon": -65.1436,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.8814,
+   "lon": -64.8482,
+   "max_dbz": 53,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.4405,
-   "lon": -65.4086,
+   "lat": -32.9773,
+   "lon": -65.7399,
    "max_dbz": 52,
-   "tope_km": 11.7,
+   "tope_km": 8.8,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.6648,
-   "lon": -64.9018,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "radar": "RMA17",
+   "lat": -32.2212,
+   "lon": -64.8896,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.4679,
+   "lon": -65.3313,
+   "max_dbz": 47,
+   "tope_km": 10.0,
+   "radar": "RMA16",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Las Caleras": {
+   "nivel": "granizo probable",
+   "km": 9.8,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "visto": "2026-11-21 07:15"
+  }
+ }
 }
