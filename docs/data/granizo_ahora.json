@@ -1,76 +1,89 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 08:00",
+ "consultado": "2026-11-21 08:15",
  "radares": {
-  "RMA16": "2026-11-21 07:48",
-  "RMA1": "2026-11-21 07:45",
-  "RMA17": "2026-11-21 07:49"
+  "RMA1": "2026-11-21 08:03",
+  "RMA16": "2026-11-21 07:56",
+  "RMA17": "2026-11-21 08:05"
  },
  "nucleos": [
   {
-   "lat": -32.6137,
-   "lon": -65.6295,
+   "lat": -31.9442,
+   "lon": -64.3318,
+   "max_dbz": 57,
+   "tope_km": 15.2,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.6046,
+   "lon": -65.5743,
    "max_dbz": 57,
    "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.8276,
-   "lon": -64.7406,
-   "max_dbz": 57,
-   "tope_km": 6.4,
+   "lat": -31.8994,
+   "lon": -64.4286,
+   "max_dbz": 55,
+   "tope_km": 15.2,
    "radar": "RMA1",
-   "nivel": "posible granizo"
+   "nivel": "granizo probable"
   },
   {
-   "lat": -33.1948,
-   "lon": -65.1215,
-   "max_dbz": 54,
-   "tope_km": 9.4,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -31.9352,
-   "lon": -64.4394,
+   "lat": -32.3198,
+   "lon": -64.5147,
    "max_dbz": 53,
-   "tope_km": 7.6,
+   "tope_km": 8.2,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.5955,
-   "lon": -65.8724,
+   "lat": -32.6502,
+   "lon": -65.497,
    "max_dbz": 52,
-   "tope_km": 11.1,
+   "tope_km": 12.9,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.6648,
-   "lon": -64.572,
-   "max_dbz": 52,
-   "tope_km": 12.3,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.9773,
-   "lon": -65.519,
+   "lat": -32.6137,
+   "lon": -65.7841,
    "max_dbz": 51,
-   "tope_km": 9.4,
+   "tope_km": 10.6,
    "radar": "RMA16",
    "nivel": null
   }
  ],
  "localidades": {
-  "La Cumbrecita": {
-   "nivel": "posible granizo",
-   "km": 9.0,
+  "Los Molinos": {
+   "nivel": "granizo probable",
+   "km": 6.7,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "visto": "2026-11-21 08:03"
+  },
+  "Monte Ralo": {
+   "nivel": "granizo probable",
+   "km": 9.6,
    "max_dbz": 57,
-   "tope_km": 6.4,
-   "visto": "2026-11-21 07:45"
+   "tope_km": 15.2,
+   "visto": "2026-11-21 08:03"
+  },
+  "San Agustín": {
+   "nivel": "granizo probable",
+   "km": 5.3,
+   "max_dbz": 57,
+   "tope_km": 15.2,
+   "visto": "2026-11-21 08:03"
+  },
+  "Villa Ciudad Parque Los Reartes": {
+   "nivel": "granizo probable",
+   "km": 8.9,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "visto": "2026-11-21 08:03"
   }
  }
 }
