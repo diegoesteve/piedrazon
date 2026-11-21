@@ -1,84 +1,124 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 07:30",
+ "consultado": "2026-11-21 07:45",
  "radares": {
-  "RMA16": "2026-11-21 07:15",
-  "RMA17": "2026-11-21 07:16",
-  "RMA1": "2026-11-21 07:10"
+  "RMA16": "2026-11-21 07:32",
+  "RMA17": "2026-11-21 07:32",
+  "RMA1": "2026-11-21 07:24"
  },
  "nucleos": [
   {
-   "lat": -32.3857,
-   "lon": -65.0111,
-   "max_dbz": 59,
+   "lat": -32.409,
+   "lon": -64.8804,
+   "max_dbz": 57,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.5682,
+   "lon": -65.8282,
+   "max_dbz": 56,
    "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.4861,
-   "lon": -64.5473,
-   "max_dbz": 59,
-   "tope_km": 11.1,
+   "lat": -32.2487,
+   "lon": -64.9338,
+   "max_dbz": 55,
+   "tope_km": 11.7,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.0143,
-   "lon": -63.8406,
+   "lat": -32.5923,
+   "lon": -64.4181,
+   "max_dbz": 55,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.8635,
+   "lon": -64.4931,
    "max_dbz": 54,
-   "tope_km": 17.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.267,
-   "lon": -65.1436,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -31.8814,
-   "lon": -64.8482,
-   "max_dbz": 53,
-   "tope_km": 9.4,
+   "tope_km": 7.6,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.9773,
-   "lon": -65.7399,
+   "lat": -32.3127,
+   "lon": -64.9559,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.7627,
+   "lon": -64.9227,
+   "max_dbz": 52,
+   "tope_km": 12.9,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.9352,
+   "lon": -64.7836,
+   "max_dbz": 52,
+   "tope_km": 7.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.2483,
+   "lon": -64.8589,
    "max_dbz": 52,
    "tope_km": 8.8,
-   "radar": "RMA16",
+   "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.2212,
-   "lon": -64.8896,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA16",
+   "lat": -32.3015,
+   "lon": -64.8248,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.4679,
-   "lon": -65.3313,
-   "max_dbz": 47,
-   "tope_km": 10.0,
+   "lat": -32.293,
+   "lon": -65.0418,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.5426,
+   "lon": -64.4824,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.6046,
+   "lon": -64.6025,
+   "max_dbz": 50,
+   "tope_km": 11.7,
    "radar": "RMA16",
    "nivel": null
   }
  ],
  "localidades": {
-  "Las Caleras": {
+  "Elena": {
    "nivel": "granizo probable",
-   "km": 9.8,
-   "max_dbz": 59,
-   "tope_km": 11.1,
-   "visto": "2026-11-21 07:15"
+   "km": 3.4,
+   "max_dbz": 55,
+   "tope_km": 14.1,
+   "visto": "2026-11-21 07:32"
   }
  }
 }
