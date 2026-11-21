@@ -1,100 +1,128 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 11:30",
+ "consultado": "2026-11-21 11:45",
  "radares": {
-  "RMA16": "2026-11-21 11:13",
-  "RMA1": "2026-11-21 11:15",
-  "RMA17": "2026-11-21 11:13"
+  "RMA1": "2026-11-21 11:33",
+  "RMA16": "2026-11-21 11:29",
+  "RMA17": "2026-11-21 11:21"
  },
  "nucleos": [
   {
-   "lat": -33.2219,
-   "lon": -65.0663,
-   "max_dbz": 56,
-   "tope_km": 10.6,
+   "lat": -33.2309,
+   "lon": -65.0884,
+   "max_dbz": 59,
+   "tope_km": 10.0,
    "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.2013,
-   "lon": -63.2529,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
    "lat": -32.0606,
-   "lon": -63.8799,
-   "max_dbz": 54,
+   "lon": -63.6325,
+   "max_dbz": 55,
    "tope_km": 7.6,
    "radar": "RMA1",
-   "nivel": null
+   "nivel": "posible granizo"
   },
   {
-   "lat": -32.3733,
-   "lon": -64.6653,
-   "max_dbz": 53,
+   "lat": -31.8814,
+   "lon": -64.4931,
+   "max_dbz": 55,
    "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.3492,
+   "lon": -64.5252,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.9532,
+   "lon": -63.6325,
+   "max_dbz": 54,
+   "tope_km": 7.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.4588,
-   "lon": -65.6847,
-   "max_dbz": 52,
-   "tope_km": 12.3,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.4861,
-   "lon": -65.3313,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -31.7917,
-   "lon": -64.7836,
-   "max_dbz": 52,
+   "lat": -31.8097,
+   "lon": -64.6007,
+   "max_dbz": 54,
    "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.1232,
-   "lon": -63.4604,
-   "max_dbz": 51,
-   "tope_km": 14.1,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.3742,
-   "lon": -64.7369,
-   "max_dbz": 49,
+   "lat": -32.1831,
+   "lon": -63.176,
+   "max_dbz": 54,
    "tope_km": 12.3,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.9544,
-   "lon": -63.088,
-   "max_dbz": 49,
-   "tope_km": 8.2,
+   "lat": -32.3644,
+   "lon": -64.4716,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.0427,
+   "lon": -63.2452,
+   "max_dbz": 52,
+   "tope_km": 7.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.4015,
+   "lon": -64.6269,
+   "max_dbz": 50,
+   "tope_km": 11.7,
    "radar": "RMA17",
    "nivel": null
   }
  ],
  "localidades": {
-  "Arroyo Algodón": {
+  "La Cruz": {
    "nivel": "granizo probable",
-   "km": 8.5,
+   "km": 6.0,
    "max_dbz": 55,
    "tope_km": 12.3,
-   "visto": "2026-11-21 11:13"
+   "visto": "2026-11-21 11:29"
+  },
+  "Las Caleras": {
+   "nivel": "granizo probable",
+   "km": 5.9,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "visto": "2026-11-21 11:29"
+  },
+  "Los Reartes": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "visto": "2026-11-21 11:33"
+  },
+  "Oliva": {
+   "nivel": "posible granizo",
+   "km": 7.2,
+   "max_dbz": 55,
+   "tope_km": 7.6,
+   "visto": "2026-11-21 11:33"
+  },
+  "Villa Ciudad Parque Los Reartes": {
+   "nivel": "granizo probable",
+   "km": 2.8,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "visto": "2026-11-21 11:33"
   }
  }
 }
