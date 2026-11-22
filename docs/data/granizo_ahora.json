@@ -1,59 +1,52 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 00:15",
+ "consultado": "2026-11-22 00:30",
  "radares": {
-  "RMA17": "2026-11-22 00:02",
-  "RMA16": "2026-11-22 00:03",
-  "RMA1": "2026-11-22 00:01"
+  "RMA1": "2026-11-22 00:19",
+  "RMA17": "2026-11-22 00:10",
+  "RMA16": "2026-11-22 00:19"
  },
  "nucleos": [
   {
-   "lat": -32.1831,
-   "lon": -63.11,
+   "lat": -32.028,
+   "lon": -62.6923,
+   "max_dbz": 56,
+   "tope_km": 12.9,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.1375,
+   "lon": -63.198,
    "max_dbz": 55,
    "tope_km": 12.9,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.0463,
-   "lon": -62.7583,
-   "max_dbz": 55,
-   "tope_km": 14.7,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.3949,
-   "lon": -64.6356,
-   "max_dbz": 55,
-   "tope_km": 11.7,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.1501,
-   "lon": -63.2775,
-   "max_dbz": 55,
-   "tope_km": 10.0,
+   "lat": -32.1411,
+   "lon": -63.0838,
+   "max_dbz": 53,
+   "tope_km": 11.1,
    "radar": "RMA1",
-   "nivel": "granizo probable"
+   "nivel": null
+  },
+  {
+   "lat": -32.0645,
+   "lon": -62.7583,
+   "max_dbz": 52,
+   "tope_km": 12.3,
+   "radar": "RMA17",
+   "nivel": null
   }
  ],
  "localidades": {
   "Arroyo Algodón": {
    "nivel": "granizo probable",
-   "km": 5.4,
+   "km": 7.8,
    "max_dbz": 55,
    "tope_km": 12.9,
-   "visto": "2026-11-22 00:02"
-  },
-  "Cañada del Sauce": {
-   "nivel": "granizo probable",
-   "km": 1.4,
-   "max_dbz": 55,
-   "tope_km": 11.7,
-   "visto": "2026-11-22 00:03"
+   "visto": "2026-11-22 00:10"
   }
  }
 }
