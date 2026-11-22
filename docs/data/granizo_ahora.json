@@ -1,26 +1,18 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 10:15",
+ "consultado": "2026-11-22 10:30",
  "radares": {
-  "RMA1": "2026-11-22 10:04",
-  "RMA17": "2026-11-22 09:59"
+  "RMA17": "2026-11-22 09:59",
+  "RMA1": "2026-11-22 10:13"
  },
  "nucleos": [
   {
-   "lat": -31.3058,
-   "lon": -63.5249,
-   "max_dbz": 58,
+   "lat": -31.2968,
+   "lon": -63.4173,
+   "max_dbz": 54,
    "tope_km": 10.0,
    "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.2878,
-   "lon": -63.7401,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
    "lat": -31.2764,
@@ -31,34 +23,5 @@
    "nivel": null
   }
  ],
- "localidades": {
-  "Kilómetro 658": {
-   "nivel": "granizo probable",
-   "km": 7.1,
-   "max_dbz": 58,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 10:04"
-  },
-  "Piquillín": {
-   "nivel": "granizo probable",
-   "km": 2.4,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 10:04"
-  },
-  "Río Primero": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 58,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 10:04"
-  },
-  "Sagrada Familia": {
-   "nivel": "granizo probable",
-   "km": 7.8,
-   "max_dbz": 58,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 10:04"
-  }
- }
+ "localidades": {}
 }
