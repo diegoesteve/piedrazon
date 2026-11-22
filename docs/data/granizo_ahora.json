@@ -1,95 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 08:15",
+ "consultado": "2026-11-22 08:30",
  "radares": {
-  "RMA1": "2026-11-22 07:57",
-  "RMA17": "2026-11-22 07:56",
-  "RMA16": "2026-11-22 08:06"
+  "RMA17": "2026-11-22 08:12",
+  "RMA1": "2026-11-22 08:15",
+  "RMA16": "2026-11-22 08:14"
  },
  "nucleos": [
   {
-   "lat": -31.0347,
-   "lon": -64.902,
-   "max_dbz": 66,
-   "tope_km": 12.3,
+   "lat": -31.0981,
+   "lon": -64.6653,
+   "max_dbz": 64,
+   "tope_km": 13.5,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.2336,
-   "lon": -64.3856,
-   "max_dbz": 58,
+   "lat": -32.0645,
+   "lon": -64.9787,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.1884,
+   "lon": -64.2027,
+   "max_dbz": 57,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": "posible granizo"
   },
   {
    "lat": -31.3419,
-   "lon": -64.8804,
-   "max_dbz": 56,
-   "tope_km": 16.4,
+   "lon": -64.7621,
+   "max_dbz": 52,
+   "tope_km": 10.0,
    "radar": "RMA1",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -30.6631,
-   "lon": -63.299,
-   "max_dbz": 56,
-   "tope_km": 8.2,
+   "lat": -31.3329,
+   "lon": -64.9557,
+   "max_dbz": 50,
+   "tope_km": 8.8,
    "radar": "RMA1",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -31.9641,
-   "lon": -64.9787,
-   "max_dbz": 51,
-   "tope_km": 13.5,
-   "radar": "RMA17",
    "nivel": null
   }
  ],
  "localidades": {
-  "Cruz de Caña": {
+  "Estación General Paz": {
+   "nivel": "posible granizo",
+   "km": 9.0,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-11-22 08:15"
+  },
+  "Estación Juárez Celman": {
+   "nivel": "posible granizo",
+   "km": 6.6,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-11-22 08:15"
+  },
+  "La Población": {
    "nivel": "granizo probable",
-   "km": 6.9,
-   "max_dbz": 66,
-   "tope_km": 12.3,
-   "visto": "2026-11-22 07:57"
+   "km": 2.3,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "visto": "2026-11-22 08:12"
   },
-  "Mendiolaza": {
-   "nivel": "posible granizo",
-   "km": 10.0,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "visto": "2026-11-22 07:57"
-  },
-  "Río Ceballos": {
-   "nivel": "posible granizo",
-   "km": 9.3,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "visto": "2026-11-22 07:57"
-  },
-  "San Gerónimo": {
+  "San Javier y Yacanto": {
    "nivel": "granizo probable",
-   "km": 4.9,
-   "max_dbz": 56,
-   "tope_km": 16.4,
-   "visto": "2026-11-22 07:57"
-  },
-  "Unquillo": {
-   "nivel": "posible granizo",
-   "km": 5.1,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "visto": "2026-11-22 07:57"
-  },
-  "Villa Allende": {
-   "nivel": "posible granizo",
-   "km": 6.4,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "visto": "2026-11-22 07:57"
+   "km": 7.4,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "visto": "2026-11-22 08:12"
   }
  }
 }
