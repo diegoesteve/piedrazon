@@ -1,14 +1,14 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 23:00",
+ "consultado": "2026-11-21 23:15",
  "radares": {
-  "RMA17": "2026-11-21 22:48",
-  "RMA16": "2026-11-21 22:41",
-  "RMA5": "2026-11-21 22:52",
-  "RMA13": "2026-11-21 22:45",
-  "RMA1": "2026-11-21 22:38",
   "RMA14": "2026-11-21 22:35",
-  "RMA6": "2026-11-21 22:51"
+  "RMA13": "2026-11-21 23:01",
+  "RMA1": "2026-11-21 23:06",
+  "RMA17": "2026-11-21 22:56",
+  "RMA16": "2026-11-21 22:49",
+  "RMA5": "2026-11-21 22:52",
+  "RMA6": "2026-11-21 23:01"
  },
  "nucleos": [
   {
@@ -20,59 +20,59 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.3555,
-   "lon": -63.6433,
-   "max_dbz": 56,
-   "tope_km": 12.3,
-   "radar": "RMA1",
+   "lat": -27.5049,
+   "lon": -56.8624,
+   "max_dbz": 62,
+   "tope_km": 9.4,
+   "radar": "RMA13",
    "nivel": "granizo probable"
   },
   {
-   "lat": -36.8614,
-   "lon": -57.1533,
+   "lat": -27.5229,
+   "lon": -56.9656,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "radar": "RMA13",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.2833,
+   "lon": -63.5497,
    "max_dbz": 56,
+   "tope_km": 15.2,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.7735,
+   "lon": -62.8572,
+   "max_dbz": 55,
    "tope_km": 10.0,
-   "radar": "RMA6",
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.3197,
-   "lon": -63.5827,
-   "max_dbz": 54,
-   "tope_km": 12.9,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.2195,
-   "lon": -63.2639,
+   "lat": -32.2468,
+   "lon": -63.187,
    "max_dbz": 53,
-   "tope_km": 13.5,
+   "tope_km": 14.1,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.0645,
-   "lon": -64.9787,
-   "max_dbz": 52,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.3197,
-   "lon": -63.4618,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -36.3762,
-   "lon": -57.3874,
+   "lat": -36.3854,
+   "lon": -57.364,
    "max_dbz": 51,
    "tope_km": 9.4,
    "radar": "RMA6",
+   "nivel": null
+  },
+  {
+   "lat": -32.2662,
+   "lon": -63.4173,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "radar": "RMA1",
    "nivel": null
   },
   {
@@ -84,27 +84,19 @@
    "nivel": null
   },
   {
-   "lat": -27.4238,
-   "lon": -56.0889,
-   "max_dbz": 50,
-   "tope_km": 10.6,
+   "lat": -27.613,
+   "lon": -56.4499,
+   "max_dbz": 49,
+   "tope_km": 8.8,
    "radar": "RMA13",
    "nivel": null
   },
   {
-   "lat": -32.3555,
-   "lon": -64.8267,
-   "max_dbz": 50,
-   "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.1679,
-   "lon": -63.3205,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "radar": "RMA1",
+   "lat": -33.1767,
+   "lon": -66.2368,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "radar": "RMA16",
    "nivel": null
   },
   {
@@ -116,5 +108,20 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Ordoñez": {
+   "nivel": "granizo probable",
+   "km": 7.6,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "visto": "2026-11-21 22:56"
+  },
+  "Pampayasta Norte": {
+   "nivel": "granizo probable",
+   "km": 10.0,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "visto": "2026-11-21 22:56"
+  }
+ }
 }
