@@ -1,19 +1,21 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 10:00",
+ "consultado": "2026-11-22 10:15",
  "radares": {
-  "RMA3": "2026-11-22 09:48",
+  "RMA1": "2026-11-22 10:04",
+  "RMA3": "2026-11-22 10:06",
   "RMA5": "2026-11-22 09:40",
-  "RMA4": "2026-11-22 09:42",
-  "RMA1": "2026-11-22 09:46",
-  "RMA15": "2026-11-22 09:40",
-  "RMA11": "2026-11-22 09:49"
+  "RMA15": "2026-11-22 09:49",
+  "RMA11": "2026-11-22 09:58",
+  "RMA4": "2026-11-22 10:00",
+  "RMA17": "2026-11-22 09:59",
+  "RMA13": "2026-11-22 09:59"
  },
  "nucleos": [
   {
-   "lat": -25.9133,
-   "lon": -61.9669,
-   "max_dbz": 64,
+   "lat": -25.833,
+   "lon": -61.8565,
+   "max_dbz": 66,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
@@ -22,79 +24,111 @@
    "lat": -30.0215,
    "lon": -67.2676,
    "max_dbz": 59,
-   "tope_km": 8.8,
+   "tope_km": 11.7,
    "radar": "RMA15",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -26.6914,
-   "lon": -57.8753,
-   "max_dbz": 57,
-   "tope_km": 8.8,
-   "radar": "RMA4",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -26.9272,
-   "lon": -57.3907,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "radar": "RMA4",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.2426,
-   "lon": -64.235,
-   "max_dbz": 56,
-   "tope_km": 8.2,
+   "lat": -31.3058,
+   "lon": -63.5249,
+   "max_dbz": 58,
+   "tope_km": 10.0,
    "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -24.7661,
+   "lon": -58.664,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "radar": "RMA3",
    "nivel": "posible granizo"
   },
   {
-   "lat": -31.3148,
-   "lon": -63.7616,
+   "lat": -27.0415,
+   "lon": -62.8424,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -28.0869,
+   "lon": -66.02,
+   "max_dbz": 57,
+   "tope_km": 13.5,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.2878,
+   "lon": -63.7401,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.7731,
+   "lon": -57.7103,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "radar": "RMA4",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -24.8561,
+   "lon": -59.5274,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -24.1251,
+   "lon": -58.3327,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -24.685,
+   "lon": -60.2603,
+   "max_dbz": 55,
+   "tope_km": 7.0,
+   "radar": "RMA3",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -25.0269,
+   "lon": -58.2926,
+   "max_dbz": 54,
+   "tope_km": 9.4,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -26.6369,
+   "lon": -57.9784,
    "max_dbz": 53,
    "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -27.3489,
-   "lon": -65.9684,
-   "max_dbz": 53,
-   "tope_km": 14.1,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -27.0087,
-   "lon": -59.9376,
-   "max_dbz": 52,
-   "tope_km": 7.0,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -27.3489,
-   "lon": -66.0716,
+   "lat": -26.9091,
+   "lon": -57.1948,
    "max_dbz": 52,
+   "tope_km": 11.1,
+   "radar": "RMA4",
+   "nivel": null
+  },
+  {
+   "lat": -26.5006,
+   "lon": -61.8264,
+   "max_dbz": 49,
    "tope_km": 14.7,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -27.0687,
-   "lon": -62.9558,
-   "max_dbz": 52,
-   "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -24.6039,
-   "lon": -58.2022,
-   "max_dbz": 50,
-   "tope_km": 11.7,
    "radar": "RMA3",
    "nivel": null
   },
@@ -107,121 +141,66 @@
    "nivel": null
   },
   {
-   "lat": -26.8275,
-   "lon": -57.5247,
+   "lat": -26.8728,
+   "lon": -57.3701,
    "max_dbz": 49,
-   "tope_km": 7.6,
+   "tope_km": 10.6,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -27.2315,
-   "lon": -66.0509,
-   "max_dbz": 49,
-   "tope_km": 17.0,
-   "radar": "RMA11",
+   "lat": -31.2764,
+   "lon": -63.8025,
+   "max_dbz": 48,
+   "tope_km": 14.1,
+   "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -27.0415,
-   "lon": -62.8836,
-   "max_dbz": 49,
-   "tope_km": 17.0,
-   "radar": "RMA11",
+   "lat": -24.712,
+   "lon": -58.2524,
+   "max_dbz": 47,
+   "tope_km": 9.4,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -24.8921,
+   "lon": -59.8687,
+   "max_dbz": 47,
+   "tope_km": 6.4,
+   "radar": "RMA3",
    "nivel": null
   }
  ],
  "localidades": {
-  "1° de Agosto": {
-   "nivel": "posible granizo",
-   "km": 9.1,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
+  "Kilómetro 658": {
+   "nivel": "granizo probable",
+   "km": 7.0,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-22 10:04"
   },
-  "Allmirante Brown": {
-   "nivel": "posible granizo",
-   "km": 8.8,
+  "Piquillín": {
+   "nivel": "granizo probable",
+   "km": 2.2,
    "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
+   "tope_km": 10.0,
+   "visto": "2026-11-22 10:04"
   },
-  "Ciudad de los Niños": {
-   "nivel": "posible granizo",
-   "km": 8.1,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
+  "Río Primero": {
+   "nivel": "granizo probable",
+   "km": 9.4,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-22 10:04"
   },
-  "Guiñazú Norte": {
-   "nivel": "posible granizo",
-   "km": 9.2,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
-  },
-  "Juárez Celman": {
-   "nivel": "posible granizo",
-   "km": 6.8,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
-  },
-  "Mendiolaza": {
-   "nivel": "posible granizo",
-   "km": 7.4,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
-  },
-  "Parque Norte": {
-   "nivel": "posible granizo",
-   "km": 8.5,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
-  },
-  "Parque Norte - Ciudad de los Niños - Guiñazú Norte": {
-   "nivel": "posible granizo",
-   "km": 9.6,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
-  },
-  "Unquillo": {
-   "nivel": "posible granizo",
-   "km": 7.3,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
-  },
-  "Villa Allende": {
-   "nivel": "posible granizo",
-   "km": 8.2,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
-  },
-  "Villa Los Llanos": {
-   "nivel": "posible granizo",
-   "km": 8.0,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
-  },
-  "Villa Los Llanos - Juárez Celman": {
-   "nivel": "posible granizo",
-   "km": 7.6,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
-  },
-  "Villa Pastora": {
-   "nivel": "posible granizo",
-   "km": 8.8,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 09:46"
+  "Sagrada Familia": {
+   "nivel": "granizo probable",
+   "km": 7.8,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "visto": "2026-11-22 10:04"
   }
  }
 }
