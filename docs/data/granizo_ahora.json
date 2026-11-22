@@ -1,81 +1,125 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 08:30",
+ "consultado": "2026-11-22 08:45",
  "radares": {
-  "RMA17": "2026-11-22 08:12",
-  "RMA1": "2026-11-22 08:15",
-  "RMA16": "2026-11-22 08:14"
+  "RMA16": "2026-11-22 08:30",
+  "RMA1": "2026-11-22 08:33",
+  "RMA17": "2026-11-22 08:29"
  },
  "nucleos": [
   {
-   "lat": -31.0981,
-   "lon": -64.6653,
-   "max_dbz": 64,
+   "lat": -31.1342,
+   "lon": -64.4609,
+   "max_dbz": 69,
    "tope_km": 13.5,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.0645,
-   "lon": -64.9787,
-   "max_dbz": 60,
-   "tope_km": 17.0,
+   "lat": -32.0006,
+   "lon": -65.0007,
+   "max_dbz": 57,
+   "tope_km": 15.8,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.1884,
-   "lon": -64.2027,
-   "max_dbz": 57,
+   "lat": -31.1523,
+   "lon": -63.9983,
+   "max_dbz": 55,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": "posible granizo"
   },
   {
-   "lat": -31.3419,
-   "lon": -64.7621,
+   "lat": -30.5813,
+   "lon": -62.8902,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.0736,
+   "lon": -64.9787,
+   "max_dbz": 54,
+   "tope_km": 13.5,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.2697,
+   "lon": -64.7836,
    "max_dbz": 52,
-   "tope_km": 10.0,
+   "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.3329,
-   "lon": -64.9557,
-   "max_dbz": 50,
-   "tope_km": 8.8,
+   "lat": -31.3599,
+   "lon": -64.8374,
+   "max_dbz": 48,
+   "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "Estación General Paz": {
-   "nivel": "posible granizo",
-   "km": 9.0,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "visto": "2026-11-22 08:15"
+  "Casa Grande": {
+   "nivel": "granizo probable",
+   "km": 3.1,
+   "max_dbz": 69,
+   "tope_km": 13.5,
+   "visto": "2026-11-22 08:33"
   },
-  "Estación Juárez Celman": {
+  "Colonia Tirolesa": {
    "nivel": "posible granizo",
-   "km": 6.6,
-   "max_dbz": 57,
+   "km": 7.9,
+   "max_dbz": 55,
    "tope_km": 9.4,
-   "visto": "2026-11-22 08:15"
+   "visto": "2026-11-22 08:33"
+  },
+  "Huerta Grande": {
+   "nivel": "granizo probable",
+   "km": 7.7,
+   "max_dbz": 69,
+   "tope_km": 13.5,
+   "visto": "2026-11-22 08:33"
+  },
+  "La Falda": {
+   "nivel": "granizo probable",
+   "km": 7.0,
+   "max_dbz": 69,
+   "tope_km": 13.5,
+   "visto": "2026-11-22 08:33"
   },
   "La Población": {
    "nivel": "granizo probable",
-   "km": 2.3,
-   "max_dbz": 60,
-   "tope_km": 17.0,
-   "visto": "2026-11-22 08:12"
+   "km": 8.6,
+   "max_dbz": 57,
+   "tope_km": 15.8,
+   "visto": "2026-11-22 08:29"
   },
   "San Javier y Yacanto": {
    "nivel": "granizo probable",
-   "km": 7.4,
-   "max_dbz": 60,
-   "tope_km": 17.0,
-   "visto": "2026-11-22 08:12"
+   "km": 3.9,
+   "max_dbz": 57,
+   "tope_km": 15.8,
+   "visto": "2026-11-22 08:29"
+  },
+  "Valle Hermoso": {
+   "nivel": "granizo probable",
+   "km": 3.0,
+   "max_dbz": 69,
+   "tope_km": 13.5,
+   "visto": "2026-11-22 08:33"
+  },
+  "Villa de las Rosas": {
+   "nivel": "granizo probable",
+   "km": 7.6,
+   "max_dbz": 57,
+   "tope_km": 15.8,
+   "visto": "2026-11-22 08:29"
   }
  }
 }
