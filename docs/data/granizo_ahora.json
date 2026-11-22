@@ -1,80 +1,74 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 07:45",
+ "consultado": "2026-11-22 08:00",
  "radares": {
-  "RMA16": "2026-11-22 07:33",
-  "RMA1": "2026-11-22 07:30",
-  "RMA17": "2026-11-22 07:15"
+  "RMA1": "2026-11-22 07:48",
+  "RMA16": "2026-11-22 07:49",
+  "RMA17": "2026-11-22 07:39"
  },
  "nucleos": [
   {
-   "lat": -32.4953,
-   "lon": -64.9669,
-   "max_dbz": 58,
+   "lat": -31.0257,
+   "lon": -64.9988,
+   "max_dbz": 67,
+   "tope_km": 13.5,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.2517,
+   "lon": -64.4501,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.4405,
+   "lon": -64.9559,
+   "max_dbz": 57,
    "tope_km": 12.9,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.9804,
-   "lon": -65.1817,
-   "max_dbz": 57,
+   "lat": -30.6631,
+   "lon": -63.4066,
+   "max_dbz": 54,
    "tope_km": 9.4,
    "radar": "RMA1",
-   "nivel": "posible granizo"
+   "nivel": null
   },
   {
-   "lat": -31.2787,
-   "lon": -64.6115,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.7266,
-   "lon": -63.5357,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
+   "lat": -32.5135,
+   "lon": -64.9448,
+   "max_dbz": 50,
+   "tope_km": 12.9,
+   "radar": "RMA16",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Chalacea": {
+  "Bialet Massé": {
    "nivel": "granizo probable",
-   "km": 5.7,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-22 07:30"
-  },
-  "Ciénaga del Coro": {
-   "nivel": "posible granizo",
-   "km": 4.4,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "visto": "2026-11-22 07:30"
-  },
-  "Cosquín": {
-   "nivel": "granizo probable",
-   "km": 5.3,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 07:30"
-  },
-  "La Higuera": {
-   "nivel": "posible granizo",
    "km": 8.4,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "visto": "2026-11-22 07:30"
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "visto": "2026-11-22 07:48"
+  },
+  "Cruz de Caña": {
+   "nivel": "granizo probable",
+   "km": 8.0,
+   "max_dbz": 67,
+   "tope_km": 13.5,
+   "visto": "2026-11-22 07:48"
   },
   "Santa María de Punilla": {
    "nivel": "granizo probable",
-   "km": 9.2,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 07:30"
+   "km": 6.5,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "visto": "2026-11-22 07:48"
   }
  }
 }
