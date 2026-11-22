@@ -1,75 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 00:00",
+ "consultado": "2026-11-22 00:15",
  "radares": {
-  "RMA17": "2026-11-21 23:45",
-  "RMA16": "2026-11-21 23:46",
-  "RMA1": "2026-11-21 23:42"
+  "RMA17": "2026-11-22 00:02",
+  "RMA16": "2026-11-22 00:03",
+  "RMA1": "2026-11-22 00:01"
  },
  "nucleos": [
   {
-   "lat": -32.4314,
-   "lon": -64.7461,
+   "lat": -32.1831,
+   "lon": -63.11,
    "max_dbz": 55,
-   "tope_km": 13.5,
+   "tope_km": 12.9,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0463,
+   "lon": -62.7583,
+   "max_dbz": 55,
+   "tope_km": 14.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.3949,
+   "lon": -64.6356,
+   "max_dbz": 55,
+   "tope_km": 11.7,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.2126,
-   "lon": -63.3098,
+   "lat": -32.1501,
+   "lon": -63.2775,
    "max_dbz": 55,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.2286,
-   "lon": -63.198,
-   "max_dbz": 51,
-   "tope_km": 14.1,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.1232,
-   "lon": -62.9332,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.98,
-   "lon": -62.7503,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.0919,
-   "lon": -62.7912,
-   "max_dbz": 48,
-   "tope_km": 13.5,
-   "radar": "RMA17",
-   "nivel": null
   }
  ],
  "localidades": {
-  "Río de los Sauces": {
+  "Arroyo Algodón": {
    "nivel": "granizo probable",
-   "km": 8.4,
+   "km": 5.4,
    "max_dbz": 55,
-   "tope_km": 13.5,
-   "visto": "2026-11-21 23:46"
+   "tope_km": 12.9,
+   "visto": "2026-11-22 00:02"
   },
-  "Tío Pujio": {
+  "Cañada del Sauce": {
    "nivel": "granizo probable",
-   "km": 8.5,
+   "km": 1.4,
    "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-21 23:42"
+   "tope_km": 11.7,
+   "visto": "2026-11-22 00:03"
   }
  }
 }
