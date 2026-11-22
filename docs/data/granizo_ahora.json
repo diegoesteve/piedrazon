@@ -1,35 +1,48 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 09:45",
+ "consultado": "2026-11-22 10:00",
  "radares": {
-  "RMA1": "2026-11-22 09:28",
-  "RMA16": "2026-11-22 09:19"
+  "RMA1": "2026-11-22 09:46"
  },
  "nucleos": [
   {
-   "lat": -31.2968,
-   "lon": -64.0843,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.2607,
-   "lon": -64.3963,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
    "lat": -31.2426,
-   "lon": -64.2672,
-   "max_dbz": 50,
+   "lon": -64.235,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -31.3148,
+   "lon": -63.7616,
+   "max_dbz": 53,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Estación Juárez Celman": {
+   "nivel": "posible granizo",
+   "km": 5.3,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "visto": "2026-11-22 09:46"
+  },
+  "Mendiolaza": {
+   "nivel": "posible granizo",
+   "km": 5.1,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "visto": "2026-11-22 09:46"
+  },
+  "Unquillo": {
+   "nivel": "posible granizo",
+   "km": 9.8,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "visto": "2026-11-22 09:46"
+  }
+ }
 }
