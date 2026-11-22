@@ -1,22 +1,21 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 22:03",
+ "consultado": "2026-11-21 22:08",
  "radares": {
-  "RMA1": "2026-11-21 21:44",
-  "RMA17": "2026-11-21 21:34",
-  "RMA2": "2026-11-21 21:26",
+  "RMA13": "2026-11-21 21:55",
+  "RMA5": "2026-11-21 21:58",
+  "RMA17": "2026-11-21 21:51",
+  "RMA1": "2026-11-21 21:53",
   "RMA16": "2026-11-21 21:52",
-  "RMA13": "2026-11-21 21:38",
-  "RMA5": "2026-11-21 21:49",
   "RMA14": "2026-11-21 21:45",
   "RMA6": "2026-11-21 21:47",
   "RMA20": "2026-11-21 21:47"
  },
  "nucleos": [
   {
-   "lat": -27.7436,
-   "lon": -54.4002,
-   "max_dbz": 65,
+   "lat": -27.7169,
+   "lon": -54.3696,
+   "max_dbz": 68,
    "tope_km": 17.0,
    "radar": "RMA5",
    "nivel": "granizo probable"
@@ -27,14 +26,6 @@
    "max_dbz": 63,
    "tope_km": 11.1,
    "radar": "RMA6",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -27.5229,
-   "lon": -56.6562,
-   "max_dbz": 62,
-   "tope_km": 14.7,
-   "radar": "RMA13",
    "nivel": "granizo probable"
   },
   {
@@ -54,18 +45,10 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.2305,
-   "lon": -64.7191,
-   "max_dbz": 58,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -27.4147,
-   "lon": -56.5014,
-   "max_dbz": 58,
-   "tope_km": 14.7,
+   "lat": -27.3967,
+   "lon": -56.3777,
+   "max_dbz": 60,
+   "tope_km": 12.3,
    "radar": "RMA13",
    "nivel": "granizo probable"
   },
@@ -78,67 +61,35 @@
    "nivel": "posible granizo"
   },
   {
-   "lat": -32.5106,
-   "lon": -64.0444,
+   "lat": -32.4924,
+   "lon": -65.0007,
    "max_dbz": 57,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.4713,
-   "lon": -65.1064,
-   "max_dbz": 56,
-   "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -32.2833,
-   "lon": -64.8468,
-   "max_dbz": 56,
    "tope_km": 14.1,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.4981,
-   "lon": -65.0095,
+   "lat": -32.4197,
+   "lon": -63.8465,
    "max_dbz": 55,
-   "tope_km": 11.7,
-   "radar": "RMA1",
+   "tope_km": 15.8,
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.4179,
-   "lon": -64.8051,
+   "lat": -32.4106,
+   "lon": -64.7698,
    "max_dbz": 54,
-   "tope_km": 11.1,
+   "tope_km": 14.7,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.4,
+   "lon": -64.7083,
+   "max_dbz": 53,
+   "tope_km": 10.6,
    "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.4357,
-   "lon": -63.8907,
-   "max_dbz": 53,
-   "tope_km": 12.9,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.3857,
-   "lon": -64.724,
-   "max_dbz": 53,
-   "tope_km": 13.5,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -27.775,
-   "lon": -54.5108,
-   "max_dbz": 53,
-   "tope_km": 17.0,
-   "radar": "RMA13",
    "nivel": null
   },
   {
@@ -150,11 +101,19 @@
    "nivel": null
   },
   {
-   "lat": -32.3949,
-   "lon": -63.8075,
+   "lat": -32.4651,
+   "lon": -64.0114,
    "max_dbz": 52,
-   "tope_km": 16.4,
-   "radar": "RMA16",
+   "tope_km": 15.8,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.4535,
+   "lon": -64.8051,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "radar": "RMA1",
    "nivel": null
   },
   {
@@ -187,14 +146,6 @@
    "max_dbz": 49,
    "tope_km": 8.2,
    "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -35.3079,
-   "lon": -59.239,
-   "max_dbz": 48,
-   "tope_km": 7.6,
-   "radar": "RMA2",
    "nivel": null
   },
   {
@@ -243,34 +194,6 @@
    "tope_km": 11.1,
    "visto": "2026-11-21 21:47"
   },
-  "Ituzaingó (Corrientes)": {
-   "nivel": "granizo probable",
-   "km": 7.6,
-   "max_dbz": 62,
-   "tope_km": 14.7,
-   "visto": "2026-11-21 21:38"
-  },
-  "San Antonio (Corrientes)": {
-   "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 62,
-   "tope_km": 14.7,
-   "visto": "2026-11-21 21:38"
-  },
-  "El Durazno (Córdoba)": {
-   "nivel": "granizo probable",
-   "km": 8.5,
-   "max_dbz": 58,
-   "tope_km": 10.0,
-   "visto": "2026-11-21 21:44"
-  },
-  "Las Peñas (dpto. Río Cuarto, Córdoba)": {
-   "nivel": "granizo probable",
-   "km": 6.3,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-21 21:34"
-  },
   "Carpintería (San Luis)": {
    "nivel": "granizo probable",
    "km": 3.4,
@@ -280,10 +203,10 @@
   },
   "Cortaderas": {
    "nivel": "granizo probable",
-   "km": 1.8,
-   "max_dbz": 55,
-   "tope_km": 11.7,
-   "visto": "2026-11-21 21:44"
+   "km": 1.6,
+   "max_dbz": 57,
+   "tope_km": 14.1,
+   "visto": "2026-11-21 21:51"
   },
   "Los Molles": {
    "nivel": "granizo probable",
