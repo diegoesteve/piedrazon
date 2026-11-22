@@ -1,13 +1,21 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 18:45",
+ "consultado": "2026-11-22 18:52",
  "radares": {
   "RMA3": "2026-11-22 18:33",
-  "RMA6": "2026-11-22 18:18",
   "RMA20": "2026-11-22 18:35",
+  "RMA6": "2026-11-22 18:36",
   "RMA11": "2026-11-22 18:30"
  },
  "nucleos": [
+  {
+   "lat": -37.0437,
+   "lon": -56.4276,
+   "max_dbz": 59,
+   "tope_km": 15.2,
+   "radar": "RMA6",
+   "nivel": "granizo probable"
+  },
   {
    "lat": -24.3037,
    "lon": -62.6647,
@@ -15,14 +23,6 @@
    "tope_km": 9.4,
    "radar": "RMA20",
    "nivel": "posible granizo"
-  },
-  {
-   "lat": -37.2619,
-   "lon": -56.4042,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "radar": "RMA6",
-   "nivel": "granizo probable"
   },
   {
    "lat": -24.367,
@@ -33,12 +33,28 @@
    "nivel": "granizo probable"
   },
   {
+   "lat": -37.0164,
+   "lon": -57.0245,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "radar": "RMA6",
+   "nivel": "posible granizo"
+  },
+  {
    "lat": -24.3602,
    "lon": -62.7198,
    "max_dbz": 55,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -37.8046,
+   "lon": -58.9909,
+   "max_dbz": 51,
+   "tope_km": 6.4,
+   "radar": "RMA6",
+   "nivel": null
   },
   {
    "lat": -28.3288,
@@ -57,5 +73,13 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Barrio Kennedy": {
+   "nivel": "posible granizo",
+   "km": 7.0,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "visto": "2026-11-22 18:36"
+  }
+ }
 }
