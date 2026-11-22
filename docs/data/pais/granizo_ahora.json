@@ -1,52 +1,70 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 11:46",
+ "consultado": "2026-11-22 12:00",
  "radares": {
+  "RMA4": "2026-11-22 11:49",
   "RMA11": "2026-11-22 11:33",
-  "RMA3": "2026-11-22 11:28",
-  "RMA15": "2026-11-22 11:12",
-  "RMA4": "2026-11-22 11:31"
+  "RMA3": "2026-11-22 11:37",
+  "RMA15": "2026-11-22 11:45",
+  "RMA5": "2026-11-22 11:46",
+  "RMA13": "2026-11-22 11:47"
  },
  "nucleos": [
   {
-   "lat": -25.5828,
-   "lon": -61.4348,
-   "max_dbz": 62,
-   "tope_km": 17.0,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
    "lat": -26.234,
-   "lon": -61.4047,
-   "max_dbz": 60,
+   "lon": -61.3746,
+   "max_dbz": 64,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.0215,
-   "lon": -67.2465,
+   "lat": -25.6007,
+   "lon": -61.3646,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -24.4234,
+   "lon": -61.0533,
    "max_dbz": 57,
-   "tope_km": 11.7,
-   "radar": "RMA15",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -24.3963,
-   "lon": -61.1035,
-   "max_dbz": 56,
-   "tope_km": 17.0,
+   "tope_km": 10.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.3823,
-   "lon": -58.9477,
+   "lat": -30.2463,
+   "lon": -66.5061,
    "max_dbz": 56,
-   "tope_km": 10.0,
-   "radar": "RMA4",
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -26.2012,
+   "lon": -53.5433,
+   "max_dbz": 56,
+   "tope_km": 13.5,
+   "radar": "RMA5",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.2785,
+   "lon": -61.5653,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.4187,
+   "lon": -57.3082,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "radar": "RMA4",
+   "nivel": null
   },
   {
    "lat": -28.1765,
@@ -65,51 +83,43 @@
    "nivel": null
   },
   {
-   "lat": -24.7391,
-   "lon": -60.6417,
+   "lat": -24.4595,
+   "lon": -61.8766,
    "max_dbz": 53,
-   "tope_km": 7.0,
+   "tope_km": 7.6,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -26.6369,
-   "lon": -57.0607,
-   "max_dbz": 52,
-   "tope_km": 15.8,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -25.018,
-   "lon": -59.8386,
+   "lat": -25.0449,
+   "lon": -59.7683,
    "max_dbz": 51,
-   "tope_km": 10.6,
+   "tope_km": 9.4,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -26.2874,
-   "lon": -61.5854,
+   "lat": -26.5824,
+   "lon": -57.0195,
    "max_dbz": 50,
-   "tope_km": 11.7,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -26.6823,
-   "lon": -60.0407,
-   "max_dbz": 50,
-   "tope_km": 11.7,
+   "tope_km": 17.0,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -26.4733,
-   "lon": -57.3391,
+   "lat": -26.4824,
+   "lon": -57.1329,
    "max_dbz": 50,
-   "tope_km": 14.7,
+   "tope_km": 17.0,
    "radar": "RMA4",
+   "nivel": null
+  },
+  {
+   "lat": -26.165,
+   "lon": -53.7576,
+   "max_dbz": 50,
+   "tope_km": 9.4,
+   "radar": "RMA5",
    "nivel": null
   },
   {
@@ -121,29 +131,60 @@
    "nivel": null
   },
   {
-   "lat": -26.537,
-   "lon": -57.2566,
+   "lat": -25.2065,
+   "lon": -59.437,
    "max_dbz": 49,
-   "tope_km": 15.8,
-   "radar": "RMA4",
+   "tope_km": 8.8,
+   "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -26.537,
-   "lon": -57.4216,
+   "lat": -27.0352,
+   "lon": -56.749,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "radar": "RMA13",
+   "nivel": null
+  },
+  {
+   "lat": -24.8201,
+   "lon": -58.4934,
+   "max_dbz": 48,
+   "tope_km": 8.2,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -26.2251,
+   "lon": -61.214,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -25.6219,
+   "lon": -54.9,
    "max_dbz": 47,
-   "tope_km": 14.1,
-   "radar": "RMA4",
+   "tope_km": 12.3,
+   "radar": "RMA5",
    "nivel": null
   }
  ],
  "localidades": {
+  "Río Muerto": {
+   "nivel": "granizo probable",
+   "km": 9.6,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "visto": "2026-11-22 11:37"
+  },
   "Pozo del Mortero": {
    "nivel": "granizo probable",
-   "km": 7.9,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "visto": "2026-11-22 11:28"
+   "km": 3.3,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "visto": "2026-11-22 11:37"
   }
  }
 }
