@@ -1,67 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 21:30",
+ "consultado": "2026-11-21 21:45",
  "radares": {
-  "RMA17": "2026-11-21 21:18",
-  "RMA16": "2026-11-21 21:19",
-  "RMA1": "2026-11-21 21:16"
+  "RMA1": "2026-11-21 21:35",
+  "RMA17": "2026-11-21 21:34",
+  "RMA16": "2026-11-21 21:27"
  },
  "nucleos": [
   {
-   "lat": -32.3644,
-   "lon": -64.8589,
-   "max_dbz": 63,
-   "tope_km": 12.9,
+   "lat": -32.2852,
+   "lon": -64.8786,
+   "max_dbz": 61,
+   "tope_km": 14.7,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.2662,
+   "lon": -64.7944,
+   "max_dbz": 60,
+   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.3652,
-   "lon": -64.9127,
+   "lat": -32.5106,
+   "lon": -64.0444,
    "max_dbz": 57,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.7916,
-   "lon": -63.7915,
-   "max_dbz": 56,
-   "tope_km": 12.9,
+   "lat": -32.4742,
+   "lon": -63.8905,
+   "max_dbz": 53,
+   "tope_km": 13.5,
    "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.5782,
-   "lon": -64.2027,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.5159,
-   "lon": -64.0413,
-   "max_dbz": 49,
-   "tope_km": 10.6,
-   "radar": "RMA1",
+   "lat": -32.2944,
+   "lon": -64.6688,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.5226,
+   "lon": -64.1056,
+   "max_dbz": 47,
+   "tope_km": 12.9,
+   "radar": "RMA16",
    "nivel": null
   }
  ],
  "localidades": {
-  "General Cabrera": {
+  "Las Peñas Sud": {
    "nivel": "granizo probable",
-   "km": 7.8,
-   "max_dbz": 56,
-   "tope_km": 12.9,
-   "visto": "2026-11-21 21:18"
+   "km": 6.5,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "visto": "2026-11-21 21:34"
   },
-  "General Deheza": {
+  "Lutti": {
    "nivel": "granizo probable",
-   "km": 3.3,
-   "max_dbz": 56,
-   "tope_km": 12.9,
-   "visto": "2026-11-21 21:18"
+   "km": 7.0,
+   "max_dbz": 60,
+   "tope_km": 10.6,
+   "visto": "2026-11-21 21:35"
   }
  }
 }
