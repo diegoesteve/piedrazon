@@ -1,92 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 06:30",
+ "consultado": "2026-11-22 06:45",
  "radares": {
-  "RMA17": "2026-11-22 06:09",
-  "RMA16": "2026-11-22 06:19",
-  "RMA1": "2026-11-22 06:17"
+  "RMA1": "2026-11-22 06:35",
+  "RMA17": "2026-11-22 06:34",
+  "RMA16": "2026-11-22 06:28"
  },
  "nucleos": [
   {
-   "lat": -30.8264,
-   "lon": -63.8692,
+   "lat": -31.5761,
+   "lon": -64.7836,
    "max_dbz": 57,
-   "tope_km": 10.0,
+   "tope_km": 12.9,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.8717,
-   "lon": -64.2134,
-   "max_dbz": 56,
+   "lat": -31.3509,
+   "lon": -65.0633,
+   "max_dbz": 54,
    "tope_km": 10.0,
    "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.6467,
-   "lon": -64.9018,
-   "max_dbz": 53,
-   "tope_km": 17.0,
-   "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -30.7357,
-   "lon": -63.3743,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.8899,
-   "lon": -62.987,
+   "lat": -30.8536,
+   "lon": -64.0951,
    "max_dbz": 52,
    "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.7629,
-   "lon": -63.4926,
-   "max_dbz": 52,
+   "lat": -30.6812,
+   "lon": -63.2775,
+   "max_dbz": 51,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.441,
-   "lon": -64.321,
+   "lat": -31.2246,
+   "lon": -64.6976,
    "max_dbz": 51,
-   "tope_km": 5.9,
+   "tope_km": 10.6,
    "radar": "RMA1",
-   "nivel": null,
-   "descartado": "tope bajo (5.9 km)"
+   "nivel": null
   },
   {
-   "lat": -30.6267,
-   "lon": -63.1376,
+   "lat": -30.7992,
+   "lon": -63.7078,
    "max_dbz": 51,
-   "tope_km": 9.4,
+   "tope_km": 10.6,
    "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.6376,
+   "lon": -64.9018,
+   "max_dbz": 50,
+   "tope_km": 14.7,
+   "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {
-  "Candelaria Sud": {
-   "nivel": "granizo probable",
-   "km": 6.6,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 06:17"
-  },
-  "La Pampa": {
-   "nivel": "granizo probable",
-   "km": 9.8,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 06:17"
-  }
- }
+ "localidades": {}
 }
