@@ -1,15 +1,24 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 12:30",
+ "consultado": "2026-11-22 12:45",
  "radares": {
-  "RMA3": "2026-11-22 12:13",
-  "RMA4": "2026-11-22 12:16",
-  "RMA11": "2026-11-22 12:16",
+  "RMA4": "2026-11-22 12:34",
+  "RMA11": "2026-11-22 12:34",
   "RMA15": "2026-11-22 12:10",
-  "RMA5": "2026-11-22 12:13",
-  "RMA20": "2026-11-22 12:17"
+  "RMA3": "2026-11-22 12:31",
+  "RMA5": "2026-11-22 12:31",
+  "RMA20": "2026-11-22 12:17",
+  "RMA6": "2026-11-22 12:27"
  },
  "nucleos": [
+  {
+   "lat": -24.946,
+   "lon": -60.8927,
+   "max_dbz": 64,
+   "tope_km": 11.7,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
   {
    "lat": -24.4121,
    "lon": -64.4218,
@@ -20,17 +29,9 @@
    "descartado": "tope bajo (4.1 km)"
   },
   {
-   "lat": -25.4754,
-   "lon": -61.1337,
-   "max_dbz": 63,
-   "tope_km": 17.0,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -26.1984,
-   "lon": -61.1638,
-   "max_dbz": 61,
+   "lat": -25.4396,
+   "lon": -61.0533,
+   "max_dbz": 62,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
@@ -44,83 +45,107 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -25.6544,
-   "lon": -61.6958,
-   "max_dbz": 55,
-   "tope_km": 8.2,
+   "lat": -24.0255,
+   "lon": -58.8146,
+   "max_dbz": 56,
+   "tope_km": 9.4,
    "radar": "RMA3",
    "nivel": "posible granizo"
   },
   {
-   "lat": -28.3198,
-   "lon": -66.02,
+   "lat": -26.2073,
+   "lon": -61.0132,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.0724,
+   "lon": -58.7106,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "radar": "RMA4",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.4278,
+   "lon": -57.7207,
    "max_dbz": 53,
    "tope_km": 10.0,
-   "radar": "RMA11",
+   "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -25.6582,
-   "lon": -54.7164,
+   "lat": -24.9371,
+   "lon": -60.5012,
    "max_dbz": 53,
-   "tope_km": 12.9,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -24.0073,
-   "lon": -61.6155,
-   "max_dbz": 51,
-   "tope_km": 8.8,
+   "tope_km": 9.4,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -26.2518,
-   "lon": -61.2742,
-   "max_dbz": 51,
-   "tope_km": 10.6,
+   "lat": -25.1617,
+   "lon": -59.8888,
+   "max_dbz": 53,
+   "tope_km": 10.0,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -26.3852,
-   "lon": -60.9228,
-   "max_dbz": 51,
-   "tope_km": 14.1,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -24.1251,
-   "lon": -61.4148,
-   "max_dbz": 50,
+   "lat": -25.1168,
+   "lon": -61.8565,
+   "max_dbz": 52,
    "tope_km": 11.7,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -26.4118,
-   "lon": -61.0132,
-   "max_dbz": 50,
-   "tope_km": 14.1,
+   "lat": -25.0359,
+   "lon": -61.9267,
+   "max_dbz": 52,
+   "tope_km": 11.7,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -26.1728,
-   "lon": -58.7002,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "radar": "RMA4",
+   "lat": -26.1272,
+   "lon": -60.973,
+   "max_dbz": 52,
+   "tope_km": 14.7,
+   "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -26.4733,
-   "lon": -57.0092,
-   "max_dbz": 48,
-   "tope_km": 14.1,
-   "radar": "RMA4",
+   "lat": -27.9882,
+   "lon": -66.0406,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -25.2155,
+   "lon": -61.0835,
+   "max_dbz": 51,
+   "tope_km": 11.7,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -24.0073,
+   "lon": -61.6557,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -38.3255,
+   "lon": -57.9843,
+   "max_dbz": 49,
+   "tope_km": 7.6,
+   "radar": "RMA6",
    "nivel": null
   },
   {
@@ -132,5 +157,13 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "San Hilario": {
+   "nivel": "granizo probable",
+   "km": 7.5,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-22 12:34"
+  }
+ }
 }
