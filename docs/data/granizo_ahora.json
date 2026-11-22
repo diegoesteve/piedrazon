@@ -1,67 +1,80 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 07:30",
+ "consultado": "2026-11-22 07:45",
  "radares": {
-  "RMA17": "2026-11-22 07:15",
-  "RMA16": "2026-11-22 07:17",
-  "RMA1": "2026-11-22 07:20"
+  "RMA16": "2026-11-22 07:33",
+  "RMA1": "2026-11-22 07:30",
+  "RMA17": "2026-11-22 07:15"
  },
  "nucleos": [
   {
-   "lat": -31.3148,
-   "lon": -64.7083,
-   "max_dbz": 59,
-   "tope_km": 10.0,
-   "radar": "RMA1",
+   "lat": -32.4953,
+   "lon": -64.9669,
+   "max_dbz": 58,
+   "tope_km": 12.9,
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.7357,
-   "lon": -63.6433,
+   "lat": -30.9804,
+   "lon": -65.1817,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -31.2787,
+   "lon": -64.6115,
    "max_dbz": 56,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.1342,
-   "lon": -64.5254,
-   "max_dbz": 52,
-   "tope_km": 7.0,
+   "lat": -30.7266,
+   "lon": -63.5357,
+   "max_dbz": 55,
+   "tope_km": 11.1,
    "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.387,
-   "lon": -64.6438,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.4953,
-   "lon": -64.989,
-   "max_dbz": 48,
-   "tope_km": 14.7,
-   "radar": "RMA16",
-   "nivel": null
+   "nivel": "granizo probable"
   }
  ],
  "localidades": {
-  "Cañada de Luque": {
-   "nivel": "granizo probable",
-   "km": 7.8,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 07:20"
-  },
   "Chalacea": {
    "nivel": "granizo probable",
-   "km": 7.0,
+   "km": 5.7,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-22 07:30"
+  },
+  "Ciénaga del Coro": {
+   "nivel": "posible granizo",
+   "km": 4.4,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-11-22 07:30"
+  },
+  "Cosquín": {
+   "nivel": "granizo probable",
+   "km": 5.3,
    "max_dbz": 56,
    "tope_km": 10.0,
-   "visto": "2026-11-22 07:20"
+   "visto": "2026-11-22 07:30"
+  },
+  "La Higuera": {
+   "nivel": "posible granizo",
+   "km": 8.4,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "visto": "2026-11-22 07:30"
+  },
+  "Santa María de Punilla": {
+   "nivel": "granizo probable",
+   "km": 9.2,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "visto": "2026-11-22 07:30"
   }
  }
 }
