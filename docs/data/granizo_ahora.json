@@ -1,68 +1,84 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 22:08",
+ "consultado": "2026-11-21 22:15",
  "radares": {
-  "RMA17": "2026-11-21 21:51",
-  "RMA1": "2026-11-21 21:53",
-  "RMA16": "2026-11-21 21:52"
+  "RMA16": "2026-11-21 22:00",
+  "RMA1": "2026-11-21 22:02",
+  "RMA17": "2026-11-21 21:59"
  },
  "nucleos": [
   {
-   "lat": -32.4405,
-   "lon": -65.0111,
+   "lat": -32.4223,
+   "lon": -64.989,
    "max_dbz": 61,
    "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.4924,
-   "lon": -65.0007,
-   "max_dbz": 57,
+   "lat": -32.4357,
+   "lon": -64.9342,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.5955,
+   "lon": -65.8614,
+   "max_dbz": 55,
+   "tope_km": 14.1,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.4015,
+   "lon": -63.7476,
+   "max_dbz": 55,
    "tope_km": 14.1,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.4197,
-   "lon": -63.8465,
-   "max_dbz": 55,
-   "tope_km": 15.8,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.4106,
-   "lon": -64.7698,
+   "lat": -32.4179,
+   "lon": -63.8369,
    "max_dbz": 54,
-   "tope_km": 14.7,
-   "radar": "RMA17",
+   "tope_km": 12.3,
+   "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.4,
-   "lon": -64.7083,
+   "lat": -32.4268,
+   "lon": -64.7298,
+   "max_dbz": 54,
+   "tope_km": 12.9,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.4742,
+   "lon": -64.8248,
    "max_dbz": 53,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.4651,
-   "lon": -64.0114,
-   "max_dbz": 52,
-   "tope_km": 15.8,
+   "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.4535,
-   "lon": -64.8051,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "radar": "RMA1",
+   "lat": -32.4015,
+   "lon": -64.6709,
+   "max_dbz": 51,
+   "tope_km": 15.2,
+   "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Hernando": {
+   "nivel": "granizo probable",
+   "km": 3.5,
+   "max_dbz": 55,
+   "tope_km": 14.1,
+   "visto": "2026-11-21 21:59"
+  }
+ }
 }
