@@ -1,52 +1,106 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 23:15",
+ "consultado": "2026-11-21 23:30",
  "radares": {
-  "RMA1": "2026-11-21 23:06",
-  "RMA17": "2026-11-21 22:56",
-  "RMA16": "2026-11-21 22:49"
+  "RMA17": "2026-11-21 23:13",
+  "RMA1": "2026-11-21 23:15",
+  "RMA16": "2026-11-21 23:14"
  },
  "nucleos": [
   {
-   "lat": -32.2833,
-   "lon": -63.5497,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.7735,
-   "lon": -62.8572,
+   "lat": -32.0736,
+   "lon": -64.9787,
    "max_dbz": 55,
-   "tope_km": 10.0,
+   "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.2468,
-   "lon": -63.187,
+   "lat": -32.2037,
+   "lon": -63.2237,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.3492,
+   "lon": -64.9559,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0606,
+   "lon": -62.9655,
    "max_dbz": 53,
-   "tope_km": 14.1,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.2037,
+   "lon": -64.4394,
+   "max_dbz": 52,
+   "tope_km": 7.0,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.2305,
+   "lon": -63.3098,
+   "max_dbz": 52,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.9915,
+   "lon": -65.0117,
+   "max_dbz": 51,
+   "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.2662,
-   "lon": -63.4173,
+   "lat": -32.3309,
+   "lon": -64.8675,
    "max_dbz": 50,
-   "tope_km": 10.0,
-   "radar": "RMA1",
+   "tope_km": 11.7,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.1375,
+   "lon": -64.9787,
+   "max_dbz": 49,
+   "tope_km": 17.0,
+   "radar": "RMA17",
    "nivel": null
   }
  ],
  "localidades": {
-  "Ordóñez": {
+  "Arroyo Algodón": {
    "nivel": "granizo probable",
-   "km": 7.5,
+   "km": 5.7,
    "max_dbz": 55,
-   "tope_km": 10.0,
-   "visto": "2026-11-21 22:56"
+   "tope_km": 11.1,
+   "visto": "2026-11-21 23:15"
+  },
+  "La Población": {
+   "nivel": "granizo probable",
+   "km": 1.8,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-21 23:13"
+  },
+  "San Javier y Yacanto": {
+   "nivel": "granizo probable",
+   "km": 8.1,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-21 23:13"
   }
  }
 }
