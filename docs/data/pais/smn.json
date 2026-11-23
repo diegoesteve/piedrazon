@@ -1,47 +1,87 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-23 07:46",
+ "consultado": "2026-11-23 08:01",
  "alertas": [
   {
-   "id": "2026_11_23_0943_cap_es",
+   "id": "2026_11_23_1039_cap_es",
    "tipo": "aviso a corto plazo",
    "evento": "Tormentas fuertes",
    "nivel": "naranja",
    "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-11-23T09:43:00-03:00",
-   "hasta": "2026-11-23T10:43:00-03:00",
+   "desde": "2026-11-23T10:39:00-03:00",
+   "hasta": "2026-11-23T12:39:00-03:00",
    "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
    "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
-   "zona": "SAN LUIS: GDOR DUPUY - GRAL PEDERNERA - JUAN M.  DE PUEYRREDON.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_23_0943_cap_es.xml",
-   "desde_local": "23/11 09:43",
-   "hasta_local": "23/11 10:43",
-   "localidades": 1,
+   "zona": "MENDOZA: LA PAZ. SAN LUIS: JUAN M.  DE PUEYRREDON.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_23_1039_cap_es.xml",
+   "desde_local": "23/11 10:39",
+   "hasta_local": "23/11 12:39",
+   "localidades": 12,
    "poligonos": [
     [
      [
-      -66.62,
-      -34.62
+      -67.4,
+      -33.24
      ],
      [
-      -66.52,
-      -34.26
+      -67.39,
+      -33.58
      ],
      [
-      -65.78,
-      -34.53
+      -66.32,
+      -34.0
      ],
      [
-      -65.79,
-      -34.85
+      -66.16,
+      -33.62
      ],
      [
-      -66.29,
-      -34.97
+      -66.32,
+      -33.23
      ],
      [
-      -66.62,
-      -34.62
+      -67.4,
+      -33.24
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_23_1044_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-23T10:44:00-03:00",
+   "hasta": "2026-11-23T12:44:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "CORDOBA: RIO CUARTO. SAN LUIS: GRAL PEDERNERA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_23_1044_cap_es.xml",
+   "desde_local": "23/11 10:44",
+   "hasta_local": "23/11 12:44",
+   "localidades": 16,
+   "poligonos": [
+    [
+     [
+      -64.07,
+      -33.04
+     ],
+     [
+      -64.12,
+      -33.8
+     ],
+     [
+      -65.55,
+      -33.55
+     ],
+     [
+      -65.54,
+      -33.04
+     ],
+     [
+      -64.07,
+      -33.04
      ]
     ]
    ]
@@ -33568,9 +33608,6 @@
   }
  ],
  "localidades": {
-  "Nahuel Mapá": [
-   "2026_11_23_0943_cap_es"
-  ],
   "Bananal": [
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_41",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_35",
@@ -35348,6 +35385,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_21"
   ],
   "Achiras": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35376,6 +35414,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Bulnes": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35384,6 +35423,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Chaján": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35400,6 +35440,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Coronel Moldes (Córdoba)": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35428,6 +35469,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "La Carolina": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35436,6 +35478,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "La Gilda": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35444,6 +35487,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Las Higueras": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35452,6 +35496,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Las Vertientes": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35460,6 +35505,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Malena": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35480,18 +35526,22 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Río Cuarto": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Sampacho": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "San Basilio": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Santa Catalina Holmberg": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -35500,6 +35550,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Suco": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -37098,6 +37149,7 @@
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_13"
   ],
   "La Punilla": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_13",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_13"
   ],
@@ -37114,6 +37166,7 @@
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_13"
   ],
   "San José del Morro": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_13",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_13"
   ],
@@ -37700,6 +37753,42 @@
   "Zaparinqui": [
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_1",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Desaguadero (Mendoza)": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Alto Pencoso": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Balde": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Beazley": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Cazador": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Chosmes": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Desaguadero (San Luis)": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Jarilla": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Mosmota": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Salinas del Bebedero": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "San Luis": [
+   "2026_11_23_1039_cap_es"
+  ],
+  "Zanjitas": [
+   "2026_11_23_1039_cap_es"
   ]
  }
 }
