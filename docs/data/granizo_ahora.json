@@ -1,159 +1,91 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 17:30",
+ "consultado": "2026-11-23 17:45",
  "radares": {
-  "RMA1": "2026-11-23 17:11",
-  "RMA17": "2026-11-23 17:14",
-  "RMA16": "2026-11-23 17:07"
+  "RMA17": "2026-11-23 17:31",
+  "RMA16": "2026-11-23 17:31",
+  "RMA1": "2026-11-23 17:29"
  },
  "nucleos": [
   {
-   "lat": -32.9773,
+   "lat": -33.1857,
+   "lon": -65.4417,
+   "max_dbz": 61,
+   "tope_km": 10.0,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.9955,
    "lon": -65.0442,
-   "max_dbz": 64,
+   "max_dbz": 60,
    "tope_km": 11.1,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.1857,
-   "lon": -65.4197,
-   "max_dbz": 64,
-   "tope_km": 9.4,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.693,
-   "lon": -64.7298,
-   "max_dbz": 60,
-   "tope_km": 12.3,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.8007,
-   "lon": -64.278,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.2377,
-   "lon": -65.8361,
+   "lat": -32.2852,
+   "lon": -65.6405,
    "max_dbz": 56,
    "tope_km": 14.1,
-   "radar": "RMA17",
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.684,
-   "lon": -64.9342,
+   "lat": -31.666,
+   "lon": -64.5254,
    "max_dbz": 55,
-   "tope_km": 11.1,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.6615,
-   "lon": -65.0221,
-   "max_dbz": 55,
-   "tope_km": 13.5,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.1284,
-   "lon": -64.9677,
-   "max_dbz": 54,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -31.6983,
-   "lon": -64.8454,
-   "max_dbz": 53,
-   "tope_km": 17.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -31.8727,
-   "lon": -64.3302,
-   "max_dbz": 52,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -31.7537,
-   "lon": -64.6929,
-   "max_dbz": 49,
-   "tope_km": 14.7,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -31.8086,
-   "lon": -64.8565,
-   "max_dbz": 49,
-   "tope_km": 12.9,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -31.8276,
-   "lon": -64.6653,
-   "max_dbz": 48,
    "tope_km": 11.7,
    "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.675,
+   "lon": -64.6545,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.5851,
+   "lon": -64.7298,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.3197,
+   "lon": -62.6483,
+   "max_dbz": 48,
+   "tope_km": 12.9,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.7354,
+   "lon": -64.528,
+   "max_dbz": 47,
+   "tope_km": 14.7,
+   "radar": "RMA17",
    "nivel": null
   }
  ],
  "localidades": {
-  "Despeñaderos": {
+  "Alta Gracia": {
    "nivel": "granizo probable",
-   "km": 2.4,
-   "max_dbz": 56,
+   "km": 8.2,
+   "max_dbz": 55,
    "tope_km": 11.7,
-   "visto": "2026-11-23 17:11"
+   "visto": "2026-11-23 17:29"
   },
-  "Mina Clavero": {
+  "La Paisanita": {
    "nivel": "granizo probable",
-   "km": 2.1,
+   "km": 5.7,
    "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 17:11"
-  },
-  "Panaholma": {
-   "nivel": "granizo probable",
-   "km": 6.3,
-   "max_dbz": 55,
-   "tope_km": 13.5,
-   "visto": "2026-11-23 17:07"
-  },
-  "San Clemente": {
-   "nivel": "granizo probable",
-   "km": 9.6,
-   "max_dbz": 60,
-   "tope_km": 12.3,
-   "visto": "2026-11-23 17:11"
-  },
-  "San Lorenzo": {
-   "nivel": "granizo probable",
-   "km": 1.6,
-   "max_dbz": 55,
-   "tope_km": 13.5,
-   "visto": "2026-11-23 17:07"
-  },
-  "Villa Cura Brochero": {
-   "nivel": "granizo probable",
-   "km": 5.4,
-   "max_dbz": 55,
-   "tope_km": 13.5,
-   "visto": "2026-11-23 17:07"
+   "tope_km": 11.7,
+   "visto": "2026-11-23 17:29"
   }
  }
 }
