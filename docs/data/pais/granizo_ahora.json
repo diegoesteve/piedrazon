@@ -1,60 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 02:15",
+ "consultado": "2026-11-23 02:30",
  "radares": {
-  "RMA17": "2026-11-23 01:52",
-  "RMA1": "2026-11-23 01:55",
-  "RMA16": "2026-11-23 01:58",
-  "RMA15": "2026-11-23 01:42",
-  "RMA20": "2026-11-23 01:58",
-  "RMA3": "2026-11-23 02:02"
+  "RMA17": "2026-11-23 02:17",
+  "RMA3": "2026-11-23 02:20",
+  "RMA1": "2026-11-23 02:13",
+  "RMA16": "2026-11-23 02:06",
+  "RMA20": "2026-11-23 01:58"
  },
  "nucleos": [
   {
-   "lat": -22.6047,
-   "lon": -60.5715,
-   "max_dbz": 56,
-   "tope_km": 14.1,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.7446,
-   "lon": -65.1326,
-   "max_dbz": 55,
-   "tope_km": 17.0,
+   "lat": -32.4833,
+   "lon": -63.7805,
+   "max_dbz": 69,
+   "tope_km": 15.2,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.7468,
-   "lon": -65.0311,
-   "max_dbz": 54,
+   "lat": -32.6467,
+   "lon": -63.6267,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -22.6047,
+   "lon": -60.441,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -22.742,
+   "lon": -60.3707,
+   "max_dbz": 58,
    "tope_km": 13.5,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -23.1803,
-   "lon": -59.0957,
-   "max_dbz": 54,
-   "tope_km": 11.1,
    "radar": "RMA3",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -23.0435,
-   "lon": -59.4772,
+   "lat": -22.9522,
+   "lon": -59.7985,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "radar": "RMA3",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -22.6047,
+   "lon": -60.5715,
    "max_dbz": 53,
-   "tope_km": 12.9,
+   "tope_km": 14.1,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -32.5196,
-   "lon": -63.7586,
+   "lat": -32.028,
+   "lon": -64.9567,
    "max_dbz": 52,
-   "tope_km": 11.7,
+   "tope_km": 12.3,
    "radar": "RMA17",
    "nivel": null
   },
@@ -67,29 +74,83 @@
    "nivel": null
   },
   {
-   "lat": -22.9339,
-   "lon": -59.8085,
+   "lat": -22.6779,
+   "lon": -60.3707,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -22.7054,
+   "lon": -60.451,
    "max_dbz": 50,
+   "tope_km": 14.1,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -31.7627,
+   "lon": -64.978,
+   "max_dbz": 50,
+   "tope_km": 13.5,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -23.08,
+   "lon": -59.4872,
+   "max_dbz": 49,
    "tope_km": 12.9,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -31.6461,
-   "lon": -65.4591,
+   "lat": -31.684,
+   "lon": -65.1602,
    "max_dbz": 49,
-   "tope_km": 13.5,
-   "radar": "RMA15",
+   "tope_km": 9.4,
+   "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.6615,
-   "lon": -65.3534,
-   "max_dbz": 47,
-   "tope_km": 13.5,
-   "radar": "RMA16",
+   "lat": -31.6713,
+   "lon": -65.2205,
+   "max_dbz": 48,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -23.1438,
+   "lon": -59.5575,
+   "max_dbz": 48,
+   "tope_km": 11.7,
+   "radar": "RMA3",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Dalmacio Vélez": {
+   "nivel": "granizo probable",
+   "km": 5.9,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "visto": "2026-11-23 02:17"
+  },
+  "Hernando": {
+   "nivel": "granizo probable",
+   "km": 7.6,
+   "max_dbz": 69,
+   "tope_km": 15.2,
+   "visto": "2026-11-23 02:17"
+  },
+  "Las Perdices": {
+   "nivel": "granizo probable",
+   "km": 9.3,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "visto": "2026-11-23 02:17"
+  }
+ }
 }
