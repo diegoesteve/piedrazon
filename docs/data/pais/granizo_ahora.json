@@ -1,19 +1,12 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 21:16",
+ "consultado": "2026-11-22 21:30",
  "radares": {
-  "RMA20": "2026-11-22 21:02",
-  "RMA11": "2026-11-22 21:05"
+  "RMA20": "2026-11-22 21:11",
+  "RMA11": "2026-11-22 21:05",
+  "RMA6": "2026-11-22 21:09"
  },
  "nucleos": [
-  {
-   "lat": -22.9862,
-   "lon": -63.8896,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "radar": "RMA20",
-   "nivel": "granizo probable"
-  },
   {
    "lat": -28.3198,
    "lon": -66.0097,
@@ -21,15 +14,31 @@
    "tope_km": 9.4,
    "radar": "RMA11",
    "nivel": null
+  },
+  {
+   "lat": -36.6237,
+   "lon": -55.9711,
+   "max_dbz": 51,
+   "tope_km": 7.6,
+   "radar": "RMA6",
+   "nivel": null
+  },
+  {
+   "lat": -22.9771,
+   "lon": -63.7892,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "radar": "RMA20",
+   "nivel": null
+  },
+  {
+   "lat": -23.0227,
+   "lon": -63.9499,
+   "max_dbz": 49,
+   "tope_km": 17.0,
+   "radar": "RMA20",
+   "nivel": null
   }
  ],
- "localidades": {
-  "General Ballivián": {
-   "nivel": "granizo probable",
-   "km": 6.3,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "visto": "2026-11-22 21:02"
-  }
- }
+ "localidades": {}
 }
