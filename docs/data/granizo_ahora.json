@@ -1,40 +1,72 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 12:00",
+ "consultado": "2026-11-23 12:15",
  "radares": {
-  "RMA16": "2026-11-23 11:47",
-  "RMA1": "2026-11-23 11:45",
+  "RMA1": "2026-11-23 12:03",
+  "RMA16": "2026-11-23 11:56",
   "RMA17": "2026-11-23 11:47"
  },
  "nucleos": [
   {
    "lat": -33.1767,
-   "lon": -65.3092,
-   "max_dbz": 63,
+   "lon": -65.243,
+   "max_dbz": 64,
+   "tope_km": 16.4,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.8891,
+   "lon": -64.4178,
+   "max_dbz": 59,
    "tope_km": 14.7,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.0839,
+   "lon": -65.2893,
+   "max_dbz": 58,
+   "tope_km": 12.3,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.2671,
+   "lon": -64.7571,
+   "max_dbz": 57,
+   "tope_km": 12.9,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
    "lat": -33.691,
    "lon": -65.3313,
-   "max_dbz": 61,
+   "max_dbz": 55,
    "tope_km": 7.6,
    "radar": "RMA16",
-   "nivel": "granizo probable"
+   "nivel": "posible granizo"
   },
   {
-   "lat": -33.2219,
-   "lon": -65.4749,
-   "max_dbz": 55,
-   "tope_km": 12.3,
+   "lat": -33.137,
+   "lon": -64.7621,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -33.249,
+   "lon": -65.3976,
+   "max_dbz": 53,
+   "tope_km": 11.1,
    "radar": "RMA16",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -33.3033,
-   "lon": -64.8565,
-   "max_dbz": 54,
+   "lat": -33.1495,
+   "lon": -64.8786,
+   "max_dbz": 53,
    "tope_km": 12.9,
    "radar": "RMA16",
    "nivel": null
@@ -48,61 +80,76 @@
    "nivel": null
   },
   {
-   "lat": -33.682,
-   "lon": -64.8896,
-   "max_dbz": 51,
+   "lat": -33.2077,
+   "lon": -64.7083,
+   "max_dbz": 50,
    "tope_km": 11.7,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -34.086,
+   "lon": -64.8675,
+   "max_dbz": 50,
+   "tope_km": 11.1,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -33.2519,
-   "lon": -65.2355,
-   "max_dbz": 51,
+   "lat": -34.1576,
+   "lon": -64.9117,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -33.0043,
+   "lon": -64.2672,
+   "max_dbz": 48,
    "tope_km": 12.9,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -33.9157,
-   "lon": -65.519,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.9777,
-   "lon": -64.5254,
-   "max_dbz": 50,
-   "tope_km": 10.0,
+   "lat": -33.0485,
+   "lon": -64.3748,
+   "max_dbz": 48,
+   "tope_km": 12.9,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -33.1314,
-   "lon": -64.8786,
-   "max_dbz": 49,
-   "tope_km": 12.3,
+   "lat": -34.0949,
+   "lon": -65.0111,
+   "max_dbz": 48,
+   "tope_km": 11.1,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -35.198,
-   "lon": -65.5853,
-   "max_dbz": 48,
-   "tope_km": 9.4,
+   "lat": -33.2762,
+   "lon": -65.8724,
+   "max_dbz": 47,
+   "tope_km": 11.7,
    "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.2519,
-   "lon": -64.8267,
-   "max_dbz": 48,
-   "tope_km": 12.3,
-   "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Coronel Baigorria": {
+   "nivel": "granizo probable",
+   "km": 6.1,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "visto": "2026-11-23 12:03"
+  },
+  "La Carolina El Potosí": {
+   "nivel": "granizo probable",
+   "km": 9.1,
+   "max_dbz": 57,
+   "tope_km": 12.9,
+   "visto": "2026-11-23 11:56"
+  }
+ }
 }
