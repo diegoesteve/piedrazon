@@ -1,107 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 15:15",
+ "consultado": "2026-11-23 15:30",
  "radares": {
-  "RMA1": "2026-11-23 14:55",
-  "RMA16": "2026-11-23 14:56"
+  "RMA1": "2026-11-23 15:13",
+  "RMA16": "2026-11-23 15:12",
+  "RMA17": "2026-11-23 15:12"
  },
  "nucleos": [
   {
-   "lat": -32.4861,
-   "lon": -64.9448,
-   "max_dbz": 56,
+   "lat": -32.2483,
+   "lon": -65.8594,
+   "max_dbz": 61,
    "tope_km": 12.9,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.3857,
+   "lon": -64.8675,
+   "max_dbz": 57,
+   "tope_km": 13.5,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.1947,
-   "lon": -64.8697,
+   "lat": -32.4357,
+   "lon": -64.321,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.1857,
+   "lon": -65.4197,
    "max_dbz": 54,
    "tope_km": 8.8,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.4981,
-   "lon": -64.2242,
-   "max_dbz": 53,
-   "tope_km": 17.0,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.6411,
-   "lon": -63.8406,
-   "max_dbz": 53,
-   "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -33.077,
-   "lon": -64.216,
-   "max_dbz": 52,
-   "tope_km": 8.8,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.7139,
-   "lon": -63.7412,
+   "lat": -33.4026,
+   "lon": -64.0062,
    "max_dbz": 51,
+   "tope_km": 10.6,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.4802,
+   "lon": -64.1059,
+   "max_dbz": 49,
    "tope_km": 17.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.3766,
-   "lon": -65.0111,
-   "max_dbz": 50,
-   "tope_km": 12.9,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.1948,
-   "lon": -63.9068,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.2309,
-   "lon": -63.9731,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.24,
-   "lon": -64.1166,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -33.1767,
-   "lon": -64.0393,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "radar": "RMA16",
-   "nivel": null
-  },
-  {
-   "lat": -32.6866,
-   "lon": -64.481,
-   "max_dbz": 47,
-   "tope_km": 12.9,
-   "radar": "RMA16",
+   "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Berrotarán": {
+   "nivel": "granizo probable",
+   "km": 6.5,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-23 15:13"
+  }
+ }
 }
