@@ -1,16 +1,16 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 18:00",
+ "consultado": "2026-11-23 18:15",
  "radares": {
-  "RMA17": "2026-11-23 17:39",
-  "RMA16": "2026-11-23 17:47",
-  "RMA1": "2026-11-23 17:47"
+  "RMA1": "2026-11-23 17:56",
+  "RMA17": "2026-11-23 17:55",
+  "RMA16": "2026-11-23 17:56"
  },
  "nucleos": [
   {
-   "lat": -32.3492,
-   "lon": -65.4417,
-   "max_dbz": 63,
+   "lat": -32.3766,
+   "lon": -65.3865,
+   "max_dbz": 65,
    "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
@@ -18,43 +18,74 @@
   {
    "lat": -33.1857,
    "lon": -65.4197,
-   "max_dbz": 61,
-   "tope_km": 7.6,
+   "max_dbz": 64,
+   "tope_km": 8.8,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.3652,
-   "lon": -65.5613,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "radar": "RMA17",
+   "lat": -31.6121,
+   "lon": -64.235,
+   "max_dbz": 63,
+   "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.9955,
+   "lon": -65.0442,
+   "max_dbz": 61,
+   "tope_km": 8.8,
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
    "lat": -33.2219,
-   "lon": -65.0773,
-   "max_dbz": 56,
-   "tope_km": 9.4,
+   "lon": -65.0442,
+   "max_dbz": 54,
+   "tope_km": 10.0,
    "radar": "RMA16",
-   "nivel": "posible granizo"
+   "nivel": null
   },
   {
-   "lat": -31.5941,
-   "lon": -64.3963,
-   "max_dbz": 54,
+   "lat": -31.8276,
+   "lon": -64.1489,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -32.3911,
+   "lon": -65.2785,
+   "max_dbz": 47,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.3288,
-   "lon": -62.5824,
-   "max_dbz": 53,
-   "tope_km": 11.1,
+   "lat": -31.6529,
+   "lon": -64.3302,
+   "max_dbz": 47,
+   "tope_km": 14.7,
    "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Bouwer": {
+   "nivel": "granizo probable",
+   "km": 8.7,
+   "max_dbz": 63,
+   "tope_km": 11.1,
+   "visto": "2026-11-23 17:56"
+  },
+  "Rafael García": {
+   "nivel": "granizo probable",
+   "km": 4.8,
+   "max_dbz": 63,
+   "tope_km": 11.1,
+   "visto": "2026-11-23 17:56"
+  }
+ }
 }
