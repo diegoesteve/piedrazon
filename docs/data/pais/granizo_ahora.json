@@ -1,27 +1,28 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 21:45",
+ "consultado": "2026-11-22 22:00",
  "radares": {
-  "RMA6": "2026-11-22 21:09",
+  "RMA11": "2026-11-22 21:48",
   "RMA20": "2026-11-22 21:27",
-  "RMA11": "2026-11-22 21:31"
+  "RMA6": "2026-11-22 21:45",
+  "RMA3": "2026-11-22 21:49"
  },
  "nucleos": [
   {
-   "lat": -26.8693,
-   "lon": -65.5867,
-   "max_dbz": 57,
-   "tope_km": 12.9,
+   "lat": -27.0053,
+   "lon": -65.6486,
+   "max_dbz": 59,
+   "tope_km": 14.1,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -28.3288,
-   "lon": -65.9993,
-   "max_dbz": 54,
-   "tope_km": 13.5,
+   "lat": -26.8966,
+   "lon": -65.8549,
+   "max_dbz": 56,
+   "tope_km": 14.7,
    "radar": "RMA11",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
    "lat": -23.0593,
@@ -32,13 +33,30 @@
    "nivel": null
   },
   {
-   "lat": -36.6237,
-   "lon": -55.9711,
+   "lat": -24.4776,
+   "lon": -61.5352,
+   "max_dbz": 52,
+   "tope_km": 5.3,
+   "radar": "RMA3",
+   "nivel": null,
+   "descartado": "tope bajo (5.3 km)"
+  },
+  {
+   "lat": -36.5138,
+   "lon": -55.7604,
    "max_dbz": 51,
-   "tope_km": 7.6,
+   "tope_km": 7.0,
    "radar": "RMA6",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "El Mollar": {
+   "nivel": "granizo probable",
+   "km": 9.4,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "visto": "2026-11-22 21:48"
+  }
+ }
 }
