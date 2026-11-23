@@ -1,99 +1,90 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 22:30",
+ "consultado": "2026-11-22 22:45",
  "radares": {
-  "RMA20": "2026-11-22 22:16",
-  "RMA11": "2026-11-22 22:14",
-  "RMA3": "2026-11-22 22:07",
-  "RMA1": "2026-11-22 22:17"
+  "RMA3": "2026-11-22 22:25",
+  "RMA20": "2026-11-22 22:25",
+  "RMA11": "2026-11-22 22:22",
+  "RMA1": "2026-11-22 22:26",
+  "RMA17": "2026-11-22 22:20"
  },
  "nucleos": [
   {
-   "lat": -27.1682,
-   "lon": -65.9374,
+   "lat": -31.8994,
+   "lon": -64.9557,
    "max_dbz": 56,
-   "tope_km": 13.5,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.9173,
-   "lon": -64.9235,
-   "max_dbz": 56,
-   "tope_km": 10.0,
+   "tope_km": 8.8,
    "radar": "RMA1",
-   "nivel": "granizo probable"
+   "nivel": "posible granizo"
   },
   {
-   "lat": -27.2676,
-   "lon": -66.02,
-   "max_dbz": 54,
-   "tope_km": 12.3,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -22.8425,
-   "lon": -61.3144,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -23.1505,
-   "lon": -63.7189,
-   "max_dbz": 52,
-   "tope_km": 17.0,
-   "radar": "RMA20",
-   "nivel": null
-  },
-  {
-   "lat": -22.8425,
-   "lon": -61.3947,
-   "max_dbz": 52,
+   "lat": -22.8334,
+   "lon": -61.3344,
+   "max_dbz": 55,
    "tope_km": 11.1,
    "radar": "RMA3",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -23.3237,
-   "lon": -64.0302,
-   "max_dbz": 51,
-   "tope_km": 8.8,
-   "radar": "RMA20",
-   "nivel": null
+   "lat": -27.3128,
+   "lon": -66.1232,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
   },
   {
    "lat": -23.1687,
-   "lon": -63.8194,
-   "max_dbz": 50,
+   "lon": -63.6888,
+   "max_dbz": 54,
    "tope_km": 17.0,
    "radar": "RMA20",
+   "nivel": null
+  },
+  {
+   "lat": -23.0982,
+   "lon": -61.6958,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "radar": "RMA3",
    "nivel": null
   }
  ],
  "localidades": {
-  "Las Chacras (Córdoba)": {
-   "nivel": "granizo probable",
-   "km": 10.0,
+  "Las Calles": {
+   "nivel": "posible granizo",
+   "km": 8.5,
    "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 22:17"
+   "tope_km": 8.8,
+   "visto": "2026-11-22 22:26"
+  },
+  "Las Chacras (Córdoba)": {
+   "nivel": "posible granizo",
+   "km": 8.1,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "visto": "2026-11-22 22:26"
   },
   "Las Rabonas": {
-   "nivel": "granizo probable",
-   "km": 8.9,
+   "nivel": "posible granizo",
+   "km": 5.6,
    "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 22:17"
+   "tope_km": 8.8,
+   "visto": "2026-11-22 22:26"
   },
   "Los Hornillos": {
-   "nivel": "granizo probable",
-   "km": 6.4,
+   "nivel": "posible granizo",
+   "km": 3.2,
    "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-22 22:17"
+   "tope_km": 8.8,
+   "visto": "2026-11-22 22:26"
+  },
+  "Villa La Viña": {
+   "nivel": "posible granizo",
+   "km": 8.1,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "visto": "2026-11-22 22:26"
   }
  }
 }
