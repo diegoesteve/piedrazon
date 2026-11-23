@@ -1,119 +1,134 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 02:45",
+ "consultado": "2026-11-23 03:00",
  "radares": {
-  "RMA16": "2026-11-23 02:31",
-  "RMA17": "2026-11-23 02:17",
-  "RMA1": "2026-11-23 02:31"
+  "RMA1": "2026-11-23 02:49",
+  "RMA16": "2026-11-23 02:47",
+  "RMA17": "2026-11-23 02:48"
  },
  "nucleos": [
   {
-   "lat": -32.4833,
-   "lon": -63.7805,
-   "max_dbz": 69,
-   "tope_km": 15.2,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.6467,
-   "lon": -63.6267,
+   "lat": -31.7289,
+   "lon": -64.5254,
    "max_dbz": 59,
-   "tope_km": 12.3,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.7468,
-   "lon": -65.3861,
-   "max_dbz": 58,
-   "tope_km": 9.4,
+   "tope_km": 11.1,
    "radar": "RMA1",
-   "nivel": "posible granizo"
+   "nivel": "granizo probable"
   },
   {
    "lat": -31.7109,
-   "lon": -65.0741,
+   "lon": -64.6438,
    "max_dbz": 55,
-   "tope_km": 10.6,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.7199,
-   "lon": -64.6653,
+   "lat": -31.7075,
+   "lon": -64.978,
+   "max_dbz": 54,
+   "tope_km": 13.5,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.7535,
+   "lon": -65.3534,
+   "max_dbz": 54,
+   "tope_km": 12.9,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.7738,
+   "lon": -65.2677,
    "max_dbz": 53,
-   "tope_km": 10.6,
+   "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.028,
-   "lon": -64.9567,
-   "max_dbz": 52,
-   "tope_km": 12.3,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -31.666,
-   "lon": -64.7621,
+   "lat": -31.675,
+   "lon": -64.8482,
    "max_dbz": 51,
-   "tope_km": 10.6,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.6713,
-   "lon": -65.2205,
-   "max_dbz": 48,
-   "tope_km": 14.1,
+   "lat": -31.7167,
+   "lon": -65.1105,
+   "max_dbz": 50,
+   "tope_km": 13.5,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.6896,
+   "lon": -64.7808,
+   "max_dbz": 49,
+   "tope_km": 15.2,
    "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.3148,
+   "lon": -65.0741,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "Arroyo de los Patos": {
+  "La Paisanita": {
+   "nivel": "granizo probable",
+   "km": 5.6,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "visto": "2026-11-23 02:49"
+  },
+  "La Rancherita": {
+   "nivel": "granizo probable",
+   "km": 6.8,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "visto": "2026-11-23 02:49"
+  },
+  "La Serranita": {
+   "nivel": "granizo probable",
+   "km": 6.2,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "visto": "2026-11-23 02:49"
+  },
+  "San Clemente": {
+   "nivel": "granizo probable",
+   "km": 1.5,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-23 02:49"
+  },
+  "Villa Ciudad de América": {
+   "nivel": "granizo probable",
+   "km": 4.4,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "visto": "2026-11-23 02:49"
+  },
+  "Villa La Bolsa": {
    "nivel": "granizo probable",
    "km": 9.1,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-23 02:31"
-  },
-  "Dalmacio Vélez": {
-   "nivel": "granizo probable",
-   "km": 5.5,
    "max_dbz": 59,
-   "tope_km": 12.3,
-   "visto": "2026-11-23 02:17"
+   "tope_km": 11.1,
+   "visto": "2026-11-23 02:49"
   },
-  "Hernando": {
+  "Villa Los Aromos": {
    "nivel": "granizo probable",
-   "km": 7.5,
-   "max_dbz": 69,
-   "tope_km": 15.2,
-   "visto": "2026-11-23 02:17"
-  },
-  "Las Perdices": {
-   "nivel": "granizo probable",
-   "km": 9.5,
+   "km": 8.3,
    "max_dbz": 59,
-   "tope_km": 12.3,
-   "visto": "2026-11-23 02:17"
-  },
-  "San Lorenzo": {
-   "nivel": "granizo probable",
-   "km": 8.8,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-23 02:31"
-  },
-  "Villa Cura Brochero": {
-   "nivel": "granizo probable",
-   "km": 5.5,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-23 02:31"
+   "tope_km": 11.1,
+   "visto": "2026-11-23 02:49"
   }
  }
 }
