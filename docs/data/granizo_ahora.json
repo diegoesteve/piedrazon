@@ -1,84 +1,157 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 16:15",
+ "consultado": "2026-11-23 16:30",
  "radares": {
-  "RMA17": "2026-11-23 16:01",
-  "RMA16": "2026-11-23 16:01",
-  "RMA1": "2026-11-23 15:59"
+  "RMA16": "2026-11-23 16:09",
+  "RMA1": "2026-11-23 16:17",
+  "RMA17": "2026-11-23 16:09"
  },
  "nucleos": [
   {
-   "lat": -32.0289,
-   "lon": -65.5522,
+   "lat": -31.9922,
+   "lon": -65.4638,
    "max_dbz": 68,
    "tope_km": 17.0,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.0338,
-   "lon": -65.4829,
-   "max_dbz": 67,
+   "lat": -31.9532,
+   "lon": -65.3,
+   "max_dbz": 65,
    "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.1143,
-   "lon": -63.7508,
-   "max_dbz": 58,
-   "tope_km": 11.1,
+   "lat": -32.0696,
+   "lon": -63.7939,
+   "max_dbz": 61,
+   "tope_km": 12.9,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.9621,
-   "lon": -64.3963,
-   "max_dbz": 58,
-   "tope_km": 9.4,
+   "lat": -32.028,
+   "lon": -65.5063,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.9083,
+   "lon": -64.2457,
+   "max_dbz": 57,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.8814,
+   "lon": -64.5685,
+   "max_dbz": 56,
+   "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": "posible granizo"
   },
   {
-   "lat": -31.8456,
-   "lon": -63.2452,
+   "lat": -31.8545,
+   "lon": -64.3533,
    "max_dbz": 54,
-   "tope_km": 8.8,
+   "tope_km": 12.3,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.9532,
-   "lon": -64.6222,
-   "max_dbz": 51,
-   "tope_km": 8.8,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.8814,
-   "lon": -64.4394,
-   "max_dbz": 50,
+   "lat": -31.8994,
+   "lon": -63.0516,
+   "max_dbz": 53,
    "tope_km": 8.2,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.8007,
-   "lon": -64.5469,
-   "max_dbz": 50,
+   "lat": -32.0338,
+   "lon": -64.278,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -33.1857,
+   "lon": -65.4086,
+   "max_dbz": 48,
    "tope_km": 7.6,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.1501,
+   "lon": -63.5787,
+   "max_dbz": 48,
+   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "San Agustín": {
+  "Colonia Almada": {
+   "nivel": "granizo probable",
+   "km": 7.7,
+   "max_dbz": 61,
+   "tope_km": 12.9,
+   "visto": "2026-11-23 16:17"
+  },
+  "Los Cerrillos": {
+   "nivel": "granizo probable",
+   "km": 7.5,
+   "max_dbz": 68,
+   "tope_km": 17.0,
+   "visto": "2026-11-23 16:09"
+  },
+  "Los Reartes": {
    "nivel": "posible granizo",
-   "km": 2.2,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "visto": "2026-11-23 15:59"
+   "km": 4.3,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "visto": "2026-11-23 16:17"
+  },
+  "Monte Ralo": {
+   "nivel": "granizo probable",
+   "km": 1.3,
+   "max_dbz": 57,
+   "tope_km": 10.6,
+   "visto": "2026-11-23 16:17"
+  },
+  "Potrero de Garay": {
+   "nivel": "posible granizo",
+   "km": 9.1,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "visto": "2026-11-23 16:17"
+  },
+  "San José": {
+   "nivel": "granizo probable",
+   "km": 3.6,
+   "max_dbz": 65,
+   "tope_km": 17.0,
+   "visto": "2026-11-23 16:17"
+  },
+  "Villa Ciudad Parque Los Reartes": {
+   "nivel": "posible granizo",
+   "km": 4.5,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "visto": "2026-11-23 16:17"
+  },
+  "Villa Dolores": {
+   "nivel": "granizo probable",
+   "km": 9.7,
+   "max_dbz": 65,
+   "tope_km": 17.0,
+   "visto": "2026-11-23 16:17"
   }
  }
 }
