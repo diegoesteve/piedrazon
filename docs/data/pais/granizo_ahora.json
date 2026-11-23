@@ -1,64 +1,72 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 22:15",
+ "consultado": "2026-11-22 22:30",
  "radares": {
-  "RMA6": "2026-11-22 21:45",
-  "RMA11": "2026-11-22 22:05",
-  "RMA3": "2026-11-22 21:58",
-  "RMA20": "2026-11-22 22:00"
+  "RMA20": "2026-11-22 22:16",
+  "RMA11": "2026-11-22 22:14",
+  "RMA3": "2026-11-22 22:07",
+  "RMA1": "2026-11-22 22:17"
  },
  "nucleos": [
   {
-   "lat": -27.123,
-   "lon": -65.8859,
+   "lat": -27.1682,
+   "lon": -65.9374,
    "max_dbz": 56,
    "tope_km": 13.5,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -28.4182,
-   "lon": -66.0406,
-   "max_dbz": 55,
-   "tope_km": 8.2,
-   "radar": "RMA11",
-   "nivel": "posible granizo"
+   "lat": -31.9173,
+   "lon": -64.9235,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -26.9962,
-   "lon": -65.8962,
-   "max_dbz": 53,
-   "tope_km": 14.1,
+   "lat": -27.2676,
+   "lon": -66.02,
+   "max_dbz": 54,
+   "tope_km": 12.3,
    "radar": "RMA11",
    "nivel": null
   },
   {
-   "lat": -23.8351,
-   "lon": -61.8364,
-   "max_dbz": 52,
-   "tope_km": 7.6,
+   "lat": -22.8425,
+   "lon": -61.3144,
+   "max_dbz": 54,
+   "tope_km": 10.6,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -23.1049,
-   "lon": -63.7692,
+   "lat": -23.1505,
+   "lon": -63.7189,
    "max_dbz": 52,
    "tope_km": 17.0,
    "radar": "RMA20",
    "nivel": null
   },
   {
-   "lat": -36.5138,
-   "lon": -55.7604,
-   "max_dbz": 51,
-   "tope_km": 7.0,
-   "radar": "RMA6",
+   "lat": -22.8425,
+   "lon": -61.3947,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -23.1322,
-   "lon": -63.8696,
+   "lat": -23.3237,
+   "lon": -64.0302,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "radar": "RMA20",
+   "nivel": null
+  },
+  {
+   "lat": -23.1687,
+   "lon": -63.8194,
    "max_dbz": 50,
    "tope_km": 17.0,
    "radar": "RMA20",
@@ -66,12 +74,26 @@
   }
  ],
  "localidades": {
-  "Los Angeles (Catamarca)": {
-   "nivel": "posible granizo",
-   "km": 9.6,
-   "max_dbz": 55,
-   "tope_km": 8.2,
-   "visto": "2026-11-22 22:05"
+  "Las Chacras (Córdoba)": {
+   "nivel": "granizo probable",
+   "km": 10.0,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "visto": "2026-11-22 22:17"
+  },
+  "Las Rabonas": {
+   "nivel": "granizo probable",
+   "km": 8.9,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "visto": "2026-11-22 22:17"
+  },
+  "Los Hornillos": {
+   "nivel": "granizo probable",
+   "km": 6.4,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "visto": "2026-11-22 22:17"
   }
  }
 }
