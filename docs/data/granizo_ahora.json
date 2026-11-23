@@ -1,269 +1,213 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 04:00",
+ "consultado": "2026-11-23 04:15",
  "radares": {
-  "RMA17": "2026-11-23 03:45",
-  "RMA1": "2026-11-23 03:44",
-  "RMA16": "2026-11-23 03:44"
+  "RMA16": "2026-11-23 04:01",
+  "RMA17": "2026-11-23 04:01",
+  "RMA1": "2026-11-23 03:53"
  },
  "nucleos": [
   {
-   "lat": -31.6121,
-   "lon": -64.1274,
+   "lat": -31.9188,
+   "lon": -65.254,
    "max_dbz": 59,
+   "tope_km": 17.0,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.7828,
+   "lon": -64.6115,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.63,
+   "lon": -64.0521,
+   "max_dbz": 58,
    "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.8994,
-   "lon": -64.9773,
+   "lat": -31.432,
+   "lon": -64.7729,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -31.9641,
+   "lon": -65.1766,
    "max_dbz": 56,
-   "tope_km": 11.7,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.7019,
+   "lon": -64.2672,
+   "max_dbz": 56,
+   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
    "lat": -31.4771,
-   "lon": -64.676,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.693,
-   "lon": -64.4824,
+   "lon": -64.6653,
    "max_dbz": 55,
    "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": "posible granizo"
   },
   {
-   "lat": -31.684,
-   "lon": -64.3425,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.7648,
-   "lon": -64.4178,
-   "max_dbz": 55,
+   "lat": -31.9173,
+   "lon": -65.1602,
+   "max_dbz": 53,
    "tope_km": 11.1,
    "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.9097,
-   "lon": -65.2761,
-   "max_dbz": 55,
-   "tope_km": 14.7,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.8729,
-   "lon": -65.0221,
-   "max_dbz": 54,
-   "tope_km": 14.7,
-   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -31.8276,
-   "lon": -64.6653,
+   "lat": -31.7917,
+   "lon": -64.7836,
    "max_dbz": 53,
-   "tope_km": 10.6,
+   "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.8545,
-   "lon": -64.8267,
+   "lat": -31.9263,
+   "lon": -64.9342,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.5311,
+   "lon": -64.5147,
    "max_dbz": 51,
-   "tope_km": 11.7,
+   "tope_km": 10.0,
    "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.7995,
-   "lon": -64.7129,
-   "max_dbz": 49,
-   "tope_km": 13.5,
-   "radar": "RMA16",
    "nivel": null
   }
  ],
  "localidades": {
-  "Alta Gracia": {
+  "Cuesta Blanca": {
    "nivel": "posible granizo",
-   "km": 6.1,
+   "km": 6.4,
    "max_dbz": 55,
    "tope_km": 8.8,
-   "visto": "2026-11-23 03:44"
-  },
-  "Anisacate": {
-   "nivel": "granizo probable",
-   "km": 5.8,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
-  },
-  "Bouwer": {
-   "nivel": "granizo probable",
-   "km": 8.5,
-   "max_dbz": 59,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
-  },
-  "Cuesta Blanca": {
-   "nivel": "granizo probable",
-   "km": 7.4,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-23 03:44"
+   "visto": "2026-11-23 03:53"
   },
   "Dique Chico": {
    "nivel": "granizo probable",
-   "km": 3.9,
-   "max_dbz": 55,
+   "km": 8.3,
+   "max_dbz": 56,
    "tope_km": 10.6,
-   "visto": "2026-11-23 03:44"
+   "visto": "2026-11-23 03:53"
   },
-  "La Paisanita": {
+  "Las Tapias": {
    "nivel": "granizo probable",
-   "km": 9.4,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
-  },
-  "La Rancherita": {
-   "nivel": "granizo probable",
-   "km": 4.2,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
-  },
-  "La Serranita": {
-   "nivel": "granizo probable",
-   "km": 4.9,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
-  },
-  "Las Calles": {
-   "nivel": "granizo probable",
-   "km": 8.4,
+   "km": 6.8,
    "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-23 03:44"
-  },
-  "Las Rabonas": {
-   "nivel": "granizo probable",
-   "km": 4.1,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-23 03:44"
-  },
-  "Los Hornillos": {
-   "nivel": "granizo probable",
-   "km": 1.0,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-23 03:44"
+   "tope_km": 17.0,
+   "visto": "2026-11-23 04:01"
   },
   "Lozada": {
    "nivel": "granizo probable",
-   "km": 5.7,
-   "max_dbz": 59,
+   "km": 4.8,
+   "max_dbz": 58,
    "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
+   "visto": "2026-11-23 03:53"
+  },
+  "Potrero de Garay": {
+   "nivel": "granizo probable",
+   "km": 2.9,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "visto": "2026-11-23 03:53"
   },
   "Rafael García": {
    "nivel": "granizo probable",
-   "km": 8.6,
-   "max_dbz": 55,
+   "km": 6.0,
+   "max_dbz": 56,
    "tope_km": 10.6,
-   "visto": "2026-11-23 03:44"
+   "visto": "2026-11-23 03:53"
+  },
+  "San Clemente": {
+   "nivel": "granizo probable",
+   "km": 7.1,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "visto": "2026-11-23 03:53"
   },
   "San José": {
    "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 55,
-   "tope_km": 14.7,
-   "visto": "2026-11-23 03:44"
+   "km": 9.2,
+   "max_dbz": 59,
+   "tope_km": 17.0,
+   "visto": "2026-11-23 04:01"
   },
   "San Pedro": {
    "nivel": "granizo probable",
-   "km": 4.9,
-   "max_dbz": 55,
-   "tope_km": 14.7,
-   "visto": "2026-11-23 03:44"
+   "km": 5.0,
+   "max_dbz": 59,
+   "tope_km": 17.0,
+   "visto": "2026-11-23 04:01"
+  },
+  "Sauce Arriba": {
+   "nivel": "granizo probable",
+   "km": 6.0,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-23 04:01"
   },
   "Tala Huasi": {
-   "nivel": "granizo probable",
-   "km": 9.9,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-23 03:44"
-  },
-  "Valle de Anisacate": {
-   "nivel": "granizo probable",
-   "km": 3.3,
+   "nivel": "posible granizo",
+   "km": 8.9,
    "max_dbz": 55,
+   "tope_km": 8.8,
+   "visto": "2026-11-23 03:53"
+  },
+  "Toledo": {
+   "nivel": "granizo probable",
+   "km": 9.5,
+   "max_dbz": 58,
    "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
+   "visto": "2026-11-23 03:53"
   },
   "Villa Ciudad de América": {
    "nivel": "granizo probable",
-   "km": 9.3,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
+   "km": 9.2,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "visto": "2026-11-23 03:53"
   },
-  "Villa La Bolsa": {
+  "Villa Dolores": {
    "nivel": "granizo probable",
-   "km": 3.8,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
+   "km": 2.8,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-23 04:01"
   },
-  "Villa Los Aromos": {
-   "nivel": "granizo probable",
-   "km": 5.4,
+  "Villa Río Icho Cruz": {
+   "nivel": "posible granizo",
+   "km": 9.9,
    "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
-  },
-  "Villa San Isidro": {
-   "nivel": "granizo probable",
-   "km": 4.4,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "visto": "2026-11-23 03:44"
+   "tope_km": 8.8,
+   "visto": "2026-11-23 03:53"
   },
   "Villa Sarmiento (dpto. San Alberto)": {
    "nivel": "granizo probable",
-   "km": 7.9,
-   "max_dbz": 55,
-   "tope_km": 14.7,
-   "visto": "2026-11-23 03:44"
-  },
-  "Villa de las Rosas": {
-   "nivel": "granizo probable",
-   "km": 7.2,
+   "km": 5.1,
    "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-23 03:44"
-  },
-  "Villa del Prado": {
-   "nivel": "granizo probable",
-   "km": 8.5,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-23 03:44"
+   "tope_km": 17.0,
+   "visto": "2026-11-23 04:01"
   }
  }
 }
