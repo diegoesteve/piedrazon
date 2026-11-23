@@ -1,90 +1,84 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 18:30",
+ "consultado": "2026-11-23 18:45",
  "radares": {
-  "RMA17": "2026-11-23 18:12",
-  "RMA16": "2026-11-23 18:12",
-  "RMA1": "2026-11-23 18:14"
+  "RMA1": "2026-11-23 18:24",
+  "RMA17": "2026-11-23 18:28",
+  "RMA16": "2026-11-23 18:20"
  },
  "nucleos": [
   {
-   "lat": -33.1857,
-   "lon": -65.4197,
-   "max_dbz": 64,
-   "tope_km": 10.0,
+   "lat": -32.4496,
+   "lon": -65.0553,
+   "max_dbz": 63,
+   "tope_km": 15.8,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.4223,
-   "lon": -65.1436,
-   "max_dbz": 61,
-   "tope_km": 16.4,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.5311,
-   "lon": -64.0198,
-   "max_dbz": 60,
+   "lat": -31.4861,
+   "lon": -63.9337,
+   "max_dbz": 59,
    "tope_km": 8.8,
    "radar": "RMA1",
-   "nivel": "granizo probable"
+   "nivel": "posible granizo"
   },
   {
-   "lat": -31.5704,
-   "lon": -64.1213,
-   "max_dbz": 57,
-   "tope_km": 17.0,
+   "lat": -33.2129,
+   "lon": -65.0773,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "radar": "RMA16",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.5196,
+   "lon": -64.9677,
+   "max_dbz": 56,
+   "tope_km": 12.9,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.2219,
-   "lon": -65.0553,
-   "max_dbz": 54,
-   "tope_km": 8.2,
+   "lat": -32.2924,
+   "lon": -65.8691,
+   "max_dbz": 55,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.2305,
+   "lon": -65.8164,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -33.1857,
+   "lon": -65.4528,
+   "max_dbz": 53,
+   "tope_km": 9.4,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.4535,
-   "lon": -65.0848,
-   "max_dbz": 54,
+   "lat": -31.7738,
+   "lon": -63.9445,
+   "max_dbz": 49,
    "tope_km": 9.4,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -32.1022,
-   "lon": -65.7951,
-   "max_dbz": 53,
-   "tope_km": 13.5,
-   "radar": "RMA16",
+   "lat": -31.772,
+   "lon": -64.0004,
+   "max_dbz": 47,
+   "tope_km": 12.9,
+   "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {
-  "Bouwer": {
-   "nivel": "granizo probable",
-   "km": 6.0,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-23 18:12"
-  },
-  "Lozada": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "visto": "2026-11-23 18:12"
-  },
-  "Toledo": {
-   "nivel": "granizo probable",
-   "km": 2.5,
-   "max_dbz": 60,
-   "tope_km": 8.8,
-   "visto": "2026-11-23 18:14"
-  }
- }
+ "localidades": {}
 }
