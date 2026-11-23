@@ -1,60 +1,100 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 20:00",
+ "consultado": "2026-11-23 20:15",
  "radares": {
-  "RMA17": "2026-11-23 19:41",
-  "RMA16": "2026-11-23 19:42",
-  "RMA1": "2026-11-23 19:46"
+  "RMA1": "2026-11-23 20:04",
+  "RMA17": "2026-11-23 19:58",
+  "RMA16": "2026-11-23 19:58"
  },
  "nucleos": [
   {
-   "lat": -32.5864,
-   "lon": -65.0111,
-   "max_dbz": 60,
+   "lat": -32.692,
+   "lon": -64.8688,
+   "max_dbz": 62,
    "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.6502,
+   "lon": -64.8234,
+   "max_dbz": 59,
+   "tope_km": 13.5,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.5782,
-   "lon": -64.8804,
-   "max_dbz": 54,
-   "tope_km": 10.0,
+   "lat": -31.08,
+   "lon": -65.8379,
+   "max_dbz": 56,
+   "tope_km": 13.5,
    "radar": "RMA1",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -31.6071,
-   "lon": -63.187,
-   "max_dbz": 53,
-   "tope_km": 14.7,
+   "lat": -31.5887,
+   "lon": -63.11,
+   "max_dbz": 54,
+   "tope_km": 11.7,
    "radar": "RMA17",
    "nivel": null
   },
   {
+   "lat": -32.6404,
+   "lon": -64.7083,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -30.917,
+   "lon": -65.7303,
+   "max_dbz": 51,
+   "tope_km": 13.5,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.621,
+   "lon": -63.0516,
+   "max_dbz": 51,
+   "tope_km": 7.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.423,
+   "lon": -62.675,
+   "max_dbz": 51,
+   "tope_km": 7.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
    "lat": -31.4771,
-   "lon": -62.5244,
-   "max_dbz": 52,
+   "lon": -62.2339,
+   "max_dbz": 50,
    "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.4694,
-   "lon": -62.4725,
-   "max_dbz": 49,
-   "tope_km": 14.7,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -31.5796,
-   "lon": -63.2969,
-   "max_dbz": 48,
-   "tope_km": 14.7,
-   "radar": "RMA17",
+   "lat": -31.4771,
+   "lon": -65.5797,
+   "max_dbz": 47,
+   "tope_km": 10.6,
+   "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Alpa Corral": {
+   "nivel": "granizo probable",
+   "km": 9.7,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "visto": "2026-11-23 19:58"
+  }
+ }
 }
