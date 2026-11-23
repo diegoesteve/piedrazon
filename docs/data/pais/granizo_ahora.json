@@ -1,76 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 01:17",
+ "consultado": "2026-11-23 01:30",
  "radares": {
-  "RMA16": "2026-11-23 01:00",
-  "RMA10": "2026-11-23 00:49",
-  "RMA20": "2026-11-23 01:01",
-  "RMA3": "2026-11-23 00:59"
+  "RMA16": "2026-11-23 01:09",
+  "RMA20": "2026-11-23 01:17",
+  "RMA3": "2026-11-23 01:17"
  },
  "nucleos": [
   {
    "lat": -33.2219,
-   "lon": -65.0773,
-   "max_dbz": 67,
-   "tope_km": 14.1,
+   "lon": -65.0663,
+   "max_dbz": 66,
+   "tope_km": 12.3,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -23.0252,
-   "lon": -59.4772,
-   "max_dbz": 56,
-   "tope_km": 11.1,
+   "lat": -23.0343,
+   "lon": -59.3367,
+   "max_dbz": 58,
+   "tope_km": 13.5,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -23.0343,
-   "lon": -59.2664,
-   "max_dbz": 52,
-   "tope_km": 11.1,
+   "lat": -22.9522,
+   "lon": -59.8286,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "radar": "RMA3",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -23.0161,
+   "lon": -59.7784,
+   "max_dbz": 54,
+   "tope_km": 10.0,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -39.2228,
-   "lon": -62.5723,
-   "max_dbz": 51,
-   "tope_km": 8.2,
-   "radar": "RMA10",
+   "lat": -23.0161,
+   "lon": -59.688,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -23.4511,
-   "lon": -63.9398,
-   "max_dbz": 50,
+   "lat": -23.3783,
+   "lon": -63.8896,
+   "max_dbz": 52,
    "tope_km": 17.0,
    "radar": "RMA20",
-   "nivel": null
-  },
-  {
-   "lat": -23.1165,
-   "lon": -59.1158,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "radar": "RMA3",
    "nivel": null
   }
  ],
  "localidades": {
   "Achiras": {
    "nivel": "granizo probable",
-   "km": 9.5,
-   "max_dbz": 67,
-   "tope_km": 14.1,
-   "visto": "2026-11-23 01:00"
+   "km": 8.7,
+   "max_dbz": 66,
+   "tope_km": 12.3,
+   "visto": "2026-11-23 01:09"
   },
   "La Punilla": {
    "nivel": "granizo probable",
-   "km": 8.8,
-   "max_dbz": 67,
-   "tope_km": 14.1,
-   "visto": "2026-11-23 01:00"
+   "km": 9.0,
+   "max_dbz": 66,
+   "tope_km": 12.3,
+   "visto": "2026-11-23 01:09"
   }
  }
 }
