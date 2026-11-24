@@ -1,82 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 03:30",
+ "consultado": "2026-11-24 03:45",
  "radares": {
-  "RMA1": "2026-11-24 03:18",
-  "RMA16": "2026-11-24 03:12"
+  "RMA1": "2026-11-24 03:27",
+  "RMA16": "2026-11-24 03:29"
  },
  "nucleos": [
   {
-   "lat": -30.2261,
-   "lon": -64.5792,
-   "max_dbz": 57,
-   "tope_km": 9.4,
+   "lat": -30.2626,
+   "lon": -64.4931,
+   "max_dbz": 61,
+   "tope_km": 8.8,
    "radar": "RMA1",
-   "nivel": "posible granizo"
+   "nivel": "granizo probable"
   },
   {
-   "lat": -31.0528,
-   "lon": -65.1171,
+   "lat": -30.0617,
+   "lon": -64.4286,
    "max_dbz": 56,
-   "tope_km": 10.0,
+   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
    "lat": -31.1161,
+   "lon": -64.8804,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.1613,
    "lon": -64.988,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.0343,
-   "lon": -64.5254,
    "max_dbz": 51,
-   "tope_km": 8.2,
+   "tope_km": 10.6,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.1523,
-   "lon": -65.0848,
+   "lat": -31.0619,
+   "lon": -64.9665,
    "max_dbz": 50,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.0166,
+   "lon": -64.8804,
+   "max_dbz": 48,
    "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -30.2443,
-   "lon": -65.6335,
-   "max_dbz": 50,
-   "tope_km": 11.1,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.0434,
-   "lon": -65.4829,
-   "max_dbz": 48,
-   "tope_km": 11.1,
+   "lat": -30.1987,
+   "lon": -65.4399,
+   "max_dbz": 47,
+   "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "La Higuera": {
-   "nivel": "granizo probable",
-   "km": 4.4,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "visto": "2026-11-24 03:18"
-  },
   "Quilino": {
-   "nivel": "posible granizo",
-   "km": 9.8,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "visto": "2026-11-24 03:18"
+   "nivel": "granizo probable",
+   "km": 4.9,
+   "max_dbz": 61,
+   "tope_km": 8.8,
+   "visto": "2026-11-24 03:27"
   }
  }
 }
