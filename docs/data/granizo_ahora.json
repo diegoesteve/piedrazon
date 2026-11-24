@@ -1,41 +1,41 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 00:00",
+ "consultado": "2026-11-24 00:15",
  "radares": {
-  "RMA17": "2026-11-23 23:46",
   "RMA16": "2026-11-23 23:48",
-  "RMA1": "2026-11-23 23:49"
+  "RMA1": "2026-11-23 23:58",
+  "RMA17": "2026-11-23 23:46"
  },
  "nucleos": [
   {
-   "lat": -29.8238,
-   "lon": -63.6002,
+   "lat": -29.7597,
+   "lon": -63.4711,
    "max_dbz": 64,
    "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.0708,
-   "lon": -65.612,
-   "max_dbz": 60,
-   "tope_km": 14.7,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.648,
-   "lon": -65.1064,
+   "lat": -30.0251,
+   "lon": -65.4937,
    "max_dbz": 56,
-   "tope_km": 11.7,
+   "tope_km": 14.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.5449,
+   "lat": -30.5358,
    "lon": -65.1602,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.1161,
+   "lon": -62.0511,
    "max_dbz": 54,
-   "tope_km": 11.7,
+   "tope_km": 10.0,
    "radar": "RMA1",
    "nivel": null
   },
@@ -48,6 +48,14 @@
    "nivel": null
   },
   {
+   "lat": -30.5722,
+   "lon": -65.0418,
+   "max_dbz": 52,
+   "tope_km": 17.0,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
    "lat": -31.6621,
    "lon": -65.2095,
    "max_dbz": 51,
@@ -56,50 +64,18 @@
    "nivel": null
   },
   {
-   "lat": -30.4175,
-   "lon": -63.5787,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.63,
-   "lon": -65.3323,
+   "lat": -31.6121,
+   "lon": -65.2677,
    "max_dbz": 50,
-   "tope_km": 11.7,
+   "tope_km": 17.0,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -31.1161,
-   "lon": -62.1264,
-   "max_dbz": 49,
-   "tope_km": 7.6,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.3537,
-   "lon": -63.3743,
-   "max_dbz": 49,
+   "lat": -30.5176,
+   "lon": -65.3,
+   "max_dbz": 50,
    "tope_km": 12.9,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.2626,
-   "lon": -63.3743,
-   "max_dbz": 49,
-   "tope_km": 12.9,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.2352,
-   "lon": -63.6325,
-   "max_dbz": 48,
-   "tope_km": 7.6,
    "radar": "RMA1",
    "nivel": null
   },
@@ -121,26 +97,19 @@
   }
  ],
  "localidades": {
-  "Los Hoyos": {
+  "Alto de los Quebrachos": {
    "nivel": "granizo probable",
-   "km": 5.0,
+   "km": 3.6,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-23 23:58"
+  },
+  "Gutemberg": {
+   "nivel": "granizo probable",
+   "km": 9.9,
    "max_dbz": 64,
    "tope_km": 17.0,
-   "visto": "2026-11-23 23:49"
-  },
-  "Panaholma": {
-   "nivel": "granizo probable",
-   "km": 4.7,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-23 23:49"
-  },
-  "San Lorenzo": {
-   "nivel": "granizo probable",
-   "km": 9.7,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-23 23:49"
+   "visto": "2026-11-23 23:58"
   }
  }
 }
