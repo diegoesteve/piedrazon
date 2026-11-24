@@ -1,82 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 18:30",
+ "consultado": "2026-11-24 18:45",
  "radares": {
-  "RMA3": "2026-11-24 18:15",
+  "RMA3": "2026-11-24 18:33",
   "RMA4": "2026-11-24 18:06",
-  "RMA5": "2026-11-24 18:15",
-  "AR7": "2026-11-24 18:10"
+  "RMA5": "2026-11-24 18:33",
+  "AR7": "2026-11-24 18:30",
+  "RMA16": "2026-11-24 18:21",
+  "RMA11": "2026-11-24 18:28"
  },
  "nucleos": [
   {
-   "lat": -23.1073,
-   "lon": -59.1258,
-   "max_dbz": 62,
+   "lat": -22.8517,
+   "lon": -61.6256,
+   "max_dbz": 58,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -23.1438,
-   "lon": -59.2764,
-   "max_dbz": 59,
-   "tope_km": 12.9,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -23.1803,
-   "lon": -61.7661,
+   "lat": -27.2225,
+   "lon": -65.5557,
    "max_dbz": 56,
-   "tope_km": 17.0,
-   "radar": "RMA3",
+   "tope_km": 15.2,
+   "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -25.0,
-   "lon": -58.4331,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -23.0982,
-   "lon": -61.3545,
+   "lat": -23.08,
+   "lon": -61.2541,
    "max_dbz": 55,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": "granizo probable"
   },
   {
-   "lat": -22.9339,
-   "lon": -59.3567,
-   "max_dbz": 54,
-   "tope_km": 17.0,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -23.2897,
-   "lon": -58.8749,
-   "max_dbz": 54,
-   "tope_km": 17.0,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -23.2897,
-   "lon": -59.0455,
+   "lat": -23.2076,
+   "lon": -61.736,
    "max_dbz": 53,
+   "tope_km": 15.2,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -33.1405,
+   "lon": -66.2478,
+   "max_dbz": 53,
+   "tope_km": 14.1,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -23.0526,
+   "lon": -59.2363,
+   "max_dbz": 51,
    "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -22.9248,
-   "lon": -61.2943,
+   "lat": -25.0449,
+   "lon": -58.3428,
    "max_dbz": 51,
-   "tope_km": 12.9,
+   "tope_km": 14.1,
    "radar": "RMA3",
    "nivel": null
   },
@@ -89,56 +75,48 @@
    "nivel": null
   },
   {
-   "lat": -23.5445,
-   "lon": -58.905,
+   "lat": -23.3716,
+   "lon": -59.166,
    "max_dbz": 50,
-   "tope_km": 15.2,
+   "tope_km": 15.8,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -25.3585,
-   "lon": -53.676,
+   "lat": -22.9796,
+   "lon": -61.214,
+   "max_dbz": 49,
+   "tope_km": 17.0,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -25.3494,
+   "lon": -53.5127,
    "max_dbz": 49,
    "tope_km": 14.1,
    "radar": "RMA5",
    "nivel": null
   },
   {
-   "lat": -25.2311,
-   "lon": -53.7984,
-   "max_dbz": 48,
-   "tope_km": 14.7,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -29.7068,
-   "lon": -60.959,
-   "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.8541,
-   "lon": -60.9266,
-   "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -23.7716,
+   "lat": -23.4444,
    "lon": -58.8849,
-   "max_dbz": 47,
-   "tope_km": 11.7,
+   "max_dbz": 48,
+   "tope_km": 17.0,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -29.7713,
-   "lon": -60.9482,
+   "lat": -29.9736,
+   "lon": -60.9049,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.6976,
+   "lon": -60.9266,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
@@ -146,12 +124,54 @@
   }
  ],
  "localidades": {
-  "Buena Vista (Formosa)": {
+  "Arcadia": {
    "nivel": "granizo probable",
-   "km": 9.3,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-24 18:15"
+   "km": 9.5,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "visto": "2026-11-24 18:28"
+  },
+  "Capitán Cáceres": {
+   "nivel": "granizo probable",
+   "km": 6.0,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "visto": "2026-11-24 18:28"
+  },
+  "Monteros": {
+   "nivel": "granizo probable",
+   "km": 8.6,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "visto": "2026-11-24 18:28"
+  },
+  "Pueblo Independencia": {
+   "nivel": "granizo probable",
+   "km": 2.8,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "visto": "2026-11-24 18:28"
+  },
+  "Río Seco": {
+   "nivel": "granizo probable",
+   "km": 5.1,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "visto": "2026-11-24 18:28"
+  },
+  "Soldado Maldonado": {
+   "nivel": "granizo probable",
+   "km": 8.8,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "visto": "2026-11-24 18:28"
+  },
+  "Villa Quinteros": {
+   "nivel": "granizo probable",
+   "km": 3.4,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "visto": "2026-11-24 18:28"
   }
  }
 }
