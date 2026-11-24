@@ -1,47 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-24 03:16",
+ "consultado": "2026-11-24 03:30",
  "alertas": [
-  {
-   "id": "2026_11_24_0411_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS",
-   "desde": "2026-11-24T04:11:00-03:00",
-   "hasta": "2026-11-24T06:11:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS",
-   "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
-   "zona": "FORMOSA: BERMEJO - PATINO. CHACO: GRAL GUEMES.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_24_0411_cap_es.xml",
-   "desde_local": "24/11 04:11",
-   "hasta_local": "24/11 06:11",
-   "localidades": 5,
-   "poligonos": [
-    [
-     [
-      -61.17,
-      -24.38
-     ],
-     [
-      -60.19,
-      -25.11
-     ],
-     [
-      -60.21,
-      -26.1
-     ],
-     [
-      -61.18,
-      -26.1
-     ],
-     [
-      -61.17,
-      -24.38
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_24_0527_cap_es",
    "tipo": "aviso a corto plazo",
@@ -182,6 +142,50 @@
      [
       -58.54,
       -27.37
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_24_0609_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-24T06:09:00-03:00",
+   "hasta": "2026-11-24T08:09:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "FORMOSA: PATINO. CHACO: GRAL GUEMES.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_24_0609_cap_es.xml",
+   "desde_local": "24/11 06:09",
+   "hasta_local": "24/11 08:09",
+   "localidades": 8,
+   "poligonos": [
+    [
+     [
+      -60.58,
+      -24.41
+     ],
+     [
+      -60.17,
+      -24.85
+     ],
+     [
+      -60.17,
+      -26.09
+     ],
+     [
+      -61.21,
+      -26.09
+     ],
+     [
+      -61.09,
+      -24.84
+     ],
+     [
+      -60.58,
+      -24.41
      ]
     ]
    ]
@@ -48996,31 +49000,6 @@
   }
  ],
  "localidades": {
-  "El Espinillo (Chaco)": [
-   "2026_11_24_0411_cap_es",
-   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
-   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
-  ],
-  "Juan José Castelli": [
-   "2026_11_24_0411_cap_es",
-   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
-   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
-  ],
-  "Miraflores (Chaco)": [
-   "2026_11_24_0411_cap_es",
-   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
-   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
-  ],
-  "Villa Río Bermejito": [
-   "2026_11_24_0411_cap_es",
-   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
-   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
-  ],
-  "Zaparinqui": [
-   "2026_11_24_0411_cap_es",
-   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
-   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
-  ],
   "9 de Julio Kilómetro 20": [
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_7",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_7",
@@ -49706,6 +49685,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_48"
   ],
   "Las Lomitas": [
+   "2026_11_24_0609_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_48",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_48"
   ],
@@ -49714,6 +49694,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_48"
   ],
   "Pozo del Tigre": [
+   "2026_11_24_0609_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_48",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_48"
   ],
@@ -54180,11 +54161,27 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
   ],
+  "El Espinillo (Chaco)": [
+   "2026_11_24_0609_cap_es",
+   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
+   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
+  ],
   "Fortín Lavalle": [
+   "2026_11_24_0609_cap_es",
+   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
+   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
+  ],
+  "Juan José Castelli": [
+   "2026_11_24_0609_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
   ],
   "Los Frentones": [
+   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
+   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
+  ],
+  "Miraflores (Chaco)": [
+   "2026_11_24_0609_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
   ],
@@ -54197,6 +54194,16 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
   ],
   "Tres Isletas": [
+   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
+   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
+  ],
+  "Villa Río Bermejito": [
+   "2026_11_24_0609_cap_es",
+   "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
+   "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
+  ],
+  "Zaparinqui": [
+   "2026_11_24_0609_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_10",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_10"
   ],
