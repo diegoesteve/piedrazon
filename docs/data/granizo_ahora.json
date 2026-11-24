@@ -1,51 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 05:30",
+ "consultado": "2026-11-24 05:46",
  "radares": {
-  "RMA16": "2026-11-24 05:15",
-  "RMA1": "2026-11-24 05:08"
+  "RMA16": "2026-11-24 05:31",
+  "RMA1": "2026-11-24 05:26"
  },
  "nucleos": [
   {
-   "lat": -33.2309,
-   "lon": -65.0994,
-   "max_dbz": 64,
-   "tope_km": 10.6,
+   "lat": -33.2219,
+   "lon": -65.0553,
+   "max_dbz": 59,
+   "tope_km": 7.6,
    "radar": "RMA16",
-   "nivel": "granizo probable"
+   "nivel": "posible granizo"
   },
   {
-   "lat": -30.0434,
-   "lon": -64.0951,
-   "max_dbz": 60,
-   "tope_km": 12.9,
+   "lat": -29.9977,
+   "lon": -63.8477,
+   "max_dbz": 58,
+   "tope_km": 11.1,
    "radar": "RMA1",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.1896,
-   "lon": -64.0951,
-   "max_dbz": 51,
-   "tope_km": 12.3,
+   "lat": -30.1165,
+   "lon": -64.4501,
+   "max_dbz": 50,
+   "tope_km": 8.2,
    "radar": "RMA1",
    "nivel": null
   },
   {
-   "lat": -29.6955,
-   "lon": -63.8046,
-   "max_dbz": 50,
+   "lat": -30.0983,
+   "lon": -63.8907,
+   "max_dbz": 49,
    "tope_km": 11.1,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -30.1622,
+   "lon": -63.8584,
+   "max_dbz": 49,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -29.7046,
+   "lon": -63.5142,
+   "max_dbz": 48,
+   "tope_km": 11.7,
    "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "Caminiaga": {
+  "Achiras": {
+   "nivel": "posible granizo",
+   "km": 9.2,
+   "max_dbz": 59,
+   "tope_km": 7.6,
+   "visto": "2026-11-24 05:31"
+  },
+  "Chañar Viejo": {
    "nivel": "granizo probable",
-   "km": 7.9,
-   "max_dbz": 60,
-   "tope_km": 12.9,
-   "visto": "2026-11-24 05:08"
+   "km": 0.7,
+   "max_dbz": 58,
+   "tope_km": 11.1,
+   "visto": "2026-11-24 05:26"
+  },
+  "Rayo Cortado": {
+   "nivel": "granizo probable",
+   "km": 8.5,
+   "max_dbz": 58,
+   "tope_km": 11.1,
+   "visto": "2026-11-24 05:26"
   }
  }
 }
