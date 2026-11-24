@@ -1,67 +1,65 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 04:00",
+ "consultado": "2026-11-24 04:15",
  "radares": {
-  "RMA16": "2026-11-24 03:45",
-  "RMA1": "2026-11-24 03:46"
+  "RMA1": "2026-11-24 04:04",
+  "RMA16": "2026-11-24 04:01"
  },
  "nucleos": [
   {
-   "lat": -30.3446,
-   "lon": -64.2887,
-   "max_dbz": 58,
-   "tope_km": 8.8,
+   "lat": -30.9533,
+   "lon": -64.6007,
+   "max_dbz": 59,
+   "tope_km": 8.2,
    "radar": "RMA1",
    "nivel": "posible granizo"
   },
   {
-   "lat": -30.2899,
-   "lon": -65.2893,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "radar": "RMA1",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.1948,
-   "lon": -65.4417,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "radar": "RMA16",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.0619,
-   "lon": -64.6545,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.0343,
-   "lon": -64.1166,
-   "max_dbz": 50,
-   "tope_km": 8.2,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -30.1074,
-   "lon": -65.0311,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -31.0438,
-   "lon": -64.8051,
-   "max_dbz": 49,
+   "lat": -31.0981,
+   "lon": -64.4178,
+   "max_dbz": 54,
    "tope_km": 10.0,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -31.0166,
+   "lon": -64.4931,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -30.4357,
+   "lon": -64.0521,
+   "max_dbz": 49,
+   "tope_km": 8.8,
    "radar": "RMA1",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "La Cumbre": {
+   "nivel": "posible granizo",
+   "km": 9.5,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "visto": "2026-11-24 04:04"
+  },
+  "Los Cocos": {
+   "nivel": "posible granizo",
+   "km": 9.8,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "visto": "2026-11-24 04:04"
+  },
+  "San Esteban": {
+   "nivel": "posible granizo",
+   "km": 7.5,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "visto": "2026-11-24 04:04"
+  }
+ }
 }
