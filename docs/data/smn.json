@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-23 21:15",
+ "consultado": "2026-11-23 21:30",
  "alertas": [
   {
    "id": "2026_11_23_2232_cap_es",
@@ -54,6 +54,50 @@
      [
       -66.24,
       -31.07
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_24_0020_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-24T00:20:00-03:00",
+   "hasta": "2026-11-24T02:20:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CORDOBA: CRUZ DEL EJE - ISCHILIN - PUNILLA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_24_0020_cap_es.xml",
+   "desde_local": "24/11 00:20",
+   "hasta_local": "24/11 02:20",
+   "localidades": 12,
+   "poligonos": [
+    [
+     [
+      -64.74,
+      -30.87
+     ],
+     [
+      -65.4,
+      -30.22
+     ],
+     [
+      -64.65,
+      -30.07
+     ],
+     [
+      -64.34,
+      -30.41
+     ],
+     [
+      -64.24,
+      -30.71
+     ],
+     [
+      -64.74,
+      -30.87
      ]
     ]
    ]
@@ -6397,6 +6441,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Chuña": [
+   "2026_11_24_0020_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
@@ -6405,6 +6450,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Deán Funes": [
+   "2026_11_24_0020_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
@@ -6441,6 +6487,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Olivares de San Nicolás": [
+   "2026_11_24_0020_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
@@ -6525,10 +6572,12 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_26"
   ],
   "Charbonier": [
+   "2026_11_24_0020_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_26",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_26"
   ],
   "Copacabana": [
+   "2026_11_24_0020_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_26",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_26"
   ],
@@ -7719,7 +7768,8 @@
    "2026_11_23_2232_cap_es"
   ],
   "Cruz del Eje": [
-   "2026_11_23_2232_cap_es"
+   "2026_11_23_2232_cap_es",
+   "2026_11_24_0020_cap_es"
   ],
   "El Chacho": [
    "2026_11_23_2232_cap_es"
@@ -7731,7 +7781,8 @@
    "2026_11_23_2232_cap_es"
   ],
   "Las Playas": [
-   "2026_11_23_2232_cap_es"
+   "2026_11_23_2232_cap_es",
+   "2026_11_24_0020_cap_es"
   ],
   "Paso Viejo": [
    "2026_11_23_2232_cap_es"
@@ -7747,6 +7798,21 @@
   ],
   "Villa de Soto": [
    "2026_11_23_2232_cap_es"
+  ],
+  "El Brete": [
+   "2026_11_24_0020_cap_es"
+  ],
+  "Guanaco Muerto": [
+   "2026_11_24_0020_cap_es"
+  ],
+  "Los Chañaritos (dpto. Cruz del Eje)": [
+   "2026_11_24_0020_cap_es"
+  ],
+  "Media Naranja": [
+   "2026_11_24_0020_cap_es"
+  ],
+  "San Marcos Sierra": [
+   "2026_11_24_0020_cap_es"
   ]
  }
 }
