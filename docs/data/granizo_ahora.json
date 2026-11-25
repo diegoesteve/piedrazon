@@ -1,35 +1,51 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 08:30",
+ "consultado": "2026-11-25 08:45",
  "radares": {
-  "RMA16": "2026-11-25 08:16",
-  "RMA17": "2026-11-25 08:11"
+  "RMA16": "2026-11-25 08:24",
+  "RMA17": "2026-11-25 08:28"
  },
  "nucleos": [
   {
-   "lat": -33.171,
-   "lon": -64.6819,
-   "max_dbz": 54,
-   "tope_km": 14.7,
+   "lat": -32.1922,
+   "lon": -62.7033,
+   "max_dbz": 72,
+   "tope_km": 17.0,
    "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.2942,
+   "lon": -65.8614,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.8911,
-   "lon": -64.4731,
-   "max_dbz": 50,
-   "tope_km": 17.0,
-   "radar": "RMA17",
+   "lat": -33.9784,
+   "lon": -65.1657,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -34.7695,
-   "lon": -62.5604,
+   "lat": -32.9183,
+   "lon": -62.6593,
    "max_dbz": 50,
-   "tope_km": 17.0,
+   "tope_km": 11.1,
    "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "San Antonio de Litín": {
+   "nivel": "granizo probable",
+   "km": 7.1,
+   "max_dbz": 72,
+   "tope_km": 17.0,
+   "visto": "2026-11-25 08:28"
+  }
+ }
 }
