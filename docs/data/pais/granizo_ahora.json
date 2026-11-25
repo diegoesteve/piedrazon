@@ -1,45 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 21:00",
+ "consultado": "2026-11-24 21:15",
  "radares": {
-  "RMA11": "2026-11-24 20:40",
-  "RMA5": "2026-11-24 20:39",
-  "RMA15": "2026-11-24 20:45",
-  "AR7": "2026-11-24 20:40",
+  "RMA15": "2026-11-24 21:01",
   "RMA18": "2026-11-24 20:46",
-  "RMA3": "2026-11-24 20:39"
+  "RMA5": "2026-11-24 20:39",
+  "RMA3": "2026-11-24 20:57",
+  "AR7": "2026-11-24 21:00",
+  "RMA11": "2026-11-24 21:06",
+  "RMA20": "2026-11-24 21:06"
  },
  "nucleos": [
   {
-   "lat": -30.1834,
-   "lon": -67.1513,
-   "max_dbz": 62,
-   "tope_km": 10.0,
+   "lat": -31.0779,
+   "lon": -67.183,
+   "max_dbz": 58,
+   "tope_km": 17.0,
    "radar": "RMA15",
    "nivel": "granizo probable"
   },
   {
-   "lat": -28.033,
-   "lon": -66.0509,
-   "max_dbz": 55,
-   "tope_km": 16.4,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
+   "lat": -30.2193,
+   "lon": -67.1619,
+   "max_dbz": 57,
+   "tope_km": 8.2,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
   },
   {
-   "lat": -28.2034,
-   "lon": -65.9787,
-   "max_dbz": 55,
-   "tope_km": 12.9,
+   "lat": -28.1944,
+   "lon": -65.9478,
+   "max_dbz": 51,
+   "tope_km": 13.5,
    "radar": "RMA11",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -24.8831,
-   "lon": -59.7081,
-   "max_dbz": 54,
-   "tope_km": 12.9,
-   "radar": "RMA3",
+   "lat": -23.3692,
+   "lon": -62.6446,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA20",
    "nivel": null
   },
   {
@@ -51,13 +52,53 @@
    "nivel": null
   },
   {
+   "lat": -25.368,
+   "lon": -58.9853,
+   "max_dbz": 49,
+   "tope_km": 12.3,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -24.676,
+   "lon": -58.4231,
+   "max_dbz": 49,
+   "tope_km": 10.6,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
    "lat": -29.716,
    "lon": -60.959,
-   "max_dbz": 47,
+   "max_dbz": 49,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
+  },
+  {
+   "lat": -27.2857,
+   "lon": -66.0716,
+   "max_dbz": 49,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -22.84,
+   "lon": -64.0503,
+   "max_dbz": 48,
+   "tope_km": 15.2,
+   "radar": "RMA20",
+   "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Chucuma": {
+   "nivel": "granizo probable",
+   "km": 9.5,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "visto": "2026-11-24 21:01"
+  }
+ }
 }
