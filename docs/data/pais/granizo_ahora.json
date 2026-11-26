@@ -1,78 +1,78 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 23:30",
+ "consultado": "2026-11-25 23:46",
  "radares": {
-  "RMA19": "2026-11-25 23:13",
-  "RMA15": "2026-11-25 23:01",
-  "RMA10": "2026-11-25 23:06",
-  "RMA11": "2026-11-25 23:16",
-  "AR7": "2026-11-25 23:10"
+  "RMA10": "2026-11-25 23:24",
+  "RMA11": "2026-11-25 23:25",
+  "AR7": "2026-11-25 23:20",
+  "RMA19": "2026-11-25 23:30",
+  "RMA15": "2026-11-25 23:26"
  },
  "nucleos": [
   {
-   "lat": -31.175,
-   "lon": -68.4674,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
    "lat": -38.1055,
-   "lon": -60.0358,
-   "max_dbz": 52,
-   "tope_km": 8.2,
+   "lon": -60.0596,
+   "max_dbz": 61,
+   "tope_km": 17.0,
    "radar": "RMA10",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -30.6317,
-   "lon": -67.6589,
-   "max_dbz": 50,
-   "tope_km": 12.9,
+   "lat": -27.6015,
+   "lon": -65.9581,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -30.6943,
+   "lon": -67.532,
+   "max_dbz": 54,
+   "tope_km": 13.5,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -27.2767,
-   "lon": -66.0819,
+   "lat": -29.7805,
+   "lon": -60.9374,
    "max_dbz": 50,
-   "tope_km": 14.7,
-   "radar": "RMA11",
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -33.6537,
-   "lon": -69.4227,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -33.4655,
-   "lon": -69.3897,
+   "lat": -31.3037,
+   "lon": -68.3247,
    "max_dbz": 48,
-   "tope_km": 11.1,
+   "tope_km": 10.6,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -32.1455,
-   "lon": -67.7099,
-   "max_dbz": 48,
-   "tope_km": 9.4,
-   "radar": "RMA19",
+   "lat": -30.093,
+   "lon": -60.8833,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -29.7528,
-   "lon": -60.9482,
+   "lat": -30.1572,
+   "lon": -60.8725,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Adolfo Gonzales Chaves": {
+   "nivel": "granizo probable",
+   "km": 8.9,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "visto": "2026-11-25 23:24"
+  }
+ }
 }
