@@ -1,30 +1,20 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 07:15",
+ "consultado": "2026-11-26 07:30",
  "radares": {
-  "RMA11": "2026-11-26 07:01",
-  "RMA10": "2026-11-26 06:56",
-  "RMA15": "2026-11-26 06:46",
-  "RMA3": "2026-11-26 06:38",
-  "AR7": "2026-11-26 07:00",
+  "RMA11": "2026-11-26 07:10",
+  "RMA10": "2026-11-26 07:14",
+  "AR7": "2026-11-26 07:10",
   "RMA17": "2026-11-26 07:04"
  },
  "nucleos": [
   {
-   "lat": -27.7635,
-   "lon": -65.7311,
-   "max_dbz": 59,
-   "tope_km": 17.0,
+   "lat": -28.2124,
+   "lon": -65.9787,
+   "max_dbz": 58,
+   "tope_km": 13.5,
    "radar": "RMA11",
    "nivel": "granizo probable"
-  },
-  {
-   "lat": -38.051,
-   "lon": -62.0271,
-   "max_dbz": 58,
-   "tope_km": 7.0,
-   "radar": "RMA10",
-   "nivel": "posible granizo"
   },
   {
    "lat": -32.9725,
@@ -35,59 +25,37 @@
    "nivel": null
   },
   {
-   "lat": -23.708,
-   "lon": -61.485,
+   "lat": -38.3865,
+   "lon": -62.2405,
    "max_dbz": 52,
-   "tope_km": 10.0,
-   "radar": "RMA3",
+   "tope_km": 11.1,
+   "radar": "RMA10",
    "nivel": null
   },
   {
-   "lat": -31.0064,
-   "lon": -60.6995,
-   "max_dbz": 52,
+   "lat": -26.4332,
+   "lon": -64.8645,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -29.7068,
+   "lon": -60.959,
+   "max_dbz": 49,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -30.1564,
-   "lon": -67.2465,
-   "max_dbz": 50,
-   "tope_km": 7.6,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -30.0215,
-   "lon": -67.257,
-   "max_dbz": 50,
-   "tope_km": 8.8,
-   "radar": "RMA15",
+   "lat": -30.0195,
+   "lon": -60.8941,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {
-  "La Gruta": {
-   "nivel": "posible granizo",
-   "km": 4.5,
-   "max_dbz": 58,
-   "tope_km": 7.0,
-   "visto": "2026-11-26 06:56"
-  },
-  "Villa Ventana": {
-   "nivel": "posible granizo",
-   "km": 9.2,
-   "max_dbz": 58,
-   "tope_km": 7.0,
-   "visto": "2026-11-26 06:56"
-  },
-  "Las Lajas (Catamarca)": {
-   "nivel": "granizo probable",
-   "km": 8.3,
-   "max_dbz": 59,
-   "tope_km": 17.0,
-   "visto": "2026-11-26 07:01"
-  }
- }
+ "localidades": {}
 }
