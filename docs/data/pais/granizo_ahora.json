@@ -1,65 +1,58 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 04:15",
+ "consultado": "2026-11-26 04:30",
  "radares": {
-  "AR7": "2026-11-26 04:00",
-  "RMA19": "2026-11-26 03:40",
-  "RMA11": "2026-11-26 04:01",
-  "RMA17": "2026-11-26 04:05",
-  "RMA15": "2026-11-26 03:58"
+  "RMA11": "2026-11-26 04:17",
+  "RMA17": "2026-11-26 04:13",
+  "RMA15": "2026-11-26 04:15",
+  "AR7": "2026-11-26 04:10",
+  "RMA19": "2026-11-26 04:13",
+  "RMA3": "2026-11-26 04:13"
  },
  "nucleos": [
   {
-   "lat": -33.1259,
-   "lon": -63.0331,
-   "max_dbz": 64,
-   "tope_km": 11.7,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.9454,
-   "lon": -63.187,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "radar": "RMA17",
+   "lat": -27.2948,
+   "lon": -65.9684,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
    "lat": -30.0215,
-   "lon": -67.2676,
-   "max_dbz": 58,
-   "tope_km": 11.1,
+   "lon": -67.2465,
+   "max_dbz": 55,
+   "tope_km": 8.8,
    "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.1182,
+   "lon": -68.3906,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "radar": "RMA19",
    "nivel": "granizo probable"
   },
   {
-   "lat": -28.0779,
-   "lon": -66.0612,
-   "max_dbz": 54,
+   "lat": -32.6557,
+   "lon": -64.9018,
+   "max_dbz": 52,
    "tope_km": 17.0,
-   "radar": "RMA11",
+   "radar": "RMA17",
    "nivel": null
   },
   {
-   "lat": -32.0544,
-   "lon": -69.269,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "radar": "RMA19",
+   "lat": -24.315,
+   "lon": -61.5653,
+   "max_dbz": 49,
+   "tope_km": 12.3,
+   "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -27.2857,
-   "lon": -66.0716,
-   "max_dbz": 50,
-   "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -29.716,
-   "lon": -60.959,
+   "lat": -29.7344,
+   "lon": -60.9482,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
@@ -67,19 +60,12 @@
   }
  ],
  "localidades": {
-  "Etruria": {
+  "Las Lagunas (San Juan)": {
    "nivel": "granizo probable",
-   "km": 5.5,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "visto": "2026-11-26 04:05"
-  },
-  "Pascanas": {
-   "nivel": "granizo probable",
-   "km": 0.7,
-   "max_dbz": 64,
-   "tope_km": 11.7,
-   "visto": "2026-11-26 04:05"
+   "km": 8.5,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "visto": "2026-11-26 04:13"
   }
  }
 }
