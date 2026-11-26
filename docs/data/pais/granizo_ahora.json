@@ -1,45 +1,36 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 07:00",
+ "consultado": "2026-11-26 07:15",
  "radares": {
+  "RMA11": "2026-11-26 07:01",
+  "RMA10": "2026-11-26 06:56",
   "RMA15": "2026-11-26 06:46",
-  "RMA17": "2026-11-26 06:32",
-  "RMA11": "2026-11-26 06:35",
-  "AR7": "2026-11-26 06:40",
-  "RMA19": "2026-11-26 06:35",
-  "RMA10": "2026-11-26 06:47",
-  "RMA3": "2026-11-26 06:38"
+  "RMA3": "2026-11-26 06:38",
+  "AR7": "2026-11-26 07:00",
+  "RMA17": "2026-11-26 07:04"
  },
  "nucleos": [
   {
-   "lat": -27.6465,
-   "lon": -65.9271,
-   "max_dbz": 60,
-   "tope_km": 12.3,
+   "lat": -27.7635,
+   "lon": -65.7311,
+   "max_dbz": 59,
+   "tope_km": 17.0,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.7554,
-   "lon": -63.7915,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
+   "lat": -38.051,
+   "lon": -62.0271,
+   "max_dbz": 58,
+   "tope_km": 7.0,
+   "radar": "RMA10",
+   "nivel": "posible granizo"
   },
   {
-   "lat": -32.4365,
-   "lon": -69.0384,
+   "lat": -32.9725,
+   "lon": -65.0227,
    "max_dbz": 53,
-   "tope_km": 17.0,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -32.4924,
-   "lon": -63.3848,
-   "max_dbz": 52,
-   "tope_km": 12.3,
+   "tope_km": 13.5,
    "radar": "RMA17",
    "nivel": null
   },
@@ -52,11 +43,11 @@
    "nivel": null
   },
   {
-   "lat": -38.1781,
-   "lon": -61.9441,
-   "max_dbz": 51,
-   "tope_km": 6.4,
-   "radar": "RMA10",
+   "lat": -31.0064,
+   "lon": -60.6995,
+   "max_dbz": 52,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   },
   {
@@ -74,46 +65,29 @@
    "tope_km": 8.8,
    "radar": "RMA15",
    "nivel": null
-  },
-  {
-   "lat": -32.5469,
-   "lon": -63.4728,
-   "max_dbz": 50,
-   "tope_km": 14.7,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -32.101,
-   "lon": -64.9237,
-   "max_dbz": 47,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -29.7805,
-   "lon": -60.9157,
-   "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
   }
  ],
  "localidades": {
-  "Las Chacritas (Catamarca)": {
-   "nivel": "granizo probable",
-   "km": 4.6,
-   "max_dbz": 60,
-   "tope_km": 12.3,
-   "visto": "2026-11-26 06:35"
+  "La Gruta": {
+   "nivel": "posible granizo",
+   "km": 4.5,
+   "max_dbz": 58,
+   "tope_km": 7.0,
+   "visto": "2026-11-26 06:56"
   },
-  "General Deheza": {
+  "Villa Ventana": {
+   "nivel": "posible granizo",
+   "km": 9.2,
+   "max_dbz": 58,
+   "tope_km": 7.0,
+   "visto": "2026-11-26 06:56"
+  },
+  "Las Lajas (Catamarca)": {
    "nivel": "granizo probable",
-   "km": 0.2,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "visto": "2026-11-26 06:32"
+   "km": 8.3,
+   "max_dbz": 59,
+   "tope_km": 17.0,
+   "visto": "2026-11-26 07:01"
   }
  }
 }
