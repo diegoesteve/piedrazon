@@ -1,43 +1,27 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 16:45",
+ "consultado": "2026-11-26 17:00",
  "radares": {
-  "AR7": "2026-11-26 16:30",
-  "RMA19": "2026-11-26 16:27",
-  "RMA5": "2026-11-26 16:29",
-  "RMA3": "2026-11-26 16:34",
-  "RMA11": "2026-11-26 16:28"
+  "RMA3": "2026-11-26 16:43",
+  "RMA19": "2026-11-26 16:44",
+  "RMA11": "2026-11-26 16:28",
+  "RMA5": "2026-11-26 16:47",
+  "AR7": "2026-11-26 16:40"
  },
  "nucleos": [
   {
-   "lat": -26.0114,
-   "lon": -53.6555,
-   "max_dbz": 59,
-   "tope_km": 8.2,
-   "radar": "RMA5",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -26.0566,
-   "lon": -53.5535,
-   "max_dbz": 57,
-   "tope_km": 8.8,
-   "radar": "RMA5",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -26.0928,
-   "lon": -54.0738,
-   "max_dbz": 57,
-   "tope_km": 10.0,
+   "lat": -25.8576,
+   "lon": -54.1656,
+   "max_dbz": 60,
+   "tope_km": 11.1,
    "radar": "RMA5",
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.0204,
-   "lon": -54.1146,
+   "lat": -26.0385,
+   "lon": -53.6862,
    "max_dbz": 57,
-   "tope_km": 8.8,
+   "tope_km": 8.2,
    "radar": "RMA5",
    "nivel": "posible granizo"
   },
@@ -50,57 +34,97 @@
    "nivel": "posible granizo"
   },
   {
-   "lat": -26.5527,
-   "lon": -54.1656,
+   "lat": -25.4948,
+   "lon": -54.1554,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "radar": "RMA5",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -25.7851,
+   "lon": -54.339,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "radar": "RMA5",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.8584,
+   "lon": -53.6453,
    "max_dbz": 54,
    "tope_km": 10.0,
    "radar": "RMA5",
    "nivel": null
   },
   {
-   "lat": -26.7865,
-   "lon": -53.6555,
+   "lat": -26.0385,
+   "lon": -54.135,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "radar": "RMA5",
+   "nivel": null
+  },
+  {
+   "lat": -26.1108,
+   "lon": -54.4716,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "radar": "RMA5",
+   "nivel": null
+  },
+  {
+   "lat": -25.3039,
+   "lon": -53.7372,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "radar": "RMA5",
+   "nivel": null
+  },
+  {
+   "lat": -24.4324,
+   "lon": -59.5977,
    "max_dbz": 51,
-   "tope_km": 7.6,
+   "tope_km": 12.9,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -33.2049,
+   "lon": -69.3897,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -26.1831,
+   "lon": -54.441,
+   "max_dbz": 51,
+   "tope_km": 12.3,
    "radar": "RMA5",
    "nivel": null
   },
   {
-   "lat": -26.5167,
-   "lon": -54.3186,
-   "max_dbz": 50,
-   "tope_km": 8.2,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -26.5617,
-   "lon": -54.0738,
+   "lat": -26.5707,
+   "lon": -54.1248,
    "max_dbz": 50,
    "tope_km": 10.0,
    "radar": "RMA5",
    "nivel": null
   },
   {
-   "lat": -32.6179,
-   "lon": -69.2031,
+   "lat": -29.7713,
+   "lon": -60.9157,
    "max_dbz": 48,
-   "tope_km": 17.0,
-   "radar": "RMA19",
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -24.3782,
-   "lon": -59.5977,
+   "lat": -29.8449,
+   "lon": -60.9266,
    "max_dbz": 48,
-   "tope_km": 11.7,
-   "radar": "RMA3",
-   "nivel": null
-  },
-  {
-   "lat": -30.2764,
-   "lon": -58.8394,
-   "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
@@ -109,10 +133,10 @@
  "localidades": {
   "San Antonio (Misiones)": {
    "nivel": "posible granizo",
-   "km": 9.4,
-   "max_dbz": 59,
+   "km": 5.2,
+   "max_dbz": 57,
    "tope_km": 8.2,
-   "visto": "2026-11-26 16:29"
+   "visto": "2026-11-26 16:47"
   }
  }
 }
