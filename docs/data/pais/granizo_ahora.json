@@ -1,13 +1,23 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 00:45",
+ "consultado": "2026-11-26 01:00",
  "radares": {
-  "RMA11": "2026-11-26 00:08",
   "RMA10": "2026-11-26 00:27",
+  "RMA19": "2026-11-26 00:45",
   "AR7": "2026-11-26 00:30",
-  "RMA19": "2026-11-26 00:28"
+  "RMA16": "2026-11-26 00:47",
+  "RMA15": "2026-11-26 00:47",
+  "RMA17": "2026-11-26 00:48"
  },
  "nucleos": [
+  {
+   "lat": -32.565,
+   "lon": -63.3848,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
   {
    "lat": -38.7564,
    "lon": -61.7426,
@@ -17,19 +27,35 @@
    "nivel": null
   },
   {
-   "lat": -31.5699,
-   "lon": -68.4674,
+   "lat": -33.1948,
+   "lon": -65.1215,
    "max_dbz": 54,
-   "tope_km": 11.1,
+   "tope_km": 9.4,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -31.6615,
+   "lon": -68.3796,
+   "max_dbz": 52,
+   "tope_km": 12.3,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -28.3824,
-   "lon": -65.989,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "radar": "RMA11",
+   "lat": -31.634,
+   "lon": -68.4565,
+   "max_dbz": 50,
+   "tope_km": 10.6,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -29.9855,
+   "lon": -67.2676,
+   "max_dbz": 50,
+   "tope_km": 10.6,
+   "radar": "RMA15",
    "nivel": null
   },
   {
@@ -38,6 +64,14 @@
    "max_dbz": 49,
    "tope_km": 15.0,
    "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -31.6815,
+   "lon": -68.2935,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "radar": "RMA15",
    "nivel": null
   },
   {
@@ -57,5 +91,27 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Arroyo Cabral": {
+   "nivel": "granizo probable",
+   "km": 8.6,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 00:48"
+  },
+  "La Palestina": {
+   "nivel": "granizo probable",
+   "km": 6.2,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 00:48"
+  },
+  "Luca": {
+   "nivel": "granizo probable",
+   "km": 9.1,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 00:48"
+  }
+ }
 }

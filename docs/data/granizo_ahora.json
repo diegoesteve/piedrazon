@@ -1,7 +1,49 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 00:45",
- "radares": {},
- "nucleos": [],
- "localidades": {}
+ "consultado": "2026-11-26 01:00",
+ "radares": {
+  "RMA16": "2026-11-26 00:47",
+  "RMA17": "2026-11-26 00:48"
+ },
+ "nucleos": [
+  {
+   "lat": -32.565,
+   "lon": -63.3848,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.1948,
+   "lon": -65.1215,
+   "max_dbz": 54,
+   "tope_km": 9.4,
+   "radar": "RMA16",
+   "nivel": null
+  }
+ ],
+ "localidades": {
+  "Arroyo Cabral": {
+   "nivel": "granizo probable",
+   "km": 8.6,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 00:48"
+  },
+  "La Palestina": {
+   "nivel": "granizo probable",
+   "km": 6.0,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 00:48"
+  },
+  "Luca": {
+   "nivel": "granizo probable",
+   "km": 9.1,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 00:48"
+  }
+ }
 }
