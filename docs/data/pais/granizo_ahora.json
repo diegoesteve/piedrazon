@@ -1,30 +1,30 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 01:45",
+ "consultado": "2026-11-26 02:01",
  "radares": {
-  "AR7": "2026-11-26 01:30",
-  "RMA19": "2026-11-26 01:27",
-  "RMA17": "2026-11-26 01:13",
-  "RMA16": "2026-11-26 01:21",
-  "RMA20": "2026-11-26 01:28",
   "RMA15": "2026-11-26 01:21",
-  "RMA10": "2026-11-26 01:30"
+  "RMA16": "2026-11-26 01:21",
+  "RMA19": "2026-11-26 01:43",
+  "RMA20": "2026-11-26 01:28",
+  "AR7": "2026-11-26 01:30",
+  "RMA10": "2026-11-26 01:30",
+  "RMA11": "2026-11-26 01:42"
  },
  "nucleos": [
-  {
-   "lat": -32.6013,
-   "lon": -63.4068,
-   "max_dbz": 69,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
   {
    "lat": -26.054,
    "lon": -63.2671,
    "max_dbz": 56,
    "tope_km": 10.0,
    "radar": "RMA20",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -28.0779,
+   "lon": -66.0406,
+   "max_dbz": 56,
+   "tope_km": 13.5,
+   "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
@@ -44,10 +44,10 @@
    "nivel": null
   },
   {
-   "lat": -31.7896,
-   "lon": -68.4126,
-   "max_dbz": 50,
-   "tope_km": 11.7,
+   "lat": -32.5726,
+   "lon": -69.0933,
+   "max_dbz": 52,
+   "tope_km": 17.0,
    "radar": "RMA19",
    "nivel": null
   },
@@ -76,20 +76,5 @@
    "nivel": null
   }
  ],
- "localidades": {
-  "La Palestina": {
-   "nivel": "granizo probable",
-   "km": 1.7,
-   "max_dbz": 69,
-   "tope_km": 17.0,
-   "visto": "2026-11-26 01:13"
-  },
-  "Luca": {
-   "nivel": "granizo probable",
-   "km": 9.4,
-   "max_dbz": 69,
-   "tope_km": 17.0,
-   "visto": "2026-11-26 01:13"
-  }
- }
+ "localidades": {}
 }
