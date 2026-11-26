@@ -1,38 +1,22 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 03:45",
+ "consultado": "2026-11-26 04:00",
  "radares": {
-  "RMA19": "2026-11-26 03:07",
-  "RMA17": "2026-11-26 03:32",
-  "RMA11": "2026-11-26 03:26",
-  "AR7": "2026-11-26 03:10",
+  "RMA17": "2026-11-26 03:48",
+  "RMA11": "2026-11-26 03:43",
+  "RMA10": "2026-11-26 03:28",
   "RMA15": "2026-11-26 03:33",
-  "RMA10": "2026-11-26 03:28"
+  "AR7": "2026-11-26 03:40",
+  "RMA19": "2026-11-26 03:40"
  },
  "nucleos": [
   {
-   "lat": -32.9906,
-   "lon": -65.0447,
-   "max_dbz": 56,
-   "tope_km": 13.5,
+   "lat": -33.0898,
+   "lon": -63.088,
+   "max_dbz": 65,
+   "tope_km": 11.1,
    "radar": "RMA17",
    "nivel": "granizo probable"
-  },
-  {
-   "lat": -26.5424,
-   "lon": -65.0811,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -28.0689,
-   "lon": -66.0303,
-   "max_dbz": 54,
-   "tope_km": 13.5,
-   "radar": "RMA11",
-   "nivel": null
   },
   {
    "lat": -30.0215,
@@ -40,6 +24,14 @@
    "max_dbz": 54,
    "tope_km": 8.8,
    "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -28.3288,
+   "lon": -66.0097,
+   "max_dbz": 53,
+   "tope_km": 12.3,
+   "radar": "RMA11",
    "nivel": null
   },
   {
@@ -51,52 +43,29 @@
    "nivel": null
   },
   {
-   "lat": -28.1944,
-   "lon": -65.9478,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -28.3824,
-   "lon": -65.9374,
-   "max_dbz": 50,
+   "lat": -32.0544,
+   "lon": -69.269,
+   "max_dbz": 51,
    "tope_km": 14.7,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -31.8993,
-   "lon": -69.4337,
-   "max_dbz": 48,
-   "tope_km": 11.1,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -29.762,
+   "lat": -29.7436,
    "lon": -60.9157,
-   "max_dbz": 47,
+   "max_dbz": 46,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
-  "Villa del Carmen": {
+  "Pascanas": {
    "nivel": "granizo probable",
-   "km": 5.7,
-   "max_dbz": 56,
-   "tope_km": 13.5,
-   "visto": "2026-11-26 03:32"
-  },
-  "Villa Padre Monti": {
-   "nivel": "granizo probable",
-   "km": 9.3,
-   "max_dbz": 55,
+   "km": 5.9,
+   "max_dbz": 65,
    "tope_km": 11.1,
-   "visto": "2026-11-26 03:26"
+   "visto": "2026-11-26 03:48"
   }
  }
 }
