@@ -1,55 +1,71 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 17:45",
+ "consultado": "2026-11-26 18:00",
  "radares": {
-  "AR7": "2026-11-26 17:30",
+  "RMA18": "2026-11-26 17:46",
+  "RMA5": "2026-11-26 17:41",
+  "RMA19": "2026-11-26 17:42",
+  "RMA16": "2026-11-26 17:43",
   "RMA3": "2026-11-26 17:28",
-  "RMA5": "2026-11-26 17:32",
-  "RMA15": "2026-11-26 17:16",
-  "RMA19": "2026-11-26 17:25",
-  "RMA16": "2026-11-26 17:27",
-  "RMA18": "2026-11-26 17:30"
+  "AR7": "2026-11-26 17:40",
+  "RMA11": "2026-11-26 17:46"
  },
  "nucleos": [
   {
-   "lat": -26.1379,
-   "lon": -53.676,
+   "lat": -26.165,
+   "lon": -53.5841,
+   "max_dbz": 60,
+   "tope_km": 8.8,
+   "radar": "RMA5",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.6427,
+   "lon": -54.5838,
+   "max_dbz": 59,
+   "tope_km": 10.0,
+   "radar": "RMA5",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.156,
+   "lon": -53.6555,
    "max_dbz": 59,
    "tope_km": 8.8,
    "radar": "RMA5",
    "nivel": "posible granizo"
   },
   {
-   "lat": -26.4447,
-   "lon": -54.6348,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "radar": "RMA5",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -25.8666,
-   "lon": -54.2064,
-   "max_dbz": 58,
-   "tope_km": 10.6,
-   "radar": "RMA5",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -26.0747,
-   "lon": -53.8698,
-   "max_dbz": 58,
-   "tope_km": 11.1,
-   "radar": "RMA5",
+   "lat": -32.5182,
+   "lon": -69.4776,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "radar": "RMA19",
    "nivel": "granizo probable"
   },
   {
    "lat": -33.2219,
    "lon": -65.0773,
-   "max_dbz": 58,
+   "max_dbz": 57,
    "tope_km": 7.6,
    "radar": "RMA16",
    "nivel": "posible granizo"
+  },
+  {
+   "lat": -25.8304,
+   "lon": -54.1248,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "radar": "RMA5",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -25.8213,
+   "lon": -54.237,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "radar": "RMA5",
+   "nivel": "granizo probable"
   },
   {
    "lat": -23.6717,
@@ -60,144 +76,104 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.6517,
-   "lon": -54.4614,
-   "max_dbz": 56,
-   "tope_km": 11.1,
+   "lat": -26.0747,
+   "lon": -53.8698,
+   "max_dbz": 55,
+   "tope_km": 11.7,
    "radar": "RMA5",
    "nivel": "granizo probable"
   },
   {
-   "lat": -24.9851,
-   "lon": -53.9718,
+   "lat": -33.2679,
+   "lon": -69.3788,
    "max_dbz": 55,
-   "tope_km": 12.3,
-   "radar": "RMA5",
+   "tope_km": 15.8,
+   "radar": "RMA19",
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.0385,
-   "lon": -53.5535,
-   "max_dbz": 55,
-   "tope_km": 6.4,
-   "radar": "RMA5",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -26.1289,
-   "lon": -53.5943,
-   "max_dbz": 55,
-   "tope_km": 8.8,
-   "radar": "RMA5",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -25.93,
-   "lon": -54.2472,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "radar": "RMA5",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.5635,
-   "lon": -69.5105,
+   "lat": -32.5998,
+   "lon": -69.4227,
    "max_dbz": 55,
    "tope_km": 17.0,
    "radar": "RMA19",
    "nivel": "granizo probable"
   },
   {
-   "lat": -25.6763,
-   "lon": -54.2574,
-   "max_dbz": 53,
-   "tope_km": 10.6,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -25.7579,
-   "lon": -54.2064,
-   "max_dbz": 53,
+   "lat": -25.776,
+   "lon": -53.9208,
+   "max_dbz": 54,
    "tope_km": 11.7,
    "radar": "RMA5",
    "nivel": null
   },
   {
-   "lat": -26.6697,
-   "lon": -54.1656,
+   "lat": -36.3217,
+   "lon": -68.8878,
+   "max_dbz": 53,
+   "tope_km": 15.2,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -26.4807,
+   "lon": -54.645,
    "max_dbz": 52,
+   "tope_km": 12.9,
+   "radar": "RMA5",
+   "nivel": null
+  },
+  {
+   "lat": -34.7834,
+   "lon": -69.0164,
+   "max_dbz": 51,
    "tope_km": 11.1,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -32.7808,
-   "lon": -69.3568,
-   "max_dbz": 52,
-   "tope_km": 14.1,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -36.3755,
-   "lon": -69.0361,
-   "max_dbz": 52,
-   "tope_km": 14.1,
-   "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -36.3486,
-   "lon": -68.5226,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -29.7436,
-   "lon": -60.9157,
-   "max_dbz": 49,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -26.0024,
-   "lon": -54.2166,
-   "max_dbz": 49,
-   "tope_km": 12.3,
+   "lat": -25.8666,
+   "lon": -54.2982,
+   "max_dbz": 50,
+   "tope_km": 9.4,
    "radar": "RMA5",
    "nivel": null
   },
   {
-   "lat": -30.1385,
-   "lon": -67.2253,
+   "lat": -25.64,
+   "lon": -54.2676,
    "max_dbz": 49,
-   "tope_km": 8.8,
-   "radar": "RMA15",
+   "tope_km": 9.4,
+   "radar": "RMA5",
    "nivel": null
   },
   {
-   "lat": -34.801,
-   "lon": -69.0055,
+   "lat": -28.4629,
+   "lon": -65.9993,
    "max_dbz": 49,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -36.3576,
+   "lon": -69.0703,
+   "max_dbz": 48,
    "tope_km": 13.5,
-   "radar": "RMA19",
+   "radar": "RMA18",
    "nivel": null
   },
   {
-   "lat": -30.2489,
-   "lon": -58.7961,
+   "lat": -29.7805,
+   "lon": -60.9157,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -30.3954,
-   "lon": -58.9583,
+   "lat": -29.716,
+   "lon": -60.9266,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
@@ -208,58 +184,30 @@
   "Achiras": {
    "nivel": "posible granizo",
    "km": 9.5,
-   "max_dbz": 58,
+   "max_dbz": 57,
    "tope_km": 7.6,
-   "visto": "2026-11-26 17:27"
+   "visto": "2026-11-26 17:43"
   },
-  "Eldorado": {
-   "nivel": "posible granizo",
-   "km": 4.9,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "visto": "2026-11-26 17:32"
+  "Uspallata": {
+   "nivel": "granizo probable",
+   "km": 7.1,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "visto": "2026-11-26 17:42"
   },
-  "Piray Kilómetro 18": {
-   "nivel": "posible granizo",
-   "km": 9.0,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "visto": "2026-11-26 17:32"
-  },
-  "Puerto Pinares": {
-   "nivel": "posible granizo",
-   "km": 5.2,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "visto": "2026-11-26 17:32"
-  },
-  "Puerto Piray": {
-   "nivel": "posible granizo",
-   "km": 8.7,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "visto": "2026-11-26 17:32"
-  },
-  "Villa Parodi": {
-   "nivel": "posible granizo",
-   "km": 7.4,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "visto": "2026-11-26 17:32"
-  },
-  "Villa Roulet": {
-   "nivel": "posible granizo",
-   "km": 0.6,
-   "max_dbz": 58,
-   "tope_km": 8.2,
-   "visto": "2026-11-26 17:32"
+  "Puerto Deseado (Misiones)": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "visto": "2026-11-26 17:41"
   },
   "La Punilla": {
    "nivel": "posible granizo",
    "km": 8.8,
-   "max_dbz": 58,
+   "max_dbz": 57,
    "tope_km": 7.6,
-   "visto": "2026-11-26 17:27"
+   "visto": "2026-11-26 17:43"
   }
  }
 }
