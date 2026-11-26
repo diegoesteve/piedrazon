@@ -1,7 +1,47 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-26 18:15",
+ "consultado": "2026-11-26 18:30",
  "alertas": [
+  {
+   "id": "2026_11_26_2114_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-26T21:14:00-03:00",
+   "hasta": "2026-11-26T22:14:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "MENDOZA: LAS HERAS.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_26_2114_cap_es.xml",
+   "desde_local": "26/11 21:14",
+   "hasta_local": "26/11 22:14",
+   "localidades": 1,
+   "poligonos": [
+    [
+     [
+      -69.44,
+      -32.65
+     ],
+     [
+      -69.51,
+      -32.15
+     ],
+     [
+      -69.14,
+      -32.13
+     ],
+     [
+      -69.22,
+      -32.65
+     ],
+     [
+      -69.44,
+      -32.65
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261126090154_Tormenta_Patagonia_alertas_alertas_1",
    "tipo": "alerta",
@@ -6019,6 +6059,9 @@
   "Villa Roulet": [
    "CAP_20261126090154_Tormenta_Llanura_alertas_alertas_2",
    "CAP_20261126090154_Tormenta_Patagonia_alertas_alertas_2"
+  ],
+  "Uspallata": [
+   "2026_11_26_2114_cap_es"
   ]
  }
 }
