@@ -1,20 +1,37 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 15:00",
+ "consultado": "2026-11-26 15:15",
  "radares": {
-  "RMA19": "2026-11-26 14:22",
   "RMA15": "2026-11-26 14:39",
-  "RMA5": "2026-11-26 14:41",
-  "AR7": "2026-11-26 14:30",
-  "RMA11": "2026-11-26 14:44"
+  "RMA5": "2026-11-26 14:59",
+  "RMA11": "2026-11-26 15:01",
+  "AR7": "2026-11-26 15:00",
+  "RMA16": "2026-11-26 14:51",
+  "RMA19": "2026-11-26 14:55"
  },
  "nucleos": [
   {
-   "lat": -27.1501,
-   "lon": -65.8962,
+   "lat": -33.2219,
+   "lon": -65.0773,
+   "max_dbz": 62,
+   "tope_km": 7.6,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.2643,
+   "lon": -53.778,
    "max_dbz": 59,
-   "tope_km": 14.1,
-   "radar": "RMA11",
+   "tope_km": 8.2,
+   "radar": "RMA5",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -25.4221,
+   "lon": -53.7372,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "radar": "RMA5",
    "nivel": "granizo probable"
   },
   {
@@ -26,105 +43,49 @@
    "nivel": "posible granizo"
   },
   {
-   "lat": -27.6735,
-   "lon": -65.9168,
-   "max_dbz": 58,
-   "tope_km": 11.1,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -26.8603,
-   "lon": -65.6176,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -26.3365,
-   "lon": -53.676,
+   "lat": -26.5077,
+   "lon": -53.6964,
    "max_dbz": 55,
-   "tope_km": 6.4,
+   "tope_km": 10.6,
    "radar": "RMA5",
-   "nivel": "posible granizo"
+   "nivel": "granizo probable"
   },
   {
-   "lat": -33.6717,
-   "lon": -69.4886,
+   "lat": -27.6105,
+   "lon": -65.9374,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.3545,
+   "lon": -53.7984,
    "max_dbz": 54,
-   "tope_km": 17.0,
+   "tope_km": 8.2,
+   "radar": "RMA5",
+   "nivel": null
+  },
+  {
+   "lat": -25.3403,
+   "lon": -53.8902,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "radar": "RMA5",
+   "nivel": null
+  },
+  {
+   "lat": -34.7922,
+   "lon": -69.6093,
+   "max_dbz": 51,
+   "tope_km": 12.9,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -25.3948,
-   "lon": -53.727,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -27.0506,
-   "lon": -65.7621,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -27.0596,
-   "lon": -65.8446,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -26.8603,
-   "lon": -65.8136,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -27.4482,
-   "lon": -66.1128,
-   "max_dbz": 50,
-   "tope_km": 12.9,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -29.6976,
+   "lat": -29.762,
    "lon": -60.9482,
    "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.7805,
-   "lon": -60.9374,
-   "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.8633,
-   "lon": -60.9157,
-   "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.992,
-   "lon": -60.9049,
-   "max_dbz": 46,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
@@ -133,31 +94,31 @@
  "localidades": {
   "Las Chacritas (Catamarca)": {
    "nivel": "granizo probable",
-   "km": 1.8,
-   "max_dbz": 58,
-   "tope_km": 11.1,
-   "visto": "2026-11-26 14:44"
-  },
-  "Bernardo de Irigoyen (Misiones)": {
-   "nivel": "posible granizo",
-   "km": 9.5,
+   "km": 8.7,
    "max_dbz": 55,
-   "tope_km": 6.4,
-   "visto": "2026-11-26 14:41"
+   "tope_km": 10.0,
+   "visto": "2026-11-26 15:01"
+  },
+  "Achiras": {
+   "nivel": "granizo probable",
+   "km": 9.5,
+   "max_dbz": 62,
+   "tope_km": 7.6,
+   "visto": "2026-11-26 14:51"
   },
   "Dos Hermanas": {
    "nivel": "posible granizo",
-   "km": 9.4,
-   "max_dbz": 55,
-   "tope_km": 6.4,
-   "visto": "2026-11-26 14:41"
+   "km": 3.8,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "visto": "2026-11-26 14:59"
   },
-  "Tafí del Valle": {
+  "La Punilla": {
    "nivel": "granizo probable",
-   "km": 9.3,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "visto": "2026-11-26 14:44"
+   "km": 8.8,
+   "max_dbz": 62,
+   "tope_km": 7.6,
+   "visto": "2026-11-26 14:51"
   }
  }
 }
