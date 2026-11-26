@@ -1,51 +1,35 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 15:15",
+ "consultado": "2026-11-26 15:30",
  "radares": {
-  "RMA15": "2026-11-26 14:39",
-  "RMA5": "2026-11-26 14:59",
+  "RMA16": "2026-11-26 15:16",
+  "RMA19": "2026-11-26 15:04",
+  "RMA5": "2026-11-26 15:17",
+  "AR7": "2026-11-26 15:10",
   "RMA11": "2026-11-26 15:01",
-  "AR7": "2026-11-26 15:00",
-  "RMA16": "2026-11-26 14:51",
-  "RMA19": "2026-11-26 14:55"
+  "RMA3": "2026-11-26 15:04"
  },
  "nucleos": [
   {
    "lat": -33.2219,
-   "lon": -65.0773,
-   "max_dbz": 62,
-   "tope_km": 7.6,
+   "lon": -65.0663,
+   "max_dbz": 66,
+   "tope_km": 10.6,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.2643,
-   "lon": -53.778,
-   "max_dbz": 59,
+   "lat": -26.2553,
+   "lon": -53.829,
+   "max_dbz": 58,
    "tope_km": 8.2,
    "radar": "RMA5",
    "nivel": "posible granizo"
   },
   {
-   "lat": -25.4221,
-   "lon": -53.7372,
-   "max_dbz": 59,
-   "tope_km": 12.3,
-   "radar": "RMA5",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -30.0215,
-   "lon": -67.2676,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "radar": "RMA15",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -26.5077,
-   "lon": -53.6964,
-   "max_dbz": 55,
+   "lat": -25.4312,
+   "lon": -53.8596,
+   "max_dbz": 56,
    "tope_km": 10.6,
    "radar": "RMA5",
    "nivel": "granizo probable"
@@ -59,33 +43,41 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.3545,
-   "lon": -53.7984,
-   "max_dbz": 54,
-   "tope_km": 8.2,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -25.3403,
-   "lon": -53.8902,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -34.7922,
-   "lon": -69.6093,
+   "lat": -25.4403,
+   "lon": -53.7474,
    "max_dbz": 51,
+   "tope_km": 10.6,
+   "radar": "RMA5",
+   "nivel": null
+  },
+  {
+   "lat": -26.5077,
+   "lon": -53.7576,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "radar": "RMA5",
+   "nivel": null
+  },
+  {
+   "lat": -23.7988,
+   "lon": -59.8085,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -34.8364,
+   "lon": -69.5435,
+   "max_dbz": 47,
    "tope_km": 12.9,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -29.762,
-   "lon": -60.9482,
-   "max_dbz": 47,
+   "lat": -30.2855,
+   "lon": -58.8394,
+   "max_dbz": 46,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
@@ -101,24 +93,24 @@
   },
   "Achiras": {
    "nivel": "granizo probable",
-   "km": 9.5,
-   "max_dbz": 62,
-   "tope_km": 7.6,
-   "visto": "2026-11-26 14:51"
+   "km": 8.7,
+   "max_dbz": 66,
+   "tope_km": 10.6,
+   "visto": "2026-11-26 15:16"
   },
   "Dos Hermanas": {
    "nivel": "posible granizo",
-   "km": 3.8,
-   "max_dbz": 59,
+   "km": 8.3,
+   "max_dbz": 58,
    "tope_km": 8.2,
-   "visto": "2026-11-26 14:59"
+   "visto": "2026-11-26 15:17"
   },
   "La Punilla": {
    "nivel": "granizo probable",
-   "km": 8.8,
-   "max_dbz": 62,
-   "tope_km": 7.6,
-   "visto": "2026-11-26 14:51"
+   "km": 9.0,
+   "max_dbz": 66,
+   "tope_km": 10.6,
+   "visto": "2026-11-26 15:16"
   }
  }
 }
