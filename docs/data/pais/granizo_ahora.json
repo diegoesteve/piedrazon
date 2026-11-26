@@ -1,21 +1,20 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 22:30",
+ "consultado": "2026-11-25 22:45",
  "radares": {
+  "RMA19": "2026-11-25 22:32",
+  "AR7": "2026-11-25 22:20",
   "RMA20": "2026-11-25 22:19",
   "RMA15": "2026-11-25 22:11",
-  "RMA16": "2026-11-25 21:55",
-  "RMA11": "2026-11-25 21:56",
-  "RMA19": "2026-11-25 22:15",
-  "AR7": "2026-11-25 22:10"
+  "RMA10": "2026-11-25 22:21"
  },
  "nucleos": [
   {
-   "lat": -26.8693,
-   "lon": -65.5351,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "radar": "RMA11",
+   "lat": -38.0964,
+   "lon": -60.0714,
+   "max_dbz": 60,
+   "tope_km": 10.6,
+   "radar": "RMA10",
    "nivel": "granizo probable"
   },
   {
@@ -27,27 +26,19 @@
    "nivel": null
   },
   {
-   "lat": -33.5373,
-   "lon": -69.3458,
-   "max_dbz": 51,
-   "tope_km": 12.3,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -32.4002,
-   "lon": -67.3365,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -29.716,
-   "lon": -60.9266,
+   "lat": -32.282,
+   "lon": -67.1828,
    "max_dbz": 50,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "tope_km": 17.0,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -33.4386,
+   "lon": -69.3678,
+   "max_dbz": 50,
+   "tope_km": 12.9,
+   "radar": "RMA19",
    "nivel": null
   },
   {
@@ -59,13 +50,21 @@
    "nivel": null
   },
   {
-   "lat": -32.4953,
-   "lon": -67.0429,
-   "max_dbz": 49,
-   "tope_km": 14.7,
-   "radar": "RMA16",
+   "lat": -29.7989,
+   "lon": -60.9374,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Adolfo Gonzales Chaves": {
+   "nivel": "granizo probable",
+   "km": 7.5,
+   "max_dbz": 60,
+   "tope_km": 10.6,
+   "visto": "2026-11-25 22:21"
+  }
+ }
 }
