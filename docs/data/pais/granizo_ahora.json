@@ -1,65 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 23:46",
+ "consultado": "2026-11-26 00:01",
  "radares": {
-  "RMA10": "2026-11-25 23:24",
-  "RMA11": "2026-11-25 23:25",
-  "AR7": "2026-11-25 23:20",
-  "RMA19": "2026-11-25 23:30",
-  "RMA15": "2026-11-25 23:26"
+  "RMA19": "2026-11-25 23:47",
+  "RMA10": "2026-11-25 23:51",
+  "RMA11": "2026-11-25 23:42",
+  "RMA15": "2026-11-25 23:49",
+  "AR7": "2026-11-25 23:40"
  },
  "nucleos": [
   {
-   "lat": -38.1055,
-   "lon": -60.0596,
-   "max_dbz": 61,
+   "lat": -28.5253,
+   "lon": -67.257,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "radar": "RMA10",
+   "radar": "RMA15",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.6015,
-   "lon": -65.9581,
+   "lat": -28.0151,
+   "lon": -66.0716,
    "max_dbz": 56,
-   "tope_km": 10.6,
+   "tope_km": 17.0,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.6943,
-   "lon": -67.532,
-   "max_dbz": 54,
-   "tope_km": 13.5,
+   "lat": -38.1237,
+   "lon": -60.024,
+   "max_dbz": 53,
+   "tope_km": 7.0,
+   "radar": "RMA10",
+   "nivel": null
+  },
+  {
+   "lat": -32.5,
+   "lon": -67.4354,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -30.6585,
+   "lon": -67.5214,
+   "max_dbz": 51,
+   "tope_km": 12.3,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -29.7805,
-   "lon": -60.9374,
-   "max_dbz": 50,
+   "lat": -29.7068,
+   "lon": -60.9266,
+   "max_dbz": 49,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -31.3037,
-   "lon": -68.3247,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -30.093,
-   "lon": -60.8833,
+   "lat": -30.1755,
+   "lon": -60.8617,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -30.1572,
-   "lon": -60.8725,
+   "lat": -29.8541,
+   "lon": -59.5207,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
@@ -67,12 +75,26 @@
   }
  ],
  "localidades": {
-  "Adolfo Gonzales Chaves": {
+  "Amuschina": {
    "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 61,
+   "km": 9.7,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "visto": "2026-11-25 23:24"
+   "visto": "2026-11-25 23:49"
+  },
+  "Suriyaco": {
+   "nivel": "granizo probable",
+   "km": 9.9,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "visto": "2026-11-25 23:49"
+  },
+  "Tuyubil": {
+   "nivel": "granizo probable",
+   "km": 8.3,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "visto": "2026-11-25 23:49"
   }
  }
 }
