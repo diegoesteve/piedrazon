@@ -1,20 +1,86 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 21:30",
+ "consultado": "2026-11-25 21:45",
  "radares": {
-  "RMA19": "2026-11-25 21:17",
+  "RMA19": "2026-11-25 21:33",
   "RMA15": "2026-11-25 21:13",
-  "RMA11": "2026-11-25 21:21",
-  "RMA16": "2026-11-25 21:22"
+  "RMA16": "2026-11-25 21:30",
+  "AR7": "2026-11-25 21:20",
+  "RMA11": "2026-11-25 21:30",
+  "RMA20": "2026-11-25 21:29"
  },
  "nucleos": [
   {
+   "lat": -26.8331,
+   "lon": -65.3906,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
    "lat": -32.4365,
-   "lon": -67.1938,
+   "lon": -67.1279,
    "max_dbz": 56,
-   "tope_km": 13.5,
+   "tope_km": 14.1,
    "radar": "RMA19",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -27.0143,
+   "lon": -65.6486,
+   "max_dbz": 56,
+   "tope_km": 14.1,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.9237,
+   "lon": -65.6176,
+   "max_dbz": 55,
+   "tope_km": 14.1,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.5182,
+   "lon": -66.9852,
+   "max_dbz": 54,
+   "tope_km": 14.1,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -32.4131,
+   "lon": -66.811,
+   "max_dbz": 54,
+   "tope_km": 14.1,
+   "radar": "RMA16",
+   "nivel": null
+  },
+  {
+   "lat": -32.382,
+   "lon": -66.6668,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -32.6994,
+   "lon": -66.7436,
+   "max_dbz": 53,
+   "tope_km": 14.7,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -32.5816,
+   "lon": -66.8644,
+   "max_dbz": 53,
+   "tope_km": 17.0,
+   "radar": "RMA19",
+   "nivel": null
   },
   {
    "lat": -30.9978,
@@ -25,35 +91,27 @@
    "nivel": null
   },
   {
-   "lat": -26.5333,
-   "lon": -65.0708,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -32.3366,
-   "lon": -67.2158,
-   "max_dbz": 51,
+   "lat": -32.3638,
+   "lon": -67.1499,
+   "max_dbz": 50,
    "tope_km": 11.1,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -32.4223,
-   "lon": -66.8662,
-   "max_dbz": 51,
-   "tope_km": 14.1,
+   "lat": -32.5955,
+   "lon": -67.1423,
+   "max_dbz": 50,
+   "tope_km": 14.7,
    "radar": "RMA16",
    "nivel": null
   },
   {
-   "lat": -32.4183,
-   "lon": -66.7876,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "radar": "RMA19",
+   "lat": -32.7321,
+   "lon": -66.8552,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "radar": "RMA16",
    "nivel": null
   },
   {
@@ -63,7 +121,54 @@
    "tope_km": 14.7,
    "radar": "RMA15",
    "nivel": null
+  },
+  {
+   "lat": -26.6424,
+   "lon": -65.7414,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -29.7989,
+   "lon": -60.9374,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -25.84,
+   "lon": -63.8997,
+   "max_dbz": 48,
+   "tope_km": 11.1,
+   "radar": "RMA20",
+   "nivel": null
+  },
+  {
+   "lat": -29.9736,
+   "lon": -60.8725,
+   "max_dbz": 46,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "El Mollar": {
+   "nivel": "granizo probable",
+   "km": 9.3,
+   "max_dbz": 55,
+   "tope_km": 14.1,
+   "visto": "2026-11-25 21:30"
+  },
+  "Ingenio San Pablo": {
+   "nivel": "granizo probable",
+   "km": 8.9,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "visto": "2026-11-25 21:30"
+  }
+ }
 }
