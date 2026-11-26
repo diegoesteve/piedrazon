@@ -1,45 +1,44 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 04:00",
+ "consultado": "2026-11-26 04:15",
  "radares": {
-  "RMA17": "2026-11-26 03:48",
-  "RMA11": "2026-11-26 03:43",
-  "RMA10": "2026-11-26 03:28",
-  "RMA15": "2026-11-26 03:33",
-  "AR7": "2026-11-26 03:40",
-  "RMA19": "2026-11-26 03:40"
+  "AR7": "2026-11-26 04:00",
+  "RMA19": "2026-11-26 03:40",
+  "RMA11": "2026-11-26 04:01",
+  "RMA17": "2026-11-26 04:05",
+  "RMA15": "2026-11-26 03:58"
  },
  "nucleos": [
   {
-   "lat": -33.0898,
-   "lon": -63.088,
-   "max_dbz": 65,
-   "tope_km": 11.1,
+   "lat": -33.1259,
+   "lon": -63.0331,
+   "max_dbz": 64,
+   "tope_km": 11.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.9454,
+   "lon": -63.187,
+   "max_dbz": 59,
+   "tope_km": 11.7,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
    "lat": -30.0215,
-   "lon": -67.2465,
-   "max_dbz": 54,
-   "tope_km": 8.8,
+   "lon": -67.2676,
+   "max_dbz": 58,
+   "tope_km": 11.1,
    "radar": "RMA15",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -28.3288,
-   "lon": -66.0097,
-   "max_dbz": 53,
-   "tope_km": 12.3,
+   "lat": -28.0779,
+   "lon": -66.0612,
+   "max_dbz": 54,
+   "tope_km": 17.0,
    "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -38.1509,
-   "lon": -61.956,
-   "max_dbz": 53,
-   "tope_km": 6.4,
-   "radar": "RMA10",
    "nivel": null
   },
   {
@@ -51,21 +50,36 @@
    "nivel": null
   },
   {
-   "lat": -29.7436,
-   "lon": -60.9157,
-   "max_dbz": 46,
+   "lat": -27.2857,
+   "lon": -66.0716,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -29.716,
+   "lon": -60.959,
+   "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
+  "Etruria": {
+   "nivel": "granizo probable",
+   "km": 5.5,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 04:05"
+  },
   "Pascanas": {
    "nivel": "granizo probable",
-   "km": 5.9,
-   "max_dbz": 65,
-   "tope_km": 11.1,
-   "visto": "2026-11-26 03:48"
+   "km": 0.7,
+   "max_dbz": 64,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 04:05"
   }
  }
 }
