@@ -1,49 +1,41 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 20:30",
+ "consultado": "2026-11-27 20:45",
  "radares": {
-  "RMA11": "2026-11-27 20:13",
-  "RMA19": "2026-11-27 20:13",
-  "AR7": "2026-11-27 20:10"
+  "AR7": "2026-11-27 20:10",
+  "RMA11": "2026-11-27 20:22",
+  "RMA19": "2026-11-27 20:30"
  },
  "nucleos": [
   {
-   "lat": -27.7545,
-   "lon": -65.7517,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -28.033,
-   "lon": -66.0716,
+   "lat": -27.6465,
+   "lon": -65.9271,
    "max_dbz": 56,
-   "tope_km": 17.0,
+   "tope_km": 12.9,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.5356,
-   "lon": -68.9286,
-   "max_dbz": 53,
+   "lat": -34.5179,
+   "lon": -68.9615,
+   "max_dbz": 54,
+   "tope_km": 14.1,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -34.5179,
+   "lon": -69.3897,
+   "max_dbz": 50,
    "tope_km": 13.5,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -34.5622,
-   "lon": -69.3019,
-   "max_dbz": 52,
-   "tope_km": 17.0,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
    "lat": -34.5356,
-   "lon": -69.3897,
-   "max_dbz": 47,
-   "tope_km": 17.0,
+   "lon": -69.2799,
+   "max_dbz": 48,
+   "tope_km": 12.9,
    "radar": "RMA19",
    "nivel": null
   },
@@ -57,12 +49,12 @@
   }
  ],
  "localidades": {
-  "Las Lajas (Catamarca)": {
+  "Las Chacritas (Catamarca)": {
    "nivel": "granizo probable",
-   "km": 9.6,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "visto": "2026-11-27 20:13"
+   "km": 4.6,
+   "max_dbz": 56,
+   "tope_km": 12.9,
+   "visto": "2026-11-27 20:22"
   }
  }
 }
