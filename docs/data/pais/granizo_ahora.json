@@ -1,68 +1,44 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 16:30",
+ "consultado": "2026-11-27 16:45",
  "radares": {
-  "RMA18": "2026-11-27 15:51",
-  "RMA5": "2026-11-27 16:12",
-  "RMA16": "2026-11-27 15:56",
-  "AR7": "2026-11-27 16:10",
-  "RMA10": "2026-11-27 16:12"
+  "AR7": "2026-11-27 16:20",
+  "RMA10": "2026-11-27 16:12",
+  "RMA5": "2026-11-27 16:30",
+  "RMA11": "2026-11-27 16:26",
+  "RMA1": "2026-11-27 16:35"
  },
  "nucleos": [
   {
-   "lat": -26.4447,
-   "lon": -53.982,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+   "lat": -26.4176,
+   "lon": -53.8902,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "radar": "RMA5",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.5167,
+   "lon": -53.5025,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "radar": "RMA5",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.5617,
+   "lon": -53.931,
+   "max_dbz": 53,
+   "tope_km": 11.7,
    "radar": "RMA5",
    "nivel": null
   },
   {
-   "lat": -26.3906,
-   "lon": -54.2982,
-   "max_dbz": 51,
-   "tope_km": 12.9,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -26.4897,
-   "lon": -54.237,
-   "max_dbz": 51,
-   "tope_km": 12.9,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -26.3996,
-   "lon": -54.135,
+   "lat": -33.296,
+   "lon": -64.9557,
    "max_dbz": 50,
-   "tope_km": 12.3,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -26.5257,
-   "lon": -53.8596,
-   "max_dbz": 50,
-   "tope_km": 11.1,
-   "radar": "RMA5",
-   "nivel": null
-  },
-  {
-   "lat": -35.6997,
-   "lon": -68.5226,
-   "max_dbz": 49,
-   "tope_km": 17.0,
-   "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -33.0952,
-   "lon": -66.2368,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "radar": "RMA16",
+   "tope_km": 12.9,
+   "radar": "RMA1",
    "nivel": null
   },
   {
@@ -74,11 +50,11 @@
    "nivel": null
   },
   {
-   "lat": -30.313,
-   "lon": -58.8934,
-   "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "lat": -28.1676,
+   "lon": -66.02,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "radar": "RMA11",
    "nivel": null
   },
   {
@@ -90,5 +66,20 @@
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Piñalito Sur": {
+   "nivel": "granizo probable",
+   "km": 5.0,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-27 16:30"
+  },
+  "Tobuna": {
+   "nivel": "granizo probable",
+   "km": 5.8,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-27 16:30"
+  }
+ }
 }
