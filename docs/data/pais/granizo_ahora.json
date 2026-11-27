@@ -1,14 +1,13 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 23:15",
+ "consultado": "2026-11-26 23:30",
  "radares": {
-  "RMA8": "2026-11-26 22:57",
-  "AR7": "2026-11-26 23:00",
   "RMA19": "2026-11-26 23:07",
-  "RMA6": "2026-11-26 22:42",
-  "RMA15": "2026-11-26 23:00",
+  "RMA15": "2026-11-26 23:16",
+  "RMA8": "2026-11-26 23:15",
+  "AR7": "2026-11-26 23:10",
   "RMA18": "2026-11-26 23:00",
-  "RMA11": "2026-11-26 22:49"
+  "RMA4": "2026-11-26 23:02"
  },
  "nucleos": [
   {
@@ -20,17 +19,17 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.46,
-   "lon": -68.5473,
+   "lat": -29.1099,
+   "lon": -58.4701,
    "max_dbz": 57,
-   "tope_km": 13.5,
-   "radar": "RMA15",
-   "nivel": "granizo probable"
+   "tope_km": 9.4,
+   "radar": "RMA8",
+   "nivel": "posible granizo"
   },
   {
-   "lat": -29.0738,
-   "lon": -58.6487,
-   "max_dbz": 56,
+   "lat": -28.9744,
+   "lon": -58.2916,
+   "max_dbz": 55,
    "tope_km": 8.8,
    "radar": "RMA8",
    "nivel": "posible granizo"
@@ -44,44 +43,35 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -37.7415,
-   "lon": -56.2403,
+   "lat": -31.4157,
+   "lon": -68.4521,
    "max_dbz": 53,
-   "tope_km": 3.5,
-   "radar": "RMA6",
-   "nivel": null,
-   "descartado": "tope bajo (3.5 km)"
-  },
-  {
-   "lat": -29.5162,
-   "lon": -67.7118,
-   "max_dbz": 52,
-   "tope_km": 12.9,
+   "tope_km": 17.0,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -30.0845,
-   "lon": -67.2253,
+   "lat": -29.6427,
+   "lon": -67.6589,
    "max_dbz": 51,
-   "tope_km": 9.4,
+   "tope_km": 13.5,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -26.6697,
-   "lon": -65.0605,
+   "lat": -29.3083,
+   "lon": -59.4467,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "radar": "RMA8",
+   "nivel": null
+  },
+  {
+   "lat": -29.0712,
+   "lon": -58.5662,
    "max_dbz": 51,
    "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -29.7068,
-   "lon": -60.9266,
-   "max_dbz": 50,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "radar": "RMA4",
    "nivel": null
   },
   {
@@ -101,6 +91,14 @@
    "nivel": null
   },
   {
+   "lat": -31.4423,
+   "lon": -68.5262,
+   "max_dbz": 49,
+   "tope_km": 17.0,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
    "lat": -35.0363,
    "lon": -68.089,
    "max_dbz": 49,
@@ -109,33 +107,17 @@
    "nivel": null
   },
   {
-   "lat": -29.9644,
-   "lon": -59.5747,
+   "lat": -31.3269,
+   "lon": -68.505,
    "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -31.5309,
-   "lon": -68.5791,
-   "max_dbz": 48,
-   "tope_km": 14.1,
+   "tope_km": 12.9,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -26.6333,
-   "lon": -65.1327,
-   "max_dbz": 48,
-   "tope_km": 17.0,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -29.9644,
-   "lon": -60.9049,
-   "max_dbz": 47,
+   "lat": -29.7436,
+   "lon": -60.9482,
+   "max_dbz": 46,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
@@ -144,17 +126,17 @@
  "localidades": {
   "Chimbas": {
    "nivel": "granizo probable",
-   "km": 4.0,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "visto": "2026-11-26 23:00"
+   "km": 6.9,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "visto": "2026-11-26 23:07"
   },
   "El Rincón (dpto. Albardón, San Juan)": {
    "nivel": "granizo probable",
-   "km": 1.4,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "visto": "2026-11-26 23:00"
+   "km": 6.0,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "visto": "2026-11-26 23:07"
   },
   "Rivadavia (San Juan)": {
    "nivel": "granizo probable",
@@ -163,26 +145,12 @@
    "tope_km": 14.7,
    "visto": "2026-11-26 23:07"
   },
-  "San Juan": {
-   "nivel": "granizo probable",
-   "km": 8.9,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "visto": "2026-11-26 23:00"
-  },
-  "Santa Lucía (San Juan)": {
-   "nivel": "granizo probable",
-   "km": 9.1,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "visto": "2026-11-26 23:00"
-  },
   "Villa General San Martín - Campo Afuera": {
    "nivel": "granizo probable",
-   "km": 3.4,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "visto": "2026-11-26 23:00"
+   "km": 8.2,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "visto": "2026-11-26 23:07"
   }
  }
 }
