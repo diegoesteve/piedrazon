@@ -1,52 +1,77 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 16:45",
+ "consultado": "2026-11-27 17:00",
  "radares": {
-  "AR7": "2026-11-27 16:20",
-  "RMA10": "2026-11-27 16:12",
-  "RMA5": "2026-11-27 16:30",
+  "RMA5": "2026-11-27 16:48",
   "RMA11": "2026-11-27 16:26",
-  "RMA1": "2026-11-27 16:35"
+  "RMA1": "2026-11-27 16:35",
+  "RMA6": "2026-11-27 16:45",
+  "RMA16": "2026-11-27 16:45",
+  "RMA10": "2026-11-27 16:48"
  },
  "nucleos": [
   {
-   "lat": -26.4176,
-   "lon": -53.8902,
+   "lat": -33.3033,
+   "lon": -64.989,
+   "max_dbz": 62,
+   "tope_km": 12.3,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.1495,
+   "lon": -66.0822,
    "max_dbz": 56,
-   "tope_km": 11.7,
-   "radar": "RMA5",
+   "tope_km": 14.7,
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.5167,
-   "lon": -53.5025,
+   "lat": -26.2102,
+   "lon": -53.7474,
    "max_dbz": 55,
-   "tope_km": 10.6,
+   "tope_km": 9.4,
    "radar": "RMA5",
-   "nivel": "granizo probable"
+   "nivel": "posible granizo"
   },
   {
-   "lat": -26.5617,
-   "lon": -53.931,
-   "max_dbz": 53,
+   "lat": -26.6157,
+   "lon": -53.8086,
+   "max_dbz": 54,
    "tope_km": 11.7,
    "radar": "RMA5",
    "nivel": null
   },
   {
-   "lat": -33.296,
-   "lon": -64.9557,
-   "max_dbz": 50,
-   "tope_km": 12.9,
-   "radar": "RMA1",
+   "lat": -38.6664,
+   "lon": -61.4937,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "radar": "RMA10",
    "nivel": null
   },
   {
-   "lat": -38.5401,
-   "lon": -61.8967,
-   "max_dbz": 49,
-   "tope_km": 9.4,
+   "lat": -38.7204,
+   "lon": -61.5411,
+   "max_dbz": 54,
+   "tope_km": 12.3,
    "radar": "RMA10",
+   "nivel": null
+  },
+  {
+   "lat": -38.3865,
+   "lon": -61.553,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "radar": "RMA10",
+   "nivel": null
+  },
+  {
+   "lat": -26.5977,
+   "lon": -53.88,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "radar": "RMA5",
    "nivel": null
   },
   {
@@ -58,28 +83,50 @@
    "nivel": null
   },
   {
-   "lat": -30.258,
-   "lon": -58.8069,
-   "max_dbz": 46,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "lat": -39.1618,
+   "lon": -57.6566,
+   "max_dbz": 49,
+   "tope_km": 7.6,
+   "radar": "RMA6",
+   "nivel": null
+  },
+  {
+   "lat": -26.4987,
+   "lon": -54.0126,
+   "max_dbz": 47,
+   "tope_km": 11.7,
+   "radar": "RMA5",
    "nivel": null
   }
  ],
  "localidades": {
-  "Piñalito Sur": {
-   "nivel": "granizo probable",
-   "km": 5.0,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-27 16:30"
+  "Dos Hermanas": {
+   "nivel": "posible granizo",
+   "km": 9.3,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-27 16:48"
   },
-  "Tobuna": {
+  "El Trapiche": {
    "nivel": "granizo probable",
-   "km": 5.8,
+   "km": 4.8,
    "max_dbz": 56,
-   "tope_km": 11.7,
-   "visto": "2026-11-27 16:30"
+   "tope_km": 14.7,
+   "visto": "2026-11-27 16:45"
+  },
+  "Estancia Grande (San Luis)": {
+   "nivel": "granizo probable",
+   "km": 7.9,
+   "max_dbz": 56,
+   "tope_km": 14.7,
+   "visto": "2026-11-27 16:45"
+  },
+  "La Florida (San Luis)": {
+   "nivel": "granizo probable",
+   "km": 8.2,
+   "max_dbz": 56,
+   "tope_km": 14.7,
+   "visto": "2026-11-27 16:45"
   }
  }
 }
