@@ -1,58 +1,83 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 02:30",
+ "consultado": "2026-11-27 02:45",
  "radares": {
-  "RMA15": "2026-11-27 02:18",
-  "RMA11": "2026-11-27 02:14",
+  "RMA11": "2026-11-27 02:32",
   "AR7": "2026-11-27 02:10",
-  "RMA6": "2026-11-27 02:02"
+  "RMA15": "2026-11-27 02:35",
+  "RMA17": "2026-11-27 02:27",
+  "RMA8": "2026-11-27 02:35"
  },
  "nucleos": [
   {
-   "lat": -37.1892,
-   "lon": -57.5981,
-   "max_dbz": 59,
-   "tope_km": 11.1,
-   "radar": "RMA6",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -29.6247,
-   "lon": -66.0302,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "radar": "RMA15",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -29.4347,
-   "lon": -66.1042,
-   "max_dbz": 58,
-   "tope_km": 17.0,
-   "radar": "RMA15",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -28.4339,
-   "lon": -66.2629,
-   "max_dbz": 56,
+   "lat": -29.6518,
+   "lon": -65.9668,
+   "max_dbz": 60,
    "tope_km": 12.9,
    "radar": "RMA15",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.0215,
-   "lon": -67.2465,
-   "max_dbz": 55,
-   "tope_km": 8.2,
-   "radar": "RMA15",
-   "nivel": "posible granizo"
+   "lat": -32.8731,
+   "lon": -62.8242,
+   "max_dbz": 58,
+   "tope_km": 15.8,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -27.132,
-   "lon": -65.9581,
+   "lat": -28.1855,
+   "lon": -65.9478,
+   "max_dbz": 56,
+   "tope_km": 12.9,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -28.4522,
+   "lon": -66.0619,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.2013,
+   "lon": -64.9347,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0463,
+   "lon": -64.9457,
+   "max_dbz": 54,
+   "tope_km": 12.9,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -29.4073,
+   "lon": -57.9766,
    "max_dbz": 52,
-   "tope_km": 17.0,
+   "tope_km": 9.4,
+   "radar": "RMA8",
+   "nivel": null
+  },
+  {
+   "lat": -30.1295,
+   "lon": -67.2359,
+   "max_dbz": 51,
+   "tope_km": 10.0,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -28.4808,
+   "lon": -66.1025,
+   "max_dbz": 49,
+   "tope_km": 11.7,
    "radar": "RMA11",
    "nivel": null
   },
@@ -65,6 +90,14 @@
    "nivel": null
   },
   {
+   "lat": -27.1411,
+   "lon": -65.9271,
+   "max_dbz": 48,
+   "tope_km": 15.2,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
    "lat": -29.8725,
    "lon": -60.9049,
    "max_dbz": 48,
@@ -74,19 +107,19 @@
   }
  ],
  "localidades": {
-  "El Pajonal": {
+  "El Rodeo (Catamarca)": {
    "nivel": "granizo probable",
    "km": 7.6,
    "max_dbz": 56,
    "tope_km": 12.9,
-   "visto": "2026-11-27 02:18"
+   "visto": "2026-11-27 02:32"
   },
-  "Pomán": {
+  "Ordoñez": {
    "nivel": "granizo probable",
-   "km": 6.1,
-   "max_dbz": 56,
-   "tope_km": 12.9,
-   "visto": "2026-11-27 02:18"
+   "km": 5.3,
+   "max_dbz": 58,
+   "tope_km": 15.8,
+   "visto": "2026-11-27 02:27"
   }
  }
 }
