@@ -1,43 +1,85 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 05:15",
+ "consultado": "2026-11-27 05:30",
  "radares": {
-  "RMA17": "2026-11-27 04:38",
-  "RMA1": "2026-11-27 04:57"
+  "RMA1": "2026-11-27 05:15",
+  "RMA17": "2026-11-27 05:11"
  },
  "nucleos": [
   {
-   "lat": -33.2341,
-   "lon": -63.2199,
-   "max_dbz": 65,
-   "tope_km": 12.9,
+   "lat": -31.3148,
+   "lon": -64.3533,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.9641,
+   "lon": -64.9787,
+   "max_dbz": 55,
+   "tope_km": 11.1,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.3961,
-   "lon": -63.2859,
-   "max_dbz": 54,
-   "tope_km": 16.4,
+   "lat": -32.0828,
+   "lon": -64.9677,
+   "max_dbz": 49,
+   "tope_km": 10.6,
    "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -31.4771,
-   "lon": -62.987,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "radar": "RMA1",
    "nivel": null
   }
  ],
  "localidades": {
-  "Santa Eufemia": {
+  "La Calera": {
    "nivel": "granizo probable",
-   "km": 7.5,
-   "max_dbz": 65,
-   "tope_km": 12.9,
-   "visto": "2026-11-27 04:38"
+   "km": 2.4,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "visto": "2026-11-27 05:15"
+  },
+  "Los Hornillos": {
+   "nivel": "granizo probable",
+   "km": 7.3,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-27 05:11"
+  },
+  "Mendiolaza": {
+   "nivel": "granizo probable",
+   "km": 9.0,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "visto": "2026-11-27 05:15"
+  },
+  "Saldán": {
+   "nivel": "granizo probable",
+   "km": 4.0,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "visto": "2026-11-27 05:15"
+  },
+  "San Javier y Yacanto": {
+   "nivel": "granizo probable",
+   "km": 8.1,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-27 05:11"
+  },
+  "Villa Allende": {
+   "nivel": "granizo probable",
+   "km": 5.0,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "visto": "2026-11-27 05:15"
+  },
+  "Villa de las Rosas": {
+   "nivel": "granizo probable",
+   "km": 6.1,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-27 05:11"
   }
  }
 }
