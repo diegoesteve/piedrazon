@@ -1,68 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 20:15",
+ "consultado": "2026-11-27 20:30",
  "radares": {
-  "RMA18": "2026-11-27 19:36",
-  "RMA19": "2026-11-27 19:57",
-  "RMA11": "2026-11-27 19:56"
+  "RMA11": "2026-11-27 20:13",
+  "RMA19": "2026-11-27 20:13",
+  "AR7": "2026-11-27 20:10"
  },
  "nucleos": [
   {
-   "lat": -34.5533,
-   "lon": -69.0055,
+   "lat": -27.7545,
+   "lon": -65.7517,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -28.033,
+   "lon": -66.0716,
    "max_dbz": 56,
    "tope_km": 17.0,
-   "radar": "RMA19",
+   "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.6153,
-   "lon": -69.0933,
-   "max_dbz": 55,
-   "tope_km": 12.9,
+   "lat": -34.5356,
+   "lon": -68.9286,
+   "max_dbz": 53,
+   "tope_km": 13.5,
    "radar": "RMA19",
-   "nivel": "granizo probable"
+   "nivel": null
   },
   {
-   "lat": -27.6195,
-   "lon": -65.9271,
+   "lat": -34.5622,
+   "lon": -69.3019,
    "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -35.2186,
-   "lon": -67.5526,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -34.633,
-   "lon": -69.3129,
-   "max_dbz": 51,
-   "tope_km": 13.5,
+   "tope_km": 17.0,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -28.0869,
-   "lon": -65.9993,
-   "max_dbz": 49,
-   "tope_km": 13.5,
-   "radar": "RMA11",
+   "lat": -34.5356,
+   "lon": -69.3897,
+   "max_dbz": 47,
+   "tope_km": 17.0,
+   "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -34.6419,
-   "lon": -69.225,
-   "max_dbz": 48,
-   "tope_km": 13.5,
-   "radar": "RMA19",
+   "lat": -29.762,
+   "lon": -60.9157,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Las Lajas (Catamarca)": {
+   "nivel": "granizo probable",
+   "km": 9.6,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "visto": "2026-11-27 20:13"
+  }
+ }
 }
