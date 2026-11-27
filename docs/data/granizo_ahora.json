@@ -1,43 +1,152 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 06:00",
+ "consultado": "2026-11-27 06:15",
  "radares": {
-  "RMA1": "2026-11-27 05:43",
-  "RMA17": "2026-11-27 05:43"
+  "RMA17": "2026-11-27 05:52",
+  "RMA1": "2026-11-27 06:01"
  },
  "nucleos": [
   {
-   "lat": -32.6285,
+   "lat": -31.693,
+   "lon": -64.3641,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.5378,
+   "lon": -64.8908,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.2517,
+   "lon": -64.1812,
+   "max_dbz": 57,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.6376,
    "lon": -64.9127,
-   "max_dbz": 56,
+   "max_dbz": 55,
    "tope_km": 15.2,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.0554,
-   "lon": -64.9347,
+   "lat": -31.2968,
+   "lon": -63.7831,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -31.3238,
+   "lon": -64.2565,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "radar": "RMA1",
+   "nivel": "posible granizo"
+  },
+  {
+   "lat": -32.1922,
+   "lon": -64.9457,
    "max_dbz": 53,
    "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": null
-  },
-  {
-   "lat": -31.2878,
-   "lon": -64.2134,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "radar": "RMA1",
-   "nivel": null
-  },
-  {
-   "lat": -32.5287,
-   "lon": -64.8908,
-   "max_dbz": 50,
-   "tope_km": 14.7,
-   "radar": "RMA17",
-   "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Alta Gracia": {
+   "nivel": "posible granizo",
+   "km": 8.6,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "visto": "2026-11-27 06:01"
+  },
+  "Anisacate": {
+   "nivel": "posible granizo",
+   "km": 4.5,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "visto": "2026-11-27 06:01"
+  },
+  "Dique Chico": {
+   "nivel": "posible granizo",
+   "km": 3.0,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "visto": "2026-11-27 06:01"
+  },
+  "Estación Juárez Celman": {
+   "nivel": "posible granizo",
+   "km": 0.9,
+   "max_dbz": 57,
+   "tope_km": 8.8,
+   "visto": "2026-11-27 06:01"
+  },
+  "Mendiolaza": {
+   "nivel": "posible granizo",
+   "km": 7.7,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "visto": "2026-11-27 06:01"
+  },
+  "Piquillín": {
+   "nivel": "posible granizo",
+   "km": 2.3,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "visto": "2026-11-27 06:01"
+  },
+  "Saldán": {
+   "nivel": "posible granizo",
+   "km": 5.3,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "visto": "2026-11-27 06:01"
+  },
+  "Valle de Anisacate": {
+   "nivel": "posible granizo",
+   "km": 7.0,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "visto": "2026-11-27 06:01"
+  },
+  "Villa Allende": {
+   "nivel": "posible granizo",
+   "km": 9.5,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "visto": "2026-11-27 06:01"
+  },
+  "Villa La Bolsa": {
+   "nivel": "posible granizo",
+   "km": 7.6,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "visto": "2026-11-27 06:01"
+  },
+  "Villa Los Aromos": {
+   "nivel": "posible granizo",
+   "km": 7.6,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "visto": "2026-11-27 06:01"
+  },
+  "Villa del Prado": {
+   "nivel": "posible granizo",
+   "km": 8.5,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "visto": "2026-11-27 06:01"
+  }
+ }
 }
