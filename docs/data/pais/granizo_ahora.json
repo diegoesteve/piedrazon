@@ -1,30 +1,56 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 17:00",
+ "consultado": "2026-11-27 17:15",
  "radares": {
+  "RMA6": "2026-11-27 16:54",
+  "RMA16": "2026-11-27 16:54",
+  "RMA10": "2026-11-27 16:57",
   "RMA5": "2026-11-27 16:48",
-  "RMA11": "2026-11-27 16:26",
-  "RMA1": "2026-11-27 16:35",
-  "RMA6": "2026-11-27 16:45",
-  "RMA16": "2026-11-27 16:45",
-  "RMA10": "2026-11-27 16:48"
+  "RMA18": "2026-11-27 16:51",
+  "RMA1": "2026-11-27 17:02",
+  "RMA19": "2026-11-27 16:54",
+  "RMA17": "2026-11-27 17:02"
  },
  "nucleos": [
   {
    "lat": -33.3033,
-   "lon": -64.989,
-   "max_dbz": 62,
+   "lon": -66.0712,
+   "max_dbz": 61,
    "tope_km": 12.3,
    "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
-   "lat": -33.1495,
-   "lon": -66.0822,
-   "max_dbz": 56,
-   "tope_km": 14.7,
+   "lat": -33.1133,
+   "lon": -64.9448,
+   "max_dbz": 59,
+   "tope_km": 12.9,
    "radar": "RMA16",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.3123,
+   "lon": -64.978,
+   "max_dbz": 58,
+   "tope_km": 12.3,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.1405,
+   "lon": -66.0933,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.1418,
+   "lon": -68.171,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "radar": "RMA19",
+   "nivel": "posible granizo"
   },
   {
    "lat": -26.2102,
@@ -43,26 +69,26 @@
    "nivel": null
   },
   {
-   "lat": -38.6664,
-   "lon": -61.4937,
-   "max_dbz": 54,
-   "tope_km": 12.3,
-   "radar": "RMA10",
+   "lat": -35.7359,
+   "lon": -68.5568,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "radar": "RMA18",
    "nivel": null
   },
   {
-   "lat": -38.7204,
-   "lon": -61.5411,
-   "max_dbz": 54,
-   "tope_km": 12.3,
-   "radar": "RMA10",
+   "lat": -39.1176,
+   "lon": -57.5629,
+   "max_dbz": 52,
+   "tope_km": 7.6,
+   "radar": "RMA6",
    "nivel": null
   },
   {
-   "lat": -38.3865,
-   "lon": -61.553,
-   "max_dbz": 54,
-   "tope_km": 10.6,
+   "lat": -38.6483,
+   "lon": -61.4345,
+   "max_dbz": 52,
+   "tope_km": 12.9,
    "radar": "RMA10",
    "nivel": null
   },
@@ -75,19 +101,27 @@
    "nivel": null
   },
   {
-   "lat": -28.1676,
-   "lon": -66.02,
-   "max_dbz": 49,
-   "tope_km": 12.9,
-   "radar": "RMA11",
+   "lat": -38.8374,
+   "lon": -61.636,
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "radar": "RMA10",
    "nivel": null
   },
   {
-   "lat": -39.1618,
-   "lon": -57.6566,
-   "max_dbz": 49,
-   "tope_km": 7.6,
-   "radar": "RMA6",
+   "lat": -33.2519,
+   "lon": -64.9342,
+   "max_dbz": 48,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
+  },
+  {
+   "lat": -38.3322,
+   "lon": -61.4937,
+   "max_dbz": 47,
+   "tope_km": 10.6,
+   "radar": "RMA10",
    "nivel": null
   },
   {
@@ -100,6 +134,27 @@
   }
  ],
  "localidades": {
+  "Achiras": {
+   "nivel": "granizo probable",
+   "km": 8.1,
+   "max_dbz": 59,
+   "tope_km": 12.9,
+   "visto": "2026-11-27 16:54"
+  },
+  "Barrio 12 de Octubre": {
+   "nivel": "posible granizo",
+   "km": 10.0,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "visto": "2026-11-27 16:54"
+  },
+  "Barrio Molina Cabrera": {
+   "nivel": "posible granizo",
+   "km": 4.0,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "visto": "2026-11-27 16:54"
+  },
   "Dos Hermanas": {
    "nivel": "posible granizo",
    "km": 9.3,
@@ -109,24 +164,24 @@
   },
   "El Trapiche": {
    "nivel": "granizo probable",
-   "km": 4.8,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "visto": "2026-11-27 16:45"
+   "km": 4.5,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "visto": "2026-11-27 16:54"
   },
   "Estancia Grande (San Luis)": {
    "nivel": "granizo probable",
-   "km": 7.9,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "visto": "2026-11-27 16:45"
+   "km": 7.8,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "visto": "2026-11-27 16:54"
   },
   "La Florida (San Luis)": {
    "nivel": "granizo probable",
-   "km": 8.2,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "visto": "2026-11-27 16:45"
+   "km": 8.8,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "visto": "2026-11-27 16:54"
   }
  }
 }

@@ -1,19 +1,44 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 17:00",
+ "consultado": "2026-11-27 17:15",
  "radares": {
-  "RMA1": "2026-11-27 16:35",
-  "RMA16": "2026-11-27 16:45"
+  "RMA16": "2026-11-27 16:54",
+  "RMA1": "2026-11-27 17:02",
+  "RMA17": "2026-11-27 17:02"
  },
  "nucleos": [
   {
-   "lat": -33.3033,
-   "lon": -64.989,
-   "max_dbz": 62,
+   "lat": -33.1133,
+   "lon": -64.9448,
+   "max_dbz": 59,
+   "tope_km": 12.9,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.3123,
+   "lon": -64.978,
+   "max_dbz": 58,
    "tope_km": 12.3,
    "radar": "RMA16",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.2519,
+   "lon": -64.9342,
+   "max_dbz": 48,
+   "tope_km": 10.6,
+   "radar": "RMA1",
+   "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Achiras": {
+   "nivel": "granizo probable",
+   "km": 7.0,
+   "max_dbz": 59,
+   "tope_km": 12.9,
+   "visto": "2026-11-27 16:54"
+  }
+ }
 }
