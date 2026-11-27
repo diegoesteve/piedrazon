@@ -1,14 +1,14 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 23:45",
+ "consultado": "2026-11-27 00:00",
  "radares": {
-  "RMA8": "2026-11-26 23:34",
-  "RMA19": "2026-11-26 23:24",
-  "RMA15": "2026-11-26 23:24",
-  "AR7": "2026-11-26 23:30",
-  "RMA11": "2026-11-26 23:24",
+  "RMA19": "2026-11-26 23:49",
+  "RMA11": "2026-11-26 23:41",
+  "RMA15": "2026-11-26 23:49",
+  "RMA8": "2026-11-26 23:43",
   "RMA6": "2026-11-26 23:27",
-  "RMA17": "2026-11-26 23:33"
+  "AR7": "2026-11-26 23:30",
+  "RMA17": "2026-11-26 23:41"
  },
  "nucleos": [
   {
@@ -21,99 +21,75 @@
    "descartado": "tope bajo (4.7 km)"
   },
   {
-   "lat": -29.0016,
-   "lon": -58.1656,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "radar": "RMA8",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -31.4048,
-   "lon": -68.5004,
-   "max_dbz": 58,
-   "tope_km": 15.2,
-   "radar": "RMA19",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -32.1831,
-   "lon": -64.9457,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -29.137,
-   "lon": -58.3441,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "radar": "RMA8",
-   "nivel": null
-  },
-  {
-   "lat": -28.042,
-   "lon": -66.0716,
-   "max_dbz": 54,
-   "tope_km": 17.0,
+   "lat": -28.2034,
+   "lon": -65.9684,
+   "max_dbz": 55,
+   "tope_km": 12.3,
    "radar": "RMA11",
-   "nivel": null
+   "nivel": "granizo probable"
   },
   {
-   "lat": -27.2134,
-   "lon": -66.0612,
+   "lat": -30.0125,
+   "lon": -67.257,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -31.3129,
+   "lon": -68.3577,
    "max_dbz": 53,
-   "tope_km": 14.7,
-   "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -31.3221,
-   "lon": -68.5553,
-   "max_dbz": 51,
    "tope_km": 12.9,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -31.3536,
-   "lon": -68.4839,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -31.4334,
-   "lon": -68.4521,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -34.8099,
-   "lon": -68.0722,
-   "max_dbz": 49,
-   "tope_km": 17.0,
+   "lat": -34.695,
+   "lon": -68.4016,
+   "max_dbz": 52,
+   "tope_km": 12.3,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -32.0371,
-   "lon": -64.9677,
-   "max_dbz": 49,
+   "lat": -34.907,
+   "lon": -68.3467,
+   "max_dbz": 52,
    "tope_km": 14.1,
-   "radar": "RMA17",
+   "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -35.0039,
-   "lon": -68.3028,
-   "max_dbz": 48,
-   "tope_km": 16.4,
-   "radar": "RMA19",
+   "lat": -28.4361,
+   "lon": -66.0097,
+   "max_dbz": 52,
+   "tope_km": 13.5,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -31.3358,
+   "lon": -68.3041,
+   "max_dbz": 51,
+   "tope_km": 14.7,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -29.0196,
+   "lon": -58.0606,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "radar": "RMA8",
+   "nivel": null
+  },
+  {
+   "lat": -32.0919,
+   "lon": -64.9237,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "radar": "RMA17",
    "nivel": null
   },
   {
@@ -134,33 +110,12 @@
   }
  ],
  "localidades": {
-  "El Rincón (dpto. Albardón, San Juan)": {
+  "El Rodeo (Catamarca)": {
    "nivel": "granizo probable",
-   "km": 6.2,
-   "max_dbz": 58,
-   "tope_km": 15.2,
-   "visto": "2026-11-26 23:24"
-  },
-  "Las Tapias (San Juan)": {
-   "nivel": "granizo probable",
-   "km": 9.6,
-   "max_dbz": 58,
-   "tope_km": 15.2,
-   "visto": "2026-11-26 23:24"
-  },
-  "Villa General San Martín - Campo Afuera": {
-   "nivel": "granizo probable",
-   "km": 4.3,
-   "max_dbz": 58,
-   "tope_km": 15.2,
-   "visto": "2026-11-26 23:24"
-  },
-  "Villa Sefair": {
-   "nivel": "granizo probable",
-   "km": 6.8,
-   "max_dbz": 58,
-   "tope_km": 15.2,
-   "visto": "2026-11-26 23:24"
+   "km": 9.1,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "visto": "2026-11-26 23:41"
   }
  }
 }
