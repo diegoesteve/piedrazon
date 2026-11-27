@@ -1,13 +1,13 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 22:00",
+ "consultado": "2026-11-26 22:15",
  "radares": {
-  "RMA18": "2026-11-26 21:37",
+  "RMA8": "2026-11-26 22:03",
+  "RMA18": "2026-11-26 22:02",
+  "AR7": "2026-11-26 21:50",
+  "RMA4": "2026-11-26 21:59",
   "RMA11": "2026-11-26 21:50",
-  "RMA8": "2026-11-26 21:45",
-  "RMA19": "2026-11-26 21:44",
-  "AR7": "2026-11-26 21:40",
-  "RMA4": "2026-11-26 21:41",
+  "RMA19": "2026-11-26 22:00",
   "RMA15": "2026-11-26 21:45",
   "RMA16": "2026-11-26 21:47"
  },
@@ -21,14 +21,6 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -35.3914,
-   "lon": -67.9862,
-   "max_dbz": 58,
-   "tope_km": 14.7,
-   "radar": "RMA18",
-   "nivel": "granizo probable"
-  },
-  {
    "lat": -26.5697,
    "lon": -65.1534,
    "max_dbz": 58,
@@ -37,36 +29,20 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -29.137,
-   "lon": -59.5097,
-   "max_dbz": 57,
-   "tope_km": 11.1,
-   "radar": "RMA8",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -34.907,
-   "lon": -68.5443,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "radar": "RMA19",
-   "nivel": "granizo probable"
-  },
-  {
    "lat": -29.146,
-   "lon": -59.3522,
-   "max_dbz": 55,
-   "tope_km": 12.3,
+   "lon": -59.2472,
+   "max_dbz": 56,
+   "tope_km": 11.7,
    "radar": "RMA8",
    "nivel": "granizo probable"
   },
   {
-   "lat": -35.2942,
-   "lon": -67.9294,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "radar": "RMA19",
-   "nivel": "granizo probable"
+   "lat": -35.2914,
+   "lon": -67.9748,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "radar": "RMA18",
+   "nivel": null
   },
   {
    "lat": -28.4361,
@@ -77,27 +53,35 @@
    "nivel": null
   },
   {
+   "lat": -31.4599,
+   "lon": -68.7529,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -29.1099,
+   "lon": -59.3627,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "radar": "RMA8",
+   "nivel": null
+  },
+  {
+   "lat": -35.2186,
+   "lon": -68.0775,
+   "max_dbz": 53,
+   "tope_km": 13.5,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
    "lat": -26.5242,
    "lon": -65.7208,
    "max_dbz": 53,
    "tope_km": 8.8,
    "radar": "RMA11",
-   "nivel": null
-  },
-  {
-   "lat": -35.4005,
-   "lon": -68.2601,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA18",
-   "nivel": null
-  },
-  {
-   "lat": -35.303,
-   "lon": -68.1271,
-   "max_dbz": 52,
-   "tope_km": 17.0,
-   "radar": "RMA19",
    "nivel": null
   },
   {
@@ -117,32 +101,64 @@
    "nivel": null
   },
   {
-   "lat": -35.4005,
-   "lon": -68.4655,
+   "lat": -35.3096,
+   "lon": -68.1346,
    "max_dbz": 51,
-   "tope_km": 9.4,
+   "tope_km": 13.5,
    "radar": "RMA18",
    "nivel": null
   },
   {
-   "lat": -29.0801,
-   "lon": -59.3602,
+   "lat": -29.1067,
+   "lon": -59.1952,
    "max_dbz": 51,
-   "tope_km": 13.5,
+   "tope_km": 11.1,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -31.7622,
-   "lon": -68.3906,
-   "max_dbz": 49,
-   "tope_km": 11.7,
+   "lat": -35.2415,
+   "lon": -67.8636,
+   "max_dbz": 51,
+   "tope_km": 13.5,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -29.7528,
-   "lon": -60.9157,
+   "lat": -35.2186,
+   "lon": -68.1688,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -29.7068,
+   "lon": -60.959,
+   "max_dbz": 49,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -35.18,
+   "lon": -68.0283,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -35.3369,
+   "lon": -68.2715,
+   "max_dbz": 48,
+   "tope_km": 14.1,
+   "radar": "RMA18",
+   "nivel": null
+  },
+  {
+   "lat": -29.8817,
+   "lon": -60.9049,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
@@ -150,12 +166,19 @@
   }
  ],
  "localidades": {
+  "Carolina (Corrientes)": {
+   "nivel": "granizo probable",
+   "km": 6.4,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 22:03"
+  },
   "Goya": {
    "nivel": "granizo probable",
-   "km": 9.0,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "visto": "2026-11-26 21:45"
+   "km": 1.4,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "visto": "2026-11-26 22:03"
   },
   "El Cadillal": {
    "nivel": "granizo probable",
