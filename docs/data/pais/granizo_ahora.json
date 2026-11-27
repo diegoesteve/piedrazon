@@ -1,156 +1,166 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 23:30",
+ "consultado": "2026-11-26 23:45",
  "radares": {
-  "RMA19": "2026-11-26 23:07",
-  "RMA15": "2026-11-26 23:16",
-  "RMA8": "2026-11-26 23:15",
-  "AR7": "2026-11-26 23:10",
-  "RMA18": "2026-11-26 23:00",
-  "RMA4": "2026-11-26 23:02"
+  "RMA8": "2026-11-26 23:34",
+  "RMA19": "2026-11-26 23:24",
+  "RMA15": "2026-11-26 23:24",
+  "AR7": "2026-11-26 23:30",
+  "RMA11": "2026-11-26 23:24",
+  "RMA6": "2026-11-26 23:27",
+  "RMA17": "2026-11-26 23:33"
  },
  "nucleos": [
   {
-   "lat": -31.469,
-   "lon": -68.5992,
-   "max_dbz": 58,
-   "tope_km": 14.7,
-   "radar": "RMA19",
-   "nivel": "granizo probable"
+   "lat": -37.7054,
+   "lon": -56.8958,
+   "max_dbz": 70,
+   "tope_km": 4.7,
+   "radar": "RMA6",
+   "nivel": null,
+   "descartado": "tope bajo (4.7 km)"
   },
   {
-   "lat": -29.1099,
-   "lon": -58.4701,
-   "max_dbz": 57,
+   "lat": -29.0016,
+   "lon": -58.1656,
+   "max_dbz": 58,
    "tope_km": 9.4,
    "radar": "RMA8",
    "nivel": "posible granizo"
   },
   {
-   "lat": -28.9744,
-   "lon": -58.2916,
-   "max_dbz": 55,
-   "tope_km": 8.8,
-   "radar": "RMA8",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -34.9816,
-   "lon": -68.1688,
-   "max_dbz": 55,
-   "tope_km": 12.9,
-   "radar": "RMA18",
+   "lat": -31.4048,
+   "lon": -68.5004,
+   "max_dbz": 58,
+   "tope_km": 15.2,
+   "radar": "RMA19",
    "nivel": "granizo probable"
   },
   {
-   "lat": -31.4157,
-   "lon": -68.4521,
-   "max_dbz": 53,
+   "lat": -32.1831,
+   "lon": -64.9457,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "radar": "RMA15",
-   "nivel": null
+   "radar": "RMA17",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -29.6427,
-   "lon": -67.6589,
-   "max_dbz": 51,
-   "tope_km": 13.5,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -29.3083,
-   "lon": -59.4467,
-   "max_dbz": 51,
-   "tope_km": 10.6,
+   "lat": -29.137,
+   "lon": -58.3441,
+   "max_dbz": 54,
+   "tope_km": 10.0,
    "radar": "RMA8",
    "nivel": null
   },
   {
-   "lat": -29.0712,
-   "lon": -58.5662,
+   "lat": -28.042,
+   "lon": -66.0716,
+   "max_dbz": 54,
+   "tope_km": 17.0,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -27.2134,
+   "lon": -66.0612,
+   "max_dbz": 53,
+   "tope_km": 14.7,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -31.3221,
+   "lon": -68.5553,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "radar": "RMA19",
+   "nivel": null
+  },
+  {
+   "lat": -31.3536,
+   "lon": -68.4839,
    "max_dbz": 51,
    "tope_km": 17.0,
-   "radar": "RMA4",
+   "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -35.0304,
-   "lon": -68.3357,
-   "max_dbz": 49,
-   "tope_km": 17.0,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -34.9599,
-   "lon": -68.1051,
-   "max_dbz": 49,
-   "tope_km": 17.0,
-   "radar": "RMA19",
-   "nivel": null
-  },
-  {
-   "lat": -31.4423,
-   "lon": -68.5262,
-   "max_dbz": 49,
+   "lat": -31.4334,
+   "lon": -68.4521,
+   "max_dbz": 51,
    "tope_km": 17.0,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -35.0363,
-   "lon": -68.089,
+   "lat": -34.8099,
+   "lon": -68.0722,
    "max_dbz": 49,
-   "tope_km": 12.3,
-   "radar": "RMA18",
+   "tope_km": 17.0,
+   "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -31.3269,
-   "lon": -68.505,
+   "lat": -32.0371,
+   "lon": -64.9677,
+   "max_dbz": 49,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -35.0039,
+   "lon": -68.3028,
    "max_dbz": 48,
-   "tope_km": 12.9,
-   "radar": "RMA15",
+   "tope_km": 16.4,
+   "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -29.7436,
-   "lon": -60.9482,
-   "max_dbz": 46,
+   "lat": -29.7805,
+   "lon": -60.9374,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.716,
+   "lon": -60.9266,
+   "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
-  "Chimbas": {
-   "nivel": "granizo probable",
-   "km": 6.9,
-   "max_dbz": 58,
-   "tope_km": 14.7,
-   "visto": "2026-11-26 23:07"
-  },
   "El Rincón (dpto. Albardón, San Juan)": {
    "nivel": "granizo probable",
-   "km": 6.0,
+   "km": 6.2,
    "max_dbz": 58,
-   "tope_km": 14.7,
-   "visto": "2026-11-26 23:07"
+   "tope_km": 15.2,
+   "visto": "2026-11-26 23:24"
   },
-  "Rivadavia (San Juan)": {
+  "Las Tapias (San Juan)": {
    "nivel": "granizo probable",
-   "km": 7.1,
+   "km": 9.6,
    "max_dbz": 58,
-   "tope_km": 14.7,
-   "visto": "2026-11-26 23:07"
+   "tope_km": 15.2,
+   "visto": "2026-11-26 23:24"
   },
   "Villa General San Martín - Campo Afuera": {
    "nivel": "granizo probable",
-   "km": 8.2,
+   "km": 4.3,
    "max_dbz": 58,
-   "tope_km": 14.7,
-   "visto": "2026-11-26 23:07"
+   "tope_km": 15.2,
+   "visto": "2026-11-26 23:24"
+  },
+  "Villa Sefair": {
+   "nivel": "granizo probable",
+   "km": 6.8,
+   "max_dbz": 58,
+   "tope_km": 15.2,
+   "visto": "2026-11-26 23:24"
   }
  }
 }
