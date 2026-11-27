@@ -1,24 +1,24 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 04:45",
+ "consultado": "2026-11-27 05:00",
  "radares": {
-  "RMA17": "2026-11-27 04:30",
-  "RMA8": "2026-11-27 04:23",
+  "RMA17": "2026-11-27 04:38",
+  "RMA15": "2026-11-27 04:48",
+  "RMA8": "2026-11-27 04:42",
+  "RMA4": "2026-11-27 04:46",
+  "RMA3": "2026-11-27 04:47",
+  "AR5": "2026-11-27 04:30",
   "RMA11": "2026-11-27 04:32",
-  "RMA15": "2026-11-27 04:31",
-  "RMA4": "2026-11-27 04:28",
-  "AR7": "2026-11-27 04:10",
-  "RMA3": "2026-11-27 04:29",
-  "RMA6": "2026-11-27 04:18",
-  "AR5": "2026-11-27 04:30"
+  "AR7": "2026-11-27 04:40",
+  "RMA6": "2026-11-27 04:47"
  },
  "nucleos": [
   {
-   "lat": -26.9,
-   "lon": -59.0921,
-   "max_dbz": 61,
-   "tope_km": 10.0,
-   "radar": "RMA4",
+   "lat": -33.2341,
+   "lon": -63.2199,
+   "max_dbz": 65,
+   "tope_km": 12.9,
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
@@ -30,59 +30,19 @@
    "nivel": "granizo probable"
   },
   {
-   "lat": -26.2822,
-   "lon": -59.4427,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "radar": "RMA4",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -26.2073,
-   "lon": -60.1699,
-   "max_dbz": 57,
-   "tope_km": 12.3,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.423,
-   "lon": -63.2969,
-   "max_dbz": 56,
-   "tope_km": 16.4,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -26.2275,
-   "lon": -60.2263,
+   "lat": -26.764,
+   "lon": -60.0717,
    "max_dbz": 56,
    "tope_km": 12.9,
    "radar": "RMA4",
    "nivel": "granizo probable"
   },
   {
-   "lat": -25.5023,
-   "lon": -59.5676,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "radar": "RMA3",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.198,
-   "lon": -63.2749,
+   "lat": -33.3961,
+   "lon": -63.2859,
    "max_dbz": 54,
-   "tope_km": 17.0,
+   "tope_km": 16.4,
    "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -27.7755,
-   "lon": -59.6386,
-   "max_dbz": 54,
-   "tope_km": 12.3,
-   "radar": "RMA4",
    "nivel": null
   },
   {
@@ -94,6 +54,38 @@
    "nivel": null
   },
   {
+   "lat": -29.326,
+   "lon": -68.1983,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -26.264,
+   "lon": -60.1232,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "radar": "RMA4",
+   "nivel": null
+  },
+  {
+   "lat": -26.2963,
+   "lon": -59.6981,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -26.3459,
+   "lon": -59.3189,
+   "max_dbz": 52,
+   "tope_km": 17.0,
+   "radar": "RMA4",
+   "nivel": null
+  },
+  {
    "lat": -28.445,
    "lon": -66.0097,
    "max_dbz": 52,
@@ -102,19 +94,43 @@
    "nivel": null
   },
   {
-   "lat": -26.4824,
-   "lon": -60.2057,
-   "max_dbz": 52,
-   "tope_km": 12.9,
+   "lat": -28.1135,
+   "lon": -66.1889,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -27.8295,
+   "lon": -59.5252,
+   "max_dbz": 51,
+   "tope_km": 10.6,
    "radar": "RMA4",
    "nivel": null
   },
   {
-   "lat": -38.2718,
-   "lon": -56.2286,
+   "lat": -36.8431,
+   "lon": -57.879,
    "max_dbz": 51,
-   "tope_km": 17.0,
+   "tope_km": 13.5,
    "radar": "RMA6",
+   "nivel": null
+  },
+  {
+   "lat": -29.3983,
+   "lon": -58.6067,
+   "max_dbz": 50,
+   "tope_km": 11.1,
+   "radar": "RMA8",
+   "nivel": null
+  },
+  {
+   "lat": -26.2251,
+   "lon": -60.0294,
+   "max_dbz": 50,
+   "tope_km": 12.9,
+   "radar": "RMA3",
    "nivel": null
   },
   {
@@ -126,14 +142,6 @@
    "nivel": null
   },
   {
-   "lat": -29.3173,
-   "lon": -58.7852,
-   "max_dbz": 49,
-   "tope_km": 11.7,
-   "radar": "RMA8",
-   "nivel": null
-  },
-  {
    "lat": -27.0777,
    "lon": -65.7311,
    "max_dbz": 49,
@@ -142,100 +150,53 @@
    "nivel": null
   },
   {
-   "lat": -28.9082,
-   "lon": -65.6389,
-   "max_dbz": 49,
-   "tope_km": 13.5,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -30.2373,
-   "lon": -66.5061,
+   "lat": -25.6365,
+   "lon": -59.8487,
    "max_dbz": 48,
-   "tope_km": 5.9,
-   "radar": "RMA15",
-   "nivel": null,
-   "descartado": "tope bajo (5.9 km)"
-  },
-  {
-   "lat": -28.8627,
-   "lon": -65.7129,
-   "max_dbz": 48,
-   "tope_km": 12.3,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -26.6369,
-   "lon": -60.1542,
-   "max_dbz": 48,
-   "tope_km": 12.3,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -26.5006,
-   "lon": -58.0712,
-   "max_dbz": 48,
-   "tope_km": 12.9,
-   "radar": "RMA4",
-   "nivel": null
-  },
-  {
-   "lat": -26.4562,
-   "lon": -60.0996,
-   "max_dbz": 48,
-   "tope_km": 12.3,
+   "tope_km": 11.1,
    "radar": "RMA3",
    "nivel": null
   },
   {
-   "lat": -29.7344,
-   "lon": -60.9482,
-   "max_dbz": 47,
+   "lat": -29.8541,
+   "lon": -60.9157,
+   "max_dbz": 48,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -29.8449,
-   "lon": -60.9266,
-   "max_dbz": 46,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.992,
+   "lat": -29.9185,
    "lon": -60.9049,
-   "max_dbz": 46,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -26.7223,
+   "lon": -59.9792,
+   "max_dbz": 47,
+   "tope_km": 14.1,
+   "radar": "RMA3",
+   "nivel": null
+  },
+  {
+   "lat": -30.0012,
+   "lon": -60.8941,
+   "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
-  "La Eduvigis": {
+  "Santa Eufemia": {
    "nivel": "granizo probable",
-   "km": 7.7,
-   "max_dbz": 61,
-   "tope_km": 10.0,
-   "visto": "2026-11-27 04:28"
-  },
-  "La Carlota": {
-   "nivel": "granizo probable",
-   "km": 0.6,
-   "max_dbz": 56,
-   "tope_km": 16.4,
-   "visto": "2026-11-27 04:30"
-  },
-  "El Colorado (Formosa)": {
-   "nivel": "granizo probable",
-   "km": 7.6,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "visto": "2026-11-27 04:28"
+   "km": 8.9,
+   "max_dbz": 65,
+   "tope_km": 12.9,
+   "visto": "2026-11-27 04:38"
   },
   "La Nueva Donosa": {
    "nivel": "granizo probable",
