@@ -1,127 +1,141 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 01:45",
+ "consultado": "2026-11-27 02:00",
  "radares": {
-  "AR7": "2026-11-27 01:20",
-  "AR5": "2026-11-27 01:10",
-  "RMA15": "2026-11-27 01:29",
-  "RMA17": "2026-11-27 01:30",
-  "RMA11": "2026-11-27 01:31"
+  "RMA15": "2026-11-27 01:45",
+  "RMA17": "2026-11-27 01:38",
+  "RMA11": "2026-11-27 01:40",
+  "AR7": "2026-11-27 01:40",
+  "RMA6": "2026-11-27 01:34",
+  "RMA8": "2026-11-27 01:40"
  },
  "nucleos": [
   {
-   "lat": -29.3079,
-   "lon": -66.4427,
-   "max_dbz": 62,
-   "tope_km": 14.7,
-   "radar": "RMA15",
+   "lat": -38.3792,
+   "lon": -56.1233,
+   "max_dbz": 84,
+   "tope_km": 14.1,
+   "radar": "RMA6",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.4833,
-   "lon": -63.4068,
-   "max_dbz": 60,
-   "tope_km": 14.1,
+   "lat": -32.4924,
+   "lon": -63.3958,
+   "max_dbz": 62,
+   "tope_km": 15.8,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -34.1437,
-   "lon": -58.9207,
+   "lat": -29.3713,
+   "lon": -66.3581,
    "max_dbz": 59,
-   "tope_km": 5.4,
-   "radar": "AR5",
-   "nivel": null,
-   "descartado": "tope bajo (5.4 km)"
+   "tope_km": 11.7,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -28.2034,
+   "lat": -28.3973,
+   "lon": -66.5273,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -27.7455,
    "lon": -65.9787,
    "max_dbz": 55,
-   "tope_km": 12.9,
+   "tope_km": 11.1,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -27.2857,
-   "lon": -66.0303,
-   "max_dbz": 55,
-   "tope_km": 15.2,
-   "radar": "RMA11",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -27.0868,
-   "lon": -65.8549,
-   "max_dbz": 54,
-   "tope_km": 14.1,
-   "radar": "RMA11",
+   "lat": -30.1295,
+   "lon": -67.2465,
+   "max_dbz": 53,
+   "tope_km": 8.8,
+   "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -28.3882,
-   "lon": -66.6542,
+   "lat": -28.7807,
+   "lon": -67.3628,
    "max_dbz": 52,
-   "tope_km": 10.6,
+   "tope_km": 12.9,
    "radar": "RMA15",
    "nivel": null
   },
   {
    "lat": -27.4753,
    "lon": -65.9478,
-   "max_dbz": 51,
+   "max_dbz": 52,
    "tope_km": 13.5,
    "radar": "RMA11",
    "nivel": null
   },
   {
-   "lat": -32.6555,
-   "lon": -60.786,
+   "lat": -29.5153,
+   "lon": -58.3756,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "radar": "RMA8",
+   "nivel": null
+  },
+  {
+   "lat": -29.5063,
+   "lon": -58.1866,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "radar": "RMA8",
+   "nivel": null
+  },
+  {
+   "lat": -30.0215,
+   "lon": -67.2465,
    "max_dbz": 50,
-   "tope_km": 3.0,
-   "radar": "AR7",
-   "nivel": null,
-   "descartado": "tope bajo (3.0 km)"
+   "tope_km": 8.8,
+   "radar": "RMA15",
+   "nivel": null
   },
   {
-   "lat": -29.8173,
-   "lon": -60.9157,
+   "lat": -32.4379,
+   "lon": -63.4728,
+   "max_dbz": 49,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -29.7805,
+   "lon": -60.9374,
    "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -30.0195,
-   "lon": -60.8941,
-   "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.6976,
-   "lon": -60.9266,
-   "max_dbz": 46,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
+  "Las Chacritas (Catamarca)": {
+   "nivel": "granizo probable",
+   "km": 8.4,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "visto": "2026-11-27 01:40"
+  },
   "Arroyo Cabral": {
    "nivel": "granizo probable",
-   "km": 0.8,
-   "max_dbz": 60,
-   "tope_km": 14.1,
-   "visto": "2026-11-27 01:30"
+   "km": 0.7,
+   "max_dbz": 62,
+   "tope_km": 15.8,
+   "visto": "2026-11-27 01:38"
   },
   "Luca": {
    "nivel": "granizo probable",
-   "km": 9.2,
-   "max_dbz": 60,
-   "tope_km": 14.1,
-   "visto": "2026-11-27 01:30"
+   "km": 9.3,
+   "max_dbz": 62,
+   "tope_km": 15.8,
+   "visto": "2026-11-27 01:38"
   }
  }
 }
