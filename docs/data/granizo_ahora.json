@@ -1,31 +1,56 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 08:00",
+ "consultado": "2026-11-27 08:15",
  "radares": {
-  "RMA17": "2026-11-27 07:46"
+  "RMA17": "2026-11-27 08:02",
+  "RMA16": "2026-11-27 07:53"
  },
  "nucleos": [
   {
-   "lat": -32.0371,
+   "lat": -32.0828,
+   "lon": -64.9677,
+   "max_dbz": 62,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.1922,
+   "lon": -64.9457,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.6467,
+   "lon": -64.9018,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0006,
+   "lon": -64.9457,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -34.1755,
+   "lon": -62.913,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "radar": "RMA16",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.3379,
    "lon": -64.9127,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.7629,
-   "lon": -64.7918,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -31.9092,
-   "lon": -64.8688,
-   "max_dbz": 51,
-   "tope_km": 17.0,
+   "max_dbz": 49,
+   "tope_km": 13.5,
    "radar": "RMA17",
    "nivel": null
   }
@@ -33,10 +58,24 @@
  "localidades": {
   "La Población": {
    "nivel": "granizo probable",
-   "km": 9.2,
-   "max_dbz": 57,
+   "km": 2.8,
+   "max_dbz": 62,
    "tope_km": 17.0,
-   "visto": "2026-11-27 07:46"
+   "visto": "2026-11-27 08:02"
+  },
+  "Leguizamón": {
+   "nivel": "granizo probable",
+   "km": 6.9,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-27 07:53"
+  },
+  "San Javier y Yacanto": {
+   "nivel": "granizo probable",
+   "km": 8.7,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "visto": "2026-11-27 08:02"
   }
  }
 }
