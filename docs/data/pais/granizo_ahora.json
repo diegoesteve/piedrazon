@@ -1,21 +1,28 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 01:30",
+ "consultado": "2026-11-27 01:45",
  "radares": {
-  "RMA8": "2026-11-27 00:55",
-  "RMA17": "2026-11-27 01:14",
-  "RMA15": "2026-11-27 01:20",
-  "AR7": "2026-11-27 01:10",
+  "AR7": "2026-11-27 01:20",
   "AR5": "2026-11-27 01:10",
-  "RMA11": "2026-11-27 01:14"
+  "RMA15": "2026-11-27 01:29",
+  "RMA17": "2026-11-27 01:30",
+  "RMA11": "2026-11-27 01:31"
  },
  "nucleos": [
   {
-   "lat": -29.2988,
-   "lon": -66.5273,
+   "lat": -29.3079,
+   "lon": -66.4427,
    "max_dbz": 62,
    "tope_km": 14.7,
    "radar": "RMA15",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.4833,
+   "lon": -63.4068,
+   "max_dbz": 60,
+   "tope_km": 14.1,
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
@@ -28,120 +35,93 @@
    "descartado": "tope bajo (5.4 km)"
   },
   {
-   "lat": -27.4753,
-   "lon": -65.9478,
+   "lat": -28.2034,
+   "lon": -65.9787,
    "max_dbz": 55,
-   "tope_km": 10.6,
+   "tope_km": 12.9,
    "radar": "RMA11",
    "nivel": "granizo probable"
   },
   {
-   "lat": -29.0648,
-   "lon": -57.3885,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "radar": "RMA8",
-   "nivel": null
+   "lat": -27.2857,
+   "lon": -66.0303,
+   "max_dbz": 55,
+   "tope_km": 15.2,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
   },
   {
-   "lat": -28.2124,
-   "lon": -65.9993,
+   "lat": -27.0868,
+   "lon": -65.8549,
    "max_dbz": 54,
-   "tope_km": 13.5,
+   "tope_km": 14.1,
    "radar": "RMA11",
    "nivel": null
   },
   {
-   "lat": -28.3699,
-   "lon": -66.6648,
+   "lat": -28.3882,
+   "lon": -66.6542,
    "max_dbz": 52,
    "tope_km": 10.6,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -29.2988,
-   "lon": -66.8975,
+   "lat": -27.4753,
+   "lon": -65.9478,
    "max_dbz": 51,
-   "tope_km": 11.1,
-   "radar": "RMA15",
+   "tope_km": 13.5,
+   "radar": "RMA11",
    "nivel": null
   },
   {
-   "lat": -32.2104,
-   "lon": -64.9567,
+   "lat": -32.6555,
+   "lon": -60.786,
    "max_dbz": 50,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": null
+   "tope_km": 3.0,
+   "radar": "AR7",
+   "nivel": null,
+   "descartado": "tope bajo (3.0 km)"
   },
   {
-   "lat": -29.7252,
+   "lat": -29.8173,
    "lon": -60.9157,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -30.0195,
+   "lon": -60.8941,
    "max_dbz": 47,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -29.8081,
-   "lon": -60.9374,
-   "max_dbz": 47,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -29.9093,
-   "lon": -60.9049,
-   "max_dbz": 47,
+   "lat": -29.6976,
+   "lon": -60.9266,
+   "max_dbz": 46,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
-  "Aconquija": {
+  "Arroyo Cabral": {
    "nivel": "granizo probable",
-   "km": 6.2,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 01:14"
+   "km": 0.8,
+   "max_dbz": 60,
+   "tope_km": 14.1,
+   "visto": "2026-11-27 01:30"
   },
-  "Alto de las Juntas": {
+  "Luca": {
    "nivel": "granizo probable",
-   "km": 7.0,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 01:14"
-  },
-  "Buena Vista (Catamarca)": {
-   "nivel": "granizo probable",
-   "km": 8.1,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 01:14"
-  },
-  "El Alamito": {
-   "nivel": "granizo probable",
-   "km": 7.7,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 01:14"
-  },
-  "El Lindero": {
-   "nivel": "granizo probable",
-   "km": 6.1,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 01:14"
-  },
-  "La Mesada": {
-   "nivel": "granizo probable",
-   "km": 6.4,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 01:14"
+   "km": 9.2,
+   "max_dbz": 60,
+   "tope_km": 14.1,
+   "visto": "2026-11-27 01:30"
   }
  }
 }
