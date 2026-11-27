@@ -1,63 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 07:00",
+ "consultado": "2026-11-27 07:15",
  "radares": {
-  "RMA17": "2026-11-27 06:24",
-  "RMA1": "2026-11-27 06:28"
+  "RMA1": "2026-11-27 06:47",
+  "RMA17": "2026-11-27 06:57"
  },
  "nucleos": [
   {
-   "lat": -31.1704,
-   "lon": -64.2887,
+   "lat": -32.4924,
+   "lon": -64.7589,
    "max_dbz": 59,
-   "tope_km": 10.6,
-   "radar": "RMA1",
+   "tope_km": 17.0,
+   "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.5015,
-   "lon": -64.7918,
-   "max_dbz": 57,
-   "tope_km": 15.8,
+   "lat": -32.1557,
+   "lon": -64.8908,
+   "max_dbz": 59,
+   "tope_km": 14.7,
    "radar": "RMA17",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0097,
+   "lon": -64.8908,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.6648,
+   "lon": -64.9018,
+   "max_dbz": 52,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.621,
+   "lon": -64.2995,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "radar": "RMA1",
+   "nivel": null
   }
  ],
  "localidades": {
-  "Mendiolaza": {
-   "nivel": "granizo probable",
-   "km": 9.8,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 06:28"
-  },
-  "Río Ceballos": {
-   "nivel": "granizo probable",
-   "km": 2.9,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 06:28"
-  },
   "Río de los Sauces": {
    "nivel": "granizo probable",
-   "km": 7.5,
-   "max_dbz": 57,
-   "tope_km": 15.8,
-   "visto": "2026-11-27 06:24"
-  },
-  "Salsipuedes": {
-   "nivel": "granizo probable",
-   "km": 5.2,
+   "km": 4.5,
    "max_dbz": 59,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 06:28"
-  },
-  "Unquillo": {
-   "nivel": "granizo probable",
-   "km": 7.0,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "visto": "2026-11-27 06:28"
+   "tope_km": 17.0,
+   "visto": "2026-11-27 06:57"
   }
  }
 }
