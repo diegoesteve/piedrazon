@@ -1,20 +1,12 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 01:15",
+ "consultado": "2026-11-28 01:30",
  "radares": {
-  "AR7": "2026-11-28 00:40",
-  "RMA17": "2026-11-28 00:48",
-  "RMA15": "2026-11-28 01:04"
+  "RMA15": "2026-11-28 01:04",
+  "RMA17": "2026-11-28 01:12",
+  "AR7": "2026-11-28 01:10"
  },
  "nucleos": [
-  {
-   "lat": -33.162,
-   "lon": -62.8242,
-   "max_dbz": 58,
-   "tope_km": 15.8,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
   {
    "lat": -30.1205,
    "lon": -67.257,
@@ -24,28 +16,37 @@
    "nivel": null
   },
   {
-   "lat": -29.7344,
+   "lat": -32.028,
+   "lon": -64.9567,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -29.7252,
+   "lon": -60.9482,
+   "max_dbz": 48,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.8633,
    "lon": -60.9157,
+   "max_dbz": 47,
+   "tope_km": 15.0,
+   "radar": "AR7",
+   "nivel": null
+  },
+  {
+   "lat": -29.9736,
+   "lon": -60.9049,
    "max_dbz": 46,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {
-  "Laborde": {
-   "nivel": "granizo probable",
-   "km": 3.2,
-   "max_dbz": 58,
-   "tope_km": 15.8,
-   "visto": "2026-11-28 00:48"
-  },
-  "Wenceslao Escalante": {
-   "nivel": "granizo probable",
-   "km": 5.2,
-   "max_dbz": 58,
-   "tope_km": 15.8,
-   "visto": "2026-11-28 00:48"
-  }
- }
+ "localidades": {}
 }
