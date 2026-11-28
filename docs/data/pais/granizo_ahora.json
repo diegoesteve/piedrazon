@@ -1,78 +1,70 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 11:15",
+ "consultado": "2026-11-28 11:30",
  "radares": {
-  "RMA14": "2026-11-28 11:04",
-  "AR7": "2026-11-28 11:00",
-  "RMA10": "2026-11-28 11:00",
-  "RMA6": "2026-11-28 11:02",
-  "RMA15": "2026-11-28 11:02"
+  "RMA10": "2026-11-28 11:19",
+  "RMA6": "2026-11-28 11:11",
+  "RMA15": "2026-11-28 11:19",
+  "RMA14": "2026-11-28 11:12",
+  "AR7": "2026-11-28 11:10"
  },
  "nucleos": [
   {
-   "lat": -37.4989,
-   "lon": -61.1957,
-   "max_dbz": 56,
-   "tope_km": 12.9,
+   "lat": -37.5342,
+   "lon": -60.6368,
+   "max_dbz": 58,
+   "tope_km": 13.5,
    "radar": "RMA14",
    "nivel": "granizo probable"
   },
   {
-   "lat": -30.1385,
+   "lat": -30.1475,
    "lon": -67.257,
-   "max_dbz": 56,
+   "max_dbz": 55,
    "tope_km": 10.6,
    "radar": "RMA15",
    "nivel": "granizo probable"
   },
   {
-   "lat": -37.5519,
-   "lon": -60.6254,
-   "max_dbz": 55,
-   "tope_km": 11.7,
+   "lat": -37.9217,
+   "lon": -60.0678,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "radar": "RMA6",
+   "nivel": null
+  },
+  {
+   "lat": -29.2807,
+   "lon": -66.9292,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -37.4989,
+   "lon": -61.287,
+   "max_dbz": 51,
+   "tope_km": 12.9,
    "radar": "RMA14",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -38.0296,
-   "lon": -60.0443,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA6",
    "nivel": null
   },
   {
-   "lat": -37.9577,
-   "lon": -60.1029,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -30.4347,
-   "lon": -66.5061,
-   "max_dbz": 52,
+   "lat": -30.4078,
+   "lon": -66.485,
+   "max_dbz": 49,
    "tope_km": 8.2,
    "radar": "RMA15",
    "nivel": null
   },
   {
-   "lat": -30.2855,
-   "lon": -58.8394,
+   "lat": -29.762,
+   "lon": -60.9157,
    "max_dbz": 46,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
- "localidades": {
-  "Líbano": {
-   "nivel": "granizo probable",
-   "km": 8.7,
-   "max_dbz": 56,
-   "tope_km": 12.9,
-   "visto": "2026-11-28 11:04"
-  }
- }
+ "localidades": {}
 }
