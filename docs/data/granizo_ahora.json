@@ -1,56 +1,116 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 02:45",
+ "consultado": "2026-11-28 03:00",
  "radares": {
-  "RMA17": "2026-11-28 02:26"
+  "RMA17": "2026-11-28 02:42"
  },
  "nucleos": [
   {
-   "lat": -32.8278,
-   "lon": -63.5717,
-   "max_dbz": 68,
-   "tope_km": 8.2,
-   "radar": "RMA17",
-   "nivel": "granizo probable"
-  },
-  {
    "lat": -32.7554,
    "lon": -63.7915,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "radar": "RMA17",
-   "nivel": "posible granizo"
-  },
-  {
-   "lat": -32.0736,
-   "lon": -64.9347,
-   "max_dbz": 56,
-   "tope_km": 17.0,
+   "max_dbz": 72,
+   "tope_km": 12.9,
    "radar": "RMA17",
    "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.5378,
+   "lon": -63.9564,
+   "max_dbz": 61,
+   "tope_km": 14.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.2971,
+   "lon": -62.6154,
+   "max_dbz": 60,
+   "tope_km": 10.6,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.0554,
+   "lon": -64.9457,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.162,
+   "lon": -62.8242,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -31.6804,
+   "lon": -64.572,
+   "max_dbz": 51,
+   "tope_km": 14.1,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.1557,
+   "lon": -64.9127,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
   }
  ],
  "localidades": {
+  "Colonia Barge": {
+   "nivel": "granizo probable",
+   "km": 4.6,
+   "max_dbz": 60,
+   "tope_km": 10.6,
+   "visto": "2026-11-28 02:42"
+  },
+  "Colonia Bismarck": {
+   "nivel": "granizo probable",
+   "km": 9.4,
+   "max_dbz": 60,
+   "tope_km": 10.6,
+   "visto": "2026-11-28 02:42"
+  },
   "General Cabrera": {
-   "nivel": "posible granizo",
+   "nivel": "granizo probable",
    "km": 9.8,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "visto": "2026-11-28 02:26"
+   "max_dbz": 72,
+   "tope_km": 12.9,
+   "visto": "2026-11-28 02:42"
   },
   "General Deheza": {
-   "nivel": "posible granizo",
+   "nivel": "granizo probable",
    "km": 0.7,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "visto": "2026-11-28 02:26"
+   "max_dbz": 72,
+   "tope_km": 12.9,
+   "visto": "2026-11-28 02:42"
   },
   "La Población": {
    "nivel": "granizo probable",
-   "km": 5.9,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "visto": "2026-11-28 02:26"
+   "km": 5.5,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "visto": "2026-11-28 02:42"
+  },
+  "Las Isletillas": {
+   "nivel": "granizo probable",
+   "km": 4.2,
+   "max_dbz": 61,
+   "tope_km": 14.7,
+   "visto": "2026-11-28 02:42"
+  },
+  "San Javier y Yacanto": {
+   "nivel": "granizo probable",
+   "km": 9.4,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "visto": "2026-11-28 02:42"
   }
  }
 }
