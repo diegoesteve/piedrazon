@@ -1,93 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 02:15",
+ "consultado": "2026-11-28 02:30",
  "radares": {
-  "RMA17": "2026-11-28 01:53",
-  "RMA15": "2026-11-28 01:45",
-  "AR7": "2026-11-28 01:50",
-  "RMA6": "2026-11-28 01:41"
+  "RMA17": "2026-11-28 02:10",
+  "AR7": "2026-11-28 02:10"
  },
  "nucleos": [
   {
-   "lat": -32.5015,
-   "lon": -63.4068,
-   "max_dbz": 64,
-   "tope_km": 10.0,
+   "lat": -33.2431,
+   "lon": -62.4505,
+   "max_dbz": 70,
+   "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -32.9815,
-   "lon": -62.5384,
-   "max_dbz": 61,
-   "tope_km": 14.7,
+   "lat": -32.9273,
+   "lon": -62.4285,
+   "max_dbz": 59,
+   "tope_km": 17.0,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -29.2807,
-   "lon": -66.9292,
+   "lat": -32.0736,
+   "lon": -64.9787,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -29.7068,
+   "lon": -60.9266,
    "max_dbz": 51,
-   "tope_km": 9.4,
-   "radar": "RMA15",
+   "tope_km": 15.0,
+   "radar": "AR7",
    "nivel": null
   },
   {
-   "lat": -33.0989,
-   "lon": -62.5274,
-   "max_dbz": 50,
-   "tope_km": 14.7,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -30.1025,
-   "lon": -67.2465,
-   "max_dbz": 50,
-   "tope_km": 11.1,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -37.2165,
-   "lon": -55.8775,
-   "max_dbz": 50,
-   "tope_km": 5.3,
-   "radar": "RMA6",
-   "nivel": null,
-   "descartado": "tope bajo (5.3 km)"
-  },
-  {
-   "lat": -32.0006,
-   "lon": -64.9457,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -29.7989,
-   "lon": -60.9157,
-   "max_dbz": 49,
+   "lat": -30.1847,
+   "lon": -60.8617,
+   "max_dbz": 48,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
   }
  ],
  "localidades": {
-  "Arroyo Cabral": {
+  "Isla Verde": {
    "nivel": "granizo probable",
-   "km": 1.4,
-   "max_dbz": 64,
-   "tope_km": 10.0,
-   "visto": "2026-11-28 01:53"
+   "km": 4.6,
+   "max_dbz": 70,
+   "tope_km": 17.0,
+   "visto": "2026-11-28 02:10"
   },
-  "Luca": {
+  "Monte Buey": {
    "nivel": "granizo probable",
-   "km": 7.9,
-   "max_dbz": 64,
-   "tope_km": 10.0,
-   "visto": "2026-11-28 01:53"
+   "km": 2.8,
+   "max_dbz": 59,
+   "tope_km": 17.0,
+   "visto": "2026-11-28 02:10"
+  },
+  "Saladillo (Córdoba)": {
+   "nivel": "granizo probable",
+   "km": 8.0,
+   "max_dbz": 59,
+   "tope_km": 17.0,
+   "visto": "2026-11-28 02:10"
   }
  }
 }
