@@ -1,61 +1,79 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 23:45",
+ "consultado": "2026-11-28 00:01",
  "radares": {
-  "RMA6": "2026-11-27 23:34",
-  "RMA19": "2026-11-27 23:08",
-  "AR7": "2026-11-27 23:30",
   "RMA15": "2026-11-27 23:24",
-  "RMA17": "2026-11-27 23:34",
-  "RMA12": "2026-11-27 23:26"
+  "RMA6": "2026-11-27 23:43",
+  "RMA17": "2026-11-27 23:43",
+  "RMA12": "2026-11-27 23:36",
+  "AR7": "2026-11-27 23:40",
+  "RMA19": "2026-11-27 23:43",
+  "RMA11": "2026-11-27 23:44"
  },
  "nucleos": [
   {
-   "lat": -31.9641,
-   "lon": -64.9897,
-   "max_dbz": 61,
-   "tope_km": 14.1,
+   "lat": -33.2071,
+   "lon": -62.5934,
+   "max_dbz": 62,
+   "tope_km": 15.2,
    "radar": "RMA17",
    "nivel": "granizo probable"
   },
   {
-   "lat": -39.1795,
-   "lon": -55.3508,
-   "max_dbz": 58,
-   "tope_km": 11.7,
-   "radar": "RMA6",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -33.788,
-   "lon": -68.7419,
-   "max_dbz": 58,
-   "tope_km": 16.4,
-   "radar": "RMA19",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -42.5725,
-   "lon": -65.2473,
-   "max_dbz": 58,
-   "tope_km": 17.0,
-   "radar": "RMA12",
-   "nivel": "granizo probable"
-  },
-  {
-   "lat": -34.0557,
-   "lon": -68.6321,
-   "max_dbz": 53,
+   "lat": -32.0006,
+   "lon": -65.0007,
+   "max_dbz": 59,
    "tope_km": 13.5,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.162,
+   "lon": -62.8242,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -27.132,
+   "lon": -65.9684,
+   "max_dbz": 57,
+   "tope_km": 16.4,
+   "radar": "RMA11",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -26.8603,
+   "lon": -65.3906,
+   "max_dbz": 55,
+   "tope_km": 3.5,
+   "radar": "RMA11",
+   "nivel": null,
+   "descartado": "tope bajo (3.5 km)"
+  },
+  {
+   "lat": -33.7432,
+   "lon": -68.6651,
+   "max_dbz": 54,
+   "tope_km": 12.3,
    "radar": "RMA19",
    "nivel": null
   },
   {
-   "lat": -33.788,
-   "lon": -68.8188,
+   "lat": -32.1375,
+   "lon": -65.0007,
    "max_dbz": 53,
-   "tope_km": 12.9,
-   "radar": "RMA19",
+   "tope_km": 17.0,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -42.5813,
+   "lon": -65.2228,
+   "max_dbz": 53,
+   "tope_km": 17.0,
+   "radar": "RMA12",
    "nivel": null
   },
   {
@@ -68,49 +86,33 @@
    "descartado": "tope bajo (5.9 km)"
   },
   {
-   "lat": -29.8633,
-   "lon": -59.5207,
+   "lat": -39.2502,
+   "lon": -55.5263,
    "max_dbz": 51,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -32.1375,
-   "lon": -64.9897,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "radar": "RMA17",
-   "nivel": null
-  },
-  {
-   "lat": -30.1664,
-   "lon": -59.6721,
-   "max_dbz": 49,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -38.8516,
-   "lon": -55.3859,
-   "max_dbz": 48,
-   "tope_km": 9.4,
+   "tope_km": 8.8,
    "radar": "RMA6",
    "nivel": null
   },
   {
-   "lat": -29.7436,
-   "lon": -60.9157,
-   "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "lat": -26.6969,
+   "lon": -65.3184,
+   "max_dbz": 50,
+   "tope_km": 6.4,
+   "radar": "RMA11",
    "nivel": null
   },
   {
-   "lat": -30.2306,
-   "lon": -59.7262,
-   "max_dbz": 47,
+   "lat": -28.3288,
+   "lon": -66.02,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "radar": "RMA11",
+   "nivel": null
+  },
+  {
+   "lat": -30.258,
+   "lon": -58.8177,
+   "max_dbz": 48,
    "tope_km": 15.0,
    "radar": "AR7",
    "nivel": null
@@ -119,52 +121,80 @@
  "localidades": {
   "Alto Resbaloso - El Barrial": {
    "nivel": "granizo probable",
-   "km": 7.2,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "visto": "2026-11-27 23:34"
+   "km": 7.6,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "visto": "2026-11-27 23:43"
+  },
+  "Colonia Barge": {
+   "nivel": "granizo probable",
+   "km": 5.8,
+   "max_dbz": 62,
+   "tope_km": 15.2,
+   "visto": "2026-11-27 23:43"
   },
   "El Pueblito (dpto. San Javier, Córdoba)": {
    "nivel": "granizo probable",
-   "km": 8.0,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "visto": "2026-11-27 23:34"
+   "km": 8.4,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "visto": "2026-11-27 23:43"
   },
   "El Valle": {
    "nivel": "granizo probable",
-   "km": 7.4,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "visto": "2026-11-27 23:34"
+   "km": 8.6,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "visto": "2026-11-27 23:43"
+  },
+  "La Población": {
+   "nivel": "granizo probable",
+   "km": 7.8,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "visto": "2026-11-27 23:43"
+  },
+  "Laborde": {
+   "nivel": "granizo probable",
+   "km": 3.2,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "visto": "2026-11-27 23:43"
   },
   "Las Chacras (Córdoba)": {
    "nivel": "granizo probable",
-   "km": 4.2,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "visto": "2026-11-27 23:34"
+   "km": 6.9,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "visto": "2026-11-27 23:43"
   },
-  "Los Hornillos": {
+  "Monte Maíz": {
    "nivel": "granizo probable",
-   "km": 6.8,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "visto": "2026-11-27 23:34"
+   "km": 0.7,
+   "max_dbz": 62,
+   "tope_km": 15.2,
+   "visto": "2026-11-27 23:43"
   },
   "San Javier y Yacanto": {
    "nivel": "granizo probable",
-   "km": 7.9,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "visto": "2026-11-27 23:34"
+   "km": 4.0,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "visto": "2026-11-27 23:43"
   },
   "Villa de las Rosas": {
    "nivel": "granizo probable",
-   "km": 6.3,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "visto": "2026-11-27 23:34"
+   "km": 7.5,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "visto": "2026-11-27 23:43"
+  },
+  "Wenceslao Escalante": {
+   "nivel": "granizo probable",
+   "km": 5.2,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "visto": "2026-11-27 23:43"
   }
  }
 }
