@@ -1,8 +1,9 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 05:15",
+ "consultado": "2026-11-28 05:30",
  "radares": {
-  "RMA17": "2026-11-28 05:01"
+  "RMA17": "2026-11-28 05:01",
+  "RMA16": "2026-11-28 05:18"
  },
  "nucleos": [
   {
@@ -19,6 +20,14 @@
    "max_dbz": 68,
    "tope_km": 17.0,
    "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.1857,
+   "lon": -63.0345,
+   "max_dbz": 68,
+   "tope_km": 7.0,
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
@@ -221,6 +230,13 @@
    "max_dbz": 56,
    "tope_km": 15.8,
    "visto": "2026-11-28 05:01"
+  },
+  "Pascanas": {
+   "nivel": "granizo probable",
+   "km": 6.6,
+   "max_dbz": 68,
+   "tope_km": 7.0,
+   "visto": "2026-11-28 05:18"
   },
   "Ticino": {
    "nivel": "granizo probable",

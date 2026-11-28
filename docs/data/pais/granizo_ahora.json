@@ -1,12 +1,11 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 05:15",
+ "consultado": "2026-11-28 05:30",
  "radares": {
   "RMA17": "2026-11-28 05:01",
-  "RMA15": "2026-11-28 04:56",
-  "AR7": "2026-11-28 04:40",
-  "RMA11": "2026-11-28 04:58",
-  "RMA6": "2026-11-28 04:50"
+  "RMA15": "2026-11-28 05:12",
+  "RMA11": "2026-11-28 05:15",
+  "RMA16": "2026-11-28 05:18"
  },
  "nucleos": [
   {
@@ -23,6 +22,14 @@
    "max_dbz": 68,
    "tope_km": 17.0,
    "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.1857,
+   "lon": -63.0345,
+   "max_dbz": 68,
+   "tope_km": 7.0,
+   "radar": "RMA16",
    "nivel": "granizo probable"
   },
   {
@@ -122,6 +129,14 @@
    "nivel": "granizo probable"
   },
   {
+   "lat": -30.0755,
+   "lon": -67.2253,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "radar": "RMA15",
+   "nivel": "posible granizo"
+  },
+  {
    "lat": -32.9002,
    "lon": -63.2419,
    "max_dbz": 54,
@@ -130,10 +145,26 @@
    "nivel": null
   },
   {
-   "lat": -28.3288,
-   "lon": -66.02,
-   "max_dbz": 54,
+   "lat": -30.6317,
+   "lon": -66.633,
+   "max_dbz": 53,
    "tope_km": 10.0,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -30.0215,
+   "lon": -67.2676,
+   "max_dbz": 53,
+   "tope_km": 8.8,
+   "radar": "RMA15",
+   "nivel": null
+  },
+  {
+   "lat": -28.3109,
+   "lon": -66.0097,
+   "max_dbz": 53,
+   "tope_km": 11.7,
    "radar": "RMA11",
    "nivel": null
   },
@@ -170,35 +201,11 @@
    "nivel": null
   },
   {
-   "lat": -29.2716,
-   "lon": -66.9292,
-   "max_dbz": 49,
-   "tope_km": 10.6,
-   "radar": "RMA15",
-   "nivel": null
-  },
-  {
-   "lat": -29.762,
-   "lon": -60.9482,
+   "lat": -27.2315,
+   "lon": -65.989,
    "max_dbz": 48,
-   "tope_km": 15.0,
-   "radar": "AR7",
-   "nivel": null
-  },
-  {
-   "lat": -37.7956,
-   "lon": -58.3706,
-   "max_dbz": 47,
-   "tope_km": 9.4,
-   "radar": "RMA6",
-   "nivel": null
-  },
-  {
-   "lat": -29.6976,
-   "lon": -60.9266,
-   "max_dbz": 46,
-   "tope_km": 15.0,
-   "radar": "AR7",
+   "tope_km": 17.0,
+   "radar": "RMA11",
    "nivel": null
   }
  ],
@@ -265,6 +272,13 @@
    "max_dbz": 56,
    "tope_km": 15.8,
    "visto": "2026-11-28 05:01"
+  },
+  "Pascanas": {
+   "nivel": "granizo probable",
+   "km": 6.8,
+   "max_dbz": 68,
+   "tope_km": 7.0,
+   "visto": "2026-11-28 05:18"
   },
   "Ticino": {
    "nivel": "granizo probable",
