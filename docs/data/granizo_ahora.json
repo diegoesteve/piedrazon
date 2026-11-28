@@ -1,18 +1,57 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 02:00",
+ "consultado": "2026-11-28 02:15",
  "radares": {
-  "RMA17": "2026-11-28 01:37"
+  "RMA17": "2026-11-28 01:53"
  },
  "nucleos": [
   {
-   "lat": -31.9458,
-   "lon": -63.0551,
-   "max_dbz": 51,
-   "tope_km": 11.7,
+   "lat": -32.5015,
+   "lon": -63.4068,
+   "max_dbz": 64,
+   "tope_km": 10.0,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -32.9815,
+   "lon": -62.5384,
+   "max_dbz": 61,
+   "tope_km": 14.7,
+   "radar": "RMA17",
+   "nivel": "granizo probable"
+  },
+  {
+   "lat": -33.0989,
+   "lon": -62.5274,
+   "max_dbz": 50,
+   "tope_km": 14.7,
+   "radar": "RMA17",
+   "nivel": null
+  },
+  {
+   "lat": -32.0006,
+   "lon": -64.9457,
+   "max_dbz": 49,
+   "tope_km": 11.1,
    "radar": "RMA17",
    "nivel": null
   }
  ],
- "localidades": {}
+ "localidades": {
+  "Arroyo Cabral": {
+   "nivel": "granizo probable",
+   "km": 1.5,
+   "max_dbz": 64,
+   "tope_km": 10.0,
+   "visto": "2026-11-28 01:53"
+  },
+  "Luca": {
+   "nivel": "granizo probable",
+   "km": 7.9,
+   "max_dbz": 64,
+   "tope_km": 10.0,
+   "visto": "2026-11-28 01:53"
+  }
+ }
 }
